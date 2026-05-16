@@ -118,7 +118,6 @@ class HomeScreen extends ConsumerWidget {
             decoration: BoxDecoration(
               color: AppColors.surface,
               borderRadius: BorderRadius.circular(16),
-              border: Border.all(color: Colors.white.withOpacity(0.05)),
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,

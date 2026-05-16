@@ -33,10 +33,11 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(
-              Icons.psychology,
-              size: 100,
-              color: AppColors.primary,
+            Image.asset(
+              'assets/images/logo.png',
+              width: MediaQuery.of(context).size.shortestSide * 0.4,
+              height: MediaQuery.of(context).size.shortestSide * 0.4,
+              fit: BoxFit.contain,
             )
                 .animate()
                 .fadeIn(duration: 800.ms)
