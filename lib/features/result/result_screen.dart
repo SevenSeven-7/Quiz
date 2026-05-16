@@ -4,7 +4,17 @@ import '../../core/constants/app_colors.dart';
 
 class ResultScreen extends StatelessWidget {
   final int score;
-  const ResultScreen({super.key, required this.score});
+  final int totalQuestions;
+  final int stars;
+  final String partId;
+
+  const ResultScreen({
+    super.key,
+    required this.score,
+    required this.totalQuestions,
+    required this.stars,
+    required this.partId,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +25,9 @@ class ResultScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              _buildScoreCircle(context),
+              _buildStarRating(context),
+              const SizedBox(height: 32),
+              _buildScoreSummary(context),
               const SizedBox(height: 40),
               _buildMessage(context),
               const SizedBox(height: 60),
@@ -27,65 +39,45 @@ class ResultScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildScoreCircle(BuildContext context) {
-    return Stack(
-      alignment: Alignment.center,
+  Widget _buildStarRating(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: List.generate(3, (index) {
+        return Icon(
+          Icons.star,
+          size: 60,
+          color: index < stars ? Colors.amber : Colors.grey.withOpacity(0.3),
+        ).animate(delay: (500 + (index * 200)).ms).fadeIn().scale();
+      }),
+    );
+  }
+
+  Widget _buildScoreSummary(BuildContext context) {
+    return Column(
       children: [
-        SizedBox(
-          width: 200,
-          height: 200,
-          child: CircularProgressIndicator(
-            value: 1.0,
-            strokeWidth: 12,
-            color: AppColors.primary.withOpacity(0.2),
-          ),
+        Text(
+          'Skor Anda',
+          style: Theme.of(context).textTheme.bodyMedium,
         ),
-        SizedBox(
-          width: 200,
-          height: 200,
-          child: CircularProgressIndicator(
-            value: score / 30, // Assuming 30 is max for 3 questions
-            strokeWidth: 12,
-            color: AppColors.primary,
-            strokeCap: StrokeCap.round,
-          ).animate().custom(
-            duration: 1500.ms,
-            builder: (context, value, child) => CircularProgressIndicator(
-              value: value * (score / 30),
-              strokeWidth: 12,
-              color: AppColors.primary,
-              strokeCap: StrokeCap.round,
-            ),
-          ),
-        ),
-        Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              'Skor Anda',
-              style: Theme.of(context).textTheme.bodyMedium,
-            ),
-            const SizedBox(height: 8),
-            TweenAnimationBuilder<double>(
-              tween: Tween(begin: 0, end: score.toDouble()),
-              duration: const Duration(milliseconds: 1500),
-              builder: (context, value, child) => Text(
-                value.toInt().toString(),
-                style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                      fontSize: 48,
-                    ),
+        const SizedBox(height: 8),
+        Text(
+          '$score / $totalQuestions',
+          style: Theme.of(context).textTheme.displayLarge?.copyWith(
+                fontSize: 48,
+                color: AppColors.primary,
               ),
-            ),
-          ],
-        ),
+        ).animate().fadeIn(delay: 1200.ms).scale(),
       ],
     );
   }
 
   Widget _buildMessage(BuildContext context) {
     String message = "Luar Biasa!";
-    if (score < 10) message = "Coba Lagi!";
-    else if (score < 30) message = "Bagus Sekali!";
+    if (score < (totalQuestions * 0.5)) {
+      message = "Terus Berlatih!";
+    } else if (score < totalQuestions) {
+      message = "Bagus Sekali!";
+    }
 
     return Column(
       children: [
@@ -95,10 +87,11 @@ class ResultScreen extends StatelessWidget {
                 fontSize: 32,
               ),
         ).animate().fadeIn(delay: 1500.ms).scale(),
-        const SizedBox(height: 8),
+        const SizedBox(height: 12),
         const Text(
-          'Anda telah menyelesaikan kuis ini.',
+          'Level telah selesai. Kamu mendapatkan bintang berdasarkan kecepatanmu!',
           textAlign: TextAlign.center,
+          style: TextStyle(color: Colors.grey),
         ).animate().fadeIn(delay: 1700.ms),
       ],
     );
@@ -111,7 +104,7 @@ class ResultScreen extends StatelessWidget {
           width: double.infinity,
           child: ElevatedButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('Main Lagi'),
+            child: const Text('Ke Daftar Level'),
           ),
         ).animate().fadeIn(delay: 2000.ms).slideY(begin: 0.2, end: 0),
         const SizedBox(height: 16),

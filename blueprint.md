@@ -1,56 +1,56 @@
-# Blueprint Teknis Lengkap - Aplikasi Game "Quiz"
+# Blueprint Pengembangan Aplikasi Quiz (Versi 2.0)
 
-Dokumen ini adalah panduan komprehensif untuk pengembangan, pemeliharaan, dan skalabilitas aplikasi **Quiz**.
+Aplikasi **Quiz** adalah platform asah otak berbasis level yang menantang pemain untuk menyelesaikan tantangan bertahap dari Bagian 1 (Bahasa Indonesia) menuju Bagian 2 (Matematika).
 
-## 1. Arsitektur & Pola Desain (MVVM)
-Aplikasi menggunakan pola **Model-View-ViewModel** untuk memastikan kode yang bersih dan mudah diuji.
-- **Model**: Mendefinisikan struktur data (`User`, `Question`, `Category`).
-- **View**: Komponen UI murni yang hanya menampilkan data dari ViewModel.
-- **ViewModel (Controller)**: Mengelola logika bisnis, status permainan, dan interaksi data menggunakan **Riverpod**.
+## 1. Identitas & Tema
+*   **Nama Aplikasi**: Quiz
+*   **Tema**: Elegant Dark Mode (Onyx Black, Electric Violet).
+*   **Target**: 100 Level per Bagian.
 
-## 2. Sistem Desain & Estetika (Premium Dark Mode)
-Desain difokuskan pada penggunaan *Whitespace* dan kontras yang lembut untuk mengurangi kelelahan mata.
-- **Palet Warna Utama**:
-    - Latar: `#121212` (Onyx)
-    - Kartu: `#1E1E1E` (Charcoal)
-    - Aksen: `#8A2BE2` (Electric Violet)
-- **Animasi**: Menggunakan `flutter_animate` untuk:
-    - *Staggered Entry*: Elemen muncul satu per satu.
-    - *Shake Error*: Getaran pada tombol saat jawaban salah.
-    - *Score Count*: Angka yang terus bertambah di layar hasil.
+## 2. Arsitektur Sistem
+*   **Framework**: Flutter
+*   **State Management**: Riverpod (untuk progres level dan state kuis).
+*   **Database**: Firebase Firestore (Data soal) + Local JSON (Backup).
+*   **Pola Desain**: MVVM (Model-View-ViewModel).
 
-## 3. Skema Data (Database Blueprint)
-### Local Persistence (Hive/SharedPrefs)
-- `last_score`: Skor terakhir yang dicapai.
-- `high_score`: Skor tertinggi sepanjang masa per kategori.
-- `user_name`: Nama profil pengguna.
+## 3. Fitur Utama & Logika Permainan
 
-### Remote Schema (Firestore - Next Phase)
-- **Collection: `questions`**
-  - `id` (String)
-  - `category_id` (String)
-  - `text` (String)
-  - `options` (Array of Strings)
-  - `correct_index` (Integer)
-- **Collection: `leaderboard`**
-  - `uid` (String)
-  - `username` (String)
-  - `score` (Integer)
-  - `timestamp` (Timestamp)
+### A. Struktur Konten
+*   **Bagian 1 (Quiz Bahasa Indonesia)**: 100 Level.
+*   **Bagian 2 (Quiz Matematika)**: 100 Level (Terkunci di awal).
+*   **Komposisi Level**: 10 Soal per level.
+    *   8 Soal Pilihan Ganda (A, B, C, D).
+    *   2 Soal Uraian (Berada di nomor 5 dan nomor 10).
 
-## 4. Alur Kerja Inti (The Gameplay Loop)
-1.  **Splash**: Inisialisasi Firebase & Load High Score lokal.
-2.  **Home**: Menampilkan daftar kategori. Kategori di-*fetch* dari servis data.
-3.  **Quiz Sesi**:
-    - 10 Soal acak per sesi.
-    - Timer 15 detik per soal.
-    - Lock input setelah jawaban terpilih.
-4.  **Result**: Kalkulasi skor akhir + Update High Score jika terlampaui.
+### B. Mekanisme Progres
+*   **Unlock Level**: Level `n+1` terbuka hanya jika Level `n` selesai.
+*   **Rating Bintang**: 
+    *   3 Bintang: Selesai dengan waktu sangat cepat.
+    *   2 Bintang: Selesai dengan waktu rata-rata.
+    *   1 Bintang: Selesai mendekati batas waktu.
+*   **Unlock Bagian 2**: 
+    *   Syarat: Total skor Bagian 1 harus mencapai minimal **90%**.
+    *   Jika skor < 90%, pemain harus mengulang level tertentu untuk memperbaiki skor.
 
-## 5. Optimasi Performa
-- **Image Caching**: Menggunakan `cached_network_image` untuk ikon kategori.
-- **Lazy Loading**: Grid kategori hanya merender apa yang terlihat di layar.
-- **State Selection**: Hanya bagian widget yang berubah yang akan di-*rebuild* (Optimasi Riverpod).
+### C. Alur Pengguna (User Flow)
+1.  **Splash Screen**: Animasi logo "Q" biru.
+2.  **Home Screen**: Pilihan Bagian (Bagian 1 & 2).
+3.  **Level Selection**: Grid level 1-100 dengan indikator bintang dan status kunci.
+4.  **Quiz Screen**: 
+    *   Slide 1-4, 6-9: Pilihan Ganda.
+    *   Slide 5 & 10: Input Text (Uraian).
+    *   Timer berjalan di atas.
+5.  **Result Screen**: Perolehan bintang, skor, dan tombol "Level Berikutnya".
 
-## 6. Dokumentasi Teknis (README.md)
-Lihat [README.md](file:///c:/laragon/www/Quiz/README.md) untuk instruksi instalasi dan menjalankan aplikasi.
+## 4. Struktur Data (Firestore)
+*   **Collection: `parts`** -> `partId`, `title`.
+*   **Collection: `levels`** -> `levelId`, `partId`, `order`.
+*   **Collection: `questions`** -> `id`, `levelId`, `type` (mcq/essay), `text`, `options`, `answer`.
+
+## 5. Rencana Pengembangan
+1.  Setup Firebase Core & Firestore.
+2.  Refactor Model (Part, Level, Question).
+3.  Implementasi `ProgressNotifier` (State Management).
+4.  Update UI (Home, Level Selection, Quiz MCQ/Essay).
+5.  Integrasi Timer & Logic Bintang.
+6.  Sistem Unlock Bagian 2.
