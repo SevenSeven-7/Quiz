@@ -20,9 +20,12 @@ def generate_sample_questions(part_id, num_levels=100):
                     text = f"Level {i}: Sebutkan satu kata benda yang berkaitan dengan {random.choice(subjects[part_id])}!"
                     answer = "contoh"
                 else:
-                    text = f"Level {i}: Apa sinonim dari kata '{random.choice(['Cepat', 'Lambat', 'Pintar', 'Rajin'])}'?"
-                    options = ["Opsi A", "Opsi B", "Opsi C", "Opsi D"]
-                    answer_idx = random.randint(0, 3)
+                    words = ['Cepat', 'Lambat', 'Pintar', 'Rajin', 'Gembira', 'Sedih']
+                    word = random.choice(words)
+                    text = f"Level {i}: Apa sinonim yang tepat untuk kata '{word}'?"
+                    options = ["Jawaban Benar", "Pilihan Salah 1", "Pilihan Salah 2", "Pilihan Salah 3"]
+                    random.shuffle(options)
+                    answer_idx = options.index("Jawaban Benar")
             else:
                 if is_essay:
                     a, b = random.randint(1, 50), random.randint(1, 50)

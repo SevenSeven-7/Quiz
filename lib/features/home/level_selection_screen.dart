@@ -17,7 +17,10 @@ class LevelSelectionScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(part.title),
+        title: FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(part.title),
+        ),
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
@@ -34,21 +37,17 @@ class LevelSelectionScreen extends ConsumerWidget {
             padding: const EdgeInsets.all(16.0),
             child: GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 4,
-                crossAxisSpacing: 12,
-                mainAxisSpacing: 12,
+                crossAxisCount: 5,
+                crossAxisSpacing: 10,
+                mainAxisSpacing: 10,
               ),
-              itemCount: 100,
+              itemCount: levels.length,
               itemBuilder: (context, index) {
-                final levelNumber = index + 1;
-                final levelId = '${part.id}_l$levelNumber';
+                final levelData = levels[index];
+                final levelNumber = levelData.order;
+                final levelId = levelData.id;
                 final isUnlocked = progress.unlockedLevels[levelId] ?? false;
                 final stars = progress.levelStars[levelId] ?? 0;
-                
-                final levelData = levels.firstWhere(
-                  (l) => l.order == levelNumber,
-                  orElse: () => LevelModel(id: levelId, order: levelNumber, partId: part.id, questions: []),
-                );
 
                 return _buildLevelButton(context, levelNumber, isUnlocked, stars, levelData);
               },

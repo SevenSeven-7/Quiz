@@ -30,18 +30,12 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     // Listen for finish state
     ref.listen(quizProvider(widget.level), (previous, next) {
       if (next.isFinished) {
-        // Hitung bintang (logika ada di controller)
-        // Untuk sekarang kita oper saja datanya
-        int stars = 1;
-        if (next.timeSpent < 30) stars = 3;
-        else if (next.timeSpent < 60) stars = 2;
-
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(
             builder: (context) => ResultScreen(
               score: next.score,
               totalQuestions: next.level.questions.length,
-              stars: stars,
+              stars: next.starsEarned,
               partId: widget.level.partId,
             ),
           ),
@@ -56,23 +50,26 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     final currentQuestion = state.level.questions[state.currentIndex];
 
     return Scaffold(
+      resizeToAvoidBottomInset: true,
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(24.0),
-          child: Column(
-            children: [
-              _buildTopBar(context, state),
-              const SizedBox(height: 20),
-              _buildTimer(context, state),
-              const Spacer(),
-              _buildQuestionArea(context, currentQuestion, state.currentIndex + 1),
-              const Spacer(),
-              if (currentQuestion.type == QuestionType.mcq)
-                _buildMCQOptions(context, state, ref, currentQuestion)
-              else
-                _buildEssayInput(context, state, ref),
-              const SizedBox(height: 20),
-            ],
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(24.0),
+            child: Column(
+              children: [
+                _buildTopBar(context, state),
+                const SizedBox(height: 20),
+                _buildTimer(context, state),
+                const SizedBox(height: 40),
+                _buildQuestionArea(context, currentQuestion, state.currentIndex + 1),
+                const SizedBox(height: 40),
+                if (currentQuestion.type == QuestionType.mcq)
+                  _buildMCQOptions(context, state, ref, currentQuestion)
+                else
+                  _buildEssayInput(context, state, ref),
+                const SizedBox(height: 20),
+              ],
+            ),
           ),
         ),
       ),
@@ -89,9 +86,16 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
               icon: const Icon(Icons.close, color: Colors.white),
               onPressed: () => Navigator.of(context).pop(),
             ),
-            Text(
-              'Level ${widget.level.order}',
-              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+            Expanded(
+              child: Center(
+                child: FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text(
+                    'Level ${widget.level.order}',
+                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                  ),
+                ),
+              ),
             ),
             Text(
               '${state.currentIndex + 1} / ${state.level.questions.length}',

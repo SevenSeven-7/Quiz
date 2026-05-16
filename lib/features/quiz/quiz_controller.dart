@@ -11,7 +11,8 @@ class QuizState {
   final int? selectedIndex;
   final String? essayAnswer;
   final bool isFinished;
-  final int timeSpent; // dalam detik
+  final int timeSpent;
+  final int starsEarned; // Tambahkan ini
 
   QuizState({
     required this.level,
@@ -22,6 +23,7 @@ class QuizState {
     this.essayAnswer,
     this.isFinished = false,
     this.timeSpent = 0,
+    this.starsEarned = 0,
   });
 
   QuizState copyWith({
@@ -33,6 +35,7 @@ class QuizState {
     String? essayAnswer,
     bool? isFinished,
     int? timeSpent,
+    int? starsEarned,
   }) {
     return QuizState(
       level: level ?? this.level,
@@ -43,6 +46,7 @@ class QuizState {
       essayAnswer: essayAnswer ?? this.essayAnswer,
       isFinished: isFinished ?? this.isFinished,
       timeSpent: timeSpent ?? this.timeSpent,
+      starsEarned: starsEarned ?? this.starsEarned,
     );
   }
 }
@@ -117,13 +121,19 @@ class QuizNotifier extends StateNotifier<QuizState> {
   void _finishQuiz() {
     _timer?.cancel();
     
-    // Kalkulasi Bintang
-    // Misal: < 30s = 3 bintang, < 60s = 2 bintang, sisanya 1 bintang
+    // Logika Bintang: Menggabungkan Skor dan Waktu
+    // Total soal adalah 10
+    double scorePercentage = (state.score / state.level.questions.length) * 100;
     int stars = 1;
-    if (state.timeSpent < 30) {
+
+    if (scorePercentage >= 90 && state.timeSpent <= 60) {
       stars = 3;
-    } else if (state.timeSpent < 60) {
+    } else if (scorePercentage >= 70 && state.timeSpent <= 90) {
       stars = 2;
+    } else if (scorePercentage >= 50) {
+      stars = 1;
+    } else {
+      stars = 0; // Tidak dapat bintang jika skor di bawah 50%
     }
 
     // Update Progres
@@ -133,7 +143,7 @@ class QuizNotifier extends StateNotifier<QuizState> {
       state.level.partId,
     );
 
-    state = state.copyWith(isFinished: true);
+    state = state.copyWith(isFinished: true, starsEarned: stars);
   }
 
   @override
