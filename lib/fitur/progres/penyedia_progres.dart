@@ -36,16 +36,16 @@ class ProgressState {
 class ProgressNotifier extends StateNotifier<ProgressState> {
   ProgressNotifier() : super(ProgressState(
     levelStars: {},
-    unlockedLevels: {'p1_l1': true}, // Level 1 Bagian 1 selalu terbuka secara bawaan
-    unlockedParts: {'p1'}, // Bagian 1 selalu terbuka secara bawaan
+    unlockedLevels: {'p1_l1': true, 'p2_l1': true}, // Level 1 di Bagian 1 dan Bagian 2 selalu terbuka bawaan
+    unlockedParts: {'p1', 'p2'}, // Bagian 1 dan Bagian 2 selalu terbuka bawaan
   ));
 
   // Fungsi untuk memperbarui progres ketika suatu level kuis diselesaikan
   void updateProgress(String levelId, int stars, String partId) {
     final newStars = Map<String, int>.from(state.levelStars);
     
-    // Hanya simpan perolehan bintang jika lebih tinggi dari rekor sebelumnya
-    if ((newStars[levelId] ?? 0) < stars) {
+    // Simpan perolehan bintang jika tingkat level ini belum pernah diselesaikan, atau perolehan bintang baru lebih tinggi
+    if (!newStars.containsKey(levelId) || newStars[levelId]! < stars) {
       newStars[levelId] = stars;
     }
 
@@ -63,37 +63,6 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
       levelStars: newStars,
       unlockedLevels: newUnlocked,
     );
-
-    // Evaluasi apakah kriteria pembukaan Bagian 2 (Matematika) telah terpenuhi
-    _checkPartUnlock();
-  }
-
-  // Fungsi internal untuk mengevaluasi pembukaan bagian baru
-  void _checkPartUnlock() {
-    int totalStars = 0;
-    int completedLevels = 0;
-    
-    // Menghitung perolehan bintang kumulatif di Bagian 1 (Bahasa Indonesia)
-    state.levelStars.forEach((id, stars) {
-      if (id.startsWith('p1')) {
-        totalStars += stars;
-        completedLevels++;
-      }
-    });
-
-    // Syarat membuka Bagian 2: Minimal telah menyelesaikan level dan memenuhi skor simulasi bintang 90%
-    if (completedLevels >= 1 && !state.unlockedParts.contains('p2')) {
-       // Persentase keberhasilan dihitung dengan simulasi bintang (rata-rata bintang >= 2.7)
-       if (totalStars >= (completedLevels * 2.7)) {
-          final newParts = Set<String>.from(state.unlockedParts);
-          newParts.add('p2');
-          
-          final newUnlocked = Map<String, bool>.from(state.unlockedLevels);
-          newUnlocked['p2_l1'] = true; // Otomatis membuka Level 1 di Bagian 2
-          
-          state = state.copyWith(unlockedParts: newParts, unlockedLevels: newUnlocked);
-       }
-    }
   }
 }
 

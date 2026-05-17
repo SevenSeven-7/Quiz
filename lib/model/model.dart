@@ -66,6 +66,11 @@ class PartModel {
     this.isLocked = false,
     this.progress = 0.0,
   });
+
+  // Mengembalikan judul kuis tanpa prefiks "Bagian X: "
+  String get cleanTitle {
+    return title.replaceAll(RegExp(r'^Bagian\s+\d+\s*:\s*', caseSensitive: false), '');
+  }
 }
 
 // Model data untuk informasi Profil Pengguna/Pemain.

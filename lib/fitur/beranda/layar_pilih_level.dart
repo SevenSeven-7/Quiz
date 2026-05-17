@@ -18,10 +18,11 @@ class LevelSelectionScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: FittedBox(
-          fit: BoxFit.scaleDown,
-          child: Text(part.title),
+        title: Text(
+          part.cleanTitle,
+          style: const TextStyle(fontWeight: FontWeight.bold),
         ),
+        centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),

@@ -160,7 +160,7 @@ class HomeScreen extends ConsumerWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            part.title,
+                            part.cleanTitle,
                             style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                                   fontWeight: FontWeight.bold,
                                   color: isUnlocked ? Colors.white : Colors.grey,
@@ -168,7 +168,7 @@ class HomeScreen extends ConsumerWidget {
                           ),
                           const SizedBox(height: 4),
                           Text(
-                            isUnlocked ? part.description : 'Tuntaskan Bagian 1 minimal 90% skor untuk membuka',
+                            isUnlocked ? part.description : 'Tuntaskan Bagian 1 untuk membuka',
                             style: Theme.of(context).textTheme.bodySmall?.copyWith(
                                   color: Colors.grey,
                                 ),
