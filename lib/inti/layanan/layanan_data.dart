@@ -1,13 +1,16 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
-import '../../models/models.dart';
+import '../../model/model.dart';
 
+// Kelas DataService bertanggung jawab memuat data kuis dari file JSON lokal di aset.
 class DataService {
+  // Membaca file kuis 'questions.json' dari folder assets dan mendekodekannya menjadi Map.
   Future<Map<String, dynamic>> loadQuizData() async {
     final String response = await rootBundle.loadString('assets/data/questions.json');
     return json.decode(response);
   }
 
+  // Mengambil daftar Bagian (PartModel) dari file JSON lokal.
   Future<List<PartModel>> getParts() async {
     final data = await loadQuizData();
     return (data['parts'] as List).map((p) => PartModel(
@@ -18,6 +21,7 @@ class DataService {
     )).toList();
   }
 
+  // Mengambil daftar Level (LevelModel) berdasarkan ID bagian tertentu.
   Future<List<LevelModel>> getLevels(String partId) async {
     final data = await loadQuizData();
     return (data['levels'] as List)

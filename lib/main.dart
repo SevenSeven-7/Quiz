@@ -1,24 +1,30 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'core/theme/app_theme.dart';
-import 'features/splash/splash_screen.dart';
+import 'inti/tema/tema_aplikasi.dart';
+import 'fitur/splash/layar_splash.dart';
 
+// Fungsi utama (entry point) aplikasi kuis Flutter
 void main() async {
+  // Memastikan binding framework Flutter telah terinisialisasi sebelum proses sinkronisasi lainnya
   WidgetsFlutterBinding.ensureInitialized();
+  
   try {
+    // Menginisialisasi Firebase Firestore secara asinkron
     await Firebase.initializeApp();
   } catch (e) {
-    debugPrint('Firebase not initialized: $e');
+    debugPrint('Firebase gagal diinisialisasi: $e');
   }
+  
   runApp(
+    // Membungkus seluruh aplikasi kuis dalam ProviderScope untuk memfungsikan Riverpod State Management
     const ProviderScope(
       child: QuizApp(),
     ),
   );
 }
 
+// Widget utama root yang menyusun kerangka dasar MaterialApp
 class QuizApp extends StatelessWidget {
   const QuizApp({super.key});
 
@@ -26,9 +32,9 @@ class QuizApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Quiz',
-      debugShowCheckedModeBanner: false,
-      theme: AppTheme.darkTheme,
-      home: const SplashScreen(),
+      debugShowCheckedModeBanner: false, // Menghilangkan banner mode debug di pojok kanan atas
+      theme: AppTheme.darkTheme, // Menerapkan tema gelap aplikasi kuis
+      home: const SplashScreen(), // Memulai dengan tampilan pembuka (splash screen)
     );
   }
 }

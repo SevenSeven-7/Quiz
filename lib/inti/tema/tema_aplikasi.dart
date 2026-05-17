@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../constants/app_colors.dart';
+import '../konstanta/warna_aplikasi.dart';
 
+// Kelas AppTheme bertanggung jawab menyusun konfigurasi tema visual seluruh aplikasi.
 class AppTheme {
+  // Mengembalikan data konfigurasi tema gelap (Dark Theme) untuk aplikasi.
   static ThemeData get darkTheme {
     return ThemeData(
       brightness: Brightness.dark,
@@ -14,6 +16,7 @@ class AppTheme {
         onPrimary: Colors.white,
         onSurface: Colors.white,
       ),
+      // Mengatur font global menggunakan Google Fonts - Inter
       textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme).copyWith(
         displayLarge: const TextStyle(
           fontSize: 24,
@@ -29,6 +32,7 @@ class AppTheme {
           color: AppColors.textSecondary,
         ),
       ),
+      // Tema bawaan untuk tombol Elevated Button di seluruh layar kuis
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primary,
@@ -43,6 +47,7 @@ class AppTheme {
           ),
         ),
       ),
+      // Tema bawaan untuk tampilan Card (kartu kuis)
       cardTheme: CardThemeData(
         color: AppColors.surface,
         shape: RoundedRectangleBorder(

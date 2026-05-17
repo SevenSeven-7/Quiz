@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../core/constants/app_colors.dart';
-import '../../core/services/firebase_service.dart';
-import '../../models/models.dart';
-import '../progress/progress_provider.dart';
-import 'level_selection_screen.dart';
+import '../../inti/konstanta/warna_aplikasi.dart';
+import '../../inti/layanan/layanan_firebase.dart';
+import '../../model/model.dart';
+import '../progres/penyedia_progres.dart';
+import 'layar_pilih_level.dart';
 
+// Kelas HomeScreen menyusun tampilan utama Halaman Beranda Kuis.
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
 
@@ -18,9 +19,9 @@ class HomeScreen extends ConsumerWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              _buildHeader(context),
+              _buildHeader(context), // Menyusun salam pembuka
               const SizedBox(height: 32),
-              _buildScoreCard(context, ref),
+              _buildScoreCard(context, ref), // Kartu akumulasi bintang/skor
               const SizedBox(height: 40),
               Text(
                 'Pilih Bagian',
@@ -31,7 +32,7 @@ class HomeScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 16),
               Expanded(
-                child: _buildPartList(context, ref),
+                child: _buildPartList(context, ref), // Daftar bagian kuis (Bahasa Indonesia, Matematika, dll.)
               ),
             ],
           ),
@@ -40,6 +41,7 @@ class HomeScreen extends ConsumerWidget {
     );
   }
 
+  // Widget untuk menampilkan teks salam pembuka di bagian atas layar.
   Widget _buildHeader(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -57,6 +59,7 @@ class HomeScreen extends ConsumerWidget {
     );
   }
 
+  // Widget kartu penunjuk total bintang yang telah berhasil dikumpulkan oleh pemain.
   Widget _buildScoreCard(BuildContext context, WidgetRef ref) {
     final progress = ref.watch(progressProvider);
     int totalStars = 0;
@@ -99,6 +102,7 @@ class HomeScreen extends ConsumerWidget {
     );
   }
 
+  // Widget daftar list bagian kuis yang dihubungkan ke FirebaseService.
   Widget _buildPartList(BuildContext context, WidgetRef ref) {
     final progress = ref.watch(progressProvider);
 
@@ -116,6 +120,7 @@ class HomeScreen extends ConsumerWidget {
           separatorBuilder: (context, index) => const SizedBox(height: 16),
           itemBuilder: (context, index) {
             final part = parts[index];
+            // Memeriksa status pembukaan bagian kuis
             final isUnlocked = progress.unlockedParts.contains(part.id);
 
             return InkWell(

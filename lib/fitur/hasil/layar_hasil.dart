@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import '../../core/constants/app_colors.dart';
+import '../../inti/konstanta/warna_aplikasi.dart';
 
+// Kelas ResultScreen menampilkan ringkasan skor dan bintang setelah pemain menyelesaikan seluruh soal di satu level.
 class ResultScreen extends StatelessWidget {
-  final int score;
-  final int totalQuestions;
-  final int stars;
-  final String partId;
+  final int score; // Jumlah jawaban yang benar
+  final int totalQuestions; // Total seluruh pertanyaan di level tersebut
+  final int stars; // Jumlah bintang yang didapat (0, 1, 2, atau 3)
+  final String partId; // ID bagian kuis
 
   const ResultScreen({
     super.key,
@@ -25,13 +26,13 @@ class ResultScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              _buildStarRating(context),
+              _buildStarRating(context), // Animasi bintang penghargaan
               const SizedBox(height: 32),
-              _buildScoreSummary(context),
+              _buildScoreSummary(context), // Ringkasan perolehan skor kuis
               const SizedBox(height: 40),
-              _buildMessage(context),
+              _buildMessage(context), // Kalimat motivasi
               const SizedBox(height: 60),
-              _buildActionButtons(context),
+              _buildActionButtons(context), // Tombol tindakan (kembali ke beranda, ulangi level)
             ],
           ),
         ),
@@ -39,6 +40,7 @@ class ResultScreen extends StatelessWidget {
     );
   }
 
+  // Widget animasi pembangun bintang kelulusan level
   Widget _buildStarRating(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -52,6 +54,7 @@ class ResultScreen extends StatelessWidget {
     );
   }
 
+  // Widget ringkasan rincian skor benar/total soal
   Widget _buildScoreSummary(BuildContext context) {
     return Column(
       children: [
@@ -71,6 +74,7 @@ class ResultScreen extends StatelessWidget {
     );
   }
 
+  // Widget pesan teks motivasi interaktif berdasarkan perolehan skor pemain
   Widget _buildMessage(BuildContext context) {
     String message = "Luar Biasa!";
     if (score < (totalQuestions * 0.5)) {
@@ -97,13 +101,14 @@ class ResultScreen extends StatelessWidget {
     );
   }
 
+  // Widget penyusun tombol kemudi navigasi setelah kuis selesai
   Widget _buildActionButtons(BuildContext context) {
     return Column(
       children: [
         SizedBox(
           width: double.infinity,
           child: ElevatedButton(
-            onPressed: () => Navigator.of(context).pop(),
+            onPressed: () => Navigator.of(context).pop(), // Kembali ke daftar pemilihan kuis
             child: const Text('Ke Daftar Level'),
           ),
         ).animate().fadeIn(delay: 2000.ms).slideY(begin: 0.2, end: 0),
@@ -111,7 +116,7 @@ class ResultScreen extends StatelessWidget {
         SizedBox(
           width: double.infinity,
           child: OutlinedButton(
-            onPressed: () => Navigator.of(context).popUntil((route) => route.isFirst),
+            onPressed: () => Navigator.of(context).popUntil((route) => route.isFirst), // Kembali ke menu utama (Beranda)
             style: OutlinedButton.styleFrom(
               padding: const EdgeInsets.symmetric(vertical: 16),
               side: const BorderSide(color: AppColors.primary),

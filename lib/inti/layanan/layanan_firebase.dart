@@ -1,16 +1,18 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
-import '../../models/models.dart';
-import 'data_service.dart';
+import '../../model/model.dart';
+import 'layanan_data.dart';
 
+// Kelas FirebaseService mengelola interaksi sinkronisasi data online menggunakan Firebase Firestore.
 class FirebaseService {
   final DataService _localData = DataService();
 
-  // Singleton
+  // Penerapan pola Singleton untuk memastikan hanya ada satu instansi FirebaseService di seluruh aplikasi.
   static final FirebaseService _instance = FirebaseService._internal();
   factory FirebaseService() => _instance;
   FirebaseService._internal();
 
+  // Memeriksa apakah inisialisasi Firebase berhasil dan siap digunakan.
   bool get _isFirebaseAvailable {
     try {
       Firebase.app();
@@ -20,6 +22,8 @@ class FirebaseService {
     }
   }
 
+  // Mengambil daftar Bagian (PartModel) dari Firebase Firestore. 
+  // Jika Firebase tidak tersedia atau terjadi error, otomatis menggunakan data lokal.
   Future<List<PartModel>> getParts() async {
     if (!_isFirebaseAvailable) {
       return _localData.getParts();
@@ -46,6 +50,8 @@ class FirebaseService {
     }
   }
 
+  // Mengambil daftar Level kuis berdasarkan ID bagian dari Firebase Firestore.
+  // Jika offline atau terjadi kegagalan koneksi, data akan dimuat dari penyimpanan lokal JSON.
   Future<List<LevelModel>> getLevels(String partId) async {
     if (!_isFirebaseAvailable) {
       return _localData.getLevels(partId);

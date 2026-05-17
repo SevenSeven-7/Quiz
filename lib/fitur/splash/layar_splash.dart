@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import '../../core/constants/app_colors.dart';
-import '../home/home_screen.dart';
+import '../../inti/konstanta/warna_aplikasi.dart';
+import '../beranda/layar_beranda.dart';
 
+// Kelas SplashScreen mengatur kemunculan layar animasi pembuka aplikasi kuis pertama kali.
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -14,9 +15,10 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    _navigateToHome();
+    _navigateToHome(); // Memulai proses hitung mundur navigasi
   }
 
+  // Fungsi pengatur penundaan durasi splash screen 2 detik sebelum masuk ke Halaman Beranda utama
   _navigateToHome() async {
     await Future.delayed(const Duration(seconds: 2));
     if (mounted) {
@@ -33,6 +35,7 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            // Menampilkan logo kuis dengan animasi fade-in dan scaling
             Image.asset(
               'assets/images/logo.png',
               width: MediaQuery.of(context).size.shortestSide * 0.4,
@@ -43,6 +46,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 .fadeIn(duration: 800.ms)
                 .scale(delay: 200.ms, duration: 600.ms),
             const SizedBox(height: 24),
+            // Teks judul aplikasi dengan animasi geser dan pudar
             Text(
               'QUIZ',
               style: Theme.of(context).textTheme.displayLarge?.copyWith(

@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../core/constants/app_colors.dart';
-import '../../core/services/firebase_service.dart';
-import '../../models/models.dart';
-import '../progress/progress_provider.dart';
-import '../quiz/quiz_screen.dart';
+import '../../inti/konstanta/warna_aplikasi.dart';
+import '../../inti/layanan/layanan_firebase.dart';
+import '../../model/model.dart';
+import '../progres/penyedia_progres.dart';
+import '../kuis/layar_kuis.dart';
 
+// Kelas LevelSelectionScreen menyusun tampilan pilihan tingkat/level kuis untuk setiap bagian.
 class LevelSelectionScreen extends ConsumerWidget {
   final PartModel part;
 
@@ -24,6 +25,7 @@ class LevelSelectionScreen extends ConsumerWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
+      // Memuat tingkat/level kuis berdasarkan ID bagian secara asinkron dari FirebaseService
       body: FutureBuilder<List<LevelModel>>(
         future: FirebaseService().getLevels(part.id),
         builder: (context, snapshot) {
@@ -37,7 +39,7 @@ class LevelSelectionScreen extends ConsumerWidget {
             padding: const EdgeInsets.all(16.0),
             child: GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 5,
+                crossAxisCount: 5, // Grid 5 kolom untuk nomor kuis
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 10,
               ),
@@ -46,6 +48,7 @@ class LevelSelectionScreen extends ConsumerWidget {
                 final levelData = levels[index];
                 final levelNumber = levelData.order;
                 final levelId = levelData.id;
+                // Memeriksa apakah level terkunci atau terbuka dan bintang yang didapat
                 final isUnlocked = progress.unlockedLevels[levelId] ?? false;
                 final stars = progress.levelStars[levelId] ?? 0;
 
@@ -58,6 +61,7 @@ class LevelSelectionScreen extends ConsumerWidget {
     );
   }
 
+  // Widget pembangun tombol level kuis individual
   Widget _buildLevelButton(BuildContext context, int number, bool isUnlocked, int stars, LevelModel levelData) {
     return InkWell(
       onTap: isUnlocked && levelData.questions.isNotEmpty
@@ -86,6 +90,7 @@ class LevelSelectionScreen extends ConsumerWidget {
                 style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
               const SizedBox(height: 4),
+              // Menampilkan ikon bintang yang telah berhasil diraih di level ini
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: List.generate(3, (index) {

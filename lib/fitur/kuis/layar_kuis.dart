@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import '../../core/constants/app_colors.dart';
-import '../../models/models.dart';
-import 'quiz_controller.dart';
-import '../result/result_screen.dart';
+import '../../inti/konstanta/warna_aplikasi.dart';
+import '../../model/model.dart';
+import 'pengendali_kuis.dart';
+import '../hasil/layar_hasil.dart';
 
+// Kelas QuizScreen menampilkan halaman interaktif kuis pengerjaan soal level tertentu.
 class QuizScreen extends ConsumerStatefulWidget {
   final LevelModel level;
   const QuizScreen({super.key, required this.level});
@@ -27,7 +28,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   Widget build(BuildContext context) {
     final state = ref.watch(quizProvider(widget.level));
 
-    // Listen for finish state
+    // Mendengarkan perubahan status untuk menavigasi ke layar hasil jika kuis selesai
     ref.listen(quizProvider(widget.level), (previous, next) {
       if (next.isFinished) {
         Navigator.of(context).pushReplacement(
@@ -43,6 +44,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       }
     });
 
+    // Menangani kondisi jika tidak terdapat pertanyaan
     if (state.level.questions.isEmpty) {
       return const Scaffold(body: Center(child: Text('Tidak ada soal.')));
     }
@@ -57,12 +59,14 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
             padding: const EdgeInsets.all(24.0),
             child: Column(
               children: [
-                _buildTopBar(context, state),
+                _buildTopBar(context, state), // Bilah atas penunjuk nomor soal dan tombol keluar
                 const SizedBox(height: 20),
-                _buildTimer(context, state),
+                _buildTimer(context, state), // Informasi waktu pengerjaan
                 const SizedBox(height: 40),
-                _buildQuestionArea(context, currentQuestion, state.currentIndex + 1),
+                _buildQuestionArea(context, currentQuestion, state.currentIndex + 1), // Area teks pertanyaan
                 const SizedBox(height: 40),
+                
+                // Menampilkan komponen berdasarkan tipe soal (Pilihan Ganda atau Essay)
                 if (currentQuestion.type == QuestionType.mcq)
                   _buildMCQOptions(context, state, ref, currentQuestion)
                 else
@@ -76,6 +80,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     );
   }
 
+  // Widget bar bagian atas layar kuis
   Widget _buildTopBar(BuildContext context, QuizState state) {
     return Column(
       children: [
@@ -84,7 +89,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           children: [
             IconButton(
               icon: const Icon(Icons.close, color: Colors.white),
-              onPressed: () => Navigator.of(context).pop(),
+              onPressed: () => Navigator.of(context).pop(), // Menutup kuis dan kembali ke daftar tingkat
             ),
             Expanded(
               child: Center(
@@ -104,6 +109,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           ],
         ),
         const SizedBox(height: 16),
+        // Indikator linear kemajuan soal kuis
         LinearProgressIndicator(
           value: (state.currentIndex + 1) / state.level.questions.length,
           backgroundColor: AppColors.surface,
@@ -115,6 +121,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     );
   }
 
+  // Widget informasi sisa/jumlah waktu yang digunakan
   Widget _buildTimer(BuildContext context, QuizState state) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -129,6 +136,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     );
   }
 
+  // Widget penampil teks pertanyaan kuis dengan micro-animation
   Widget _buildQuestionArea(BuildContext context, QuestionModel question, int index) {
     return Column(
       children: [
@@ -156,6 +164,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     );
   }
 
+  // Widget penyusun pilihan jawaban soal Pilihan Ganda (MCQ) beserta evaluasi warna benar/salah
   Widget _buildMCQOptions(BuildContext context, QuizState state, WidgetRef ref, QuestionModel question) {
     return Column(
       children: List.generate(question.options?.length ?? 0, (index) {
@@ -166,6 +175,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         Color borderColor = Colors.white.withOpacity(0.1);
         Color bgColor = Colors.transparent;
 
+        // Mewarnai border dan latar belakang pilihan jawaban berdasarkan hasil evaluasi
         if (state.isAnswered) {
           if (isCorrect) {
             borderColor = AppColors.success;
@@ -193,7 +203,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
               child: Row(
                 children: [
                   Text(
-                    String.fromCharCode(65 + index) + '.',
+                    String.fromCharCode(65 + index) + '.', // Label pilihan: A, B, C, D...
                     style: TextStyle(
                       color: isSelected ? AppColors.primary : Colors.grey,
                       fontWeight: FontWeight.bold,
@@ -210,12 +220,13 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
               ),
             ),
           ).animate(target: isSelected && state.isAnswered && !isCorrect ? 1 : 0)
-           .shake(hz: 10, curve: Curves.easeInOut),
+           .shake(hz: 10, curve: Curves.easeInOut), // Efek animasi getar jika memilih pilihan salah
         );
       }),
     );
   }
 
+  // Widget penyusun form input jawaban soal Essay (Uraian)
   Widget _buildEssayInput(BuildContext context, QuizState state, WidgetRef ref) {
     return Column(
       children: [
@@ -255,6 +266,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
             child: const Text('Kirim Jawaban'),
           ),
         ),
+        // Menampilkan teks informasi jawaban benar/salah setelah submit kuis
         if (state.isAnswered) ...[
            const SizedBox(height: 16),
            Text(
