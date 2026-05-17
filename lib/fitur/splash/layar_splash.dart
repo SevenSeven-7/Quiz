@@ -41,6 +41,11 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+    final isTabletOrDesktop = screenWidth > 600;
+    final logoSize = MediaQuery.of(context).size.shortestSide * (isTabletOrDesktop ? 0.3 : 0.4);
+    final fontSize = isTabletOrDesktop ? 56.0 : 42.0;
+
     return Scaffold(
       body: Center(
         child: Column(
@@ -49,21 +54,24 @@ class _SplashScreenState extends State<SplashScreen> {
             // Menampilkan logo kuis dengan animasi fade-in dan scaling
             Image.asset(
               'assets/images/logo.png',
-              width: MediaQuery.of(context).size.shortestSide * 0.4,
-              height: MediaQuery.of(context).size.shortestSide * 0.4,
+              width: logoSize,
+              height: logoSize,
               fit: BoxFit.contain,
             )
                 .animate()
                 .fadeIn(duration: 800.ms)
                 .scale(delay: 200.ms, duration: 600.ms),
             const SizedBox(height: 24),
-            // Teks judul aplikasi dengan animasi geser dan pudar
-            Text(
-              'QUIZ',
-              style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                    letterSpacing: 8,
-                    fontSize: 42,
-                  ),
+            // Teks judul aplikasi dengan animasi geser dan pudar, terpusat sempurna
+            Padding(
+              padding: const EdgeInsets.only(left: 8.0), // Menyimbangkan letterSpacing agar posisi teks simetris di tengah
+              child: Text(
+                'QUIZ',
+                style: Theme.of(context).textTheme.displayLarge?.copyWith(
+                      letterSpacing: 8,
+                      fontSize: fontSize,
+                    ),
+              ),
             )
                 .animate()
                 .fadeIn(delay: 600.ms, duration: 800.ms)
