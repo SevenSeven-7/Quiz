@@ -17,7 +17,7 @@ class HomeScreen extends ConsumerWidget {
 
     return Scaffold(
       body: SafeArea(
-        child: Padding(
+        child: SingleChildScrollView(
           padding: const EdgeInsets.all(24.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -34,9 +34,7 @@ class HomeScreen extends ConsumerWidget {
                     ),
               ),
               const SizedBox(height: 16),
-              Expanded(
-                child: _buildPartList(context, ref), // Daftar bagian kuis
-              ),
+              _buildPartList(context, ref), // Daftar bagian kuis
             ],
           ),
         ),
@@ -181,6 +179,8 @@ class HomeScreen extends ConsumerWidget {
         final parts = snapshot.data!;
 
         return ListView.separated(
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
           itemCount: parts.length,
           separatorBuilder: (context, index) => const SizedBox(height: 16),
           itemBuilder: (context, index) {

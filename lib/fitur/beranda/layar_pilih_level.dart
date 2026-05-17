@@ -36,11 +36,21 @@ class LevelSelectionScreen extends ConsumerWidget {
 
           final levels = snapshot.data!;
 
+          final width = MediaQuery.of(context).size.width;
+          int crossAxisCount = 5;
+          if (width > 1200) {
+            crossAxisCount = 12;
+          } else if (width > 900) {
+            crossAxisCount = 10;
+          } else if (width > 600) {
+            crossAxisCount = 8;
+          }
+
           return Padding(
             padding: const EdgeInsets.all(16.0),
             child: GridView.builder(
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 5, // Grid 5 kolom untuk nomor kuis
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: crossAxisCount, // Grid dinamis berdasarkan lebar layar peranti
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 10,
               ),
