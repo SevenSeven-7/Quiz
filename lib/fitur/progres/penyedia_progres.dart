@@ -34,7 +34,7 @@ class ProgressState {
     if (stars <= 150) return 'Pelajar Tangguh';
     if (stars <= 300) return 'Pikir Cepat';
     if (stars <= 450) return 'Cerdas Cermat';
-    if (stars <= 570) return 'Master Kuis';
+    if (stars <= 570) return 'Master Quiz';
     return 'Genius Sejati';
   }
 

@@ -27,7 +27,7 @@ class HomeScreen extends ConsumerWidget {
               _buildScoreCard(context, ref), // Kartu akumulasi bintang & tingkat kecerdasan dinamis
               const SizedBox(height: 32),
               Text(
-                'Pilih Kategori Kuis',
+                'Pilih Kategori Quiz',
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.2,

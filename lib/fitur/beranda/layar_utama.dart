@@ -183,7 +183,7 @@ class ProfileScreen extends ConsumerWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                  'Masukkan nama baru Anda untuk memperbarui profil kuis.',
+                  'Masukkan nama baru Anda untuk memperbarui profil Quiz.',
                   style: Theme.of(context).textTheme.bodySmall?.copyWith(
                         color: AppColors.textSecondary,
                       ),
