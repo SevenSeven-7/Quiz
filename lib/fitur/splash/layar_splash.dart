@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
-import '../beranda/layar_beranda.dart';
+import 'layar_buat_nama.dart';
+import '../beranda/layar_utama.dart';
 
 // Kelas SplashScreen mengatur kemunculan layar animasi pembuka aplikasi kuis pertama kali.
 class SplashScreen extends StatefulWidget {
@@ -22,9 +24,18 @@ class _SplashScreenState extends State<SplashScreen> {
   _navigateToHome() async {
     await Future.delayed(const Duration(seconds: 2));
     if (mounted) {
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const HomeScreen()),
-      );
+      final prefs = await SharedPreferences.getInstance();
+      final playerName = prefs.getString('player_name');
+
+      if (playerName != null && playerName.trim().isNotEmpty) {
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => const MainNavigationScreen()),
+        );
+      } else {
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => const LayarBuatNama()),
+        );
+      }
     }
   }
 

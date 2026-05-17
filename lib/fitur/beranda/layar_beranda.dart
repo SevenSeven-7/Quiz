@@ -5,6 +5,7 @@ import '../../inti/layanan/layanan_firebase.dart';
 import '../../model/model.dart';
 import '../progres/penyedia_progres.dart';
 import 'layar_pilih_level.dart';
+import 'layar_utama.dart'; // Mengimpor playerNameProvider
 
 // Kelas HomeScreen menyusun tampilan utama Halaman Beranda Kuis.
 class HomeScreen extends ConsumerWidget {
@@ -12,6 +13,8 @@ class HomeScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final playerName = ref.watch(playerNameProvider);
+
     return Scaffold(
       body: SafeArea(
         child: Padding(
@@ -19,12 +22,12 @@ class HomeScreen extends ConsumerWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              _buildHeader(context), // Menyusun salam pembuka
+              _buildHeader(context, playerName), // Menyusun salam pembuka dinamis
+              const SizedBox(height: 24),
+              _buildScoreCard(context, ref), // Kartu akumulasi bintang & tingkat kecerdasan dinamis
               const SizedBox(height: 32),
-              _buildScoreCard(context, ref), // Kartu akumulasi bintang/skor
-              const SizedBox(height: 40),
               Text(
-                'Pilih Bagian',
+                'Pilih Kategori Kuis',
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.2,
@@ -32,7 +35,7 @@ class HomeScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 16),
               Expanded(
-                child: _buildPartList(context, ref), // Daftar bagian kuis (Bahasa Indonesia, Matematika, dll.)
+                child: _buildPartList(context, ref), // Daftar bagian kuis
               ),
             ],
           ),
@@ -41,19 +44,24 @@ class HomeScreen extends ConsumerWidget {
     );
   }
 
-  // Widget untuk menampilkan teks salam pembuka di bagian atas layar.
-  Widget _buildHeader(BuildContext context) {
+  // Widget untuk menampilkan teks salam pembuka di bagian atas layar secara personal.
+  Widget _buildHeader(BuildContext context, String playerName) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Halo, Pemain',
-          style: Theme.of(context).textTheme.bodyMedium,
+          'Halo, $playerName',
+          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                color: AppColors.primary,
+                fontWeight: FontWeight.bold,
+              ),
         ),
         const SizedBox(height: 4),
         Text(
-          'Siap tantangan hari ini?',
-          style: Theme.of(context).textTheme.displayLarge,
+          'Siap asah otakmu hari ini?',
+          style: Theme.of(context).textTheme.displayLarge?.copyWith(
+                fontSize: 24,
+              ),
         ),
       ],
     );
@@ -62,37 +70,94 @@ class HomeScreen extends ConsumerWidget {
   // Widget kartu penunjuk total bintang yang telah berhasil dikumpulkan oleh pemain.
   Widget _buildScoreCard(BuildContext context, WidgetRef ref) {
     final progress = ref.watch(progressProvider);
-    int totalStars = 0;
-    progress.levelStars.forEach((key, value) => totalStars += value);
+    final totalStars = progress.totalStars;
+    final gelar = progress.gelarKecerdasan;
+    final warnaGelar = progress.warnaGelar;
 
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.all(24),
+      padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: AppColors.surface,
         borderRadius: BorderRadius.circular(16),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const Icon(
-            Icons.stars,
-            color: Colors.amber,
-            size: 32,
+        border: Border.all(color: warnaGelar.withOpacity(0.3), width: 1.5),
+        boxShadow: [
+          BoxShadow(
+            color: warnaGelar.withOpacity(0.05),
+            blurRadius: 10,
+            offset: const Offset(0, 4),
           ),
-          const SizedBox(width: 12),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
             children: [
-              Text(
-                'Bintang Terkumpul',
-                style: Theme.of(context).textTheme.bodyMedium,
+              Container(
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: warnaGelar.withOpacity(0.1),
+                  shape: BoxShape.circle,
+                ),
+                child: Icon(
+                  Icons.psychology,
+                  color: warnaGelar,
+                  size: 28,
+                ),
+              ),
+              const SizedBox(width: 12),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Tingkat Kecerdasan',
+                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                          color: AppColors.textSecondary,
+                          letterSpacing: 0.8,
+                          fontSize: 11,
+                        ),
+                  ),
+                  Text(
+                    gelar,
+                    style: Theme.of(context).textTheme.displayLarge?.copyWith(
+                          fontSize: 20,
+                          color: warnaGelar,
+                          fontWeight: FontWeight.bold,
+                        ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+          const SizedBox(height: 14),
+          const Divider(color: Colors.white10, height: 1),
+          const SizedBox(height: 14),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(
+                children: [
+                  const Icon(
+                    Icons.stars,
+                    color: Colors.amber,
+                    size: 18,
+                  ),
+                  const SizedBox(width: 8),
+                  Text(
+                    'Bintang Terkumpul',
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          color: Colors.white70,
+                        ),
+                  ),
+                ],
               ),
               Text(
-                '$totalStars',
-                style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                      fontSize: 28,
-                      color: Colors.white,
+                '$totalStars ⭐',
+                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.amber,
+                      fontSize: 16,
                     ),
               ),
             ],
@@ -135,7 +200,7 @@ class HomeScreen extends ConsumerWidget {
                   : null,
               borderRadius: BorderRadius.circular(16),
               child: Container(
-                padding: const EdgeInsets.all(24),
+                padding: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
                   color: isUnlocked ? AppColors.surface : AppColors.surface.withOpacity(0.3),
                   borderRadius: BorderRadius.circular(16),
@@ -154,7 +219,7 @@ class HomeScreen extends ConsumerWidget {
                         color: isUnlocked ? AppColors.primary : Colors.grey,
                       ),
                     ),
-                    const SizedBox(width: 20),
+                    const SizedBox(width: 16),
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -179,7 +244,7 @@ class HomeScreen extends ConsumerWidget {
                     if (!isUnlocked)
                       const Icon(Icons.lock, color: Colors.grey)
                     else
-                      const Icon(Icons.arrow_forward_ios, size: 16, color: AppColors.primary),
+                      const Icon(Icons.arrow_forward_ios, size: 14, color: AppColors.primary),
                   ],
                 ),
               ),

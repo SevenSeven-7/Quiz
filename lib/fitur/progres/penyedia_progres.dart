@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../model/model.dart';
 
@@ -17,6 +18,47 @@ class ProgressState {
     required this.unlockedLevels,
     required this.unlockedParts,
   });
+
+  // Total bintang yang berhasil dikumpulkan pemain
+  int get totalStars {
+    int total = 0;
+    levelStars.forEach((key, value) => total += value);
+    return total;
+  }
+
+  // Menentukan gelar kecerdasan berdasarkan perolehan bintang
+  String get gelarKecerdasan {
+    final stars = totalStars;
+    if (stars <= 15) return 'Calon Juara';
+    if (stars <= 60) return 'Pencari Ilmu';
+    if (stars <= 150) return 'Pelajar Tangguh';
+    if (stars <= 300) return 'Pikir Cepat';
+    if (stars <= 450) return 'Cerdas Cermat';
+    if (stars <= 570) return 'Master Kuis';
+    return 'Genius Sejati';
+  }
+
+  // Menentukan warna representasi untuk gelar kecerdasan
+  Color get warnaGelar {
+    final stars = totalStars;
+    if (stars <= 15) return const Color(0xFF95A5A6); // Abu-abu
+    if (stars <= 60) return const Color(0xFF3498DB); // Biru muda
+    if (stars <= 150) return const Color(0xFF2ECC71); // Hijau
+    if (stars <= 300) return const Color(0xFF9B59B6); // Ungu
+    if (stars <= 450) return const Color(0xFFE67E22); // Oranye tembaga
+    if (stars <= 570) return const Color(0xFFF1C40F); // Kuning emas
+    return const Color(0xFFE74C3C); // Merah membara
+  }
+
+  // Jumlah level Bahasa Indonesia (Bagian 1) yang berhasil diselesaikan
+  int get indonesianSolved {
+    return levelStars.keys.where((k) => k.startsWith('p1_l') && (levelStars[k] ?? 0) > 0).length;
+  }
+
+  // Jumlah level Matematika (Bagian 2) yang berhasil diselesaikan
+  int get mathSolved {
+    return levelStars.keys.where((k) => k.startsWith('p2_l') && (levelStars[k] ?? 0) > 0).length;
+  }
 
   // Metode untuk menyalin status kemajuan dengan beberapa perubahan (copyWith pattern)
   ProgressState copyWith({
