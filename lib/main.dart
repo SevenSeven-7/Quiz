@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'inti/tema/tema_aplikasi.dart';
 import 'fitur/splash/layar_splash.dart';
+import 'inti/layanan/layanan_firebase.dart';
+import 'firebase_options.dart';
 
 // Fungsi utama (entry point) aplikasi kuis Flutter
 void main() async {
@@ -10,8 +12,12 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   
   try {
-    // Menginisialisasi Firebase Firestore secara asinkron
-    await Firebase.initializeApp();
+    // Menginisialisasi Firebase Firestore secara asinkron dengan konfigurasi platform
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+    // Menjalankan seeder data kuis secara non-blocking di latar belakang
+    FirebaseService().seedDataIfNeeded();
   } catch (e) {
     debugPrint('Firebase gagal diinisialisasi: $e');
   }
