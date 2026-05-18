@@ -20,9 +20,9 @@ class _SplashScreenState extends State<SplashScreen> {
     _navigateToHome(); // Memulai proses hitung mundur navigasi
   }
 
-  // Fungsi pengatur penundaan durasi splash screen 2 detik sebelum masuk ke Halaman Beranda utama
+  // Fungsi pengatur penundaan durasi splash screen 2 detik sebelum masuk ke Halaman Beranda utama agar logo neon tampil indah
   _navigateToHome() async {
-    await Future.delayed(const Duration(seconds: 2));
+    await Future.delayed(const Duration(milliseconds: 2000));
     if (mounted) {
       final prefs = await SharedPreferences.getInstance();
       final playerName = prefs.getString('player_name');
@@ -43,40 +43,42 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
     final isTabletOrDesktop = screenWidth > 600;
-    final logoSize = MediaQuery.of(context).size.shortestSide * (isTabletOrDesktop ? 0.3 : 0.4);
+    final logoSize = MediaQuery.of(context).size.shortestSide * (isTabletOrDesktop ? 0.25 : 0.35);
     final fontSize = isTabletOrDesktop ? 56.0 : 42.0;
 
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            // Menampilkan logo kuis dengan animasi fade-in dan scaling
-            Image.asset(
-              'assets/images/logo.png',
-              width: logoSize,
-              height: logoSize,
-              fit: BoxFit.contain,
-            )
-                .animate()
-                .fadeIn(duration: 800.ms)
-                .scale(delay: 200.ms, duration: 600.ms),
-            const SizedBox(height: 24),
-            // Teks judul aplikasi dengan animasi geser dan pudar, terpusat sempurna
-            Padding(
-              padding: const EdgeInsets.only(left: 8.0), // Menyimbangkan letterSpacing agar posisi teks simetris di tengah
-              child: Text(
-                'QUIZ',
-                style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                      letterSpacing: 8,
-                      fontSize: fontSize,
-                    ),
-              ),
-            )
-                .animate()
-                .fadeIn(delay: 600.ms, duration: 800.ms)
-                .slideY(begin: 0.2, end: 0),
-          ],
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // Menampilkan logo kuis dengan animasi fade-in dan scaling
+              Image.asset(
+                'assets/images/logo.png',
+                width: logoSize,
+                height: logoSize,
+                fit: BoxFit.contain,
+              )
+                  .animate()
+                  .fadeIn(duration: 800.ms)
+                  .scale(delay: 200.ms, duration: 600.ms),
+              const SizedBox(height: 80), // Memperlebar jarak dengan sangat aman agar logo dan teks tidak bertindih
+              // Teks judul aplikasi dengan nama Quiz menggunakan Q kapital
+              Padding(
+                padding: const EdgeInsets.only(left: 8.0), // Menyimbangkan letterSpacing agar posisi teks simetris di tengah
+                child: Text(
+                  'Quiz',
+                  style: Theme.of(context).textTheme.displayLarge?.copyWith(
+                        letterSpacing: 8,
+                        fontSize: fontSize,
+                      ),
+                ),
+              )
+                  .animate()
+                  .fadeIn(delay: 600.ms, duration: 800.ms)
+                  .slideY(begin: 0.2, end: 0),
+            ],
+          ),
         ),
       ),
     );
