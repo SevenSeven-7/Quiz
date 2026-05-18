@@ -6,13 +6,20 @@ import 'fitur/splash/layar_splash.dart';
 import 'inti/layanan/layanan_firebase.dart';
 import 'firebase_options.dart';
 
-// Fungsi utama (entry point) aplikasi kuis Flutter
 void main() async {
   // Memastikan binding framework Flutter telah terinisialisasi sebelum proses sinkronisasi lainnya
   WidgetsFlutterBinding.ensureInitialized();
   
+  // Menjalankan runApp terlebih dahulu agar mesin rendering Flutter langsung memproses SplashScreen
+  // dan mencegah pengguna melihat layar hitam bawaan Android terlalu lama saat inisialisasi Firebase.
+  runApp(
+    const ProviderScope(
+      child: QuizApp(),
+    ),
+  );
+  
   try {
-    // Menginisialisasi Firebase Firestore secara asinkron dengan konfigurasi platform
+    // Menginisialisasi Firebase secara paralel di latar belakang tanpa menghambat rendering UI awal
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
     );
@@ -21,13 +28,6 @@ void main() async {
   } catch (e) {
     debugPrint('Firebase gagal diinisialisasi: $e');
   }
-  
-  runApp(
-    // Membungkus seluruh aplikasi kuis dalam ProviderScope untuk memfungsikan Riverpod State Management
-    const ProviderScope(
-      child: QuizApp(),
-    ),
-  );
 }
 
 // Widget utama root yang menyusun kerangka dasar MaterialApp
