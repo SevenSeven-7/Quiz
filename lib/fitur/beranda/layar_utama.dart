@@ -239,6 +239,10 @@ class ProfileScreen extends ConsumerWidget {
                 await prefs.setString('player_name', newName);
                 
                 ref.read(playerNameProvider.notifier).state = newName;
+                
+                // Menyinkronkan data progres lokal dengan awan Firestore berdasarkan nama pemain baru
+                await ref.read(progressProvider.notifier).syncWithFirebase(newName);
+                
                 if (context.mounted) {
                   Navigator.of(context).pop();
                   ScaffoldMessenger.of(context).showSnackBar(

@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
 import '../beranda/layar_utama.dart';
+import '../progres/penyedia_progres.dart';
 
 // Kelas LayarBuatNama mengelola input nama pemain pertama kali sebelum bermain kuis.
-class LayarBuatNama extends StatefulWidget {
+class LayarBuatNama extends ConsumerStatefulWidget {
   const LayarBuatNama({super.key});
 
   @override
-  State<LayarBuatNama> createState() => _LayarBuatNamaState();
+  ConsumerState<LayarBuatNama> createState() => _LayarBuatNamaState();
 }
 
-class _LayarBuatNamaState extends State<LayarBuatNama> {
+class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> {
   final TextEditingController _nameController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
   bool _isLoading = false;
@@ -25,8 +27,12 @@ class _LayarBuatNamaState extends State<LayarBuatNama> {
       _isLoading = true;
     });
 
+    final playerName = _nameController.text.trim();
     final prefs = await SharedPreferences.getInstance();
-    await prefs.setString('player_name', _nameController.text.trim());
+    await prefs.setString('player_name', playerName);
+
+    // Mengunduh dan menyelaraskan data progres dari Firestore jika ada
+    await ref.read(progressProvider.notifier).syncWithFirebase(playerName);
 
     if (mounted) {
       Navigator.of(context).pushReplacement(
