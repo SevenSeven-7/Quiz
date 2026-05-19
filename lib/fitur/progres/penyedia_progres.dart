@@ -281,6 +281,36 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
       debugPrint('Gagal menyimpan progres kuis baru $e');
     }
   }
+
+  // Fungsi untuk mereset seluruh progres kuis ke keadaan awal
+  Future<void> resetProgress() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.remove('quiz_level_stars');
+      await prefs.remove('quiz_unlocked_levels');
+      await prefs.remove('quiz_unlocked_parts');
+
+      state = ProgressState(
+        levelStars: {},
+        unlockedLevels: {'p1_l1': true, 'p2_l1': true},
+        unlockedParts: {'p1', 'p2'},
+      );
+
+      // Reset juga di Firebase jika tersedia
+      final playerName = prefs.getString('player_name') ?? '';
+      if (playerName.isNotEmpty && playerName != 'Pemain' && _isFirebaseAvailable) {
+        await FirebaseFirestore.instance.collection('user_progress').doc(playerName).set({
+          'playerName': playerName,
+          'levelStars': {},
+          'unlockedLevels': {'p1_l1': true, 'p2_l1': true},
+          'unlockedParts': ['p1', 'p2'],
+          'lastUpdated': FieldValue.serverTimestamp(),
+        });
+      }
+    } catch (e) {
+      debugPrint('Gagal mereset progres kuis $e');
+    }
+  }
 }
 
 // Provider Riverpod untuk mendistribusikan status kemajuan (progressProvider) ke seluruh widget.
