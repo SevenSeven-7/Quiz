@@ -4,7 +4,6 @@ import '../konstanta/warna_aplikasi.dart';
 
 // Kelas AppTheme bertanggung jawab menyusun konfigurasi tema visual seluruh aplikasi.
 class AppTheme {
-  // Mengembalikan data konfigurasi tema gelap (Dark Theme) untuk aplikasi.
   static ThemeData get darkTheme {
     return ThemeData(
       brightness: Brightness.dark,
@@ -12,27 +11,34 @@ class AppTheme {
       primaryColor: AppColors.primary,
       colorScheme: const ColorScheme.dark(
         primary: AppColors.primary,
+        secondary: AppColors.accent,
         surface: AppColors.surface,
         onPrimary: Colors.white,
         onSurface: Colors.white,
       ),
-      // Mengatur font global menggunakan Google Fonts - Inter
-      textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme).copyWith(
-        displayLarge: const TextStyle(
-          fontSize: 24,
+      // Font global menggunakan Google Fonts - Outfit (lebih modern)
+      textTheme: GoogleFonts.outfitTextTheme(ThemeData.dark().textTheme).copyWith(
+        displayLarge: GoogleFonts.outfit(
+          fontSize: 28,
           fontWeight: FontWeight.bold,
           color: AppColors.textPrimary,
+          letterSpacing: -0.5,
         ),
-        bodyLarge: const TextStyle(
+        bodyLarge: GoogleFonts.outfit(
           fontSize: 16,
           color: AppColors.textPrimary,
+          fontWeight: FontWeight.w500,
         ),
-        bodyMedium: const TextStyle(
+        bodyMedium: GoogleFonts.outfit(
           fontSize: 14,
           color: AppColors.textSecondary,
         ),
+        bodySmall: GoogleFonts.outfit(
+          fontSize: 12,
+          color: AppColors.textSecondary,
+        ),
       ),
-      // Tema bawaan untuk tombol Elevated Button di seluruh layar kuis
+      // Tema tombol Elevated dengan gradien
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primary,
@@ -41,20 +47,36 @@ class AppTheme {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
           ),
-          textStyle: const TextStyle(
-            fontSize: 18,
+          textStyle: GoogleFonts.outfit(
+            fontSize: 16,
             fontWeight: FontWeight.bold,
+            letterSpacing: 0.5,
           ),
+          elevation: 0,
         ),
       ),
-      // Tema bawaan untuk tampilan Card (kartu kuis)
+      // Tema kartu glassmorphism
       cardTheme: CardThemeData(
         color: AppColors.surface,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(20),
         ),
         elevation: 0,
       ),
+      // Tema AppBar transparan
+      appBarTheme: AppBarTheme(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: true,
+        titleTextStyle: GoogleFonts.outfit(
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+          color: Colors.white,
+        ),
+        iconTheme: const IconThemeData(color: Colors.white),
+      ),
+      // Tema ikon
+      iconTheme: const IconThemeData(color: AppColors.textPrimary),
     );
   }
 }
