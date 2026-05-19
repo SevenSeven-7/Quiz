@@ -6,7 +6,6 @@ import '../../model/model.dart';
 import 'pengendali_kuis.dart';
 import '../hasil/layar_hasil.dart';
 
-// Kelas QuizScreen menampilkan halaman interaktif kuis pengerjaan soal level tertentu.
 class QuizScreen extends ConsumerStatefulWidget {
   final LevelModel level;
   const QuizScreen({super.key, required this.level});
@@ -15,12 +14,21 @@ class QuizScreen extends ConsumerStatefulWidget {
   ConsumerState<QuizScreen> createState() => _QuizScreenState();
 }
 
-class _QuizScreenState extends ConsumerState<QuizScreen> {
+class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProviderStateMixin {
   final TextEditingController _essayController = TextEditingController();
+  late AnimationController _timerController;
+
+  @override
+  void initState() {
+    super.initState();
+    _timerController = AnimationController(vsync: this, duration: const Duration(seconds: 60))
+      ..forward();
+  }
 
   @override
   void dispose() {
     _essayController.dispose();
+    _timerController.dispose();
     super.dispose();
   }
 
@@ -28,162 +36,255 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   Widget build(BuildContext context) {
     final state = ref.watch(quizProvider(widget.level));
 
-    // Mendengarkan perubahan status untuk menavigasi ke layar hasil jika kuis selesai
     ref.listen(quizProvider(widget.level), (previous, next) {
       if (next.isFinished) {
         Navigator.of(context).pushReplacement(
-          MaterialPageRoute(
-            builder: (context) => ResultScreen(
+          PageRouteBuilder(
+            transitionDuration: const Duration(milliseconds: 500),
+            pageBuilder: (_, __, ___) => ResultScreen(
               score: next.score,
               totalQuestions: next.level.questions.length,
               stars: next.starsEarned,
               partId: widget.level.partId,
             ),
+            transitionsBuilder: (_, animation, __, child) =>
+                FadeTransition(opacity: animation, child: child),
           ),
         );
       }
     });
 
-    // Menangani kondisi jika tidak terdapat pertanyaan
     if (state.level.questions.isEmpty) {
-      return const Scaffold(body: Center(child: Text('Tidak ada soal.')));
+      return Scaffold(
+        backgroundColor: AppColors.background,
+        body: const Center(child: Text('Tidak ada soal.', style: TextStyle(color: Colors.white))),
+      );
     }
 
     final currentQuestion = state.level.questions[state.currentIndex];
+    final progress = (state.currentIndex + 1) / state.level.questions.length;
 
     return Scaffold(
-      resizeToAvoidBottomInset: true,
-      body: SafeArea(
-        child: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.all(24.0),
-            child: Column(
-              children: [
-                _buildTopBar(context, state), // Bilah atas penunjuk nomor soal dan tombol keluar
-                const SizedBox(height: 20),
-                _buildTimer(context, state), // Informasi waktu pengerjaan
-                const SizedBox(height: 40),
-                _buildQuestionArea(context, currentQuestion, state.currentIndex + 1), // Area teks pertanyaan
-                const SizedBox(height: 40),
-                
-                // Menampilkan komponen berdasarkan tipe soal (Pilihan Ganda atau Essay)
-                if (currentQuestion.type == QuestionType.mcq)
-                  _buildMCQOptions(context, state, ref, currentQuestion)
-                else
-                  _buildEssayInput(context, state, ref),
-                const SizedBox(height: 20),
-              ],
-            ),
+      body: Container(
+        decoration: const BoxDecoration(gradient: AppColors.backgroundGradient),
+        child: SafeArea(
+          child: Column(
+            children: [
+              // Top Bar
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        GestureDetector(
+                          onTap: () => _showQuitDialog(context),
+                          child: Container(
+                            padding: const EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                              color: AppColors.surfaceLight,
+                              borderRadius: BorderRadius.circular(12),
+                              border: Border.all(color: Colors.white10),
+                            ),
+                            child: const Icon(Icons.close_rounded, color: Colors.white, size: 18),
+                          ),
+                        ),
+                        Expanded(
+                          child: Center(
+                            child: Text(
+                              'Level ${widget.level.order}',
+                              style: const TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 17,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                          decoration: BoxDecoration(
+                            color: AppColors.primary.withOpacity(0.15),
+                            borderRadius: BorderRadius.circular(20),
+                            border: Border.all(color: AppColors.primary.withOpacity(0.3)),
+                          ),
+                          child: Text(
+                            '${state.currentIndex + 1}/${state.level.questions.length}',
+                            style: const TextStyle(
+                              color: AppColors.primary,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 13,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 14),
+                    // Progress Bar Gradien
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(8),
+                      child: AnimatedContainer(
+                        duration: const Duration(milliseconds: 400),
+                        curve: Curves.easeOut,
+                        child: LinearProgressIndicator(
+                          value: progress,
+                          backgroundColor: Colors.white10,
+                          valueColor: const AlwaysStoppedAnimation<Color>(AppColors.primary),
+                          minHeight: 6,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+              Expanded(
+                child: SingleChildScrollView(
+                  padding: const EdgeInsets.fromLTRB(20, 24, 20, 20),
+                  child: Column(
+                    children: [
+                      // Timer
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Icon(Icons.timer_outlined, size: 14, color: AppColors.textSecondary),
+                          const SizedBox(width: 6),
+                          Text(
+                            '${state.timeSpent}s',
+                            style: const TextStyle(color: AppColors.textSecondary, fontSize: 13),
+                          ),
+                        ],
+                      ).animate().fadeIn(duration: 300.ms),
+
+                      const SizedBox(height: 24),
+
+                      // Tipe soal badge
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                        decoration: BoxDecoration(
+                          gradient: AppColors.primaryGradient,
+                          borderRadius: BorderRadius.circular(20),
+                          boxShadow: AppColors.primaryGlow,
+                        ),
+                        child: Text(
+                          currentQuestion.type == QuestionType.mcq ? 'Pilihan Ganda' : 'Uraian',
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12,
+                            letterSpacing: 0.5,
+                          ),
+                        ),
+                      ).animate().fadeIn(delay: 100.ms),
+
+                      const SizedBox(height: 24),
+
+                      // Kartu Soal glassmorphism
+                      Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.all(24),
+                        decoration: BoxDecoration(
+                          color: AppColors.surfaceLight.withOpacity(0.7),
+                          borderRadius: BorderRadius.circular(24),
+                          border: Border.all(
+                            color: AppColors.primary.withOpacity(0.2),
+                            width: 1.5,
+                          ),
+                          boxShadow: [
+                            BoxShadow(
+                              color: AppColors.primary.withOpacity(0.08),
+                              blurRadius: 24,
+                              spreadRadius: 1,
+                            ),
+                          ],
+                        ),
+                        child: Text(
+                          currentQuestion.text,
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(
+                            fontSize: 20,
+                            height: 1.5,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ).animate(key: ValueKey(state.currentIndex))
+                          .fadeIn(duration: 300.ms)
+                          .slideY(begin: 0.1, end: 0, duration: 300.ms),
+
+                      const SizedBox(height: 28),
+
+                      // Pilihan jawaban
+                      if (currentQuestion.type == QuestionType.mcq)
+                        _buildMCQOptions(context, state, ref, currentQuestion)
+                      else
+                        _buildEssayInput(context, state, ref),
+                    ],
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ),
     );
   }
 
-  // Widget bar bagian atas layar kuis
-  Widget _buildTopBar(BuildContext context, QuizState state) {
-    return Column(
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            IconButton(
-              icon: const Icon(Icons.close, color: Colors.white),
-              onPressed: () => Navigator.of(context).pop(), // Menutup kuis dan kembali ke daftar tingkat
-            ),
-            Expanded(
-              child: Center(
-                child: FittedBox(
-                  fit: BoxFit.scaleDown,
-                  child: Text(
-                    'Level ${widget.level.order}',
-                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                  ),
-                ),
-              ),
-            ),
-            Text(
-              '${state.currentIndex + 1} / ${state.level.questions.length}',
-              style: const TextStyle(fontWeight: FontWeight.bold),
-            ),
-          ],
+  void _showQuitDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: AppColors.surface,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+          side: BorderSide(color: AppColors.primary.withOpacity(0.3)),
         ),
-        const SizedBox(height: 16),
-        // Indikator linear kemajuan soal kuis
-        LinearProgressIndicator(
-          value: (state.currentIndex + 1) / state.level.questions.length,
-          backgroundColor: AppColors.surface,
-          color: AppColors.primary,
-          minHeight: 6,
-          borderRadius: BorderRadius.circular(10),
+        title: const Text('Keluar dari Quiz?', style: TextStyle(color: Colors.white)),
+        content: const Text(
+          'Progres soalmu saat ini akan hilang.',
+          style: TextStyle(color: AppColors.textSecondary),
         ),
-      ],
-    );
-  }
-
-  // Widget informasi sisa/jumlah waktu yang digunakan
-  Widget _buildTimer(BuildContext context, QuizState state) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        const Icon(Icons.timer_outlined, size: 16, color: Colors.grey),
-        const SizedBox(width: 8),
-        Text(
-          'Waktu: ${state.timeSpent}s',
-          style: const TextStyle(color: Colors.grey, fontWeight: FontWeight.w500),
-        ),
-      ],
-    );
-  }
-
-  // Widget penampil teks pertanyaan kuis dengan micro-animation
-  Widget _buildQuestionArea(BuildContext context, QuestionModel question, int index) {
-    return Column(
-      children: [
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-          decoration: BoxDecoration(
-            color: AppColors.primary.withOpacity(0.1),
-            borderRadius: BorderRadius.circular(20),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Lanjutkan', style: TextStyle(color: AppColors.primary)),
           ),
-          child: Text(
-            question.type == QuestionType.mcq ? 'Pilihan Ganda' : 'Uraian',
-            style: const TextStyle(color: AppColors.primary, fontWeight: FontWeight.bold, fontSize: 12),
+          TextButton(
+            onPressed: () {
+              Navigator.pop(context);
+              Navigator.pop(context);
+            },
+            child: const Text('Keluar', style: TextStyle(color: AppColors.failure)),
           ),
-        ),
-        const SizedBox(height: 24),
-        Text(
-          question.text,
-          textAlign: TextAlign.center,
-          style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                fontSize: 24,
-                height: 1.4,
-              ),
-        ).animate(key: ValueKey(index)).fadeIn().scale(),
-      ],
+        ],
+      ),
     );
   }
 
-  // Widget penyusun pilihan jawaban soal Pilihan Ganda (MCQ) beserta evaluasi warna benar/salah
   Widget _buildMCQOptions(BuildContext context, QuizState state, WidgetRef ref, QuestionModel question) {
     return Column(
       children: List.generate(question.options?.length ?? 0, (index) {
         final option = question.options![index];
         final isSelected = state.selectedIndex == index;
         final isCorrect = question.correctAnswerIndex == index;
-        
+
         Color borderColor = Colors.white.withOpacity(0.1);
         Color bgColor = Colors.transparent;
+        Color? glowColor;
 
-        // Mewarnai border dan latar belakang pilihan jawaban berdasarkan hasil evaluasi
         if (state.isAnswered) {
           if (isCorrect) {
             borderColor = AppColors.success;
-            bgColor = AppColors.success.withOpacity(0.1);
+            bgColor = AppColors.success.withOpacity(0.12);
+            glowColor = AppColors.success;
           } else if (isSelected) {
             borderColor = AppColors.failure;
-            bgColor = AppColors.failure.withOpacity(0.1);
+            bgColor = AppColors.failure.withOpacity(0.12);
+            glowColor = AppColors.failure;
           }
+        } else if (isSelected) {
+          borderColor = AppColors.primary;
+          bgColor = AppColors.primary.withOpacity(0.08);
         }
 
         return Padding(
@@ -192,93 +293,156 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
             onTap: () => ref.read(quizProvider(widget.level).notifier).answerMCQ(index),
             borderRadius: BorderRadius.circular(16),
             child: AnimatedContainer(
-              duration: const Duration(milliseconds: 300),
-              width: double.infinity,
-              padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 24),
+              duration: const Duration(milliseconds: 250),
+              padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
               decoration: BoxDecoration(
                 color: bgColor,
                 borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: borderColor, width: 2),
+                border: Border.all(color: borderColor, width: 1.5),
+                boxShadow: glowColor != null
+                    ? [BoxShadow(color: glowColor.withOpacity(0.2), blurRadius: 12)]
+                    : null,
               ),
               child: Row(
                 children: [
-                  Text(
-                    String.fromCharCode(65 + index) + '.', // Label pilihan: A, B, C, D...
-                    style: TextStyle(
-                      color: isSelected ? AppColors.primary : Colors.grey,
-                      fontWeight: FontWeight.bold,
+                  Container(
+                    width: 30,
+                    height: 30,
+                    decoration: BoxDecoration(
+                      color: isSelected && !state.isAnswered
+                          ? AppColors.primary
+                          : Colors.white10,
+                      shape: BoxShape.circle,
+                    ),
+                    child: Center(
+                      child: Text(
+                        String.fromCharCode(65 + index),
+                        style: TextStyle(
+                          color: isSelected && !state.isAnswered ? Colors.white : Colors.white54,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 13,
+                        ),
+                      ),
                     ),
                   ),
-                  const SizedBox(width: 12),
+                  const SizedBox(width: 14),
                   Expanded(
                     child: Text(
                       option,
-                      style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w500,
+                        color: state.isAnswered && isCorrect
+                            ? AppColors.success
+                            : state.isAnswered && isSelected
+                                ? AppColors.failure
+                                : Colors.white,
+                      ),
                     ),
                   ),
+                  if (state.isAnswered)
+                    Icon(
+                      isCorrect ? Icons.check_circle_rounded : (isSelected ? Icons.cancel_rounded : null),
+                      color: isCorrect ? AppColors.success : AppColors.failure,
+                      size: 20,
+                    ) ?? const SizedBox.shrink(),
                 ],
               ),
             ),
           ).animate(target: isSelected && state.isAnswered && !isCorrect ? 1 : 0)
-           .shake(hz: 10, curve: Curves.easeInOut), // Efek animasi getar jika memilih pilihan salah
+              .shake(hz: 6, curve: Curves.easeInOut),
         );
       }),
     );
   }
 
-  // Widget penyusun form input jawaban soal Essay (Uraian)
   Widget _buildEssayInput(BuildContext context, QuizState state, WidgetRef ref) {
     return Column(
       children: [
-        TextField(
-          controller: _essayController,
-          enabled: !state.isAnswered,
-          decoration: InputDecoration(
-            hintText: 'Ketik jawaban Anda di sini...',
-            fillColor: AppColors.surface,
-            filled: true,
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(16),
-              borderSide: BorderSide.none,
-            ),
-            focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(16),
-              borderSide: const BorderSide(color: AppColors.primary, width: 2),
+        Container(
+          decoration: BoxDecoration(
+            color: AppColors.surfaceLight,
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(
+              color: state.isAnswered ? AppColors.primary.withOpacity(0.5) : Colors.white10,
             ),
           ),
-          onSubmitted: (value) {
-            if (value.isNotEmpty) {
-              ref.read(quizProvider(widget.level).notifier).answerEssay(value);
-              _essayController.clear();
-            }
-          },
-        ),
-        const SizedBox(height: 20),
-        SizedBox(
-          width: double.infinity,
-          child: ElevatedButton(
-            onPressed: state.isAnswered ? null : () {
-              if (_essayController.text.isNotEmpty) {
-                ref.read(quizProvider(widget.level).notifier).answerEssay(_essayController.text);
-                _essayController.clear();
-              }
-            },
-            child: const Text('Kirim Jawaban'),
+          child: TextField(
+            controller: _essayController,
+            enabled: !state.isAnswered,
+            style: const TextStyle(color: Colors.white, fontSize: 16),
+            decoration: const InputDecoration(
+              hintText: 'Ketik jawaban Anda di sini...',
+              hintStyle: TextStyle(color: Colors.white30),
+              border: InputBorder.none,
+              contentPadding: EdgeInsets.all(20),
+            ),
           ),
         ),
-        // Menampilkan teks informasi jawaban benar/salah setelah submit kuis
+        const SizedBox(height: 16),
+        if (!state.isAnswered)
+          Container(
+            width: double.infinity,
+            decoration: BoxDecoration(
+              gradient: AppColors.buttonGradient,
+              borderRadius: BorderRadius.circular(14),
+              boxShadow: AppColors.primaryGlow,
+            ),
+            child: ElevatedButton(
+              onPressed: () {
+                if (_essayController.text.isNotEmpty) {
+                  ref.read(quizProvider(widget.level).notifier).answerEssay(_essayController.text);
+                  _essayController.clear();
+                }
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.transparent,
+                shadowColor: Colors.transparent,
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+              ),
+              child: const Text(
+                'Kirim Jawaban',
+                style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),
+              ),
+            ),
+          ),
         if (state.isAnswered) ...[
-           const SizedBox(height: 16),
-           Text(
-             state.essayAnswer?.toLowerCase().trim() == state.level.questions[state.currentIndex].correctAnswer?.toLowerCase().trim()
-              ? 'Jawaban Benar!' : 'Jawaban Salah! Yang benar: ${state.level.questions[state.currentIndex].correctAnswer}',
-             style: TextStyle(
-               color: state.essayAnswer?.toLowerCase().trim() == state.level.questions[state.currentIndex].correctAnswer?.toLowerCase().trim()
-                ? AppColors.success : AppColors.failure,
-               fontWeight: FontWeight.bold,
-             ),
-           ).animate().fadeIn(),
-        ]
+          const SizedBox(height: 16),
+          AnimatedContainer(
+            duration: const Duration(milliseconds: 300),
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: (state.essayAnswer?.toLowerCase().trim() ==
+                      state.level.questions[state.currentIndex].correctAnswer?.toLowerCase().trim()
+                  ? AppColors.success
+                  : AppColors.failure)
+                  .withOpacity(0.12),
+              borderRadius: BorderRadius.circular(14),
+              border: Border.all(
+                color: (state.essayAnswer?.toLowerCase().trim() ==
+                        state.level.questions[state.currentIndex].correctAnswer?.toLowerCase().trim()
+                    ? AppColors.success
+                    : AppColors.failure)
+                    .withOpacity(0.5),
+              ),
+            ),
+            child: Text(
+              state.essayAnswer?.toLowerCase().trim() ==
+                      state.level.questions[state.currentIndex].correctAnswer?.toLowerCase().trim()
+                  ? '✓ Jawaban Benar!'
+                  : '✗ Yang benar: ${state.level.questions[state.currentIndex].correctAnswer}',
+              style: TextStyle(
+                color: state.essayAnswer?.toLowerCase().trim() ==
+                        state.level.questions[state.currentIndex].correctAnswer?.toLowerCase().trim()
+                    ? AppColors.success
+                    : AppColors.failure,
+                fontWeight: FontWeight.bold,
+                fontSize: 15,
+              ),
+            ),
+          ).animate().fadeIn().slideY(begin: 0.2, end: 0),
+        ],
       ],
     );
   }
