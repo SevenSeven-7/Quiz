@@ -2,15 +2,57 @@
   "parts": [
     {
       "id": "p1",
-      "title": "Quiz Bahasa Indonesia",
+      "title": "Bahasa Indonesia",
       "description": "Uji kemampuan tata bahasa dan kosa kata Bahasa Indonesia Anda.",
       "isLocked": false
     },
     {
       "id": "p2",
-      "title": "Quiz Matematika",
+      "title": "Matematika",
       "description": "Tantangan logika dan angka untuk mengasah otak.",
       "isLocked": false
+    },
+    {
+      "id": "p3",
+      "title": "Ilmu Pengetahuan Alam (IPA)",
+      "description": "Jelajahi keajaiban sains, biologi, dan fisika.",
+      "isLocked": true
+    },
+    {
+      "id": "p4",
+      "title": "Ilmu Pengetahuan Sosial (IPS)",
+      "description": "Pelajari geografi, sosiologi, dan ekonomi dunia.",
+      "isLocked": true
+    },
+    {
+      "id": "p5",
+      "title": "PPKn",
+      "description": "Pendidikan moral, Pancasila, dan kewarganegaraan.",
+      "isLocked": true
+    },
+    {
+      "id": "p6",
+      "title": "Bahasa Inggris",
+      "description": "Tingkatkan kemampuan grammar dan vocabulary Anda.",
+      "isLocked": true
+    },
+    {
+      "id": "p7",
+      "title": "Sejarah",
+      "description": "Mengingat kembali peristiwa penting masa lampau.",
+      "isLocked": true
+    },
+    {
+      "id": "p8",
+      "title": "Teknologi & Informatika (TIK)",
+      "description": "Dasar-dasar komputer, jaringan, dan pemrograman.",
+      "isLocked": true
+    },
+    {
+      "id": "p9",
+      "title": "Agama Islam",
+      "description": "Perdalam pengetahuan agama, akhlak, dan sejarah Islam.",
+      "isLocked": true
     }
   ],
   "levels": [

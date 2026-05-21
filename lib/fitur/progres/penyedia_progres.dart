@@ -4,7 +4,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
-import '../../model/model.dart';
 
 // Kelas ProgressState menampung data status kemajuan bermain kuis (skor bintang dan level yang terbuka).
 class ProgressState {
@@ -309,6 +308,34 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
       }
     } catch (e) {
       debugPrint('Gagal mereset progres kuis $e');
+    }
+  }
+
+  // Fungsi untuk menghapus seluruh data akun pemain secara permanen
+  Future<void> deleteAccount() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final playerName = prefs.getString('player_name') ?? '';
+
+      // Hapus semua data dari Firebase terlebih dahulu jika tersedia
+      if (playerName.isNotEmpty && playerName != 'Pemain' && _isFirebaseAvailable) {
+        await FirebaseFirestore.instance
+            .collection('user_progress')
+            .doc(playerName)
+            .delete();
+      }
+
+      // Hapus seluruh data lokal
+      await prefs.clear();
+
+      // Reset state ke kondisi awal
+      state = ProgressState(
+        levelStars: {},
+        unlockedLevels: {'p1_l1': true, 'p2_l1': true},
+        unlockedParts: {'p1', 'p2'},
+      );
+    } catch (e) {
+      debugPrint('Gagal menghapus akun $e');
     }
   }
 }

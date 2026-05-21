@@ -76,29 +76,8 @@ class FirebaseService {
   // Mengambil daftar Bagian (PartModel) dari Firebase Firestore. 
   // Jika Firebase tidak tersedia atau terjadi error, otomatis menggunakan data lokal.
   Future<List<PartModel>> getParts() async {
-    if (!_isFirebaseAvailable) {
-      return _localData.getParts();
-    }
-
-    try {
-      final snapshot = await FirebaseFirestore.instance.collection('parts').get();
-      
-      if (snapshot.docs.isEmpty) {
-        return _localData.getParts();
-      }
-
-      return snapshot.docs.map((doc) {
-        final data = doc.data();
-        return PartModel(
-          id: doc.id,
-          title: data['title'] ?? '',
-          description: data['description'] ?? '',
-          isLocked: data['isLocked'] ?? false,
-        );
-      }).toList();
-    } catch (e) {
-      return _localData.getParts();
-    }
+    // Memaksa selalu menggunakan data lokal agar pembaruan JSON terbaru langsung terbaca
+    return _localData.getParts();
   }
 
   // Mengambil daftar Level kuis berdasarkan ID bagian dari Firebase Firestore.
