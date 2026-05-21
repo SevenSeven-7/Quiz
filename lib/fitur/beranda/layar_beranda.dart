@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
 import '../../inti/layanan/layanan_firebase.dart';
+import '../../inti/penyedia/penyedia_tema.dart';
 import '../../model/model.dart';
 import '../progres/penyedia_progres.dart';
 import 'layar_pilih_level.dart';
@@ -31,55 +32,64 @@ class HomeScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final playerName = ref.watch(playerNameProvider);
     final progress = ref.watch(progressProvider);
+    final appTheme = ref.watch(temaProvider);
+    final isDark = appTheme == AppThemeMode.dark;
+    final isComputer = appTheme == AppThemeMode.computer;
 
     return Scaffold(
       backgroundColor: Colors.transparent,
       body: SafeArea(
-        child: CustomScrollView(
-          slivers: [
-            // Header
-            SliverToBoxAdapter(
-              child: _buildHeader(context, playerName, progress),
-            ),
-            // Score Card
-            SliverToBoxAdapter(
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                child: _buildScoreCard(context, progress),
-              ),
-            ),
-            // Kategori label
-            SliverToBoxAdapter(
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
-                child: Row(
-                  children: [
-                    Container(
-                      width: 4,
-                      height: 18,
-                      decoration: BoxDecoration(
-                        gradient: AppColors.primaryGradient,
-                        borderRadius: BorderRadius.circular(4),
-                      ),
+        child: Column(
+          children: [
+            // Header TETAP DI ATAS - tidak ikut scroll
+            _buildHeader(context, playerName, progress, isDark, isComputer),
+            // Konten yang bisa di-scroll
+            Expanded(
+              child: CustomScrollView(
+                physics: const BouncingScrollPhysics(),
+                slivers: [
+                  // Score Card
+                  SliverToBoxAdapter(
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                      child: _buildScoreCard(context, progress, isDark, isComputer),
                     ),
-                    const SizedBox(width: 10),
-                    const Text(
-                      'Kategori Quiz',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                        letterSpacing: 0.5,
-                      ),
+                  ),
+                  // Kategori label
+                  SliverToBoxAdapter(
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
+                      child: Row(
+                        children: [
+                          Container(
+                            width: 4,
+                            height: 18,
+                            decoration: BoxDecoration(
+                              gradient: isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient,
+                              borderRadius: BorderRadius.circular(isComputer ? 0 : 4),
+                            ),
+                          ),
+                          const SizedBox(width: 10),
+                          Text(
+                            'Kategori Quiz',
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                              color: isDark ? Colors.white : (isComputer ? AppColors.textPrimaryComputer : AppColors.textPrimaryLight),
+                              letterSpacing: 0.5,
+                            ),
+                          ),
+                        ],
+                      ).animate().fadeIn(delay: 400.ms),
                     ),
-                  ],
-                ).animate().fadeIn(delay: 400.ms),
+                  ),
+                  // Daftar Kategori
+                  SliverPadding(
+                    padding: const EdgeInsets.fromLTRB(20, 0, 20, 120),
+                    sliver: _buildPartList(context, ref, progress, isDark, isComputer),
+                  ),
+                ],
               ),
-            ),
-            // Daftar Kategori
-            SliverPadding(
-              padding: const EdgeInsets.fromLTRB(20, 0, 20, 100),
-              sliver: _buildPartList(context, ref, progress),
             ),
           ],
         ),
@@ -87,7 +97,7 @@ class HomeScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildHeader(BuildContext context, String playerName, ProgressState progress) {
+  Widget _buildHeader(BuildContext context, String playerName, ProgressState progress, bool isDark, bool isComputer) {
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 24, 20, 20),
       child: Row(
@@ -102,8 +112,8 @@ class HomeScreen extends ConsumerWidget {
                     const SizedBox(width: 6),
                     Text(
                       _getGreeting(),
-                      style: const TextStyle(
-                        color: AppColors.textSecondary,
+                      style: TextStyle(
+                        color: isDark ? AppColors.textSecondary : AppColors.textSecondaryLight,
                         fontSize: 13,
                         fontWeight: FontWeight.w500,
                       ),
@@ -118,7 +128,7 @@ class HomeScreen extends ConsumerWidget {
                     style: const TextStyle(
                       fontSize: 26,
                       fontWeight: FontWeight.w900,
-                      color: Colors.white,
+                      color: Colors.white, // Putih karena kena ShaderMask
                     ),
                   ),
                 ).animate().fadeIn(delay: 100.ms, duration: 400.ms),
@@ -130,9 +140,10 @@ class HomeScreen extends ConsumerWidget {
             width: 48,
             height: 48,
             decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              gradient: AppColors.primaryGradient,
-              boxShadow: AppColors.primaryGlow,
+              shape: isComputer ? BoxShape.rectangle : BoxShape.circle,
+              borderRadius: isComputer ? BorderRadius.circular(8) : null,
+              gradient: isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient,
+              boxShadow: isComputer ? AppColors.computerShadow : (isDark ? AppColors.primaryGlow : AppColors.lightShadow),
             ),
             child: Center(
               child: Text(
@@ -150,20 +161,20 @@ class HomeScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildScoreCard(BuildContext context, ProgressState progress) {
+  Widget _buildScoreCard(BuildContext context, ProgressState progress, bool isDark, bool isComputer) {
     final totalStars = progress.totalStars;
     final gelar = progress.gelarKecerdasan;
     final warnaGelar = progress.warnaGelar;
-    final maxStars = 600;
+    const maxStars = 600;
     final progressValue = (totalStars / maxStars).clamp(0.0, 1.0);
 
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: AppColors.surfaceLight.withOpacity(0.7),
-        borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: warnaGelar.withOpacity(0.25), width: 1.5),
-        boxShadow: [
+        color: isDark ? AppColors.surfaceLight.withOpacity(0.7) : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond.withOpacity(0.8)),
+        borderRadius: BorderRadius.circular(isComputer ? 4 : 24),
+        border: Border.all(color: isComputer ? AppColors.surfaceComputerBorder : warnaGelar.withOpacity(0.25), width: 1.5),
+        boxShadow: isComputer ? AppColors.computerCardShadow : [
           BoxShadow(
             color: warnaGelar.withOpacity(0.1),
             blurRadius: 24,
@@ -191,7 +202,7 @@ class HomeScreen extends ConsumerWidget {
                     Text(
                       'Tingkat Kecerdasan',
                       style: TextStyle(
-                        color: AppColors.textSecondary,
+                        color: isDark ? AppColors.textSecondary : AppColors.textSecondaryLight,
                         fontSize: 12,
                         letterSpacing: 0.5,
                       ),
@@ -210,9 +221,9 @@ class HomeScreen extends ConsumerWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  const Text(
+                  Text(
                     'Bintang',
-                    style: TextStyle(color: AppColors.textSecondary, fontSize: 11),
+                    style: TextStyle(color: isDark ? AppColors.textSecondary : AppColors.textSecondaryLight, fontSize: 11),
                   ),
                   Row(
                     children: [
@@ -220,8 +231,8 @@ class HomeScreen extends ConsumerWidget {
                       const SizedBox(width: 4),
                       Text(
                         '$totalStars',
-                        style: const TextStyle(
-                          color: Colors.white,
+                        style: TextStyle(
+                          color: isDark ? Colors.white : AppColors.textPrimaryLight,
                           fontWeight: FontWeight.bold,
                           fontSize: 18,
                         ),
@@ -241,7 +252,7 @@ class HomeScreen extends ConsumerWidget {
                 children: [
                   Text(
                     'Menuju level berikutnya',
-                    style: TextStyle(color: AppColors.textSecondary, fontSize: 11),
+                    style: TextStyle(color: isDark ? AppColors.textSecondary : AppColors.textSecondaryLight, fontSize: 11),
                   ),
                   Text(
                     '${(progressValue * 100).toStringAsFixed(0)}%',
@@ -251,11 +262,11 @@ class HomeScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 8),
               ClipRRect(
-                borderRadius: BorderRadius.circular(8),
+                borderRadius: BorderRadius.circular(isComputer ? 0 : 8),
                 child: LinearProgressIndicator(
                   value: progressValue,
-                  backgroundColor: Colors.white10,
-                  valueColor: AlwaysStoppedAnimation<Color>(warnaGelar),
+                  backgroundColor: isDark ? Colors.white10 : Colors.black12,
+                  valueColor: AlwaysStoppedAnimation<Color>(isComputer ? AppColors.accentComputer : warnaGelar),
                   minHeight: 8,
                 ),
               ),
@@ -266,13 +277,13 @@ class HomeScreen extends ConsumerWidget {
     ).animate().fadeIn(delay: 200.ms, duration: 400.ms).slideY(begin: 0.1, end: 0);
   }
 
-  Widget _buildPartList(BuildContext context, WidgetRef ref, ProgressState progress) {
+  Widget _buildPartList(BuildContext context, WidgetRef ref, ProgressState progress, bool isDark, bool isComputer) {
     return FutureBuilder<List<PartModel>>(
       future: FirebaseService().getParts(),
       builder: (context, snapshot) {
         if (!snapshot.hasData) {
           return SliverToBoxAdapter(
-            child: _buildShimmerLoading(),
+            child: _buildShimmerLoading(isDark),
           );
         }
 
@@ -282,10 +293,11 @@ class HomeScreen extends ConsumerWidget {
           delegate: SliverChildBuilderDelegate(
             (context, index) {
               final part = parts[index];
-              final isUnlocked = progress.unlockedParts.contains(part.id);
+              // Semua kategori pelajaran selalu terbuka - bebas dipilih pemain
+              final isUnlocked = true;
               return Padding(
                 padding: const EdgeInsets.only(bottom: 14),
-                child: _buildPartCard(context, part, isUnlocked, index),
+                child: _buildPartCard(context, part, isUnlocked, index, isDark, isComputer),
               );
             },
             childCount: parts.length,
@@ -295,13 +307,18 @@ class HomeScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildPartCard(BuildContext context, PartModel part, bool isUnlocked, int index) {
-    final icons = [Icons.language_rounded, Icons.calculate_rounded, Icons.science_rounded, Icons.history_edu_rounded];
+  Widget _buildPartCard(BuildContext context, PartModel part, bool isUnlocked, int index, bool isDark, bool isComputer) {
+    final icons = [Icons.language_rounded, Icons.calculate_rounded, Icons.science_rounded, Icons.public_rounded, Icons.balance_rounded, Icons.menu_book_rounded, Icons.history_edu_rounded, Icons.computer_rounded, Icons.mosque_rounded];
     final gradients = [
-      [const Color(0xFF7C3AED), const Color(0xFF06B6D4)],
-      [const Color(0xFF059669), const Color(0xFF34D399)],
-      [const Color(0xFFDC2626), const Color(0xFFF97316)],
-      [const Color(0xFFD97706), const Color(0xFFFBBF24)],
+      [const Color(0xFF7C3AED), const Color(0xFF06B6D4)], // Indo
+      [const Color(0xFF059669), const Color(0xFF34D399)], // Math
+      [const Color(0xFFDC2626), const Color(0xFFF97316)], // IPA
+      [const Color(0xFFD97706), const Color(0xFFFBBF24)], // IPS
+      [const Color(0xFFE11D48), const Color(0xFFF43F5E)], // PPKn
+      [const Color(0xFF0284C7), const Color(0xFF38BDF8)], // B.Inggris
+      [const Color(0xFF92400E), const Color(0xFFD97706)], // Sejarah
+      [const Color(0xFF4F46E5), const Color(0xFF818CF8)], // TIK
+      [const Color(0xFF16A34A), const Color(0xFF4ADE80)], // Agama Islam
     ];
     final grad = gradients[index % gradients.length];
     final icon = icons[index % icons.length];
@@ -312,19 +329,20 @@ class HomeScreen extends ConsumerWidget {
                 MaterialPageRoute(builder: (context) => LevelSelectionScreen(part: part)),
               )
           : null,
-      borderRadius: BorderRadius.circular(20),
+      borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 300),
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
-          color: AppColors.surfaceLight.withOpacity(0.6),
-          borderRadius: BorderRadius.circular(20),
+          color: isDark ? AppColors.surfaceLight.withOpacity(0.6) : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond.withOpacity(0.8)),
+          borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
           border: Border.all(
             color: isUnlocked
-                ? Color(grad[0].value).withOpacity(0.3)
-                : Colors.white.withOpacity(0.05),
+                ? (isComputer ? AppColors.surfaceComputerBorder : Color(grad[0].value).withOpacity(0.3))
+                : (isDark ? Colors.white.withOpacity(0.05) : Colors.black.withOpacity(0.05)),
             width: 1.5,
           ),
+          boxShadow: isComputer ? AppColors.computerCardShadow : null,
         ),
         child: Row(
           children: [
@@ -333,17 +351,17 @@ class HomeScreen extends ConsumerWidget {
               height: 52,
               decoration: BoxDecoration(
                 gradient: isUnlocked
-                    ? LinearGradient(colors: grad, begin: Alignment.topLeft, end: Alignment.bottomRight)
+                    ? (isComputer ? AppColors.primaryComputerGradient : LinearGradient(colors: grad, begin: Alignment.topLeft, end: Alignment.bottomRight))
                     : null,
-                color: isUnlocked ? null : Colors.white10,
-                borderRadius: BorderRadius.circular(16),
+                color: isUnlocked ? null : (isDark ? Colors.white10 : Colors.black12),
+                borderRadius: BorderRadius.circular(isComputer ? 4 : 16),
                 boxShadow: isUnlocked
-                    ? [BoxShadow(color: grad[0].withOpacity(0.3), blurRadius: 12)]
+                    ? [BoxShadow(color: isComputer ? Colors.black12 : grad[0].withOpacity(0.3), blurRadius: 12)]
                     : null,
               ),
               child: Icon(
                 isUnlocked ? icon : Icons.lock_rounded,
-                color: isUnlocked ? Colors.white : Colors.white30,
+                color: isUnlocked ? Colors.white : (isDark ? Colors.white30 : Colors.black26),
                 size: 24,
               ),
             ),
@@ -357,7 +375,9 @@ class HomeScreen extends ConsumerWidget {
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
-                      color: isUnlocked ? Colors.white : Colors.white38,
+                      color: isUnlocked 
+                          ? (isDark ? Colors.white : AppColors.textPrimaryLight) 
+                          : (isDark ? Colors.white38 : Colors.black38),
                     ),
                   ),
                   const SizedBox(height: 4),
@@ -365,7 +385,9 @@ class HomeScreen extends ConsumerWidget {
                     isUnlocked ? part.description : 'Selesaikan bagian sebelumnya',
                     style: TextStyle(
                       fontSize: 12,
-                      color: AppColors.textSecondary.withOpacity(isUnlocked ? 1.0 : 0.5),
+                      color: isDark 
+                          ? AppColors.textSecondary.withOpacity(isUnlocked ? 1.0 : 0.5)
+                          : AppColors.textSecondaryLight.withOpacity(isUnlocked ? 1.0 : 0.5),
                     ),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
@@ -377,20 +399,20 @@ class HomeScreen extends ConsumerWidget {
               Container(
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(colors: grad, begin: Alignment.topLeft, end: Alignment.bottomRight),
-                  borderRadius: BorderRadius.circular(12),
+                  gradient: isComputer ? AppColors.primaryComputerGradient : LinearGradient(colors: grad, begin: Alignment.topLeft, end: Alignment.bottomRight),
+                  borderRadius: BorderRadius.circular(isComputer ? 4 : 12),
                 ),
                 child: const Icon(Icons.arrow_forward_rounded, color: Colors.white, size: 18),
               )
             else
-              const Icon(Icons.lock_outline_rounded, color: Colors.white24, size: 20),
+              Icon(Icons.lock_outline_rounded, color: isDark ? Colors.white24 : Colors.black12, size: 20),
           ],
         ),
       ),
     ).animate().fadeIn(delay: (300 + index * 100).ms, duration: 400.ms).slideX(begin: 0.1, end: 0);
   }
 
-  Widget _buildShimmerLoading() {
+  Widget _buildShimmerLoading(bool isDark) {
     return Column(
       children: List.generate(
         3,
@@ -399,12 +421,12 @@ class HomeScreen extends ConsumerWidget {
           child: Container(
             height: 92,
             decoration: BoxDecoration(
-              color: AppColors.surfaceLight.withOpacity(0.3),
-              borderRadius: BorderRadius.circular(20),
+              color: isDark ? AppColors.surfaceLight.withOpacity(0.3) : AppColors.surfaceLightModeSecond.withOpacity(0.3),
+              borderRadius: BorderRadius.circular(8),
             ),
           ).animate(onPlay: (c) => c.repeat()).shimmer(
                 duration: 1200.ms,
-                color: Colors.white10,
+                color: isDark ? Colors.white10 : Colors.black12,
               ),
         ),
       ),
