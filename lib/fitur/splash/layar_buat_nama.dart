@@ -164,7 +164,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                       const SizedBox(height: 8),
 
                       Center(
-                        child: Text(
+                        child: const Text(
                           'Asah kecerdasanmu ke level maksimal!',
                           textAlign: TextAlign.center,
                           style: TextStyle(
@@ -220,7 +220,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                               ],
                             ),
                             const SizedBox(height: 8),
-                            Text(
+                            const Text(
                               'Nama ini akan digunakan untuk melacak skor dan pencapaianmu.',
                               style: TextStyle(color: AppColors.textSecondary, fontSize: 12),
                             ),
@@ -233,7 +233,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                               decoration: InputDecoration(
                                 hintText: 'Masukkan namamu...',
                                 hintStyle: const TextStyle(color: Colors.white30),
-                                counterStyle: TextStyle(color: AppColors.textSecondary),
+                                counterStyle: const TextStyle(color: AppColors.textSecondary),
                                 prefixIcon: const Icon(Icons.person_rounded, color: AppColors.primary),
                                 filled: true,
                                 fillColor: AppColors.background.withOpacity(0.8),
