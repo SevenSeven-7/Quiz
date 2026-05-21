@@ -55,9 +55,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
     });
 
     if (state.level.questions.isEmpty) {
-      return Scaffold(
+      return const Scaffold(
         backgroundColor: AppColors.background,
-        body: const Center(child: Text('Tidak ada soal.', style: TextStyle(color: Colors.white))),
+        body: Center(child: Text('Tidak ada soal.', style: TextStyle(color: Colors.white))),
       );
     }
 

@@ -161,7 +161,7 @@ class _ResultScreenState extends State<ResultScreen> with TickerProviderStateMix
 
                       const SizedBox(height: 8),
 
-                      Text(
+                      const Text(
                         'Level telah selesai',
                         style: TextStyle(color: AppColors.textSecondary, fontSize: 14),
                       ).animate().fadeIn(delay: 1600.ms),
@@ -201,7 +201,7 @@ class _ResultScreenState extends State<ResultScreen> with TickerProviderStateMix
                                 ),
                               ),
                             ),
-                            Text(
+                            const Text(
                               'Jawaban Benar',
                               style: TextStyle(color: AppColors.textSecondary, fontSize: 14),
                             ),

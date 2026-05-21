@@ -5,6 +5,7 @@ import '../../inti/konstanta/warna_aplikasi.dart';
 import '../../inti/layanan/layanan_firebase.dart';
 import '../../model/model.dart';
 import '../progres/penyedia_progres.dart';
+import '../../inti/penyedia/penyedia_tema.dart';
 import '../kuis/layar_kuis.dart';
 
 class LevelSelectionScreen extends ConsumerWidget {
@@ -14,10 +15,12 @@ class LevelSelectionScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final progress = ref.watch(progressProvider);
+    final appTheme = ref.watch(temaProvider);
+    final isComputer = appTheme == AppThemeMode.computer;
 
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(gradient: AppColors.backgroundGradient),
+        decoration: BoxDecoration(gradient: isComputer ? AppColors.backgroundComputerGradient : AppColors.backgroundGradient),
         child: SafeArea(
           child: Column(
             children: [
@@ -31,11 +34,11 @@ class LevelSelectionScreen extends ConsumerWidget {
                       icon: Container(
                         padding: const EdgeInsets.all(8),
                         decoration: BoxDecoration(
-                          color: AppColors.surfaceLight,
-                          borderRadius: BorderRadius.circular(12),
-                          border: Border.all(color: Colors.white10),
+                          color: isComputer ? AppColors.surfaceComputer : AppColors.surfaceLight,
+                          borderRadius: BorderRadius.circular(isComputer ? 4 : 12),
+                          border: Border.all(color: isComputer ? AppColors.surfaceComputerBorder : Colors.white10),
                         ),
-                        child: const Icon(Icons.arrow_back_rounded, color: Colors.white, size: 20),
+                        child: Icon(Icons.arrow_back_rounded, color: isComputer ? AppColors.textPrimaryComputer : Colors.white, size: 20),
                       ),
                     ),
                     Expanded(
@@ -44,10 +47,10 @@ class LevelSelectionScreen extends ConsumerWidget {
                         child: Text(
                           part.cleanTitle,
                           textAlign: TextAlign.center,
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: Colors.white,
+                            color: isComputer ? AppColors.textPrimaryComputer : Colors.white,
                           ),
                         ),
                       ),
@@ -91,8 +94,9 @@ class LevelSelectionScreen extends ConsumerWidget {
                     final levels = snapshot.data!;
                     final width = MediaQuery.of(context).size.width;
                     int crossAxisCount = 5;
-                    if (width > 1200) crossAxisCount = 12;
-                    else if (width > 900) crossAxisCount = 10;
+                    if (width > 1200) {
+                      crossAxisCount = 12;
+                    } else if (width > 900) crossAxisCount = 10;
                     else if (width > 600) crossAxisCount = 8;
 
                     return Padding(
@@ -108,11 +112,21 @@ class LevelSelectionScreen extends ConsumerWidget {
                           final levelData = levels[index];
                           final levelNumber = levelData.order;
                           final levelId = levelData.id;
-                          final isUnlocked = progress.unlockedLevels[levelId] ?? false;
                           final stars = progress.levelStars[levelId] ?? 0;
 
+                          // Level 1 selalu terbuka, level selanjutnya
+                          // terbuka jika level sebelumnya sudah mendapat bintang
+                          bool isUnlocked;
+                          if (index == 0) {
+                            isUnlocked = true;
+                          } else {
+                            final prevLevelId = levels[index - 1].id;
+                            final prevStars = progress.levelStars[prevLevelId] ?? 0;
+                            isUnlocked = prevStars > 0;
+                          }
+
                           return _buildLevelButton(
-                            context, levelNumber, isUnlocked, stars, levelData, index,
+                            context, levelNumber, isUnlocked, stars, levelData, index, isComputer,
                           );
                         },
                       ),
@@ -128,21 +142,21 @@ class LevelSelectionScreen extends ConsumerWidget {
   }
 
   Widget _buildLevelButton(
-    BuildContext context, int number, bool isUnlocked, int stars, LevelModel levelData, int index,
+    BuildContext context, int number, bool isUnlocked, int stars, LevelModel levelData, int index, bool isComputer,
   ) {
     final isComplete = stars == 3;
     Color? borderColor;
     Gradient? gradient;
 
     if (isComplete) {
-      borderColor = AppColors.gold;
-      gradient = const LinearGradient(
+      borderColor = isComputer ? AppColors.primaryComputerLight : AppColors.gold;
+      gradient = isComputer ? AppColors.primaryComputerGradient : const LinearGradient(
         colors: [Color(0xFF92400E), Color(0xFF1A1A40)],
         begin: Alignment.topLeft,
         end: Alignment.bottomRight,
       );
     } else if (isUnlocked) {
-      borderColor = AppColors.primary.withOpacity(0.5);
+      borderColor = (isComputer ? AppColors.primaryComputer : AppColors.primary).withOpacity(0.5);
     }
 
     return InkWell(
@@ -151,24 +165,24 @@ class LevelSelectionScreen extends ConsumerWidget {
                 MaterialPageRoute(builder: (context) => QuizScreen(level: levelData)),
               )
           : null,
-      borderRadius: BorderRadius.circular(14),
+      borderRadius: BorderRadius.circular(isComputer ? 4 : 14),
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
         decoration: BoxDecoration(
           gradient: gradient,
           color: gradient == null
-              ? (isUnlocked ? AppColors.surfaceLight : AppColors.surface.withOpacity(0.3))
+              ? (isUnlocked ? (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLight) : AppColors.surface.withOpacity(0.3))
               : null,
-          borderRadius: BorderRadius.circular(14),
+          borderRadius: BorderRadius.circular(isComputer ? 4 : 14),
           border: Border.all(
-            color: borderColor ?? Colors.white.withOpacity(0.05),
+            color: borderColor ?? (isComputer ? AppColors.surfaceComputerBorder : Colors.white.withOpacity(0.05)),
             width: isComplete ? 1.5 : 1,
           ),
-          boxShadow: isComplete
+          boxShadow: isComputer ? AppColors.computerCardShadow : (isComplete
               ? [BoxShadow(color: AppColors.gold.withOpacity(0.2), blurRadius: 8)]
               : isUnlocked
                   ? [BoxShadow(color: AppColors.primary.withOpacity(0.1), blurRadius: 6)]
-                  : null,
+                  : null),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -181,7 +195,7 @@ class LevelSelectionScreen extends ConsumerWidget {
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 16,
-                  color: isComplete ? AppColors.gold : Colors.white,
+                  color: isComplete ? (isComputer ? AppColors.textPrimaryComputer : AppColors.gold) : (isComputer ? AppColors.textPrimaryComputer : Colors.white),
                 ),
               ),
               const SizedBox(height: 4),
