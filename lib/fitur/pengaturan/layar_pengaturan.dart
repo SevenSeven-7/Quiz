@@ -3,10 +3,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
+import '../../inti/penyedia/penyedia_tema.dart';
 import '../progres/penyedia_progres.dart';
 import '../beranda/layar_utama.dart';
+import '../splash/layar_buat_nama.dart';
 
-// Layar Pengaturan lengkap dengan desain glassmorphism premium
 class LayarPengaturan extends ConsumerStatefulWidget {
   const LayarPengaturan({super.key});
 
@@ -17,7 +18,7 @@ class LayarPengaturan extends ConsumerStatefulWidget {
 class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
   bool _suaraAktif = true;
   bool _notifikasiAktif = true;
-  String _versiAplikasi = '1.0.0';
+  final String _versiAplikasi = '1.1.0';
 
   @override
   void initState() {
@@ -45,139 +46,40 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
     setState(() => _notifikasiAktif = nilai);
   }
 
-  void _tampilkanDialogResetProgres() {
-    showDialog(
-      context: context,
-      barrierColor: Colors.black87,
-      builder: (context) => AlertDialog(
-        backgroundColor: AppColors.surface,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(24),
-          side: BorderSide(color: AppColors.failure.withOpacity(0.5), width: 1.5),
-        ),
-        title: Column(
-          children: [
-            Container(
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                color: AppColors.failure.withOpacity(0.1),
-                shape: BoxShape.circle,
-              ),
-              child: const Icon(Icons.warning_amber_rounded, color: AppColors.failure, size: 36),
-            ),
-            const SizedBox(height: 16),
-            const Text(
-              'Reset Semua Progres?',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontSize: 18,
-              ),
-            ),
-          ],
-        ),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              'Seluruh bintang, level yang terbuka, dan pencapaian Anda akan dihapus secara permanen. Tindakan ini tidak dapat dibatalkan!',
-              textAlign: TextAlign.center,
-              style: TextStyle(color: AppColors.textSecondary, fontSize: 14),
-            ),
-            const SizedBox(height: 24),
-            Row(
-              children: [
-                Expanded(
-                  child: OutlinedButton(
-                    onPressed: () => Navigator.of(context).pop(),
-                    style: OutlinedButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(vertical: 14),
-                      side: const BorderSide(color: Colors.white24),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                    ),
-                    child: const Text('Batal', style: TextStyle(color: Colors.white70)),
-                  ),
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: ElevatedButton(
-                    onPressed: () async {
-                      await ref.read(progressProvider.notifier).resetProgress();
-                      if (context.mounted) {
-                        Navigator.of(context).pop();
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            backgroundColor: AppColors.failure,
-                            behavior: SnackBarBehavior.floating,
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                            content: const Row(
-                              children: [
-                                Icon(Icons.check_circle_outline, color: Colors.white),
-                                SizedBox(width: 8),
-                                Text('Progres berhasil direset!', style: TextStyle(color: Colors.white)),
-                              ],
-                            ),
-                          ),
-                        );
-                      }
-                    },
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppColors.failure,
-                      padding: const EdgeInsets.symmetric(vertical: 14),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                    ),
-                    child: const Text('Ya, Reset!', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-                  ),
-                ),
-              ],
-            ),
-          ],
-        ),
-        actions: const [],
-      ),
-    );
-  }
-
+  // ─── Dialog Ubah Nama ─────────────────────────────────────────────
   void _tampilkanDialogUbahNama() {
     final playerName = ref.read(playerNameProvider);
     final controller = TextEditingController(text: playerName);
     final formKey = GlobalKey<FormState>();
+    final currentMode = ref.read(temaProvider);
+    final isDark = currentMode == AppThemeMode.dark;
+    final isComputer = currentMode == AppThemeMode.computer;
+    final accentColor = isComputer ? AppColors.primaryComputer : AppColors.primary;
+    final borderRadius = isComputer ? 4.0 : 24.0;
 
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: AppColors.surface,
+        backgroundColor: isDark ? AppColors.surface : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightBlue),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(24),
-          side: BorderSide(color: AppColors.primary.withOpacity(0.4)),
+          borderRadius: BorderRadius.circular(borderRadius),
+          side: BorderSide(color: accentColor.withValues(alpha: 0.4)),
         ),
-        title: const Text(
-          'Ubah Nama Pemain',
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-        ),
+        title: Text('Ubah Nama Pemain',
+            style: TextStyle(fontWeight: FontWeight.bold, color: isDark ? Colors.white : (isComputer ? AppColors.textPrimaryComputer : AppColors.textPrimaryLightBlue))),
         content: Form(
           key: formKey,
           child: TextFormField(
             controller: controller,
-            style: const TextStyle(color: Colors.white),
             maxLength: 15,
             textCapitalization: TextCapitalization.words,
             decoration: InputDecoration(
-              prefixIcon: const Icon(Icons.person_outline, color: AppColors.primary),
+              prefixIcon: Icon(Icons.person_outline, color: accentColor),
               hintText: 'Nama baru...',
-              hintStyle: const TextStyle(color: Colors.grey),
-              counterStyle: const TextStyle(color: Colors.grey),
               filled: true,
-              fillColor: AppColors.background,
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide.none,
-              ),
-              focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide: const BorderSide(color: AppColors.primary, width: 1.5),
-              ),
+              fillColor: isDark ? AppColors.background : (isComputer ? AppColors.backgroundComputer : AppColors.backgroundLightBlue),
+              border: OutlineInputBorder(borderRadius: BorderRadius.circular(isComputer ? 4.0 : 12.0), borderSide: BorderSide.none),
+              focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(isComputer ? 4.0 : 12.0), borderSide: BorderSide(color: accentColor, width: 1.5)),
             ),
             validator: (v) {
               if (v == null || v.trim().isEmpty) return 'Nama tidak boleh kosong!';
@@ -187,10 +89,7 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
           ),
         ),
         actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(),
-            child: const Text('Batal', style: TextStyle(color: Colors.grey)),
-          ),
+          TextButton(onPressed: () => Navigator.of(context).pop(), child: const Text('Batal', style: TextStyle(color: Colors.grey))),
           ElevatedButton(
             onPressed: () async {
               if (!formKey.currentState!.validate()) return;
@@ -204,7 +103,10 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
                 setState(() {});
               }
             },
-            style: ElevatedButton.styleFrom(backgroundColor: AppColors.primary),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: accentColor,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(isComputer ? 4.0 : 12.0)),
+            ),
             child: const Text('Simpan', style: TextStyle(color: Colors.white)),
           ),
         ],
@@ -212,36 +114,215 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
     );
   }
 
+  // ─── Dialog Hapus Akun ────────────────────────────────────────────
+  void _tampilkanDialogHapusAkun() {
+    final currentMode = ref.read(temaProvider);
+    final isDark = currentMode == AppThemeMode.dark;
+    final isComputer = currentMode == AppThemeMode.computer;
+    final borderRadius = isComputer ? 4.0 : 24.0;
+    final btnRadius = isComputer ? 4.0 : 12.0;
+
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: isDark ? AppColors.surface : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightBlue),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(borderRadius),
+          side: BorderSide(color: AppColors.failure.withValues(alpha: 0.4)),
+        ),
+        title: const Text('Hapus Akun', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.failure)),
+        content: const Text('Semua data progres, bintang, dan pencapaian kamu akan terhapus permanen.\n\nApakah kamu yakin?'),
+        actions: [
+          TextButton(onPressed: () => Navigator.of(context).pop(), child: const Text('Batal', style: TextStyle(color: Colors.grey))),
+          ElevatedButton(
+            onPressed: () async {
+              final prefs = await SharedPreferences.getInstance();
+              await prefs.clear();
+              ref.read(playerNameProvider.notifier).state = '';
+              ref.read(progressProvider.notifier).resetProgress();
+              if (context.mounted) {
+                Navigator.of(context).pushAndRemoveUntil(
+                  MaterialPageRoute(builder: (_) => const LayarBuatNama()),
+                  (route) => false,
+                );
+              }
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppColors.failure,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(btnRadius)),
+            ),
+            child: const Text('Hapus', style: TextStyle(color: Colors.white)),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // ─── Bottom Sheet Deskripsi Aplikasi ─────────────────────────────
+  void _tampilkanDeskripsiAplikasi() {
+    final mataPelajaran = [
+      'Bahasa Indonesia', 'Matematika', 'Ilmu Pengetahuan Alam (IPA)',
+      'Ilmu Pengetahuan Sosial (IPS)', 'PPKn', 'Bahasa Inggris',
+      'Sejarah', 'Teknologi & Informatika (TIK)', 'Agama Islam'
+    ];
+    final currentMode = ref.read(temaProvider);
+    final isDark = currentMode == AppThemeMode.dark;
+    final isComputer = currentMode == AppThemeMode.computer;
+    final bgColor = isDark ? AppColors.surface : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightBlue);
+    final accentColor = isComputer ? AppColors.primaryComputer : AppColors.primary;
+    final accentGradient = isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient;
+    final borderRadius = isComputer ? 4.0 : 32.0;
+
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (context) {
+        final maxH = MediaQuery.of(context).size.height * 0.85;
+        return Container(
+          constraints: BoxConstraints(maxHeight: maxH),
+          padding: const EdgeInsets.fromLTRB(28, 16, 28, 0),
+          decoration: BoxDecoration(
+            color: bgColor,
+            borderRadius: BorderRadius.vertical(top: Radius.circular(borderRadius)),
+            border: Border(top: BorderSide(color: accentColor.withValues(alpha: 0.3), width: 1.5)),
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              // Handle bar
+              Container(width: 40, height: 4, decoration: BoxDecoration(color: Colors.grey.withValues(alpha: 0.3), borderRadius: BorderRadius.circular(isComputer ? 0 : 2))),
+              const SizedBox(height: 20),
+
+              // Scrollable content
+              Flexible(
+                child: SingleChildScrollView(
+                  physics: const BouncingScrollPhysics(),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(16),
+                        decoration: BoxDecoration(gradient: accentGradient, shape: isComputer ? BoxShape.rectangle : BoxShape.circle, borderRadius: isComputer ? BorderRadius.circular(8) : null,
+                          boxShadow: isComputer ? AppColors.computerShadow : AppColors.primaryGlow),
+                        child: const Icon(Icons.psychology_rounded, color: Colors.white, size: 40),
+                      ),
+                      const SizedBox(height: 16),
+                      ShaderMask(
+                        shaderCallback: (b) => accentGradient.createShader(b),
+                        child: const Text('Quiz', style: TextStyle(fontSize: 32, fontWeight: FontWeight.w900, color: Colors.white, letterSpacing: 4)),
+                      ),
+                      const SizedBox(height: 8),
+                      Text('Versi $_versiAplikasi', style: TextStyle(color: accentColor.withValues(alpha: 0.7), fontSize: 13)),
+                      const SizedBox(height: 20),
+
+                      Container(
+                        padding: const EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          color: accentColor.withValues(alpha: 0.06),
+                          borderRadius: BorderRadius.circular(isComputer ? 4 : 16),
+                          border: Border.all(color: accentColor.withValues(alpha: 0.15)),
+                        ),
+                        child: const Text(
+                          'Quiz adalah aplikasi pembelajaran interaktif berbasis Kurikulum Merdeka dan K-13. Pemain dapat memilih berbagai mata pelajaran mulai dari Matematika, IPA, hingga Sejarah.\n\nCara Kerja:\n• Jawab soal dengan benar untuk mengumpulkan Bintang ⭐.\n• Semakin banyak bintang, Anda akan mendapatkan Pangkat Kecerdasan yang lebih tinggi (Pemula → Jenius) dan membuka level baru.\n• Terdapat 3 pilihan tema (Gelap / Terang / Komputer) serta efek suara interaktif untuk pengalaman belajar yang seru!',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(fontSize: 13, height: 1.5),
+                        ),
+                      ),
+                      const SizedBox(height: 20),
+
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text('MATA PELAJARAN TERSEDIA',
+                            style: TextStyle(fontSize: 11, fontWeight: FontWeight.w700, color: accentColor, letterSpacing: 1.5)),
+                      ),
+                      const SizedBox(height: 12),
+
+                      Wrap(
+                        spacing: 8,
+                        runSpacing: 8,
+                        children: mataPelajaran.map((mp) => Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                          decoration: BoxDecoration(gradient: accentGradient, borderRadius: BorderRadius.circular(isComputer ? 4 : 20)),
+                          child: Text(mp, style: const TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.w600)),
+                        )).toList(),
+                      ),
+                      const SizedBox(height: 20),
+                    ],
+                  ),
+                ),
+              ),
+
+              // Tombol Tutup selalu di bawah
+              Padding(
+                padding: EdgeInsets.only(bottom: MediaQuery.of(context).padding.bottom + 16),
+                child: SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: () => Navigator.pop(context),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: accentColor,
+                      padding: const EdgeInsets.symmetric(vertical: 14),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(isComputer ? 4 : 14)),
+                    ),
+                    child: const Text('Tutup', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  // ─── Build ────────────────────────────────────────────────────────
   @override
   Widget build(BuildContext context) {
     final playerName = ref.watch(playerNameProvider);
     final progress = ref.watch(progressProvider);
+    final currentThemeMode = ref.watch(temaProvider);
+    final isDark = currentThemeMode == AppThemeMode.dark;
+    final isComputer = currentThemeMode == AppThemeMode.computer;
+
+    final bgGradient = isDark
+        ? AppColors.backgroundGradient
+        : isComputer
+            ? AppColors.backgroundComputerGradient
+            : AppColors.backgroundLightGradient;
+    final cardColor = isDark
+        ? AppColors.surfaceLight.withValues(alpha: 0.6)
+        : isComputer
+            ? AppColors.surfaceComputer
+            : AppColors.surfaceLightBlueSecond.withValues(alpha: 0.8);
+    final labelColor = isComputer ? AppColors.primaryComputer : AppColors.primary;
+    final textColor = isDark ? Colors.white : (isComputer ? AppColors.textPrimaryComputer : AppColors.textPrimaryLightBlue);
+    final subTextColor = isDark ? AppColors.textSecondary : (isComputer ? AppColors.textSecondaryComputer : AppColors.textSecondaryLightBlue);
+    final divColor = isDark ? Colors.white.withValues(alpha: 0.06) : (isComputer ? AppColors.surfaceComputerBorder : Colors.black.withValues(alpha: 0.06));
+    final headerGradient = isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient;
+
+    final soundIconColor = isComputer ? AppColors.primaryComputerLight : AppColors.accent;
+    final notifIconColor = isComputer ? AppColors.primaryComputerLight : AppColors.gold;
 
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(gradient: AppColors.backgroundGradient),
+        decoration: BoxDecoration(gradient: bgGradient),
         child: SafeArea(
           child: CustomScrollView(
+            physics: const BouncingScrollPhysics(),
             slivers: [
-              // AppBar premium
+              // Header
               SliverToBoxAdapter(
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(24, 24, 24, 8),
                   child: Row(
                     children: [
                       ShaderMask(
-                        shaderCallback: (bounds) => AppColors.primaryGradient.createShader(bounds),
-                        child: const Text(
-                          'Pengaturan',
-                          style: TextStyle(
-                            fontSize: 28,
-                            fontWeight: FontWeight.w900,
-                            color: Colors.white,
-                          ),
-                        ),
+                        shaderCallback: (b) => headerGradient.createShader(b),
+                        child: const Text('Pengaturan', style: TextStyle(fontSize: 28, fontWeight: FontWeight.w900, color: Colors.white)),
                       ),
                       const Spacer(),
-                      const Icon(Icons.settings_outlined, color: AppColors.primary, size: 28),
+                      Icon(Icons.settings_outlined, color: labelColor, size: 28),
                     ],
                   ),
                 ).animate().fadeIn(duration: 400.ms).slideY(begin: -0.2, end: 0),
@@ -251,76 +332,48 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
                 padding: const EdgeInsets.all(24),
                 sliver: SliverList(
                   delegate: SliverChildListDelegate([
-                    // Kartu Profil
-                    _buildSectionLabel('Profil', Icons.person_outline),
+
+                    // ── PROFIL ─────────────────────────────────────────
+                    _buildLabel('Profil', Icons.person_outline, labelColor),
                     const SizedBox(height: 10),
                     _buildGlassCard(
+                      color: cardColor, divColor: divColor, isComputer: isComputer,
                       child: InkWell(
                         onTap: _tampilkanDialogUbahNama,
-                        borderRadius: BorderRadius.circular(20),
+                        borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
                         child: Padding(
                           padding: const EdgeInsets.all(20),
                           child: Row(
                             children: [
                               Container(
-                                width: 56,
-                                height: 56,
+                                width: 56, height: 56,
                                 decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  gradient: AppColors.primaryGradient,
-                                  boxShadow: AppColors.primaryGlow,
+                                  shape: isComputer ? BoxShape.rectangle : BoxShape.circle,
+                                  borderRadius: isComputer ? BorderRadius.circular(8) : null,
+                                  gradient: isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient,
+                                  boxShadow: isComputer ? AppColors.computerShadow : AppColors.primaryGlow,
                                 ),
-                                child: Center(
-                                  child: Text(
-                                    playerName.isNotEmpty ? playerName[0].toUpperCase() : 'P',
-                                    style: const TextStyle(
-                                      fontSize: 24,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                ),
+                                child: Center(child: Text(
+                                  playerName.isNotEmpty ? playerName[0].toUpperCase() : 'P',
+                                  style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
+                                )),
                               ),
                               const SizedBox(width: 16),
                               Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      playerName,
-                                      style: const TextStyle(
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    const SizedBox(height: 4),
-                                    Text(
-                                      progress.gelarKecerdasan,
-                                      style: TextStyle(
-                                        fontSize: 13,
-                                        color: progress.warnaGelar,
-                                        fontWeight: FontWeight.w600,
-                                      ),
-                                    ),
-                                  ],
-                                ),
+                                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                                  Text(playerName, style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: textColor)),
+                                  const SizedBox(height: 4),
+                                  Text(progress.gelarKecerdasan, style: TextStyle(fontSize: 13, color: isComputer ? AppColors.accentComputer : progress.warnaGelar, fontWeight: FontWeight.w600)),
+                                ]),
                               ),
                               Container(
                                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                                 decoration: BoxDecoration(
-                                  color: AppColors.primary.withOpacity(0.15),
-                                  borderRadius: BorderRadius.circular(20),
-                                  border: Border.all(color: AppColors.primary.withOpacity(0.3)),
+                                  color: labelColor.withValues(alpha: 0.12),
+                                  borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
+                                  border: Border.all(color: labelColor.withValues(alpha: 0.3)),
                                 ),
-                                child: const Text(
-                                  'Ubah',
-                                  style: TextStyle(
-                                    color: AppColors.primary,
-                                    fontSize: 13,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
+                                child: Text('Ubah Nama', style: TextStyle(color: labelColor, fontSize: 12, fontWeight: FontWeight.bold)),
                               ),
                             ],
                           ),
@@ -330,95 +383,107 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
 
                     const SizedBox(height: 28),
 
-                    // Kartu Suara & Tampilan
-                    _buildSectionLabel('Suara & Tampilan', Icons.tune_outlined),
+                    // ── SUARA & TAMPILAN ──────────────────────────────
+                    _buildLabel('Suara & Tampilan', Icons.tune_outlined, labelColor),
                     const SizedBox(height: 10),
                     _buildGlassCard(
-                      child: Column(
-                        children: [
-                          _buildToggleItem(
-                            icon: Icons.volume_up_outlined,
-                            iconColor: AppColors.accent,
-                            label: 'Efek Suara',
-                            subtitle: 'Aktifkan suara saat menjawab soal',
-                            value: _suaraAktif,
-                            onChanged: _simpanSuara,
+                      color: cardColor, divColor: divColor, isComputer: isComputer,
+                      child: Column(children: [
+                        _buildToggle(icon: Icons.volume_up_outlined, iconColor: soundIconColor, label: 'Efek Suara', subtitle: 'Aktifkan suara saat menjawab soal', value: _suaraAktif, onChanged: _simpanSuara, textColor: textColor, subTextColor: subTextColor, isComputer: isComputer),
+                        Divider(color: divColor, height: 1),
+                        _buildToggle(icon: Icons.notifications_outlined, iconColor: notifIconColor, label: 'Notifikasi', subtitle: 'Terima pengingat belajar harian', value: _notifikasiAktif, onChanged: _simpanNotifikasi, textColor: textColor, subTextColor: subTextColor, isComputer: isComputer),
+                        Divider(color: divColor, height: 1),
+
+                        // Tema Selector (3 Modes)
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  Container(
+                                    padding: const EdgeInsets.all(10),
+                                    decoration: BoxDecoration(color: labelColor.withValues(alpha: 0.12), borderRadius: BorderRadius.circular(isComputer ? 4 : 12)),
+                                    child: Icon(Icons.palette_outlined, color: labelColor, size: 22),
+                                  ),
+                                  const SizedBox(width: 16),
+                                  Expanded(
+                                    child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                                      Text('Tema Aplikasi', style: TextStyle(color: textColor, fontWeight: FontWeight.w600, fontSize: 15)),
+                                      const SizedBox(height: 2),
+                                      Text('Pilih mode tampilan', style: TextStyle(color: subTextColor, fontSize: 12)),
+                                    ]),
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(height: 16),
+                              Container(
+                                padding: const EdgeInsets.all(4),
+                                decoration: BoxDecoration(
+                                  color: isDark ? AppColors.surface : (isComputer ? AppColors.surfaceComputerSecond : AppColors.backgroundLightBlue),
+                                  borderRadius: BorderRadius.circular(isComputer ? 4 : 16),
+                                  border: Border.all(color: divColor),
+                                ),
+                                child: Row(
+                                  children: [
+                                    _buildThemeOption('Komputer', Icons.computer_rounded, AppThemeMode.computer, currentThemeMode, textColor, isDark, isComputer),
+                                    _buildThemeOption('Terang', Icons.light_mode_rounded, AppThemeMode.light, currentThemeMode, textColor, isDark, isComputer),
+                                    _buildThemeOption('Gelap', Icons.dark_mode_rounded, AppThemeMode.dark, currentThemeMode, textColor, isDark, isComputer),
+                                  ],
+                                ),
+                              ),
+                            ],
                           ),
-                          Divider(color: Colors.white.withOpacity(0.06), height: 1),
-                          _buildToggleItem(
-                            icon: Icons.notifications_outlined,
-                            iconColor: AppColors.gold,
-                            label: 'Notifikasi',
-                            subtitle: 'Terima pengingat belajar harian',
-                            value: _notifikasiAktif,
-                            onChanged: _simpanNotifikasi,
-                          ),
-                        ],
-                      ),
+                        ),
+                      ]),
                     ).animate().fadeIn(delay: 200.ms, duration: 400.ms).slideY(begin: 0.1, end: 0),
 
                     const SizedBox(height: 28),
 
-                    // Kartu Data
-                    _buildSectionLabel('Data & Privasi', Icons.shield_outlined),
+                    // ── DATA & AKUN ───────────────────────────────────
+                    _buildLabel('Data & Akun', Icons.shield_outlined, labelColor),
                     const SizedBox(height: 10),
                     _buildGlassCard(
-                      child: _buildActionItem(
-                        icon: Icons.delete_sweep_outlined,
+                      color: cardColor, divColor: divColor, isComputer: isComputer,
+                      child: _buildAction(
+                        icon: Icons.delete_forever_rounded,
                         iconColor: AppColors.failure,
-                        label: 'Reset Semua Progres',
-                        subtitle: 'Hapus seluruh bintang dan level yang telah dibuka',
-                        onTap: _tampilkanDialogResetProgres,
+                        label: 'Hapus Akun',
+                        subtitle: 'Hapus semua data akun secara permanen',
+                        onTap: _tampilkanDialogHapusAkun,
                         isDestructive: true,
+                        textColor: textColor,
+                        subTextColor: subTextColor,
+                        isComputer: isComputer,
                       ),
                     ).animate().fadeIn(delay: 300.ms, duration: 400.ms).slideY(begin: 0.1, end: 0),
 
                     const SizedBox(height: 28),
 
-                    // Kartu Tentang
-                    _buildSectionLabel('Tentang Aplikasi', Icons.info_outline),
+                    // ── TENTANG APLIKASI ──────────────────────────────
+                    _buildLabel('Tentang Aplikasi', Icons.info_outline, labelColor),
                     const SizedBox(height: 10),
                     _buildGlassCard(
-                      child: Column(
-                        children: [
-                          _buildInfoItem(
-                            icon: Icons.quiz_outlined,
-                            iconColor: AppColors.primary,
-                            label: 'Nama Aplikasi',
-                            value: 'Quiz',
-                          ),
-                          Divider(color: Colors.white.withOpacity(0.06), height: 1),
-                          _buildInfoItem(
-                            icon: Icons.tag,
-                            iconColor: AppColors.accent,
-                            label: 'Versi',
-                            value: _versiAplikasi,
-                          ),
-                          Divider(color: Colors.white.withOpacity(0.06), height: 1),
-                          _buildInfoItem(
-                            icon: Icons.star_outline,
-                            iconColor: AppColors.gold,
-                            label: 'Total Bintang',
-                            value: '${progress.totalStars} ⭐',
-                          ),
-                        ],
+                      color: cardColor, divColor: divColor, isComputer: isComputer,
+                      child: _buildAction(
+                        icon: Icons.quiz_outlined,
+                        iconColor: labelColor,
+                        label: 'Deskripsi Aplikasi',
+                        subtitle: 'Pelajari tentang Quiz App lebih lanjut',
+                        onTap: _tampilkanDeskripsiAplikasi,
+                        textColor: textColor,
+                        subTextColor: subTextColor,
+                        isComputer: isComputer,
                       ),
                     ).animate().fadeIn(delay: 400.ms, duration: 400.ms).slideY(begin: 0.1, end: 0),
 
                     const SizedBox(height: 32),
-
-                    // Label kredit di bawah
                     Center(
-                      child: Text(
-                        'Quiz App · v$_versiAplikasi',
-                        style: TextStyle(
-                          color: AppColors.textSecondary.withOpacity(0.4),
-                          fontSize: 12,
-                          letterSpacing: 1,
-                        ),
-                      ),
+                      child: Text('Quiz App · v$_versiAplikasi',
+                          style: TextStyle(color: subTextColor.withValues(alpha: 0.4), fontSize: 12, letterSpacing: 1)),
                     ).animate().fadeIn(delay: 500.ms),
-                    const SizedBox(height: 24),
+                    const SizedBox(height: 120),
                   ]),
                 ),
               ),
@@ -429,157 +494,95 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
     );
   }
 
-  Widget _buildSectionLabel(String label, IconData icon) {
-    return Row(
-      children: [
-        Icon(icon, size: 16, color: AppColors.primary),
-        const SizedBox(width: 8),
-        Text(
-          label.toUpperCase(),
-          style: const TextStyle(
-            fontSize: 11,
-            fontWeight: FontWeight.w700,
-            color: AppColors.primary,
-            letterSpacing: 1.5,
+  // ─── Widget Helpers ───────────────────────────────────────────────
+
+  Widget _buildThemeOption(String label, IconData icon, AppThemeMode mode, AppThemeMode currentMode, Color textColor, bool isDark, bool isComputer) {
+    final isSelected = currentMode == mode;
+    final activeColor = isComputer ? AppColors.primaryComputer : AppColors.primary;
+    final inactiveTextColor = isDark ? Colors.white54 : (isComputer ? AppColors.textSecondaryComputer : Colors.black54);
+    return Expanded(
+      child: GestureDetector(
+        onTap: () => ref.read(temaProvider.notifier).ubahTema(mode),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 250),
+          curve: Curves.easeOutCubic,
+          padding: const EdgeInsets.symmetric(vertical: 10),
+          decoration: BoxDecoration(
+            color: isSelected ? activeColor : Colors.transparent,
+            borderRadius: BorderRadius.circular(isComputer ? 4 : 12),
+            boxShadow: isSelected
+                ? (isDark ? AppColors.primaryGlow : (isComputer ? AppColors.computerShadow : AppColors.lightBlueGlow))
+                : [],
+          ),
+          child: Column(
+            children: [
+              Icon(icon, size: 20, color: isSelected ? Colors.white : inactiveTextColor),
+              const SizedBox(height: 4),
+              Text(label, style: TextStyle(
+                fontSize: 11,
+                fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                color: isSelected ? Colors.white : inactiveTextColor,
+              )),
+            ],
           ),
         ),
-      ],
+      ),
     );
   }
 
-  Widget _buildGlassCard({required Widget child}) {
+  Widget _buildLabel(String label, IconData icon, Color color) {
+    return Row(children: [
+      Icon(icon, size: 16, color: color),
+      const SizedBox(width: 8),
+      Text(label.toUpperCase(), style: TextStyle(fontSize: 11, fontWeight: FontWeight.w700, color: color, letterSpacing: 1.5)),
+    ]);
+  }
+
+  Widget _buildGlassCard({required Widget child, required Color color, required Color divColor, required bool isComputer}) {
     return Container(
-      decoration: BoxDecoration(
-        color: AppColors.surfaceLight.withOpacity(0.6),
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: Colors.white.withOpacity(0.08), width: 1),
-      ),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(20),
-        child: child,
-      ),
+      decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(isComputer ? 4 : 20), border: Border.all(color: divColor, width: 1)),
+      child: ClipRRect(borderRadius: BorderRadius.circular(isComputer ? 4 : 20), child: child),
     );
   }
 
-  Widget _buildToggleItem({
-    required IconData icon,
-    required Color iconColor,
-    required String label,
-    required String subtitle,
-    required bool value,
-    required ValueChanged<bool> onChanged,
+  Widget _buildToggle({
+    required IconData icon, required Color iconColor, required String label, required String subtitle,
+    required bool value, required ValueChanged<bool> onChanged, required Color textColor, required Color subTextColor, required bool isComputer,
   }) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-      child: Row(
-        children: [
-          Container(
-            padding: const EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: iconColor.withOpacity(0.1),
-              borderRadius: BorderRadius.circular(12),
-            ),
-            child: Icon(icon, color: iconColor, size: 22),
-          ),
-          const SizedBox(width: 16),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(label, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 15)),
-                const SizedBox(height: 2),
-                Text(subtitle, style: TextStyle(color: AppColors.textSecondary, fontSize: 12)),
-              ],
-            ),
-          ),
-          Switch(
-            value: value,
-            onChanged: onChanged,
-            activeColor: AppColors.primary,
-            activeTrackColor: AppColors.primary.withOpacity(0.3),
-            inactiveTrackColor: Colors.white12,
-            inactiveThumbColor: Colors.white38,
-          ),
-        ],
-      ),
+      child: Row(children: [
+        Container(padding: const EdgeInsets.all(10), decoration: BoxDecoration(color: iconColor.withValues(alpha: 0.12), borderRadius: BorderRadius.circular(isComputer ? 4 : 12)), child: Icon(icon, color: iconColor, size: 22)),
+        const SizedBox(width: 16),
+        Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Text(label, style: TextStyle(color: textColor, fontWeight: FontWeight.w600, fontSize: 15)),
+          const SizedBox(height: 2),
+          Text(subtitle, style: TextStyle(color: subTextColor, fontSize: 12)),
+        ])),
+        Switch(value: value, onChanged: onChanged),
+      ]),
     );
   }
 
-  Widget _buildActionItem({
-    required IconData icon,
-    required Color iconColor,
-    required String label,
-    required String subtitle,
-    required VoidCallback onTap,
-    bool isDestructive = false,
+  Widget _buildAction({
+    required IconData icon, required Color iconColor, required String label, required String subtitle,
+    required VoidCallback onTap, bool isDestructive = false, required Color textColor, required Color subTextColor, required bool isComputer,
   }) {
     return InkWell(
       onTap: onTap,
-      borderRadius: BorderRadius.circular(20),
+      borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
-        child: Row(
-          children: [
-            Container(
-              padding: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                color: iconColor.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Icon(icon, color: iconColor, size: 22),
-            ),
-            const SizedBox(width: 16),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    label,
-                    style: TextStyle(
-                      color: isDestructive ? AppColors.failure : Colors.white,
-                      fontWeight: FontWeight.w600,
-                      fontSize: 15,
-                    ),
-                  ),
-                  const SizedBox(height: 2),
-                  Text(subtitle, style: TextStyle(color: AppColors.textSecondary, fontSize: 12)),
-                ],
-              ),
-            ),
-            Icon(Icons.chevron_right, color: Colors.white24, size: 20),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildInfoItem({
-    required IconData icon,
-    required Color iconColor,
-    required String label,
-    required String value,
-  }) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-      child: Row(
-        children: [
-          Container(
-            padding: const EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: iconColor.withOpacity(0.1),
-              borderRadius: BorderRadius.circular(12),
-            ),
-            child: Icon(icon, color: iconColor, size: 22),
-          ),
+        child: Row(children: [
+          Container(padding: const EdgeInsets.all(10), decoration: BoxDecoration(color: iconColor.withValues(alpha: 0.12), borderRadius: BorderRadius.circular(isComputer ? 4 : 12)), child: Icon(icon, color: iconColor, size: 22)),
           const SizedBox(width: 16),
-          Expanded(
-            child: Text(label, style: TextStyle(color: AppColors.textSecondary, fontSize: 14)),
-          ),
-          Text(
-            value,
-            style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 14),
-          ),
-        ],
+          Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Text(label, style: TextStyle(color: isDestructive ? AppColors.failure : textColor, fontWeight: FontWeight.w600, fontSize: 15)),
+            const SizedBox(height: 2),
+            Text(subtitle, style: TextStyle(color: subTextColor, fontSize: 12)),
+          ])),
+          Icon(Icons.chevron_right, color: subTextColor.withValues(alpha: 0.4), size: 20),
+        ]),
       ),
     );
   }
