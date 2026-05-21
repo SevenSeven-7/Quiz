@@ -73,7 +73,7 @@ class LevelSelectionScreen extends ConsumerWidget {
                             Container(
                               padding: const EdgeInsets.all(20),
                               decoration: BoxDecoration(
-                                color: AppColors.primary.withOpacity(0.1),
+                                color: AppColors.primary.withValues(alpha: 0.1),
                                 shape: BoxShape.circle,
                               ),
                               child: const CircularProgressIndicator(
@@ -96,8 +96,11 @@ class LevelSelectionScreen extends ConsumerWidget {
                     int crossAxisCount = 5;
                     if (width > 1200) {
                       crossAxisCount = 12;
-                    } else if (width > 900) crossAxisCount = 10;
-                    else if (width > 600) crossAxisCount = 8;
+                    } else if (width > 900) {
+                      crossAxisCount = 10;
+                    } else if (width > 600) {
+                      crossAxisCount = 8;
+                    }
 
                     return Padding(
                       padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
@@ -156,7 +159,7 @@ class LevelSelectionScreen extends ConsumerWidget {
         end: Alignment.bottomRight,
       );
     } else if (isUnlocked) {
-      borderColor = (isComputer ? AppColors.primaryComputer : AppColors.primary).withOpacity(0.5);
+      borderColor = (isComputer ? AppColors.primaryComputer : AppColors.primary).withValues(alpha: 0.5);
     }
 
     return InkWell(
@@ -171,17 +174,17 @@ class LevelSelectionScreen extends ConsumerWidget {
         decoration: BoxDecoration(
           gradient: gradient,
           color: gradient == null
-              ? (isUnlocked ? (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLight) : AppColors.surface.withOpacity(0.3))
+              ? (isUnlocked ? (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLight) : AppColors.surface.withValues(alpha: 0.3))
               : null,
           borderRadius: BorderRadius.circular(isComputer ? 4 : 14),
           border: Border.all(
-            color: borderColor ?? (isComputer ? AppColors.surfaceComputerBorder : Colors.white.withOpacity(0.05)),
+            color: borderColor ?? (isComputer ? AppColors.surfaceComputerBorder : Colors.white.withValues(alpha: 0.05)),
             width: isComplete ? 1.5 : 1,
           ),
           boxShadow: isComputer ? AppColors.computerCardShadow : (isComplete
-              ? [BoxShadow(color: AppColors.gold.withOpacity(0.2), blurRadius: 8)]
+              ? [BoxShadow(color: AppColors.gold.withValues(alpha: 0.2), blurRadius: 8)]
               : isUnlocked
-                  ? [BoxShadow(color: AppColors.primary.withOpacity(0.1), blurRadius: 6)]
+                  ? [BoxShadow(color: AppColors.primary.withValues(alpha: 0.1), blurRadius: 6)]
                   : null),
         ),
         child: Column(

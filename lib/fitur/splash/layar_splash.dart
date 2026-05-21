@@ -78,9 +78,6 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
         : isComputer
             ? AppColors.backgroundComputerGradient
             : AppColors.backgroundLightGradient;
-    final logoGradient = isComputer
-        ? AppColors.primaryComputerGradient
-        : AppColors.primaryGradient;
     final textGradient = isComputer
         ? AppColors.primaryComputerGradient
         : AppColors.primaryGradient;
@@ -211,7 +208,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                   width: 100,
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(4),
-                    child: LinearProgressIndicator(
+                    child: const LinearProgressIndicator(
                       backgroundColor: AppColors.surfaceComputerBorder,
                       valueColor: AlwaysStoppedAnimation<Color>(AppColors.primaryComputer),
                       minHeight: 3,

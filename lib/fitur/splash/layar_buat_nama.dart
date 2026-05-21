@@ -108,7 +108,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                   shape: BoxShape.circle,
                   gradient: RadialGradient(
                     colors: [
-                      AppColors.primary.withOpacity(0.12),
+                      AppColors.primary.withValues(alpha: 0.12),
                       Colors.transparent,
                     ],
                   ),
@@ -181,15 +181,15 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                       Container(
                         padding: const EdgeInsets.all(24),
                         decoration: BoxDecoration(
-                          color: AppColors.surfaceLight.withOpacity(0.6),
+                          color: AppColors.surfaceLight.withValues(alpha: 0.6),
                           borderRadius: BorderRadius.circular(28),
                           border: Border.all(
-                            color: AppColors.primary.withOpacity(0.25),
+                            color: AppColors.primary.withValues(alpha: 0.25),
                             width: 1.5,
                           ),
                           boxShadow: [
                             BoxShadow(
-                              color: AppColors.primary.withOpacity(0.08),
+                              color: AppColors.primary.withValues(alpha: 0.08),
                               blurRadius: 24,
                               spreadRadius: 1,
                             ),
@@ -236,7 +236,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                                 counterStyle: const TextStyle(color: AppColors.textSecondary),
                                 prefixIcon: const Icon(Icons.person_rounded, color: AppColors.primary),
                                 filled: true,
-                                fillColor: AppColors.background.withOpacity(0.8),
+                                fillColor: AppColors.background.withValues(alpha: 0.8),
                                 contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 18),
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(14),
@@ -336,7 +336,7 @@ class _MiniParticlePainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     for (final p in particles) {
       final yPos = (p.y - animValue * p.speed) % 1.0;
-      final paint = Paint()..color = p.color.withOpacity(p.opacity);
+      final paint = Paint()..color = p.color.withValues(alpha: p.opacity);
       canvas.drawCircle(Offset(p.x * size.width, yPos * size.height), p.size, paint);
     }
   }

@@ -151,7 +151,6 @@ class _MainNavigationScreenState extends ConsumerState<MainNavigationScreen>
 
   Widget _buildNavItem(int index, IconData activeIcon, IconData inactiveIcon, String label, bool isDark, bool isComputer) {
     final isActive = _currentIndex == index;
-    final activeColor = isComputer ? AppColors.primaryComputer : AppColors.primary;
     final inactiveColor = isDark
         ? AppColors.textSecondary
         : isComputer
@@ -258,12 +257,12 @@ class ProfileScreen extends ConsumerWidget {
                   Container(
                     padding: const EdgeInsets.all(28),
                     decoration: BoxDecoration(
-                      color: isDark ? AppColors.surfaceLight.withOpacity(0.6) : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond.withOpacity(0.8)),
+                      color: isDark ? AppColors.surfaceLight.withValues(alpha: 0.6) : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond.withValues(alpha: 0.8)),
                       borderRadius: BorderRadius.circular(isComputer ? 4 : 28),
-                      border: Border.all(color: isComputer ? AppColors.surfaceComputerBorder : warnaGelar.withOpacity(0.3), width: 1.5),
+                      border: Border.all(color: isComputer ? AppColors.surfaceComputerBorder : warnaGelar.withValues(alpha: 0.3), width: 1.5),
                       boxShadow: isComputer ? AppColors.computerCardShadow : [
                         BoxShadow(
-                          color: warnaGelar.withOpacity(0.1),
+                          color: warnaGelar.withValues(alpha: 0.1),
                           blurRadius: 30,
                           spreadRadius: 2,
                         ),
@@ -283,7 +282,7 @@ class ProfileScreen extends ConsumerWidget {
                             ),
                             boxShadow: isComputer ? AppColors.computerShadow : [
                               BoxShadow(
-                                color: warnaGelar.withOpacity(0.4),
+                                color: warnaGelar.withValues(alpha: 0.4),
                                 blurRadius: 20,
                                 spreadRadius: 2,
                               ),
@@ -315,9 +314,9 @@ class ProfileScreen extends ConsumerWidget {
                         Container(
                           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
                           decoration: BoxDecoration(
-                            color: isComputer ? AppColors.surfaceComputerSecond : warnaGelar.withOpacity(0.1),
+                            color: isComputer ? AppColors.surfaceComputerSecond : warnaGelar.withValues(alpha: 0.1),
                             borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
-                            border: Border.all(color: isComputer ? AppColors.surfaceComputerBorder : warnaGelar.withOpacity(0.4)),
+                            border: Border.all(color: isComputer ? AppColors.surfaceComputerBorder : warnaGelar.withValues(alpha: 0.4)),
                           ),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
@@ -345,9 +344,9 @@ class ProfileScreen extends ConsumerWidget {
                   Container(
                     padding: const EdgeInsets.all(24),
                     decoration: BoxDecoration(
-                      color: isDark ? AppColors.surfaceLight.withOpacity(0.6) : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond.withOpacity(0.8)),
+                      color: isDark ? AppColors.surfaceLight.withValues(alpha: 0.6) : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond.withValues(alpha: 0.8)),
                       borderRadius: BorderRadius.circular(isComputer ? 4 : 24),
-                      border: Border.all(color: isDark ? Colors.white.withOpacity(0.08) : (isComputer ? AppColors.surfaceComputerBorder : Colors.black.withOpacity(0.05))),
+                      border: Border.all(color: isDark ? Colors.white.withValues(alpha: 0.08) : (isComputer ? AppColors.surfaceComputerBorder : Colors.black.withValues(alpha: 0.05))),
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -371,7 +370,7 @@ class ProfileScreen extends ConsumerWidget {
                           isDark: isDark,
                           isComputer: isComputer,
                         ),
-                        Divider(color: isDark ? Colors.white.withOpacity(0.06) : (isComputer ? AppColors.surfaceComputerBorder : Colors.black.withOpacity(0.06)), height: 28),
+                        Divider(color: isDark ? Colors.white.withValues(alpha: 0.06) : (isComputer ? AppColors.surfaceComputerBorder : Colors.black.withValues(alpha: 0.06)), height: 28),
                         _buildStatRow(
                           context,
                           icon: Icons.language_rounded,
@@ -381,7 +380,7 @@ class ProfileScreen extends ConsumerWidget {
                           isDark: isDark,
                           isComputer: isComputer,
                         ),
-                        Divider(color: isDark ? Colors.white.withOpacity(0.06) : (isComputer ? AppColors.surfaceComputerBorder : Colors.black.withOpacity(0.06)), height: 28),
+                        Divider(color: isDark ? Colors.white.withValues(alpha: 0.06) : (isComputer ? AppColors.surfaceComputerBorder : Colors.black.withValues(alpha: 0.06)), height: 28),
                         _buildStatRow(
                           context,
                           icon: Icons.calculate_rounded,
@@ -422,7 +421,7 @@ class ProfileScreen extends ConsumerWidget {
         Container(
           padding: const EdgeInsets.all(9),
           decoration: BoxDecoration(
-            color: iconColor.withOpacity(0.12),
+            color: iconColor.withValues(alpha: 0.12),
             borderRadius: BorderRadius.circular(isComputer ? 4 : 12),
           ),
           child: Icon(icon, color: iconColor, size: 20),

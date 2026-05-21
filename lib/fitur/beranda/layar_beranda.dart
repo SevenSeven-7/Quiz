@@ -171,12 +171,12 @@ class HomeScreen extends ConsumerWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: isDark ? AppColors.surfaceLight.withOpacity(0.7) : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond.withOpacity(0.8)),
+        color: isDark ? AppColors.surfaceLight.withValues(alpha: 0.7) : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond.withValues(alpha: 0.8)),
         borderRadius: BorderRadius.circular(isComputer ? 4 : 24),
-        border: Border.all(color: isComputer ? AppColors.surfaceComputerBorder : warnaGelar.withOpacity(0.25), width: 1.5),
+        border: Border.all(color: isComputer ? AppColors.surfaceComputerBorder : warnaGelar.withValues(alpha: 0.25), width: 1.5),
         boxShadow: isComputer ? AppColors.computerCardShadow : [
           BoxShadow(
-            color: warnaGelar.withOpacity(0.1),
+            color: warnaGelar.withValues(alpha: 0.1),
             blurRadius: 24,
             spreadRadius: 1,
           ),
@@ -189,7 +189,7 @@ class HomeScreen extends ConsumerWidget {
               Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  color: warnaGelar.withOpacity(0.12),
+                  color: warnaGelar.withValues(alpha: 0.12),
                   borderRadius: BorderRadius.circular(14),
                 ),
                 child: Icon(Icons.psychology_rounded, color: warnaGelar, size: 26),
@@ -294,7 +294,7 @@ class HomeScreen extends ConsumerWidget {
             (context, index) {
               final part = parts[index];
               // Semua kategori pelajaran selalu terbuka - bebas dipilih pemain
-              final isUnlocked = true;
+              const isUnlocked = true;
               return Padding(
                 padding: const EdgeInsets.only(bottom: 14),
                 child: _buildPartCard(context, part, isUnlocked, index, isDark, isComputer),
@@ -334,12 +334,12 @@ class HomeScreen extends ConsumerWidget {
         duration: const Duration(milliseconds: 300),
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
-          color: isDark ? AppColors.surfaceLight.withOpacity(0.6) : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond.withOpacity(0.8)),
+          color: isDark ? AppColors.surfaceLight.withValues(alpha: 0.6) : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond.withValues(alpha: 0.8)),
           borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
           border: Border.all(
             color: isUnlocked
-                ? (isComputer ? AppColors.surfaceComputerBorder : Color(grad[0].value).withOpacity(0.3))
-                : (isDark ? Colors.white.withOpacity(0.05) : Colors.black.withOpacity(0.05)),
+                ? (isComputer ? AppColors.surfaceComputerBorder : grad[0].withValues(alpha: 0.3))
+                : (isDark ? Colors.white.withValues(alpha: 0.05) : Colors.black.withValues(alpha: 0.05)),
             width: 1.5,
           ),
           boxShadow: isComputer ? AppColors.computerCardShadow : null,
@@ -356,7 +356,7 @@ class HomeScreen extends ConsumerWidget {
                 color: isUnlocked ? null : (isDark ? Colors.white10 : Colors.black12),
                 borderRadius: BorderRadius.circular(isComputer ? 4 : 16),
                 boxShadow: isUnlocked
-                    ? [BoxShadow(color: isComputer ? Colors.black12 : grad[0].withOpacity(0.3), blurRadius: 12)]
+                    ? [BoxShadow(color: isComputer ? Colors.black12 : grad[0].withValues(alpha: 0.3), blurRadius: 12)]
                     : null,
               ),
               child: Icon(
@@ -386,8 +386,8 @@ class HomeScreen extends ConsumerWidget {
                     style: TextStyle(
                       fontSize: 12,
                       color: isDark 
-                          ? AppColors.textSecondary.withOpacity(isUnlocked ? 1.0 : 0.5)
-                          : AppColors.textSecondaryLight.withOpacity(isUnlocked ? 1.0 : 0.5),
+                          ? AppColors.textSecondary.withValues(alpha: isUnlocked ? 1.0 : 0.5)
+                          : AppColors.textSecondaryLight.withValues(alpha: isUnlocked ? 1.0 : 0.5),
                     ),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
@@ -421,7 +421,7 @@ class HomeScreen extends ConsumerWidget {
           child: Container(
             height: 92,
             decoration: BoxDecoration(
-              color: isDark ? AppColors.surfaceLight.withOpacity(0.3) : AppColors.surfaceLightModeSecond.withOpacity(0.3),
+              color: isDark ? AppColors.surfaceLight.withValues(alpha: 0.3) : AppColors.surfaceLightModeSecond.withValues(alpha: 0.3),
               borderRadius: BorderRadius.circular(8),
             ),
           ).animate(onPlay: (c) => c.repeat()).shimmer(

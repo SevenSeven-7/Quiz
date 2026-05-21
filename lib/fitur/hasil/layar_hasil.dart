@@ -133,7 +133,7 @@ class _ResultScreenState extends State<ResultScreen> with TickerProviderStateMix
                                             shape: BoxShape.circle,
                                             boxShadow: [
                                               BoxShadow(
-                                                color: AppColors.gold.withOpacity(value * 0.6),
+                                                color: AppColors.gold.withValues(alpha: value * 0.6),
                                                 blurRadius: 20 * value,
                                                 spreadRadius: 2 * value,
                                               ),
@@ -172,15 +172,15 @@ class _ResultScreenState extends State<ResultScreen> with TickerProviderStateMix
                       Container(
                         padding: const EdgeInsets.all(28),
                         decoration: BoxDecoration(
-                          color: AppColors.surfaceLight.withOpacity(0.7),
+                          color: AppColors.surfaceLight.withValues(alpha: 0.7),
                           borderRadius: BorderRadius.circular(28),
                           border: Border.all(
-                            color: _messageColor.withOpacity(0.3),
+                            color: _messageColor.withValues(alpha: 0.3),
                             width: 1.5,
                           ),
                           boxShadow: [
                             BoxShadow(
-                              color: _messageColor.withOpacity(0.1),
+                              color: _messageColor.withValues(alpha: 0.1),
                               blurRadius: 30,
                               spreadRadius: 2,
                             ),
@@ -265,7 +265,7 @@ class _ResultScreenState extends State<ResultScreen> with TickerProviderStateMix
                           onPressed: () => Navigator.of(context).popUntil((route) => route.isFirst),
                           style: OutlinedButton.styleFrom(
                             padding: const EdgeInsets.symmetric(vertical: 16),
-                            side: BorderSide(color: AppColors.primary.withOpacity(0.5)),
+                            side: BorderSide(color: AppColors.primary.withValues(alpha: 0.5)),
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                           ),
                           child: const Text(
@@ -316,7 +316,7 @@ class _ConfettiPainter extends CustomPainter {
     for (final p in particles) {
       final yPos = (p.y + animValue * p.speed) % 1.0;
       final xWave = p.x + sin(animValue * pi * 4 + p.y * 10) * 0.02;
-      final paint = Paint()..color = p.color.withOpacity(0.85);
+      final paint = Paint()..color = p.color.withValues(alpha: 0.85);
 
       canvas.save();
       canvas.translate(xWave * size.width, yPos * size.height);

@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
 import '../../model/model.dart';
 import 'layanan_data.dart';
 
@@ -69,7 +70,7 @@ class FirebaseService {
       }
     } catch (e) {
       // Gagal seeding secara diam-diam agar aplikasi tidak crash
-      print('Gagal melakukan seeding data Firebase: $e');
+      debugPrint('Gagal melakukan seeding data Firebase: $e');
     }
   }
 

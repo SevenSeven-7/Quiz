@@ -104,9 +104,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
                         Container(
                           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                           decoration: BoxDecoration(
-                            color: AppColors.primary.withOpacity(0.15),
+                            color: AppColors.primary.withValues(alpha: 0.15),
                             borderRadius: BorderRadius.circular(20),
-                            border: Border.all(color: AppColors.primary.withOpacity(0.3)),
+                            border: Border.all(color: AppColors.primary.withValues(alpha: 0.3)),
                           ),
                           child: Text(
                             '${state.currentIndex + 1}/${state.level.questions.length}',
@@ -184,15 +184,15 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
                         width: double.infinity,
                         padding: const EdgeInsets.all(24),
                         decoration: BoxDecoration(
-                          color: AppColors.surfaceLight.withOpacity(0.7),
+                          color: AppColors.surfaceLight.withValues(alpha: 0.7),
                           borderRadius: BorderRadius.circular(24),
                           border: Border.all(
-                            color: AppColors.primary.withOpacity(0.2),
+                            color: AppColors.primary.withValues(alpha: 0.2),
                             width: 1.5,
                           ),
                           boxShadow: [
                             BoxShadow(
-                              color: AppColors.primary.withOpacity(0.08),
+                              color: AppColors.primary.withValues(alpha: 0.08),
                               blurRadius: 24,
                               spreadRadius: 1,
                             ),
@@ -237,7 +237,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
         backgroundColor: AppColors.surface,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
-          side: BorderSide(color: AppColors.primary.withOpacity(0.3)),
+          side: BorderSide(color: AppColors.primary.withValues(alpha: 0.3)),
         ),
         title: const Text('Keluar dari Quiz?', style: TextStyle(color: Colors.white)),
         content: const Text(
@@ -268,23 +268,23 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
         final isSelected = state.selectedIndex == index;
         final isCorrect = question.correctAnswerIndex == index;
 
-        Color borderColor = Colors.white.withOpacity(0.1);
+        Color borderColor = Colors.white.withValues(alpha: 0.1);
         Color bgColor = Colors.transparent;
         Color? glowColor;
 
         if (state.isAnswered) {
           if (isCorrect) {
             borderColor = AppColors.success;
-            bgColor = AppColors.success.withOpacity(0.12);
+            bgColor = AppColors.success.withValues(alpha: 0.12);
             glowColor = AppColors.success;
           } else if (isSelected) {
             borderColor = AppColors.failure;
-            bgColor = AppColors.failure.withOpacity(0.12);
+            bgColor = AppColors.failure.withValues(alpha: 0.12);
             glowColor = AppColors.failure;
           }
         } else if (isSelected) {
           borderColor = AppColors.primary;
-          bgColor = AppColors.primary.withOpacity(0.08);
+          bgColor = AppColors.primary.withValues(alpha: 0.08);
         }
 
         return Padding(
@@ -300,7 +300,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
                 borderRadius: BorderRadius.circular(16),
                 border: Border.all(color: borderColor, width: 1.5),
                 boxShadow: glowColor != null
-                    ? [BoxShadow(color: glowColor.withOpacity(0.2), blurRadius: 12)]
+                    ? [BoxShadow(color: glowColor.withValues(alpha: 0.2), blurRadius: 12)]
                     : null,
               ),
               child: Row(
@@ -341,11 +341,11 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
                     ),
                   ),
                   if (state.isAnswered)
-                    Icon(
-                      isCorrect ? Icons.check_circle_rounded : (isSelected ? Icons.cancel_rounded : null),
-                      color: isCorrect ? AppColors.success : AppColors.failure,
-                      size: 20,
-                    ) ?? const SizedBox.shrink(),
+                    isCorrect
+                        ? const Icon(Icons.check_circle_rounded, color: AppColors.success, size: 20)
+                        : (isSelected
+                            ? const Icon(Icons.cancel_rounded, color: AppColors.failure, size: 20)
+                            : const SizedBox.shrink()),
                 ],
               ),
             ),
@@ -364,7 +364,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
             color: AppColors.surfaceLight,
             borderRadius: BorderRadius.circular(16),
             border: Border.all(
-              color: state.isAnswered ? AppColors.primary.withOpacity(0.5) : Colors.white10,
+              color: state.isAnswered ? AppColors.primary.withValues(alpha: 0.5) : Colors.white10,
             ),
           ),
           child: TextField(
@@ -417,14 +417,14 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
                       state.level.questions[state.currentIndex].correctAnswer?.toLowerCase().trim()
                   ? AppColors.success
                   : AppColors.failure)
-                  .withOpacity(0.12),
+                  .withValues(alpha: 0.12),
               borderRadius: BorderRadius.circular(14),
               border: Border.all(
                 color: (state.essayAnswer?.toLowerCase().trim() ==
                         state.level.questions[state.currentIndex].correctAnswer?.toLowerCase().trim()
                     ? AppColors.success
                     : AppColors.failure)
-                    .withOpacity(0.5),
+                    .withValues(alpha: 0.5),
               ),
             ),
             child: Text(
