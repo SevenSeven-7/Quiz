@@ -53,19 +53,13 @@ class ProgressState {
     return const Color(0xFFE74C3C); // Merah membara
   }
 
-  // Jumlah level Bahasa Indonesia (Bagian 1) yang berhasil diselesaikan
-  int get indonesianSolved => levelStars.keys.where((k) => k.startsWith('p1_l') && (levelStars[k] ?? 0) > 0).length;
-
-  // Jumlah level Matematika (Bagian 2) yang berhasil diselesaikan
-  int get mathSolved => levelStars.keys.where((k) => k.startsWith('p2_l') && (levelStars[k] ?? 0) > 0).length;
-
-  int get ipaSolved => levelStars.keys.where((k) => k.startsWith('p3_l') && (levelStars[k] ?? 0) > 0).length;
-  int get ipsSolved => levelStars.keys.where((k) => k.startsWith('p4_l') && (levelStars[k] ?? 0) > 0).length;
-  int get ppknSolved => levelStars.keys.where((k) => k.startsWith('p5_l') && (levelStars[k] ?? 0) > 0).length;
-  int get englishSolved => levelStars.keys.where((k) => k.startsWith('p6_l') && (levelStars[k] ?? 0) > 0).length;
-  int get historySolved => levelStars.keys.where((k) => k.startsWith('p7_l') && (levelStars[k] ?? 0) > 0).length;
-  int get itSolved => levelStars.keys.where((k) => k.startsWith('p8_l') && (levelStars[k] ?? 0) > 0).length;
-  int get islamicSolved => levelStars.keys.where((k) => k.startsWith('p9_l') && (levelStars[k] ?? 0) > 0).length;
+  int get islamicSolved => levelStars.keys.where((k) => k.startsWith('p1_l') && (levelStars[k] ?? 0) > 0).length;
+  int get indonesianSolved => levelStars.keys.where((k) => k.startsWith('p2_l') && (levelStars[k] ?? 0) > 0).length;
+  int get mathSolved => levelStars.keys.where((k) => k.startsWith('p3_l') && (levelStars[k] ?? 0) > 0).length;
+  int get ipaSolved => levelStars.keys.where((k) => k.startsWith('p4_l') && (levelStars[k] ?? 0) > 0).length;
+  int get ipsSolved => levelStars.keys.where((k) => k.startsWith('p5_l') && (levelStars[k] ?? 0) > 0).length;
+  int get ppknSolved => levelStars.keys.where((k) => k.startsWith('p6_l') && (levelStars[k] ?? 0) > 0).length;
+  int get englishSolved => levelStars.keys.where((k) => k.startsWith('p7_l') && (levelStars[k] ?? 0) > 0).length;
 
   // Metode untuk menyalin status kemajuan dengan beberapa perubahan (copyWith pattern)
   ProgressState copyWith({
@@ -323,13 +317,18 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
 
       // Hapus semua data dari Firebase terlebih dahulu jika tersedia
       if (playerName.isNotEmpty && playerName != 'Pemain' && _isFirebaseAvailable) {
+        // PERBAIKAN BUG: Hapus dari Firebase
         await FirebaseFirestore.instance
             .collection('user_progress')
             .doc(playerName)
             .delete();
+            
+        // PENTING: JANGAN gunakan clearPersistence() di sini karena akan membatalkan
+        // antrean penghapusan jika terjadi sedikit delay/offline, yang membuat "data hantu" kembali!
       }
 
       // Hapus seluruh data lokal
+      await prefs.remove('player_name');
       await prefs.clear();
 
       // Reset state ke kondisi awal
