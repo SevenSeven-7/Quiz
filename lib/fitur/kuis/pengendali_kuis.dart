@@ -58,9 +58,45 @@ class QuizNotifier extends StateNotifier<QuizState> {
   final Ref ref;
   Timer? _timer;
 
-  QuizNotifier(this.ref, LevelModel level)
-      : super(QuizState(level: level)) {
+  QuizNotifier(this.ref, LevelModel rawLevel)
+      : super(QuizState(level: _randomizeLevel(rawLevel))) {
     _startTimer(); // Memulai pencatatan waktu kuis
+  }
+
+  static LevelModel _randomizeLevel(LevelModel level) {
+    if (level.questions.isEmpty) return level;
+
+    // 1. Acak semua soal dari bank (20 soal) lalu ambil 10 saja
+    final allQuestions = List<QuestionModel>.from(level.questions);
+    allQuestions.shuffle();
+    final selectedQuestions = allQuestions.take(10).toList();
+
+    // 2. Acak posisi Opsi (A, B, C, D) untuk setiap soal yang terpilih
+    final randomizedQuestions = selectedQuestions.map((q) {
+      if (q.type == QuestionType.mcq && q.options != null && q.options!.isNotEmpty) {
+        final originalCorrectAnswer = q.options![q.correctAnswerIndex!];
+        final shuffledOptions = List<String>.from(q.options!);
+        shuffledOptions.shuffle();
+        final newCorrectIndex = shuffledOptions.indexOf(originalCorrectAnswer);
+        
+        return QuestionModel(
+          id: q.id,
+          text: q.text,
+          type: q.type,
+          options: shuffledOptions,
+          correctAnswerIndex: newCorrectIndex,
+          correctAnswer: originalCorrectAnswer,
+        );
+      }
+      return q;
+    }).toList();
+
+    return LevelModel(
+      id: level.id,
+      partId: level.partId,
+      order: level.order,
+      questions: randomizedQuestions,
+    );
   }
 
   // Memulai timer periodik 1 detik untuk menghitung waktu pengerjaan

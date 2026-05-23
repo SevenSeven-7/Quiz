@@ -1,39 +1,27 @@
-import 'dart:convert';
-import 'package:flutter/services.dart';
 import '../../model/model.dart';
 
-// Kelas DataService bertanggung jawab memuat data kuis dari file JSON lokal di aset.
 class DataService {
-  // Membaca file kuis 'questions.json' dari folder assets dan mendekodekannya menjadi Map.
-  Future<Map<String, dynamic>> loadQuizData() async {
-    final String response = await rootBundle.loadString('assets/data/questions.json');
-    return json.decode(response);
-  }
-
-  // Mengambil daftar Bagian (PartModel) dari file JSON lokal.
   Future<List<PartModel>> getParts() async {
-    final data = await loadQuizData();
-    return (data['parts'] as List).map((p) => PartModel(
-      id: p['id'],
-      title: p['title'],
-      description: p['description'],
-      isLocked: p['isLocked'] ?? false,
-    )).toList();
+    return [
+      PartModel(id: 'p1', title: 'Bagian 1: Agama Islam', description: 'Pelajari rukun iman, shalat, dan nabi.'),
+      PartModel(id: 'p2', title: 'Bagian 2: Bahasa Indonesia', description: 'Tata bahasa, EYD, dan kosa kata.'),
+      PartModel(id: 'p3', title: 'Bagian 3: Matematika', description: 'Logika berhitung, aljabar, dan angka.'),
+      PartModel(id: 'p4', title: 'Bagian 4: Ilmu Pengetahuan Alam', description: 'Fisika, biologi, dan alam semesta.'),
+      PartModel(id: 'p5', title: 'Bagian 5: Ilmu Pengetahuan Sosial', description: 'Sejarah pahlawan, dan geografi.'),
+      PartModel(id: 'p6', title: 'Bagian 6: PPKn', description: 'Pancasila, UUD 1945, dan negara.'),
+      PartModel(id: 'p7', title: 'Bagian 7: Bahasa Inggris', description: 'Vocabulary, grammar, dan dasar.'),
+    ];
   }
 
-  // Mengambil daftar Level (LevelModel) berdasarkan ID bagian tertentu.
   Future<List<LevelModel>> getLevels(String partId) async {
-    final data = await loadQuizData();
-    return (data['levels'] as List)
-        .where((l) => l['partId'] == partId)
-        .map((l) => LevelModel(
-              id: l['id'],
-              partId: l['partId'],
-              order: l['order'],
-              questions: (l['questions'] as List)
-                  .map((q) => QuestionModel.fromJson(q))
-                  .toList(),
-            ))
-        .toList();
+    return List.generate(100, (index) {
+      final levelNumber = index + 1;
+      return LevelModel(
+        id: '${partId}_l$levelNumber',
+        order: levelNumber,
+        partId: partId,
+        questions: [], // Diambil dari Firebase saat Level diklik (Online)
+      );
+    });
   }
 }

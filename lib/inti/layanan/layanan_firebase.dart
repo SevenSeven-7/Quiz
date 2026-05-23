@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
@@ -8,12 +9,10 @@ import 'layanan_data.dart';
 class FirebaseService {
   final DataService _localData = DataService();
 
-  // Penerapan pola Singleton untuk memastikan hanya ada satu instansi FirebaseService di seluruh aplikasi.
   static final FirebaseService _instance = FirebaseService._internal();
   factory FirebaseService() => _instance;
   FirebaseService._internal();
 
-  // Memeriksa apakah inisialisasi Firebase berhasil dan siap digunakan.
   bool get _isFirebaseAvailable {
     try {
       Firebase.app();
@@ -23,68 +22,68 @@ class FirebaseService {
     }
   }
 
-  // Mengunggah data lokal (seeding) ke Firestore secara otomatis jika Firestore masih kosong.
-  Future<void> seedDataIfNeeded() async {
-    if (!_isFirebaseAvailable) return;
+  // Mengambil soal acak dari Firebase
+  Future<List<QuestionModel>> getQuestionsForLevel(String partId) async {
+    if (!_isFirebaseAvailable) return [];
 
     try {
-      final partsSnapshot = await FirebaseFirestore.instance.collection('parts').limit(1).get();
-      if (partsSnapshot.docs.isNotEmpty) {
-        // Data sudah ada di Firestore, tidak perlu seeding lagi
-        return;
-      }
-
-      // 1. Ambil data lokal
-      final parts = await _localData.getParts();
+      // Ambil angka acak dari 0 hingga 1.000.000
+      final randomKey = Random().nextInt(1000000);
       
-      // 2. Upload Bagian (parts)
-      for (var part in parts) {
-        await FirebaseFirestore.instance.collection('parts').doc(part.id).set({
-          'title': part.title,
-          'description': part.description,
-          'isLocked': part.isLocked,
-        });
+      var query = await FirebaseFirestore.instance
+          .collection('questions_pool')
+          .where('partId', isEqualTo: partId)
+          .where('random_key', isGreaterThanOrEqualTo: randomKey)
+          .limit(10)
+          .get();
 
-        // 3. Ambil levels lokal untuk bagian ini
-        final levels = await _localData.getLevels(part.id);
-        
-        // 4. Upload Levels
-        for (var level in levels) {
-          final questionsData = level.questions.map((q) {
-            return {
-              'id': q.id,
-              'text': q.text,
-              'type': q.type == QuestionType.essay ? 'essay' : 'mcq',
-              'options': q.options,
-              'correctAnswerIndex': q.correctAnswerIndex,
-              'correctAnswer': q.correctAnswer,
-            };
-          }).toList();
-
-          await FirebaseFirestore.instance.collection('levels').doc(level.id).set({
-            'partId': level.partId,
-            'order': level.order,
-            'questions': questionsData,
-          });
-        }
+      // Fallback jika tidak menemukan data di atas batas random_key
+      if (query.docs.length < 10) {
+        query = await FirebaseFirestore.instance
+            .collection('questions_pool')
+            .where('partId', isEqualTo: partId)
+            .where('random_key', isLessThan: randomKey)
+            .limit(10)
+            .get();
       }
+
+      return query.docs.map((d) {
+        final data = d.data();
+        
+        // Handle opsi secara aman
+        List<String>? parsedOptions;
+        if (data['options'] != null) {
+          if (data['options'] is List) {
+            parsedOptions = List<String>.from(data['options']);
+          } else if (data['options'] is Map) {
+            // Berjaga-jaga jika terformat mentah sebagai Map dari REST API
+            final mapOpts = data['options'] as Map;
+            if (mapOpts.containsKey('values')) {
+              parsedOptions = List<String>.from((mapOpts['values'] as List).map((e) => e['stringValue'] ?? e));
+            }
+          }
+        }
+
+        return QuestionModel(
+          id: data['id'] ?? '',
+          text: data['text'] ?? '',
+          type: data['type'] == 'essay' ? QuestionType.essay : QuestionType.mcq,
+          options: parsedOptions,
+          correctAnswerIndex: data['correctAnswerIndex'],
+          correctAnswer: data['correctAnswer'],
+        );
+      }).toList();
     } catch (e) {
-      // Gagal seeding secara diam-diam agar aplikasi tidak crash
-      debugPrint('Gagal melakukan seeding data Firebase: $e');
+      debugPrint('Error fetching random questions: $e');
+      return [];
     }
   }
 
-  // Mengambil daftar Bagian (PartModel) dari Firebase Firestore. 
-  // Jika Firebase tidak tersedia atau terjadi error, otomatis menggunakan data lokal.
   Future<List<PartModel>> getParts() async {
-    // Memaksa selalu menggunakan data lokal agar pembaruan JSON terbaru langsung terbaca
     return _localData.getParts();
   }
 
-  // Mengambil daftar Level kuis berdasarkan ID bagian dari Firebase Firestore.
-  // Jika offline atau terjadi kegagalan koneksi, data akan dimuat dari penyimpanan lokal JSON.
   Future<List<LevelModel>> getLevels(String partId) async {
-    // Selalu gunakan data lokal agar tidak ada jeda loading dan soal terbaru langsung terbaca
     return _localData.getLevels(partId);
   }
 }

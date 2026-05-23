@@ -85,7 +85,6 @@ class _ResultScreenState extends ConsumerState<ResultScreen> with TickerProvider
 
     final bgGradient = isComputer ? AppColors.backgroundComputerGradient : (isDark ? AppColors.backgroundGradient : AppColors.backgroundLightGradient);
     final surfaceColor = isDark ? AppColors.surfaceLight : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond);
-    final textColor = isDark ? Colors.white : (isComputer ? AppColors.textPrimaryComputer : AppColors.textPrimaryLight);
     final messageColor = isComputer ? AppColors.primaryComputer : _messageColor;
     final primaryGrad = isComputer ? AppColors.primaryComputerGradient : AppColors.buttonGradient;
     final glow = isComputer ? AppColors.computerShadow : AppColors.primaryGlow;

@@ -4,7 +4,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter/services.dart';
 import 'inti/tema/tema_aplikasi.dart';
 import 'inti/penyedia/penyedia_tema.dart';
-import 'fitur/beranda/layar_utama.dart';
 import 'fitur/splash/layar_splash.dart';
 import 'inti/layanan/layanan_firebase.dart';
 import 'firebase_options.dart';
@@ -27,7 +26,6 @@ void main() async {
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
     );
-    FirebaseService().seedDataIfNeeded();
   } catch (e) {
     debugPrint('Firebase gagal diinisialisasi: $e');
   }
