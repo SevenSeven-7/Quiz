@@ -18,6 +18,7 @@ class SplashScreen extends ConsumerStatefulWidget {
 class _SplashScreenState extends ConsumerState<SplashScreen>
     with SingleTickerProviderStateMixin {
   late AnimationController _pulseController;
+  late Animation<double> _pulseAnimation;
 
   @override
   void initState() {
@@ -26,6 +27,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
       vsync: this,
       duration: const Duration(milliseconds: 1500),
     )..repeat(reverse: true);
+    _pulseAnimation = CurvedAnimation(parent: _pulseController, curve: Curves.easeInOut);
     _routing();
   }
 
@@ -46,7 +48,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
           pageBuilder: (context, animation, secondaryAnimation) => const MainNavigationScreen(),
           transitionsBuilder: (context, animation, secondaryAnimation, child) =>
               FadeTransition(opacity: animation, child: child),
-          transitionDuration: const Duration(milliseconds: 800),
+          transitionDuration: const Duration(milliseconds: 400),
         ),
       );
     } else {
@@ -55,7 +57,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
           pageBuilder: (context, animation, secondaryAnimation) => const LayarBuatNama(),
           transitionsBuilder: (context, animation, secondaryAnimation, child) =>
               FadeTransition(opacity: animation, child: child),
-          transitionDuration: const Duration(milliseconds: 800),
+          transitionDuration: const Duration(milliseconds: 400),
         ),
       );
     }
@@ -93,10 +95,10 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
             children: [
               // ── Logo dengan animasi breathing ──────────────────────
               AnimatedBuilder(
-                animation: _pulseController,
+                animation: _pulseAnimation,
                 builder: (context, child) {
-                  final scale = 0.95 + (_pulseController.value * 0.1);
-                  final shadowOpacity = 0.15 + (_pulseController.value * 0.2);
+                  final scale = 0.95 + (_pulseAnimation.value * 0.1);
+                  final shadowOpacity = 0.15 + (_pulseAnimation.value * 0.2);
                   return Transform.scale(
                     scale: scale,
                     child: Container(
@@ -117,20 +119,20 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                             ? [
                                 BoxShadow(
                                   color: AppColors.primaryComputer.withValues(alpha: shadowOpacity),
-                                  blurRadius: 24 + (_pulseController.value * 10),
+                                  blurRadius: 16 + (_pulseAnimation.value * 8),
                                   spreadRadius: 2,
                                 ),
                               ]
                             : [
                                 BoxShadow(
                                   color: AppColors.primary.withValues(alpha: shadowOpacity),
-                                  blurRadius: 30 + (_pulseController.value * 15),
-                                  spreadRadius: 5,
+                                  blurRadius: 20 + (_pulseAnimation.value * 10),
+                                  spreadRadius: 4,
                                 ),
                                 BoxShadow(
                                   color: AppColors.accent.withValues(alpha: shadowOpacity * 0.6),
-                                  blurRadius: 50 + (_pulseController.value * 20),
-                                  spreadRadius: 8,
+                                  blurRadius: 30 + (_pulseAnimation.value * 15),
+                                  spreadRadius: 6,
                                 ),
                               ],
                       ),

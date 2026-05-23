@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter/services.dart';
 import 'inti/tema/tema_aplikasi.dart';
 import 'inti/penyedia/penyedia_tema.dart';
+import 'fitur/beranda/layar_utama.dart';
 import 'fitur/splash/layar_splash.dart';
 import 'inti/layanan/layanan_firebase.dart';
 import 'firebase_options.dart';
@@ -59,7 +60,7 @@ class QuizApp extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       theme: selectedTheme,
       themeMode: ThemeMode.light, // Selalu light mode, tema dikelola manual
-      home: const SplashScreen(),
+      home: const SplashScreen(), // Menampilkan splash screen custom terlebih dahulu
     );
   }
 }

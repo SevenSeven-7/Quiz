@@ -4,6 +4,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
+import '../../inti/penyedia/penyedia_tema.dart';
 import '../beranda/layar_utama.dart';
 import '../progres/penyedia_progres.dart';
 
@@ -72,18 +73,28 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
   Widget build(BuildContext context) {
     final bottomPadding = MediaQuery.of(context).viewInsets.bottom;
     final size = MediaQuery.of(context).size;
+    final appTheme = ref.watch(temaProvider);
+    final isDark = appTheme == AppThemeMode.dark;
+    final isComputer = appTheme == AppThemeMode.computer;
+
+    final bgGradient = isComputer ? AppColors.backgroundComputerGradient : (isDark ? const LinearGradient(
+            colors: [Color(0xFF050510), Color(0xFF0A0820), Color(0xFF050510)],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          ) : AppColors.backgroundLightGradient);
+
+    final surfaceColor = isDark ? AppColors.surfaceLight : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond);
+    final textColor = isDark ? Colors.white : (isComputer ? AppColors.textPrimaryComputer : AppColors.textPrimaryLight);
+    final secondaryTextColor = isComputer ? AppColors.textSecondaryComputer : (isDark ? AppColors.textSecondary : AppColors.textSecondaryLight);
+    final primaryGrad = isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient;
+    final buttonGrad = isComputer ? AppColors.primaryComputerGradient : AppColors.buttonGradient;
+    final glow = isComputer ? AppColors.computerShadow : AppColors.primaryGlow;
 
     return Scaffold(
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Color(0xFF050510), Color(0xFF0A0820), Color(0xFF050510)],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          ),
-        ),
+        decoration: BoxDecoration(gradient: bgGradient),
         child: Stack(
           children: [
             // Partikel latar
@@ -133,8 +144,8 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                           padding: const EdgeInsets.all(20),
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            gradient: AppColors.primaryGradient,
-                            boxShadow: AppColors.primaryGlow,
+                            gradient: primaryGrad,
+                            boxShadow: glow,
                           ),
                           child: const Icon(Icons.psychology_rounded, color: Colors.white, size: 52),
                         )
@@ -148,13 +159,13 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                       // Teks Quiz shimmer
                       Center(
                         child: ShaderMask(
-                          shaderCallback: (bounds) => AppColors.primaryGradient.createShader(bounds),
-                          child: const Text(
+                          shaderCallback: (bounds) => isComputer ? AppColors.primaryComputerGradient.createShader(bounds) : AppColors.primaryGradient.createShader(bounds),
+                          child: Text(
                             'Quiz',
                             style: TextStyle(
                               fontSize: 40,
                               fontWeight: FontWeight.w900,
-                              color: Colors.white,
+                              color: isComputer ? AppColors.textPrimaryComputer : Colors.white,
                               letterSpacing: 6,
                             ),
                           ),
@@ -164,11 +175,11 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                       const SizedBox(height: 8),
 
                       Center(
-                        child: const Text(
+                        child: Text(
                           'Asah kecerdasanmu ke level maksimal!',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            color: AppColors.textSecondary,
+                            color: secondaryTextColor,
                             fontSize: 13,
                             letterSpacing: 0.5,
                           ),
@@ -181,13 +192,13 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                       Container(
                         padding: const EdgeInsets.all(24),
                         decoration: BoxDecoration(
-                          color: AppColors.surfaceLight.withValues(alpha: 0.6),
+                          color: surfaceColor.withValues(alpha: 0.6),
                           borderRadius: BorderRadius.circular(28),
                           border: Border.all(
-                            color: AppColors.primary.withValues(alpha: 0.25),
+                            color: isComputer ? AppColors.surfaceComputerBorder : AppColors.primary.withValues(alpha: 0.25),
                             width: 1.5,
                           ),
-                          boxShadow: [
+                          boxShadow: isComputer ? AppColors.computerCardShadow : [
                             BoxShadow(
                               color: AppColors.primary.withValues(alpha: 0.08),
                               blurRadius: 24,
@@ -203,40 +214,40 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                                 Container(
                                   padding: const EdgeInsets.all(8),
                                   decoration: BoxDecoration(
-                                    gradient: AppColors.primaryGradient,
+                                    gradient: primaryGrad,
                                     borderRadius: BorderRadius.circular(10),
                                   ),
                                   child: const Icon(Icons.person_outline_rounded, color: Colors.white, size: 18),
                                 ),
                                 const SizedBox(width: 12),
-                                const Text(
+                                Text(
                                   'Buat Nama Pemain',
                                   style: TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold,
-                                    color: Colors.white,
+                                    color: textColor,
                                   ),
                                 ),
                               ],
                             ),
                             const SizedBox(height: 8),
-                            const Text(
+                            Text(
                               'Nama ini akan digunakan untuk melacak skor dan pencapaianmu.',
-                              style: TextStyle(color: AppColors.textSecondary, fontSize: 12),
+                              style: TextStyle(color: secondaryTextColor, fontSize: 12),
                             ),
                             const SizedBox(height: 20),
                             TextFormField(
                               controller: _nameController,
-                              style: const TextStyle(color: Colors.white, fontSize: 16),
+                              style: TextStyle(color: textColor, fontSize: 16),
                               maxLength: 15,
                               textCapitalization: TextCapitalization.words,
                               decoration: InputDecoration(
                                 hintText: 'Masukkan namamu...',
-                                hintStyle: const TextStyle(color: Colors.white30),
-                                counterStyle: const TextStyle(color: AppColors.textSecondary),
-                                prefixIcon: const Icon(Icons.person_rounded, color: AppColors.primary),
+                                hintStyle: TextStyle(color: isComputer ? Colors.black38 : (isDark ? Colors.white30 : Colors.black38)),
+                                counterStyle: TextStyle(color: secondaryTextColor),
+                                prefixIcon: Icon(Icons.person_rounded, color: isComputer ? AppColors.primaryComputer : AppColors.primary),
                                 filled: true,
-                                fillColor: AppColors.background.withValues(alpha: 0.8),
+                                fillColor: isComputer ? AppColors.surfaceComputerSecond : (isDark ? AppColors.background.withValues(alpha: 0.8) : AppColors.surfaceLightBlue),
                                 contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 18),
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(14),
@@ -244,7 +255,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                                 ),
                                 focusedBorder: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(14),
-                                  borderSide: const BorderSide(color: AppColors.primary, width: 1.5),
+                                  borderSide: BorderSide(color: isComputer ? AppColors.primaryComputer : AppColors.primary, width: 1.5),
                                 ),
                                 errorBorder: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(14),
@@ -270,9 +281,9 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                       // Tombol Mulai dengan gradien
                       Container(
                         decoration: BoxDecoration(
-                          gradient: AppColors.buttonGradient,
+                          gradient: buttonGrad,
                           borderRadius: BorderRadius.circular(16),
-                          boxShadow: AppColors.primaryGlow,
+                          boxShadow: glow,
                         ),
                         child: ElevatedButton(
                           onPressed: _isLoading ? null : _savePlayerName,
