@@ -2,11 +2,4 @@
 <!-- Modify this file to customize your launch splash screen -->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="?android:colorBackground" />
-
-    <!-- Menampilkan logo kuis tepat di tengah layar native sejak detik pertama aplikasi dibuka -->
-    <item>
-        <bitmap
-            android:gravity="center"
-            android:src="@mipmap/launcher_icon" />
-    </item>
 </layer-list>
