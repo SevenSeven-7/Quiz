@@ -20,7 +20,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
   final _formKey = GlobalKey<FormState>();
   bool _isLoading = false;
   late AnimationController _particleController;
-  final List<_MiniParticle> _particles = [];
+  List<_MiniParticle> _particles = [];
   final Random _random = Random();
 
   @override
@@ -31,16 +31,49 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
       duration: const Duration(seconds: 10),
     )..repeat();
 
-    for (int i = 0; i < 25; i++) {
-      _particles.add(_MiniParticle(
-        x: _random.nextDouble(),
-        y: _random.nextDouble(),
-        size: _random.nextDouble() * 2.5 + 1,
-        speed: _random.nextDouble() * 0.2 + 0.05,
-        opacity: _random.nextDouble() * 0.4 + 0.1,
-        color: _random.nextBool() ? AppColors.primary : AppColors.accent,
-      ));
+    // Partikel dibuat di didChangeDependencies agar bisa akses tema
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (_particles.isEmpty) {
+      _rebuildParticles();
     }
+  }
+
+  /// Membangun ulang partikel dengan warna yang sesuai tema saat ini
+  void _rebuildParticles() {
+    final appTheme = ref.read(temaProvider);
+    final isDark = appTheme == AppThemeMode.dark;
+    final isComputer = appTheme == AppThemeMode.computer;
+
+    // Pilih warna partikel berdasarkan tema agar selalu terlihat
+    final Color particleColorA;
+    final Color particleColorB;
+
+    if (isComputer) {
+      // Mode Komputer: partikel abu-abu gelap agar terlihat di background putih
+      particleColorA = AppColors.primaryComputer.withValues(alpha: 0.35);
+      particleColorB = AppColors.accentComputer.withValues(alpha: 0.25);
+    } else if (isDark) {
+      // Mode Gelap: partikel biru neon terang
+      particleColorA = AppColors.primary.withValues(alpha: 0.5);
+      particleColorB = AppColors.accent.withValues(alpha: 0.4);
+    } else {
+      // Mode Terang: partikel biru sedang agar terlihat di background biru muda
+      particleColorA = AppColors.primary.withValues(alpha: 0.4);
+      particleColorB = const Color(0xFF0066CC).withValues(alpha: 0.3);
+    }
+
+    _particles = List.generate(25, (i) => _MiniParticle(
+      x: _random.nextDouble(),
+      y: _random.nextDouble(),
+      size: _random.nextDouble() * 2.5 + 1,
+      speed: _random.nextDouble() * 0.2 + 0.05,
+      opacity: _random.nextDouble() * 0.6 + 0.2,
+      color: _random.nextBool() ? particleColorA : particleColorB,
+    ));
   }
 
   @override
@@ -77,18 +110,37 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
     final isDark = appTheme == AppThemeMode.dark;
     final isComputer = appTheme == AppThemeMode.computer;
 
-    final bgGradient = isComputer ? AppColors.backgroundComputerGradient : (isDark ? const LinearGradient(
-            colors: [Color(0xFF050510), Color(0xFF0A0820), Color(0xFF050510)],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          ) : AppColors.backgroundLightGradient);
+    // Rebuild partikel setiap kali tema berubah
+    _rebuildParticles();
 
-    final surfaceColor = isDark ? AppColors.surfaceLight : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond);
-    final textColor = isDark ? Colors.white : (isComputer ? AppColors.textPrimaryComputer : AppColors.textPrimaryLight);
-    final secondaryTextColor = isComputer ? AppColors.textSecondaryComputer : (isDark ? AppColors.textSecondary : AppColors.textSecondaryLight);
+    final bgGradient = isComputer
+        ? AppColors.backgroundComputerGradient
+        : (isDark
+            ? const LinearGradient(
+                colors: [Color(0xFF050510), Color(0xFF0A0820), Color(0xFF050510)],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+              )
+            : AppColors.backgroundLightGradient);
+
+    final surfaceColor = isDark
+        ? AppColors.surfaceLight
+        : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond);
+    final textColor = isDark
+        ? Colors.white
+        : (isComputer ? AppColors.textPrimaryComputer : AppColors.textPrimaryLight);
+    final secondaryTextColor = isComputer
+        ? AppColors.textSecondaryComputer
+        : (isDark ? AppColors.textSecondary : AppColors.textSecondaryLight);
     final primaryGrad = isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient;
     final buttonGrad = isComputer ? AppColors.primaryComputerGradient : AppColors.buttonGradient;
-    final glow = isComputer ? AppColors.computerShadow : AppColors.primaryGlow;
+
+    // Warna glow lingkaran latar adaptif tema
+    final glowCircleColor = isComputer
+        ? AppColors.primaryComputer.withValues(alpha: 0.06)
+        : (isDark
+            ? AppColors.primary.withValues(alpha: 0.12)
+            : AppColors.primary.withValues(alpha: 0.08));
 
     return Scaffold(
       body: Container(
@@ -97,7 +149,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
         decoration: BoxDecoration(gradient: bgGradient),
         child: Stack(
           children: [
-            // Partikel latar
+            // ── Partikel latar (warna adaptif tema) ──────────────────
             AnimatedBuilder(
               animation: _particleController,
               builder: (context, child) {
@@ -108,7 +160,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
               },
             ),
 
-            // Lingkaran glow
+            // ── Lingkaran glow dekoratif (kiri atas) ─────────────────
             Positioned(
               top: -100,
               left: -80,
@@ -118,209 +170,269 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   gradient: RadialGradient(
-                    colors: [
-                      AppColors.primary.withValues(alpha: 0.12),
-                      Colors.transparent,
-                    ],
+                    colors: [glowCircleColor, Colors.transparent],
                   ),
                 ),
               ),
             ),
 
-            // Konten utama
-            SafeArea(
-              child: SingleChildScrollView(
-                padding: EdgeInsets.fromLTRB(24, 40, 24, bottomPadding + 24),
-                child: Form(
-                  key: _formKey,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      const SizedBox(height: 20),
+            // ── Lingkaran glow dekoratif (kanan bawah) ───────────────
+            Positioned(
+              bottom: -80,
+              right: -60,
+              child: Container(
+                width: 200,
+                height: 200,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  gradient: RadialGradient(
+                    colors: [glowCircleColor, Colors.transparent],
+                  ),
+                ),
+              ),
+            ),
 
-                      // Logo dengan glow
-                      Center(
-                        child: Container(
-                          padding: const EdgeInsets.all(20),
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            gradient: primaryGrad,
-                            boxShadow: glow,
-                          ),
-                          child: const Icon(Icons.psychology_rounded, color: Colors.white, size: 52),
-                        )
+            // ── Konten utama ──────────────────────────────────────────
+            SafeArea(
+              child: Center(
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 500),
+                  child: SingleChildScrollView(
+                    padding: EdgeInsets.fromLTRB(24, 40, 24, bottomPadding + 24),
+                    child: Form(
+                      key: _formKey,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          const SizedBox(height: 20),
+
+                          // ── Logo kotak tegas dengan glow ────────────────
+                          Center(
+                            child: Container(
+                              padding: const EdgeInsets.all(20),
+                              decoration: BoxDecoration(
+                                shape: BoxShape.rectangle,
+                                borderRadius: BorderRadius.circular(16),
+                                gradient: primaryGrad,
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: isComputer ? AppColors.primaryComputer.withValues(alpha: 0.3) : AppColors.primary.withValues(alpha: 0.4),
+                                    blurRadius: 24,
+                                    spreadRadius: 2,
+                                    offset: const Offset(0, 8),
+                                  ),
+                                ],
+                              ),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(12),
+                                child: Image.asset(
+                                  'assets/images/logo.png',
+                                  width: 90,
+                                  height: 90,
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                            )
                             .animate()
                             .scale(duration: 700.ms, curve: Curves.easeOutBack)
                             .fadeIn(),
-                      ),
-
-                      const SizedBox(height: 24),
-
-                      // Teks Quiz shimmer
-                      Center(
-                        child: ShaderMask(
-                          shaderCallback: (bounds) => isComputer ? AppColors.primaryComputerGradient.createShader(bounds) : AppColors.primaryGradient.createShader(bounds),
-                          child: Text(
-                            'Quiz',
-                            style: TextStyle(
-                              fontSize: 40,
-                              fontWeight: FontWeight.w900,
-                              color: isComputer ? AppColors.textPrimaryComputer : Colors.white,
-                              letterSpacing: 6,
-                            ),
                           ),
-                        ).animate().fadeIn(delay: 200.ms).slideY(begin: 0.2, end: 0),
-                      ),
 
-                      const SizedBox(height: 8),
+                          const SizedBox(height: 24),
 
-                      Center(
-                        child: Text(
-                          'Asah kecerdasanmu ke level maksimal!',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: secondaryTextColor,
-                            fontSize: 13,
-                            letterSpacing: 0.5,
-                          ),
-                        ).animate().fadeIn(delay: 350.ms),
-                      ),
-
-                      const SizedBox(height: 52),
-
-                      // Kartu Input Glassmorphism
-                      Container(
-                        padding: const EdgeInsets.all(24),
-                        decoration: BoxDecoration(
-                          color: surfaceColor.withValues(alpha: 0.6),
-                          borderRadius: BorderRadius.circular(28),
-                          border: Border.all(
-                            color: isComputer ? AppColors.surfaceComputerBorder : AppColors.primary.withValues(alpha: 0.25),
-                            width: 1.5,
-                          ),
-                          boxShadow: isComputer ? AppColors.computerCardShadow : [
-                            BoxShadow(
-                              color: AppColors.primary.withValues(alpha: 0.08),
-                              blurRadius: 24,
-                              spreadRadius: 1,
-                            ),
-                          ],
-                        ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                Container(
-                                  padding: const EdgeInsets.all(8),
-                                  decoration: BoxDecoration(
-                                    gradient: primaryGrad,
-                                    borderRadius: BorderRadius.circular(10),
-                                  ),
-                                  child: const Icon(Icons.person_outline_rounded, color: Colors.white, size: 18),
+                          // ── Teks Quiz shimmer ─────────────────────────
+                          Center(
+                            child: ShaderMask(
+                              shaderCallback: (bounds) => isComputer
+                                  ? AppColors.primaryComputerGradient.createShader(bounds)
+                                  : AppColors.primaryGradient.createShader(bounds),
+                              child: Text(
+                                'Quiz',
+                                style: TextStyle(
+                                  fontSize: 40,
+                                  fontWeight: FontWeight.w900,
+                                  color: isComputer ? AppColors.textPrimaryComputer : Colors.white,
+                                  letterSpacing: 6,
                                 ),
-                                const SizedBox(width: 12),
+                              ),
+                            ).animate().fadeIn(delay: 200.ms).slideY(begin: 0.2, end: 0),
+                          ),
+
+                          const SizedBox(height: 8),
+
+                          Center(
+                            child: Text(
+                              'Asah kecerdasanmu ke level maksimal!',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: secondaryTextColor,
+                                fontSize: 13,
+                                letterSpacing: 0.5,
+                              ),
+                            ).animate().fadeIn(delay: 350.ms),
+                          ),
+
+                          const SizedBox(height: 52),
+
+                          // ── Kartu Input Glassmorphism ──────────────────
+                          Container(
+                            padding: const EdgeInsets.all(24),
+                            decoration: BoxDecoration(
+                              color: surfaceColor.withValues(alpha: 0.6),
+                              borderRadius: BorderRadius.circular(28),
+                              border: Border.all(
+                                color: isComputer
+                                    ? AppColors.surfaceComputerBorder
+                                    : AppColors.primary.withValues(alpha: 0.25),
+                                width: 1.5,
+                              ),
+                              boxShadow: isComputer
+                                  ? AppColors.computerCardShadow
+                                  : [
+                                      BoxShadow(
+                                        color: AppColors.primary.withValues(alpha: 0.08),
+                                        blurRadius: 24,
+                                        spreadRadius: 1,
+                                      ),
+                                    ],
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    Container(
+                                      padding: const EdgeInsets.all(8),
+                                      decoration: BoxDecoration(
+                                        gradient: primaryGrad,
+                                        borderRadius: BorderRadius.circular(10),
+                                      ),
+                                      child: const Icon(Icons.person_outline_rounded, color: Colors.white, size: 18),
+                                    ),
+                                    const SizedBox(width: 12),
+                                    Text(
+                                      'Buat Nama Pemain',
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: textColor,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                const SizedBox(height: 8),
                                 Text(
-                                  'Buat Nama Pemain',
-                                  style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                    color: textColor,
+                                  'Nama ini akan digunakan untuk melacak skor dan pencapaianmu.',
+                                  style: TextStyle(color: secondaryTextColor, fontSize: 12),
+                                ),
+                                const SizedBox(height: 20),
+                                TextFormField(
+                                  controller: _nameController,
+                                  style: TextStyle(color: textColor, fontSize: 16),
+                                  maxLength: 15,
+                                  textCapitalization: TextCapitalization.words,
+                                  decoration: InputDecoration(
+                                    hintText: 'Masukkan namamu...',
+                                    hintStyle: TextStyle(
+                                      color: isComputer
+                                          ? Colors.black38
+                                          : (isDark ? Colors.white30 : Colors.black38),
+                                    ),
+                                    counterStyle: TextStyle(color: secondaryTextColor),
+                                    prefixIcon: Icon(
+                                      Icons.person_rounded,
+                                      color: isComputer ? AppColors.primaryComputer : AppColors.primary,
+                                    ),
+                                    filled: true,
+                                    fillColor: isComputer
+                                        ? AppColors.surfaceComputerSecond
+                                        : (isDark
+                                            ? AppColors.background.withValues(alpha: 0.8)
+                                            : AppColors.surfaceLightBlue),
+                                    contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 18),
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(14),
+                                      borderSide: BorderSide.none,
+                                    ),
+                                    focusedBorder: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(14),
+                                      borderSide: BorderSide(
+                                        color: isComputer ? AppColors.primaryComputer : AppColors.primary,
+                                        width: 1.5,
+                                      ),
+                                    ),
+                                    errorBorder: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(14),
+                                      borderSide: const BorderSide(color: AppColors.failure, width: 1.5),
+                                    ),
+                                    focusedErrorBorder: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(14),
+                                      borderSide: const BorderSide(color: AppColors.failure, width: 1.5),
+                                    ),
                                   ),
+                                  validator: (value) {
+                                    if (value == null || value.trim().isEmpty) return 'Nama tidak boleh kosong!';
+                                    if (value.trim().length < 3) return 'Minimal 3 karakter!';
+                                    return null;
+                                  },
                                 ),
                               ],
                             ),
-                            const SizedBox(height: 8),
-                            Text(
-                              'Nama ini akan digunakan untuk melacak skor dan pencapaianmu.',
-                              style: TextStyle(color: secondaryTextColor, fontSize: 12),
+                          ).animate().fadeIn(delay: 500.ms).slideY(begin: 0.1, end: 0),
+
+                          const SizedBox(height: 28),
+
+                          // ── Tombol Mulai dengan gradien ────────────────
+                          Container(
+                            decoration: BoxDecoration(
+                              gradient: buttonGrad,
+                              borderRadius: BorderRadius.circular(16),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: isComputer ? AppColors.primaryComputer.withValues(alpha: 0.3) : AppColors.primary.withValues(alpha: 0.4),
+                                  blurRadius: 16,
+                                  spreadRadius: 1,
+                                ),
+                              ],
                             ),
-                            const SizedBox(height: 20),
-                            TextFormField(
-                              controller: _nameController,
-                              style: TextStyle(color: textColor, fontSize: 16),
-                              maxLength: 15,
-                              textCapitalization: TextCapitalization.words,
-                              decoration: InputDecoration(
-                                hintText: 'Masukkan namamu...',
-                                hintStyle: TextStyle(color: isComputer ? Colors.black38 : (isDark ? Colors.white30 : Colors.black38)),
-                                counterStyle: TextStyle(color: secondaryTextColor),
-                                prefixIcon: Icon(Icons.person_rounded, color: isComputer ? AppColors.primaryComputer : AppColors.primary),
-                                filled: true,
-                                fillColor: isComputer ? AppColors.surfaceComputerSecond : (isDark ? AppColors.background.withValues(alpha: 0.8) : AppColors.surfaceLightBlue),
-                                contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 18),
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(14),
-                                  borderSide: BorderSide.none,
-                                ),
-                                focusedBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(14),
-                                  borderSide: BorderSide(color: isComputer ? AppColors.primaryComputer : AppColors.primary, width: 1.5),
-                                ),
-                                errorBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(14),
-                                  borderSide: const BorderSide(color: AppColors.failure, width: 1.5),
-                                ),
-                                focusedErrorBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(14),
-                                  borderSide: const BorderSide(color: AppColors.failure, width: 1.5),
-                                ),
+                            child: ElevatedButton(
+                              onPressed: _isLoading ? null : _savePlayerName,
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors.transparent,
+                                shadowColor: Colors.transparent,
+                                padding: const EdgeInsets.symmetric(vertical: 18),
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                               ),
-                              validator: (value) {
-                                if (value == null || value.trim().isEmpty) return 'Nama tidak boleh kosong!';
-                                if (value.trim().length < 3) return 'Minimal 3 karakter!';
-                                return null;
-                              },
-                            ),
-                          ],
-                        ),
-                      ).animate().fadeIn(delay: 500.ms).slideY(begin: 0.1, end: 0),
-
-                      const SizedBox(height: 28),
-
-                      // Tombol Mulai dengan gradien
-                      Container(
-                        decoration: BoxDecoration(
-                          gradient: buttonGrad,
-                          borderRadius: BorderRadius.circular(16),
-                          boxShadow: glow,
-                        ),
-                        child: ElevatedButton(
-                          onPressed: _isLoading ? null : _savePlayerName,
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.transparent,
-                            shadowColor: Colors.transparent,
-                            padding: const EdgeInsets.symmetric(vertical: 18),
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                          ),
-                          child: _isLoading
-                              ? const SizedBox(
-                                  height: 22,
-                                  width: 22,
-                                  child: CircularProgressIndicator(
-                                    strokeWidth: 2.5,
-                                    valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-                                  ),
-                                )
-                              : const Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      'Mulai Petualangan',
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 16,
-                                        letterSpacing: 0.5,
-                                        color: Colors.white,
+                              child: _isLoading
+                                  ? const SizedBox(
+                                      height: 22,
+                                      width: 22,
+                                      child: CircularProgressIndicator(
+                                        strokeWidth: 2.5,
+                                        valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
                                       ),
+                                    )
+                                  : const Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          'Mulai Petualangan',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 16,
+                                            letterSpacing: 0.5,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        SizedBox(width: 10),
+                                        Icon(Icons.arrow_forward_rounded, color: Colors.white, size: 20),
+                                      ],
                                     ),
-                                    SizedBox(width: 10),
-                                    Icon(Icons.arrow_forward_rounded, color: Colors.white, size: 20),
-                                  ],
-                                ),
-                        ),
-                      ).animate().fadeIn(delay: 700.ms),
-                    ],
+                            ),
+                          ).animate().fadeIn(delay: 700.ms),
+                        ],
+                      ),
+                    ),
                   ),
                 ),
               ),
@@ -335,7 +447,14 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
 class _MiniParticle {
   double x, y, size, speed, opacity;
   Color color;
-  _MiniParticle({required this.x, required this.y, required this.size, required this.speed, required this.opacity, required this.color});
+  _MiniParticle({
+    required this.x,
+    required this.y,
+    required this.size,
+    required this.speed,
+    required this.opacity,
+    required this.color,
+  });
 }
 
 class _MiniParticlePainter extends CustomPainter {
