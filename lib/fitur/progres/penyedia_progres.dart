@@ -54,14 +54,18 @@ class ProgressState {
   }
 
   // Jumlah level Bahasa Indonesia (Bagian 1) yang berhasil diselesaikan
-  int get indonesianSolved {
-    return levelStars.keys.where((k) => k.startsWith('p1_l') && (levelStars[k] ?? 0) > 0).length;
-  }
+  int get indonesianSolved => levelStars.keys.where((k) => k.startsWith('p1_l') && (levelStars[k] ?? 0) > 0).length;
 
   // Jumlah level Matematika (Bagian 2) yang berhasil diselesaikan
-  int get mathSolved {
-    return levelStars.keys.where((k) => k.startsWith('p2_l') && (levelStars[k] ?? 0) > 0).length;
-  }
+  int get mathSolved => levelStars.keys.where((k) => k.startsWith('p2_l') && (levelStars[k] ?? 0) > 0).length;
+
+  int get ipaSolved => levelStars.keys.where((k) => k.startsWith('p3_l') && (levelStars[k] ?? 0) > 0).length;
+  int get ipsSolved => levelStars.keys.where((k) => k.startsWith('p4_l') && (levelStars[k] ?? 0) > 0).length;
+  int get ppknSolved => levelStars.keys.where((k) => k.startsWith('p5_l') && (levelStars[k] ?? 0) > 0).length;
+  int get englishSolved => levelStars.keys.where((k) => k.startsWith('p6_l') && (levelStars[k] ?? 0) > 0).length;
+  int get historySolved => levelStars.keys.where((k) => k.startsWith('p7_l') && (levelStars[k] ?? 0) > 0).length;
+  int get itSolved => levelStars.keys.where((k) => k.startsWith('p8_l') && (levelStars[k] ?? 0) > 0).length;
+  int get islamicSolved => levelStars.keys.where((k) => k.startsWith('p9_l') && (levelStars[k] ?? 0) > 0).length;
 
   // Metode untuk menyalin status kemajuan dengan beberapa perubahan (copyWith pattern)
   ProgressState copyWith({
