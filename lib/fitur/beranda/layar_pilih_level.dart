@@ -16,11 +16,14 @@ class LevelSelectionScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final progress = ref.watch(progressProvider);
     final appTheme = ref.watch(temaProvider);
+    final isDark = appTheme == AppThemeMode.dark;
     final isComputer = appTheme == AppThemeMode.computer;
+
+    final bgGradient = isComputer ? AppColors.backgroundComputerGradient : (isDark ? AppColors.backgroundGradient : AppColors.backgroundLightGradient);
 
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(gradient: isComputer ? AppColors.backgroundComputerGradient : AppColors.backgroundGradient),
+        decoration: BoxDecoration(gradient: bgGradient),
         child: SafeArea(
           child: Column(
             children: [
@@ -165,7 +168,12 @@ class LevelSelectionScreen extends ConsumerWidget {
     return InkWell(
       onTap: isUnlocked && levelData.questions.isNotEmpty
           ? () => Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => QuizScreen(level: levelData)),
+                PageRouteBuilder(
+                  pageBuilder: (context, animation, secondaryAnimation) => QuizScreen(level: levelData),
+                  transitionsBuilder: (context, animation, secondaryAnimation, child) =>
+                      FadeTransition(opacity: animation, child: child),
+                  transitionDuration: const Duration(milliseconds: 150),
+                ),
               )
           : null,
       borderRadius: BorderRadius.circular(isComputer ? 4 : 14),

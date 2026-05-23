@@ -84,37 +84,7 @@ class FirebaseService {
   // Mengambil daftar Level kuis berdasarkan ID bagian dari Firebase Firestore.
   // Jika offline atau terjadi kegagalan koneksi, data akan dimuat dari penyimpanan lokal JSON.
   Future<List<LevelModel>> getLevels(String partId) async {
-    if (!_isFirebaseAvailable) {
-      return _localData.getLevels(partId);
-    }
-
-    try {
-      final snapshot = await FirebaseFirestore.instance.collection('levels')
-          .where('partId', isEqualTo: partId)
-          .get();
-
-      if (snapshot.docs.isEmpty) {
-        return _localData.getLevels(partId);
-      }
-
-      final List<LevelModel> levels = [];
-      for (var doc in snapshot.docs) {
-        final data = doc.data();
-        final List questionsRaw = data['questions'] ?? [];
-        final questions = questionsRaw.map((q) => QuestionModel.fromJson(Map<String, dynamic>.from(q))).toList();
-
-        levels.add(LevelModel(
-          id: doc.id,
-          partId: data['partId'] ?? partId,
-          order: data['order'] ?? 0,
-          questions: questions,
-        ));
-      }
-      
-      levels.sort((a, b) => a.order.compareTo(b.order));
-      return levels;
-    } catch (e) {
-      return _localData.getLevels(partId);
-    }
+    // Selalu gunakan data lokal agar tidak ada jeda loading dan soal terbaru langsung terbaca
+    return _localData.getLevels(partId);
   }
 }

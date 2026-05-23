@@ -5,6 +5,7 @@ import '../../inti/konstanta/warna_aplikasi.dart';
 import '../../model/model.dart';
 import 'pengendali_kuis.dart';
 import '../hasil/layar_hasil.dart';
+import '../../inti/penyedia/penyedia_tema.dart';
 
 class QuizScreen extends ConsumerStatefulWidget {
   final LevelModel level;
@@ -35,6 +36,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
   @override
   Widget build(BuildContext context) {
     final state = ref.watch(quizProvider(widget.level));
+    final appTheme = ref.watch(temaProvider);
+    final isDark = appTheme == AppThemeMode.dark;
+    final isComputer = appTheme == AppThemeMode.computer;
 
     ref.listen(quizProvider(widget.level), (previous, next) {
       if (next.isFinished) {
@@ -55,18 +59,24 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
     });
 
     if (state.level.questions.isEmpty) {
-      return const Scaffold(
-        backgroundColor: AppColors.background,
-        body: Center(child: Text('Tidak ada soal.', style: TextStyle(color: Colors.white))),
+      return Scaffold(
+        backgroundColor: isDark ? AppColors.background : (isComputer ? AppColors.backgroundComputer : AppColors.backgroundLightBlue),
+        body: Center(child: Text('Tidak ada soal.', style: TextStyle(color: isDark ? Colors.white : (isComputer ? AppColors.textPrimaryComputer : AppColors.textPrimaryLight)))),
       );
     }
 
     final currentQuestion = state.level.questions[state.currentIndex];
     final progress = (state.currentIndex + 1) / state.level.questions.length;
 
+    final bgGradient = isComputer ? AppColors.backgroundComputerGradient : (isDark ? AppColors.backgroundGradient : AppColors.backgroundLightGradient);
+    final textColor = isDark ? Colors.white : (isComputer ? AppColors.textPrimaryComputer : AppColors.textPrimaryLight);
+    final surfaceColor = isDark ? AppColors.surfaceLight : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond);
+    final primaryGrad = isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient;
+    final glow = isComputer ? AppColors.computerShadow : (isDark ? AppColors.primaryGlow : AppColors.lightShadow);
+
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(gradient: AppColors.backgroundGradient),
+        decoration: BoxDecoration(gradient: bgGradient),
         child: SafeArea(
           child: Column(
             children: [
@@ -78,25 +88,25 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
                     Row(
                       children: [
                         GestureDetector(
-                          onTap: () => _showQuitDialog(context),
+                          onTap: () => _showQuitDialog(context, isDark, isComputer),
                           child: Container(
                             padding: const EdgeInsets.all(10),
                             decoration: BoxDecoration(
-                              color: AppColors.surfaceLight,
+                              color: surfaceColor,
                               borderRadius: BorderRadius.circular(12),
-                              border: Border.all(color: Colors.white10),
+                              border: Border.all(color: isComputer ? AppColors.surfaceComputerBorder : (isDark ? Colors.white10 : Colors.black12)),
                             ),
-                            child: const Icon(Icons.close_rounded, color: Colors.white, size: 18),
+                            child: Icon(Icons.close_rounded, color: textColor, size: 18),
                           ),
                         ),
                         Expanded(
                           child: Center(
                             child: Text(
                               'Level ${widget.level.order}',
-                              style: const TextStyle(
+                              style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 17,
-                                color: Colors.white,
+                                color: textColor,
                               ),
                             ),
                           ),
@@ -128,8 +138,8 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
                         curve: Curves.easeOut,
                         child: LinearProgressIndicator(
                           value: progress,
-                          backgroundColor: Colors.white10,
-                          valueColor: const AlwaysStoppedAnimation<Color>(AppColors.primary),
+                          backgroundColor: isComputer ? AppColors.surfaceComputerBorder : (isDark ? Colors.white10 : Colors.black12),
+                          valueColor: AlwaysStoppedAnimation<Color>(isComputer ? AppColors.primaryComputer : AppColors.primary),
                           minHeight: 6,
                         ),
                       ),
@@ -162,9 +172,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
                         decoration: BoxDecoration(
-                          gradient: AppColors.primaryGradient,
+                          gradient: primaryGrad,
                           borderRadius: BorderRadius.circular(20),
-                          boxShadow: AppColors.primaryGlow,
+                          boxShadow: glow,
                         ),
                         child: Text(
                           currentQuestion.type == QuestionType.mcq ? 'Pilihan Ganda' : 'Uraian',
@@ -184,13 +194,13 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
                         width: double.infinity,
                         padding: const EdgeInsets.all(24),
                         decoration: BoxDecoration(
-                          color: AppColors.surfaceLight.withValues(alpha: 0.7),
+                          color: surfaceColor.withValues(alpha: 0.7),
                           borderRadius: BorderRadius.circular(24),
                           border: Border.all(
-                            color: AppColors.primary.withValues(alpha: 0.2),
+                            color: isComputer ? AppColors.surfaceComputerBorder : AppColors.primary.withValues(alpha: 0.2),
                             width: 1.5,
                           ),
-                          boxShadow: [
+                          boxShadow: isComputer ? AppColors.computerCardShadow : [
                             BoxShadow(
                               color: AppColors.primary.withValues(alpha: 0.08),
                               blurRadius: 24,
@@ -201,11 +211,11 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
                         child: Text(
                           currentQuestion.text,
                           textAlign: TextAlign.center,
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontSize: 20,
                             height: 1.5,
                             fontWeight: FontWeight.w600,
-                            color: Colors.white,
+                            color: textColor,
                           ),
                         ),
                       ).animate(key: ValueKey(state.currentIndex))
@@ -216,9 +226,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
 
                       // Pilihan jawaban
                       if (currentQuestion.type == QuestionType.mcq)
-                        _buildMCQOptions(context, state, ref, currentQuestion)
+                        _buildMCQOptions(context, state, ref, currentQuestion, isDark, isComputer, textColor)
                       else
-                        _buildEssayInput(context, state, ref),
+                        _buildEssayInput(context, state, ref, isDark, isComputer, textColor, surfaceColor, primaryGrad, glow),
                     ],
                   ),
                 ),
@@ -230,16 +240,16 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
     );
   }
 
-  void _showQuitDialog(BuildContext context) {
+  void _showQuitDialog(BuildContext context, bool isDark, bool isComputer) {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: AppColors.surface,
+        backgroundColor: isDark ? AppColors.surface : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightBlue),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
-          side: BorderSide(color: AppColors.primary.withValues(alpha: 0.3)),
+          side: BorderSide(color: isComputer ? AppColors.surfaceComputerBorder : AppColors.primary.withValues(alpha: 0.3)),
         ),
-        title: const Text('Keluar dari Quiz?', style: TextStyle(color: Colors.white)),
+        title: Text('Keluar dari Quiz?', style: TextStyle(color: isDark ? Colors.white : (isComputer ? AppColors.textPrimaryComputer : AppColors.textPrimaryLight))),
         content: const Text(
           'Progres soalmu saat ini akan hilang.',
           style: TextStyle(color: AppColors.textSecondary),
@@ -247,7 +257,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Lanjutkan', style: TextStyle(color: AppColors.primary)),
+            child: Text('Lanjutkan', style: TextStyle(color: isComputer ? AppColors.primaryComputer : AppColors.primary)),
           ),
           TextButton(
             onPressed: () {
@@ -261,15 +271,15 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
     );
   }
 
-  Widget _buildMCQOptions(BuildContext context, QuizState state, WidgetRef ref, QuestionModel question) {
+  Widget _buildMCQOptions(BuildContext context, QuizState state, WidgetRef ref, QuestionModel question, bool isDark, bool isComputer, Color mainTextColor) {
     return Column(
       children: List.generate(question.options?.length ?? 0, (index) {
         final option = question.options![index];
         final isSelected = state.selectedIndex == index;
         final isCorrect = question.correctAnswerIndex == index;
 
-        Color borderColor = Colors.white.withValues(alpha: 0.1);
-        Color bgColor = Colors.transparent;
+        Color borderColor = isComputer ? AppColors.surfaceComputerBorder : (isDark ? Colors.white.withValues(alpha: 0.1) : Colors.black.withValues(alpha: 0.1));
+        Color bgColor = isComputer ? AppColors.surfaceComputer : Colors.transparent;
         Color? glowColor;
 
         if (state.isAnswered) {
@@ -283,8 +293,8 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
             glowColor = AppColors.failure;
           }
         } else if (isSelected) {
-          borderColor = AppColors.primary;
-          bgColor = AppColors.primary.withValues(alpha: 0.08);
+          borderColor = isComputer ? AppColors.primaryComputer : AppColors.primary;
+          bgColor = isComputer ? AppColors.primaryComputer.withValues(alpha: 0.1) : AppColors.primary.withValues(alpha: 0.08);
         }
 
         return Padding(
@@ -310,15 +320,15 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
                     height: 30,
                     decoration: BoxDecoration(
                       color: isSelected && !state.isAnswered
-                          ? AppColors.primary
-                          : Colors.white10,
+                          ? (isComputer ? AppColors.primaryComputer : AppColors.primary)
+                          : (isComputer ? Colors.black12 : (isDark ? Colors.white10 : Colors.black12)),
                       shape: BoxShape.circle,
                     ),
                     child: Center(
                       child: Text(
                         String.fromCharCode(65 + index),
                         style: TextStyle(
-                          color: isSelected && !state.isAnswered ? Colors.white : Colors.white54,
+                          color: isSelected && !state.isAnswered ? Colors.white : (isComputer ? Colors.black54 : (isDark ? Colors.white54 : Colors.black54)),
                           fontWeight: FontWeight.bold,
                           fontSize: 13,
                         ),
@@ -336,7 +346,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
                             ? AppColors.success
                             : state.isAnswered && isSelected
                                 ? AppColors.failure
-                                : Colors.white,
+                                : mainTextColor,
                       ),
                     ),
                   ),
@@ -356,26 +366,26 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
     );
   }
 
-  Widget _buildEssayInput(BuildContext context, QuizState state, WidgetRef ref) {
+  Widget _buildEssayInput(BuildContext context, QuizState state, WidgetRef ref, bool isDark, bool isComputer, Color textColor, Color surfaceColor, Gradient primaryGrad, List<BoxShadow> glow) {
     return Column(
       children: [
         Container(
           decoration: BoxDecoration(
-            color: AppColors.surfaceLight,
+            color: surfaceColor,
             borderRadius: BorderRadius.circular(16),
             border: Border.all(
-              color: state.isAnswered ? AppColors.primary.withValues(alpha: 0.5) : Colors.white10,
+              color: state.isAnswered ? (isComputer ? AppColors.primaryComputer : AppColors.primary).withValues(alpha: 0.5) : (isComputer ? AppColors.surfaceComputerBorder : (isDark ? Colors.white10 : Colors.black12)),
             ),
           ),
           child: TextField(
             controller: _essayController,
             enabled: !state.isAnswered,
-            style: const TextStyle(color: Colors.white, fontSize: 16),
-            decoration: const InputDecoration(
+            style: TextStyle(color: textColor, fontSize: 16),
+            decoration: InputDecoration(
               hintText: 'Ketik jawaban Anda di sini...',
-              hintStyle: TextStyle(color: Colors.white30),
+              hintStyle: TextStyle(color: isComputer ? Colors.black38 : (isDark ? Colors.white30 : Colors.black38)),
               border: InputBorder.none,
-              contentPadding: EdgeInsets.all(20),
+              contentPadding: const EdgeInsets.all(20),
             ),
           ),
         ),
@@ -384,9 +394,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
           Container(
             width: double.infinity,
             decoration: BoxDecoration(
-              gradient: AppColors.buttonGradient,
+              gradient: isComputer ? AppColors.primaryComputerGradient : AppColors.buttonGradient,
               borderRadius: BorderRadius.circular(14),
-              boxShadow: AppColors.primaryGlow,
+              boxShadow: glow,
             ),
             child: ElevatedButton(
               onPressed: () {

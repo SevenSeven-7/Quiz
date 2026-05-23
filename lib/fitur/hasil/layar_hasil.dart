@@ -1,9 +1,11 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
+import '../../inti/penyedia/penyedia_tema.dart';
 
-class ResultScreen extends StatefulWidget {
+class ResultScreen extends ConsumerStatefulWidget {
   final int score;
   final int totalQuestions;
   final int stars;
@@ -18,10 +20,10 @@ class ResultScreen extends StatefulWidget {
   });
 
   @override
-  State<ResultScreen> createState() => _ResultScreenState();
+  ConsumerState<ResultScreen> createState() => _ResultScreenState();
 }
 
-class _ResultScreenState extends State<ResultScreen> with TickerProviderStateMixin {
+class _ResultScreenState extends ConsumerState<ResultScreen> with TickerProviderStateMixin {
   late AnimationController _particleController;
   final List<_ConfettiParticle> _particles = [];
   final Random _random = Random();
@@ -77,10 +79,20 @@ class _ResultScreenState extends State<ResultScreen> with TickerProviderStateMix
   @override
   Widget build(BuildContext context) {
     final percentage = (widget.score / widget.totalQuestions * 100).round();
+    final appTheme = ref.watch(temaProvider);
+    final isDark = appTheme == AppThemeMode.dark;
+    final isComputer = appTheme == AppThemeMode.computer;
+
+    final bgGradient = isComputer ? AppColors.backgroundComputerGradient : (isDark ? AppColors.backgroundGradient : AppColors.backgroundLightGradient);
+    final surfaceColor = isDark ? AppColors.surfaceLight : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond);
+    final textColor = isDark ? Colors.white : (isComputer ? AppColors.textPrimaryComputer : AppColors.textPrimaryLight);
+    final messageColor = isComputer ? AppColors.primaryComputer : _messageColor;
+    final primaryGrad = isComputer ? AppColors.primaryComputerGradient : AppColors.buttonGradient;
+    final glow = isComputer ? AppColors.computerShadow : AppColors.primaryGlow;
 
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(gradient: AppColors.backgroundGradient),
+        decoration: BoxDecoration(gradient: bgGradient),
         child: Stack(
           children: [
             // Partikel confetti (hanya saat 3 bintang)
@@ -155,15 +167,15 @@ class _ResultScreenState extends State<ResultScreen> with TickerProviderStateMix
                         style: TextStyle(
                           fontSize: 32,
                           fontWeight: FontWeight.w900,
-                          color: _messageColor,
+                          color: messageColor,
                         ),
                       ).animate().fadeIn(delay: 1400.ms).slideY(begin: 0.2, end: 0),
 
                       const SizedBox(height: 8),
 
-                      const Text(
+                      Text(
                         'Level telah selesai',
-                        style: TextStyle(color: AppColors.textSecondary, fontSize: 14),
+                        style: TextStyle(color: isComputer ? AppColors.textSecondaryComputer : (isDark ? AppColors.textSecondary : AppColors.textSecondaryLight), fontSize: 14),
                       ).animate().fadeIn(delay: 1600.ms),
 
                       const SizedBox(height: 32),
@@ -172,15 +184,15 @@ class _ResultScreenState extends State<ResultScreen> with TickerProviderStateMix
                       Container(
                         padding: const EdgeInsets.all(28),
                         decoration: BoxDecoration(
-                          color: AppColors.surfaceLight.withValues(alpha: 0.7),
+                          color: surfaceColor.withValues(alpha: 0.7),
                           borderRadius: BorderRadius.circular(28),
                           border: Border.all(
-                            color: _messageColor.withValues(alpha: 0.3),
+                            color: isComputer ? AppColors.surfaceComputerBorder : messageColor.withValues(alpha: 0.3),
                             width: 1.5,
                           ),
-                          boxShadow: [
+                          boxShadow: isComputer ? AppColors.computerCardShadow : [
                             BoxShadow(
-                              color: _messageColor.withValues(alpha: 0.1),
+                              color: messageColor.withValues(alpha: 0.1),
                               blurRadius: 30,
                               spreadRadius: 2,
                             ),
@@ -189,29 +201,29 @@ class _ResultScreenState extends State<ResultScreen> with TickerProviderStateMix
                         child: Column(
                           children: [
                             ShaderMask(
-                              shaderCallback: (bounds) => LinearGradient(
-                                colors: [_messageColor, AppColors.primary],
+                              shaderCallback: (bounds) => isComputer ? AppColors.primaryComputerGradient.createShader(bounds) : LinearGradient(
+                                colors: [messageColor, AppColors.primary],
                               ).createShader(bounds),
                               child: Text(
                                 '${widget.score}/${widget.totalQuestions}',
-                                style: const TextStyle(
+                                style: TextStyle(
                                   fontSize: 52,
                                   fontWeight: FontWeight.w900,
-                                  color: Colors.white,
+                                  color: isComputer ? AppColors.textPrimaryComputer : Colors.white,
                                 ),
                               ),
                             ),
-                            const Text(
+                            Text(
                               'Jawaban Benar',
-                              style: TextStyle(color: AppColors.textSecondary, fontSize: 14),
+                              style: TextStyle(color: isComputer ? AppColors.textSecondaryComputer : (isDark ? AppColors.textSecondary : AppColors.textSecondaryLight), fontSize: 14),
                             ),
                             const SizedBox(height: 20),
                             ClipRRect(
                               borderRadius: BorderRadius.circular(8),
                               child: LinearProgressIndicator(
                                 value: widget.score / widget.totalQuestions,
-                                backgroundColor: Colors.white10,
-                                valueColor: AlwaysStoppedAnimation<Color>(_messageColor),
+                                backgroundColor: isComputer ? AppColors.surfaceComputerBorder : Colors.white10,
+                                valueColor: AlwaysStoppedAnimation<Color>(messageColor),
                                 minHeight: 8,
                               ),
                             ),
@@ -238,9 +250,9 @@ class _ResultScreenState extends State<ResultScreen> with TickerProviderStateMix
                       Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          gradient: AppColors.buttonGradient,
+                          gradient: primaryGrad,
                           borderRadius: BorderRadius.circular(16),
-                          boxShadow: AppColors.primaryGlow,
+                          boxShadow: glow,
                         ),
                         child: ElevatedButton(
                           onPressed: () => Navigator.of(context).pop(),
@@ -265,12 +277,12 @@ class _ResultScreenState extends State<ResultScreen> with TickerProviderStateMix
                           onPressed: () => Navigator.of(context).popUntil((route) => route.isFirst),
                           style: OutlinedButton.styleFrom(
                             padding: const EdgeInsets.symmetric(vertical: 16),
-                            side: BorderSide(color: AppColors.primary.withValues(alpha: 0.5)),
+                            side: BorderSide(color: (isComputer ? AppColors.primaryComputer : AppColors.primary).withValues(alpha: 0.5)),
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                           ),
-                          child: const Text(
+                          child: Text(
                             'Kembali ke Beranda',
-                            style: TextStyle(color: AppColors.primary, fontWeight: FontWeight.bold),
+                            style: TextStyle(color: isComputer ? AppColors.primaryComputer : AppColors.primary, fontWeight: FontWeight.bold),
                           ),
                         ),
                       ).animate().fadeIn(delay: 2400.ms).slideY(begin: 0.2, end: 0),
