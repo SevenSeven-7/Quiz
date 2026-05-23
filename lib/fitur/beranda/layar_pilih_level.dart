@@ -166,15 +166,58 @@ class LevelSelectionScreen extends ConsumerWidget {
     }
 
     return InkWell(
-      onTap: isUnlocked && levelData.questions.isNotEmpty
-          ? () => Navigator.of(context).push(
-                PageRouteBuilder(
-                  pageBuilder: (context, animation, secondaryAnimation) => QuizScreen(level: levelData),
-                  transitionsBuilder: (context, animation, secondaryAnimation, child) =>
-                      FadeTransition(opacity: animation, child: child),
-                  transitionDuration: const Duration(milliseconds: 150),
+      onTap: isUnlocked
+          ? () async {
+              showDialog(
+                context: context,
+                barrierDismissible: false,
+                builder: (context) => Center(
+                  child: Container(
+                    padding: const EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                      color: AppColors.surface.withValues(alpha: 0.9),
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: const CircularProgressIndicator(color: AppColors.primary),
+                  ),
                 ),
-              )
+              );
+
+              final fetchedQuestions = await FirebaseService().getQuestionsForLevel(levelData.partId);
+              if (context.mounted) Navigator.of(context).pop(); // Tutup dialog
+
+              if (fetchedQuestions.isEmpty) {
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text('Gagal memuat soal dari server. Periksa koneksi internet Anda.'),
+                      backgroundColor: Colors.red,
+                    ),
+                  );
+                }
+                return;
+              }
+
+              final newLevel = LevelModel(
+                id: levelData.id,
+                order: levelData.order,
+                partId: levelData.partId,
+                questions: fetchedQuestions,
+                stars: levelData.stars,
+                isUnlocked: levelData.isUnlocked,
+              );
+
+              if (context.mounted) {
+                Navigator.of(context).push(
+                  PageRouteBuilder(
+                    pageBuilder: (context, animation, secondaryAnimation) => QuizScreen(level: newLevel),
+                    transitionsBuilder: (context, animation, secondaryAnimation, child) =>
+                        FadeTransition(opacity: animation, child: child),
+                    transitionDuration: const Duration(milliseconds: 150),
+                  ),
+                );
+              }
+            }
           : null,
       borderRadius: BorderRadius.circular(isComputer ? 4 : 14),
       child: AnimatedContainer(

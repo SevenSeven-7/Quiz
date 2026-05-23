@@ -308,17 +308,24 @@ class HomeScreen extends ConsumerWidget {
   }
 
   Widget _buildPartCard(BuildContext context, PartModel part, bool isUnlocked, int index, bool isDark, bool isComputer) {
-    final icons = [Icons.language_rounded, Icons.calculate_rounded, Icons.science_rounded, Icons.public_rounded, Icons.balance_rounded, Icons.menu_book_rounded, Icons.history_edu_rounded, Icons.computer_rounded, Icons.mosque_rounded];
+    // Urutan: Agama Islam, B.Indonesia, Matematika, IPA, IPS, PPKn, B.Inggris
+    final icons = [
+      Icons.mosque_rounded,        // Agama Islam
+      Icons.language_rounded,      // Bahasa Indonesia
+      Icons.calculate_rounded,     // Matematika
+      Icons.science_rounded,       // IPA
+      Icons.public_rounded,        // IPS
+      Icons.balance_rounded,       // PPKn
+      Icons.menu_book_rounded,     // Bahasa Inggris
+    ];
     final gradients = [
-      [const Color(0xFF7C3AED), const Color(0xFF06B6D4)], // Indo
-      [const Color(0xFF059669), const Color(0xFF34D399)], // Math
-      [const Color(0xFFDC2626), const Color(0xFFF97316)], // IPA
-      [const Color(0xFFD97706), const Color(0xFFFBBF24)], // IPS
-      [const Color(0xFFE11D48), const Color(0xFFF43F5E)], // PPKn
-      [const Color(0xFF0284C7), const Color(0xFF38BDF8)], // B.Inggris
-      [const Color(0xFF92400E), const Color(0xFFD97706)], // Sejarah
-      [const Color(0xFF4F46E5), const Color(0xFF818CF8)], // TIK
-      [const Color(0xFF16A34A), const Color(0xFF4ADE80)], // Agama Islam
+      [const Color(0xFF16A34A), const Color(0xFF4ADE80)], // Agama Islam — Hijau
+      [const Color(0xFF7C3AED), const Color(0xFF06B6D4)], // B.Indonesia — Violet-Cyan
+      [const Color(0xFF059669), const Color(0xFF34D399)], // Matematika — Emerald
+      [const Color(0xFFDC2626), const Color(0xFFF97316)], // IPA — Merah-Oranye
+      [const Color(0xFFD97706), const Color(0xFFFBBF24)], // IPS — Amber-Gold
+      [const Color(0xFFE11D48), const Color(0xFFF43F5E)], // PPKn — Rose
+      [const Color(0xFF0284C7), const Color(0xFF38BDF8)], // B.Inggris — Biru
     ];
     final grad = gradients[index % gradients.length];
     final icon = icons[index % icons.length];
