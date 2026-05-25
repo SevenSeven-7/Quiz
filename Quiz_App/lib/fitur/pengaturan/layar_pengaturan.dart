@@ -97,7 +97,7 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
               final prefs = await SharedPreferences.getInstance();
               await prefs.setString('player_name', newName);
               ref.read(playerNameProvider.notifier).state = newName;
-              await ref.read(progressProvider.notifier).syncWithFirebase(newName);
+              // Progress sudah otomatis tersimpan lokal
               if (context.mounted) {
                 Navigator.of(context).pop();
                 setState(() {});

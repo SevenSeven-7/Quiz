@@ -6,7 +6,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
 import '../../inti/penyedia/penyedia_tema.dart';
 import '../beranda/layar_utama.dart';
-import '../progres/penyedia_progres.dart';
 
 class LayarBuatNama extends ConsumerStatefulWidget {
   const LayarBuatNama({super.key});
@@ -89,7 +88,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
     final playerName = _nameController.text.trim();
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('player_name', playerName);
-    await ref.read(progressProvider.notifier).syncWithFirebase(playerName);
+    // Progress sudah otomatis tersimpan lokal
     if (mounted) {
       Navigator.of(context).pushReplacement(
         PageRouteBuilder(

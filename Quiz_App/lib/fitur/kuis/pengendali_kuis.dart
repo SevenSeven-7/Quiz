@@ -34,7 +34,9 @@ class QuizState {
     int? score,
     bool? isAnswered,
     int? selectedIndex,
+    bool resetSelectedIndex = false,  // Flag untuk reset
     String? essayAnswer,
+    bool resetEssayAnswer = false,    // Flag untuk reset
     bool? isFinished,
     int? timeSpent,
     int? starsEarned,
@@ -44,8 +46,8 @@ class QuizState {
       currentIndex: currentIndex ?? this.currentIndex,
       score: score ?? this.score,
       isAnswered: isAnswered ?? this.isAnswered,
-      selectedIndex: selectedIndex ?? this.selectedIndex,
-      essayAnswer: essayAnswer ?? this.essayAnswer,
+      selectedIndex: resetSelectedIndex ? null : (selectedIndex ?? this.selectedIndex),
+      essayAnswer: resetEssayAnswer ? null : (essayAnswer ?? this.essayAnswer),
       isFinished: isFinished ?? this.isFinished,
       timeSpent: timeSpent ?? this.timeSpent,
       starsEarned: starsEarned ?? this.starsEarned,
@@ -152,11 +154,12 @@ class QuizNotifier extends StateNotifier<QuizState> {
   // Mengalihkan ke pertanyaan berikutnya atau menyelesaikan kuis jika sudah di akhir soal
   void nextQuestion() {
     if (state.currentIndex < state.level.questions.length - 1) {
+      // PERBAIKAN: Reset semua state jawaban dengan flag
       state = state.copyWith(
         currentIndex: state.currentIndex + 1,
         isAnswered: false,
-        selectedIndex: null,
-        essayAnswer: null,
+        resetSelectedIndex: true,  // Reset pilihan ke null
+        resetEssayAnswer: true,    // Reset essay ke null
       );
     } else {
       _finishQuiz();

@@ -2,8 +2,6 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
 
 // Kelas ProgressState menampung data status kemajuan bermain kuis (skor bintang dan level yang terbuka).
 class ProgressState {
@@ -85,16 +83,6 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
     _loadProgress();
   }
 
-  // Memeriksa apakah inisialisasi Firebase berhasil dan siap digunakan.
-  bool get _isFirebaseAvailable {
-    try {
-      Firebase.app();
-      return true;
-    } catch (_) {
-      return false;
-    }
-  }
-
   // Fungsi internal untuk memuat data progres yang disimpan secara lokal
   Future<void> _loadProgress() async {
     try {
@@ -129,106 +117,8 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
         unlockedLevels: loadedUnlocked,
         unlockedParts: loadedParts,
       );
-
-      // Setelah memuat lokal, coba sinkronkan dengan cloud Firestore jika nama pemain tersedia
-      final playerName = prefs.getString('player_name') ?? '';
-      if (playerName.isNotEmpty && playerName != 'Pemain') {
-        await syncWithFirebase(playerName);
-      }
     } catch (e) {
       debugPrint('Gagal memuat progres kuis secara lokal $e');
-    }
-  }
-
-  // Fungsi sinkronisasi dengan awan (Firebase Firestore)
-  Future<void> syncWithFirebase(String playerName) async {
-    if (playerName.isEmpty || playerName == 'Pemain') return;
-
-    try {
-      final prefs = await SharedPreferences.getInstance();
-      
-      // Ambil progres lokal ter-update
-      final starsJson = prefs.getString('quiz_level_stars');
-      Map<String, int> localStars = {};
-      if (starsJson != null) {
-        final Map<String, dynamic> decoded = jsonDecode(starsJson);
-        localStars = decoded.map((key, value) => MapEntry(key, value as int));
-      }
-
-      final unlockedJson = prefs.getString('quiz_unlocked_levels');
-      Map<String, bool> localUnlocked = {'p1_l1': true, 'p2_l1': true};
-      if (unlockedJson != null) {
-        final Map<String, dynamic> decoded = jsonDecode(unlockedJson);
-        localUnlocked.addAll(decoded.map((key, value) => MapEntry(key, value as bool)));
-      }
-
-      final partsJson = prefs.getString('quiz_unlocked_parts');
-      Set<String> localParts = {'p1', 'p2'};
-      if (partsJson != null) {
-        final List<dynamic> decoded = jsonDecode(partsJson);
-        localParts.addAll(decoded.map((e) => e as String));
-      }
-
-      // Gabungkan dengan data dari Firestore jika tersedia
-      if (_isFirebaseAvailable) {
-        final docRef = FirebaseFirestore.instance.collection('user_progress').doc(playerName);
-        final docSnapshot = await docRef.get();
-
-        if (docSnapshot.exists) {
-          final cloudData = docSnapshot.data();
-          if (cloudData != null) {
-            // Gabungkan levelStars
-            final Map<String, dynamic> cloudStarsRaw = cloudData['levelStars'] ?? {};
-            final Map<String, int> cloudStars = cloudStarsRaw.map((key, value) => MapEntry(key, value as int));
-            
-            cloudStars.forEach((key, val) {
-              if (!localStars.containsKey(key) || localStars[key]! < val) {
-                localStars[key] = val;
-              }
-            });
-
-            // Gabungkan unlockedLevels
-            final Map<String, dynamic> cloudUnlockedRaw = cloudData['unlockedLevels'] ?? {};
-            final Map<String, bool> cloudUnlocked = cloudUnlockedRaw.map((key, value) => MapEntry(key, value as bool));
-            
-            cloudUnlocked.forEach((key, val) {
-              if (val) {
-                localUnlocked[key] = true;
-              }
-            });
-
-            // Gabungkan unlockedParts
-            final List<dynamic> cloudPartsRaw = cloudData['unlockedParts'] ?? [];
-            final List<String> cloudParts = cloudPartsRaw.map((e) => e as String).toList();
-            for (var partId in cloudParts) {
-              localParts.add(partId);
-            }
-          }
-        }
-
-        // Update state saat ini
-        state = ProgressState(
-          levelStars: localStars,
-          unlockedLevels: localUnlocked,
-          unlockedParts: localParts,
-        );
-
-        // Simpan hasil gabungan kembali ke SharedPreferences lokal
-        await prefs.setString('quiz_level_stars', jsonEncode(state.levelStars));
-        await prefs.setString('quiz_unlocked_levels', jsonEncode(state.unlockedLevels));
-        await prefs.setString('quiz_unlocked_parts', jsonEncode(state.unlockedParts.toList()));
-
-        // Unggah data ter-update ke Firestore
-        await docRef.set({
-          'playerName': playerName,
-          'levelStars': state.levelStars,
-          'unlockedLevels': state.unlockedLevels,
-          'unlockedParts': state.unlockedParts.toList(),
-          'lastUpdated': FieldValue.serverTimestamp(),
-        }, SetOptions(merge: true));
-      }
-    } catch (e) {
-      debugPrint('Gagal menyelaraskan progres dengan Firebase $e');
     }
   }
 
@@ -262,18 +152,6 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
       await prefs.setString('quiz_level_stars', jsonEncode(state.levelStars));
       await prefs.setString('quiz_unlocked_levels', jsonEncode(state.unlockedLevels));
       await prefs.setString('quiz_unlocked_parts', jsonEncode(state.unlockedParts.toList()));
-
-      // Jika ada nama pemain terdaftar, otomatis unggah pembaruan progres ke Firebase
-      final playerName = prefs.getString('player_name') ?? '';
-      if (playerName.isNotEmpty && playerName != 'Pemain' && _isFirebaseAvailable) {
-        await FirebaseFirestore.instance.collection('user_progress').doc(playerName).set({
-          'playerName': playerName,
-          'levelStars': state.levelStars,
-          'unlockedLevels': state.unlockedLevels,
-          'unlockedParts': state.unlockedParts.toList(),
-          'lastUpdated': FieldValue.serverTimestamp(),
-        }, SetOptions(merge: true));
-      }
     } catch (e) {
       debugPrint('Gagal menyimpan progres kuis baru $e');
     }
@@ -292,18 +170,6 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
         unlockedLevels: {'p1_l1': true, 'p2_l1': true},
         unlockedParts: {'p1', 'p2'},
       );
-
-      // Reset juga di Firebase jika tersedia
-      final playerName = prefs.getString('player_name') ?? '';
-      if (playerName.isNotEmpty && playerName != 'Pemain' && _isFirebaseAvailable) {
-        await FirebaseFirestore.instance.collection('user_progress').doc(playerName).set({
-          'playerName': playerName,
-          'levelStars': {},
-          'unlockedLevels': {'p1_l1': true, 'p2_l1': true},
-          'unlockedParts': ['p1', 'p2'],
-          'lastUpdated': FieldValue.serverTimestamp(),
-        });
-      }
     } catch (e) {
       debugPrint('Gagal mereset progres kuis $e');
     }
@@ -313,19 +179,6 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
   Future<void> deleteAccount() async {
     try {
       final prefs = await SharedPreferences.getInstance();
-      final playerName = prefs.getString('player_name') ?? '';
-
-      // Hapus semua data dari Firebase terlebih dahulu jika tersedia
-      if (playerName.isNotEmpty && playerName != 'Pemain' && _isFirebaseAvailable) {
-        // PERBAIKAN BUG: Hapus dari Firebase
-        await FirebaseFirestore.instance
-            .collection('user_progress')
-            .doc(playerName)
-            .delete();
-            
-        // PENTING: JANGAN gunakan clearPersistence() di sini karena akan membatalkan
-        // antrean penghapusan jika terjadi sedikit delay/offline, yang membuat "data hantu" kembali!
-      }
 
       // Hapus seluruh data lokal
       await prefs.remove('player_name');

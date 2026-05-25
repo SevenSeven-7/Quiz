@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
-import '../../inti/layanan/layanan_firebase.dart';
+import '../../inti/layanan/layanan_data.dart';
 import '../../inti/penyedia/penyedia_tema.dart';
 import '../../model/model.dart';
 import '../progres/penyedia_progres.dart';
@@ -279,7 +279,7 @@ class HomeScreen extends ConsumerWidget {
 
   Widget _buildPartList(BuildContext context, WidgetRef ref, ProgressState progress, bool isDark, bool isComputer) {
     return FutureBuilder<List<PartModel>>(
-      future: FirebaseService().getParts(),
+      future: DataService().getParts(),
       builder: (context, snapshot) {
         if (!snapshot.hasData) {
           return SliverToBoxAdapter(

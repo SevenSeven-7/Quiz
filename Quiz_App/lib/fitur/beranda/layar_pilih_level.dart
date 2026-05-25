@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
-import '../../inti/layanan/layanan_firebase.dart';
+import '../../inti/layanan/layanan_api.dart';
+import '../../inti/layanan/layanan_data.dart';
 import '../../model/model.dart';
 import '../progres/penyedia_progres.dart';
 import '../../inti/penyedia/penyedia_tema.dart';
@@ -66,7 +67,7 @@ class LevelSelectionScreen extends ConsumerWidget {
               // Grid Level
               Expanded(
                 child: FutureBuilder<List<LevelModel>>(
-                  future: FirebaseService().getLevels(part.id),
+                  future: DataService().getLevels(part.id),
                   builder: (context, snapshot) {
                     if (!snapshot.hasData) {
                       return Center(
@@ -168,30 +169,16 @@ class LevelSelectionScreen extends ConsumerWidget {
     return InkWell(
       onTap: isUnlocked
           ? () async {
-              showDialog(
-                context: context,
-                barrierDismissible: false,
-                builder: (context) => Center(
-                  child: Container(
-                    padding: const EdgeInsets.all(20),
-                    decoration: BoxDecoration(
-                      color: AppColors.surface.withValues(alpha: 0.9),
-                      borderRadius: BorderRadius.circular(16),
-                    ),
-                    child: const CircularProgressIndicator(color: AppColors.primary),
-                  ),
-                ),
-              );
-
-              final fetchedQuestions = await FirebaseService().getQuestionsForLevel(levelData.partId);
-              if (context.mounted) Navigator.of(context).pop(); // Tutup dialog
-
+              // LANGSUNG fetch dan masuk tanpa loading dialog
+              final fetchedQuestions = await ApiService().getQuestionsForLevel(levelData.partId, levelData.order);
+              
               if (fetchedQuestions.isEmpty) {
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(
-                      content: Text('Gagal memuat soal dari server. Periksa koneksi internet Anda.'),
+                      content: Text('Gagal memuat soal. Pastikan Python API server berjalan di http://localhost:5000'),
                       backgroundColor: Colors.red,
+                      duration: Duration(seconds: 3),
                     ),
                   );
                 }
