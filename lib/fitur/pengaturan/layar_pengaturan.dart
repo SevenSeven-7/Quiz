@@ -1,3 +1,4 @@
+import 'package:quiz/inti/utils/audio_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -37,6 +38,7 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
   Future<void> _simpanSuara(bool nilai) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool('pengaturan_suara', nilai);
+    AudioHelper.updateSoundPreference(nilai);
     setState(() => _suaraAktif = nilai);
   }
 
@@ -89,9 +91,10 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
           ),
         ),
         actions: [
-          TextButton(onPressed: () => Navigator.of(context).pop(), child: const Text('Batal', style: TextStyle(color: Colors.grey))),
+          TextButton(onPressed: () { AudioHelper.playClick(); Navigator.of(context).pop(); }, child: const Text('Batal', style: TextStyle(color: Colors.grey))),
           ElevatedButton(
             onPressed: () async {
+AudioHelper.playClick();
               if (!formKey.currentState!.validate()) return;
               final newName = controller.text.trim();
               final prefs = await SharedPreferences.getInstance();
@@ -133,9 +136,10 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
         title: const Text('Hapus Akun', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.failure)),
         content: const Text('Semua data progres, bintang, dan pencapaian kamu akan terhapus permanen.\n\nApakah kamu yakin?'),
         actions: [
-          TextButton(onPressed: () => Navigator.of(context).pop(), child: const Text('Batal', style: TextStyle(color: Colors.grey))),
+          TextButton(onPressed: () { AudioHelper.playClick(); Navigator.of(context).pop(); }, child: const Text('Batal', style: TextStyle(color: Colors.grey))),
           ElevatedButton(
             onPressed: () async {
+AudioHelper.playClick();
               final prefs = await SharedPreferences.getInstance();
               await prefs.clear();
               ref.read(playerNameProvider.notifier).state = '';
@@ -259,8 +263,7 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
                 child: SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: () => Navigator.pop(context),
-                    style: ElevatedButton.styleFrom(
+                    onPressed: () { AudioHelper.playClick(); Navigator.pop(context); }, style: ElevatedButton.styleFrom(
                       backgroundColor: accentColor,
                       padding: const EdgeInsets.symmetric(vertical: 14),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(isComputer ? 4 : 14)),
@@ -308,29 +311,30 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
       body: Container(
         decoration: BoxDecoration(gradient: bgGradient),
         child: SafeArea(
-          child: CustomScrollView(
-            physics: const BouncingScrollPhysics(),
-            slivers: [
-              // Header
-              SliverToBoxAdapter(
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(24, 24, 24, 8),
-                  child: Row(
-                    children: [
-                      ShaderMask(
-                        shaderCallback: (b) => headerGradient.createShader(b),
-                        child: const Text('Pengaturan', style: TextStyle(fontSize: 28, fontWeight: FontWeight.w900, color: Colors.white)),
-                      ),
-                      const Spacer(),
-                      Icon(Icons.settings_outlined, color: labelColor, size: 28),
-                    ],
-                  ),
-                ).animate().fadeIn(duration: 400.ms).slideY(begin: -0.2, end: 0),
-              ),
-
-              SliverPadding(
-                padding: const EdgeInsets.all(24),
-                sliver: SliverList(
+          child: Column(
+            children: [
+              // Header (Fixed/Sticky)
+              Padding(
+                padding: const EdgeInsets.fromLTRB(24, 24, 24, 8),
+                child: Row(
+                  children: [
+                    ShaderMask(
+                      shaderCallback: (b) => headerGradient.createShader(b),
+                      child: const Text('Pengaturan', style: TextStyle(fontSize: 28, fontWeight: FontWeight.w900, color: Colors.white)),
+                    ),
+                    const Spacer(),
+                    Icon(Icons.settings_outlined, color: labelColor, size: 28),
+                  ],
+                ),
+              ).animate().fadeIn(duration: 400.ms).slideY(begin: -0.2, end: 0),
+              
+              Expanded(
+                child: CustomScrollView(
+                  physics: const BouncingScrollPhysics(),
+                  slivers: [
+                    SliverPadding(
+                      padding: const EdgeInsets.all(24),
+                      sliver: SliverList(
                   delegate: SliverChildListDelegate([
 
                     // ── PROFIL ─────────────────────────────────────────
@@ -339,7 +343,7 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
                     _buildGlassCard(
                       color: cardColor, divColor: divColor, isComputer: isComputer,
                       child: InkWell(
-                        onTap: _tampilkanDialogUbahNama,
+                        onTap: () { AudioHelper.playClick(); _tampilkanDialogUbahNama(); },
                         borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
                         child: Padding(
                           padding: const EdgeInsets.all(20),
@@ -451,7 +455,7 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
                         iconColor: AppColors.failure,
                         label: 'Hapus Akun',
                         subtitle: 'Hapus semua data akun secara permanen',
-                        onTap: _tampilkanDialogHapusAkun,
+                        onTap: () { AudioHelper.playClick(); _tampilkanDialogHapusAkun(); },
                         isDestructive: true,
                         textColor: textColor,
                         subTextColor: subTextColor,
@@ -471,7 +475,7 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
                         iconColor: labelColor,
                         label: 'Deskripsi Aplikasi',
                         subtitle: 'Pelajari tentang Quiz App lebih lanjut',
-                        onTap: _tampilkanDeskripsiAplikasi,
+                        onTap: () { AudioHelper.playClick(); _tampilkanDeskripsiAplikasi(); },
                         textColor: textColor,
                         subTextColor: subTextColor,
                         isComputer: isComputer,
@@ -490,9 +494,12 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
             ],
           ),
         ),
-      ),
-    );
-  }
+      ],
+    ),
+  ),
+),
+);
+}
 
   // ─── Widget Helpers ───────────────────────────────────────────────
 
@@ -502,8 +509,7 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
     final inactiveTextColor = isDark ? Colors.white54 : (isComputer ? AppColors.textSecondaryComputer : Colors.black54);
     return Expanded(
       child: GestureDetector(
-        onTap: () => ref.read(temaProvider.notifier).ubahTema(mode),
-        child: AnimatedContainer(
+        onTap: () { AudioHelper.playClick(); ref.read(temaProvider.notifier).ubahTema(mode); }, child: AnimatedContainer(
           duration: const Duration(milliseconds: 250),
           curve: Curves.easeOutCubic,
           padding: const EdgeInsets.symmetric(vertical: 10),

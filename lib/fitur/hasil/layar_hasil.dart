@@ -1,3 +1,4 @@
+import 'package:quiz/inti/utils/audio_helper.dart';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -254,8 +255,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen> with TickerProvider
                           boxShadow: glow,
                         ),
                         child: ElevatedButton(
-                          onPressed: () => Navigator.of(context).pop(),
-                          style: ElevatedButton.styleFrom(
+                          onPressed: () { AudioHelper.playClick(); Navigator.of(context).pop(); }, style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.transparent,
                             shadowColor: Colors.transparent,
                             padding: const EdgeInsets.symmetric(vertical: 16),
@@ -273,8 +273,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen> with TickerProvider
                       SizedBox(
                         width: double.infinity,
                         child: OutlinedButton(
-                          onPressed: () => Navigator.of(context).popUntil((route) => route.isFirst),
-                          style: OutlinedButton.styleFrom(
+                          onPressed: () { AudioHelper.playClick(); Navigator.of(context).popUntil((route) => route.isFirst); }, style: OutlinedButton.styleFrom(
                             padding: const EdgeInsets.symmetric(vertical: 16),
                             side: BorderSide(color: (isComputer ? AppColors.primaryComputer : AppColors.primary).withValues(alpha: 0.5)),
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
