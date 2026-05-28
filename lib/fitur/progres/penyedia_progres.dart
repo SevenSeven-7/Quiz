@@ -27,28 +27,28 @@ class ProgressState {
     return total;
   }
 
-  // Menentukan gelar kecerdasan berdasarkan perolehan bintang
+  // Menentukan gelar kecerdasan berdasarkan perolehan bintang (Maksimal 2100 Bintang)
   String get gelarKecerdasan {
     final stars = totalStars;
-    if (stars <= 15) return 'Calon Juara';
-    if (stars <= 60) return 'Pencari Ilmu';
-    if (stars <= 150) return 'Pelajar Tangguh';
-    if (stars <= 300) return 'Pikir Cepat';
-    if (stars <= 450) return 'Cerdas Cermat';
-    if (stars <= 570) return 'Master Quiz';
-    return 'Genius Sejati';
+    if (stars <= 299) return 'Pemula';
+    if (stars <= 599) return 'Perunggu';
+    if (stars <= 899) return 'Perak';
+    if (stars <= 1199) return 'Emas';
+    if (stars <= 1499) return 'Platinum';
+    if (stars <= 1799) return 'Berlian';
+    return 'Legenda';
   }
 
   // Menentukan warna representasi untuk gelar kecerdasan
   Color get warnaGelar {
     final stars = totalStars;
-    if (stars <= 15) return const Color(0xFF95A5A6); // Abu-abu
-    if (stars <= 60) return const Color(0xFF3498DB); // Biru muda
-    if (stars <= 150) return const Color(0xFF2ECC71); // Hijau
-    if (stars <= 300) return const Color(0xFF9B59B6); // Ungu
-    if (stars <= 450) return const Color(0xFFE67E22); // Oranye tembaga
-    if (stars <= 570) return const Color(0xFFF1C40F); // Kuning emas
-    return const Color(0xFFE74C3C); // Merah membara
+    if (stars <= 299) return const Color(0xFF8B5A2B); // Coklat Kayu
+    if (stars <= 599) return const Color(0xFFCD7F32); // Perunggu
+    if (stars <= 899) return const Color(0xFFC0C0C0); // Perak
+    if (stars <= 1199) return const Color(0xFFFFD700); // Emas
+    if (stars <= 1499) return const Color(0xFFE5E4E2); // Platinum
+    if (stars <= 1799) return const Color(0xFF00BFFF); // Biru Berlian
+    return const Color(0xFFE74C3C); // Merah Legenda
   }
 
   int get islamicSolved => levelStars.keys.where((k) => k.startsWith('p1_l') && (levelStars[k] ?? 0) > 0).length;

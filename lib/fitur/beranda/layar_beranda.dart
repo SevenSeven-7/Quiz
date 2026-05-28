@@ -162,7 +162,7 @@ class HomeScreen extends ConsumerWidget {
     final totalStars = progress.totalStars;
     final gelar = progress.gelarKecerdasan;
     final warnaGelar = progress.warnaGelar;
-    const maxStars = 600;
+    const maxStars = 2100;
     final progressValue = (totalStars / maxStars).clamp(0.0, 1.0);
 
     return Container(
