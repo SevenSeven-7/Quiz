@@ -9,6 +9,7 @@ import 'pengendali_kuis.dart';
 import '../hasil/layar_hasil.dart';
 import '../../inti/penyedia/penyedia_tema.dart';
 import '../../inti/utils/audio_helper.dart';
+import '../../inti/utils/transisi_halaman.dart';
 
 class QuizScreen extends ConsumerStatefulWidget {
   final LevelModel level;
@@ -74,16 +75,13 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
     ref.listen(quizProvider(widget.level), (previous, next) {
       if (next.isFinished) {
         Navigator.of(context).pushReplacement(
-          PageRouteBuilder(
-            transitionDuration: const Duration(milliseconds: 500),
-            pageBuilder: (_, __, ___) => ResultScreen(
+          TransisiPremium(
+            child: ResultScreen(
               score: next.score,
               totalQuestions: next.level.questions.length,
               stars: next.starsEarned,
               partId: widget.level.partId,
             ),
-            transitionsBuilder: (_, animation, __, child) =>
-                FadeTransition(opacity: animation, child: child),
           ),
         );
       }
@@ -180,7 +178,7 @@ _showQuitDialog(context, isDark, isComputer);
                     ),
                   ],
                 ),
-              ),
+              ).animate().fadeIn(duration: 500.ms).slideY(begin: -0.5, end: 0, curve: Curves.easeOutBack),
 
               Expanded(
                 child: SingleChildScrollView(
@@ -401,10 +399,13 @@ Navigator.pop(context);
                             : const SizedBox.shrink()),
                 ],
               ),
+              ),
             ),
-          ).animate(target: isSelected && state.isAnswered && !isCorrect ? 1 : 0)
-              .shake(hz: 6, curve: Curves.easeInOut),
-        );
+          ).animate(key: ValueKey('${state.currentIndex}_$index'))
+              .fadeIn(delay: (300 + index * 100).ms, duration: 400.ms)
+              .slideX(begin: 0.1, end: 0, delay: (300 + index * 100).ms, duration: 400.ms, curve: Curves.easeOutCubic)
+           .animate(target: isSelected && state.isAnswered && !isCorrect ? 1 : 0)
+              .shake(hz: 6, curve: Curves.easeInOut);
       }),
     );
   }
