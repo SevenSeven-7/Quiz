@@ -1,0 +1,6502 @@
+[
+  {
+    "text": "Logic Analogy: Eye is to See as Ear is to...",
+    "correctAnswer": "Hear",
+    "options": [
+      "Boxy",
+      "Human",
+      "Sun",
+      "Hear"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_1"
+  },
+  {
+    "text": "What is the English word for 'Montir'?",
+    "correctAnswer": "Mechanic",
+    "options": [
+      "Mechanic",
+      "Thirsty",
+      "Penguin",
+      "Fire engine"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_2"
+  },
+  {
+    "text": "What is the English word for 'Rambutan'?",
+    "correctAnswer": "Rambutan",
+    "options": [
+      "Squid",
+      "Tall",
+      "Rambutan",
+      "Mechanic"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_3"
+  },
+  {
+    "text": "What is the English word for 'Cumi-cumi'?",
+    "correctAnswer": "Squid",
+    "options": [
+      "Farmer",
+      "Gorilla",
+      "Squid",
+      "Oven"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_4"
+  },
+  {
+    "text": "What is the English word for 'Buruk'?",
+    "correctAnswer": "Bad",
+    "options": [
+      "Chair",
+      "Bad",
+      "Hot air balloon",
+      "Play"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_5"
+  },
+  {
+    "text": "What is the English word for 'Gajah'?",
+    "correctAnswer": "Elephant",
+    "options": [
+      "Elephant",
+      "Door",
+      "Tractor",
+      "Write"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_6"
+  },
+  {
+    "text": "Logic Analogy: Tired is to Sleep as Dirty is to...",
+    "correctAnswer": "Wash",
+    "options": [
+      "Cut",
+      "China",
+      "Wash",
+      "Clean"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_7"
+  },
+  {
+    "text": "What is the English word for 'Panas'?",
+    "correctAnswer": "Hot",
+    "options": [
+      "Shirt",
+      "Chin",
+      "Hot",
+      "Chair"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_8"
+  },
+  {
+    "text": "What is the English word for 'Kasur'?",
+    "correctAnswer": "Bed",
+    "options": [
+      "Bed",
+      "Old",
+      "Watermelon",
+      "Architect"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_9"
+  },
+  {
+    "text": "What is the English word for 'Semut'?",
+    "correctAnswer": "Ant",
+    "options": [
+      "Hot air balloon",
+      "Stewardess",
+      "Ant",
+      "Sheep"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_10"
+  },
+  {
+    "text": "What is the English word for 'Lampu'?",
+    "correctAnswer": "Lamp",
+    "options": [
+      "Plum",
+      "Cold",
+      "Strong",
+      "Lamp"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_11"
+  },
+  {
+    "text": "What is the English word for 'Mertua Perempuan'?",
+    "correctAnswer": "Mother-in-law",
+    "options": [
+      "Stupid",
+      "Chest",
+      "Mother-in-law",
+      "Diligent"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_12"
+  },
+  {
+    "text": "What is the English word for 'Delima'?",
+    "correctAnswer": "Pomegranate",
+    "options": [
+      "One Hundred One",
+      "Bag",
+      "One Hundred",
+      "Pomegranate"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_13"
+  },
+  {
+    "text": "Riddle: What is full of holes but still holds water?",
+    "correctAnswer": "A sponge",
+    "options": [
+      "A cup",
+      "A net",
+      "A sponge",
+      "A bucket"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_14"
+  },
+  {
+    "text": "What is the English word for 'Menulis'?",
+    "correctAnswer": "Write",
+    "options": [
+      "Carriage",
+      "One",
+      "Lamp",
+      "Write"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_15"
+  },
+  {
+    "text": "What is the English word for 'Katak'?",
+    "correctAnswer": "Frog",
+    "options": [
+      "Frog",
+      "Two Hundred",
+      "Weak",
+      "Rambutan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_16"
+  },
+  {
+    "text": "What is the English word for '1000'?",
+    "correctAnswer": "One Thousand",
+    "options": [
+      "One Thousand",
+      "Doctor",
+      "Sixty",
+      "Waist"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_17"
+  },
+  {
+    "text": "What is the English word for 'Kelinci'?",
+    "correctAnswer": "Rabbit",
+    "options": [
+      "Brown",
+      "Rabbit",
+      "Fork",
+      "Barber"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_18"
+  },
+  {
+    "text": "What is the English word for 'Tupai'?",
+    "correctAnswer": "Squirrel",
+    "options": [
+      "Window",
+      "Lake",
+      "Chair",
+      "Squirrel"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_19"
+  },
+  {
+    "text": "What is the English word for 'Cokelat'?",
+    "correctAnswer": "Brown",
+    "options": [
+      "Brown",
+      "Submarine",
+      "Nineteen",
+      "Door"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_20"
+  },
+  {
+    "text": "What is the English word for 'Beruang'?",
+    "correctAnswer": "Bear",
+    "options": [
+      "Orange",
+      "Bear",
+      "Guava",
+      "Poor"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_21"
+  },
+  {
+    "text": "What is the English word for 'Istri'?",
+    "correctAnswer": "Wife",
+    "options": [
+      "Police station",
+      "Second",
+      "Wife",
+      "Lawyer"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_22"
+  },
+  {
+    "text": "What is the English word for 'Perpustakaan'?",
+    "correctAnswer": "Library",
+    "options": [
+      "Gray",
+      "Helicopter",
+      "Library",
+      "Fire engine"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_23"
+  },
+  {
+    "text": "What is the English word for 'Sikat Gigi'?",
+    "correctAnswer": "Toothbrush",
+    "options": [
+      "Museum",
+      "Toothbrush",
+      "Fifth",
+      "Submarine"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_24"
+  },
+  {
+    "text": "Logic Age #1: If Diana is older than David, and Lisa is younger than David. Who is the youngest?",
+    "correctAnswer": "Lisa",
+    "options": [
+      "Everyone is the same age",
+      "Diana",
+      "David",
+      "Lisa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_25"
+  },
+  {
+    "text": "What is the English word for 'Apel'?",
+    "correctAnswer": "Apple",
+    "options": [
+      "Ugly",
+      "Apple",
+      "Niece",
+      "Coconut"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_26"
+  },
+  {
+    "text": "What is the English word for 'Kuda'?",
+    "correctAnswer": "Horse",
+    "options": [
+      "Arm",
+      "Run",
+      "One Million",
+      "Horse"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_27"
+  },
+  {
+    "text": "What is the English word for 'Gembok'?",
+    "correctAnswer": "Padlock",
+    "options": [
+      "Butterfly",
+      "Padlock",
+      "Window",
+      "Goat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_28"
+  },
+  {
+    "text": "Logic Sequence #2: If Diana is taller than Lisa, and Lisa is taller than Bob. Who is the tallest?",
+    "correctAnswer": "Diana",
+    "options": [
+      "Diana",
+      "Bob",
+      "Cannot be determined",
+      "Lisa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_29"
+  },
+  {
+    "text": "What is the English word for 'Monyet'?",
+    "correctAnswer": "Monkey",
+    "options": [
+      "Scientist",
+      "Nose",
+      "Work",
+      "Monkey"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_30"
+  },
+  {
+    "text": "What is the English word for 'Pena'?",
+    "correctAnswer": "Pen",
+    "options": [
+      "Tall",
+      "Pen",
+      "Submarine",
+      "Study"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_31"
+  },
+  {
+    "text": "What is the English word for 'Guling'?",
+    "correctAnswer": "Bolster",
+    "options": [
+      "Post office",
+      "Journalist",
+      "Bolster",
+      "Lawyer"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_32"
+  },
+  {
+    "text": "What is the English word for '3'?",
+    "correctAnswer": "Three",
+    "options": [
+      "Foot",
+      "Three",
+      "Squirrel",
+      "Nephew"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_33"
+  },
+  {
+    "text": "Logic Sequence #18: If Bob is taller than John, and John is taller than Lisa. Who is the tallest?",
+    "correctAnswer": "Bob",
+    "options": [
+      "Lisa",
+      "Cannot be determined",
+      "Bob",
+      "John"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_34"
+  },
+  {
+    "text": "Riddle: What has words, but never speaks?",
+    "correctAnswer": "A book",
+    "options": [
+      "A radio",
+      "A television",
+      "A book",
+      "A parrot"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_35"
+  },
+  {
+    "text": "What is the English word for 'Perak'?",
+    "correctAnswer": "Silver",
+    "options": [
+      "Silver",
+      "Cow",
+      "Close",
+      "Glass"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_36"
+  },
+  {
+    "text": "Logic Analogy: Thirsty is to Drink as Hungry is to...",
+    "correctAnswer": "Eat",
+    "options": [
+      "Honey",
+      "Cut",
+      "Eat",
+      "Down"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_37"
+  },
+  {
+    "text": "What is the English word for 'Mencari'?",
+    "correctAnswer": "Search",
+    "options": [
+      "Search",
+      "Read",
+      "Bucket",
+      "Truck"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_38"
+  },
+  {
+    "text": "What is the English word for 'Ibu'?",
+    "correctAnswer": "Mother",
+    "options": [
+      "Mother",
+      "Librarian",
+      "Weak",
+      "Third"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_39"
+  },
+  {
+    "text": "What is the English word for 'Bibi'?",
+    "correctAnswer": "Aunt",
+    "options": [
+      "Search",
+      "Aunt",
+      "Thirsty",
+      "Fast"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_40"
+  },
+  {
+    "text": "Logic Analogy: Baker is to Bread as Butcher is to...",
+    "correctAnswer": "Meat",
+    "options": [
+      "China",
+      "Bark",
+      "Honey",
+      "Meat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_41"
+  },
+  {
+    "text": "What is the English word for 'Kulkas'?",
+    "correctAnswer": "Refrigerator",
+    "options": [
+      "Lamp",
+      "Drink",
+      "Refrigerator",
+      "Sit"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_42"
+  },
+  {
+    "text": "Logic Analogy: Singer is to Sing as Actor is to...",
+    "correctAnswer": "Act",
+    "options": [
+      "Act",
+      "Temperature",
+      "Hear",
+      "Sun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_43"
+  },
+  {
+    "text": "What is the English word for 'Sekolah'?",
+    "correctAnswer": "School",
+    "options": [
+      "Television",
+      "School",
+      "Cheek",
+      "Eraser"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_44"
+  },
+  {
+    "text": "What is the English word for 'Keponakan Perempuan'?",
+    "correctAnswer": "Niece",
+    "options": [
+      "Fly",
+      "Teacher",
+      "Niece",
+      "Island"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_45"
+  },
+  {
+    "text": "What is the English word for 'Mesin Cuci'?",
+    "correctAnswer": "Washing machine",
+    "options": [
+      "Watch",
+      "Eight",
+      "Washing machine",
+      "Engineer"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_46"
+  },
+  {
+    "text": "What is the English word for 'Selimut'?",
+    "correctAnswer": "Blanket",
+    "options": [
+      "Cold",
+      "Bank",
+      "Helicopter",
+      "Blanket"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_47"
+  },
+  {
+    "text": "What is the English word for 'Kuat'?",
+    "correctAnswer": "Strong",
+    "options": [
+      "Chef",
+      "Strong",
+      "Brother",
+      "Mango"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_48"
+  },
+  {
+    "text": "Riddle: What goes up but never comes down?",
+    "correctAnswer": "Your age",
+    "options": [
+      "Your age",
+      "The sun",
+      "A balloon",
+      "A bird"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_49"
+  },
+  {
+    "text": "What is the English word for '40'?",
+    "correctAnswer": "Forty",
+    "options": [
+      "Barber",
+      "Forty",
+      "Belt",
+      "Squid"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_50"
+  },
+  {
+    "text": "What is the English word for 'Kangguru'?",
+    "correctAnswer": "Kangaroo",
+    "options": [
+      "Maroon",
+      "Fish",
+      "See",
+      "Kangaroo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_51"
+  },
+  {
+    "text": "What is the English word for 'Menangis'?",
+    "correctAnswer": "Cry",
+    "options": [
+      "Cry",
+      "Nail",
+      "See",
+      "Gloves"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_52"
+  },
+  {
+    "text": "What is the English word for 'Burung Hantu'?",
+    "correctAnswer": "Owl",
+    "options": [
+      "Owl",
+      "Tooth",
+      "Clock",
+      "Laugh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_53"
+  },
+  {
+    "text": "What is the English word for 'Rusa'?",
+    "correctAnswer": "Deer",
+    "options": [
+      "Deer",
+      "Painter",
+      "Five",
+      "Train"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_54"
+  },
+  {
+    "text": "What is the English word for 'Sendok'?",
+    "correctAnswer": "Spoon",
+    "options": [
+      "Take",
+      "Beach",
+      "Third",
+      "Spoon"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_55"
+  },
+  {
+    "text": "Logic Sequence #3: If Tom is taller than Lisa, and Lisa is taller than John. Who is the tallest?",
+    "correctAnswer": "Tom",
+    "options": [
+      "Tom",
+      "Cannot be determined",
+      "John",
+      "Lisa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_56"
+  },
+  {
+    "text": "What is the English word for 'Tas'?",
+    "correctAnswer": "Bag",
+    "options": [
+      "Seventy",
+      "School",
+      "Bag",
+      "Red"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_57"
+  },
+  {
+    "text": "Logic Sequence #15: If Emma is taller than Diana, and Diana is taller than David. Who is the tallest?",
+    "correctAnswer": "Emma",
+    "options": [
+      "Cannot be determined",
+      "Diana",
+      "Emma",
+      "David"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_58"
+  },
+  {
+    "text": "What is the English word for 'Bibir'?",
+    "correctAnswer": "Lip",
+    "options": [
+      "Cupboard",
+      "Boat",
+      "Avocado",
+      "Lip"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_59"
+  },
+  {
+    "text": "What is the English word for 'Tangan'?",
+    "correctAnswer": "Hand",
+    "options": [
+      "Twenty One",
+      "Strong",
+      "Hand",
+      "Pig"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_60"
+  },
+  {
+    "text": "What is the English word for 'Dokter'?",
+    "correctAnswer": "Doctor",
+    "options": [
+      "Cry",
+      "Doctor",
+      "Ten",
+      "Father-in-law"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_61"
+  },
+  {
+    "text": "What is the English word for 'Sopir'?",
+    "correctAnswer": "Driver",
+    "options": [
+      "Seventeen",
+      "Give",
+      "Driver",
+      "Chest"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_62"
+  },
+  {
+    "text": "What is the English word for 'Manggis'?",
+    "correctAnswer": "Mangosteen",
+    "options": [
+      "Hot",
+      "Mangosteen",
+      "Pencil",
+      "Pomegranate"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_63"
+  },
+  {
+    "text": "What is the English word for 'Jelek'?",
+    "correctAnswer": "Ugly",
+    "options": [
+      "Ugly",
+      "Strong",
+      "Old",
+      "Nephew"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_64"
+  },
+  {
+    "text": "Logic Analogy: Bird is to Fly as Fish is to...",
+    "correctAnswer": "Swim",
+    "options": [
+      "Listen",
+      "School",
+      "Swim",
+      "Account"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_65"
+  },
+  {
+    "text": "What is the English word for 'Biru Dongker'?",
+    "correctAnswer": "Navy",
+    "options": [
+      "Peacock",
+      "Sheep",
+      "Navy",
+      "Earring"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_66"
+  },
+  {
+    "text": "What is the English word for 'Jam Dinding'?",
+    "correctAnswer": "Clock",
+    "options": [
+      "Clock",
+      "Cow",
+      "Work",
+      "Scientist"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_67"
+  },
+  {
+    "text": "What is the English word for 'Kucing'?",
+    "correctAnswer": "Cat",
+    "options": [
+      "Crab",
+      "Cat",
+      "Guava",
+      "Orange"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_68"
+  },
+  {
+    "text": "What is the English word for 'Menemukan'?",
+    "correctAnswer": "Find",
+    "options": [
+      "Chair",
+      "Teach",
+      "Hot",
+      "Find"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_69"
+  },
+  {
+    "text": "What is the English word for 'Ember'?",
+    "correctAnswer": "Bucket",
+    "options": [
+      "Bucket",
+      "Hospital",
+      "Raft",
+      "Window"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_70"
+  },
+  {
+    "text": "What is the English word for 'Kacamata'?",
+    "correctAnswer": "Glasses",
+    "options": [
+      "Grape",
+      "Silver",
+      "Arm",
+      "Glasses"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_71"
+  },
+  {
+    "text": "What is the English word for 'Kelelawar'?",
+    "correctAnswer": "Bat",
+    "options": [
+      "Bat",
+      "Think",
+      "Blanket",
+      "Wolf"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_72"
+  },
+  {
+    "text": "What is the English word for 'Toko'?",
+    "correctAnswer": "Shop",
+    "options": [
+      "Angry",
+      "Three",
+      "Shop",
+      "Laugh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_73"
+  },
+  {
+    "text": "What is the English word for 'Sepatu'?",
+    "correctAnswer": "Shoes",
+    "options": [
+      "Monkey",
+      "Bear",
+      "Smart",
+      "Shoes"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_74"
+  },
+  {
+    "text": "What is the English word for 'Sisir'?",
+    "correctAnswer": "Comb",
+    "options": [
+      "Whale",
+      "Comb",
+      "Work",
+      "Arm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_75"
+  },
+  {
+    "text": "What is the English word for 'Wartawan'?",
+    "correctAnswer": "Journalist",
+    "options": [
+      "Daughter",
+      "Eagle",
+      "Cow",
+      "Journalist"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_76"
+  },
+  {
+    "text": "What is the English word for 'Mulut'?",
+    "correctAnswer": "Mouth",
+    "options": [
+      "Mouth",
+      "Wake",
+      "Cave",
+      "Win"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_77"
+  },
+  {
+    "text": "What is the English word for 'Membawa'?",
+    "correctAnswer": "Bring",
+    "options": [
+      "Fifteen",
+      "Cool",
+      "Bring",
+      "Niece"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_78"
+  },
+  {
+    "text": "What is the English word for 'Lambat'?",
+    "correctAnswer": "Slow",
+    "options": [
+      "Pillow",
+      "Rambutan",
+      "Husband",
+      "Slow"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_79"
+  },
+  {
+    "text": "What is the English word for 'Kura-kura'?",
+    "correctAnswer": "Turtle",
+    "options": [
+      "Crab",
+      "Happy",
+      "Turtle",
+      "Car"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_80"
+  },
+  {
+    "text": "What is the English word for 'Bahagia'?",
+    "correctAnswer": "Happy",
+    "options": [
+      "Doctor",
+      "Sofa",
+      "Necklace",
+      "Happy"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_81"
+  },
+  {
+    "text": "What is the English word for 'Celana'?",
+    "correctAnswer": "Pants",
+    "options": [
+      "Pants",
+      "Fifth",
+      "Iron",
+      "Clock"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_82"
+  },
+  {
+    "text": "What is the English word for 'Jeruk'?",
+    "correctAnswer": "Orange",
+    "options": [
+      "Fish",
+      "Five",
+      "Hospital",
+      "Orange"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_83"
+  },
+  {
+    "text": "What is the English word for 'Berdiri'?",
+    "correctAnswer": "Stand",
+    "options": [
+      "Stand",
+      "Fisherman",
+      "Cherry",
+      "Foot"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_84"
+  },
+  {
+    "text": "What is the English word for 'Petani'?",
+    "correctAnswer": "Farmer",
+    "options": [
+      "Red",
+      "Farmer",
+      "Big",
+      "Mountain"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_85"
+  },
+  {
+    "text": "What is the English word for 'Cantik'?",
+    "correctAnswer": "Beautiful",
+    "options": [
+      "Beautiful",
+      "Dog",
+      "Search",
+      "Forest"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_86"
+  },
+  {
+    "text": "What is the English word for 'Jingga'?",
+    "correctAnswer": "Orange",
+    "options": [
+      "Orange",
+      "Lazy",
+      "Stomach",
+      "Snake"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_87"
+  },
+  {
+    "text": "What is the English word for 'Menang'?",
+    "correctAnswer": "Win",
+    "options": [
+      "Bus",
+      "Plate",
+      "Win",
+      "Wallet"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_88"
+  },
+  {
+    "text": "What is the English word for 'Pramugari'?",
+    "correctAnswer": "Stewardess",
+    "options": [
+      "Stewardess",
+      "Cow",
+      "Soursop",
+      "Carpenter"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_89"
+  },
+  {
+    "text": "What is the English word for 'Kaki (atas)'?",
+    "correctAnswer": "Leg",
+    "options": [
+      "Monkey",
+      "Crocodile",
+      "Comb",
+      "Leg"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_90"
+  },
+  {
+    "text": "What is the English word for 'Tin'?",
+    "correctAnswer": "Fig",
+    "options": [
+      "Fig",
+      "New",
+      "Bucket",
+      "Washing machine"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_91"
+  },
+  {
+    "text": "What is the English word for 'Karpet'?",
+    "correctAnswer": "Carpet",
+    "options": [
+      "Bank",
+      "Chin",
+      "Carpet",
+      "Judge"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_92"
+  },
+  {
+    "text": "What is the English word for '80'?",
+    "correctAnswer": "Eighty",
+    "options": [
+      "Back",
+      "Duck",
+      "Eighty",
+      "Stepchild"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_93"
+  },
+  {
+    "text": "Logic Sequence #25: If Sarah is taller than David, and David is taller than Diana. Who is the tallest?",
+    "correctAnswer": "Sarah",
+    "options": [
+      "Diana",
+      "David",
+      "Cannot be determined",
+      "Sarah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_94"
+  },
+  {
+    "text": "What is the English word for 'Hotel'?",
+    "correctAnswer": "Hotel",
+    "options": [
+      "Handsome",
+      "Hotel",
+      "Langsat",
+      "Lake"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_95"
+  },
+  {
+    "text": "What is the English word for '1'?",
+    "correctAnswer": "One",
+    "options": [
+      "Architect",
+      "Twenty One",
+      "Shirt",
+      "One"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_96"
+  },
+  {
+    "text": "What is the English word for 'Ringan'?",
+    "correctAnswer": "Light",
+    "options": [
+      "Photographer",
+      "Gorilla",
+      "Cat",
+      "Light"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_97"
+  },
+  {
+    "text": "What is the English word for 'Jari'?",
+    "correctAnswer": "Finger",
+    "options": [
+      "Sing",
+      "Police car",
+      "Finger",
+      "One Million"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_98"
+  },
+  {
+    "text": "What is the English word for 'Mobil Polisi'?",
+    "correctAnswer": "Police car",
+    "options": [
+      "Park",
+      "Iron",
+      "Police car",
+      "Hot"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_99"
+  },
+  {
+    "text": "What is the English word for 'Polisi'?",
+    "correctAnswer": "Police",
+    "options": [
+      "Hippopotamus",
+      "Blue",
+      "Nephew",
+      "Police"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_100"
+  },
+  {
+    "text": "What is the English word for 'Membeli'?",
+    "correctAnswer": "Buy",
+    "options": [
+      "Gorilla",
+      "Buy",
+      "Papaya",
+      "Kiwi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_101"
+  },
+  {
+    "text": "What is the English word for 'Menutup'?",
+    "correctAnswer": "Close",
+    "options": [
+      "Bucket",
+      "Tie",
+      "Mother",
+      "Close"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_102"
+  },
+  {
+    "text": "What is the English word for 'Merah Muda'?",
+    "correctAnswer": "Pink",
+    "options": [
+      "Pink",
+      "Pineapple",
+      "Stewardess",
+      "Papaya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_103"
+  },
+  {
+    "text": "What is the English word for 'Kota'?",
+    "correctAnswer": "City",
+    "options": [
+      "Eagle",
+      "Fourteen",
+      "City",
+      "Engineer"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_104"
+  },
+  {
+    "text": "Logic Analogy: Clock is to Time as Thermometer is to...",
+    "correctAnswer": "Temperature",
+    "options": [
+      "Meat",
+      "Temperature",
+      "Honey",
+      "Dinner"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_105"
+  },
+  {
+    "text": "What is the English word for '500'?",
+    "correctAnswer": "Five Hundred",
+    "options": [
+      "Judge",
+      "Five Hundred",
+      "Hot",
+      "Towel"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_106"
+  },
+  {
+    "text": "What is the English word for 'Buku'?",
+    "correctAnswer": "Book",
+    "options": [
+      "Third",
+      "Open",
+      "Pillow",
+      "Book"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_107"
+  },
+  {
+    "text": "Logic Age #13: If Sarah is older than Michael, and David is younger than Michael. Who is the youngest?",
+    "correctAnswer": "David",
+    "options": [
+      "Michael",
+      "Everyone is the same age",
+      "Sarah",
+      "David"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_108"
+  },
+  {
+    "text": "Riddle: What month of the year has 28 days?",
+    "correctAnswer": "All of them",
+    "options": [
+      "None",
+      "February",
+      "All of them",
+      "January"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_109"
+  },
+  {
+    "text": "What is the English word for 'Taksi'?",
+    "correctAnswer": "Taxi",
+    "options": [
+      "Speak",
+      "Good",
+      "Taxi",
+      "Sister"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_110"
+  },
+  {
+    "text": "What is the English word for 'Taman'?",
+    "correctAnswer": "Park",
+    "options": [
+      "Nephew",
+      "Spider",
+      "Study",
+      "Park"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_111"
+  },
+  {
+    "text": "What is the English word for 'Kursi'?",
+    "correctAnswer": "Chair",
+    "options": [
+      "Two",
+      "Silver",
+      "Frog",
+      "Chair"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_112"
+  },
+  {
+    "text": "What is the English word for 'Ibu Kota'?",
+    "correctAnswer": "Capital",
+    "options": [
+      "Capital",
+      "Watermelon",
+      "Beautiful",
+      "Judge"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_113"
+  },
+  {
+    "text": "What is the English word for 'Lebah'?",
+    "correctAnswer": "Bee",
+    "options": [
+      "Daughter",
+      "Bee",
+      "Eye",
+      "Navy"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_114"
+  },
+  {
+    "text": "What is the English word for 'Aktris'?",
+    "correctAnswer": "Actress",
+    "options": [
+      "Fly",
+      "Actress",
+      "Bring",
+      "Six"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_115"
+  },
+  {
+    "text": "What is the English word for 'Topi'?",
+    "correctAnswer": "Hat",
+    "options": [
+      "Hat",
+      "Uncle",
+      "Beautiful",
+      "Find"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_116"
+  },
+  {
+    "text": "What is the English word for 'Lapar'?",
+    "correctAnswer": "Hungry",
+    "options": [
+      "Clean",
+      "Banana",
+      "Hungry",
+      "Son"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_117"
+  },
+  {
+    "text": "What is the English word for 'Bekerja'?",
+    "correctAnswer": "Work",
+    "options": [
+      "Gold",
+      "Hospital",
+      "Write",
+      "Work"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_118"
+  },
+  {
+    "text": "What is the English word for 'Panjang'?",
+    "correctAnswer": "Long",
+    "options": [
+      "Forty",
+      "Toothbrush",
+      "Long",
+      "Capital"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_119"
+  },
+  {
+    "text": "What is the English word for 'Garpu'?",
+    "correctAnswer": "Fork",
+    "options": [
+      "Stepchild",
+      "Strong",
+      "Fork",
+      "Bicycle"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_120"
+  },
+  {
+    "text": "Logic Sequence #24: If Alice is taller than Sarah, and Sarah is taller than Emma. Who is the tallest?",
+    "correctAnswer": "Alice",
+    "options": [
+      "Sarah",
+      "Cannot be determined",
+      "Alice",
+      "Emma"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_121"
+  },
+  {
+    "text": "What is the English word for 'Nyamuk'?",
+    "correctAnswer": "Mosquito",
+    "options": [
+      "Telephone",
+      "Stomach",
+      "Mosquito",
+      "Toothbrush"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_122"
+  },
+  {
+    "text": "Logic Analogy: Circle is to Round as Square is to...",
+    "correctAnswer": "Boxy",
+    "options": [
+      "Sun",
+      "Boxy",
+      "School",
+      "Airplane"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_123"
+  },
+  {
+    "text": "What is the English word for 'Hiu'?",
+    "correctAnswer": "Shark",
+    "options": [
+      "Shark",
+      "Happy",
+      "Spider",
+      "Toothpaste"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_124"
+  },
+  {
+    "text": "What is the English word for 'Buaya'?",
+    "correctAnswer": "Crocodile",
+    "options": [
+      "Motorcycle",
+      "Rabbit",
+      "Pants",
+      "Crocodile"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_125"
+  },
+  {
+    "text": "Riddle: What can travel around the world while staying in a corner?",
+    "correctAnswer": "A stamp",
+    "options": [
+      "A stamp",
+      "A letter",
+      "An airplane",
+      "A coin"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_126"
+  },
+  {
+    "text": "Riddle: I have branches, but no fruit, trunk or leaves. What am I?",
+    "correctAnswer": "A bank",
+    "options": [
+      "A library",
+      "A river",
+      "A bank",
+      "A family tree"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_127"
+  },
+  {
+    "text": "What is the English word for 'Cepat'?",
+    "correctAnswer": "Fast",
+    "options": [
+      "Fig",
+      "Wake",
+      "Fast",
+      "Pink"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_128"
+  },
+  {
+    "text": "What is the English word for 'Abu-abu'?",
+    "correctAnswer": "Gray",
+    "options": [
+      "Gray",
+      "Seven",
+      "Wash",
+      "Chest"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_129"
+  },
+  {
+    "text": "Logic Sequence #7: If Diana is taller than Charlie, and Charlie is taller than David. Who is the tallest?",
+    "correctAnswer": "Diana",
+    "options": [
+      "David",
+      "Diana",
+      "Cannot be determined",
+      "Charlie"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_130"
+  },
+  {
+    "text": "What is the English word for '13'?",
+    "correctAnswer": "Thirteen",
+    "options": [
+      "Merchant",
+      "Guava",
+      "Tiger",
+      "Thirteen"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_131"
+  },
+  {
+    "text": "Logic Analogy: Gills is to Fish as Lungs is to...",
+    "correctAnswer": "Human",
+    "options": [
+      "Meat",
+      "Human",
+      "Vegetable",
+      "Bark"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_132"
+  },
+  {
+    "text": "What is the English word for 'Anak Tiri'?",
+    "correctAnswer": "Stepchild",
+    "options": [
+      "Grandfather",
+      "One Million",
+      "Stepchild",
+      "Market"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_133"
+  },
+  {
+    "text": "What is the English word for 'Mengkudu'?",
+    "correctAnswer": "Noni",
+    "options": [
+      "Noni",
+      "Crab",
+      "Write",
+      "Jacket"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_134"
+  },
+  {
+    "text": "What is the English word for 'Minum'?",
+    "correctAnswer": "Drink",
+    "options": [
+      "Drink",
+      "Waist",
+      "Taxi",
+      "Bring"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_135"
+  },
+  {
+    "text": "What is the English word for 'Melihat'?",
+    "correctAnswer": "See",
+    "options": [
+      "Smile",
+      "See",
+      "Lemon",
+      "Lake"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_136"
+  },
+  {
+    "text": "What is the English word for 'Kunci'?",
+    "correctAnswer": "Key",
+    "options": [
+      "Key",
+      "Bus",
+      "Lemon",
+      "Nail"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_137"
+  },
+  {
+    "text": "What is the English word for 'Melon'?",
+    "correctAnswer": "Melon",
+    "options": [
+      "Hot air balloon",
+      "Key",
+      "Search",
+      "Melon"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_138"
+  },
+  {
+    "text": "Logic Age #17: If Charlie is older than Bob, and Emma is younger than Bob. Who is the youngest?",
+    "correctAnswer": "Emma",
+    "options": [
+      "Everyone is the same age",
+      "Bob",
+      "Charlie",
+      "Emma"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_139"
+  },
+  {
+    "text": "What is the English word for 'Ayam'?",
+    "correctAnswer": "Chicken",
+    "options": [
+      "Warm",
+      "Librarian",
+      "Train",
+      "Chicken"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_140"
+  },
+  {
+    "text": "What is the English word for 'Jari Kaki'?",
+    "correctAnswer": "Toe",
+    "options": [
+      "Toe",
+      "Avocado",
+      "Find",
+      "Window"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_141"
+  },
+  {
+    "text": "What is the English word for 'Tikus'?",
+    "correctAnswer": "Mouse",
+    "options": [
+      "Capital",
+      "Mouse",
+      "Eighty",
+      "Open"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_142"
+  },
+  {
+    "text": "What is the English word for '12'?",
+    "correctAnswer": "Twelve",
+    "options": [
+      "Twelve",
+      "Plum",
+      "Third",
+      "Iron"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_143"
+  },
+  {
+    "text": "What is the English word for 'Saudara Perempuan'?",
+    "correctAnswer": "Sister",
+    "options": [
+      "Tall",
+      "Sister",
+      "Book",
+      "Penguin"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_144"
+  },
+  {
+    "text": "What is the English word for 'Lemah'?",
+    "correctAnswer": "Weak",
+    "options": [
+      "Socks",
+      "Sleep",
+      "Silver",
+      "Weak"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_145"
+  },
+  {
+    "text": "What is the English word for 'Hitam'?",
+    "correctAnswer": "Black",
+    "options": [
+      "Journalist",
+      "Grape",
+      "Black",
+      "Rhinoceros"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_146"
+  },
+  {
+    "text": "What is the English word for 'Hidung'?",
+    "correctAnswer": "Nose",
+    "options": [
+      "Work",
+      "One Hundred One",
+      "Panda",
+      "Nose"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_147"
+  },
+  {
+    "text": "What is the English word for 'Nangka'?",
+    "correctAnswer": "Jackfruit",
+    "options": [
+      "Jackfruit",
+      "Cook",
+      "Chair",
+      "Poor"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_148"
+  },
+  {
+    "text": "What is the English word for '7'?",
+    "correctAnswer": "Seven",
+    "options": [
+      "Tractor",
+      "Merchant",
+      "Eraser",
+      "Seven"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_149"
+  },
+  {
+    "text": "What is the English word for 'Hijau'?",
+    "correctAnswer": "Green",
+    "options": [
+      "Mother-in-law",
+      "Green",
+      "Eleven",
+      "Give"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_150"
+  },
+  {
+    "text": "Logic Analogy: Towel is to Dry as Soap is to...",
+    "correctAnswer": "Clean",
+    "options": [
+      "Clean",
+      "Jump",
+      "Human",
+      "China"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_151"
+  },
+  {
+    "text": "What is the English word for 'Keempat'?",
+    "correctAnswer": "Fourth",
+    "options": [
+      "Fourth",
+      "Carriage",
+      "Pants",
+      "Stand"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_152"
+  },
+  {
+    "text": "Logic Sequence #10: If Sarah is taller than John, and John is taller than Diana. Who is the tallest?",
+    "correctAnswer": "Sarah",
+    "options": [
+      "Sarah",
+      "Diana",
+      "John",
+      "Cannot be determined"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_153"
+  },
+  {
+    "text": "Logic Age #12: If Alice is older than David, and John is younger than David. Who is the youngest?",
+    "correctAnswer": "John",
+    "options": [
+      "John",
+      "Everyone is the same age",
+      "David",
+      "Alice"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_154"
+  },
+  {
+    "text": "What is the English word for 'Guru'?",
+    "correctAnswer": "Teacher",
+    "options": [
+      "Jackfruit",
+      "Tiger",
+      "Teacher",
+      "Papaya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_155"
+  },
+  {
+    "text": "Logic Analogy: Wheels is to Car as Wings is to...",
+    "correctAnswer": "Airplane",
+    "options": [
+      "Boil",
+      "Airplane",
+      "Hear",
+      "Paste"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_156"
+  },
+  {
+    "text": "What is the English word for 'Kedua'?",
+    "correctAnswer": "Second",
+    "options": [
+      "Lawyer",
+      "Second",
+      "Station",
+      "Post office"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_157"
+  },
+  {
+    "text": "Logic Analogy: Ship is to Ocean as Airplane is to...",
+    "correctAnswer": "Sky",
+    "options": [
+      "Clean",
+      "Act",
+      "Sky",
+      "School"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_158"
+  },
+  {
+    "text": "What is the English word for 'Alpukat'?",
+    "correctAnswer": "Avocado",
+    "options": [
+      "Belt",
+      "Tongue",
+      "Plate",
+      "Avocado"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_159"
+  },
+  {
+    "text": "What is the English word for 'Kepiting'?",
+    "correctAnswer": "Crab",
+    "options": [
+      "Crab",
+      "Sheep",
+      "Seventy",
+      "Run"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_160"
+  },
+  {
+    "text": "What is the English word for 'Meja'?",
+    "correctAnswer": "Table",
+    "options": [
+      "Table",
+      "Engineer",
+      "School",
+      "Jacket"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_161"
+  },
+  {
+    "text": "What is the English word for 'Koala'?",
+    "correctAnswer": "Koala",
+    "options": [
+      "Snake fruit",
+      "Koala",
+      "River",
+      "Sad"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_162"
+  },
+  {
+    "text": "What is the English word for 'Pilot'?",
+    "correctAnswer": "Pilot",
+    "options": [
+      "Twenty Two",
+      "Refrigerator",
+      "Hippopotamus",
+      "Pilot"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_163"
+  },
+  {
+    "text": "Logic Analogy: Bed is to Sleep as Chair is to...",
+    "correctAnswer": "Sit",
+    "options": [
+      "Sit",
+      "Temperature",
+      "Sky",
+      "Hear"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_164"
+  },
+  {
+    "text": "What is the English word for '16'?",
+    "correctAnswer": "Sixteen",
+    "options": [
+      "Nurse",
+      "Singer",
+      "Rambutan",
+      "Sixteen"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_165"
+  },
+  {
+    "text": "What is the English word for 'Traktor'?",
+    "correctAnswer": "Tractor",
+    "options": [
+      "City",
+      "Tractor",
+      "Shoes",
+      "Hear"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_166"
+  },
+  {
+    "text": "Logic Sequence #8: If Alice is taller than Bob, and Bob is taller than Diana. Who is the tallest?",
+    "correctAnswer": "Alice",
+    "options": [
+      "Alice",
+      "Diana",
+      "Bob",
+      "Cannot be determined"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_167"
+  },
+  {
+    "text": "Riddle: What has a head and a tail but no body?",
+    "correctAnswer": "A coin",
+    "options": [
+      "A coin",
+      "A snake",
+      "A worm",
+      "A comet"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_168"
+  },
+  {
+    "text": "What is the English word for 'Emas'?",
+    "correctAnswer": "Gold",
+    "options": [
+      "Sofa",
+      "Toothpaste",
+      "Gold",
+      "Shark"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_169"
+  },
+  {
+    "text": "Logic Analogy: Lion is to Roar as Dog is to...",
+    "correctAnswer": "Bark",
+    "options": [
+      "Bark",
+      "Cut",
+      "Fish",
+      "Sit"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_170"
+  },
+  {
+    "text": "What is the English word for 'Muda'?",
+    "correctAnswer": "Young",
+    "options": [
+      "Young",
+      "Seven",
+      "Mother-in-law",
+      "Zebra"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_171"
+  },
+  {
+    "text": "What is the English word for 'Truk'?",
+    "correctAnswer": "Truck",
+    "options": [
+      "Bicycle",
+      "Weak",
+      "Brown",
+      "Truck"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_172"
+  },
+  {
+    "text": "Logic Analogy: Happy is to Smile as Sad is to...",
+    "correctAnswer": "Cry",
+    "options": [
+      "Clean",
+      "Night",
+      "Cry",
+      "Cut"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_173"
+  },
+  {
+    "text": "What is the English word for 'Babi'?",
+    "correctAnswer": "Pig",
+    "options": [
+      "Seven",
+      "Leg",
+      "Iron",
+      "Pig"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_174"
+  },
+  {
+    "text": "What is the English word for 'Harimau'?",
+    "correctAnswer": "Tiger",
+    "options": [
+      "Tiger",
+      "Forty",
+      "Work",
+      "Diligent"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_175"
+  },
+  {
+    "text": "Riddle: What belongs to you, but other people use it more than you?",
+    "correctAnswer": "Your name",
+    "options": [
+      "Your money",
+      "Your name",
+      "Your house",
+      "Your car"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_176"
+  },
+  {
+    "text": "What is the English word for '60'?",
+    "correctAnswer": "Sixty",
+    "options": [
+      "Mechanic",
+      "Sixty",
+      "Red",
+      "Cave"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_177"
+  },
+  {
+    "text": "What is the English word for '21'?",
+    "correctAnswer": "Twenty One",
+    "options": [
+      "Buy",
+      "Twenty One",
+      "Search",
+      "Chin"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_178"
+  },
+  {
+    "text": "What is the English word for 'Televisi'?",
+    "correctAnswer": "Television",
+    "options": [
+      "Television",
+      "Tall",
+      "Mouth",
+      "Sheep"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_179"
+  },
+  {
+    "text": "What is the English word for 'Pesawat Terbang'?",
+    "correctAnswer": "Airplane",
+    "options": [
+      "Read",
+      "Twenty One",
+      "Guava",
+      "Airplane"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_180"
+  },
+  {
+    "text": "What is the English word for 'Ceri'?",
+    "correctAnswer": "Cherry",
+    "options": [
+      "Knife",
+      "Five Hundred",
+      "Cherry",
+      "Heavy"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_181"
+  },
+  {
+    "text": "What is the English word for 'Rambut'?",
+    "correctAnswer": "Hair",
+    "options": [
+      "Old",
+      "Hair",
+      "Actress",
+      "Young"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_182"
+  },
+  {
+    "text": "What is the English word for 'Nenek'?",
+    "correctAnswer": "Grandmother",
+    "options": [
+      "Socks",
+      "Grandmother",
+      "Blanket",
+      "Mosquito"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_183"
+  },
+  {
+    "text": "Riddle: What has many keys but can’t open a single lock?",
+    "correctAnswer": "A piano",
+    "options": [
+      "A keyboard",
+      "A map",
+      "A piano",
+      "A safe"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_184"
+  },
+  {
+    "text": "What is the English word for 'Pintu'?",
+    "correctAnswer": "Door",
+    "options": [
+      "Door",
+      "Soursop",
+      "Kangaroo",
+      "Dog"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_185"
+  },
+  {
+    "text": "What is the English word for 'Pustakawan'?",
+    "correctAnswer": "Librarian",
+    "options": [
+      "Seven",
+      "Librarian",
+      "Post office",
+      "Fire engine"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_186"
+  },
+  {
+    "text": "What is the English word for 'Gelas'?",
+    "correctAnswer": "Glass",
+    "options": [
+      "Glass",
+      "Fast",
+      "Ferry",
+      "Heavy"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_187"
+  },
+  {
+    "text": "What is the English word for 'Sirsak'?",
+    "correctAnswer": "Soursop",
+    "options": [
+      "Dancer",
+      "Glass",
+      "Soursop",
+      "Bolster"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_188"
+  },
+  {
+    "text": "Logic Sequence #9: If Tom is taller than Emma, and Emma is taller than Michael. Who is the tallest?",
+    "correctAnswer": "Tom",
+    "options": [
+      "Michael",
+      "Cannot be determined",
+      "Emma",
+      "Tom"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_189"
+  },
+  {
+    "text": "What is the English word for 'Panda'?",
+    "correctAnswer": "Panda",
+    "options": [
+      "Stupid",
+      "Blue",
+      "Panda",
+      "Speak"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_190"
+  },
+  {
+    "text": "What is the English word for '4'?",
+    "correctAnswer": "Four",
+    "options": [
+      "Tiger",
+      "Earring",
+      "Park",
+      "Four"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_191"
+  },
+  {
+    "text": "What is the English word for 'Kantor Polisi'?",
+    "correctAnswer": "Police station",
+    "options": [
+      "Bat",
+      "Panda",
+      "Young",
+      "Police station"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_192"
+  },
+  {
+    "text": "What is the English word for 'Baru'?",
+    "correctAnswer": "New",
+    "options": [
+      "Nail",
+      "Eye",
+      "New",
+      "Lake"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_193"
+  },
+  {
+    "text": "What is the English word for 'Piring'?",
+    "correctAnswer": "Plate",
+    "options": [
+      "Drink",
+      "Plate",
+      "Small",
+      "Post office"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_194"
+  },
+  {
+    "text": "What is the English word for 'Telinga'?",
+    "correctAnswer": "Ear",
+    "options": [
+      "Ear",
+      "Sing",
+      "Jacket",
+      "Lazy"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_195"
+  },
+  {
+    "text": "What is the English word for 'Pasar'?",
+    "correctAnswer": "Market",
+    "options": [
+      "Shop",
+      "Seven",
+      "Tiger",
+      "Market"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_196"
+  },
+  {
+    "text": "What is the English word for 'Bodoh'?",
+    "correctAnswer": "Stupid",
+    "options": [
+      "Watermelon",
+      "Tie",
+      "Stupid",
+      "Chest"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_197"
+  },
+  {
+    "text": "Logic Age #4: If Bob is older than Mary, and Sarah is younger than Mary. Who is the youngest?",
+    "correctAnswer": "Sarah",
+    "options": [
+      "Sarah",
+      "Mary",
+      "Everyone is the same age",
+      "Bob"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_198"
+  },
+  {
+    "text": "What is the English word for 'Kiwi'?",
+    "correctAnswer": "Kiwi",
+    "options": [
+      "Kiwi",
+      "Eye",
+      "Ninety",
+      "Wolf"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_199"
+  },
+  {
+    "text": "Riddle: The more of this there is, the less you see. What is it?",
+    "correctAnswer": "Darkness",
+    "options": [
+      "Fog",
+      "Water",
+      "Light",
+      "Darkness"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_200"
+  },
+  {
+    "text": "What is the English word for 'Penguin'?",
+    "correctAnswer": "Penguin",
+    "options": [
+      "Penguin",
+      "Knee",
+      "Owl",
+      "Eraser"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_201"
+  },
+  {
+    "text": "What is the English word for '22'?",
+    "correctAnswer": "Twenty Two",
+    "options": [
+      "Papaya",
+      "Architect",
+      "Twenty Two",
+      "Think"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_202"
+  },
+  {
+    "text": "What is the English word for 'Bangun'?",
+    "correctAnswer": "Wake",
+    "options": [
+      "Fig",
+      "Goat",
+      "Wake",
+      "Buy"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_203"
+  },
+  {
+    "text": "What is the English word for '9'?",
+    "correctAnswer": "Nine",
+    "options": [
+      "Give",
+      "Nine",
+      "Capital",
+      "Ten"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_204"
+  },
+  {
+    "text": "Logic Sequence #14: If Diana is taller than Mary, and Mary is taller than Michael. Who is the tallest?",
+    "correctAnswer": "Diana",
+    "options": [
+      "Mary",
+      "Michael",
+      "Cannot be determined",
+      "Diana"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_205"
+  },
+  {
+    "text": "What is the English word for 'Perut'?",
+    "correctAnswer": "Stomach",
+    "options": [
+      "Lemon",
+      "Stomach",
+      "Smart",
+      "Walk"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_206"
+  },
+  {
+    "text": "What is the English word for 'Bagus'?",
+    "correctAnswer": "Good",
+    "options": [
+      "Daughter",
+      "Knife",
+      "Sheep",
+      "Good"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_207"
+  },
+  {
+    "text": "What is the English word for 'Desa'?",
+    "correctAnswer": "Village",
+    "options": [
+      "Port",
+      "Village",
+      "Eleven",
+      "Tiger"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_208"
+  },
+  {
+    "text": "Logic Age #20: If John is older than Bob, and Mary is younger than Bob. Who is the youngest?",
+    "correctAnswer": "Mary",
+    "options": [
+      "John",
+      "Bob",
+      "Mary",
+      "Everyone is the same age"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_209"
+  },
+  {
+    "text": "What is the English word for 'Bermain'?",
+    "correctAnswer": "Play",
+    "options": [
+      "Play",
+      "Eighteen",
+      "One Hundred One",
+      "Pineapple"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_210"
+  },
+  {
+    "text": "Logic Analogy: Cow is to Milk as Bee is to...",
+    "correctAnswer": "Honey",
+    "options": [
+      "Act",
+      "Honey",
+      "Human",
+      "China"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_211"
+  },
+  {
+    "text": "What is the English word for 'Gunung'?",
+    "correctAnswer": "Mountain",
+    "options": [
+      "Drink",
+      "Gray",
+      "Mountain",
+      "Wake"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_212"
+  },
+  {
+    "text": "What is the English word for 'Hutan'?",
+    "correctAnswer": "Forest",
+    "options": [
+      "Market",
+      "Forest",
+      "Stupid",
+      "Fifteen"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_213"
+  },
+  {
+    "text": "Logic Analogy: Hot is to Cold as Up is to...",
+    "correctAnswer": "Down",
+    "options": [
+      "Jump",
+      "Wash",
+      "Down",
+      "Sun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_214"
+  },
+  {
+    "text": "Logic Sequence #1: If Diana is taller than Sarah, and Sarah is taller than Charlie. Who is the tallest?",
+    "correctAnswer": "Diana",
+    "options": [
+      "Sarah",
+      "Charlie",
+      "Diana",
+      "Cannot be determined"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_215"
+  },
+  {
+    "text": "What is the English word for 'Mengambil'?",
+    "correctAnswer": "Take",
+    "options": [
+      "Dance",
+      "First",
+      "Navy",
+      "Take"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_216"
+  },
+  {
+    "text": "What is the English word for 'Membersihkan'?",
+    "correctAnswer": "Clean",
+    "options": [
+      "Third",
+      "Bring",
+      "Clean",
+      "Panda"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_217"
+  },
+  {
+    "text": "What is the English word for 'Gua'?",
+    "correctAnswer": "Cave",
+    "options": [
+      "Sheep",
+      "Cave",
+      "Sit",
+      "Bank"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_218"
+  },
+  {
+    "text": "Logic Analogy: Rain is to Umbrella as Sun is to...",
+    "correctAnswer": "Sunglasses",
+    "options": [
+      "Sunglasses",
+      "Clean",
+      "Human",
+      "Fish"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_219"
+  },
+  {
+    "text": "What is the English word for 'Anggur'?",
+    "correctAnswer": "Grape",
+    "options": [
+      "Twenty One",
+      "Gorilla",
+      "Grape",
+      "Snake"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_220"
+  },
+  {
+    "text": "What is the English word for 'Sejuk'?",
+    "correctAnswer": "Cool",
+    "options": [
+      "Sister",
+      "Telephone",
+      "Post office",
+      "Cool"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_221"
+  },
+  {
+    "text": "What is the English word for 'Kakek'?",
+    "correctAnswer": "Grandfather",
+    "options": [
+      "Hotel",
+      "One Thousand",
+      "Snake fruit",
+      "Grandfather"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_222"
+  },
+  {
+    "text": "What is the English word for 'Tersenyum'?",
+    "correctAnswer": "Smile",
+    "options": [
+      "Engineer",
+      "Orange",
+      "Smile",
+      "Laugh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_223"
+  },
+  {
+    "text": "What is the English word for 'Dagu'?",
+    "correctAnswer": "Chin",
+    "options": [
+      "Driver",
+      "Post office",
+      "Mouth",
+      "Chin"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_224"
+  },
+  {
+    "text": "What is the English word for 'Pelukis'?",
+    "correctAnswer": "Painter",
+    "options": [
+      "Painter",
+      "Foot",
+      "Grandmother",
+      "Police"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_225"
+  },
+  {
+    "text": "What is the English word for 'Oven'?",
+    "correctAnswer": "Oven",
+    "options": [
+      "Pineapple",
+      "Earring",
+      "Oven",
+      "Ten"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_226"
+  },
+  {
+    "text": "What is the English word for 'Lelah'?",
+    "correctAnswer": "Tired",
+    "options": [
+      "Tired",
+      "Lawyer",
+      "Lemon",
+      "Squid"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_227"
+  },
+  {
+    "text": "What is the English word for 'Burung'?",
+    "correctAnswer": "Bird",
+    "options": [
+      "Bring",
+      "Stupid",
+      "Bird",
+      "Daughter"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_228"
+  },
+  {
+    "text": "Riddle: What can you catch, but not throw?",
+    "correctAnswer": "A cold",
+    "options": [
+      "A cold",
+      "A boomerang",
+      "A ball",
+      "A frisbee"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_229"
+  },
+  {
+    "text": "What is the English word for 'Kaki (bawah)'?",
+    "correctAnswer": "Foot",
+    "options": [
+      "Cat",
+      "Teacher",
+      "Soursop",
+      "Foot"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_230"
+  },
+  {
+    "text": "What is the English word for 'Leci'?",
+    "correctAnswer": "Lychee",
+    "options": [
+      "Lychee",
+      "Beach",
+      "Twelve",
+      "Judge"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_231"
+  },
+  {
+    "text": "What is the English word for 'Anting'?",
+    "correctAnswer": "Earring",
+    "options": [
+      "Hippopotamus",
+      "Earring",
+      "One",
+      "Thirsty"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_232"
+  },
+  {
+    "text": "What is the English word for 'Pertama'?",
+    "correctAnswer": "First",
+    "options": [
+      "Curtain",
+      "Painter",
+      "First",
+      "Squid"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_233"
+  },
+  {
+    "text": "What is the English word for 'Anak Laki-laki'?",
+    "correctAnswer": "Son",
+    "options": [
+      "Son",
+      "Necklace",
+      "Lake",
+      "Search"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_234"
+  },
+  {
+    "text": "What is the English word for 'Kereta Kuda'?",
+    "correctAnswer": "Carriage",
+    "options": [
+      "Bad",
+      "Carriage",
+      "Truck",
+      "Mother"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_235"
+  },
+  {
+    "text": "What is the English word for 'Kalung'?",
+    "correctAnswer": "Necklace",
+    "options": [
+      "Twenty Two",
+      "Elephant",
+      "Owl",
+      "Necklace"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_236"
+  },
+  {
+    "text": "What is the English word for 'Dompet'?",
+    "correctAnswer": "Wallet",
+    "options": [
+      "Grape",
+      "Hat",
+      "Post office",
+      "Wallet"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_237"
+  },
+  {
+    "text": "What is the English word for '6'?",
+    "correctAnswer": "Six",
+    "options": [
+      "Twelve",
+      "Snake fruit",
+      "Wake",
+      "Six"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_238"
+  },
+  {
+    "text": "What is the English word for 'Leher'?",
+    "correctAnswer": "Neck",
+    "options": [
+      "Father",
+      "Neck",
+      "Mosquito",
+      "Raft"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_239"
+  },
+  {
+    "text": "Logic Analogy: Apple is to Fruit as Carrot is to...",
+    "correctAnswer": "Vegetable",
+    "options": [
+      "Vegetable",
+      "Desert",
+      "Clean",
+      "Hot"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_240"
+  },
+  {
+    "text": "What is the English word for '11'?",
+    "correctAnswer": "Eleven",
+    "options": [
+      "Koala",
+      "Oven",
+      "Mechanic",
+      "Eleven"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_241"
+  },
+  {
+    "text": "What is the English word for 'Rajin'?",
+    "correctAnswer": "Diligent",
+    "options": [
+      "Snake fruit",
+      "Stupid",
+      "Diligent",
+      "City"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_242"
+  },
+  {
+    "text": "What is the English word for 'Tentara'?",
+    "correctAnswer": "Soldier",
+    "options": [
+      "Soldier",
+      "Pen",
+      "Hot air balloon",
+      "Earring"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_243"
+  },
+  {
+    "text": "What is the English word for 'Pensil'?",
+    "correctAnswer": "Pencil",
+    "options": [
+      "Crab",
+      "Wolf",
+      "Pencil",
+      "Receive"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_244"
+  },
+  {
+    "text": "Logic Analogy: Broom is to Sweep as Mop is to...",
+    "correctAnswer": "Clean",
+    "options": [
+      "Sit",
+      "Clean",
+      "Bark",
+      "White"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_245"
+  },
+  {
+    "text": "What is the English word for 'Lalat'?",
+    "correctAnswer": "Fly",
+    "options": [
+      "Mangosteen",
+      "Hospital",
+      "Earring",
+      "Fly"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_246"
+  },
+  {
+    "text": "Logic Analogy: Scissors is to Cut as Glue is to...",
+    "correctAnswer": "Paste",
+    "options": [
+      "Paste",
+      "Jump",
+      "Sunglasses",
+      "Sky"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_247"
+  },
+  {
+    "text": "What is the English word for 'Laba-laba'?",
+    "correctAnswer": "Spider",
+    "options": [
+      "Spider",
+      "Silver",
+      "Brother",
+      "Strawberry"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_248"
+  },
+  {
+    "text": "What is the English word for 'Penulis'?",
+    "correctAnswer": "Writer",
+    "options": [
+      "Writer",
+      "Fifth",
+      "Rhinoceros",
+      "Chicken"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_249"
+  },
+  {
+    "text": "What is the English word for 'Berlari'?",
+    "correctAnswer": "Run",
+    "options": [
+      "Run",
+      "Bat",
+      "Knee",
+      "Sixteen"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_250"
+  },
+  {
+    "text": "What is the English word for 'Sapu'?",
+    "correctAnswer": "Broom",
+    "options": [
+      "Sit",
+      "Broom",
+      "Comb",
+      "Library"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_251"
+  },
+  {
+    "text": "What is the English word for 'Arsitek'?",
+    "correctAnswer": "Architect",
+    "options": [
+      "Architect",
+      "Tired",
+      "Blue",
+      "Padlock"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_252"
+  },
+  {
+    "text": "What is the English word for '10'?",
+    "correctAnswer": "Ten",
+    "options": [
+      "Ten",
+      "Noni",
+      "Tie",
+      "Mouth"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_253"
+  },
+  {
+    "text": "Riddle: You see a boat filled with people, yet there isn’t a single person on board. How is that possible?",
+    "correctAnswer": "They are all married",
+    "options": [
+      "The boat is sinking",
+      "They are all married",
+      "They are animals",
+      "It's a ghost ship"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_254"
+  },
+  {
+    "text": "Logic Sequence #11: If Emma is taller than Charlie, and Charlie is taller than Michael. Who is the tallest?",
+    "correctAnswer": "Emma",
+    "options": [
+      "Charlie",
+      "Michael",
+      "Cannot be determined",
+      "Emma"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_255"
+  },
+  {
+    "text": "What is the English word for 'Sarung Tangan'?",
+    "correctAnswer": "Gloves",
+    "options": [
+      "Refrigerator",
+      "Win",
+      "Gloves",
+      "Cheek"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_256"
+  },
+  {
+    "text": "What is the English word for 'Merah'?",
+    "correctAnswer": "Red",
+    "options": [
+      "Red",
+      "Search",
+      "Clean",
+      "Thirteen"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_257"
+  },
+  {
+    "text": "Logic Sequence #5: If Tom is taller than Alice, and Alice is taller than David. Who is the tallest?",
+    "correctAnswer": "Tom",
+    "options": [
+      "David",
+      "Cannot be determined",
+      "Alice",
+      "Tom"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_258"
+  },
+  {
+    "text": "Logic Analogy: Finger is to Hand as Toe is to...",
+    "correctAnswer": "Foot",
+    "options": [
+      "Human",
+      "Puppy",
+      "Foot",
+      "Act"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_259"
+  },
+  {
+    "text": "What is the English word for 'Memberi'?",
+    "correctAnswer": "Give",
+    "options": [
+      "Sell",
+      "Nose",
+      "Taxi",
+      "Give"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_260"
+  },
+  {
+    "text": "What is the English word for 'Nelayan'?",
+    "correctAnswer": "Fisherman",
+    "options": [
+      "Five",
+      "Fisherman",
+      "Watch",
+      "Mangosteen"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_261"
+  },
+  {
+    "text": "What is the English word for 'Sedih'?",
+    "correctAnswer": "Sad",
+    "options": [
+      "Sad",
+      "Lake",
+      "Lemon",
+      "Fly"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_262"
+  },
+  {
+    "text": "What is the English word for 'Bebek'?",
+    "correctAnswer": "Duck",
+    "options": [
+      "Turtle",
+      "Duck",
+      "Foot",
+      "Uncle"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_263"
+  },
+  {
+    "text": "What is the English word for 'Cincin'?",
+    "correctAnswer": "Ring",
+    "options": [
+      "Ring",
+      "Gloves",
+      "Librarian",
+      "Grandson"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_264"
+  },
+  {
+    "text": "Logic Age #16: If Mary is older than Diana, and Lisa is younger than Diana. Who is the youngest?",
+    "correctAnswer": "Lisa",
+    "options": [
+      "Mary",
+      "Lisa",
+      "Everyone is the same age",
+      "Diana"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_265"
+  },
+  {
+    "text": "What is the English word for 'Besar'?",
+    "correctAnswer": "Big",
+    "options": [
+      "Soap",
+      "Hand",
+      "Slow",
+      "Big"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_266"
+  },
+  {
+    "text": "What is the English word for 'Berjalan'?",
+    "correctAnswer": "Walk",
+    "options": [
+      "Cat",
+      "Walk",
+      "Earring",
+      "Bus"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_267"
+  },
+  {
+    "text": "What is the English word for 'Mencuci'?",
+    "correctAnswer": "Wash",
+    "options": [
+      "Deer",
+      "Chef",
+      "Wash",
+      "One Hundred One"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_268"
+  },
+  {
+    "text": "What is the English word for 'Sabuk'?",
+    "correctAnswer": "Belt",
+    "options": [
+      "Eleven",
+      "Belt",
+      "Ninety",
+      "Chef"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_269"
+  },
+  {
+    "text": "What is the English word for 'Koki'?",
+    "correctAnswer": "Chef",
+    "options": [
+      "Lamp",
+      "Taxi",
+      "Chef",
+      "Watch"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_270"
+  },
+  {
+    "text": "Riddle: What gets wetter as it dries?",
+    "correctAnswer": "A towel",
+    "options": [
+      "A sponge",
+      "A towel",
+      "Water",
+      "A cloth"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_271"
+  },
+  {
+    "text": "Riddle: What has to be broken before you can use it?",
+    "correctAnswer": "An egg",
+    "options": [
+      "An egg",
+      "A glass",
+      "A window",
+      "A car"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_272"
+  },
+  {
+    "text": "What is the English word for 'Kipas Angin'?",
+    "correctAnswer": "Fan",
+    "options": [
+      "Niece",
+      "One Thousand",
+      "Toothbrush",
+      "Fan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_273"
+  },
+  {
+    "text": "What is the English word for 'Ketiga'?",
+    "correctAnswer": "Third",
+    "options": [
+      "Waist",
+      "Third",
+      "Stepchild",
+      "Airport"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_274"
+  },
+  {
+    "text": "What is the English word for 'Ayah'?",
+    "correctAnswer": "Father",
+    "options": [
+      "Window",
+      "Father",
+      "Papaya",
+      "Big"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_275"
+  },
+  {
+    "text": "What is the English word for 'Helikopter'?",
+    "correctAnswer": "Helicopter",
+    "options": [
+      "Eat",
+      "Helicopter",
+      "Twenty Two",
+      "Sleep"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_276"
+  },
+  {
+    "text": "What is the English word for 'Stroberi'?",
+    "correctAnswer": "Strawberry",
+    "options": [
+      "Hand",
+      "Langsat",
+      "Strawberry",
+      "Ear"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_277"
+  },
+  {
+    "text": "What is the English word for 'Pendek'?",
+    "correctAnswer": "Short",
+    "options": [
+      "Cold",
+      "Short",
+      "Finger",
+      "Curtain"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_278"
+  },
+  {
+    "text": "What is the English word for '5'?",
+    "correctAnswer": "Five",
+    "options": [
+      "Poor",
+      "Five",
+      "Mouse",
+      "Brown"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_279"
+  },
+  {
+    "text": "What is the English word for 'Plum'?",
+    "correctAnswer": "Plum",
+    "options": [
+      "Grandson",
+      "Plum",
+      "Earring",
+      "Toe"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_280"
+  },
+  {
+    "text": "Logic Sequence #6: If Diana is taller than David, and David is taller than Bob. Who is the tallest?",
+    "correctAnswer": "Diana",
+    "options": [
+      "Diana",
+      "David",
+      "Bob",
+      "Cannot be determined"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_281"
+  },
+  {
+    "text": "What is the English word for 'Bandara'?",
+    "correctAnswer": "Airport",
+    "options": [
+      "Airport",
+      "Maroon",
+      "Spider",
+      "Fly"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_282"
+  },
+  {
+    "text": "What is the English word for 'Pasta Gigi'?",
+    "correctAnswer": "Toothpaste",
+    "options": [
+      "Hat",
+      "Toothpaste",
+      "Lemon",
+      "Dog"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_283"
+  },
+  {
+    "text": "What is the English word for 'Ungu'?",
+    "correctAnswer": "Purple",
+    "options": [
+      "Purple",
+      "Neck",
+      "Knee",
+      "Photographer"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_284"
+  },
+  {
+    "text": "What is the English word for 'Domba'?",
+    "correctAnswer": "Sheep",
+    "options": [
+      "Short",
+      "Sheep",
+      "Bat",
+      "Niece"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_285"
+  },
+  {
+    "text": "What is the English word for 'Menjual'?",
+    "correctAnswer": "Sell",
+    "options": [
+      "Small",
+      "Wolf",
+      "Sell",
+      "Eagle"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_286"
+  },
+  {
+    "text": "What is the English word for 'Membuka'?",
+    "correctAnswer": "Open",
+    "options": [
+      "Fourteen",
+      "Fire engine",
+      "Stupid",
+      "Open"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_287"
+  },
+  {
+    "text": "Logic Analogy: Ice is to Cold as Fire is to...",
+    "correctAnswer": "Hot",
+    "options": [
+      "Hot",
+      "Dinner",
+      "School",
+      "Account"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_288"
+  },
+  {
+    "text": "What is the English word for '1000000'?",
+    "correctAnswer": "One Million",
+    "options": [
+      "Fisherman",
+      "Seven",
+      "Glasses",
+      "One Million"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_289"
+  },
+  {
+    "text": "What is the English word for '20'?",
+    "correctAnswer": "Twenty",
+    "options": [
+      "Twenty",
+      "Sister",
+      "Navy",
+      "Broom"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_290"
+  },
+  {
+    "text": "Riddle: I’m tall when I’m young, and I’m short when I’m old. What am I?",
+    "correctAnswer": "A candle",
+    "options": [
+      "A mountain",
+      "A candle",
+      "A human",
+      "A tree"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_291"
+  },
+  {
+    "text": "What is the English word for 'Kuda Nil'?",
+    "correctAnswer": "Hippopotamus",
+    "options": [
+      "Hippopotamus",
+      "Bear",
+      "One Hundred One",
+      "Bank"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_292"
+  },
+  {
+    "text": "What is the English word for 'Gigi'?",
+    "correctAnswer": "Tooth",
+    "options": [
+      "Tooth",
+      "Receive",
+      "Zebra",
+      "Study"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_293"
+  },
+  {
+    "text": "What is the English word for '50'?",
+    "correctAnswer": "Fifty",
+    "options": [
+      "Father-in-law",
+      "Knee",
+      "Astronaut",
+      "Fifty"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_294"
+  },
+  {
+    "text": "What is the English word for 'Penggaris'?",
+    "correctAnswer": "Ruler",
+    "options": [
+      "Lamp",
+      "Ruler",
+      "Chin",
+      "Thirteen"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_295"
+  },
+  {
+    "text": "What is the English word for 'Haus'?",
+    "correctAnswer": "Thirsty",
+    "options": [
+      "Plate",
+      "Thirsty",
+      "Granddaughter",
+      "Sell"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_296"
+  },
+  {
+    "text": "What is the English word for 'Motor'?",
+    "correctAnswer": "Motorcycle",
+    "options": [
+      "Merchant",
+      "Socks",
+      "Fan",
+      "Motorcycle"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_297"
+  },
+  {
+    "text": "Logic Sequence #19: If Bob is taller than Diana, and Diana is taller than Tom. Who is the tallest?",
+    "correctAnswer": "Bob",
+    "options": [
+      "Diana",
+      "Cannot be determined",
+      "Tom",
+      "Bob"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_298"
+  },
+  {
+    "text": "What is the English word for 'Landak'?",
+    "correctAnswer": "Hedgehog",
+    "options": [
+      "Poor",
+      "Police",
+      "Hedgehog",
+      "Ring"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_299"
+  },
+  {
+    "text": "Logic Analogy: Feathers is to Bird as Scales is to...",
+    "correctAnswer": "Fish",
+    "options": [
+      "Fish",
+      "White",
+      "Night",
+      "Cry"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_300"
+  },
+  {
+    "text": "What is the English word for 'Cermin'?",
+    "correctAnswer": "Mirror",
+    "options": [
+      "Head",
+      "Coat",
+      "Mirror",
+      "White"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_301"
+  },
+  {
+    "text": "What is the English word for 'Penghapus'?",
+    "correctAnswer": "Eraser",
+    "options": [
+      "Eraser",
+      "Fourth",
+      "Padlock",
+      "Foot"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_302"
+  },
+  {
+    "text": "Riddle: What has an eye but cannot see?",
+    "correctAnswer": "A needle",
+    "options": [
+      "A blind man",
+      "A needle",
+      "A bat",
+      "A potato"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_303"
+  },
+  {
+    "text": "What is the English word for 'Rumah Sakit'?",
+    "correctAnswer": "Hospital",
+    "options": [
+      "Uncle",
+      "Hospital",
+      "Broom",
+      "Tongue"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_304"
+  },
+  {
+    "text": "Logic Age #25: If Alice is older than Bob, and David is younger than Bob. Who is the youngest?",
+    "correctAnswer": "David",
+    "options": [
+      "David",
+      "Alice",
+      "Bob",
+      "Everyone is the same age"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_305"
+  },
+  {
+    "text": "What is the English word for 'Setrika'?",
+    "correctAnswer": "Iron",
+    "options": [
+      "Pen",
+      "Hospital",
+      "Iron",
+      "Jacket"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_306"
+  },
+  {
+    "text": "Logic Analogy: Oven is to Bake as Stove is to...",
+    "correctAnswer": "Boil",
+    "options": [
+      "Boil",
+      "Human",
+      "Swim",
+      "Bark"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_307"
+  },
+  {
+    "text": "What is the English word for 'Lidah'?",
+    "correctAnswer": "Tongue",
+    "options": [
+      "Watermelon",
+      "Tongue",
+      "Fifty",
+      "Twelve"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_308"
+  },
+  {
+    "text": "What is the English word for 'Mantel'?",
+    "correctAnswer": "Coat",
+    "options": [
+      "Zebra",
+      "Table",
+      "Ferry",
+      "Coat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_309"
+  },
+  {
+    "text": "Riddle: I shave every day, but my beard stays the same. What am I?",
+    "correctAnswer": "A barber",
+    "options": [
+      "A barber",
+      "A lion",
+      "A monkey",
+      "A bear"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_310"
+  },
+  {
+    "text": "What is the English word for 'Restoran'?",
+    "correctAnswer": "Restaurant",
+    "options": [
+      "Restaurant",
+      "Neck",
+      "Whale",
+      "Guava"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_311"
+  },
+  {
+    "text": "What is the English word for 'Kapal Selam'?",
+    "correctAnswer": "Submarine",
+    "options": [
+      "Whale",
+      "Submarine",
+      "Butterfly",
+      "Giraffe"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_312"
+  },
+  {
+    "text": "What is the English word for 'Aktor'?",
+    "correctAnswer": "Actor",
+    "options": [
+      "Brown",
+      "Run",
+      "Dancer",
+      "Actor"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_313"
+  },
+  {
+    "text": "What is the English word for 'Sofa'?",
+    "correctAnswer": "Sofa",
+    "options": [
+      "Station",
+      "Nineteen",
+      "Helicopter",
+      "Sofa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_314"
+  },
+  {
+    "text": "What is the English word for 'Baju'?",
+    "correctAnswer": "Shirt",
+    "options": [
+      "Shirt",
+      "Giraffe",
+      "Island",
+      "Daughter"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_315"
+  },
+  {
+    "text": "What is the English word for 'Murah Hati'?",
+    "correctAnswer": "Generous",
+    "options": [
+      "Small",
+      "Generous",
+      "Station",
+      "Forty"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_316"
+  },
+  {
+    "text": "What is the English word for 'Dingin'?",
+    "correctAnswer": "Cold",
+    "options": [
+      "Blue",
+      "Silver",
+      "Stand",
+      "Cold"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_317"
+  },
+  {
+    "text": "What is the English word for 'Bata'?",
+    "correctAnswer": "Maroon",
+    "options": [
+      "Maroon",
+      "River",
+      "Stomach",
+      "Watermelon"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_318"
+  },
+  {
+    "text": "What is the English word for 'Mobil'?",
+    "correctAnswer": "Car",
+    "options": [
+      "Padlock",
+      "Sixty",
+      "Hot air balloon",
+      "Car"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_319"
+  },
+  {
+    "text": "What is the English word for 'Tua'?",
+    "correctAnswer": "Old",
+    "options": [
+      "Pig",
+      "Buy",
+      "Old",
+      "Doctor"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_320"
+  },
+  {
+    "text": "What is the English word for 'Cucu Perempuan'?",
+    "correctAnswer": "Granddaughter",
+    "options": [
+      "Granddaughter",
+      "Brother",
+      "Market",
+      "Seventy"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_321"
+  },
+  {
+    "text": "Logic Sequence #4: If Mary is taller than Michael, and Michael is taller than David. Who is the tallest?",
+    "correctAnswer": "Mary",
+    "options": [
+      "Mary",
+      "Michael",
+      "David",
+      "Cannot be determined"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_322"
+  },
+  {
+    "text": "What is the English word for 'Pedagang'?",
+    "correctAnswer": "Merchant",
+    "options": [
+      "Uncle",
+      "Window",
+      "Merchant",
+      "Panda"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_323"
+  },
+  {
+    "text": "What is the English word for 'Elang'?",
+    "correctAnswer": "Eagle",
+    "options": [
+      "Eagle",
+      "Smile",
+      "Bracelet",
+      "Refrigerator"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_324"
+  },
+  {
+    "text": "What is the English word for 'Mertua Laki-laki'?",
+    "correctAnswer": "Father-in-law",
+    "options": [
+      "Soursop",
+      "Sixty",
+      "Find",
+      "Father-in-law"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_325"
+  },
+  {
+    "text": "What is the English word for '30'?",
+    "correctAnswer": "Thirty",
+    "options": [
+      "Bank",
+      "Thirty",
+      "Carpet",
+      "Wash"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_326"
+  },
+  {
+    "text": "What is the English word for 'Putih'?",
+    "correctAnswer": "White",
+    "options": [
+      "Zebra",
+      "Eighty",
+      "White",
+      "Ear"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_327"
+  },
+  {
+    "text": "Logic Sequence #23: If Michael is taller than Lisa, and Lisa is taller than John. Who is the tallest?",
+    "correctAnswer": "Michael",
+    "options": [
+      "Cannot be determined",
+      "Michael",
+      "Lisa",
+      "John"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_328"
+  },
+  {
+    "text": "Logic Age #19: If Michael is older than Charlie, and Diana is younger than Charlie. Who is the youngest?",
+    "correctAnswer": "Diana",
+    "options": [
+      "Michael",
+      "Diana",
+      "Everyone is the same age",
+      "Charlie"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_329"
+  },
+  {
+    "text": "What is the English word for 'Penari'?",
+    "correctAnswer": "Dancer",
+    "options": [
+      "Whale",
+      "Dancer",
+      "Fire engine",
+      "Generous"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_330"
+  },
+  {
+    "text": "What is the English word for 'Sungai'?",
+    "correctAnswer": "River",
+    "options": [
+      "Cry",
+      "River",
+      "Father-in-law",
+      "Papaya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_331"
+  },
+  {
+    "text": "What is the English word for 'Zebra'?",
+    "correctAnswer": "Zebra",
+    "options": [
+      "Bracelet",
+      "Zebra",
+      "Engineer",
+      "Date"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_332"
+  },
+  {
+    "text": "What is the English word for 'Museum'?",
+    "correctAnswer": "Museum",
+    "options": [
+      "Bolster",
+      "Museum",
+      "Speak",
+      "Fig"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_333"
+  },
+  {
+    "text": "What is the English word for 'Dasi'?",
+    "correctAnswer": "Tie",
+    "options": [
+      "Banana",
+      "Tie",
+      "Stupid",
+      "Towel"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_334"
+  },
+  {
+    "text": "Logic Analogy: Car is to Road as Train is to...",
+    "correctAnswer": "Track",
+    "options": [
+      "Sunglasses",
+      "School",
+      "Track",
+      "Down"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_335"
+  },
+  {
+    "text": "What is the English word for 'Saudara Laki-laki'?",
+    "correctAnswer": "Brother",
+    "options": [
+      "Silver",
+      "Brother",
+      "Cherry",
+      "Raft"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_336"
+  },
+  {
+    "text": "What is the English word for 'Berpikir'?",
+    "correctAnswer": "Think",
+    "options": [
+      "Ear",
+      "Pilot",
+      "Think",
+      "Hedgehog"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_337"
+  },
+  {
+    "text": "What is the English word for 'Ambulans'?",
+    "correctAnswer": "Ambulance",
+    "options": [
+      "Crab",
+      "Squid",
+      "Fan",
+      "Ambulance"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_338"
+  },
+  {
+    "text": "What is the English word for 'Sapi'?",
+    "correctAnswer": "Cow",
+    "options": [
+      "Cow",
+      "Clean",
+      "Nurse",
+      "Sister"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_339"
+  },
+  {
+    "text": "What is the English word for 'Membaca'?",
+    "correctAnswer": "Read",
+    "options": [
+      "Park",
+      "Read",
+      "Bicycle",
+      "Bee"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_340"
+  },
+  {
+    "text": "What is the English word for 'Perawat'?",
+    "correctAnswer": "Nurse",
+    "options": [
+      "Journalist",
+      "Old",
+      "Father",
+      "Nurse"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_341"
+  },
+  {
+    "text": "What is the English word for 'Sabun'?",
+    "correctAnswer": "Soap",
+    "options": [
+      "Giraffe",
+      "Umbrella",
+      "Soap",
+      "Sleep"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_342"
+  },
+  {
+    "text": "What is the English word for 'Anak Perempuan'?",
+    "correctAnswer": "Daughter",
+    "options": [
+      "Daughter",
+      "One",
+      "Hedgehog",
+      "Shop"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_343"
+  },
+  {
+    "text": "Logic Analogy: Tree is to Forest as Sand is to...",
+    "correctAnswer": "Desert",
+    "options": [
+      "Paste",
+      "Wash",
+      "Boil",
+      "Desert"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_344"
+  },
+  {
+    "text": "What is the English word for 'Bank'?",
+    "correctAnswer": "Bank",
+    "options": [
+      "Hot air balloon",
+      "See",
+      "Bank",
+      "Bicycle"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_345"
+  },
+  {
+    "text": "What is the English word for 'Hakim'?",
+    "correctAnswer": "Judge",
+    "options": [
+      "Elephant",
+      "Cherry",
+      "Leg",
+      "Judge"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_346"
+  },
+  {
+    "text": "What is the English word for 'Memasak'?",
+    "correctAnswer": "Cook",
+    "options": [
+      "Write",
+      "Knee",
+      "Pilot",
+      "Cook"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_347"
+  },
+  {
+    "text": "What is the English word for 'Tirai'?",
+    "correctAnswer": "Curtain",
+    "options": [
+      "Sell",
+      "Pants",
+      "Motorcycle",
+      "Curtain"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_348"
+  },
+  {
+    "text": "What is the English word for 'Kupu-kupu'?",
+    "correctAnswer": "Butterfly",
+    "options": [
+      "Butterfly",
+      "Rabbit",
+      "Wake",
+      "Twenty"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_349"
+  },
+  {
+    "text": "What is the English word for 'Lemon'?",
+    "correctAnswer": "Lemon",
+    "options": [
+      "Lemon",
+      "Hat",
+      "Apple",
+      "Toothbrush"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_350"
+  },
+  {
+    "text": "What is the English word for '70'?",
+    "correctAnswer": "Seventy",
+    "options": [
+      "Spider",
+      "Four",
+      "Curtain",
+      "Seventy"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_351"
+  },
+  {
+    "text": "What is the English word for 'Lutut'?",
+    "correctAnswer": "Knee",
+    "options": [
+      "Speak",
+      "Knee",
+      "Good",
+      "Melon"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_352"
+  },
+  {
+    "text": "What is the English word for 'Malas'?",
+    "correctAnswer": "Lazy",
+    "options": [
+      "Warm",
+      "Washing machine",
+      "Lazy",
+      "Police"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_353"
+  },
+  {
+    "text": "What is the English word for 'Tertawa'?",
+    "correctAnswer": "Laugh",
+    "options": [
+      "Laugh",
+      "Soursop",
+      "River",
+      "Rich"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_354"
+  },
+  {
+    "text": "What is the English word for 'Tampan'?",
+    "correctAnswer": "Handsome",
+    "options": [
+      "Handsome",
+      "Orange",
+      "Television",
+      "Bird"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_355"
+  },
+  {
+    "text": "What is the English word for 'Menari'?",
+    "correctAnswer": "Dance",
+    "options": [
+      "Barber",
+      "Hear",
+      "Second",
+      "Dance"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_356"
+  },
+  {
+    "text": "Logic Sequence #16: If Mary is taller than Michael, and Michael is taller than Charlie. Who is the tallest?",
+    "correctAnswer": "Mary",
+    "options": [
+      "Mary",
+      "Michael",
+      "Cannot be determined",
+      "Charlie"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_357"
+  },
+  {
+    "text": "What is the English word for 'Pengacara'?",
+    "correctAnswer": "Lawyer",
+    "options": [
+      "Lawyer",
+      "Turtle",
+      "Open",
+      "Nephew"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_358"
+  },
+  {
+    "text": "Logic Age #15: If Charlie is older than Mary, and Lisa is younger than Mary. Who is the youngest?",
+    "correctAnswer": "Lisa",
+    "options": [
+      "Mary",
+      "Everyone is the same age",
+      "Lisa",
+      "Charlie"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_359"
+  },
+  {
+    "text": "Logic Analogy: Cat is to Kitten as Dog is to...",
+    "correctAnswer": "Puppy",
+    "options": [
+      "Puppy",
+      "Temperature",
+      "Sand",
+      "Bark"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_360"
+  },
+  {
+    "text": "What is the English word for 'Jam Tangan'?",
+    "correctAnswer": "Watch",
+    "options": [
+      "Rhinoceros",
+      "Watch",
+      "Hat",
+      "Mango"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_361"
+  },
+  {
+    "text": "What is the English word for '2'?",
+    "correctAnswer": "Two",
+    "options": [
+      "Bee",
+      "Taxi",
+      "Seven",
+      "Two"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_362"
+  },
+  {
+    "text": "What is the English word for 'Kuku'?",
+    "correctAnswer": "Nail",
+    "options": [
+      "Bolster",
+      "Nail",
+      "Toothpaste",
+      "Fifth"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_363"
+  },
+  {
+    "text": "What is the English word for 'Mendengar'?",
+    "correctAnswer": "Hear",
+    "options": [
+      "Pants",
+      "Six",
+      "Hear",
+      "Sofa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_364"
+  },
+  {
+    "text": "What is the English word for 'Gorila'?",
+    "correctAnswer": "Gorilla",
+    "options": [
+      "Twenty One",
+      "Sell",
+      "Gorilla",
+      "Five Hundred"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_365"
+  },
+  {
+    "text": "What is the English word for 'Pintar'?",
+    "correctAnswer": "Smart",
+    "options": [
+      "Fifty",
+      "Motorcycle",
+      "Good",
+      "Smart"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_366"
+  },
+  {
+    "text": "What is the English word for 'Tukang Cukur'?",
+    "correctAnswer": "Barber",
+    "options": [
+      "Jackfruit",
+      "Barber",
+      "Car",
+      "Close"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_367"
+  },
+  {
+    "text": "Logic Analogy: Kangaroo is to Australia as Panda is to...",
+    "correctAnswer": "China",
+    "options": [
+      "Sit",
+      "Listen",
+      "Bark",
+      "China"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_368"
+  },
+  {
+    "text": "What is the English word for 'Mobil Pemadam Kebakaran'?",
+    "correctAnswer": "Fire engine",
+    "options": [
+      "Nephew",
+      "Light",
+      "Third",
+      "Fire engine"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_369"
+  },
+  {
+    "text": "What is the English word for 'Dada'?",
+    "correctAnswer": "Chest",
+    "options": [
+      "Hot",
+      "Father-in-law",
+      "Chest",
+      "Table"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_370"
+  },
+  {
+    "text": "What is the English word for '8'?",
+    "correctAnswer": "Eight",
+    "options": [
+      "Eight",
+      "Give",
+      "Walk",
+      "Smile"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_371"
+  },
+  {
+    "text": "What is the English word for 'Payung'?",
+    "correctAnswer": "Umbrella",
+    "options": [
+      "Police car",
+      "One Thousand",
+      "Umbrella",
+      "Horse"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_372"
+  },
+  {
+    "text": "What is the English word for 'Punggung'?",
+    "correctAnswer": "Back",
+    "options": [
+      "Find",
+      "Hot air balloon",
+      "Nail",
+      "Back"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_373"
+  },
+  {
+    "text": "What is the English word for 'Burung Merak'?",
+    "correctAnswer": "Peacock",
+    "options": [
+      "Five Hundred",
+      "Peacock",
+      "Dance",
+      "Watermelon"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_374"
+  },
+  {
+    "text": "Logic Age #5: If Lisa is older than Sarah, and John is younger than Sarah. Who is the youngest?",
+    "correctAnswer": "John",
+    "options": [
+      "Sarah",
+      "John",
+      "Everyone is the same age",
+      "Lisa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_375"
+  },
+  {
+    "text": "What is the English word for 'Kereta Api'?",
+    "correctAnswer": "Train",
+    "options": [
+      "Nail",
+      "Tall",
+      "Train",
+      "Smile"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_376"
+  },
+  {
+    "text": "Logic Age #18: If David is older than Bob, and Tom is younger than Bob. Who is the youngest?",
+    "correctAnswer": "Tom",
+    "options": [
+      "Tom",
+      "Everyone is the same age",
+      "Bob",
+      "David"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_377"
+  },
+  {
+    "text": "What is the English word for 'Ikan'?",
+    "correctAnswer": "Fish",
+    "options": [
+      "Seven",
+      "Fish",
+      "Toothpaste",
+      "Stepchild"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_378"
+  },
+  {
+    "text": "What is the English word for '101'?",
+    "correctAnswer": "One Hundred One",
+    "options": [
+      "Mountain",
+      "One Hundred One",
+      "Niece",
+      "Melon"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_379"
+  },
+  {
+    "text": "What is the English word for 'Suami'?",
+    "correctAnswer": "Husband",
+    "options": [
+      "Strong",
+      "Husband",
+      "Twenty One",
+      "Forest"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_380"
+  },
+  {
+    "text": "What is the English word for 'Mangga'?",
+    "correctAnswer": "Mango",
+    "options": [
+      "Station",
+      "Mango",
+      "Comb",
+      "Hair"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_381"
+  },
+  {
+    "text": "Logic Age #8: If Tom is older than Bob, and Diana is younger than Bob. Who is the youngest?",
+    "correctAnswer": "Diana",
+    "options": [
+      "Diana",
+      "Tom",
+      "Bob",
+      "Everyone is the same age"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_382"
+  },
+  {
+    "text": "What is the English word for 'Biru'?",
+    "correctAnswer": "Blue",
+    "options": [
+      "Blue",
+      "Snake fruit",
+      "Second",
+      "Wallet"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_383"
+  },
+  {
+    "text": "Logic Analogy: Good is to Bad as Black is to...",
+    "correctAnswer": "White",
+    "options": [
+      "Cut",
+      "White",
+      "Wash",
+      "Act"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_384"
+  },
+  {
+    "text": "What is the English word for '14'?",
+    "correctAnswer": "Fourteen",
+    "options": [
+      "Shoulder",
+      "Cat",
+      "Fourteen",
+      "Cherry"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_385"
+  },
+  {
+    "text": "Logic Analogy: Morning is to Breakfast as Evening is to...",
+    "correctAnswer": "Dinner",
+    "options": [
+      "Sunglasses",
+      "Dinner",
+      "Honey",
+      "Night"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_386"
+  },
+  {
+    "text": "Logic Age #6: If Alice is older than John, and David is younger than John. Who is the youngest?",
+    "correctAnswer": "David",
+    "options": [
+      "John",
+      "David",
+      "Everyone is the same age",
+      "Alice"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_387"
+  },
+  {
+    "text": "What is the English word for 'Bicara'?",
+    "correctAnswer": "Speak",
+    "options": [
+      "Dog",
+      "Lion",
+      "Speak",
+      "Ruler"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_388"
+  },
+  {
+    "text": "Logic Sequence #21: If John is taller than David, and David is taller than Charlie. Who is the tallest?",
+    "correctAnswer": "John",
+    "options": [
+      "John",
+      "David",
+      "Cannot be determined",
+      "Charlie"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_389"
+  },
+  {
+    "text": "What is the English word for 'Lemari'?",
+    "correctAnswer": "Cupboard",
+    "options": [
+      "Bad",
+      "Stomach",
+      "Cupboard",
+      "Shoulder"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_390"
+  },
+  {
+    "text": "Logic Sequence #12: If Charlie is taller than Michael, and Michael is taller than John. Who is the tallest?",
+    "correctAnswer": "Charlie",
+    "options": [
+      "John",
+      "Cannot be determined",
+      "Charlie",
+      "Michael"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_391"
+  },
+  {
+    "text": "What is the English word for 'Danau'?",
+    "correctAnswer": "Lake",
+    "options": [
+      "Earring",
+      "Play",
+      "Smart",
+      "Lake"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_392"
+  },
+  {
+    "text": "What is the English word for 'Durian'?",
+    "correctAnswer": "Durian",
+    "options": [
+      "Frog",
+      "Nurse",
+      "Cold",
+      "Durian"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_393"
+  },
+  {
+    "text": "What is the English word for 'Perahu'?",
+    "correctAnswer": "Boat",
+    "options": [
+      "Dancer",
+      "Boat",
+      "Think",
+      "Navy"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_394"
+  },
+  {
+    "text": "What is the English word for '19'?",
+    "correctAnswer": "Nineteen",
+    "options": [
+      "Chin",
+      "Nineteen",
+      "Mountain",
+      "Poor"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_395"
+  },
+  {
+    "text": "What is the English word for 'Sepeda'?",
+    "correctAnswer": "Bicycle",
+    "options": [
+      "Bicycle",
+      "Fifteen",
+      "Hand",
+      "Ring"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_396"
+  },
+  {
+    "text": "What is the English word for 'Kantor Pos'?",
+    "correctAnswer": "Post office",
+    "options": [
+      "Thirsty",
+      "Red",
+      "Post office",
+      "Pants"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_397"
+  },
+  {
+    "text": "Logic Age #11: If Emma is older than Bob, and Diana is younger than Bob. Who is the youngest?",
+    "correctAnswer": "Diana",
+    "options": [
+      "Bob",
+      "Diana",
+      "Emma",
+      "Everyone is the same age"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_398"
+  },
+  {
+    "text": "What is the English word for 'Bantal'?",
+    "correctAnswer": "Pillow",
+    "options": [
+      "Toothbrush",
+      "Watch",
+      "Window",
+      "Pillow"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_399"
+  },
+  {
+    "text": "What is the English word for 'Fotografer'?",
+    "correctAnswer": "Photographer",
+    "options": [
+      "Photographer",
+      "River",
+      "Old",
+      "Lion"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_400"
+  },
+  {
+    "text": "What is the English word for 'Lumba-lumba'?",
+    "correctAnswer": "Dolphin",
+    "options": [
+      "Duck",
+      "Dolphin",
+      "Mountain",
+      "Find"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_401"
+  },
+  {
+    "text": "What is the English word for 'Gelang'?",
+    "correctAnswer": "Bracelet",
+    "options": [
+      "Bracelet",
+      "Barber",
+      "Chest",
+      "Coconut"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_402"
+  },
+  {
+    "text": "What is the English word for 'Kaos Kaki'?",
+    "correctAnswer": "Socks",
+    "options": [
+      "Socks",
+      "Wolf",
+      "Beautiful",
+      "One"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_403"
+  },
+  {
+    "text": "What is the English word for 'Duduk'?",
+    "correctAnswer": "Sit",
+    "options": [
+      "Shirt",
+      "Bed",
+      "Hospital",
+      "Sit"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_404"
+  },
+  {
+    "text": "What is the English word for 'Nanas'?",
+    "correctAnswer": "Pineapple",
+    "options": [
+      "Coat",
+      "Teach",
+      "Pineapple",
+      "Coconut"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_405"
+  },
+  {
+    "text": "Logic Age #22: If Charlie is older than David, and Bob is younger than David. Who is the youngest?",
+    "correctAnswer": "Bob",
+    "options": [
+      "David",
+      "Bob",
+      "Charlie",
+      "Everyone is the same age"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_406"
+  },
+  {
+    "text": "Logic Analogy: Doctor is to Hospital as Teacher is to...",
+    "correctAnswer": "School",
+    "options": [
+      "School",
+      "Boil",
+      "White",
+      "Bark"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_407"
+  },
+  {
+    "text": "What is the English word for 'Menerima'?",
+    "correctAnswer": "Receive",
+    "options": [
+      "Koala",
+      "Monkey",
+      "Receive",
+      "Panda"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_408"
+  },
+  {
+    "text": "What is the English word for 'Jambu Biji'?",
+    "correctAnswer": "Guava",
+    "options": [
+      "Fourteen",
+      "Guava",
+      "Forty",
+      "Comb"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_409"
+  },
+  {
+    "text": "What is the English word for 'Pir'?",
+    "correctAnswer": "Pear",
+    "options": [
+      "Pear",
+      "Lose",
+      "Market",
+      "Horse"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_410"
+  },
+  {
+    "text": "What is the English word for 'Jendela'?",
+    "correctAnswer": "Window",
+    "options": [
+      "Uncle",
+      "Shop",
+      "Window",
+      "Barber"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_411"
+  },
+  {
+    "text": "Logic Age #2: If Bob is older than John, and Diana is younger than John. Who is the youngest?",
+    "correctAnswer": "Diana",
+    "options": [
+      "Diana",
+      "Everyone is the same age",
+      "Bob",
+      "John"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_412"
+  },
+  {
+    "text": "What is the English word for 'Kambing'?",
+    "correctAnswer": "Goat",
+    "options": [
+      "Doctor",
+      "Eleven",
+      "Goat",
+      "Submarine"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_413"
+  },
+  {
+    "text": "Logic Analogy: Horse is to Gallop as Frog is to...",
+    "correctAnswer": "Jump",
+    "options": [
+      "White",
+      "Night",
+      "Jump",
+      "Vegetable"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_414"
+  },
+  {
+    "text": "What is the English word for 'Sepupu'?",
+    "correctAnswer": "Cousin",
+    "options": [
+      "Cousin",
+      "Mechanic",
+      "Museum",
+      "One Hundred One"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_415"
+  },
+  {
+    "text": "What is the English word for 'Handuk'?",
+    "correctAnswer": "Towel",
+    "options": [
+      "City",
+      "Papaya",
+      "Towel",
+      "Lawyer"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_416"
+  },
+  {
+    "text": "What is the English word for 'Ilmuwan'?",
+    "correctAnswer": "Scientist",
+    "options": [
+      "Carpenter",
+      "Washing machine",
+      "Noni",
+      "Scientist"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_417"
+  },
+  {
+    "text": "What is the English word for 'Semangka'?",
+    "correctAnswer": "Watermelon",
+    "options": [
+      "Market",
+      "Third",
+      "Jacket",
+      "Watermelon"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_418"
+  },
+  {
+    "text": "Logic Analogy: Pen is to Write as Knife is to...",
+    "correctAnswer": "Cut",
+    "options": [
+      "Cut",
+      "Sun",
+      "Airplane",
+      "Wash"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_419"
+  },
+  {
+    "text": "What is the English word for 'Pelabuhan'?",
+    "correctAnswer": "Port",
+    "options": [
+      "Close",
+      "Port",
+      "Avocado",
+      "Comb"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_420"
+  },
+  {
+    "text": "What is the English word for 'Kelima'?",
+    "correctAnswer": "Fifth",
+    "options": [
+      "Crocodile",
+      "Fifth",
+      "Angry",
+      "Wash"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_421"
+  },
+  {
+    "text": "What is the English word for 'Mengajar'?",
+    "correctAnswer": "Teach",
+    "options": [
+      "Sad",
+      "Pink",
+      "Teach",
+      "Pilot"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_422"
+  },
+  {
+    "text": "Logic Analogy: Day is to Light as Night is to...",
+    "correctAnswer": "Dark",
+    "options": [
+      "Airplane",
+      "China",
+      "Account",
+      "Dark"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_423"
+  },
+  {
+    "text": "What is the English word for 'Kepala'?",
+    "correctAnswer": "Head",
+    "options": [
+      "Head",
+      "Gray",
+      "Read",
+      "Toe"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_424"
+  },
+  {
+    "text": "What is the English word for 'Miskin'?",
+    "correctAnswer": "Poor",
+    "options": [
+      "Slow",
+      "Twenty One",
+      "Poor",
+      "Goat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_425"
+  },
+  {
+    "text": "Logic Sequence #22: If Michael is taller than Mary, and Mary is taller than Charlie. Who is the tallest?",
+    "correctAnswer": "Michael",
+    "options": [
+      "Michael",
+      "Cannot be determined",
+      "Charlie",
+      "Mary"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_426"
+  },
+  {
+    "text": "Logic Sequence #13: If Sarah is taller than Tom, and Tom is taller than John. Who is the tallest?",
+    "correctAnswer": "Sarah",
+    "options": [
+      "Cannot be determined",
+      "Sarah",
+      "Tom",
+      "John"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_427"
+  },
+  {
+    "text": "What is the English word for 'Anjing'?",
+    "correctAnswer": "Dog",
+    "options": [
+      "Sheep",
+      "Mosquito",
+      "Ugly",
+      "Dog"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_428"
+  },
+  {
+    "text": "What is the English word for 'Kelapa'?",
+    "correctAnswer": "Coconut",
+    "options": [
+      "Hot air balloon",
+      "Teacher",
+      "Coconut",
+      "Cupboard"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_429"
+  },
+  {
+    "text": "Logic Analogy: Wood is to Tree as Glass is to...",
+    "correctAnswer": "Sand",
+    "options": [
+      "Sand",
+      "Hot",
+      "Honey",
+      "Sun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_430"
+  },
+  {
+    "text": "What is the English word for 'Ular'?",
+    "correctAnswer": "Snake",
+    "options": [
+      "Snake",
+      "Lazy",
+      "Fish",
+      "New"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_431"
+  },
+  {
+    "text": "What is the English word for 'Tukang Kayu'?",
+    "correctAnswer": "Carpenter",
+    "options": [
+      "Ambulance",
+      "Pink",
+      "Carpenter",
+      "Ring"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_432"
+  },
+  {
+    "text": "Logic Age #23: If Alice is older than Mary, and John is younger than Mary. Who is the youngest?",
+    "correctAnswer": "John",
+    "options": [
+      "Everyone is the same age",
+      "Alice",
+      "Mary",
+      "John"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_433"
+  },
+  {
+    "text": "Logic Sequence #20: If Lisa is taller than John, and John is taller than Michael. Who is the tallest?",
+    "correctAnswer": "Lisa",
+    "options": [
+      "Lisa",
+      "Cannot be determined",
+      "Michael",
+      "John"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_434"
+  },
+  {
+    "text": "What is the English word for '18'?",
+    "correctAnswer": "Eighteen",
+    "options": [
+      "Eighteen",
+      "Small",
+      "Slow",
+      "Iron"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_435"
+  },
+  {
+    "text": "Logic Age #9: If Lisa is older than Alice, and Charlie is younger than Alice. Who is the youngest?",
+    "correctAnswer": "Charlie",
+    "options": [
+      "Lisa",
+      "Alice",
+      "Charlie",
+      "Everyone is the same age"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_436"
+  },
+  {
+    "text": "Logic Analogy: Book is to Read as Song is to...",
+    "correctAnswer": "Listen",
+    "options": [
+      "White",
+      "Listen",
+      "Boxy",
+      "Foot"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_437"
+  },
+  {
+    "text": "What is the English word for 'Jaket'?",
+    "correctAnswer": "Jacket",
+    "options": [
+      "Jacket",
+      "Umbrella",
+      "School",
+      "Fisherman"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_438"
+  },
+  {
+    "text": "Logic Analogy: Sun is to Day as Moon is to...",
+    "correctAnswer": "Night",
+    "options": [
+      "Boil",
+      "Puppy",
+      "Night",
+      "Honey"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_439"
+  },
+  {
+    "text": "Riddle: What has a neck but no head?",
+    "correctAnswer": "A bottle",
+    "options": [
+      "A shirt",
+      "A guitar",
+      "A giraffe",
+      "A bottle"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_440"
+  },
+  {
+    "text": "Logic Age #24: If Sarah is older than Emma, and Mary is younger than Emma. Who is the youngest?",
+    "correctAnswer": "Mary",
+    "options": [
+      "Everyone is the same age",
+      "Sarah",
+      "Mary",
+      "Emma"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_441"
+  },
+  {
+    "text": "Logic Age #21: If Bob is older than Diana, and Tom is younger than Diana. Who is the youngest?",
+    "correctAnswer": "Tom",
+    "options": [
+      "Bob",
+      "Everyone is the same age",
+      "Tom",
+      "Diana"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_442"
+  },
+  {
+    "text": "What is the English word for 'Tidur'?",
+    "correctAnswer": "Sleep",
+    "options": [
+      "Good",
+      "Pineapple",
+      "Sleep",
+      "City"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_443"
+  },
+  {
+    "text": "Logic Sequence #17: If Charlie is taller than Diana, and Diana is taller than Michael. Who is the tallest?",
+    "correctAnswer": "Charlie",
+    "options": [
+      "Charlie",
+      "Diana",
+      "Michael",
+      "Cannot be determined"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_444"
+  },
+  {
+    "text": "What is the English word for 'Pipi'?",
+    "correctAnswer": "Cheek",
+    "options": [
+      "Cheek",
+      "Turtle",
+      "Noni",
+      "Soursop"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_445"
+  },
+  {
+    "text": "What is the English word for 'Kecil'?",
+    "correctAnswer": "Small",
+    "options": [
+      "Wallet",
+      "Small",
+      "Hospital",
+      "Red"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_446"
+  },
+  {
+    "text": "What is the English word for 'Kapal Laut'?",
+    "correctAnswer": "Ship",
+    "options": [
+      "Scientist",
+      "Ship",
+      "Deer",
+      "Finger"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_447"
+  },
+  {
+    "text": "What is the English word for 'Astronot'?",
+    "correctAnswer": "Astronaut",
+    "options": [
+      "Astronaut",
+      "Twenty One",
+      "Eight",
+      "Actor"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_448"
+  },
+  {
+    "text": "What is the English word for 'Kurma'?",
+    "correctAnswer": "Date",
+    "options": [
+      "Blue",
+      "Big",
+      "One Hundred One",
+      "Date"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_449"
+  },
+  {
+    "text": "What is the English word for 'Paus'?",
+    "correctAnswer": "Whale",
+    "options": [
+      "Seventeen",
+      "Whale",
+      "Find",
+      "Teacher"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_450"
+  },
+  {
+    "text": "What is the English word for '15'?",
+    "correctAnswer": "Fifteen",
+    "options": [
+      "Sofa",
+      "Big",
+      "Fifteen",
+      "Dancer"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_451"
+  },
+  {
+    "text": "What is the English word for 'Telepon'?",
+    "correctAnswer": "Telephone",
+    "options": [
+      "Snake fruit",
+      "Telephone",
+      "Shoulder",
+      "Umbrella"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_452"
+  },
+  {
+    "text": "What is the English word for 'Pisang'?",
+    "correctAnswer": "Banana",
+    "options": [
+      "Banana",
+      "Truck",
+      "Museum",
+      "Brown"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_453"
+  },
+  {
+    "text": "What is the English word for 'Penyanyi'?",
+    "correctAnswer": "Singer",
+    "options": [
+      "Towel",
+      "Sit",
+      "Singer",
+      "Mother"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_454"
+  },
+  {
+    "text": "What is the English word for 'Serigala'?",
+    "correctAnswer": "Wolf",
+    "options": [
+      "Apple",
+      "Wolf",
+      "Kiwi",
+      "Sixteen"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_455"
+  },
+  {
+    "text": "What is the English word for 'Makan'?",
+    "correctAnswer": "Eat",
+    "options": [
+      "Cave",
+      "Crab",
+      "Husband",
+      "Eat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_456"
+  },
+  {
+    "text": "What is the English word for 'Mata'?",
+    "correctAnswer": "Eye",
+    "options": [
+      "Sheep",
+      "Eye",
+      "Eat",
+      "Eight"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_457"
+  },
+  {
+    "text": "What is the English word for 'Paman'?",
+    "correctAnswer": "Uncle",
+    "options": [
+      "Chin",
+      "Lazy",
+      "Uncle",
+      "River"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_458"
+  },
+  {
+    "text": "Riddle: What runs all around a backyard, yet never moves?",
+    "correctAnswer": "A fence",
+    "options": [
+      "A lawnmower",
+      "A fence",
+      "A child",
+      "A dog"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_459"
+  },
+  {
+    "text": "What is the English word for 'Lengan'?",
+    "correctAnswer": "Arm",
+    "options": [
+      "Papaya",
+      "Arm",
+      "Fire engine",
+      "Hot air balloon"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_460"
+  },
+  {
+    "text": "What is the English word for 'Duku'?",
+    "correctAnswer": "Langsat",
+    "options": [
+      "Langsat",
+      "Purple",
+      "Hear",
+      "Father-in-law"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_461"
+  },
+  {
+    "text": "What is the English word for 'Berat'?",
+    "correctAnswer": "Heavy",
+    "options": [
+      "Big",
+      "Cave",
+      "Heavy",
+      "Fourteen"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_462"
+  },
+  {
+    "text": "What is the English word for 'Pepaya'?",
+    "correctAnswer": "Papaya",
+    "options": [
+      "Papaya",
+      "Pillow",
+      "Five Hundred",
+      "Buy"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_463"
+  },
+  {
+    "text": "What is the English word for 'Badak'?",
+    "correctAnswer": "Rhinoceros",
+    "options": [
+      "Earring",
+      "Rhinoceros",
+      "Twenty One",
+      "Fork"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_464"
+  },
+  {
+    "text": "What is the English word for 'Bahu'?",
+    "correctAnswer": "Shoulder",
+    "options": [
+      "Hotel",
+      "School",
+      "Shoulder",
+      "Uncle"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_465"
+  },
+  {
+    "text": "What is the English word for 'Cucu Laki-laki'?",
+    "correctAnswer": "Grandson",
+    "options": [
+      "Dolphin",
+      "Writer",
+      "Buy",
+      "Grandson"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_466"
+  },
+  {
+    "text": "What is the English word for 'Balon Udara'?",
+    "correctAnswer": "Hot air balloon",
+    "options": [
+      "Necklace",
+      "Sixteen",
+      "Dancer",
+      "Hot air balloon"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_467"
+  },
+  {
+    "text": "What is the English word for '90'?",
+    "correctAnswer": "Ninety",
+    "options": [
+      "Barber",
+      "Eagle",
+      "Ninety",
+      "Lake"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_468"
+  },
+  {
+    "text": "What is the English word for 'Melompat'?",
+    "correctAnswer": "Jump",
+    "options": [
+      "Nurse",
+      "Thirty",
+      "Book",
+      "Jump"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_469"
+  },
+  {
+    "text": "What is the English word for 'Insinyur'?",
+    "correctAnswer": "Engineer",
+    "options": [
+      "Play",
+      "Aunt",
+      "Engineer",
+      "Noni"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_470"
+  },
+  {
+    "text": "What is the English word for 'Jerapah'?",
+    "correctAnswer": "Giraffe",
+    "options": [
+      "Mother",
+      "Giraffe",
+      "Window",
+      "Bolster"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_471"
+  },
+  {
+    "text": "What is the English word for 'Tinggi'?",
+    "correctAnswer": "Tall",
+    "options": [
+      "Father",
+      "Airplane",
+      "Tall",
+      "Think"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_472"
+  },
+  {
+    "text": "Logic Age #3: If Michael is older than Alice, and Lisa is younger than Alice. Who is the youngest?",
+    "correctAnswer": "Lisa",
+    "options": [
+      "Everyone is the same age",
+      "Michael",
+      "Lisa",
+      "Alice"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_473"
+  },
+  {
+    "text": "Logic Analogy: Key is to Lock as Password is to...",
+    "correctAnswer": "Account",
+    "options": [
+      "Dinner",
+      "White",
+      "Account",
+      "Cry"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_474"
+  },
+  {
+    "text": "What is the English word for 'Kapal Feri'?",
+    "correctAnswer": "Ferry",
+    "options": [
+      "Ferry",
+      "Stand",
+      "Four",
+      "Rambutan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_475"
+  },
+  {
+    "text": "What is the English word for 'Pinggang'?",
+    "correctAnswer": "Waist",
+    "options": [
+      "Waist",
+      "Durian",
+      "River",
+      "Teach"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_476"
+  },
+  {
+    "text": "What is the English word for 'Pulau'?",
+    "correctAnswer": "Island",
+    "options": [
+      "Giraffe",
+      "Sofa",
+      "Take",
+      "Island"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_477"
+  },
+  {
+    "text": "Logic Age #7: If Michael is older than Bob, and Mary is younger than Bob. Who is the youngest?",
+    "correctAnswer": "Mary",
+    "options": [
+      "Michael",
+      "Bob",
+      "Mary",
+      "Everyone is the same age"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_478"
+  },
+  {
+    "text": "What is the English word for '200'?",
+    "correctAnswer": "Two Hundred",
+    "options": [
+      "Hippopotamus",
+      "Bag",
+      "Two Hundred",
+      "Pencil"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_479"
+  },
+  {
+    "text": "What is the English word for 'Singa'?",
+    "correctAnswer": "Lion",
+    "options": [
+      "Lion",
+      "Tiger",
+      "Turtle",
+      "Three"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_480"
+  },
+  {
+    "text": "What is the English word for 'Menyanyi'?",
+    "correctAnswer": "Sing",
+    "options": [
+      "Thirsty",
+      "Sing",
+      "White",
+      "Tooth"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_481"
+  },
+  {
+    "text": "Logic Age #14: If Emma is older than David, and Bob is younger than David. Who is the youngest?",
+    "correctAnswer": "Bob",
+    "options": [
+      "David",
+      "Everyone is the same age",
+      "Emma",
+      "Bob"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_482"
+  },
+  {
+    "text": "What is the English word for 'Keponakan Laki-laki'?",
+    "correctAnswer": "Nephew",
+    "options": [
+      "Peacock",
+      "Ugly",
+      "Nephew",
+      "Shoulder"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_483"
+  },
+  {
+    "text": "Logic Analogy: Winter is to Snow as Summer is to...",
+    "correctAnswer": "Sun",
+    "options": [
+      "White",
+      "Puppy",
+      "Sun",
+      "Wash"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_484"
+  },
+  {
+    "text": "What is the English word for 'Pantai'?",
+    "correctAnswer": "Beach",
+    "options": [
+      "Pen",
+      "Papaya",
+      "Beach",
+      "Chest"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_485"
+  },
+  {
+    "text": "What is the English word for 'Pisau'?",
+    "correctAnswer": "Knife",
+    "options": [
+      "Knife",
+      "Pomegranate",
+      "Penguin",
+      "Grandson"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_486"
+  },
+  {
+    "text": "What is the English word for 'Belajar'?",
+    "correctAnswer": "Study",
+    "options": [
+      "Curtain",
+      "Study",
+      "Comb",
+      "Mountain"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_487"
+  },
+  {
+    "text": "What is the English word for 'Rakit'?",
+    "correctAnswer": "Raft",
+    "options": [
+      "Gray",
+      "Nurse",
+      "Chin",
+      "Raft"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_488"
+  },
+  {
+    "text": "What is the English word for 'Kaya'?",
+    "correctAnswer": "Rich",
+    "options": [
+      "Restaurant",
+      "Rich",
+      "Tie",
+      "Pear"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_489"
+  },
+  {
+    "text": "What is the English word for 'Salak'?",
+    "correctAnswer": "Snake fruit",
+    "options": [
+      "Hungry",
+      "Snake fruit",
+      "Journalist",
+      "Play"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_490"
+  },
+  {
+    "text": "What is the English word for 'Marah'?",
+    "correctAnswer": "Angry",
+    "options": [
+      "Angry",
+      "First",
+      "Pear",
+      "Ant"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_491"
+  },
+  {
+    "text": "What is the English word for 'Stasiun'?",
+    "correctAnswer": "Station",
+    "options": [
+      "Soldier",
+      "Long",
+      "Station",
+      "Yellow"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_492"
+  },
+  {
+    "text": "What is the English word for 'Bus'?",
+    "correctAnswer": "Bus",
+    "options": [
+      "Five",
+      "Architect",
+      "Bus",
+      "Scientist"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_493"
+  },
+  {
+    "text": "Riddle: What has hands but cannot clap?",
+    "correctAnswer": "A clock",
+    "options": [
+      "A doll",
+      "A tree",
+      "A robot",
+      "A clock"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_494"
+  },
+  {
+    "text": "What is the English word for 'Hangat'?",
+    "correctAnswer": "Warm",
+    "options": [
+      "Sixteen",
+      "New",
+      "Warm",
+      "Airplane"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_495"
+  },
+  {
+    "text": "What is the English word for '100'?",
+    "correctAnswer": "One Hundred",
+    "options": [
+      "One Hundred",
+      "Watch",
+      "Poor",
+      "Orange"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "bahasainggris_496"
+  },
+  {
+    "text": "What is the English word for 'Kehilangan'?",
+    "correctAnswer": "Lose",
+    "options": [
+      "Hotel",
+      "Lose",
+      "Handsome",
+      "Bag"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_497"
+  },
+  {
+    "text": "Logic Age #10: If Charlie is older than Diana, and Emma is younger than Diana. Who is the youngest?",
+    "correctAnswer": "Emma",
+    "options": [
+      "Everyone is the same age",
+      "Charlie",
+      "Diana",
+      "Emma"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_498"
+  },
+  {
+    "text": "What is the English word for '17'?",
+    "correctAnswer": "Seventeen",
+    "options": [
+      "Pants",
+      "Two Hundred",
+      "Seventeen",
+      "Sixty"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_499"
+  },
+  {
+    "text": "What is the English word for 'Kuning'?",
+    "correctAnswer": "Yellow",
+    "options": [
+      "Telephone",
+      "Mouth",
+      "Soursop",
+      "Yellow"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "bahasainggris_500"
+  }
+]

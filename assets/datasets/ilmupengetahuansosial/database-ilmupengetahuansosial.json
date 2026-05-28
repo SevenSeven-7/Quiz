@@ -1,0 +1,6502 @@
+[
+  {
+    "text": "Gambaran permukaan bumi pada bidang datar disebut...",
+    "correctAnswer": "Peta",
+    "options": [
+      "Atlas",
+      "Globe",
+      "Peta",
+      "Denah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_1"
+  },
+  {
+    "text": "Kumpulan peta yang dibukukan menjadi satu disebut...",
+    "correctAnswer": "Atlas",
+    "options": [
+      "Katalog",
+      "Atlas",
+      "Ensiklopedia",
+      "Globe"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_2"
+  },
+  {
+    "text": "Tiruan bola bumi dalam bentuk kecil disebut...",
+    "correctAnswer": "Globe",
+    "options": [
+      "Atlas",
+      "Globe",
+      "Peta",
+      "Miniatur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_3"
+  },
+  {
+    "text": "Perbandingan jarak peta dengan jarak sebenarnya disebut...",
+    "correctAnswer": "Skala",
+    "options": [
+      "Skala",
+      "Simbol",
+      "Legenda",
+      "Garis Lintang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_4"
+  },
+  {
+    "text": "Garis khayal yang membelah bumi menjadi utara dan selatan disebut...",
+    "correctAnswer": "Khatulistiwa",
+    "options": [
+      "Garis Wallace",
+      "Khatulistiwa",
+      "Garis Weber",
+      "Garis Bujur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_5"
+  },
+  {
+    "text": "Simbol warna hijau pada peta biasanya menggambarkan...",
+    "correctAnswer": "Dataran Rendah",
+    "options": [
+      "Pegunungan",
+      "Gurun Pasir",
+      "Laut Dalam",
+      "Dataran Rendah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_6"
+  },
+  {
+    "text": "Simbol warna cokelat pada peta menunjukkan area...",
+    "correctAnswer": "Pegunungan",
+    "options": [
+      "Laut Dangkal",
+      "Pegunungan",
+      "Dataran Rendah",
+      "Danau"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_7"
+  },
+  {
+    "text": "Warna biru pada peta digunakan untuk simbol...",
+    "correctAnswer": "Perairan",
+    "options": [
+      "Hutan",
+      "Dataran Tinggi",
+      "Gurun",
+      "Perairan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_8"
+  },
+  {
+    "text": "Indonesia terletak di antara dua benua, yaitu...",
+    "correctAnswer": "Asia dan Australia",
+    "options": [
+      "Asia dan Afrika",
+      "Asia dan Australia",
+      "Asia dan Eropa",
+      "Amerika dan Eropa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_9"
+  },
+  {
+    "text": "Indonesia terletak di antara dua samudra, yaitu...",
+    "correctAnswer": "Hindia dan Pasifik",
+    "options": [
+      "Hindia dan Pasifik",
+      "Hindia dan Arktik",
+      "Atlantik dan Arktik",
+      "Atlantik dan Pasifik"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_10"
+  },
+  {
+    "text": "Ibu kota dari provinsi Nanggroe Aceh Darussalam adalah...",
+    "correctAnswer": "Banda Aceh",
+    "options": [
+      "Banda Aceh",
+      "Mataram",
+      "Jakarta",
+      "Palangka Raya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_11"
+  },
+  {
+    "text": "Ibu kota dari provinsi Sumatera Utara adalah...",
+    "correctAnswer": "Medan",
+    "options": [
+      "Banda Aceh",
+      "Surabaya",
+      "Sorong",
+      "Medan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_12"
+  },
+  {
+    "text": "Ibu kota dari provinsi Sumatera Barat adalah...",
+    "correctAnswer": "Padang",
+    "options": [
+      "Pontianak",
+      "Pangkalpinang",
+      "Tanjungpinang",
+      "Padang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_13"
+  },
+  {
+    "text": "Ibu kota dari provinsi Riau adalah...",
+    "correctAnswer": "Pekanbaru",
+    "options": [
+      "Sofifi",
+      "Yogyakarta",
+      "Pekanbaru",
+      "Manokwari"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_14"
+  },
+  {
+    "text": "Ibu kota dari provinsi Kepulauan Riau adalah...",
+    "correctAnswer": "Tanjungpinang",
+    "options": [
+      "Pontianak",
+      "Jambi",
+      "Gorontalo",
+      "Tanjungpinang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_15"
+  },
+  {
+    "text": "Ibu kota dari provinsi Jambi adalah...",
+    "correctAnswer": "Jambi",
+    "options": [
+      "Gorontalo",
+      "Nabire",
+      "Jambi",
+      "Kendari"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_16"
+  },
+  {
+    "text": "Ibu kota dari provinsi Sumatera Selatan adalah...",
+    "correctAnswer": "Palembang",
+    "options": [
+      "Jayapura",
+      "Pangkalpinang",
+      "Palembang",
+      "Bengkulu"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_17"
+  },
+  {
+    "text": "Ibu kota dari provinsi Bengkulu adalah...",
+    "correctAnswer": "Bengkulu",
+    "options": [
+      "Jambi",
+      "Palu",
+      "Pekanbaru",
+      "Bengkulu"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_18"
+  },
+  {
+    "text": "Ibu kota dari provinsi Lampung adalah...",
+    "correctAnswer": "Bandar Lampung",
+    "options": [
+      "Manokwari",
+      "Banda Aceh",
+      "Merauke",
+      "Bandar Lampung"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_19"
+  },
+  {
+    "text": "Ibu kota dari provinsi Kepulauan Bangka Belitung adalah...",
+    "correctAnswer": "Pangkalpinang",
+    "options": [
+      "Semarang",
+      "Kupang",
+      "Palangka Raya",
+      "Pangkalpinang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_20"
+  },
+  {
+    "text": "Ibu kota dari provinsi DKI Jakarta adalah...",
+    "correctAnswer": "Jakarta",
+    "options": [
+      "Sorong",
+      "Merauke",
+      "Jakarta",
+      "Ambon"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_21"
+  },
+  {
+    "text": "Ibu kota dari provinsi Jawa Barat adalah...",
+    "correctAnswer": "Bandung",
+    "options": [
+      "Gorontalo",
+      "Merauke",
+      "Bandung",
+      "Palembang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_22"
+  },
+  {
+    "text": "Ibu kota dari provinsi Banten adalah...",
+    "correctAnswer": "Serang",
+    "options": [
+      "Gorontalo",
+      "Serang",
+      "Pangkalpinang",
+      "Mamuju"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_23"
+  },
+  {
+    "text": "Ibu kota dari provinsi Jawa Tengah adalah...",
+    "correctAnswer": "Semarang",
+    "options": [
+      "Gorontalo",
+      "Pangkalpinang",
+      "Jakarta",
+      "Semarang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_24"
+  },
+  {
+    "text": "Ibu kota dari provinsi DI Yogyakarta adalah...",
+    "correctAnswer": "Yogyakarta",
+    "options": [
+      "Sorong",
+      "Bengkulu",
+      "Mataram",
+      "Yogyakarta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_25"
+  },
+  {
+    "text": "Ibu kota dari provinsi Jawa Timur adalah...",
+    "correctAnswer": "Surabaya",
+    "options": [
+      "Sofifi",
+      "Kupang",
+      "Surabaya",
+      "Nabire"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_26"
+  },
+  {
+    "text": "Ibu kota dari provinsi Bali adalah...",
+    "correctAnswer": "Denpasar",
+    "options": [
+      "Kupang",
+      "Kendari",
+      "Denpasar",
+      "Jakarta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_27"
+  },
+  {
+    "text": "Ibu kota dari provinsi Nusa Tenggara Barat adalah...",
+    "correctAnswer": "Mataram",
+    "options": [
+      "Mataram",
+      "Jambi",
+      "Jakarta",
+      "Medan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_28"
+  },
+  {
+    "text": "Ibu kota dari provinsi Nusa Tenggara Timur adalah...",
+    "correctAnswer": "Kupang",
+    "options": [
+      "Yogyakarta",
+      "Banjarmasin",
+      "Kupang",
+      "Makassar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_29"
+  },
+  {
+    "text": "Ibu kota dari provinsi Kalimantan Barat adalah...",
+    "correctAnswer": "Pontianak",
+    "options": [
+      "Serang",
+      "Manado",
+      "Tanjungpinang",
+      "Pontianak"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_30"
+  },
+  {
+    "text": "Ibu kota dari provinsi Kalimantan Tengah adalah...",
+    "correctAnswer": "Palangka Raya",
+    "options": [
+      "Semarang",
+      "Manokwari",
+      "Samarinda",
+      "Palangka Raya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_31"
+  },
+  {
+    "text": "Ibu kota dari provinsi Kalimantan Selatan adalah...",
+    "correctAnswer": "Banjarmasin",
+    "options": [
+      "Jambi",
+      "Tanjungpinang",
+      "Banjarmasin",
+      "Gorontalo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_32"
+  },
+  {
+    "text": "Ibu kota dari provinsi Kalimantan Timur adalah...",
+    "correctAnswer": "Samarinda",
+    "options": [
+      "Tanjungpinang",
+      "Palangka Raya",
+      "Samarinda",
+      "Sofifi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_33"
+  },
+  {
+    "text": "Ibu kota dari provinsi Kalimantan Utara adalah...",
+    "correctAnswer": "Tanjung Selor",
+    "options": [
+      "Bengkulu",
+      "Bandung",
+      "Tanjung Selor",
+      "Gorontalo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_34"
+  },
+  {
+    "text": "Ibu kota dari provinsi Sulawesi Utara adalah...",
+    "correctAnswer": "Manado",
+    "options": [
+      "Banjarmasin",
+      "Tanjung Selor",
+      "Padang",
+      "Manado"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_35"
+  },
+  {
+    "text": "Ibu kota dari provinsi Gorontalo adalah...",
+    "correctAnswer": "Gorontalo",
+    "options": [
+      "Semarang",
+      "Gorontalo",
+      "Wamena",
+      "Kupang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_36"
+  },
+  {
+    "text": "Ibu kota dari provinsi Sulawesi Tengah adalah...",
+    "correctAnswer": "Palu",
+    "options": [
+      "Padang",
+      "Tanjungpinang",
+      "Palu",
+      "Pontianak"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_37"
+  },
+  {
+    "text": "Ibu kota dari provinsi Sulawesi Barat adalah...",
+    "correctAnswer": "Mamuju",
+    "options": [
+      "Pangkalpinang",
+      "Mamuju",
+      "Tanjungpinang",
+      "Kupang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_38"
+  },
+  {
+    "text": "Ibu kota dari provinsi Sulawesi Selatan adalah...",
+    "correctAnswer": "Makassar",
+    "options": [
+      "Jayapura",
+      "Yogyakarta",
+      "Palu",
+      "Makassar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_39"
+  },
+  {
+    "text": "Ibu kota dari provinsi Sulawesi Tenggara adalah...",
+    "correctAnswer": "Kendari",
+    "options": [
+      "Kendari",
+      "Denpasar",
+      "Manokwari",
+      "Banda Aceh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_40"
+  },
+  {
+    "text": "Ibu kota dari provinsi Maluku adalah...",
+    "correctAnswer": "Ambon",
+    "options": [
+      "Gorontalo",
+      "Ambon",
+      "Merauke",
+      "Padang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_41"
+  },
+  {
+    "text": "Ibu kota dari provinsi Maluku Utara adalah...",
+    "correctAnswer": "Sofifi",
+    "options": [
+      "Manokwari",
+      "Sofifi",
+      "Jakarta",
+      "Bandung"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_42"
+  },
+  {
+    "text": "Ibu kota dari provinsi Papua Barat adalah...",
+    "correctAnswer": "Manokwari",
+    "options": [
+      "Manokwari",
+      "Medan",
+      "Palembang",
+      "Wamena"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_43"
+  },
+  {
+    "text": "Ibu kota dari provinsi Papua adalah...",
+    "correctAnswer": "Jayapura",
+    "options": [
+      "Yogyakarta",
+      "Jayapura",
+      "Banjarmasin",
+      "Banda Aceh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_44"
+  },
+  {
+    "text": "Ibu kota dari provinsi Papua Selatan adalah...",
+    "correctAnswer": "Merauke",
+    "options": [
+      "Mamuju",
+      "Jambi",
+      "Merauke",
+      "Bandar Lampung"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_45"
+  },
+  {
+    "text": "Ibu kota dari provinsi Papua Tengah adalah...",
+    "correctAnswer": "Nabire",
+    "options": [
+      "Pontianak",
+      "Nabire",
+      "Tanjungpinang",
+      "Padang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_46"
+  },
+  {
+    "text": "Ibu kota dari provinsi Papua Pegunungan adalah...",
+    "correctAnswer": "Wamena",
+    "options": [
+      "Gorontalo",
+      "Wamena",
+      "Pekanbaru",
+      "Merauke"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_47"
+  },
+  {
+    "text": "Ibu kota dari provinsi Papua Barat Daya adalah...",
+    "correctAnswer": "Sorong",
+    "options": [
+      "Samarinda",
+      "Kupang",
+      "Gorontalo",
+      "Sorong"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_48"
+  },
+  {
+    "text": "Kota Banda Aceh merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Nanggroe Aceh Darussalam",
+    "options": [
+      "Kalimantan Utara",
+      "Nanggroe Aceh Darussalam",
+      "Kalimantan Barat",
+      "DI Yogyakarta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_49"
+  },
+  {
+    "text": "Kota Medan merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Sumatera Utara",
+    "options": [
+      "Kalimantan Selatan",
+      "Sulawesi Utara",
+      "Sulawesi Tenggara",
+      "Sumatera Utara"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_50"
+  },
+  {
+    "text": "Kota Padang merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Sumatera Barat",
+    "options": [
+      "Sumatera Barat",
+      "Sumatera Selatan",
+      "Jawa Tengah",
+      "Maluku"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_51"
+  },
+  {
+    "text": "Kota Pekanbaru merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Riau",
+    "options": [
+      "Gorontalo",
+      "Kalimantan Utara",
+      "Kalimantan Selatan",
+      "Riau"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_52"
+  },
+  {
+    "text": "Kota Tanjungpinang merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Kepulauan Riau",
+    "options": [
+      "Maluku Utara",
+      "Gorontalo",
+      "Kepulauan Riau",
+      "Kalimantan Timur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_53"
+  },
+  {
+    "text": "Kota Jambi merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Jambi",
+    "options": [
+      "Jambi",
+      "Sulawesi Tenggara",
+      "Bali",
+      "DI Yogyakarta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_54"
+  },
+  {
+    "text": "Kota Palembang merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Sumatera Selatan",
+    "options": [
+      "Sumatera Selatan",
+      "Nanggroe Aceh Darussalam",
+      "Nusa Tenggara Timur",
+      "Riau"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_55"
+  },
+  {
+    "text": "Kota Bengkulu merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Bengkulu",
+    "options": [
+      "DI Yogyakarta",
+      "Bengkulu",
+      "Nanggroe Aceh Darussalam",
+      "DKI Jakarta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_56"
+  },
+  {
+    "text": "Kota Bandar Lampung merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Lampung",
+    "options": [
+      "Jawa Tengah",
+      "DI Yogyakarta",
+      "Lampung",
+      "Jawa Barat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_57"
+  },
+  {
+    "text": "Kota Pangkalpinang merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Kepulauan Bangka Belitung",
+    "options": [
+      "Sulawesi Utara",
+      "Nusa Tenggara Barat",
+      "Jawa Timur",
+      "Kepulauan Bangka Belitung"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_58"
+  },
+  {
+    "text": "Kota Jakarta merupakan ibu kota dari provinsi...",
+    "correctAnswer": "DKI Jakarta",
+    "options": [
+      "Kalimantan Tengah",
+      "Sumatera Barat",
+      "Sulawesi Selatan",
+      "DKI Jakarta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_59"
+  },
+  {
+    "text": "Kota Bandung merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Jawa Barat",
+    "options": [
+      "Jawa Tengah",
+      "Papua Barat Daya",
+      "Papua Barat",
+      "Jawa Barat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_60"
+  },
+  {
+    "text": "Kota Serang merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Banten",
+    "options": [
+      "Jawa Timur",
+      "Banten",
+      "Kalimantan Timur",
+      "Nusa Tenggara Timur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_61"
+  },
+  {
+    "text": "Kota Semarang merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Jawa Tengah",
+    "options": [
+      "Jawa Tengah",
+      "Papua",
+      "Papua Tengah",
+      "Banten"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_62"
+  },
+  {
+    "text": "Kota Yogyakarta merupakan ibu kota dari provinsi...",
+    "correctAnswer": "DI Yogyakarta",
+    "options": [
+      "DI Yogyakarta",
+      "Sumatera Barat",
+      "Kalimantan Selatan",
+      "Lampung"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_63"
+  },
+  {
+    "text": "Kota Surabaya merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Jawa Timur",
+    "options": [
+      "Papua",
+      "Jawa Timur",
+      "Papua Tengah",
+      "DI Yogyakarta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_64"
+  },
+  {
+    "text": "Kota Denpasar merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Bali",
+    "options": [
+      "Nanggroe Aceh Darussalam",
+      "Bali",
+      "Sumatera Utara",
+      "Kalimantan Selatan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_65"
+  },
+  {
+    "text": "Kota Mataram merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Nusa Tenggara Barat",
+    "options": [
+      "Kepulauan Bangka Belitung",
+      "Kalimantan Barat",
+      "Nusa Tenggara Barat",
+      "Maluku Utara"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_66"
+  },
+  {
+    "text": "Kota Kupang merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Nusa Tenggara Timur",
+    "options": [
+      "Nusa Tenggara Timur",
+      "Kepulauan Riau",
+      "Bengkulu",
+      "Kalimantan Utara"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_67"
+  },
+  {
+    "text": "Kota Pontianak merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Kalimantan Barat",
+    "options": [
+      "Kalimantan Barat",
+      "Kalimantan Tengah",
+      "Sulawesi Selatan",
+      "Kalimantan Timur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_68"
+  },
+  {
+    "text": "Kota Palangka Raya merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Kalimantan Tengah",
+    "options": [
+      "Nusa Tenggara Barat",
+      "Kalimantan Tengah",
+      "Kalimantan Barat",
+      "Lampung"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_69"
+  },
+  {
+    "text": "Kota Banjarmasin merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Kalimantan Selatan",
+    "options": [
+      "Papua Barat Daya",
+      "Sumatera Barat",
+      "Maluku Utara",
+      "Kalimantan Selatan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_70"
+  },
+  {
+    "text": "Kota Samarinda merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Kalimantan Timur",
+    "options": [
+      "Jawa Timur",
+      "Jawa Tengah",
+      "Kalimantan Timur",
+      "Sumatera Selatan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_71"
+  },
+  {
+    "text": "Kota Tanjung Selor merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Kalimantan Utara",
+    "options": [
+      "Maluku",
+      "Papua Pegunungan",
+      "Kepulauan Riau",
+      "Kalimantan Utara"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_72"
+  },
+  {
+    "text": "Kota Manado merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Sulawesi Utara",
+    "options": [
+      "Maluku",
+      "Kalimantan Barat",
+      "Sumatera Barat",
+      "Sulawesi Utara"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_73"
+  },
+  {
+    "text": "Kota Gorontalo merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Gorontalo",
+    "options": [
+      "Gorontalo",
+      "Nusa Tenggara Barat",
+      "Nusa Tenggara Timur",
+      "DKI Jakarta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_74"
+  },
+  {
+    "text": "Kota Palu merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Sulawesi Tengah",
+    "options": [
+      "Maluku Utara",
+      "Jawa Timur",
+      "Sulawesi Tengah",
+      "Jambi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_75"
+  },
+  {
+    "text": "Kota Mamuju merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Sulawesi Barat",
+    "options": [
+      "Sulawesi Barat",
+      "Banten",
+      "Kalimantan Tengah",
+      "Kalimantan Utara"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_76"
+  },
+  {
+    "text": "Kota Makassar merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Sulawesi Selatan",
+    "options": [
+      "Nusa Tenggara Barat",
+      "Sulawesi Selatan",
+      "Sulawesi Utara",
+      "Papua Selatan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_77"
+  },
+  {
+    "text": "Kota Kendari merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Sulawesi Tenggara",
+    "options": [
+      "Sulawesi Utara",
+      "Sulawesi Tenggara",
+      "Sumatera Barat",
+      "DI Yogyakarta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_78"
+  },
+  {
+    "text": "Kota Ambon merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Maluku",
+    "options": [
+      "Maluku",
+      "Bali",
+      "Banten",
+      "DI Yogyakarta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_79"
+  },
+  {
+    "text": "Kota Sofifi merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Maluku Utara",
+    "options": [
+      "Nusa Tenggara Timur",
+      "Maluku Utara",
+      "Papua Barat Daya",
+      "Papua Selatan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_80"
+  },
+  {
+    "text": "Kota Manokwari merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Papua Barat",
+    "options": [
+      "Papua Tengah",
+      "Bali",
+      "Papua Barat",
+      "Jawa Barat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_81"
+  },
+  {
+    "text": "Kota Jayapura merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Papua",
+    "options": [
+      "Papua",
+      "Sumatera Utara",
+      "Papua Pegunungan",
+      "Kalimantan Barat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_82"
+  },
+  {
+    "text": "Kota Merauke merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Papua Selatan",
+    "options": [
+      "Papua Tengah",
+      "Jawa Barat",
+      "Nusa Tenggara Barat",
+      "Papua Selatan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_83"
+  },
+  {
+    "text": "Kota Nabire merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Papua Tengah",
+    "options": [
+      "Jawa Tengah",
+      "Sulawesi Tengah",
+      "Papua Tengah",
+      "Lampung"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_84"
+  },
+  {
+    "text": "Kota Wamena merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Papua Pegunungan",
+    "options": [
+      "Kepulauan Bangka Belitung",
+      "Kalimantan Barat",
+      "Papua Pegunungan",
+      "Kepulauan Riau"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_85"
+  },
+  {
+    "text": "Kota Sorong merupakan ibu kota dari provinsi...",
+    "correctAnswer": "Papua Barat Daya",
+    "options": [
+      "Sulawesi Barat",
+      "Jawa Timur",
+      "Sumatera Barat",
+      "Papua Barat Daya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_86"
+  },
+  {
+    "text": "Daerah Bangka Belitung dikenal sebagai salah satu daerah penghasil tambang...",
+    "correctAnswer": "Timah",
+    "options": [
+      "Emas & Tembaga",
+      "Intan",
+      "Timah",
+      "Minyak Bumi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_87"
+  },
+  {
+    "text": "Daerah Mimika, Papua dikenal sebagai salah satu daerah penghasil tambang...",
+    "correctAnswer": "Emas & Tembaga",
+    "options": [
+      "Emas",
+      "Intan",
+      "Semen",
+      "Emas & Tembaga"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_88"
+  },
+  {
+    "text": "Daerah Bontang, Kaltim dikenal sebagai salah satu daerah penghasil tambang...",
+    "correctAnswer": "Gas Alam",
+    "options": [
+      "Batu Bara",
+      "Bauksit",
+      "Semen",
+      "Gas Alam"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_89"
+  },
+  {
+    "text": "Daerah Sawahlunto dikenal sebagai salah satu daerah penghasil tambang...",
+    "correctAnswer": "Batu Bara",
+    "options": [
+      "Aspal",
+      "Minyak Bumi",
+      "Batu Bara",
+      "Emas"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_90"
+  },
+  {
+    "text": "Daerah Cepu dikenal sebagai salah satu daerah penghasil tambang...",
+    "correctAnswer": "Minyak Bumi",
+    "options": [
+      "Timah",
+      "Minyak Bumi",
+      "Semen",
+      "Intan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_91"
+  },
+  {
+    "text": "Daerah Martapura dikenal sebagai salah satu daerah penghasil tambang...",
+    "correctAnswer": "Intan",
+    "options": [
+      "Emas & Tembaga",
+      "Minyak Bumi",
+      "Batu Bara",
+      "Intan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_92"
+  },
+  {
+    "text": "Daerah Soroako dikenal sebagai salah satu daerah penghasil tambang...",
+    "correctAnswer": "Nikel",
+    "options": [
+      "Intan",
+      "Aspal",
+      "Batu Bara",
+      "Nikel"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_93"
+  },
+  {
+    "text": "Daerah Pulau Buton dikenal sebagai salah satu daerah penghasil tambang...",
+    "correctAnswer": "Aspal",
+    "options": [
+      "Emas & Tembaga",
+      "Timah",
+      "Aspal",
+      "Bauksit"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_94"
+  },
+  {
+    "text": "Daerah Cilacap dikenal sebagai salah satu daerah penghasil tambang...",
+    "correctAnswer": "Minyak Bumi",
+    "options": [
+      "Intan",
+      "Timah",
+      "Minyak Bumi",
+      "Aspal"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_95"
+  },
+  {
+    "text": "Daerah Bukit Asam dikenal sebagai salah satu daerah penghasil tambang...",
+    "correctAnswer": "Batu Bara",
+    "options": [
+      "Emas & Tembaga",
+      "Batu Bara",
+      "Timah",
+      "Nikel"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_96"
+  },
+  {
+    "text": "Daerah Bintan dikenal sebagai salah satu daerah penghasil tambang...",
+    "correctAnswer": "Bauksit",
+    "options": [
+      "Intan",
+      "Emas & Tembaga",
+      "Bauksit",
+      "Emas"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_97"
+  },
+  {
+    "text": "Daerah Gresik dikenal sebagai salah satu daerah penghasil tambang...",
+    "correctAnswer": "Semen",
+    "options": [
+      "Gas Alam",
+      "Minyak Bumi",
+      "Semen",
+      "Emas & Tembaga"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_98"
+  },
+  {
+    "text": "Daerah Lhokseumawe dikenal sebagai salah satu daerah penghasil tambang...",
+    "correctAnswer": "Gas Alam",
+    "options": [
+      "Minyak Bumi",
+      "Aspal",
+      "Semen",
+      "Gas Alam"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_99"
+  },
+  {
+    "text": "Daerah Plaju dikenal sebagai salah satu daerah penghasil tambang...",
+    "correctAnswer": "Minyak Bumi",
+    "options": [
+      "Minyak Bumi",
+      "Timah",
+      "Nikel",
+      "Emas"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_100"
+  },
+  {
+    "text": "Daerah Rejang Lebong dikenal sebagai salah satu daerah penghasil tambang...",
+    "correctAnswer": "Emas",
+    "options": [
+      "Nikel",
+      "Gas Alam",
+      "Minyak Bumi",
+      "Emas"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_101"
+  },
+  {
+    "text": "Jika terjadi gempa bumi saat di dalam kelas, hal pertama yang dilakukan adalah...",
+    "correctAnswer": "Berlindung di bawah meja",
+    "options": [
+      "Berlindung di bawah meja",
+      "Menghubungi pemadam",
+      "Lari keluar berdesakan",
+      "Diam saja di kursi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_102"
+  },
+  {
+    "text": "Jika air laut tiba-tiba surut drastis setelah gempa, kita harus...",
+    "correctAnswer": "Lari ke tempat tinggi",
+    "options": [
+      "Berdiam diri di rumah",
+      "Mengambil ikan di pantai",
+      "Lari ke tempat tinggi",
+      "Mendekati bibir pantai"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_103"
+  },
+  {
+    "text": "Untuk mencegah tanah longsor di lahan miring, teknik pertanian yang baik adalah...",
+    "correctAnswer": "Terasering",
+    "options": [
+      "Terasering",
+      "Menebang Pohon",
+      "Pembakaran Hutan",
+      "Ladang Berpindah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_104"
+  },
+  {
+    "text": "Penyebab utama terjadinya pemanasan global adalah...",
+    "correctAnswer": "Efek rumah kaca",
+    "options": [
+      "Pasang surut air laut",
+      "Efek rumah kaca",
+      "Gempa tektonik",
+      "Angin topan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_105"
+  },
+  {
+    "text": "Musim kemarau di Indonesia terjadi akibat hembusan angin...",
+    "correctAnswer": "Muson Timur",
+    "options": [
+      "Muson Barat",
+      "Angin Lembah",
+      "Angin Darat",
+      "Muson Timur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_106"
+  },
+  {
+    "text": "Angin Muson Barat membawa banyak uap air dan menyebabkan...",
+    "correctAnswer": "Musim Hujan",
+    "options": [
+      "Musim Kemarau",
+      "Tanah Longsor",
+      "Tsunami",
+      "Musim Hujan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_107"
+  },
+  {
+    "text": "Tindakan yang tepat saat terjadi angin puting beliung adalah...",
+    "correctAnswer": "Berlindung di ruangan kokoh",
+    "options": [
+      "Berdiri di bawah pohon",
+      "Memanjat tiang listrik",
+      "Bermain di tanah lapang",
+      "Berlindung di ruangan kokoh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_108"
+  },
+  {
+    "text": "Bencana alam akibat pergeseran lempeng bumi disebut gempa...",
+    "correctAnswer": "Tektonik",
+    "options": [
+      "Runtuhan",
+      "Tektonik",
+      "Vulkanik",
+      "Susulan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_109"
+  },
+  {
+    "text": "Pahlawan nasional Cut Nyak Dien berasal dari daerah...",
+    "correctAnswer": "Aceh",
+    "options": [
+      "Aceh",
+      "Kalimantan Selatan",
+      "Papua",
+      "Maluku"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_110"
+  },
+  {
+    "text": "Pahlawan nasional Pattimura berasal dari daerah...",
+    "correctAnswer": "Maluku",
+    "options": [
+      "Maluku",
+      "Papua",
+      "Sumatera Utara",
+      "Sumatera Barat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_111"
+  },
+  {
+    "text": "Pahlawan nasional Pangeran Diponegoro berasal dari daerah...",
+    "correctAnswer": "Jawa Tengah",
+    "options": [
+      "Jawa Barat",
+      "Yogyakarta",
+      "Kalimantan Selatan",
+      "Jawa Tengah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_112"
+  },
+  {
+    "text": "Pahlawan nasional Sultan Hasanuddin berasal dari daerah...",
+    "correctAnswer": "Sulawesi Selatan",
+    "options": [
+      "Papua",
+      "Kalimantan Selatan",
+      "Bali",
+      "Sulawesi Selatan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_113"
+  },
+  {
+    "text": "Pahlawan nasional Pangeran Antasari berasal dari daerah...",
+    "correctAnswer": "Kalimantan Selatan",
+    "options": [
+      "Bali",
+      "Sumatera Barat",
+      "Kalimantan Selatan",
+      "Maluku"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_114"
+  },
+  {
+    "text": "Pahlawan nasional Tuanku Imam Bonjol berasal dari daerah...",
+    "correctAnswer": "Sumatera Barat",
+    "options": [
+      "Sumatera Barat",
+      "Bali",
+      "Jawa Tengah",
+      "Yogyakarta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_115"
+  },
+  {
+    "text": "Pahlawan nasional I Gusti Ngurah Rai berasal dari daerah...",
+    "correctAnswer": "Bali",
+    "options": [
+      "Kalimantan Selatan",
+      "Jawa Tengah",
+      "Bali",
+      "Sumatera Utara"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_116"
+  },
+  {
+    "text": "Pahlawan nasional Sisingamangaraja XII berasal dari daerah...",
+    "correctAnswer": "Sumatera Utara",
+    "options": [
+      "Bali",
+      "Sumatera Utara",
+      "Maluku",
+      "Papua"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_117"
+  },
+  {
+    "text": "Pahlawan nasional Ki Hajar Dewantara berasal dari daerah...",
+    "correctAnswer": "Yogyakarta",
+    "options": [
+      "Sumatera Utara",
+      "Sulawesi Selatan",
+      "Jawa Barat",
+      "Yogyakarta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_118"
+  },
+  {
+    "text": "Pahlawan nasional Teuku Umar berasal dari daerah...",
+    "correctAnswer": "Aceh",
+    "options": [
+      "Jawa Barat",
+      "Aceh",
+      "Bali",
+      "Papua"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_119"
+  },
+  {
+    "text": "Pahlawan nasional Martha Christina Tiahahu berasal dari daerah...",
+    "correctAnswer": "Maluku",
+    "options": [
+      "Aceh",
+      "Maluku",
+      "Jawa Barat",
+      "Yogyakarta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_120"
+  },
+  {
+    "text": "Pahlawan nasional Silas Papare berasal dari daerah...",
+    "correctAnswer": "Papua",
+    "options": [
+      "Papua",
+      "Sumatera Utara",
+      "Sumatera Barat",
+      "Jawa Tengah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_121"
+  },
+  {
+    "text": "Pahlawan nasional Nyi Ageng Serang berasal dari daerah...",
+    "correctAnswer": "Jawa Tengah",
+    "options": [
+      "Papua",
+      "Jawa Tengah",
+      "Kalimantan Selatan",
+      "Aceh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_122"
+  },
+  {
+    "text": "Pahlawan nasional Raden Dewi Sartika berasal dari daerah...",
+    "correctAnswer": "Jawa Barat",
+    "options": [
+      "Jawa Barat",
+      "Bali",
+      "Maluku",
+      "Yogyakarta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_123"
+  },
+  {
+    "text": "Bapak Proklamator Indonesia adalah...",
+    "correctAnswer": "Ir. Soekarno",
+    "options": [
+      "Mohammad Hatta",
+      "Ir. Soekarno",
+      "B.J. Habibie",
+      "Jenderal Soedirman"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_124"
+  },
+  {
+    "text": "Tokoh yang menjahit Bendera Merah Putih adalah...",
+    "correctAnswer": "Ibu Fatmawati",
+    "options": [
+      "Cut Nyak Dien",
+      "Ibu Fatmawati",
+      "Ibu Kartini",
+      "Dewi Sartika"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_125"
+  },
+  {
+    "text": "Teks Proklamasi Kemerdekaan RI diketik oleh...",
+    "correctAnswer": "Sayuti Melik",
+    "options": [
+      "Wikana",
+      "Sayuti Melik",
+      "Ahmad Soebardjo",
+      "Soekarni"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_126"
+  },
+  {
+    "text": "Panglima Besar TNI pertama yang melakukan perang gerilya adalah...",
+    "correctAnswer": "Jenderal Soedirman",
+    "options": [
+      "Letjen MT Haryono",
+      "Jenderal Soedirman",
+      "Jenderal Ahmad Yani",
+      "Jenderal A.H. Nasution"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_127"
+  },
+  {
+    "text": "Bapak Pendidikan Nasional Indonesia adalah...",
+    "correctAnswer": "Ki Hajar Dewantara",
+    "options": [
+      "Wahid Hasyim",
+      "Ki Hajar Dewantara",
+      "HOS Tjokroaminoto",
+      "Dr. Soetomo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_128"
+  },
+  {
+    "text": "Sumpah Pemuda diikrarkan pada tahun...",
+    "correctAnswer": "1928",
+    "options": [
+      "1945",
+      "1908",
+      "1920",
+      "1928"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_129"
+  },
+  {
+    "text": "Hari Kemerdekaan Republik Indonesia diperingati setiap tanggal...",
+    "correctAnswer": "17 Agustus",
+    "options": [
+      "17 Agustus",
+      "20 Mei",
+      "28 Oktober",
+      "10 November"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_130"
+  },
+  {
+    "text": "Hari Pahlawan Nasional diperingati setiap tanggal...",
+    "correctAnswer": "10 November",
+    "options": [
+      "17 Agustus",
+      "10 November",
+      "21 April",
+      "1 Juni"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_131"
+  },
+  {
+    "text": "Hari Kebangkitan Nasional diperingati setiap tanggal...",
+    "correctAnswer": "20 Mei",
+    "options": [
+      "17 Agustus",
+      "1 Oktober",
+      "28 Oktober",
+      "20 Mei"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_132"
+  },
+  {
+    "text": "Ibu kota dari negara Djibouti adalah...",
+    "correctAnswer": "Djibouti",
+    "options": [
+      "Caracas",
+      "Djibouti",
+      "Banda Kuwait",
+      "Nukuʻalofa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_133"
+  },
+  {
+    "text": "Ibu kota dari negara Yunani adalah...",
+    "correctAnswer": "Athena",
+    "options": [
+      "Kingston",
+      "Doha",
+      "Kyiv",
+      "Athena"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_134"
+  },
+  {
+    "text": "Ibu kota dari negara Nigeria adalah...",
+    "correctAnswer": "Abuja",
+    "options": [
+      "Vientiane",
+      "Asuncion",
+      "Abuja",
+      "Singapura"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_135"
+  },
+  {
+    "text": "Ibu kota dari negara Luksemburg adalah...",
+    "correctAnswer": "Luksemburg",
+    "options": [
+      "Addis Ababa",
+      "Luksemburg",
+      "Ouagadougou",
+      "Male"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_136"
+  },
+  {
+    "text": "Ibu kota dari negara Palau adalah...",
+    "correctAnswer": "Ngerulmud",
+    "options": [
+      "Suva",
+      "Tarawa Selatan",
+      "Ngerulmud",
+      "Port Moresby"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_137"
+  },
+  {
+    "text": "Ibu kota dari negara Kongo adalah...",
+    "correctAnswer": "Brazzaville",
+    "options": [
+      "Nukuʻalofa",
+      "Ulaanbaatar",
+      "Chisinau",
+      "Brazzaville"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_138"
+  },
+  {
+    "text": "Ibu kota dari negara Kuwait adalah...",
+    "correctAnswer": "Banda Kuwait",
+    "options": [
+      "Islamabad",
+      "Brazzaville",
+      "Addis Ababa",
+      "Banda Kuwait"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_139"
+  },
+  {
+    "text": "Ibu kota dari negara Zimbabwe adalah...",
+    "correctAnswer": "Harare",
+    "options": [
+      "Yamoussoukro",
+      "Bangui",
+      "Tunis",
+      "Harare"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_140"
+  },
+  {
+    "text": "Ibu kota dari negara Kazakhstan adalah...",
+    "correctAnswer": "Astana",
+    "options": [
+      "Beijing",
+      "Riga",
+      "Luksemburg",
+      "Astana"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_141"
+  },
+  {
+    "text": "Ibu kota dari negara Jepang adalah...",
+    "correctAnswer": "Tokyo",
+    "options": [
+      "Abuja",
+      "Kolombo",
+      "Tokyo",
+      "Bissau"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_142"
+  },
+  {
+    "text": "Ibu kota dari negara Bahrain adalah...",
+    "correctAnswer": "Manama",
+    "options": [
+      "Sarajevo",
+      "Bangkok",
+      "Manama",
+      "Moskow"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_143"
+  },
+  {
+    "text": "Ibu kota dari negara Botswana adalah...",
+    "correctAnswer": "Gaborone",
+    "options": [
+      "Port of Spain",
+      "Gaborone",
+      "Tunis",
+      "Oslo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_144"
+  },
+  {
+    "text": "Ibu kota dari negara Suriname adalah...",
+    "correctAnswer": "Paramaribo",
+    "options": [
+      "Paramaribo",
+      "Dhaka",
+      "Yerusalem Timur",
+      "Ottawa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_145"
+  },
+  {
+    "text": "Ibu kota dari negara Siprus adalah...",
+    "correctAnswer": "Nikosia",
+    "options": [
+      "Sucre",
+      "Nikosia",
+      "Port of Spain",
+      "Port-au-Prince"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_146"
+  },
+  {
+    "text": "Ibu kota dari negara Kamerun adalah...",
+    "correctAnswer": "Yaounde",
+    "options": [
+      "Washington, D.C.",
+      "Khartoum",
+      "Port Louis",
+      "Yaounde"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_147"
+  },
+  {
+    "text": "Ibu kota dari negara Argentina adalah...",
+    "correctAnswer": "Buenos Aires",
+    "options": [
+      "Buenos Aires",
+      "Abu Dhabi",
+      "Tarawa Selatan",
+      "San Marino"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_148"
+  },
+  {
+    "text": "Ibu kota dari negara Uganda adalah...",
+    "correctAnswer": "Kampala",
+    "options": [
+      "Damaskus",
+      "Panama City",
+      "Muskat",
+      "Kampala"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_149"
+  },
+  {
+    "text": "Ibu kota dari negara El Salvador adalah...",
+    "correctAnswer": "San Salvador",
+    "options": [
+      "Yaren",
+      "San Salvador",
+      "Khartoum",
+      "Kyiv"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_150"
+  },
+  {
+    "text": "Ibu kota dari negara Ethiopia adalah...",
+    "correctAnswer": "Addis Ababa",
+    "options": [
+      "Addis Ababa",
+      "Majuro",
+      "Vientiane",
+      "Yaren"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_151"
+  },
+  {
+    "text": "Ibu kota dari negara Nauru adalah...",
+    "correctAnswer": "Yaren",
+    "options": [
+      "Brasilia",
+      "Brussel",
+      "Bissau",
+      "Yaren"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_152"
+  },
+  {
+    "text": "Ibu kota dari negara Benin adalah...",
+    "correctAnswer": "Porto-Novo",
+    "options": [
+      "Montevideo",
+      "Roseau",
+      "Brussel",
+      "Porto-Novo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_153"
+  },
+  {
+    "text": "Ibu kota dari negara Makedonia Utara adalah...",
+    "correctAnswer": "Skopje",
+    "options": [
+      "Nassau",
+      "Niamey",
+      "Skopje",
+      "Mbabane"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_154"
+  },
+  {
+    "text": "Ibu kota dari negara Antigua dan Barbuda adalah...",
+    "correctAnswer": "St. John's",
+    "options": [
+      "Pyongyang",
+      "Nouakchott",
+      "Tunis",
+      "St. John's"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_155"
+  },
+  {
+    "text": "Ibu kota dari negara Samoa adalah...",
+    "correctAnswer": "Apia",
+    "options": [
+      "Apia",
+      "Muskat",
+      "Tokyo",
+      "Kabul"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_156"
+  },
+  {
+    "text": "Ibu kota dari negara Belanda adalah...",
+    "correctAnswer": "Amsterdam",
+    "options": [
+      "Juba",
+      "Porto-Novo",
+      "Amsterdam",
+      "Bishkek"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_157"
+  },
+  {
+    "text": "Ibu kota dari negara Vanuatu adalah...",
+    "correctAnswer": "Port Vila",
+    "options": [
+      "Port Vila",
+      "Lima",
+      "Lusaka",
+      "Paramaribo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_158"
+  },
+  {
+    "text": "Ibu kota dari negara Ekuador adalah...",
+    "correctAnswer": "Quito",
+    "options": [
+      "Nouakchott",
+      "Quito",
+      "Vientiane",
+      "Naypyidaw"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_159"
+  },
+  {
+    "text": "Ibu kota dari negara Tanjung Verde adalah...",
+    "correctAnswer": "Praia",
+    "options": [
+      "Lilongwe",
+      "Praia",
+      "Berlin",
+      "Bissau"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_160"
+  },
+  {
+    "text": "Ibu kota dari negara Tonga adalah...",
+    "correctAnswer": "Nukuʻalofa",
+    "options": [
+      "Mogadishu",
+      "Nukuʻalofa",
+      "Asuncion",
+      "Banjul"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_161"
+  },
+  {
+    "text": "Ibu kota dari negara Vatikan adalah...",
+    "correctAnswer": "Vatikan",
+    "options": [
+      "Buenos Aires",
+      "Dushanbe",
+      "Caracas",
+      "Vatikan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_162"
+  },
+  {
+    "text": "Ibu kota dari negara Tiongkok adalah...",
+    "correctAnswer": "Beijing",
+    "options": [
+      "Minsk",
+      "Beijing",
+      "Andorra la Vella",
+      "Panama City"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_163"
+  },
+  {
+    "text": "Ibu kota dari negara Andorra adalah...",
+    "correctAnswer": "Andorra la Vella",
+    "options": [
+      "Kuala Lumpur",
+      "Andorra la Vella",
+      "Baku",
+      "Jakarta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_164"
+  },
+  {
+    "text": "Ibu kota dari negara Tajikistan adalah...",
+    "correctAnswer": "Dushanbe",
+    "options": [
+      "Bissau",
+      "Dushanbe",
+      "New Delhi",
+      "Basseterre"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_165"
+  },
+  {
+    "text": "Ibu kota dari negara Pakistan adalah...",
+    "correctAnswer": "Islamabad",
+    "options": [
+      "Amman",
+      "Reykjavik",
+      "Islamabad",
+      "Nassau"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_166"
+  },
+  {
+    "text": "Ibu kota dari negara Hungaria adalah...",
+    "correctAnswer": "Budapest",
+    "options": [
+      "Budapest",
+      "Banjul",
+      "Ngerulmud",
+      "Bern"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_167"
+  },
+  {
+    "text": "Ibu kota dari negara Saint Kitts dan Nevis adalah...",
+    "correctAnswer": "Basseterre",
+    "options": [
+      "Abuja",
+      "Basseterre",
+      "Tirana",
+      "Vaduz"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_168"
+  },
+  {
+    "text": "Ibu kota dari negara Malaysia adalah...",
+    "correctAnswer": "Kuala Lumpur",
+    "options": [
+      "Wellington",
+      "Vatikan",
+      "Kuala Lumpur",
+      "St. John's"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_169"
+  },
+  {
+    "text": "Ibu kota dari negara Kirgistan adalah...",
+    "correctAnswer": "Bishkek",
+    "options": [
+      "Bishkek",
+      "Bangkok",
+      "Chisinau",
+      "Buenos Aires"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_170"
+  },
+  {
+    "text": "Ibu kota dari negara Jerman adalah...",
+    "correctAnswer": "Berlin",
+    "options": [
+      "San Jose",
+      "Amman",
+      "Hanoi",
+      "Berlin"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_171"
+  },
+  {
+    "text": "Ibu kota dari negara Meksiko adalah...",
+    "correctAnswer": "Mexico City",
+    "options": [
+      "Mexico City",
+      "Ljubljana",
+      "Madrid",
+      "Vientiane"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_172"
+  },
+  {
+    "text": "Ibu kota dari negara Komoro adalah...",
+    "correctAnswer": "Moroni",
+    "options": [
+      "Harare",
+      "Moroni",
+      "Warsawa",
+      "Hanoi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_173"
+  },
+  {
+    "text": "Ibu kota dari negara Swedia adalah...",
+    "correctAnswer": "Stockholm",
+    "options": [
+      "Caracas",
+      "Kingston",
+      "Kolombo",
+      "Stockholm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_174"
+  },
+  {
+    "text": "Ibu kota dari negara Ghana adalah...",
+    "correctAnswer": "Accra",
+    "options": [
+      "Tashkent",
+      "Kabul",
+      "Accra",
+      "Yaren"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_175"
+  },
+  {
+    "text": "Ibu kota dari negara Malta adalah...",
+    "correctAnswer": "Valletta",
+    "options": [
+      "Valletta",
+      "Kopenhagen",
+      "Sarajevo",
+      "Buenos Aires"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_176"
+  },
+  {
+    "text": "Ibu kota dari negara Pantai Gading adalah...",
+    "correctAnswer": "Yamoussoukro",
+    "options": [
+      "Port of Spain",
+      "Yamoussoukro",
+      "Kabul",
+      "Tirana"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_177"
+  },
+  {
+    "text": "Ibu kota dari negara Saint Lucia adalah...",
+    "correctAnswer": "Castries",
+    "options": [
+      "Baghdad",
+      "Gaborone",
+      "Castries",
+      "Tokyo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_178"
+  },
+  {
+    "text": "Ibu kota dari negara Kiribati adalah...",
+    "correctAnswer": "Tarawa Selatan",
+    "options": [
+      "San Marino",
+      "Roseau",
+      "Tarawa Selatan",
+      "Thimphu"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_179"
+  },
+  {
+    "text": "Ibu kota dari negara Polandia adalah...",
+    "correctAnswer": "Warsawa",
+    "options": [
+      "Baghdad",
+      "Warsawa",
+      "Nairobi",
+      "Praha"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_180"
+  },
+  {
+    "text": "Ibu kota dari negara Togo adalah...",
+    "correctAnswer": "Lome",
+    "options": [
+      "Tunis",
+      "Kairo",
+      "Lome",
+      "Antananarivo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_181"
+  },
+  {
+    "text": "Ibu kota dari negara Chad adalah...",
+    "correctAnswer": "N'Djamena",
+    "options": [
+      "Ulaanbaatar",
+      "Funafuti",
+      "Yamoussoukro",
+      "N'Djamena"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_182"
+  },
+  {
+    "text": "Ibu kota dari negara Ukraina adalah...",
+    "correctAnswer": "Kyiv",
+    "options": [
+      "Kingston",
+      "Kyiv",
+      "Teheran",
+      "Vientiane"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_183"
+  },
+  {
+    "text": "Ibu kota dari negara Namibia adalah...",
+    "correctAnswer": "Windhoek",
+    "options": [
+      "Santiago",
+      "Mogadishu",
+      "Berlin",
+      "Windhoek"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_184"
+  },
+  {
+    "text": "Ibu kota dari negara Australia adalah...",
+    "correctAnswer": "Canberra",
+    "options": [
+      "Bogota",
+      "Bissau",
+      "Sao Tome",
+      "Canberra"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_185"
+  },
+  {
+    "text": "Ibu kota dari negara Sudan adalah...",
+    "correctAnswer": "Khartoum",
+    "options": [
+      "Asmara",
+      "Khartoum",
+      "Tokyo",
+      "Nassau"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_186"
+  },
+  {
+    "text": "Ibu kota dari negara Montenegro adalah...",
+    "correctAnswer": "Podgorica",
+    "options": [
+      "Nikosia",
+      "Podgorica",
+      "Madrid",
+      "Port Vila"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_187"
+  },
+  {
+    "text": "Ibu kota dari negara Iran adalah...",
+    "correctAnswer": "Teheran",
+    "options": [
+      "Andorra la Vella",
+      "Kyiv",
+      "Tbilisi",
+      "Teheran"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_188"
+  },
+  {
+    "text": "Ibu kota dari negara Eritrea adalah...",
+    "correctAnswer": "Asmara",
+    "options": [
+      "Mexico City",
+      "Dushanbe",
+      "Caracas",
+      "Asmara"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_189"
+  },
+  {
+    "text": "Ibu kota dari negara Venezuela adalah...",
+    "correctAnswer": "Caracas",
+    "options": [
+      "Sao Tome",
+      "Caracas",
+      "Khartoum",
+      "Lima"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_190"
+  },
+  {
+    "text": "Ibu kota dari negara Saint Vincent adalah...",
+    "correctAnswer": "Kingstown",
+    "options": [
+      "Dodoma",
+      "Asmara",
+      "San Jose",
+      "Kingstown"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_191"
+  },
+  {
+    "text": "Ibu kota dari negara Burkina Faso adalah...",
+    "correctAnswer": "Ouagadougou",
+    "options": [
+      "Bishkek",
+      "Tashkent",
+      "Ouagadougou",
+      "Sucre"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_192"
+  },
+  {
+    "text": "Ibu kota dari negara Moldova adalah...",
+    "correctAnswer": "Chisinau",
+    "options": [
+      "Belmopan",
+      "Bogota",
+      "Skopje",
+      "Chisinau"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_193"
+  },
+  {
+    "text": "Ibu kota dari negara Estonia adalah...",
+    "correctAnswer": "Tallinn",
+    "options": [
+      "Tbilisi",
+      "Tallinn",
+      "Teheran",
+      "Belmopan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_194"
+  },
+  {
+    "text": "Ibu kota dari negara Belgia adalah...",
+    "correctAnswer": "Brussel",
+    "options": [
+      "Brussel",
+      "Manama",
+      "Tarawa Selatan",
+      "Berlin"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_195"
+  },
+  {
+    "text": "Ibu kota dari negara Norwegia adalah...",
+    "correctAnswer": "Oslo",
+    "options": [
+      "Oslo",
+      "Bogota",
+      "Athena",
+      "Port-au-Prince"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_196"
+  },
+  {
+    "text": "Ibu kota dari negara Swiss adalah...",
+    "correctAnswer": "Bern",
+    "options": [
+      "Vientiane",
+      "Bandar Seri Begawan",
+      "Bern",
+      "Santo Domingo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_197"
+  },
+  {
+    "text": "Ibu kota dari negara Mikronesia adalah...",
+    "correctAnswer": "Palikir",
+    "options": [
+      "Palikir",
+      "Reykjavik",
+      "Victoria",
+      "Maputo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_198"
+  },
+  {
+    "text": "Ibu kota dari negara Guyana adalah...",
+    "correctAnswer": "Georgetown",
+    "options": [
+      "Guatemala City",
+      "Georgetown",
+      "Bangkok",
+      "Port Moresby"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_199"
+  },
+  {
+    "text": "Ibu kota dari negara Seychelles adalah...",
+    "correctAnswer": "Victoria",
+    "options": [
+      "Stockholm",
+      "Abuja",
+      "Ljubljana",
+      "Victoria"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_200"
+  },
+  {
+    "text": "Ibu kota dari negara Korea Selatan adalah...",
+    "correctAnswer": "Seoul",
+    "options": [
+      "Suva",
+      "Seoul",
+      "Port of Spain",
+      "Santiago"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_201"
+  },
+  {
+    "text": "Ibu kota dari negara Indonesia adalah...",
+    "correctAnswer": "Jakarta",
+    "options": [
+      "Canberra",
+      "Paris",
+      "Jakarta",
+      "Damaskus"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_202"
+  },
+  {
+    "text": "Ibu kota dari negara Bahama adalah...",
+    "correctAnswer": "Nassau",
+    "options": [
+      "Astana",
+      "Dublin",
+      "Nassau",
+      "Madrid"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_203"
+  },
+  {
+    "text": "Ibu kota dari negara Aljazair adalah...",
+    "correctAnswer": "Aljir",
+    "options": [
+      "Ankara",
+      "Aljir",
+      "Jakarta",
+      "Tegucigalpa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_204"
+  },
+  {
+    "text": "Ibu kota dari negara Liechtenstein adalah...",
+    "correctAnswer": "Vaduz",
+    "options": [
+      "Vaduz",
+      "Belmopan",
+      "Bogota",
+      "Brasilia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_205"
+  },
+  {
+    "text": "Ibu kota dari negara Zambia adalah...",
+    "correctAnswer": "Lusaka",
+    "options": [
+      "Lusaka",
+      "St. George's",
+      "Monako",
+      "Port Vila"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_206"
+  },
+  {
+    "text": "Ibu kota dari negara Qatar adalah...",
+    "correctAnswer": "Doha",
+    "options": [
+      "Doha",
+      "Kingston",
+      "Montevideo",
+      "Tarawa Selatan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_207"
+  },
+  {
+    "text": "Ibu kota dari negara Ceko adalah...",
+    "correctAnswer": "Praha",
+    "options": [
+      "Moskow",
+      "Beirut",
+      "Malabo",
+      "Praha"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_208"
+  },
+  {
+    "text": "Ibu kota dari negara Turki adalah...",
+    "correctAnswer": "Ankara",
+    "options": [
+      "Seoul",
+      "Nouakchott",
+      "Teheran",
+      "Ankara"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_209"
+  },
+  {
+    "text": "Ibu kota dari negara Turkmenistan adalah...",
+    "correctAnswer": "Ashgabat",
+    "options": [
+      "Guatemala City",
+      "Sanaa",
+      "Ashgabat",
+      "Bridgetown"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_210"
+  },
+  {
+    "text": "Ibu kota dari negara Bosnia dan Herzegovina adalah...",
+    "correctAnswer": "Sarajevo",
+    "options": [
+      "Kingston",
+      "Dushanbe",
+      "Sarajevo",
+      "Libreville"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_211"
+  },
+  {
+    "text": "Ibu kota dari negara Islandia adalah...",
+    "correctAnswer": "Reykjavik",
+    "options": [
+      "Singapura",
+      "Reykjavik",
+      "Skopje",
+      "Yerusalem Timur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_212"
+  },
+  {
+    "text": "Ibu kota dari negara Chili adalah...",
+    "correctAnswer": "Santiago",
+    "options": [
+      "Maseru",
+      "Santiago",
+      "Muskat",
+      "Kabul"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_213"
+  },
+  {
+    "text": "Ibu kota dari negara Libya adalah...",
+    "correctAnswer": "Tripoli",
+    "options": [
+      "Nouakchott",
+      "Tripoli",
+      "Ankara",
+      "Zagreb"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_214"
+  },
+  {
+    "text": "Ibu kota dari negara Selandia Baru adalah...",
+    "correctAnswer": "Wellington",
+    "options": [
+      "Tashkent",
+      "Kairo",
+      "Wellington",
+      "Havana"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_215"
+  },
+  {
+    "text": "Ibu kota dari negara Kepulauan Solomon adalah...",
+    "correctAnswer": "Honiara",
+    "options": [
+      "Naypyidaw",
+      "Honiara",
+      "Kolombo",
+      "Yaren"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_216"
+  },
+  {
+    "text": "Ibu kota dari negara Bolivia adalah...",
+    "correctAnswer": "Sucre",
+    "options": [
+      "Ljubljana",
+      "Tallinn",
+      "Sucre",
+      "Stockholm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_217"
+  },
+  {
+    "text": "Ibu kota dari negara Latvia adalah...",
+    "correctAnswer": "Riga",
+    "options": [
+      "Riga",
+      "Beijing",
+      "Bern",
+      "Tegucigalpa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_218"
+  },
+  {
+    "text": "Ibu kota dari negara Guinea Khatulistiwa adalah...",
+    "correctAnswer": "Malabo",
+    "options": [
+      "Budapest",
+      "Bissau",
+      "Reykjavik",
+      "Malabo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_219"
+  },
+  {
+    "text": "Ibu kota dari negara Thailand adalah...",
+    "correctAnswer": "Bangkok",
+    "options": [
+      "Podgorica",
+      "Lilongwe",
+      "Praia",
+      "Bangkok"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_220"
+  },
+  {
+    "text": "Ibu kota dari negara Niger adalah...",
+    "correctAnswer": "Niamey",
+    "options": [
+      "Monako",
+      "Niamey",
+      "Berlin",
+      "Windhoek"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_221"
+  },
+  {
+    "text": "Ibu kota dari negara Malawi adalah...",
+    "correctAnswer": "Lilongwe",
+    "options": [
+      "Lilongwe",
+      "Panama City",
+      "Pretoria",
+      "Paris"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_222"
+  },
+  {
+    "text": "Ibu kota dari negara Sao Tome dan Principe adalah...",
+    "correctAnswer": "Sao Tome",
+    "options": [
+      "Sao Tome",
+      "Athena",
+      "Ottawa",
+      "Port Louis"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_223"
+  },
+  {
+    "text": "Ibu kota dari negara Republik Dominika adalah...",
+    "correctAnswer": "Santo Domingo",
+    "options": [
+      "Guatemala City",
+      "Santo Domingo",
+      "Kabul",
+      "Castries"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_224"
+  },
+  {
+    "text": "Ibu kota dari negara Singapura adalah...",
+    "correctAnswer": "Singapura",
+    "options": [
+      "Dili",
+      "Moskow",
+      "Singapura",
+      "Luksemburg"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_225"
+  },
+  {
+    "text": "Ibu kota dari negara Kepulauan Marshall adalah...",
+    "correctAnswer": "Majuro",
+    "options": [
+      "St. George's",
+      "Majuro",
+      "Bukares",
+      "Apia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_226"
+  },
+  {
+    "text": "Ibu kota dari negara Kamboja adalah...",
+    "correctAnswer": "Phnom Penh",
+    "options": [
+      "Phnom Penh",
+      "Lima",
+      "Abuja",
+      "Kathmandu"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_227"
+  },
+  {
+    "text": "Ibu kota dari negara Austria adalah...",
+    "correctAnswer": "Wina",
+    "options": [
+      "Havana",
+      "Wina",
+      "Pyongyang",
+      "Montevideo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_228"
+  },
+  {
+    "text": "Ibu kota dari negara Kosta Rika adalah...",
+    "correctAnswer": "San Jose",
+    "options": [
+      "Vientiane",
+      "Sanaa",
+      "San Jose",
+      "Phnom Penh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_229"
+  },
+  {
+    "text": "Ibu kota dari negara Uni Emirat Arab adalah...",
+    "correctAnswer": "Abu Dhabi",
+    "options": [
+      "Buenos Aires",
+      "Abu Dhabi",
+      "Praha",
+      "Kabul"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_230"
+  },
+  {
+    "text": "Ibu kota dari negara Tanzania adalah...",
+    "correctAnswer": "Dodoma",
+    "options": [
+      "Dodoma",
+      "Brazzaville",
+      "Kairo",
+      "Windhoek"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_231"
+  },
+  {
+    "text": "Ibu kota dari negara Kanada adalah...",
+    "correctAnswer": "Ottawa",
+    "options": [
+      "Ottawa",
+      "Teheran",
+      "Tripoli",
+      "Gitega"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_232"
+  },
+  {
+    "text": "Ibu kota dari negara Senegal adalah...",
+    "correctAnswer": "Dakar",
+    "options": [
+      "Dakar",
+      "Belmopan",
+      "Brazzaville",
+      "Sarajevo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_233"
+  },
+  {
+    "text": "Ibu kota dari negara Paraguay adalah...",
+    "correctAnswer": "Asuncion",
+    "options": [
+      "Belmopan",
+      "Helsinki",
+      "Gaborone",
+      "Asuncion"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_234"
+  },
+  {
+    "text": "Ibu kota dari negara Israel adalah...",
+    "correctAnswer": "Yerusalem",
+    "options": [
+      "Beograd",
+      "Yerusalem",
+      "Port Louis",
+      "Belmopan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_235"
+  },
+  {
+    "text": "Ibu kota dari negara Peru adalah...",
+    "correctAnswer": "Lima",
+    "options": [
+      "Yerevan",
+      "Nukuʻalofa",
+      "Lima",
+      "Helsinki"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_236"
+  },
+  {
+    "text": "Ibu kota dari negara Serbia adalah...",
+    "correctAnswer": "Beograd",
+    "options": [
+      "Kingston",
+      "Bukares",
+      "Beograd",
+      "Khartoum"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_237"
+  },
+  {
+    "text": "Ibu kota dari negara Sierra Leone adalah...",
+    "correctAnswer": "Freetown",
+    "options": [
+      "Washington, D.C.",
+      "Libreville",
+      "Freetown",
+      "Khartoum"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_238"
+  },
+  {
+    "text": "Ibu kota dari negara Fiji adalah...",
+    "correctAnswer": "Suva",
+    "options": [
+      "Palikir",
+      "Suva",
+      "Bandar Seri Begawan",
+      "Amsterdam"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_239"
+  },
+  {
+    "text": "Ibu kota dari negara Maladewa adalah...",
+    "correctAnswer": "Male",
+    "options": [
+      "Male",
+      "Ouagadougou",
+      "Brazzaville",
+      "Wina"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_240"
+  },
+  {
+    "text": "Ibu kota dari negara Spanyol adalah...",
+    "correctAnswer": "Madrid",
+    "options": [
+      "Rabat",
+      "Naypyidaw",
+      "Madrid",
+      "Kuala Lumpur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_241"
+  },
+  {
+    "text": "Ibu kota dari negara Sri Lanka adalah...",
+    "correctAnswer": "Kolombo",
+    "options": [
+      "Kolombo",
+      "Yamoussoukro",
+      "Bratislava",
+      "Sarajevo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_242"
+  },
+  {
+    "text": "Ibu kota dari negara Georgia adalah...",
+    "correctAnswer": "Tbilisi",
+    "options": [
+      "Amsterdam",
+      "Port of Spain",
+      "Tbilisi",
+      "Kuala Lumpur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_243"
+  },
+  {
+    "text": "Ibu kota dari negara Guatemala adalah...",
+    "correctAnswer": "Guatemala City",
+    "options": [
+      "Budapest",
+      "Damaskus",
+      "Santo Domingo",
+      "Guatemala City"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_244"
+  },
+  {
+    "text": "Ibu kota dari negara Nepal adalah...",
+    "correctAnswer": "Kathmandu",
+    "options": [
+      "Kathmandu",
+      "Warsawa",
+      "Vilnius",
+      "Khartoum"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_245"
+  },
+  {
+    "text": "Ibu kota dari negara Kenya adalah...",
+    "correctAnswer": "Nairobi",
+    "options": [
+      "Amman",
+      "Lima",
+      "Tirana",
+      "Nairobi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_246"
+  },
+  {
+    "text": "Ibu kota dari negara Mozambik adalah...",
+    "correctAnswer": "Maputo",
+    "options": [
+      "Riga",
+      "Maputo",
+      "Valletta",
+      "Bratislava"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_247"
+  },
+  {
+    "text": "Ibu kota dari negara Gabon adalah...",
+    "correctAnswer": "Libreville",
+    "options": [
+      "Conakry",
+      "Luanda",
+      "Libreville",
+      "San Jose"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_248"
+  },
+  {
+    "text": "Ibu kota dari negara San Marino adalah...",
+    "correctAnswer": "San Marino",
+    "options": [
+      "San Marino",
+      "Chisinau",
+      "Nairobi",
+      "Aljir"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_249"
+  },
+  {
+    "text": "Ibu kota dari negara Albania adalah...",
+    "correctAnswer": "Tirana",
+    "options": [
+      "Kigali",
+      "Muskat",
+      "Tirana",
+      "Ngerulmud"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_250"
+  },
+  {
+    "text": "Ibu kota dari negara Mali adalah...",
+    "correctAnswer": "Bamako",
+    "options": [
+      "Funafuti",
+      "Niamey",
+      "Bamako",
+      "Tunis"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_251"
+  },
+  {
+    "text": "Ibu kota dari negara Italia adalah...",
+    "correctAnswer": "Roma",
+    "options": [
+      "Roma",
+      "Vaduz",
+      "Moskow",
+      "Apia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_252"
+  },
+  {
+    "text": "Ibu kota dari negara Mesir adalah...",
+    "correctAnswer": "Kairo",
+    "options": [
+      "Monrovia",
+      "San Marino",
+      "Bishkek",
+      "Kairo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_253"
+  },
+  {
+    "text": "Ibu kota dari negara Dominika adalah...",
+    "correctAnswer": "Roseau",
+    "options": [
+      "Kigali",
+      "Monako",
+      "Buenos Aires",
+      "Roseau"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_254"
+  },
+  {
+    "text": "Ibu kota dari negara Lebanon adalah...",
+    "correctAnswer": "Beirut",
+    "options": [
+      "Addis Ababa",
+      "Beirut",
+      "Baku",
+      "Tokyo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_255"
+  },
+  {
+    "text": "Ibu kota dari negara Kuba adalah...",
+    "correctAnswer": "Havana",
+    "options": [
+      "Havana",
+      "Asmara",
+      "Conakry",
+      "Kathmandu"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_256"
+  },
+  {
+    "text": "Ibu kota dari negara Korea Utara adalah...",
+    "correctAnswer": "Pyongyang",
+    "options": [
+      "Nukuʻalofa",
+      "Reykjavik",
+      "Pyongyang",
+      "N'Djamena"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_257"
+  },
+  {
+    "text": "Ibu kota dari negara Eswatini adalah...",
+    "correctAnswer": "Mbabane",
+    "options": [
+      "Riyadh",
+      "Paris",
+      "Mbabane",
+      "Tripoli"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_258"
+  },
+  {
+    "text": "Ibu kota dari negara Prancis adalah...",
+    "correctAnswer": "Paris",
+    "options": [
+      "Paris",
+      "Luksemburg",
+      "Basseterre",
+      "Yamoussoukro"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_259"
+  },
+  {
+    "text": "Ibu kota dari negara Kroasia adalah...",
+    "correctAnswer": "Zagreb",
+    "options": [
+      "Nukuʻalofa",
+      "St. John's",
+      "Aljir",
+      "Zagreb"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_260"
+  },
+  {
+    "text": "Ibu kota dari negara Grenada adalah...",
+    "correctAnswer": "St. George's",
+    "options": [
+      "Nikosia",
+      "Sanaa",
+      "N'Djamena",
+      "St. George's"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_261"
+  },
+  {
+    "text": "Ibu kota dari negara Oman adalah...",
+    "correctAnswer": "Muskat",
+    "options": [
+      "Tarawa Selatan",
+      "Aljir",
+      "Ngerulmud",
+      "Muskat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_262"
+  },
+  {
+    "text": "Ibu kota dari negara Lesotho adalah...",
+    "correctAnswer": "Maseru",
+    "options": [
+      "St. John's",
+      "Caracas",
+      "Dodoma",
+      "Maseru"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_263"
+  },
+  {
+    "text": "Ibu kota dari negara Irlandia adalah...",
+    "correctAnswer": "Dublin",
+    "options": [
+      "Dublin",
+      "London",
+      "Port-au-Prince",
+      "Tripoli"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_264"
+  },
+  {
+    "text": "Ibu kota dari negara Rumania adalah...",
+    "correctAnswer": "Bukares",
+    "options": [
+      "Tirana",
+      "Islamabad",
+      "Doha",
+      "Bukares"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_265"
+  },
+  {
+    "text": "Ibu kota dari negara India adalah...",
+    "correctAnswer": "New Delhi",
+    "options": [
+      "Niamey",
+      "Bangkok",
+      "New Delhi",
+      "Banjul"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_266"
+  },
+  {
+    "text": "Ibu kota dari negara Nikaragua adalah...",
+    "correctAnswer": "Managua",
+    "options": [
+      "Vatikan",
+      "Managua",
+      "Kathmandu",
+      "Tunis"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_267"
+  },
+  {
+    "text": "Ibu kota dari negara Guinea adalah...",
+    "correctAnswer": "Conakry",
+    "options": [
+      "Monako",
+      "Kabul",
+      "Vaduz",
+      "Conakry"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_268"
+  },
+  {
+    "text": "Ibu kota dari negara Yaman adalah...",
+    "correctAnswer": "Sanaa",
+    "options": [
+      "Roma",
+      "Bissau",
+      "Apia",
+      "Sanaa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_269"
+  },
+  {
+    "text": "Ibu kota dari negara Mongolia adalah...",
+    "correctAnswer": "Ulaanbaatar",
+    "options": [
+      "Kuala Lumpur",
+      "Sarajevo",
+      "Bandar Seri Begawan",
+      "Ulaanbaatar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_270"
+  },
+  {
+    "text": "Ibu kota dari negara Irak adalah...",
+    "correctAnswer": "Baghdad",
+    "options": [
+      "Kigali",
+      "Ashgabat",
+      "Baghdad",
+      "Mbabane"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_271"
+  },
+  {
+    "text": "Ibu kota dari negara Panama adalah...",
+    "correctAnswer": "Panama City",
+    "options": [
+      "Budapest",
+      "Panama City",
+      "Zagreb",
+      "Tunis"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_272"
+  },
+  {
+    "text": "Ibu kota dari negara Bulgaria adalah...",
+    "correctAnswer": "Sofia",
+    "options": [
+      "Basseterre",
+      "Minsk",
+      "Sao Tome",
+      "Sofia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_273"
+  },
+  {
+    "text": "Ibu kota dari negara Inggris Raya adalah...",
+    "correctAnswer": "London",
+    "options": [
+      "London",
+      "Chisinau",
+      "Freetown",
+      "Vatikan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_274"
+  },
+  {
+    "text": "Ibu kota dari negara Papua Nugini adalah...",
+    "correctAnswer": "Port Moresby",
+    "options": [
+      "Kopenhagen",
+      "Podgorica",
+      "Lome",
+      "Port Moresby"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_275"
+  },
+  {
+    "text": "Ibu kota dari negara Slovenia adalah...",
+    "correctAnswer": "Ljubljana",
+    "options": [
+      "Yamoussoukro",
+      "Ljubljana",
+      "Mexico City",
+      "Yerusalem"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_276"
+  },
+  {
+    "text": "Ibu kota dari negara Belize adalah...",
+    "correctAnswer": "Belmopan",
+    "options": [
+      "Basseterre",
+      "Accra",
+      "Quito",
+      "Belmopan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_277"
+  },
+  {
+    "text": "Ibu kota dari negara Denmark adalah...",
+    "correctAnswer": "Kopenhagen",
+    "options": [
+      "Kairo",
+      "Kopenhagen",
+      "Castries",
+      "Tallinn"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_278"
+  },
+  {
+    "text": "Ibu kota dari negara Palestina adalah...",
+    "correctAnswer": "Yerusalem Timur",
+    "options": [
+      "Yerusalem Timur",
+      "Bangkok",
+      "Paramaribo",
+      "Panama City"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_279"
+  },
+  {
+    "text": "Ibu kota dari negara Trinidad dan Tobago adalah...",
+    "correctAnswer": "Port of Spain",
+    "options": [
+      "Port of Spain",
+      "Sanaa",
+      "Tbilisi",
+      "London"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_280"
+  },
+  {
+    "text": "Ibu kota dari negara Gambia adalah...",
+    "correctAnswer": "Banjul",
+    "options": [
+      "Banjul",
+      "Valletta",
+      "Luksemburg",
+      "Yaounde"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_281"
+  },
+  {
+    "text": "Ibu kota dari negara Vietnam adalah...",
+    "correctAnswer": "Hanoi",
+    "options": [
+      "Hanoi",
+      "Freetown",
+      "Yamoussoukro",
+      "Sucre"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_282"
+  },
+  {
+    "text": "Ibu kota dari negara Finlandia adalah...",
+    "correctAnswer": "Helsinki",
+    "options": [
+      "Helsinki",
+      "Lima",
+      "Kyiv",
+      "Buenos Aires"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_283"
+  },
+  {
+    "text": "Ibu kota dari negara Afghanistan adalah...",
+    "correctAnswer": "Kabul",
+    "options": [
+      "Kabul",
+      "Berlin",
+      "Lilongwe",
+      "Nukuʻalofa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_284"
+  },
+  {
+    "text": "Ibu kota dari negara Laos adalah...",
+    "correctAnswer": "Vientiane",
+    "options": [
+      "Manila",
+      "Kingstown",
+      "Vientiane",
+      "Lisboa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_285"
+  },
+  {
+    "text": "Ibu kota dari negara Myanmar adalah...",
+    "correctAnswer": "Naypyidaw",
+    "options": [
+      "Tegucigalpa",
+      "Lome",
+      "Managua",
+      "Naypyidaw"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_286"
+  },
+  {
+    "text": "Ibu kota dari negara Haiti adalah...",
+    "correctAnswer": "Port-au-Prince",
+    "options": [
+      "N'Djamena",
+      "Beirut",
+      "Port-au-Prince",
+      "Yerusalem Timur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_287"
+  },
+  {
+    "text": "Ibu kota dari negara Sudan Selatan adalah...",
+    "correctAnswer": "Juba",
+    "options": [
+      "Juba",
+      "Maseru",
+      "Bridgetown",
+      "Suva"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_288"
+  },
+  {
+    "text": "Ibu kota dari negara Brunei adalah...",
+    "correctAnswer": "Bandar Seri Begawan",
+    "options": [
+      "Bandar Seri Begawan",
+      "Nairobi",
+      "Aljir",
+      "Kingstown"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_289"
+  },
+  {
+    "text": "Ibu kota dari negara Brasil adalah...",
+    "correctAnswer": "Brasilia",
+    "options": [
+      "Brasilia",
+      "Kathmandu",
+      "Santo Domingo",
+      "Sarajevo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_290"
+  },
+  {
+    "text": "Ibu kota dari negara Liberia adalah...",
+    "correctAnswer": "Monrovia",
+    "options": [
+      "Singapura",
+      "Monrovia",
+      "Skopje",
+      "Lilongwe"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_291"
+  },
+  {
+    "text": "Ibu kota dari negara Madagaskar adalah...",
+    "correctAnswer": "Antananarivo",
+    "options": [
+      "Niamey",
+      "Nikosia",
+      "Antananarivo",
+      "Doha"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_292"
+  },
+  {
+    "text": "Ibu kota dari negara Azerbaijan adalah...",
+    "correctAnswer": "Baku",
+    "options": [
+      "Baku",
+      "Tallinn",
+      "Roma",
+      "Bissau"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_293"
+  },
+  {
+    "text": "Ibu kota dari negara Filipina adalah...",
+    "correctAnswer": "Manila",
+    "options": [
+      "Manila",
+      "Oslo",
+      "Mogadishu",
+      "Kigali"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_294"
+  },
+  {
+    "text": "Ibu kota dari negara Republik Afrika Tengah adalah...",
+    "correctAnswer": "Bangui",
+    "options": [
+      "Canberra",
+      "Dublin",
+      "Singapura",
+      "Bangui"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_295"
+  },
+  {
+    "text": "Ibu kota dari negara Bangladesh adalah...",
+    "correctAnswer": "Dhaka",
+    "options": [
+      "Lusaka",
+      "Thimphu",
+      "Dhaka",
+      "Monako"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_296"
+  },
+  {
+    "text": "Ibu kota dari negara Tunisia adalah...",
+    "correctAnswer": "Tunis",
+    "options": [
+      "Beograd",
+      "Malabo",
+      "Abuja",
+      "Tunis"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_297"
+  },
+  {
+    "text": "Ibu kota dari negara Somalia adalah...",
+    "correctAnswer": "Mogadishu",
+    "options": [
+      "Riga",
+      "Mogadishu",
+      "Roma",
+      "Santiago"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_298"
+  },
+  {
+    "text": "Ibu kota dari negara Uzbekistan adalah...",
+    "correctAnswer": "Tashkent",
+    "options": [
+      "London",
+      "Tashkent",
+      "Tripoli",
+      "Funafuti"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_299"
+  },
+  {
+    "text": "Ibu kota dari negara Afrika Selatan adalah...",
+    "correctAnswer": "Pretoria",
+    "options": [
+      "Lusaka",
+      "Singapura",
+      "Kolombo",
+      "Pretoria"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_300"
+  },
+  {
+    "text": "Ibu kota dari negara Rusia adalah...",
+    "correctAnswer": "Moskow",
+    "options": [
+      "Beograd",
+      "Port Louis",
+      "Moskow",
+      "Beijing"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_301"
+  },
+  {
+    "text": "Ibu kota dari negara Bhutan adalah...",
+    "correctAnswer": "Thimphu",
+    "options": [
+      "Thimphu",
+      "Yerevan",
+      "Sofia",
+      "St. John's"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_302"
+  },
+  {
+    "text": "Ibu kota dari negara Guinea-Bissau adalah...",
+    "correctAnswer": "Bissau",
+    "options": [
+      "Caracas",
+      "Bissau",
+      "Lome",
+      "Yaren"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_303"
+  },
+  {
+    "text": "Ibu kota dari negara Kolombia adalah...",
+    "correctAnswer": "Bogota",
+    "options": [
+      "Bogota",
+      "Havana",
+      "Tirana",
+      "Roseau"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_304"
+  },
+  {
+    "text": "Ibu kota dari negara Tuvalu adalah...",
+    "correctAnswer": "Funafuti",
+    "options": [
+      "Phnom Penh",
+      "Nouakchott",
+      "Funafuti",
+      "Stockholm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_305"
+  },
+  {
+    "text": "Ibu kota dari negara Honduras adalah...",
+    "correctAnswer": "Tegucigalpa",
+    "options": [
+      "Abu Dhabi",
+      "Kopenhagen",
+      "Tegucigalpa",
+      "Beograd"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_306"
+  },
+  {
+    "text": "Ibu kota dari negara Suriah adalah...",
+    "correctAnswer": "Damaskus",
+    "options": [
+      "Yerevan",
+      "Libreville",
+      "Abuja",
+      "Damaskus"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_307"
+  },
+  {
+    "text": "Ibu kota dari negara Monako adalah...",
+    "correctAnswer": "Monako",
+    "options": [
+      "Monako",
+      "Washington, D.C.",
+      "Brazzaville",
+      "Vatikan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_308"
+  },
+  {
+    "text": "Ibu kota dari negara Slovakia adalah...",
+    "correctAnswer": "Bratislava",
+    "options": [
+      "Honiara",
+      "Athena",
+      "Bratislava",
+      "Quito"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_309"
+  },
+  {
+    "text": "Ibu kota dari negara Armenia adalah...",
+    "correctAnswer": "Yerevan",
+    "options": [
+      "Santiago",
+      "Bukares",
+      "Yerevan",
+      "Tallinn"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_310"
+  },
+  {
+    "text": "Ibu kota dari negara Amerika Serikat adalah...",
+    "correctAnswer": "Washington, D.C.",
+    "options": [
+      "Roseau",
+      "Washington, D.C.",
+      "Bogota",
+      "Basseterre"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_311"
+  },
+  {
+    "text": "Ibu kota dari negara Barbados adalah...",
+    "correctAnswer": "Bridgetown",
+    "options": [
+      "Paramaribo",
+      "Helsinki",
+      "Bridgetown",
+      "Praha"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_312"
+  },
+  {
+    "text": "Ibu kota dari negara Mauritania adalah...",
+    "correctAnswer": "Nouakchott",
+    "options": [
+      "Helsinki",
+      "Manila",
+      "Kingston",
+      "Nouakchott"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_313"
+  },
+  {
+    "text": "Ibu kota dari negara Portugal adalah...",
+    "correctAnswer": "Lisboa",
+    "options": [
+      "Vatikan",
+      "Bratislava",
+      "Lisboa",
+      "Sanaa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_314"
+  },
+  {
+    "text": "Ibu kota dari negara Yordania adalah...",
+    "correctAnswer": "Amman",
+    "options": [
+      "Baghdad",
+      "San Jose",
+      "Tirana",
+      "Amman"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_315"
+  },
+  {
+    "text": "Ibu kota dari negara Arab Saudi adalah...",
+    "correctAnswer": "Riyadh",
+    "options": [
+      "Dodoma",
+      "Dushanbe",
+      "Riyadh",
+      "Baghdad"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_316"
+  },
+  {
+    "text": "Ibu kota dari negara Mauritius adalah...",
+    "correctAnswer": "Port Louis",
+    "options": [
+      "Bissau",
+      "Managua",
+      "Port Louis",
+      "Roma"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_317"
+  },
+  {
+    "text": "Ibu kota dari negara Uruguay adalah...",
+    "correctAnswer": "Montevideo",
+    "options": [
+      "Victoria",
+      "Montevideo",
+      "Pyongyang",
+      "Yerusalem Timur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_318"
+  },
+  {
+    "text": "Ibu kota dari negara Lituania adalah...",
+    "correctAnswer": "Vilnius",
+    "options": [
+      "Vilnius",
+      "Windhoek",
+      "Male",
+      "Tunis"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_319"
+  },
+  {
+    "text": "Ibu kota dari negara Jamaika adalah...",
+    "correctAnswer": "Kingston",
+    "options": [
+      "Freetown",
+      "Ottawa",
+      "Kingston",
+      "Manama"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_320"
+  },
+  {
+    "text": "Ibu kota dari negara Burundi adalah...",
+    "correctAnswer": "Gitega",
+    "options": [
+      "Minsk",
+      "Gitega",
+      "Ankara",
+      "Banda Kuwait"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_321"
+  },
+  {
+    "text": "Ibu kota dari negara Angola adalah...",
+    "correctAnswer": "Luanda",
+    "options": [
+      "Luanda",
+      "Aljir",
+      "Kyiv",
+      "Nassau"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_322"
+  },
+  {
+    "text": "Ibu kota dari negara Maroko adalah...",
+    "correctAnswer": "Rabat",
+    "options": [
+      "Manila",
+      "Niamey",
+      "Astana",
+      "Rabat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_323"
+  },
+  {
+    "text": "Ibu kota dari negara Timor Leste adalah...",
+    "correctAnswer": "Dili",
+    "options": [
+      "Dili",
+      "Bissau",
+      "Nairobi",
+      "Riga"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_324"
+  },
+  {
+    "text": "Ibu kota dari negara Rwanda adalah...",
+    "correctAnswer": "Kigali",
+    "options": [
+      "Dodoma",
+      "Wina",
+      "Kigali",
+      "Bamako"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_325"
+  },
+  {
+    "text": "Ibu kota dari negara Belarus adalah...",
+    "correctAnswer": "Minsk",
+    "options": [
+      "Minsk",
+      "Porto-Novo",
+      "Bangkok",
+      "Belmopan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_326"
+  },
+  {
+    "text": "Kota Djibouti merupakan ibu kota dari negara...",
+    "correctAnswer": "Djibouti",
+    "options": [
+      "Djibouti",
+      "Antigua dan Barbuda",
+      "Irak",
+      "Ukraina"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_327"
+  },
+  {
+    "text": "Kota Athena merupakan ibu kota dari negara...",
+    "correctAnswer": "Yunani",
+    "options": [
+      "Uganda",
+      "Thailand",
+      "Grenada",
+      "Yunani"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_328"
+  },
+  {
+    "text": "Kota Abuja merupakan ibu kota dari negara...",
+    "correctAnswer": "Nigeria",
+    "options": [
+      "Ghana",
+      "Nigeria",
+      "Trinidad dan Tobago",
+      "Jamaika"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_329"
+  },
+  {
+    "text": "Kota Luksemburg merupakan ibu kota dari negara...",
+    "correctAnswer": "Luksemburg",
+    "options": [
+      "Uzbekistan",
+      "Indonesia",
+      "Luksemburg",
+      "Norwegia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_330"
+  },
+  {
+    "text": "Kota Ngerulmud merupakan ibu kota dari negara...",
+    "correctAnswer": "Palau",
+    "options": [
+      "Argentina",
+      "Australia",
+      "Palau",
+      "Sudan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_331"
+  },
+  {
+    "text": "Kota Brazzaville merupakan ibu kota dari negara...",
+    "correctAnswer": "Kongo",
+    "options": [
+      "Burundi",
+      "Kongo",
+      "Yunani",
+      "Islandia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_332"
+  },
+  {
+    "text": "Kota Banda Kuwait merupakan ibu kota dari negara...",
+    "correctAnswer": "Kuwait",
+    "options": [
+      "Gabon",
+      "Brunei",
+      "Kuwait",
+      "Eritrea"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_333"
+  },
+  {
+    "text": "Kota Harare merupakan ibu kota dari negara...",
+    "correctAnswer": "Zimbabwe",
+    "options": [
+      "Ekuador",
+      "Republik Dominika",
+      "Zimbabwe",
+      "Afghanistan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_334"
+  },
+  {
+    "text": "Kota Astana merupakan ibu kota dari negara...",
+    "correctAnswer": "Kazakhstan",
+    "options": [
+      "Thailand",
+      "Ghana",
+      "Kazakhstan",
+      "Yunani"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_335"
+  },
+  {
+    "text": "Kota Tokyo merupakan ibu kota dari negara...",
+    "correctAnswer": "Jepang",
+    "options": [
+      "Madagaskar",
+      "Jepang",
+      "Uganda",
+      "Bahrain"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_336"
+  },
+  {
+    "text": "Kota Manama merupakan ibu kota dari negara...",
+    "correctAnswer": "Bahrain",
+    "options": [
+      "Bahrain",
+      "Kuwait",
+      "Jamaika",
+      "Spanyol"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_337"
+  },
+  {
+    "text": "Kota Gaborone merupakan ibu kota dari negara...",
+    "correctAnswer": "Botswana",
+    "options": [
+      "Azerbaijan",
+      "Rwanda",
+      "Kepulauan Marshall",
+      "Botswana"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_338"
+  },
+  {
+    "text": "Kota Paramaribo merupakan ibu kota dari negara...",
+    "correctAnswer": "Suriname",
+    "options": [
+      "Afrika Selatan",
+      "Suriname",
+      "Azerbaijan",
+      "Jepang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_339"
+  },
+  {
+    "text": "Kota Nikosia merupakan ibu kota dari negara...",
+    "correctAnswer": "Siprus",
+    "options": [
+      "Palestina",
+      "Siprus",
+      "Guyana",
+      "Filipina"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_340"
+  },
+  {
+    "text": "Kota Yaounde merupakan ibu kota dari negara...",
+    "correctAnswer": "Kamerun",
+    "options": [
+      "Ghana",
+      "Kamerun",
+      "Rusia",
+      "Belanda"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_341"
+  },
+  {
+    "text": "Kota Buenos Aires merupakan ibu kota dari negara...",
+    "correctAnswer": "Argentina",
+    "options": [
+      "Belgia",
+      "Argentina",
+      "Pakistan",
+      "Turkmenistan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_342"
+  },
+  {
+    "text": "Kota Kampala merupakan ibu kota dari negara...",
+    "correctAnswer": "Uganda",
+    "options": [
+      "Oman",
+      "Uganda",
+      "Haiti",
+      "Belize"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_343"
+  },
+  {
+    "text": "Kota San Salvador merupakan ibu kota dari negara...",
+    "correctAnswer": "El Salvador",
+    "options": [
+      "El Salvador",
+      "Guinea-Bissau",
+      "Prancis",
+      "Guinea"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_344"
+  },
+  {
+    "text": "Kota Addis Ababa merupakan ibu kota dari negara...",
+    "correctAnswer": "Ethiopia",
+    "options": [
+      "Ethiopia",
+      "Kolombia",
+      "Indonesia",
+      "Luksemburg"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_345"
+  },
+  {
+    "text": "Kota Yaren merupakan ibu kota dari negara...",
+    "correctAnswer": "Nauru",
+    "options": [
+      "Nauru",
+      "Pantai Gading",
+      "Vanuatu",
+      "Albania"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_346"
+  },
+  {
+    "text": "Kota Porto-Novo merupakan ibu kota dari negara...",
+    "correctAnswer": "Benin",
+    "options": [
+      "India",
+      "Inggris Raya",
+      "Benin",
+      "Uganda"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_347"
+  },
+  {
+    "text": "Kota Skopje merupakan ibu kota dari negara...",
+    "correctAnswer": "Makedonia Utara",
+    "options": [
+      "Estonia",
+      "Qatar",
+      "Botswana",
+      "Makedonia Utara"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_348"
+  },
+  {
+    "text": "Kota St. John's merupakan ibu kota dari negara...",
+    "correctAnswer": "Antigua dan Barbuda",
+    "options": [
+      "Liberia",
+      "Benin",
+      "Antigua dan Barbuda",
+      "Sierra Leone"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_349"
+  },
+  {
+    "text": "Kota Apia merupakan ibu kota dari negara...",
+    "correctAnswer": "Samoa",
+    "options": [
+      "Sudan Selatan",
+      "Kongo",
+      "Belanda",
+      "Samoa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_350"
+  },
+  {
+    "text": "Kota Amsterdam merupakan ibu kota dari negara...",
+    "correctAnswer": "Belanda",
+    "options": [
+      "Belanda",
+      "Tiongkok",
+      "Kuwait",
+      "Grenada"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_351"
+  },
+  {
+    "text": "Kota Port Vila merupakan ibu kota dari negara...",
+    "correctAnswer": "Vanuatu",
+    "options": [
+      "Pakistan",
+      "Vanuatu",
+      "Malta",
+      "Filipina"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_352"
+  },
+  {
+    "text": "Kota Quito merupakan ibu kota dari negara...",
+    "correctAnswer": "Ekuador",
+    "options": [
+      "Spanyol",
+      "Korea Selatan",
+      "Niger",
+      "Ekuador"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_353"
+  },
+  {
+    "text": "Kota Praia merupakan ibu kota dari negara...",
+    "correctAnswer": "Tanjung Verde",
+    "options": [
+      "Tanjung Verde",
+      "Korea Selatan",
+      "Saint Kitts dan Nevis",
+      "Kolombia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_354"
+  },
+  {
+    "text": "Kota Nukuʻalofa merupakan ibu kota dari negara...",
+    "correctAnswer": "Tonga",
+    "options": [
+      "Maroko",
+      "Afghanistan",
+      "Tonga",
+      "Madagaskar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_355"
+  },
+  {
+    "text": "Kota Vatikan merupakan ibu kota dari negara...",
+    "correctAnswer": "Vatikan",
+    "options": [
+      "Yordania",
+      "Rumania",
+      "Vatikan",
+      "Turki"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_356"
+  },
+  {
+    "text": "Kota Beijing merupakan ibu kota dari negara...",
+    "correctAnswer": "Tiongkok",
+    "options": [
+      "Amerika Serikat",
+      "Tiongkok",
+      "Moldova",
+      "Ghana"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_357"
+  },
+  {
+    "text": "Kota Andorra la Vella merupakan ibu kota dari negara...",
+    "correctAnswer": "Andorra",
+    "options": [
+      "Filipina",
+      "Andorra",
+      "Vietnam",
+      "Jamaika"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_358"
+  },
+  {
+    "text": "Kota Dushanbe merupakan ibu kota dari negara...",
+    "correctAnswer": "Tajikistan",
+    "options": [
+      "Gambia",
+      "Swiss",
+      "Tajikistan",
+      "Gabon"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_359"
+  },
+  {
+    "text": "Kota Islamabad merupakan ibu kota dari negara...",
+    "correctAnswer": "Pakistan",
+    "options": [
+      "Pakistan",
+      "Siprus",
+      "Madagaskar",
+      "Bhutan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_360"
+  },
+  {
+    "text": "Kota Budapest merupakan ibu kota dari negara...",
+    "correctAnswer": "Hungaria",
+    "options": [
+      "Sudan Selatan",
+      "Iran",
+      "Hungaria",
+      "Malaysia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_361"
+  },
+  {
+    "text": "Kota Basseterre merupakan ibu kota dari negara...",
+    "correctAnswer": "Saint Kitts dan Nevis",
+    "options": [
+      "Suriah",
+      "Nauru",
+      "Saint Kitts dan Nevis",
+      "Turkmenistan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_362"
+  },
+  {
+    "text": "Kota Kuala Lumpur merupakan ibu kota dari negara...",
+    "correctAnswer": "Malaysia",
+    "options": [
+      "Myanmar",
+      "Malaysia",
+      "Norwegia",
+      "Nauru"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_363"
+  },
+  {
+    "text": "Kota Bishkek merupakan ibu kota dari negara...",
+    "correctAnswer": "Kirgistan",
+    "options": [
+      "Vatikan",
+      "Pantai Gading",
+      "Kirgistan",
+      "Saint Vincent"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_364"
+  },
+  {
+    "text": "Kota Berlin merupakan ibu kota dari negara...",
+    "correctAnswer": "Jerman",
+    "options": [
+      "Kosta Rika",
+      "Mesir",
+      "Jerman",
+      "Laos"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_365"
+  },
+  {
+    "text": "Kota Mexico City merupakan ibu kota dari negara...",
+    "correctAnswer": "Meksiko",
+    "options": [
+      "Libya",
+      "Angola",
+      "Meksiko",
+      "Irlandia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_366"
+  },
+  {
+    "text": "Kota Moroni merupakan ibu kota dari negara...",
+    "correctAnswer": "Komoro",
+    "options": [
+      "Burundi",
+      "Komoro",
+      "Lituania",
+      "Tuvalu"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_367"
+  },
+  {
+    "text": "Kota Stockholm merupakan ibu kota dari negara...",
+    "correctAnswer": "Swedia",
+    "options": [
+      "Arab Saudi",
+      "Israel",
+      "Swedia",
+      "Spanyol"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_368"
+  },
+  {
+    "text": "Kota Accra merupakan ibu kota dari negara...",
+    "correctAnswer": "Ghana",
+    "options": [
+      "Belanda",
+      "Norwegia",
+      "Ghana",
+      "Republik Afrika Tengah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_369"
+  },
+  {
+    "text": "Kota Valletta merupakan ibu kota dari negara...",
+    "correctAnswer": "Malta",
+    "options": [
+      "Malta",
+      "Senegal",
+      "Guinea",
+      "Argentina"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_370"
+  },
+  {
+    "text": "Kota Yamoussoukro merupakan ibu kota dari negara...",
+    "correctAnswer": "Pantai Gading",
+    "options": [
+      "Timor Leste",
+      "Vanuatu",
+      "Pantai Gading",
+      "Antigua dan Barbuda"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_371"
+  },
+  {
+    "text": "Kota Castries merupakan ibu kota dari negara...",
+    "correctAnswer": "Saint Lucia",
+    "options": [
+      "Slovakia",
+      "Kazakhstan",
+      "Saint Lucia",
+      "Andorra"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_372"
+  },
+  {
+    "text": "Kota Tarawa Selatan merupakan ibu kota dari negara...",
+    "correctAnswer": "Kiribati",
+    "options": [
+      "Kiribati",
+      "Sudan",
+      "Eswatini",
+      "Dominika"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_373"
+  },
+  {
+    "text": "Kota Warsawa merupakan ibu kota dari negara...",
+    "correctAnswer": "Polandia",
+    "options": [
+      "Mikronesia",
+      "Polandia",
+      "Jepang",
+      "Suriah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_374"
+  },
+  {
+    "text": "Kota Lome merupakan ibu kota dari negara...",
+    "correctAnswer": "Togo",
+    "options": [
+      "Belarus",
+      "Serbia",
+      "Eswatini",
+      "Togo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_375"
+  },
+  {
+    "text": "Kota N'Djamena merupakan ibu kota dari negara...",
+    "correctAnswer": "Chad",
+    "options": [
+      "Irlandia",
+      "Serbia",
+      "Chad",
+      "Korea Selatan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_376"
+  },
+  {
+    "text": "Kota Kyiv merupakan ibu kota dari negara...",
+    "correctAnswer": "Ukraina",
+    "options": [
+      "Mesir",
+      "Tonga",
+      "Ukraina",
+      "Paraguay"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_377"
+  },
+  {
+    "text": "Kota Windhoek merupakan ibu kota dari negara...",
+    "correctAnswer": "Namibia",
+    "options": [
+      "Namibia",
+      "Suriah",
+      "Hungaria",
+      "Burundi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_378"
+  },
+  {
+    "text": "Kota Canberra merupakan ibu kota dari negara...",
+    "correctAnswer": "Australia",
+    "options": [
+      "Maroko",
+      "Sudan",
+      "Ukraina",
+      "Australia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_379"
+  },
+  {
+    "text": "Kota Khartoum merupakan ibu kota dari negara...",
+    "correctAnswer": "Sudan",
+    "options": [
+      "Amerika Serikat",
+      "Nikaragua",
+      "Trinidad dan Tobago",
+      "Sudan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_380"
+  },
+  {
+    "text": "Kota Podgorica merupakan ibu kota dari negara...",
+    "correctAnswer": "Montenegro",
+    "options": [
+      "Montenegro",
+      "Mauritania",
+      "Tanjung Verde",
+      "Austria"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_381"
+  },
+  {
+    "text": "Kota Teheran merupakan ibu kota dari negara...",
+    "correctAnswer": "Iran",
+    "options": [
+      "Zimbabwe",
+      "Kuwait",
+      "Rwanda",
+      "Iran"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_382"
+  },
+  {
+    "text": "Kota Asmara merupakan ibu kota dari negara...",
+    "correctAnswer": "Eritrea",
+    "options": [
+      "Bosnia dan Herzegovina",
+      "Malawi",
+      "Eritrea",
+      "Mesir"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_383"
+  },
+  {
+    "text": "Kota Caracas merupakan ibu kota dari negara...",
+    "correctAnswer": "Venezuela",
+    "options": [
+      "Madagaskar",
+      "Argentina",
+      "Belgia",
+      "Venezuela"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_384"
+  },
+  {
+    "text": "Kota Kingstown merupakan ibu kota dari negara...",
+    "correctAnswer": "Saint Vincent",
+    "options": [
+      "Kenya",
+      "Kuwait",
+      "Eritrea",
+      "Saint Vincent"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_385"
+  },
+  {
+    "text": "Kota Ouagadougou merupakan ibu kota dari negara...",
+    "correctAnswer": "Burkina Faso",
+    "options": [
+      "Kroasia",
+      "Burkina Faso",
+      "Belarus",
+      "Irak"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_386"
+  },
+  {
+    "text": "Kota Chisinau merupakan ibu kota dari negara...",
+    "correctAnswer": "Moldova",
+    "options": [
+      "Moldova",
+      "Kiribati",
+      "Kuba",
+      "Gambia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_387"
+  },
+  {
+    "text": "Kota Tallinn merupakan ibu kota dari negara...",
+    "correctAnswer": "Estonia",
+    "options": [
+      "Saint Vincent",
+      "Estonia",
+      "Guinea-Bissau",
+      "Belarus"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_388"
+  },
+  {
+    "text": "Kota Brussel merupakan ibu kota dari negara...",
+    "correctAnswer": "Belgia",
+    "options": [
+      "Kiribati",
+      "Kuwait",
+      "Belgia",
+      "Republik Afrika Tengah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_389"
+  },
+  {
+    "text": "Kota Oslo merupakan ibu kota dari negara...",
+    "correctAnswer": "Norwegia",
+    "options": [
+      "Bosnia dan Herzegovina",
+      "Norwegia",
+      "Afghanistan",
+      "Jamaika"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_390"
+  },
+  {
+    "text": "Kota Bern merupakan ibu kota dari negara...",
+    "correctAnswer": "Swiss",
+    "options": [
+      "Inggris Raya",
+      "Swiss",
+      "Irak",
+      "Slovakia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_391"
+  },
+  {
+    "text": "Kota Palikir merupakan ibu kota dari negara...",
+    "correctAnswer": "Mikronesia",
+    "options": [
+      "San Marino",
+      "Kamerun",
+      "Niger",
+      "Mikronesia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_392"
+  },
+  {
+    "text": "Kota Georgetown merupakan ibu kota dari negara...",
+    "correctAnswer": "Guyana",
+    "options": [
+      "Meksiko",
+      "Chili",
+      "Eswatini",
+      "Guyana"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_393"
+  },
+  {
+    "text": "Kota Victoria merupakan ibu kota dari negara...",
+    "correctAnswer": "Seychelles",
+    "options": [
+      "Papua Nugini",
+      "Ekuador",
+      "Seychelles",
+      "Laos"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_394"
+  },
+  {
+    "text": "Kota Seoul merupakan ibu kota dari negara...",
+    "correctAnswer": "Korea Selatan",
+    "options": [
+      "Korea Selatan",
+      "Uganda",
+      "Siprus",
+      "Inggris Raya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_395"
+  },
+  {
+    "text": "Kota Jakarta merupakan ibu kota dari negara...",
+    "correctAnswer": "Indonesia",
+    "options": [
+      "Afrika Selatan",
+      "Swedia",
+      "Indonesia",
+      "Serbia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_396"
+  },
+  {
+    "text": "Kota Nassau merupakan ibu kota dari negara...",
+    "correctAnswer": "Bahama",
+    "options": [
+      "Guatemala",
+      "Bahama",
+      "Tunisia",
+      "Mozambik"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_397"
+  },
+  {
+    "text": "Kota Aljir merupakan ibu kota dari negara...",
+    "correctAnswer": "Aljazair",
+    "options": [
+      "Kuba",
+      "Kiribati",
+      "Aljazair",
+      "Madagaskar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_398"
+  },
+  {
+    "text": "Kota Vaduz merupakan ibu kota dari negara...",
+    "correctAnswer": "Liechtenstein",
+    "options": [
+      "Liechtenstein",
+      "Chad",
+      "Irlandia",
+      "Kirgistan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_399"
+  },
+  {
+    "text": "Kota Lusaka merupakan ibu kota dari negara...",
+    "correctAnswer": "Zambia",
+    "options": [
+      "Sri Lanka",
+      "Amerika Serikat",
+      "Malawi",
+      "Zambia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_400"
+  },
+  {
+    "text": "Kota Doha merupakan ibu kota dari negara...",
+    "correctAnswer": "Qatar",
+    "options": [
+      "Oman",
+      "Ghana",
+      "Qatar",
+      "Burundi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_401"
+  },
+  {
+    "text": "Kota Praha merupakan ibu kota dari negara...",
+    "correctAnswer": "Ceko",
+    "options": [
+      "Kenya",
+      "Maroko",
+      "Ceko",
+      "Vanuatu"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_402"
+  },
+  {
+    "text": "Kota Ankara merupakan ibu kota dari negara...",
+    "correctAnswer": "Turki",
+    "options": [
+      "Iran",
+      "Uni Emirat Arab",
+      "Tonga",
+      "Turki"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_403"
+  },
+  {
+    "text": "Kota Ashgabat merupakan ibu kota dari negara...",
+    "correctAnswer": "Turkmenistan",
+    "options": [
+      "Azerbaijan",
+      "Sudan",
+      "Turkmenistan",
+      "Kuba"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_404"
+  },
+  {
+    "text": "Kota Sarajevo merupakan ibu kota dari negara...",
+    "correctAnswer": "Bosnia dan Herzegovina",
+    "options": [
+      "Bosnia dan Herzegovina",
+      "Meksiko",
+      "Vanuatu",
+      "Rusia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_405"
+  },
+  {
+    "text": "Kota Reykjavik merupakan ibu kota dari negara...",
+    "correctAnswer": "Islandia",
+    "options": [
+      "Bangladesh",
+      "Islandia",
+      "Armenia",
+      "Indonesia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_406"
+  },
+  {
+    "text": "Kota Santiago merupakan ibu kota dari negara...",
+    "correctAnswer": "Chili",
+    "options": [
+      "Chili",
+      "Nigeria",
+      "Afrika Selatan",
+      "Maroko"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_407"
+  },
+  {
+    "text": "Kota Tripoli merupakan ibu kota dari negara...",
+    "correctAnswer": "Libya",
+    "options": [
+      "Libya",
+      "Denmark",
+      "Singapura",
+      "Estonia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_408"
+  },
+  {
+    "text": "Kota Wellington merupakan ibu kota dari negara...",
+    "correctAnswer": "Selandia Baru",
+    "options": [
+      "Selandia Baru",
+      "Maroko",
+      "Jerman",
+      "Senegal"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_409"
+  },
+  {
+    "text": "Kota Honiara merupakan ibu kota dari negara...",
+    "correctAnswer": "Kepulauan Solomon",
+    "options": [
+      "Kepulauan Solomon",
+      "Madagaskar",
+      "Bhutan",
+      "Malaysia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_410"
+  },
+  {
+    "text": "Kota Sucre merupakan ibu kota dari negara...",
+    "correctAnswer": "Bolivia",
+    "options": [
+      "Selandia Baru",
+      "Honduras",
+      "Bolivia",
+      "Afghanistan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_411"
+  },
+  {
+    "text": "Kota Riga merupakan ibu kota dari negara...",
+    "correctAnswer": "Latvia",
+    "options": [
+      "Botswana",
+      "Fiji",
+      "Israel",
+      "Latvia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_412"
+  },
+  {
+    "text": "Kota Malabo merupakan ibu kota dari negara...",
+    "correctAnswer": "Guinea Khatulistiwa",
+    "options": [
+      "Uzbekistan",
+      "Guinea Khatulistiwa",
+      "Saint Vincent",
+      "Andorra"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_413"
+  },
+  {
+    "text": "Kota Bangkok merupakan ibu kota dari negara...",
+    "correctAnswer": "Thailand",
+    "options": [
+      "Myanmar",
+      "Guyana",
+      "Israel",
+      "Thailand"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_414"
+  },
+  {
+    "text": "Kota Niamey merupakan ibu kota dari negara...",
+    "correctAnswer": "Niger",
+    "options": [
+      "Jerman",
+      "Azerbaijan",
+      "Polandia",
+      "Niger"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_415"
+  },
+  {
+    "text": "Kota Lilongwe merupakan ibu kota dari negara...",
+    "correctAnswer": "Malawi",
+    "options": [
+      "Brasil",
+      "Belize",
+      "Mauritania",
+      "Malawi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_416"
+  },
+  {
+    "text": "Kota Sao Tome merupakan ibu kota dari negara...",
+    "correctAnswer": "Sao Tome dan Principe",
+    "options": [
+      "Republik Dominika",
+      "Benin",
+      "Sao Tome dan Principe",
+      "Suriah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_417"
+  },
+  {
+    "text": "Kota Santo Domingo merupakan ibu kota dari negara...",
+    "correctAnswer": "Republik Dominika",
+    "options": [
+      "Afghanistan",
+      "Ekuador",
+      "Republik Dominika",
+      "Mikronesia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_418"
+  },
+  {
+    "text": "Kota Singapura merupakan ibu kota dari negara...",
+    "correctAnswer": "Singapura",
+    "options": [
+      "India",
+      "Singapura",
+      "Nauru",
+      "Afrika Selatan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_419"
+  },
+  {
+    "text": "Kota Majuro merupakan ibu kota dari negara...",
+    "correctAnswer": "Kepulauan Marshall",
+    "options": [
+      "Luksemburg",
+      "Kepulauan Solomon",
+      "Kepulauan Marshall",
+      "Tanzania"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_420"
+  },
+  {
+    "text": "Kota Phnom Penh merupakan ibu kota dari negara...",
+    "correctAnswer": "Kamboja",
+    "options": [
+      "Guinea-Bissau",
+      "Maroko",
+      "Irak",
+      "Kamboja"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_421"
+  },
+  {
+    "text": "Kota Wina merupakan ibu kota dari negara...",
+    "correctAnswer": "Austria",
+    "options": [
+      "Lesotho",
+      "Austria",
+      "Mauritania",
+      "Guinea-Bissau"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_422"
+  },
+  {
+    "text": "Kota San Jose merupakan ibu kota dari negara...",
+    "correctAnswer": "Kosta Rika",
+    "options": [
+      "Trinidad dan Tobago",
+      "Yunani",
+      "Kamerun",
+      "Kosta Rika"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_423"
+  },
+  {
+    "text": "Kota Abu Dhabi merupakan ibu kota dari negara...",
+    "correctAnswer": "Uni Emirat Arab",
+    "options": [
+      "Sudan Selatan",
+      "Paraguay",
+      "Prancis",
+      "Uni Emirat Arab"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_424"
+  },
+  {
+    "text": "Kota Dodoma merupakan ibu kota dari negara...",
+    "correctAnswer": "Tanzania",
+    "options": [
+      "Tanzania",
+      "Dominika",
+      "Finlandia",
+      "Pakistan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_425"
+  },
+  {
+    "text": "Kota Ottawa merupakan ibu kota dari negara...",
+    "correctAnswer": "Kanada",
+    "options": [
+      "Kanada",
+      "Yunani",
+      "Prancis",
+      "Ekuador"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_426"
+  },
+  {
+    "text": "Kota Dakar merupakan ibu kota dari negara...",
+    "correctAnswer": "Senegal",
+    "options": [
+      "Senegal",
+      "Rumania",
+      "Republik Afrika Tengah",
+      "Vanuatu"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_427"
+  },
+  {
+    "text": "Kota Asuncion merupakan ibu kota dari negara...",
+    "correctAnswer": "Paraguay",
+    "options": [
+      "Kosta Rika",
+      "Paraguay",
+      "Kirgistan",
+      "Vietnam"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_428"
+  },
+  {
+    "text": "Kota Yerusalem merupakan ibu kota dari negara...",
+    "correctAnswer": "Israel",
+    "options": [
+      "Nepal",
+      "Austria",
+      "Israel",
+      "Yunani"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_429"
+  },
+  {
+    "text": "Kota Lima merupakan ibu kota dari negara...",
+    "correctAnswer": "Peru",
+    "options": [
+      "Togo",
+      "Lituania",
+      "Turki",
+      "Peru"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_430"
+  },
+  {
+    "text": "Kota Beograd merupakan ibu kota dari negara...",
+    "correctAnswer": "Serbia",
+    "options": [
+      "Madagaskar",
+      "Republik Afrika Tengah",
+      "Serbia",
+      "Portugal"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_431"
+  },
+  {
+    "text": "Kota Freetown merupakan ibu kota dari negara...",
+    "correctAnswer": "Sierra Leone",
+    "options": [
+      "Kolombia",
+      "Belanda",
+      "Saint Lucia",
+      "Sierra Leone"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_432"
+  },
+  {
+    "text": "Kota Suva merupakan ibu kota dari negara...",
+    "correctAnswer": "Fiji",
+    "options": [
+      "Namibia",
+      "Fiji",
+      "Saint Kitts dan Nevis",
+      "Nikaragua"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_433"
+  },
+  {
+    "text": "Kota Male merupakan ibu kota dari negara...",
+    "correctAnswer": "Maladewa",
+    "options": [
+      "Maladewa",
+      "Ghana",
+      "Guyana",
+      "Mali"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_434"
+  },
+  {
+    "text": "Kota Madrid merupakan ibu kota dari negara...",
+    "correctAnswer": "Spanyol",
+    "options": [
+      "Aljazair",
+      "Meksiko",
+      "Spanyol",
+      "Guyana"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_435"
+  },
+  {
+    "text": "Kota Kolombo merupakan ibu kota dari negara...",
+    "correctAnswer": "Sri Lanka",
+    "options": [
+      "Maroko",
+      "Sri Lanka",
+      "Malta",
+      "Gambia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_436"
+  },
+  {
+    "text": "Kota Tbilisi merupakan ibu kota dari negara...",
+    "correctAnswer": "Georgia",
+    "options": [
+      "Georgia",
+      "Kepulauan Marshall",
+      "Angola",
+      "Nepal"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_437"
+  },
+  {
+    "text": "Kota Guatemala City merupakan ibu kota dari negara...",
+    "correctAnswer": "Guatemala",
+    "options": [
+      "Guatemala",
+      "Hungaria",
+      "Venezuela",
+      "Austria"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_438"
+  },
+  {
+    "text": "Kota Kathmandu merupakan ibu kota dari negara...",
+    "correctAnswer": "Nepal",
+    "options": [
+      "Kazakhstan",
+      "Nepal",
+      "Pakistan",
+      "Kepulauan Marshall"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_439"
+  },
+  {
+    "text": "Kota Nairobi merupakan ibu kota dari negara...",
+    "correctAnswer": "Kenya",
+    "options": [
+      "Qatar",
+      "Kenya",
+      "Prancis",
+      "Aljazair"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_440"
+  },
+  {
+    "text": "Kota Maputo merupakan ibu kota dari negara...",
+    "correctAnswer": "Mozambik",
+    "options": [
+      "Korea Selatan",
+      "Komoro",
+      "Georgia",
+      "Mozambik"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_441"
+  },
+  {
+    "text": "Kota Libreville merupakan ibu kota dari negara...",
+    "correctAnswer": "Gabon",
+    "options": [
+      "Gabon",
+      "Bulgaria",
+      "Albania",
+      "Paraguay"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_442"
+  },
+  {
+    "text": "Kota San Marino merupakan ibu kota dari negara...",
+    "correctAnswer": "San Marino",
+    "options": [
+      "San Marino",
+      "Niger",
+      "Seychelles",
+      "Luksemburg"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_443"
+  },
+  {
+    "text": "Kota Tirana merupakan ibu kota dari negara...",
+    "correctAnswer": "Albania",
+    "options": [
+      "Kroasia",
+      "Albania",
+      "Arab Saudi",
+      "Kiribati"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_444"
+  },
+  {
+    "text": "Kota Bamako merupakan ibu kota dari negara...",
+    "correctAnswer": "Mali",
+    "options": [
+      "Djibouti",
+      "Paraguay",
+      "Kongo",
+      "Mali"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_445"
+  },
+  {
+    "text": "Kota Roma merupakan ibu kota dari negara...",
+    "correctAnswer": "Italia",
+    "options": [
+      "Palestina",
+      "Suriah",
+      "Italia",
+      "Siprus"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_446"
+  },
+  {
+    "text": "Kota Kairo merupakan ibu kota dari negara...",
+    "correctAnswer": "Mesir",
+    "options": [
+      "Haiti",
+      "Malawi",
+      "Mesir",
+      "Austria"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_447"
+  },
+  {
+    "text": "Kota Roseau merupakan ibu kota dari negara...",
+    "correctAnswer": "Dominika",
+    "options": [
+      "Korea Selatan",
+      "Slovakia",
+      "Dominika",
+      "Ethiopia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_448"
+  },
+  {
+    "text": "Kota Beirut merupakan ibu kota dari negara...",
+    "correctAnswer": "Lebanon",
+    "options": [
+      "Kamerun",
+      "Lebanon",
+      "Madagaskar",
+      "Yunani"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_449"
+  },
+  {
+    "text": "Kota Havana merupakan ibu kota dari negara...",
+    "correctAnswer": "Kuba",
+    "options": [
+      "Tunisia",
+      "Kuba",
+      "Australia",
+      "Sao Tome dan Principe"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_450"
+  },
+  {
+    "text": "Kota Pyongyang merupakan ibu kota dari negara...",
+    "correctAnswer": "Korea Utara",
+    "options": [
+      "Korea Utara",
+      "Djibouti",
+      "Turki",
+      "Senegal"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_451"
+  },
+  {
+    "text": "Kota Mbabane merupakan ibu kota dari negara...",
+    "correctAnswer": "Eswatini",
+    "options": [
+      "Brunei",
+      "Liechtenstein",
+      "Guinea",
+      "Eswatini"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_452"
+  },
+  {
+    "text": "Kota Paris merupakan ibu kota dari negara...",
+    "correctAnswer": "Prancis",
+    "options": [
+      "Singapura",
+      "Jerman",
+      "Prancis",
+      "Mongolia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_453"
+  },
+  {
+    "text": "Kota Zagreb merupakan ibu kota dari negara...",
+    "correctAnswer": "Kroasia",
+    "options": [
+      "Republik Dominika",
+      "Denmark",
+      "Eritrea",
+      "Kroasia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_454"
+  },
+  {
+    "text": "Kota St. George's merupakan ibu kota dari negara...",
+    "correctAnswer": "Grenada",
+    "options": [
+      "Vietnam",
+      "Belarus",
+      "Ceko",
+      "Grenada"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_455"
+  },
+  {
+    "text": "Kota Muskat merupakan ibu kota dari negara...",
+    "correctAnswer": "Oman",
+    "options": [
+      "Uni Emirat Arab",
+      "Tuvalu",
+      "Brunei",
+      "Oman"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_456"
+  },
+  {
+    "text": "Kota Maseru merupakan ibu kota dari negara...",
+    "correctAnswer": "Lesotho",
+    "options": [
+      "Pakistan",
+      "Zambia",
+      "Lesotho",
+      "El Salvador"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_457"
+  },
+  {
+    "text": "Kota Dublin merupakan ibu kota dari negara...",
+    "correctAnswer": "Irlandia",
+    "options": [
+      "Turki",
+      "Yordania",
+      "Irlandia",
+      "Slovakia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_458"
+  },
+  {
+    "text": "Kota Bukares merupakan ibu kota dari negara...",
+    "correctAnswer": "Rumania",
+    "options": [
+      "Rumania",
+      "Kamerun",
+      "Panama",
+      "Mikronesia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_459"
+  },
+  {
+    "text": "Kota New Delhi merupakan ibu kota dari negara...",
+    "correctAnswer": "India",
+    "options": [
+      "India",
+      "Slovakia",
+      "Guyana",
+      "Tonga"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_460"
+  },
+  {
+    "text": "Kota Managua merupakan ibu kota dari negara...",
+    "correctAnswer": "Nikaragua",
+    "options": [
+      "Namibia",
+      "Tiongkok",
+      "Ceko",
+      "Nikaragua"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_461"
+  },
+  {
+    "text": "Kota Conakry merupakan ibu kota dari negara...",
+    "correctAnswer": "Guinea",
+    "options": [
+      "Tanjung Verde",
+      "Arab Saudi",
+      "Yunani",
+      "Guinea"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_462"
+  },
+  {
+    "text": "Kota Sanaa merupakan ibu kota dari negara...",
+    "correctAnswer": "Yaman",
+    "options": [
+      "Suriah",
+      "Yaman",
+      "Makedonia Utara",
+      "Australia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_463"
+  },
+  {
+    "text": "Kota Ulaanbaatar merupakan ibu kota dari negara...",
+    "correctAnswer": "Mongolia",
+    "options": [
+      "Tanjung Verde",
+      "Ukraina",
+      "Mongolia",
+      "Kongo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_464"
+  },
+  {
+    "text": "Kota Baghdad merupakan ibu kota dari negara...",
+    "correctAnswer": "Irak",
+    "options": [
+      "Liechtenstein",
+      "Irak",
+      "Moldova",
+      "Austria"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_465"
+  },
+  {
+    "text": "Kota Panama City merupakan ibu kota dari negara...",
+    "correctAnswer": "Panama",
+    "options": [
+      "Bahama",
+      "Maladewa",
+      "Panama",
+      "Kenya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_466"
+  },
+  {
+    "text": "Kota Sofia merupakan ibu kota dari negara...",
+    "correctAnswer": "Bulgaria",
+    "options": [
+      "Somalia",
+      "Swiss",
+      "Kosta Rika",
+      "Bulgaria"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_467"
+  },
+  {
+    "text": "Kota London merupakan ibu kota dari negara...",
+    "correctAnswer": "Inggris Raya",
+    "options": [
+      "Honduras",
+      "Selandia Baru",
+      "Kroasia",
+      "Inggris Raya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_468"
+  },
+  {
+    "text": "Kota Port Moresby merupakan ibu kota dari negara...",
+    "correctAnswer": "Papua Nugini",
+    "options": [
+      "Suriah",
+      "Georgia",
+      "Amerika Serikat",
+      "Papua Nugini"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_469"
+  },
+  {
+    "text": "Kota Ljubljana merupakan ibu kota dari negara...",
+    "correctAnswer": "Slovenia",
+    "options": [
+      "Rusia",
+      "Slovenia",
+      "Selandia Baru",
+      "Nikaragua"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_470"
+  },
+  {
+    "text": "Kota Belmopan merupakan ibu kota dari negara...",
+    "correctAnswer": "Belize",
+    "options": [
+      "Burundi",
+      "Afghanistan",
+      "Belize",
+      "Guinea-Bissau"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_471"
+  },
+  {
+    "text": "Kota Kopenhagen merupakan ibu kota dari negara...",
+    "correctAnswer": "Denmark",
+    "options": [
+      "Tanjung Verde",
+      "Tunisia",
+      "Luksemburg",
+      "Denmark"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_472"
+  },
+  {
+    "text": "Kota Yerusalem Timur merupakan ibu kota dari negara...",
+    "correctAnswer": "Palestina",
+    "options": [
+      "Spanyol",
+      "Ethiopia",
+      "Palestina",
+      "Namibia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_473"
+  },
+  {
+    "text": "Kota Port of Spain merupakan ibu kota dari negara...",
+    "correctAnswer": "Trinidad dan Tobago",
+    "options": [
+      "Mesir",
+      "Trinidad dan Tobago",
+      "Bhutan",
+      "Amerika Serikat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_474"
+  },
+  {
+    "text": "Kota Banjul merupakan ibu kota dari negara...",
+    "correctAnswer": "Gambia",
+    "options": [
+      "Gambia",
+      "Filipina",
+      "Tanzania",
+      "Meksiko"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_475"
+  },
+  {
+    "text": "Kota Hanoi merupakan ibu kota dari negara...",
+    "correctAnswer": "Vietnam",
+    "options": [
+      "Antigua dan Barbuda",
+      "Trinidad dan Tobago",
+      "Vietnam",
+      "Polandia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_476"
+  },
+  {
+    "text": "Kota Helsinki merupakan ibu kota dari negara...",
+    "correctAnswer": "Finlandia",
+    "options": [
+      "Liberia",
+      "Finlandia",
+      "Yunani",
+      "Mauritania"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_477"
+  },
+  {
+    "text": "Kota Kabul merupakan ibu kota dari negara...",
+    "correctAnswer": "Afghanistan",
+    "options": [
+      "Mongolia",
+      "Luksemburg",
+      "Iran",
+      "Afghanistan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_478"
+  },
+  {
+    "text": "Kota Vientiane merupakan ibu kota dari negara...",
+    "correctAnswer": "Laos",
+    "options": [
+      "Laos",
+      "Brunei",
+      "Slovakia",
+      "Trinidad dan Tobago"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_479"
+  },
+  {
+    "text": "Kota Naypyidaw merupakan ibu kota dari negara...",
+    "correctAnswer": "Myanmar",
+    "options": [
+      "Niger",
+      "Mozambik",
+      "Slovakia",
+      "Myanmar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_480"
+  },
+  {
+    "text": "Kota Port-au-Prince merupakan ibu kota dari negara...",
+    "correctAnswer": "Haiti",
+    "options": [
+      "Haiti",
+      "Bulgaria",
+      "Albania",
+      "Kepulauan Marshall"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_481"
+  },
+  {
+    "text": "Kota Juba merupakan ibu kota dari negara...",
+    "correctAnswer": "Sudan Selatan",
+    "options": [
+      "Norwegia",
+      "Sudan Selatan",
+      "Yaman",
+      "Spanyol"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_482"
+  },
+  {
+    "text": "Kota Bandar Seri Begawan merupakan ibu kota dari negara...",
+    "correctAnswer": "Brunei",
+    "options": [
+      "Panama",
+      "Filipina",
+      "Brunei",
+      "Indonesia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_483"
+  },
+  {
+    "text": "Kota Brasilia merupakan ibu kota dari negara...",
+    "correctAnswer": "Brasil",
+    "options": [
+      "Brasil",
+      "Jepang",
+      "Belize",
+      "Uruguay"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_484"
+  },
+  {
+    "text": "Kota Monrovia merupakan ibu kota dari negara...",
+    "correctAnswer": "Liberia",
+    "options": [
+      "Belanda",
+      "Liberia",
+      "Zambia",
+      "Albania"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_485"
+  },
+  {
+    "text": "Kota Antananarivo merupakan ibu kota dari negara...",
+    "correctAnswer": "Madagaskar",
+    "options": [
+      "Honduras",
+      "Malaysia",
+      "Indonesia",
+      "Madagaskar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_486"
+  },
+  {
+    "text": "Kota Baku merupakan ibu kota dari negara...",
+    "correctAnswer": "Azerbaijan",
+    "options": [
+      "Azerbaijan",
+      "Jamaika",
+      "Seychelles",
+      "Nigeria"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_487"
+  },
+  {
+    "text": "Kota Manila merupakan ibu kota dari negara...",
+    "correctAnswer": "Filipina",
+    "options": [
+      "Austria",
+      "Burundi",
+      "Filipina",
+      "Mongolia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_488"
+  },
+  {
+    "text": "Kota Bangui merupakan ibu kota dari negara...",
+    "correctAnswer": "Republik Afrika Tengah",
+    "options": [
+      "Kamboja",
+      "Jamaika",
+      "Trinidad dan Tobago",
+      "Republik Afrika Tengah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_489"
+  },
+  {
+    "text": "Kota Dhaka merupakan ibu kota dari negara...",
+    "correctAnswer": "Bangladesh",
+    "options": [
+      "Niger",
+      "Peru",
+      "Bangladesh",
+      "Yunani"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_490"
+  },
+  {
+    "text": "Kota Tunis merupakan ibu kota dari negara...",
+    "correctAnswer": "Tunisia",
+    "options": [
+      "Maladewa",
+      "Tunisia",
+      "Kuba",
+      "Sao Tome dan Principe"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_491"
+  },
+  {
+    "text": "Kota Mogadishu merupakan ibu kota dari negara...",
+    "correctAnswer": "Somalia",
+    "options": [
+      "Somalia",
+      "Kanada",
+      "Meksiko",
+      "Bulgaria"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_492"
+  },
+  {
+    "text": "Kota Tashkent merupakan ibu kota dari negara...",
+    "correctAnswer": "Uzbekistan",
+    "options": [
+      "Sierra Leone",
+      "Qatar",
+      "Inggris Raya",
+      "Uzbekistan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ilmupengetahuansosial_493"
+  },
+  {
+    "text": "Kota Pretoria merupakan ibu kota dari negara...",
+    "correctAnswer": "Afrika Selatan",
+    "options": [
+      "Afrika Selatan",
+      "Israel",
+      "Ekuador",
+      "Togo"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_494"
+  },
+  {
+    "text": "Kota Moskow merupakan ibu kota dari negara...",
+    "correctAnswer": "Rusia",
+    "options": [
+      "Belarus",
+      "Republik Dominika",
+      "Rusia",
+      "Tiongkok"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_495"
+  },
+  {
+    "text": "Kota Thimphu merupakan ibu kota dari negara...",
+    "correctAnswer": "Bhutan",
+    "options": [
+      "Bhutan",
+      "Jepang",
+      "Bahrain",
+      "Kroasia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_496"
+  },
+  {
+    "text": "Kota Bissau merupakan ibu kota dari negara...",
+    "correctAnswer": "Guinea-Bissau",
+    "options": [
+      "Moldova",
+      "Guinea-Bissau",
+      "Irlandia",
+      "Nigeria"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ilmupengetahuansosial_497"
+  },
+  {
+    "text": "Kota Bogota merupakan ibu kota dari negara...",
+    "correctAnswer": "Kolombia",
+    "options": [
+      "Rwanda",
+      "Italia",
+      "Kolombia",
+      "Kirgistan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ilmupengetahuansosial_498"
+  },
+  {
+    "text": "Kota Funafuti merupakan ibu kota dari negara...",
+    "correctAnswer": "Tuvalu",
+    "options": [
+      "Tuvalu",
+      "Ghana",
+      "Bangladesh",
+      "Yaman"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_499"
+  },
+  {
+    "text": "Kota Tegucigalpa merupakan ibu kota dari negara...",
+    "correctAnswer": "Honduras",
+    "options": [
+      "Honduras",
+      "Maladewa",
+      "Qatar",
+      "Siprus"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ilmupengetahuansosial_500"
+  }
+]

@@ -1,0 +1,6502 @@
+[
+  {
+    "text": "Jumlah total surah dalam Al-Qur'an adalah...",
+    "correctAnswer": "114 surah",
+    "options": [
+      "114 surah",
+      "144 surah",
+      "6666 surah",
+      "30 surah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_1"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Menghinakan adalah...",
+    "correctAnswer": "Al-Mudzill",
+    "options": [
+      "Ar-Rahman",
+      "Al-Adl",
+      "Al-Mudzill",
+      "Al-Wakil"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_2"
+  },
+  {
+    "text": "Tugas utama dari malaikat Nakir adalah...",
+    "correctAnswer": "menanyai manusia di alam kubur bersama Munkar",
+    "options": [
+      "menyampaikan wahyu kepada nabi dan rasul",
+      "menanyai amal perbuatan manusia di alam kubur",
+      "menanyai manusia di alam kubur bersama Munkar",
+      "membagi rezeki dan menurunkan hujan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_3"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Majid, maknanya adalah...",
+    "correctAnswer": "Yang Maha Mulia",
+    "options": [
+      "Yang Maha Perkasa",
+      "Yang Maha Mendengar",
+      "Yang Maha Mulia",
+      "Yang Maha Mengabulkan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_4"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Membangkitkan adalah...",
+    "correctAnswer": "Al-Ba'its",
+    "options": [
+      "Al-Latif",
+      "Al-Mu'min",
+      "Al-Hakim",
+      "Al-Ba'its"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_5"
+  },
+  {
+    "text": "Nabi Idris sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Nabi yang cerdas",
+    "options": [
+      "Keponakan Nabi Ibrahim",
+      "Ayah Nabi Yahya",
+      "Nabi yang cerdas",
+      "Bapak Umat Manusia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_6"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah diutus ke kaum 'Ad adalah Nabi...",
+    "correctAnswer": "Hud",
+    "options": [
+      "Ibrahim",
+      "Hud",
+      "Yusuf",
+      "Harun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_7"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Pembuka Rahmat adalah...",
+    "correctAnswer": "Al-Fattah",
+    "options": [
+      "Al-Khaliq",
+      "Al-Jabbar",
+      "Al-Bashir",
+      "Al-Fattah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_8"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Mendengar adalah...",
+    "correctAnswer": "As-Sami'",
+    "options": [
+      "Al-Jabbar",
+      "Al-Fattah",
+      "Al-Quddus",
+      "As-Sami'"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_9"
+  },
+  {
+    "text": "Surah yang memiliki arti Cahaya adalah surah...",
+    "correctAnswer": "An-Nur",
+    "options": [
+      "Al-Lahab",
+      "Al-Kafirun",
+      "An-Nur",
+      "Ar-Rum"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_10"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah membuat bahtera (kapal) besar untuk menyelamatkan umatnya adalah Nabi...",
+    "correctAnswer": "Nuh",
+    "options": [
+      "Hud",
+      "Harun",
+      "Ishaq",
+      "Nuh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_11"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Kuat adalah...",
+    "correctAnswer": "Al-Qawiy",
+    "options": [
+      "Al-Qawiy",
+      "Al-Majid",
+      "Al-Malik",
+      "Al-Khabir"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_12"
+  },
+  {
+    "text": "Gelar atau sebutan Ayah Nabi Yahya diberikan kepada Nabi...",
+    "correctAnswer": "Zakariya",
+    "options": [
+      "Musa",
+      "Zakariya",
+      "Harun",
+      "Adam"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_13"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Hakam, maknanya adalah...",
+    "correctAnswer": "Yang Maha Menetapkan Hukum",
+    "options": [
+      "Yang Maha Perkasa",
+      "Yang Maha Mengetahui",
+      "Yang Maha Memaksa",
+      "Yang Maha Menetapkan Hukum"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_14"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Qawiy yang memiliki arti...",
+    "correctAnswer": "Yang Maha Kuat",
+    "options": [
+      "Yang Maha Kuat",
+      "Yang Maha Menetapkan Hukum",
+      "Yang Maha Mengadakan",
+      "Yang Maha Menyaksikan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_15"
+  },
+  {
+    "text": "Tugas utama dari malaikat Izrail adalah...",
+    "correctAnswer": "mencabut nyawa makhluk hidup",
+    "options": [
+      "membagi rezeki dan menurunkan hujan",
+      "menyampaikan wahyu kepada nabi dan rasul",
+      "mencatat segala amal kebaikan manusia",
+      "mencabut nyawa makhluk hidup"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_16"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Haqq yang memiliki arti...",
+    "correctAnswer": "Yang Maha Benar",
+    "options": [
+      "Yang Maha Mengadakan",
+      "Yang Maha Agung",
+      "Yang Maha Benar",
+      "Yang Maha Memelihara"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_17"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Mujib yang memiliki arti...",
+    "correctAnswer": "Yang Maha Mengabulkan",
+    "options": [
+      "Yang Maha Mengabulkan",
+      "Yang Maha Melihat",
+      "Yang Maha Memelihara",
+      "Yang Maha Benar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_18"
+  },
+  {
+    "text": "Nabi Hud sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Nabi kaum 'Ad",
+    "options": [
+      "Saudara Nabi Musa",
+      "Nabi yang cerdas",
+      "Nabi kaum 'Ad",
+      "Dzun Nun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_19"
+  },
+  {
+    "text": "Surah Al-Furqan dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Pembeda",
+    "options": [
+      "Ya-Sin",
+      "Jamuan Hidangan",
+      "Pembeda",
+      "Bangsa Romawi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_20"
+  },
+  {
+    "text": "Surah Yunus dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Nabi Yunus",
+    "options": [
+      "Pertolongan",
+      "Hari Kiamat",
+      "Nabi Yunus",
+      "Sapi Betina"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_21"
+  },
+  {
+    "text": "Gelar atau sebutan Nabi yang cerdas diberikan kepada Nabi...",
+    "correctAnswer": "Idris",
+    "options": [
+      "Yusuf",
+      "Ismail",
+      "Ishaq",
+      "Idris"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_22"
+  },
+  {
+    "text": "Surah yang memiliki arti Sujud adalah surah...",
+    "correctAnswer": "As-Sajdah",
+    "options": [
+      "An-Nur",
+      "Al-Fatihah",
+      "As-Sajdah",
+      "Al-An'am"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_23"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Melihat adalah...",
+    "correctAnswer": "Al-Bashir",
+    "options": [
+      "Al-Mutakabbir",
+      "Al-Khabir",
+      "Al-Wasi'",
+      "Al-Bashir"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_24"
+  },
+  {
+    "text": "Kewajiban 'Menunaikan ibadah haji bagi yang mampu' tergolong dalam rukun Islam yang ke-...",
+    "correctAnswer": "5",
+    "options": [
+      "1",
+      "5",
+      "4",
+      "2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_25"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Asy-Syakur yang memiliki arti...",
+    "correctAnswer": "Yang Maha Menerima Syukur",
+    "options": [
+      "Yang Maha Menetapkan Hukum",
+      "Yang Maha Perkasa",
+      "Yang Maha Pemberi Karunia",
+      "Yang Maha Menerima Syukur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_26"
+  },
+  {
+    "text": "Surah penutup atau yang terakhir di dalam mushaf Al-Qur'an adalah...",
+    "correctAnswer": "An-Nas",
+    "options": [
+      "Al-Ikhlas",
+      "Al-Falaq",
+      "An-Nas",
+      "Al-Fatihah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_27"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Haqq, maknanya adalah...",
+    "correctAnswer": "Yang Maha Benar",
+    "options": [
+      "Yang Maha Benar",
+      "Yang Maha Mendengar",
+      "Yang Maha Mengabulkan",
+      "Yang Maha Pencipta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_28"
+  },
+  {
+    "text": "Surah Al-Muddassir dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Orang yang Berkemul",
+    "options": [
+      "Orang yang Berkemul",
+      "Nabi Ibrahim",
+      "Nabi Yusuf",
+      "Cahaya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_29"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Benar adalah...",
+    "correctAnswer": "Al-Haqq",
+    "options": [
+      "Al-Majid",
+      "Al-Kabir",
+      "Al-Haqq",
+      "Al-Hakim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_30"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Sulaiman antara lain adalah...",
+    "correctAnswer": "mampu berbicara dengan binatang dan memerintah jin",
+    "options": [
+      "memiliki sifat sabar dan dermawan yang tinggi",
+      "diutus ke Bani Israil penyembah berhala Ba'al",
+      "bertahan hidup di dalam perut ikan paus",
+      "mampu berbicara dengan binatang dan memerintah jin"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_31"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Mengetahui adalah...",
+    "correctAnswer": "Al-Alim",
+    "options": [
+      "Al-Wasi'",
+      "Asy-Syakur",
+      "Al-Mu'izz",
+      "Al-Alim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_32"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Pemberi Karunia adalah...",
+    "correctAnswer": "Al-Wahhab",
+    "options": [
+      "Al-Wahhab",
+      "Al-Ghafur",
+      "Al-Muhaimin",
+      "Ar-Rafi'"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_33"
+  },
+  {
+    "text": "Surah Al-Muzzammil dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Orang yang Berselimut",
+    "options": [
+      "Orang yang Berselimut",
+      "Siti Maryam",
+      "Cahaya",
+      "Orang yang Berkemul"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_34"
+  },
+  {
+    "text": "Surah yang memiliki arti Pembeda adalah surah...",
+    "correctAnswer": "Al-Furqan",
+    "options": [
+      "Al-Furqan",
+      "Al-Kahf",
+      "Luqman",
+      "Al-Muddassir"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_35"
+  },
+  {
+    "text": "Nabi Sulaiman sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Raja yang bijaksana",
+    "options": [
+      "Raja yang bijaksana",
+      "Dzun Nun",
+      "Khatamun Nabiyyin",
+      "Khatib para Nabi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_36"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Malik yang memiliki arti...",
+    "correctAnswer": "Yang Maha Merajai",
+    "options": [
+      "Yang Maha Mengadakan",
+      "Yang Maha Merajai",
+      "Yang Maha Memelihara",
+      "Yang Maha Bijaksana"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_37"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Isa antara lain adalah...",
+    "correctAnswer": "menyembuhkan orang buta dan menghidupkan orang mati",
+    "options": [
+      "manusia pertama yang diciptakan",
+      "mengeluarkan unta betina dari batu karang",
+      "menyembuhkan orang buta dan menghidupkan orang mati",
+      "diberi hikmah kecerdasan sejak masih anak-anak"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_38"
+  },
+  {
+    "text": "Malaikat yang memiliki tugas menjaga pintu neraka adalah malaikat...",
+    "correctAnswer": "Malik",
+    "options": [
+      "Munkar",
+      "Malik",
+      "Izrail",
+      "Atid"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_39"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Mujib, maknanya adalah...",
+    "correctAnswer": "Yang Maha Mengabulkan",
+    "options": [
+      "Yang Maha Melapangkan",
+      "Yang Maha Kokoh",
+      "Yang Maha Mengabulkan",
+      "Yang Maha Megah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_40"
+  },
+  {
+    "text": "Siapakah malaikat yang diutus Allah SWT untuk menanyai amal perbuatan manusia di alam kubur?",
+    "correctAnswer": "Munkar",
+    "options": [
+      "Raqib",
+      "Munkar",
+      "Nakir",
+      "Israfil"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_41"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Tinggi adalah...",
+    "correctAnswer": "Al-Aliy",
+    "options": [
+      "Al-Halim",
+      "As-Salam",
+      "Al-Aliy",
+      "Al-Khaliq"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_42"
+  },
+  {
+    "text": "Makna 'Yang Maha Kuat' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Qawiy",
+    "options": [
+      "Al-Aziz",
+      "Al-Mudzill",
+      "Al-Khaliq",
+      "Al-Qawiy"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_43"
+  },
+  {
+    "text": "Menurut syariat, rukun Islam yang berada pada urutan ke-3 adalah...",
+    "correctAnswer": "Menunaikan zakat",
+    "options": [
+      "Berpuasa di bulan Ramadhan",
+      "Mendirikan shalat",
+      "Menunaikan zakat",
+      "Mengucapkan dua kalimat syahadat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_44"
+  },
+  {
+    "text": "Tugas utama dari malaikat Jibril adalah...",
+    "correctAnswer": "menyampaikan wahyu kepada nabi dan rasul",
+    "options": [
+      "mencatat segala amal kebaikan manusia",
+      "meniup sangkakala pada hari kiamat",
+      "menyampaikan wahyu kepada nabi dan rasul",
+      "menanyai manusia di alam kubur bersama Munkar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_45"
+  },
+  {
+    "text": "Iman kepada Hari Kiamat adalah bagian dari Rukun Iman yang ke-...",
+    "correctAnswer": "5",
+    "options": [
+      "3",
+      "5",
+      "6",
+      "2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_46"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Adl yang memiliki arti...",
+    "correctAnswer": "Yang Maha Adil",
+    "options": [
+      "Yang Maha Mengabulkan",
+      "Yang Maha Adil",
+      "Yang Maha Meninggikan",
+      "Yang Maha Pemberi Rezeki"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_47"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Khafidz yang memiliki arti...",
+    "correctAnswer": "Yang Maha Merendahkan",
+    "options": [
+      "Yang Maha Waspada/Mengetahui",
+      "Yang Maha Merendahkan",
+      "Yang Maha Tinggi",
+      "Yang Maha Mulia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_48"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Mushawwir yang memiliki arti...",
+    "correctAnswer": "Yang Maha Membentuk Rupa",
+    "options": [
+      "Yang Maha Luas",
+      "Yang Maha Meninggikan",
+      "Yang Maha Pengampun",
+      "Yang Maha Membentuk Rupa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_49"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Ba'its yang memiliki arti...",
+    "correctAnswer": "Yang Maha Membangkitkan",
+    "options": [
+      "Yang Maha Melihat",
+      "Yang Maha Memberi Keamanan",
+      "Yang Maha Membangkitkan",
+      "Yang Maha Memelihara"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_50"
+  },
+  {
+    "text": "Gelar atau sebutan Anak yang taat diberikan kepada Nabi...",
+    "correctAnswer": "Ismail",
+    "options": [
+      "Daud",
+      "Yunus",
+      "Ismail",
+      "Zakariya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_51"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Kabir, maknanya adalah...",
+    "correctAnswer": "Yang Maha Besar",
+    "options": [
+      "Yang Maha Tinggi",
+      "Yang Maha Melapangkan",
+      "Yang Maha Agung",
+      "Yang Maha Besar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_52"
+  },
+  {
+    "text": "Berdasarkan aqidah, rukun Iman ke-5 adalah...",
+    "correctAnswer": "Iman kepada Hari Kiamat",
+    "options": [
+      "Iman kepada Kitab-kitab Allah",
+      "Iman kepada para Rasul Allah",
+      "Iman kepada Hari Kiamat",
+      "Iman kepada Allah SWT"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_53"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Yusuf antara lain adalah...",
+    "correctAnswer": "memiliki ketampanan luar biasa dan ahli menafsirkan mimpi",
+    "options": [
+      "bersedia disembelih oleh ayahnya sebagai wujud ketaatan",
+      "memiliki ketampanan luar biasa dan ahli menafsirkan mimpi",
+      "penerus perjuangan Nabi Ilyas",
+      "memiliki 12 putra yang kelak menjadi Bani Israil"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_54"
+  },
+  {
+    "text": "Nabi Ilyas sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Penyelamat Bani Israil",
+    "options": [
+      "Keponakan Nabi Ibrahim",
+      "Penyelamat Bani Israil",
+      "Nabi yang cerdas",
+      "Bapak Umat Manusia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_55"
+  },
+  {
+    "text": "Surah yang memiliki arti Gejolak Api adalah surah...",
+    "correctAnswer": "Al-Lahab",
+    "options": [
+      "Yusuf",
+      "Maryam",
+      "As-Sajdah",
+      "Al-Lahab"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_56"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Alim yang memiliki arti...",
+    "correctAnswer": "Yang Maha Mengetahui",
+    "options": [
+      "Yang Maha Mengetahui",
+      "Yang Maha Melihat",
+      "Yang Maha Memuliakan",
+      "Yang Maha Pemberi Rezeki"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_57"
+  },
+  {
+    "text": "Makna 'Yang Maha Besar' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Kabir",
+    "options": [
+      "Al-Matin",
+      "Al-Aliy",
+      "Al-Hasib",
+      "Al-Kabir"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_58"
+  },
+  {
+    "text": "Kewajiban 'Mengucapkan dua kalimat syahadat' tergolong dalam rukun Islam yang ke-...",
+    "correctAnswer": "1",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "1"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_59"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Ilyasa antara lain adalah...",
+    "correctAnswer": "penerus perjuangan Nabi Ilyas",
+    "options": [
+      "menerima wahyu Al-Qur'an sebagai mukjizat terbesar",
+      "pengasuh Siti Maryam dan baru punya anak di usia tua",
+      "memiliki sifat sabar dan dermawan yang tinggi",
+      "penerus perjuangan Nabi Ilyas"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_60"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Yahya antara lain adalah...",
+    "correctAnswer": "diberi hikmah kecerdasan sejak masih anak-anak",
+    "options": [
+      "menerima wahyu Al-Qur'an sebagai mukjizat terbesar",
+      "diutus ke Bani Israil penyembah berhala Ba'al",
+      "diberi hikmah kecerdasan sejak masih anak-anak",
+      "pengasuh Siti Maryam dan baru punya anak di usia tua"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_61"
+  },
+  {
+    "text": "Surah yang memiliki arti Haji adalah surah...",
+    "correctAnswer": "Al-Hajj",
+    "options": [
+      "Al-Hajj",
+      "Al-Falaq",
+      "Saba'",
+      "Al-Qadr"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_62"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah menyembuhkan orang buta dan menghidupkan orang mati adalah Nabi...",
+    "correctAnswer": "Isa",
+    "options": [
+      "Yunus",
+      "Shalih",
+      "Zulkifli",
+      "Isa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_63"
+  },
+  {
+    "text": "Surah yang memiliki arti Pembukaan adalah surah...",
+    "correctAnswer": "Al-Fatihah",
+    "options": [
+      "Al-Fatihah",
+      "Al-'Ankabut",
+      "Al-Kahf",
+      "Al-Falaq"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_64"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Menyempitkan adalah...",
+    "correctAnswer": "Al-Qabidh",
+    "options": [
+      "Al-Qabidh",
+      "Al-Mushawwir",
+      "Al-Aziz",
+      "Al-Hakim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_65"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Besar adalah...",
+    "correctAnswer": "Al-Kabir",
+    "options": [
+      "Al-Mutakabbir",
+      "Al-Ghafur",
+      "Al-Kabir",
+      "Al-Mujib"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_66"
+  },
+  {
+    "text": "Mendirikan shalat merupakan rukun Islam yang ke-...",
+    "correctAnswer": "2",
+    "options": [
+      "1",
+      "5",
+      "3",
+      "2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_67"
+  },
+  {
+    "text": "Surah Al-Qasas dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Kisah-kisah",
+    "options": [
+      "Para Nabi",
+      "Lebah",
+      "Tempat Tertinggi",
+      "Kisah-kisah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_68"
+  },
+  {
+    "text": "Surah yang memiliki arti Ta-Ha adalah surah...",
+    "correctAnswer": "Ta-Ha",
+    "options": [
+      "Ta-Ha",
+      "Maryam",
+      "Fatir",
+      "Ar-Rahman"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_69"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Hafizh, maknanya adalah...",
+    "correctAnswer": "Yang Maha Memelihara",
+    "options": [
+      "Yang Maha Memelihara",
+      "Yang Maha Pencipta",
+      "Yang Maha Kokoh",
+      "Yang Maha Perkasa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_70"
+  },
+  {
+    "text": "Makna 'Yang Memiliki Kegagahan' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Jabbar",
+    "options": [
+      "Al-Jabbar",
+      "Al-Wahhab",
+      "Al-Adl",
+      "Al-Qahhar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_71"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Memaksa adalah...",
+    "correctAnswer": "Al-Qahhar",
+    "options": [
+      "Al-Adl",
+      "Al-Qahhar",
+      "Al-Hasib",
+      "Al-Haqq"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_72"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Penyantun adalah...",
+    "correctAnswer": "Al-Halim",
+    "options": [
+      "Al-Halim",
+      "Al-Quddus",
+      "Al-Mutakabbir",
+      "Al-Latif"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_73"
+  },
+  {
+    "text": "Gelar atau sebutan Nabi yang sangat tampan diberikan kepada Nabi...",
+    "correctAnswer": "Yusuf",
+    "options": [
+      "Adam",
+      "Yusuf",
+      "Ibrahim",
+      "Hud"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_74"
+  },
+  {
+    "text": "Kota tempat sebagian besar surah Al-Qur'an diturunkan sebelum hijrah disebut surah golongan...",
+    "correctAnswer": "Makkiyah",
+    "options": [
+      "Madinah",
+      "Mekkah",
+      "Madaniyah",
+      "Makkiyah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_75"
+  },
+  {
+    "text": "Iman kepada Allah SWT adalah bagian dari Rukun Iman yang ke-...",
+    "correctAnswer": "1",
+    "options": [
+      "4",
+      "6",
+      "1",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_76"
+  },
+  {
+    "text": "Keyakinan akan 'Iman kepada Qada dan Qadar (Takdir)' menempati urutan ke-... dalam Rukun Iman.",
+    "correctAnswer": "6",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_77"
+  },
+  {
+    "text": "Surah yang memiliki arti Nabi Yunus adalah surah...",
+    "correctAnswer": "Yunus",
+    "options": [
+      "Yunus",
+      "Ya-Sin",
+      "Al-Lahab",
+      "Ibrahim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_78"
+  },
+  {
+    "text": "Surah yang memiliki arti Para Penyair adalah surah...",
+    "correctAnswer": "Asy-Syu'ara'",
+    "options": [
+      "Asy-Syu'ara'",
+      "Al-Isra'",
+      "Al-Waqi'ah",
+      "Al-Muzzammil"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_79"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Wahhab, maknanya adalah...",
+    "correctAnswer": "Yang Maha Pemberi Karunia",
+    "options": [
+      "Yang Maha Pemberi Karunia",
+      "Yang Maha Mulia",
+      "Yang Maha Memelihara/Mewakili",
+      "Yang Maha Membentuk Rupa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_80"
+  },
+  {
+    "text": "Keyakinan akan 'Iman kepada para Rasul Allah' menempati urutan ke-... dalam Rukun Iman.",
+    "correctAnswer": "4",
+    "options": [
+      "3",
+      "5",
+      "4",
+      "2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_81"
+  },
+  {
+    "text": "Gelar atau sebutan Khatib para Nabi diberikan kepada Nabi...",
+    "correctAnswer": "Syu'aib",
+    "options": [
+      "Hud",
+      "Ilyasa",
+      "Syu'aib",
+      "Yusuf"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_82"
+  },
+  {
+    "text": "Tugas utama dari malaikat Atid adalah...",
+    "correctAnswer": "mencatat segala amal keburukan manusia",
+    "options": [
+      "membagi rezeki dan menurunkan hujan",
+      "mencatat segala amal keburukan manusia",
+      "menanyai amal perbuatan manusia di alam kubur",
+      "mencatat segala amal kebaikan manusia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_83"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Mushawwir, maknanya adalah...",
+    "correctAnswer": "Yang Maha Membentuk Rupa",
+    "options": [
+      "Yang Maha Membangkitkan",
+      "Yang Maha Pecinta",
+      "Yang Maha Mengetahui",
+      "Yang Maha Membentuk Rupa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_84"
+  },
+  {
+    "text": "Surah yang memiliki arti Yang Maha Pemurah adalah surah...",
+    "correctAnswer": "Ar-Rahman",
+    "options": [
+      "Al-Hajj",
+      "Al-Mu'minun",
+      "Ar-Rahman",
+      "Al-Qadr"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_85"
+  },
+  {
+    "text": "Malaikat Malik diberikan tugas oleh Allah SWT untuk...",
+    "correctAnswer": "menjaga pintu neraka",
+    "options": [
+      "membagi rezeki dan menurunkan hujan",
+      "menjaga pintu neraka",
+      "menjaga pintu surga",
+      "mencabut nyawa makhluk hidup"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_86"
+  },
+  {
+    "text": "Nabi Luth sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Keponakan Nabi Ibrahim",
+    "options": [
+      "Saudara Nabi Musa",
+      "Khatamun Nabiyyin",
+      "Ruhullah",
+      "Keponakan Nabi Ibrahim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_87"
+  },
+  {
+    "text": "Makna 'Yang Maha Menghinakan' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Mudzill",
+    "options": [
+      "Al-Mudzill",
+      "As-Salam",
+      "Al-Aziz",
+      "Al-Wadud"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_88"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Jabbar yang memiliki arti...",
+    "correctAnswer": "Yang Memiliki Kegagahan",
+    "options": [
+      "Yang Maha Membentuk Rupa",
+      "Yang Maha Memaksa",
+      "Yang Memiliki Kegagahan",
+      "Yang Maha Agung"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_89"
+  },
+  {
+    "text": "Surah Al-Baqarah dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Sapi Betina",
+    "options": [
+      "Sapi Betina",
+      "Pencipta",
+      "Siti Maryam",
+      "Kaum Saba'"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_90"
+  },
+  {
+    "text": "Makna 'Yang Maha Pemberi Kecukupan' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Muqit",
+    "options": [
+      "Al-Haqq",
+      "Ar-Razzaq",
+      "As-Salam",
+      "Al-Muqit"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_91"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Khaliq yang memiliki arti...",
+    "correctAnswer": "Yang Maha Pencipta",
+    "options": [
+      "Yang Maha Menerima Syukur",
+      "Yang Maha Pengasih",
+      "Yang Maha Memuliakan",
+      "Yang Maha Pencipta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_92"
+  },
+  {
+    "text": "Malaikat yang memiliki tugas menanyai amal perbuatan manusia di alam kubur adalah malaikat...",
+    "correctAnswer": "Munkar",
+    "options": [
+      "Atid",
+      "Nakir",
+      "Israfil",
+      "Munkar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_93"
+  },
+  {
+    "text": "Makna 'Yang Maha Agung' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Azhim",
+    "options": [
+      "Al-Hakam",
+      "Al-Fattah",
+      "Asy-Syahid",
+      "Al-Azhim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_94"
+  },
+  {
+    "text": "Surah yang memiliki arti Hari Kiamat adalah surah...",
+    "correctAnswer": "Al-Waqi'ah",
+    "options": [
+      "Al-Waqi'ah",
+      "Saba'",
+      "Al-Kafirun",
+      "Al-Qadr"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_95"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Wakil yang memiliki arti...",
+    "correctAnswer": "Yang Maha Memelihara/Mewakili",
+    "options": [
+      "Yang Maha Luhur",
+      "Yang Memiliki Kegagahan",
+      "Yang Maha Pengampun",
+      "Yang Maha Memelihara/Mewakili"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_96"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Ya'qub antara lain adalah...",
+    "correctAnswer": "memiliki 12 putra yang kelak menjadi Bani Israil",
+    "options": [
+      "putra Nabi Ibrahim yang saleh",
+      "diutus untuk memperbaiki moral kota Sodom",
+      "mampu berbicara dengan binatang dan memerintah jin",
+      "memiliki 12 putra yang kelak menjadi Bani Israil"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_97"
+  },
+  {
+    "text": "Iman kepada Qada dan Qadar (Takdir) adalah bagian dari Rukun Iman yang ke-...",
+    "correctAnswer": "6",
+    "options": [
+      "6",
+      "1",
+      "3",
+      "4"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_98"
+  },
+  {
+    "text": "Nabi Harun sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Saudara Nabi Musa",
+    "options": [
+      "Nabi yang cerdas",
+      "Nabi kaum 'Ad",
+      "Saudara Nabi Musa",
+      "Khalilullah (Kekasih Allah)"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_99"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Menetapkan Hukum adalah...",
+    "correctAnswer": "Al-Hakam",
+    "options": [
+      "Al-Hakam",
+      "Al-Wahhab",
+      "Al-Mu'min",
+      "Al-Khabir"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_100"
+  },
+  {
+    "text": "Surah Maryam dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Siti Maryam",
+    "options": [
+      "Pencipta",
+      "Siti Maryam",
+      "Kisah-kisah",
+      "Pembukaan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_101"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Mudzill, maknanya adalah...",
+    "correctAnswer": "Yang Maha Menghinakan",
+    "options": [
+      "Yang Maha Menghinakan",
+      "Yang Maha Mengawasi",
+      "Yang Maha Pengampun",
+      "Yang Maha Pemberi Rezeki"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_102"
+  },
+  {
+    "text": "Makna 'Yang Maha Mengawasi' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Ar-Raqib",
+    "options": [
+      "Al-Jalil",
+      "Ar-Raqib",
+      "Ar-Rafi'",
+      "Al-Khabir"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_103"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Luth antara lain adalah...",
+    "correctAnswer": "diutus untuk memperbaiki moral kota Sodom",
+    "options": [
+      "diutus untuk memperbaiki moral kota Sodom",
+      "putra Nabi Ibrahim yang saleh",
+      "membelah lautan dengan tongkatnya",
+      "memiliki ketampanan luar biasa dan ahli menafsirkan mimpi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_104"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Wakil, maknanya adalah...",
+    "correctAnswer": "Yang Maha Memelihara/Mewakili",
+    "options": [
+      "Yang Maha Luas",
+      "Yang Maha Memelihara/Mewakili",
+      "Yang Maha Tinggi",
+      "Yang Maha Pengampun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_105"
+  },
+  {
+    "text": "Al-Qur'an diturunkan kepada Nabi Muhammad SAW melalui perantara Malaikat...",
+    "correctAnswer": "Jibril",
+    "options": [
+      "Izrail",
+      "Israfil",
+      "Jibril",
+      "Mikail"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_106"
+  },
+  {
+    "text": "Surah yang memiliki arti Keluarga Luqman adalah surah...",
+    "correctAnswer": "Luqman",
+    "options": [
+      "Luqman",
+      "Al-Ma'idah",
+      "Al-An'am",
+      "Al-Hijr"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_107"
+  },
+  {
+    "text": "Makna 'Yang Maha Menyempitkan' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Qabidh",
+    "options": [
+      "Al-Hafizh",
+      "Al-Qabidh",
+      "Al-Mushawwir",
+      "Al-Mutakabbir"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_108"
+  },
+  {
+    "text": "Siapakah malaikat yang diutus Allah SWT untuk menjaga pintu surga?",
+    "correctAnswer": "Ridwan",
+    "options": [
+      "Ridwan",
+      "Mikail",
+      "Nakir",
+      "Izrail"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_109"
+  },
+  {
+    "text": "Malaikat Mikail diberikan tugas oleh Allah SWT untuk...",
+    "correctAnswer": "membagi rezeki dan menurunkan hujan",
+    "options": [
+      "membagi rezeki dan menurunkan hujan",
+      "mencatat segala amal keburukan manusia",
+      "mencatat segala amal kebaikan manusia",
+      "menjaga pintu surga"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_110"
+  },
+  {
+    "text": "Makna 'Yang Maha Megah' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Mutakabbir",
+    "options": [
+      "Al-Basit",
+      "Al-Mu'izz",
+      "Al-Mutakabbir",
+      "Asy-Syahid"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_111"
+  },
+  {
+    "text": "Gelar atau sebutan Keponakan Nabi Ibrahim diberikan kepada Nabi...",
+    "correctAnswer": "Luth",
+    "options": [
+      "Muhammad",
+      "Luth",
+      "Shalih",
+      "Yusuf"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_112"
+  },
+  {
+    "text": "Siapakah malaikat yang diutus Allah SWT untuk meniup sangkakala pada hari kiamat?",
+    "correctAnswer": "Israfil",
+    "options": [
+      "Munkar",
+      "Malik",
+      "Israfil",
+      "Nakir"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_113"
+  },
+  {
+    "text": "Nabi Yahya sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Nabi yang cerdas",
+    "options": [
+      "Ruhullah",
+      "Anak yang taat",
+      "Nabi kaum Tsamud",
+      "Nabi yang cerdas"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_114"
+  },
+  {
+    "text": "Nabi Shalih sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Nabi kaum Tsamud",
+    "options": [
+      "Nabi kaum Tsamud",
+      "Dzun Nun",
+      "Pemimpin yang sabar",
+      "Keponakan Nabi Ibrahim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_115"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Ghaffar, maknanya adalah...",
+    "correctAnswer": "Yang Maha Pengampun",
+    "options": [
+      "Yang Maha Pengampun",
+      "Yang Maha Menetapkan Hukum",
+      "Yang Maha Mengawasi",
+      "Yang Maha Waspada/Mengetahui"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_116"
+  },
+  {
+    "text": "Surah yang memiliki arti Gua adalah surah...",
+    "correctAnswer": "Al-Kahf",
+    "options": [
+      "Ta-Ha",
+      "Al-Mulk",
+      "Ya-Sin",
+      "Al-Kahf"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_117"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Luas adalah...",
+    "correctAnswer": "Al-Wasi'",
+    "options": [
+      "Ar-Rahman",
+      "Al-Khaliq",
+      "Al-Mu'izz",
+      "Al-Wasi'"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_118"
+  },
+  {
+    "text": "Makna 'Yang Maha Mengabulkan' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Mujib",
+    "options": [
+      "Al-Mujib",
+      "Al-Bari",
+      "Al-Latif",
+      "Al-Ghafur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_119"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah putra Nabi Ibrahim yang saleh adalah Nabi...",
+    "correctAnswer": "Ishaq",
+    "options": [
+      "Ishaq",
+      "Adam",
+      "Ilyasa",
+      "Yunus"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_120"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah penerus perjuangan Nabi Ilyas adalah Nabi...",
+    "correctAnswer": "Ilyasa",
+    "options": [
+      "Ibrahim",
+      "Ishaq",
+      "Yunus",
+      "Ilyasa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_121"
+  },
+  {
+    "text": "Surah yang memiliki arti Golongan-golongan adalah surah...",
+    "correctAnswer": "Al-Ahzab",
+    "options": [
+      "Luqman",
+      "Ibrahim",
+      "Al-Baqarah",
+      "Al-Ahzab"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_122"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Aliy, maknanya adalah...",
+    "correctAnswer": "Yang Maha Tinggi",
+    "options": [
+      "Yang Maha Menerima Syukur",
+      "Yang Maha Megah",
+      "Yang Maha Tinggi",
+      "Yang Maha Pembuka Rahmat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_123"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Quddus, maknanya adalah...",
+    "correctAnswer": "Yang Maha Suci",
+    "options": [
+      "Yang Maha Suci",
+      "Yang Maha Megah",
+      "Yang Maha Mengabulkan",
+      "Yang Maha Bijaksana"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_124"
+  },
+  {
+    "text": "Surah Ali 'Imran dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Keluarga Imran",
+    "options": [
+      "Hari Kiamat",
+      "Keluarga Imran",
+      "Orang yang Berselimut",
+      "Ta-Ha"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_125"
+  },
+  {
+    "text": "Gelar atau sebutan Nabi kaum 'Ad diberikan kepada Nabi...",
+    "correctAnswer": "Hud",
+    "options": [
+      "Idris",
+      "Ibrahim",
+      "Harun",
+      "Hud"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_126"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah diutus ke kaum Madyan yang suka mencurangi timbangan adalah Nabi...",
+    "correctAnswer": "Syu'aib",
+    "options": [
+      "Ilyasa",
+      "Idris",
+      "Syu'aib",
+      "Yahya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_127"
+  },
+  {
+    "text": "Tugas utama dari malaikat Malik adalah...",
+    "correctAnswer": "menjaga pintu neraka",
+    "options": [
+      "menanyai manusia di alam kubur bersama Munkar",
+      "mencatat segala amal kebaikan manusia",
+      "menjaga pintu neraka",
+      "meniup sangkakala pada hari kiamat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_128"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Khaliq, maknanya adalah...",
+    "correctAnswer": "Yang Maha Pencipta",
+    "options": [
+      "Yang Maha Membuat Perhitungan",
+      "Yang Maha Pengasih",
+      "Yang Maha Pencipta",
+      "Yang Maha Pemberi Rezeki"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_129"
+  },
+  {
+    "text": "Malaikat Izrail diberikan tugas oleh Allah SWT untuk...",
+    "correctAnswer": "mencabut nyawa makhluk hidup",
+    "options": [
+      "menanyai amal perbuatan manusia di alam kubur",
+      "meniup sangkakala pada hari kiamat",
+      "menjaga pintu neraka",
+      "mencabut nyawa makhluk hidup"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_130"
+  },
+  {
+    "text": "Surah yang memiliki arti Tempat Tertinggi adalah surah...",
+    "correctAnswer": "Al-A'raf",
+    "options": [
+      "Ar-Ra'd",
+      "Al-A'raf",
+      "Al-Falaq",
+      "Ta-Ha"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_131"
+  },
+  {
+    "text": "Nabi Muhammad sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Khatamun Nabiyyin",
+    "options": [
+      "Khatamun Nabiyyin",
+      "Kalimullah",
+      "Simbol kesabaran",
+      "Nabi dari Bani Israil"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_132"
+  },
+  {
+    "text": "Malaikat Raqib diberikan tugas oleh Allah SWT untuk...",
+    "correctAnswer": "mencatat segala amal kebaikan manusia",
+    "options": [
+      "menanyai amal perbuatan manusia di alam kubur",
+      "menyampaikan wahyu kepada nabi dan rasul",
+      "meniup sangkakala pada hari kiamat",
+      "mencatat segala amal kebaikan manusia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_133"
+  },
+  {
+    "text": "Berdasarkan aqidah, rukun Iman ke-4 adalah...",
+    "correctAnswer": "Iman kepada para Rasul Allah",
+    "options": [
+      "Iman kepada Qada dan Qadar (Takdir)",
+      "Iman kepada para Malaikat Allah",
+      "Iman kepada Kitab-kitab Allah",
+      "Iman kepada para Rasul Allah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_134"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Ghafur, maknanya adalah...",
+    "correctAnswer": "Yang Maha Pengampun",
+    "options": [
+      "Yang Memiliki Kegagahan",
+      "Yang Maha Pembuka Rahmat",
+      "Yang Maha Agung",
+      "Yang Maha Pengampun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_135"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Penyayang adalah...",
+    "correctAnswer": "Ar-Rahim",
+    "options": [
+      "Al-Wakil",
+      "Al-Azhim",
+      "Ar-Rahim",
+      "Al-Aliy"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_136"
+  },
+  {
+    "text": "Surah Fatir dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Pencipta",
+    "options": [
+      "Semut",
+      "Para Nabi",
+      "Pencipta",
+      "Para Penyair"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_137"
+  },
+  {
+    "text": "Keyakinan akan 'Iman kepada para Malaikat Allah' menempati urutan ke-... dalam Rukun Iman.",
+    "correctAnswer": "2",
+    "options": [
+      "5",
+      "2",
+      "4",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_138"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Asy-Syahid, maknanya adalah...",
+    "correctAnswer": "Yang Maha Menyaksikan",
+    "options": [
+      "Yang Maha Mendengar",
+      "Yang Maha Perkasa",
+      "Yang Maha Menyaksikan",
+      "Yang Maha Membuat Perhitungan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_139"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah diutus ke Bani Israil penyembah berhala Ba'al adalah Nabi...",
+    "correctAnswer": "Ilyas",
+    "options": [
+      "Ismail",
+      "Ilyas",
+      "Zakariya",
+      "Musa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_140"
+  },
+  {
+    "text": "Rukun Islam yang ke-3 adalah...",
+    "correctAnswer": "Menunaikan zakat",
+    "options": [
+      "Mengucapkan dua kalimat syahadat",
+      "Menunaikan ibadah haji bagi yang mampu",
+      "Mendirikan shalat",
+      "Menunaikan zakat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_141"
+  },
+  {
+    "text": "Tugas utama dari malaikat Israfil adalah...",
+    "correctAnswer": "meniup sangkakala pada hari kiamat",
+    "options": [
+      "membagi rezeki dan menurunkan hujan",
+      "menyampaikan wahyu kepada nabi dan rasul",
+      "menanyai manusia di alam kubur bersama Munkar",
+      "meniup sangkakala pada hari kiamat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_142"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Memuliakan adalah...",
+    "correctAnswer": "Al-Mu'izz",
+    "options": [
+      "Al-Kabir",
+      "Al-Fattah",
+      "Al-Hakam",
+      "Al-Mu'izz"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_143"
+  },
+  {
+    "text": "Surah yang memiliki arti Guruh adalah surah...",
+    "correctAnswer": "Ar-Ra'd",
+    "options": [
+      "An-Nasr",
+      "Al-Kafirun",
+      "An-Nahl",
+      "Ar-Ra'd"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_144"
+  },
+  {
+    "text": "Siapakah malaikat yang diutus Allah SWT untuk menanyai manusia di alam kubur bersama Munkar?",
+    "correctAnswer": "Nakir",
+    "options": [
+      "Nakir",
+      "Atid",
+      "Munkar",
+      "Malik"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_145"
+  },
+  {
+    "text": "Makna 'Yang Maha Merajai' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Malik",
+    "options": [
+      "Ar-Rahim",
+      "Al-Jabbar",
+      "Al-Mudzill",
+      "Al-Malik"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_146"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Yunus antara lain adalah...",
+    "correctAnswer": "bertahan hidup di dalam perut ikan paus",
+    "options": [
+      "putra Nabi Ibrahim yang saleh",
+      "bertahan hidup di dalam perut ikan paus",
+      "memiliki sifat sabar dan dermawan yang tinggi",
+      "tidak hangus saat dibakar oleh Raja Namrud"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_147"
+  },
+  {
+    "text": "Makna 'Yang Maha Memelihara/Mewakili' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Wakil",
+    "options": [
+      "Al-Khafidz",
+      "Al-Basit",
+      "Al-Wakil",
+      "Al-Wahhab"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_148"
+  },
+  {
+    "text": "Surah yang memiliki arti Al-Hijr adalah surah...",
+    "correctAnswer": "Al-Hijr",
+    "options": [
+      "At-Taubah",
+      "An-Nisa'",
+      "Al-Hijr",
+      "Maryam"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_149"
+  },
+  {
+    "text": "Makna 'Yang Maha Pengampun' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Ghaffar",
+    "options": [
+      "Al-Ghaffar",
+      "Ar-Rahim",
+      "Ar-Rahman",
+      "Al-Quddus"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_150"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Memelihara adalah...",
+    "correctAnswer": "Al-Muhaimin",
+    "options": [
+      "Al-Muhaimin",
+      "Al-Kabir",
+      "Al-Jalil",
+      "Al-Ghaffar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_151"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Mu'min, maknanya adalah...",
+    "correctAnswer": "Yang Maha Memberi Keamanan",
+    "options": [
+      "Yang Maha Memberi Keamanan",
+      "Yang Maha Membuat Perhitungan",
+      "Yang Maha Memelihara",
+      "Yang Maha Memberi Kesejahteraan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_152"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah memiliki sifat sabar dan dermawan yang tinggi adalah Nabi...",
+    "correctAnswer": "Zulkifli",
+    "options": [
+      "Zulkifli",
+      "Musa",
+      "Harun",
+      "Yunus"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_153"
+  },
+  {
+    "text": "Malaikat yang memiliki tugas mencabut nyawa makhluk hidup adalah malaikat...",
+    "correctAnswer": "Izrail",
+    "options": [
+      "Israfil",
+      "Malik",
+      "Mikail",
+      "Izrail"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_154"
+  },
+  {
+    "text": "Gelar atau sebutan Raja yang bijaksana diberikan kepada Nabi...",
+    "correctAnswer": "Sulaiman",
+    "options": [
+      "Adam",
+      "Muhammad",
+      "Harun",
+      "Sulaiman"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_155"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Mu'min yang memiliki arti...",
+    "correctAnswer": "Yang Maha Memberi Keamanan",
+    "options": [
+      "Yang Maha Memberi Keamanan",
+      "Yang Maha Besar",
+      "Yang Maha Luhur",
+      "Yang Maha Menetapkan Hukum"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_156"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Mulia adalah...",
+    "correctAnswer": "Al-Karim",
+    "options": [
+      "Ar-Rafi'",
+      "Al-Adl",
+      "Al-Hasib",
+      "Al-Karim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_157"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Ibrahim antara lain adalah...",
+    "correctAnswer": "tidak hangus saat dibakar oleh Raja Namrud",
+    "options": [
+      "orang pertama yang pandai menulis dan membaca",
+      "tidak hangus saat dibakar oleh Raja Namrud",
+      "bertahan hidup di dalam perut ikan paus",
+      "membuat bahtera (kapal) besar untuk menyelamatkan umatnya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_158"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Wadud, maknanya adalah...",
+    "correctAnswer": "Yang Maha Pecinta",
+    "options": [
+      "Yang Maha Merendahkan",
+      "Yang Maha Waspada/Mengetahui",
+      "Yang Maha Pecinta",
+      "Yang Maha Menerima Syukur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_159"
+  },
+  {
+    "text": "Makna 'Yang Maha Perkasa' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Aziz",
+    "options": [
+      "Ar-Rahim",
+      "Ar-Rahman",
+      "Al-Hakim",
+      "Al-Aziz"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_160"
+  },
+  {
+    "text": "Surah Saba' dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Kaum Saba'",
+    "options": [
+      "Orang yang Berkemul",
+      "Ya-Sin",
+      "Binatang Ternak",
+      "Kaum Saba'"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_161"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Wadud yang memiliki arti...",
+    "correctAnswer": "Yang Maha Pecinta",
+    "options": [
+      "Yang Maha Meninggikan",
+      "Yang Maha Mengawasi",
+      "Yang Maha Pecinta",
+      "Yang Memiliki Kegagahan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_162"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah memiliki ketampanan luar biasa dan ahli menafsirkan mimpi adalah Nabi...",
+    "correctAnswer": "Yusuf",
+    "options": [
+      "Shalih",
+      "Luth",
+      "Yusuf",
+      "Nuh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_163"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Karim yang memiliki arti...",
+    "correctAnswer": "Yang Maha Mulia",
+    "options": [
+      "Yang Maha Pemberi Rezeki",
+      "Yang Maha Membuat Perhitungan",
+      "Yang Maha Mulia",
+      "Yang Maha Mendengar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_164"
+  },
+  {
+    "text": "Siapakah malaikat yang diutus Allah SWT untuk menjaga pintu neraka?",
+    "correctAnswer": "Malik",
+    "options": [
+      "Malik",
+      "Munkar",
+      "Raqib",
+      "Nakir"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_165"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Menerima Syukur adalah...",
+    "correctAnswer": "Asy-Syakur",
+    "options": [
+      "Al-Ba'its",
+      "Asy-Syakur",
+      "Al-Fattah",
+      "Al-Adl"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_166"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah As-Salam yang memiliki arti...",
+    "correctAnswer": "Yang Maha Memberi Kesejahteraan",
+    "options": [
+      "Yang Maha Memberi Kesejahteraan",
+      "Yang Maha Memelihara",
+      "Yang Maha Suci",
+      "Yang Maha Mendengar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_167"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Aliy yang memiliki arti...",
+    "correctAnswer": "Yang Maha Tinggi",
+    "options": [
+      "Yang Maha Tinggi",
+      "Yang Maha Mengetahui",
+      "Yang Maha Membuat Perhitungan",
+      "Yang Maha Menyaksikan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_168"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah sangat fasih berbicara dan menemani Nabi Musa adalah Nabi...",
+    "correctAnswer": "Harun",
+    "options": [
+      "Isa",
+      "Adam",
+      "Yusuf",
+      "Harun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_169"
+  },
+  {
+    "text": "Nabi Daud sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Penerima Kitab Zabur",
+    "options": [
+      "Penerima Kitab Zabur",
+      "Ruhullah",
+      "Khatamun Nabiyyin",
+      "Bapak Umat Manusia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_170"
+  },
+  {
+    "text": "Gelar atau sebutan Dzun Nun diberikan kepada Nabi...",
+    "correctAnswer": "Yunus",
+    "options": [
+      "Yunus",
+      "Muhammad",
+      "Yusuf",
+      "Harun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_171"
+  },
+  {
+    "text": "Surah yang memiliki arti Waktu Subuh adalah surah...",
+    "correctAnswer": "Al-Falaq",
+    "options": [
+      "Al-Hajj",
+      "Al-Furqan",
+      "Al-Lahab",
+      "Al-Falaq"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_172"
+  },
+  {
+    "text": "Nabi Zakariya sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Ayah Nabi Yahya",
+    "options": [
+      "Kalimullah",
+      "Nabi kaum Tsamud",
+      "Ayah Nabi Yahya",
+      "Nabi yang sangat tampan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_173"
+  },
+  {
+    "text": "Berdasarkan aqidah, rukun Iman ke-2 adalah...",
+    "correctAnswer": "Iman kepada para Malaikat Allah",
+    "options": [
+      "Iman kepada Hari Kiamat",
+      "Iman kepada Allah SWT",
+      "Iman kepada Qada dan Qadar (Takdir)",
+      "Iman kepada para Malaikat Allah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_174"
+  },
+  {
+    "text": "Makna 'Yang Maha Melapangkan' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Basit",
+    "options": [
+      "Al-Wadud",
+      "Al-Hasib",
+      "Al-Basit",
+      "Al-Haqq"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_175"
+  },
+  {
+    "text": "Rukun Islam yang ke-5 adalah...",
+    "correctAnswer": "Menunaikan ibadah haji bagi yang mampu",
+    "options": [
+      "Menunaikan ibadah haji bagi yang mampu",
+      "Mengucapkan dua kalimat syahadat",
+      "Berpuasa di bulan Ramadhan",
+      "Menunaikan zakat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_176"
+  },
+  {
+    "text": "Ayat yang pertama kali diturunkan kepada Nabi Muhammad SAW adalah...",
+    "correctAnswer": "Al-'Alaq ayat 1-5",
+    "options": [
+      "Al-Fatihah ayat 1-7",
+      "Al-'Alaq ayat 1-5",
+      "Al-Baqarah ayat 1-5",
+      "Al-Mudassir ayat 1-5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_177"
+  },
+  {
+    "text": "Surah Luqman dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Keluarga Luqman",
+    "options": [
+      "Semut",
+      "Keluarga Luqman",
+      "Orang yang Berselimut",
+      "Laba-laba"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_178"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah memiliki kesabaran luar biasa saat diuji penyakit menahun adalah Nabi...",
+    "correctAnswer": "Ayyub",
+    "options": [
+      "Daud",
+      "Ayyub",
+      "Yusuf",
+      "Ishaq"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_179"
+  },
+  {
+    "text": "Makna 'Yang Maha Memelihara' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Muhaimin",
+    "options": [
+      "Al-Alim",
+      "As-Sami'",
+      "Al-Jabbar",
+      "Al-Muhaimin"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_180"
+  },
+  {
+    "text": "Surah yang memiliki arti Kemuliaan adalah surah...",
+    "correctAnswer": "Al-Qadr",
+    "options": [
+      "Al-Furqan",
+      "Al-Qadr",
+      "Al-Ma'idah",
+      "Yusuf"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_181"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Malik, maknanya adalah...",
+    "correctAnswer": "Yang Maha Merajai",
+    "options": [
+      "Yang Maha Memelihara",
+      "Yang Maha Merendahkan",
+      "Yang Maha Merajai",
+      "Yang Maha Mengawasi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_182"
+  },
+  {
+    "text": "Menurut syariat, rukun Islam yang berada pada urutan ke-5 adalah...",
+    "correctAnswer": "Menunaikan ibadah haji bagi yang mampu",
+    "options": [
+      "Berpuasa di bulan Ramadhan",
+      "Mengucapkan dua kalimat syahadat",
+      "Menunaikan zakat",
+      "Menunaikan ibadah haji bagi yang mampu"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_183"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Latif yang memiliki arti...",
+    "correctAnswer": "Yang Maha Lembut",
+    "options": [
+      "Yang Maha Lembut",
+      "Yang Maha Melapangkan",
+      "Yang Maha Pengasih",
+      "Yang Maha Luhur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_184"
+  },
+  {
+    "text": "Rukun Islam yang ke-2 adalah...",
+    "correctAnswer": "Mendirikan shalat",
+    "options": [
+      "Mengucapkan dua kalimat syahadat",
+      "Menunaikan zakat",
+      "Mendirikan shalat",
+      "Menunaikan ibadah haji bagi yang mampu"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_185"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Membentuk Rupa adalah...",
+    "correctAnswer": "Al-Mushawwir",
+    "options": [
+      "Al-Khafidz",
+      "Al-Wasi'",
+      "Al-Mushawwir",
+      "Al-Ghaffar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_186"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Muqit yang memiliki arti...",
+    "correctAnswer": "Yang Maha Pemberi Kecukupan",
+    "options": [
+      "Yang Maha Melihat",
+      "Yang Maha Pemberi Kecukupan",
+      "Yang Maha Memelihara",
+      "Yang Maha Memelihara/Mewakili"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_187"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Fattah yang memiliki arti...",
+    "correctAnswer": "Yang Maha Pembuka Rahmat",
+    "options": [
+      "Yang Maha Memuliakan",
+      "Yang Maha Menetapkan Hukum",
+      "Yang Maha Kokoh",
+      "Yang Maha Pembuka Rahmat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_188"
+  },
+  {
+    "text": "Makna 'Yang Maha Pencipta' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Khaliq",
+    "options": [
+      "Al-Matin",
+      "Al-Qawiy",
+      "Al-Khaliq",
+      "Al-Alim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_189"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Pecinta adalah...",
+    "correctAnswer": "Al-Wadud",
+    "options": [
+      "Al-Hasib",
+      "Al-Jabbar",
+      "Al-Khaliq",
+      "Al-Wadud"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_190"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu As-Salam, maknanya adalah...",
+    "correctAnswer": "Yang Maha Memberi Kesejahteraan",
+    "options": [
+      "Yang Maha Membangkitkan",
+      "Yang Maha Pemberi Kecukupan",
+      "Yang Maha Memelihara",
+      "Yang Maha Memberi Kesejahteraan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_191"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Karim, maknanya adalah...",
+    "correctAnswer": "Yang Maha Mulia",
+    "options": [
+      "Yang Maha Mulia",
+      "Yang Maha Luhur",
+      "Yang Maha Kokoh",
+      "Yang Maha Pecinta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_192"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah pengasuh Siti Maryam dan baru punya anak di usia tua adalah Nabi...",
+    "correctAnswer": "Zakariya",
+    "options": [
+      "Ibrahim",
+      "Muhammad",
+      "Idris",
+      "Zakariya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_193"
+  },
+  {
+    "text": "Makna 'Yang Maha Pecinta' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Wadud",
+    "options": [
+      "Al-Kabir",
+      "Al-Qabidh",
+      "Al-Wadud",
+      "As-Salam"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_194"
+  },
+  {
+    "text": "Surah Al-Ikhlas dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Ikhlas",
+    "options": [
+      "Golongan-golongan",
+      "Sujud",
+      "Ikhlas",
+      "Harta Rampasan Perang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_195"
+  },
+  {
+    "text": "Berdasarkan aqidah, rukun Iman ke-6 adalah...",
+    "correctAnswer": "Iman kepada Qada dan Qadar (Takdir)",
+    "options": [
+      "Iman kepada Qada dan Qadar (Takdir)",
+      "Iman kepada para Malaikat Allah",
+      "Iman kepada Hari Kiamat",
+      "Iman kepada Allah SWT"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_196"
+  },
+  {
+    "text": "Jumlah total juz dalam Al-Qur'an adalah...",
+    "correctAnswer": "30 juz",
+    "options": [
+      "30 juz",
+      "114 juz",
+      "60 juz",
+      "100 juz"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_197"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Perkasa adalah...",
+    "correctAnswer": "Al-Aziz",
+    "options": [
+      "Al-Jabbar",
+      "Al-Haqq",
+      "Al-Wahhab",
+      "Al-Aziz"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_198"
+  },
+  {
+    "text": "Makna 'Yang Maha Mengadakan' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Bari",
+    "options": [
+      "Al-Bari",
+      "Al-Aziz",
+      "Al-Malik",
+      "Al-Ba'its"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_199"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Aziz yang memiliki arti...",
+    "correctAnswer": "Yang Maha Perkasa",
+    "options": [
+      "Yang Maha Perkasa",
+      "Yang Maha Megah",
+      "Yang Maha Mendengar",
+      "Yang Maha Penyayang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_200"
+  },
+  {
+    "text": "Surah Asy-Syu'ara' dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Para Penyair",
+    "options": [
+      "Orang-orang Kafir",
+      "Semut",
+      "Yang Maha Pemurah",
+      "Para Penyair"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_201"
+  },
+  {
+    "text": "Surah Al-Hajj dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Haji",
+    "options": [
+      "Pembukaan",
+      "Keluarga Luqman",
+      "Para Nabi",
+      "Haji"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_202"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah mampu berbicara dengan binatang dan memerintah jin adalah Nabi...",
+    "correctAnswer": "Sulaiman",
+    "options": [
+      "Ismail",
+      "Isa",
+      "Harun",
+      "Sulaiman"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_203"
+  },
+  {
+    "text": "Surah Al-Anfal dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Harta Rampasan Perang",
+    "options": [
+      "Harta Rampasan Perang",
+      "Golongan-golongan",
+      "Para Nabi",
+      "Waktu Subuh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_204"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Hafizh yang memiliki arti...",
+    "correctAnswer": "Yang Maha Memelihara",
+    "options": [
+      "Yang Maha Pembuka Rahmat",
+      "Yang Maha Perkasa",
+      "Yang Maha Memelihara",
+      "Yang Maha Membentuk Rupa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_205"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Pemberi Rezeki adalah...",
+    "correctAnswer": "Ar-Razzaq",
+    "options": [
+      "Al-Wasi'",
+      "Al-Qahhar",
+      "Ar-Razzaq",
+      "Al-Basit"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_206"
+  },
+  {
+    "text": "Gelar atau sebutan Saudara Nabi Musa diberikan kepada Nabi...",
+    "correctAnswer": "Harun",
+    "options": [
+      "Harun",
+      "Musa",
+      "Luth",
+      "Hud"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_207"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Bijaksana adalah...",
+    "correctAnswer": "Al-Hakim",
+    "options": [
+      "Al-Hakim",
+      "Al-Matin",
+      "As-Sami'",
+      "Ar-Rafi'"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_208"
+  },
+  {
+    "text": "Makna 'Yang Maha Luhur' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Jalil",
+    "options": [
+      "Al-Mushawwir",
+      "Al-Jalil",
+      "Al-Wadud",
+      "Al-Mu'min"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_209"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah menerima wahyu Al-Qur'an sebagai mukjizat terbesar adalah Nabi...",
+    "correctAnswer": "Muhammad",
+    "options": [
+      "Muhammad",
+      "Yunus",
+      "Ishaq",
+      "Nuh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_210"
+  },
+  {
+    "text": "Kewajiban 'Berpuasa di bulan Ramadhan' tergolong dalam rukun Islam yang ke-...",
+    "correctAnswer": "4",
+    "options": [
+      "4",
+      "5",
+      "3",
+      "1"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_211"
+  },
+  {
+    "text": "Tugas utama dari malaikat Mikail adalah...",
+    "correctAnswer": "membagi rezeki dan menurunkan hujan",
+    "options": [
+      "menjaga pintu surga",
+      "menanyai amal perbuatan manusia di alam kubur",
+      "membagi rezeki dan menurunkan hujan",
+      "meniup sangkakala pada hari kiamat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_212"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Membuat Perhitungan adalah...",
+    "correctAnswer": "Al-Hasib",
+    "options": [
+      "Al-Wadud",
+      "Al-Hasib",
+      "Al-Azhim",
+      "Al-Wakil"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_213"
+  },
+  {
+    "text": "Surah yang memiliki arti Wanita adalah surah...",
+    "correctAnswer": "An-Nisa'",
+    "options": [
+      "Ar-Rum",
+      "Al-Kahf",
+      "An-Nisa'",
+      "Ta-Ha"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_214"
+  },
+  {
+    "text": "Keyakinan akan 'Iman kepada Kitab-kitab Allah' menempati urutan ke-... dalam Rukun Iman.",
+    "correctAnswer": "3",
+    "options": [
+      "6",
+      "1",
+      "3",
+      "2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_215"
+  },
+  {
+    "text": "Surah Al-Kausar dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Nikmat yang Berlimpah",
+    "options": [
+      "Nikmat yang Berlimpah",
+      "Harta Rampasan Perang",
+      "Nabi Ibrahim",
+      "Pembeda"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_216"
+  },
+  {
+    "text": "Berdasarkan aqidah, rukun Iman ke-1 adalah...",
+    "correctAnswer": "Iman kepada Allah SWT",
+    "options": [
+      "Iman kepada Qada dan Qadar (Takdir)",
+      "Iman kepada para Malaikat Allah",
+      "Iman kepada Allah SWT",
+      "Iman kepada Kitab-kitab Allah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_217"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Mudzill yang memiliki arti...",
+    "correctAnswer": "Yang Maha Menghinakan",
+    "options": [
+      "Yang Maha Penyantun",
+      "Yang Maha Memaksa",
+      "Yang Maha Menghinakan",
+      "Yang Maha Memelihara"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_218"
+  },
+  {
+    "text": "Surah An-Nas dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Umat Manusia",
+    "options": [
+      "Harta Rampasan Perang",
+      "Umat Manusia",
+      "Bangsa Romawi",
+      "Hari Kiamat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_219"
+  },
+  {
+    "text": "Nabi Syu'aib sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Khatib para Nabi",
+    "options": [
+      "Nabi dari Bani Israil",
+      "Penerima Kitab Zabur",
+      "Khatib para Nabi",
+      "Keponakan Nabi Ibrahim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_220"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Halim, maknanya adalah...",
+    "correctAnswer": "Yang Maha Penyantun",
+    "options": [
+      "Yang Maha Penyayang",
+      "Yang Maha Meninggikan",
+      "Yang Maha Penyantun",
+      "Yang Maha Mengabulkan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_221"
+  },
+  {
+    "text": "Makna 'Yang Maha Waspada/Mengetahui' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Khabir",
+    "options": [
+      "Al-Hafizh",
+      "Al-Khabir",
+      "Al-Jalil",
+      "Al-Adl"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_222"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Basit, maknanya adalah...",
+    "correctAnswer": "Yang Maha Melapangkan",
+    "options": [
+      "Yang Maha Merendahkan",
+      "Yang Maha Melapangkan",
+      "Yang Maha Merajai",
+      "Yang Maha Pengasih"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_223"
+  },
+  {
+    "text": "Al-Qur'an diturunkan secara berangsur-angsur selama kurang lebih...",
+    "correctAnswer": "22 tahun 2 bulan 22 hari",
+    "options": [
+      "21 tahun 2 bulan 22 hari",
+      "23 tahun 2 bulan 22 hari",
+      "20 tahun 2 bulan 22 hari",
+      "22 tahun 2 bulan 22 hari"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_224"
+  },
+  {
+    "text": "Malaikat yang memiliki tugas mencatat segala amal kebaikan manusia adalah malaikat...",
+    "correctAnswer": "Raqib",
+    "options": [
+      "Raqib",
+      "Mikail",
+      "Nakir",
+      "Israfil"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_225"
+  },
+  {
+    "text": "Surah yang memiliki arti Nabi Yusuf adalah surah...",
+    "correctAnswer": "Yusuf",
+    "options": [
+      "Al-An'am",
+      "Al-'Ankabut",
+      "Yusuf",
+      "Fatir"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_226"
+  },
+  {
+    "text": "Surah As-Sajdah dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Sujud",
+    "options": [
+      "Perjalanan Malam",
+      "Sujud",
+      "Pembeda",
+      "Pembukaan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_227"
+  },
+  {
+    "text": "Surah At-Taubah dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Pengampunan",
+    "options": [
+      "Laba-laba",
+      "Ya-Sin",
+      "Pengampunan",
+      "Pencipta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_228"
+  },
+  {
+    "text": "Tugas utama dari malaikat Raqib adalah...",
+    "correctAnswer": "mencatat segala amal kebaikan manusia",
+    "options": [
+      "menanyai amal perbuatan manusia di alam kubur",
+      "mencatat segala amal kebaikan manusia",
+      "menanyai manusia di alam kubur bersama Munkar",
+      "meniup sangkakala pada hari kiamat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_229"
+  },
+  {
+    "text": "Nabi Yunus sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Dzun Nun",
+    "options": [
+      "Dzun Nun",
+      "Ayah Nabi Yahya",
+      "Kalimullah",
+      "Nabi yang cerdas"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_230"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah diutus untuk memperbaiki moral kota Sodom adalah Nabi...",
+    "correctAnswer": "Luth",
+    "options": [
+      "Isa",
+      "Shalih",
+      "Luth",
+      "Ayyub"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_231"
+  },
+  {
+    "text": "Nabi Yusuf sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Nabi yang sangat tampan",
+    "options": [
+      "Penerima Kitab Zabur",
+      "Nabi yang cerdas",
+      "Simbol kesabaran",
+      "Nabi yang sangat tampan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_232"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Merajai adalah...",
+    "correctAnswer": "Al-Malik",
+    "options": [
+      "Al-Qahhar",
+      "Ar-Raqib",
+      "Al-Malik",
+      "Al-Karim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_233"
+  },
+  {
+    "text": "Nabi Ilyasa sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Nabi dari Bani Israil",
+    "options": [
+      "Ruhullah",
+      "Nabi yang cerdas",
+      "Nabi dari Bani Israil",
+      "Ayah Nabi Yusuf"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_234"
+  },
+  {
+    "text": "Surah yang memiliki arti Jamuan Hidangan adalah surah...",
+    "correctAnswer": "Al-Ma'idah",
+    "options": [
+      "Al-Ma'idah",
+      "Al-Ikhlas",
+      "Asy-Syu'ara'",
+      "Al-Fatihah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_235"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Suci adalah...",
+    "correctAnswer": "Al-Quddus",
+    "options": [
+      "Al-Quddus",
+      "Al-Jabbar",
+      "Al-Jalil",
+      "Asy-Syakur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_236"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Halim yang memiliki arti...",
+    "correctAnswer": "Yang Maha Penyantun",
+    "options": [
+      "Yang Maha Memelihara",
+      "Yang Maha Lembut",
+      "Yang Maha Melihat",
+      "Yang Maha Penyantun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_237"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Matin yang memiliki arti...",
+    "correctAnswer": "Yang Maha Kokoh",
+    "options": [
+      "Yang Maha Kokoh",
+      "Yang Maha Benar",
+      "Yang Maha Pengampun",
+      "Yang Maha Megah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_238"
+  },
+  {
+    "text": "Menunaikan ibadah haji bagi yang mampu merupakan rukun Islam yang ke-...",
+    "correctAnswer": "5",
+    "options": [
+      "5",
+      "1",
+      "3",
+      "4"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_239"
+  },
+  {
+    "text": "Surah Al-Kafirun dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Orang-orang Kafir",
+    "options": [
+      "Perjalanan Malam",
+      "Orang-orang Kafir",
+      "Ta-Ha",
+      "Keluarga Imran"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_240"
+  },
+  {
+    "text": "Nabi Ayyub sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Simbol kesabaran",
+    "options": [
+      "Penyelamat Bani Israil",
+      "Penerima Kitab Zabur",
+      "Simbol kesabaran",
+      "Ulul Azmi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_241"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Pengampun adalah...",
+    "correctAnswer": "Al-Ghaffar",
+    "options": [
+      "Al-Hafizh",
+      "Al-Ghaffar",
+      "Ar-Rafi'",
+      "Al-Mujib"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_242"
+  },
+  {
+    "text": "Makna 'Yang Maha Pengasih' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Ar-Rahman",
+    "options": [
+      "Al-Khaliq",
+      "Al-Latif",
+      "Ar-Rahman",
+      "Al-Wasi'"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_243"
+  },
+  {
+    "text": "Surah Al-Qadr dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Kemuliaan",
+    "options": [
+      "Waktu Subuh",
+      "Kaum Saba'",
+      "Kemuliaan",
+      "Kerajaan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_244"
+  },
+  {
+    "text": "Makna 'Yang Maha Bijaksana' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Hakim",
+    "options": [
+      "Al-Qahhar",
+      "Al-Kabir",
+      "Al-Hakim",
+      "Al-Qabidh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_245"
+  },
+  {
+    "text": "Surah An-Nisa' dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Wanita",
+    "options": [
+      "Bangsa Romawi",
+      "Wanita",
+      "Nikmat yang Berlimpah",
+      "Laba-laba"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_246"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Quddus yang memiliki arti...",
+    "correctAnswer": "Yang Maha Suci",
+    "options": [
+      "Yang Maha Menerima Syukur",
+      "Yang Maha Pencipta",
+      "Yang Maha Suci",
+      "Yang Maha Memberi Kesejahteraan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_247"
+  },
+  {
+    "text": "Gelar atau sebutan Simbol kesabaran diberikan kepada Nabi...",
+    "correctAnswer": "Ayyub",
+    "options": [
+      "Ayyub",
+      "Yusuf",
+      "Isa",
+      "Adam"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_248"
+  },
+  {
+    "text": "Makna 'Yang Maha Mulia' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Karim",
+    "options": [
+      "Al-Mu'izz",
+      "Asy-Syahid",
+      "Al-Majid",
+      "Al-Karim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_249"
+  },
+  {
+    "text": "Malaikat yang memiliki tugas menanyai manusia di alam kubur bersama Munkar adalah malaikat...",
+    "correctAnswer": "Nakir",
+    "options": [
+      "Nakir",
+      "Mikail",
+      "Jibril",
+      "Izrail"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_250"
+  },
+  {
+    "text": "Surah Al-Fatihah dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Pembukaan",
+    "options": [
+      "Gua",
+      "Orang yang Berselimut",
+      "Pembukaan",
+      "Umat Manusia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_251"
+  },
+  {
+    "text": "Tugas utama dari malaikat Ridwan adalah...",
+    "correctAnswer": "menjaga pintu surga",
+    "options": [
+      "meniup sangkakala pada hari kiamat",
+      "mencabut nyawa makhluk hidup",
+      "menjaga pintu surga",
+      "menjaga pintu neraka"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_252"
+  },
+  {
+    "text": "Gelar atau sebutan Khalilullah (Kekasih Allah) diberikan kepada Nabi...",
+    "correctAnswer": "Ibrahim",
+    "options": [
+      "Ibrahim",
+      "Shalih",
+      "Syu'aib",
+      "Muhammad"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_253"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah diberi hikmah kecerdasan sejak masih anak-anak adalah Nabi...",
+    "correctAnswer": "Yahya",
+    "options": [
+      "Shalih",
+      "Yusuf",
+      "Ibrahim",
+      "Yahya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_254"
+  },
+  {
+    "text": "Iman kepada para Rasul Allah adalah bagian dari Rukun Iman yang ke-...",
+    "correctAnswer": "4",
+    "options": [
+      "5",
+      "4",
+      "1",
+      "2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_255"
+  },
+  {
+    "text": "Surah An-Naml dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Semut",
+    "options": [
+      "Keluarga Luqman",
+      "Semut",
+      "Hari Kiamat",
+      "Nabi Yunus"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_256"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Ishaq antara lain adalah...",
+    "correctAnswer": "putra Nabi Ibrahim yang saleh",
+    "options": [
+      "sangat fasih berbicara dan menemani Nabi Musa",
+      "menyembuhkan orang buta dan menghidupkan orang mati",
+      "mampu melunakkan besi dan memiliki suara merdu",
+      "putra Nabi Ibrahim yang saleh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_257"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah mengeluarkan unta betina dari batu karang adalah Nabi...",
+    "correctAnswer": "Shalih",
+    "options": [
+      "Ilyas",
+      "Musa",
+      "Shalih",
+      "Yahya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_258"
+  },
+  {
+    "text": "Menurut syariat, rukun Islam yang berada pada urutan ke-4 adalah...",
+    "correctAnswer": "Berpuasa di bulan Ramadhan",
+    "options": [
+      "Mendirikan shalat",
+      "Menunaikan ibadah haji bagi yang mampu",
+      "Berpuasa di bulan Ramadhan",
+      "Menunaikan zakat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_259"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Qawiy, maknanya adalah...",
+    "correctAnswer": "Yang Maha Kuat",
+    "options": [
+      "Yang Maha Membangkitkan",
+      "Yang Maha Merendahkan",
+      "Yang Maha Kuat",
+      "Yang Maha Agung"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_260"
+  },
+  {
+    "text": "Makna 'Yang Maha Pemberi Karunia' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Wahhab",
+    "options": [
+      "Al-Muhaimin",
+      "Al-Wahhab",
+      "Al-Khaliq",
+      "Al-Jalil"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_261"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Megah adalah...",
+    "correctAnswer": "Al-Mutakabbir",
+    "options": [
+      "Al-Mutakabbir",
+      "Al-Aziz",
+      "Al-Majid",
+      "Ar-Rahman"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_262"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Khabir, maknanya adalah...",
+    "correctAnswer": "Yang Maha Waspada/Mengetahui",
+    "options": [
+      "Yang Memiliki Kegagahan",
+      "Yang Maha Melapangkan",
+      "Yang Maha Memuliakan",
+      "Yang Maha Waspada/Mengetahui"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_263"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Bashir, maknanya adalah...",
+    "correctAnswer": "Yang Maha Melihat",
+    "options": [
+      "Yang Maha Pengampun",
+      "Yang Maha Memberi Kesejahteraan",
+      "Yang Maha Melihat",
+      "Yang Maha Kuat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_264"
+  },
+  {
+    "text": "Berpuasa di bulan Ramadhan merupakan rukun Islam yang ke-...",
+    "correctAnswer": "4",
+    "options": [
+      "2",
+      "1",
+      "4",
+      "3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_265"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Ismail antara lain adalah...",
+    "correctAnswer": "bersedia disembelih oleh ayahnya sebagai wujud ketaatan",
+    "options": [
+      "diberi hikmah kecerdasan sejak masih anak-anak",
+      "mampu melunakkan besi dan memiliki suara merdu",
+      "diutus untuk memperbaiki moral kota Sodom",
+      "bersedia disembelih oleh ayahnya sebagai wujud ketaatan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_266"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Pengasih adalah...",
+    "correctAnswer": "Ar-Rahman",
+    "options": [
+      "Al-Qawiy",
+      "Al-Jabbar",
+      "Al-Mutakabbir",
+      "Ar-Rahman"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_267"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Luhur adalah...",
+    "correctAnswer": "Al-Jalil",
+    "options": [
+      "Al-Jalil",
+      "Al-Wahhab",
+      "Asy-Syakur",
+      "Al-Wakil"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_268"
+  },
+  {
+    "text": "Keyakinan akan 'Iman kepada Allah SWT' menempati urutan ke-... dalam Rukun Iman.",
+    "correctAnswer": "1",
+    "options": [
+      "2",
+      "4",
+      "1",
+      "3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_269"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Muhaimin yang memiliki arti...",
+    "correctAnswer": "Yang Maha Memelihara",
+    "options": [
+      "Yang Maha Melapangkan",
+      "Yang Maha Memelihara",
+      "Yang Maha Mengetahui",
+      "Yang Maha Pecinta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_270"
+  },
+  {
+    "text": "Nabi Adam sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Bapak Umat Manusia",
+    "options": [
+      "Bapak Umat Manusia",
+      "Nabi dari Bani Israil",
+      "Raja yang bijaksana",
+      "Ayah Nabi Yusuf"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_271"
+  },
+  {
+    "text": "Mengucapkan dua kalimat syahadat merupakan rukun Islam yang ke-...",
+    "correctAnswer": "1",
+    "options": [
+      "1",
+      "2",
+      "5",
+      "3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_272"
+  },
+  {
+    "text": "Nabi Ya'qub sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Ayah Nabi Yusuf",
+    "options": [
+      "Kalimullah",
+      "Khatamun Nabiyyin",
+      "Ayah Nabi Yusuf",
+      "Simbol kesabaran"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_273"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Shalih antara lain adalah...",
+    "correctAnswer": "mengeluarkan unta betina dari batu karang",
+    "options": [
+      "memiliki ketampanan luar biasa dan ahli menafsirkan mimpi",
+      "memiliki 12 putra yang kelak menjadi Bani Israil",
+      "mengeluarkan unta betina dari batu karang",
+      "membuat bahtera (kapal) besar untuk menyelamatkan umatnya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_274"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Qabidh, maknanya adalah...",
+    "correctAnswer": "Yang Maha Menyempitkan",
+    "options": [
+      "Yang Maha Luhur",
+      "Yang Maha Menyempitkan",
+      "Yang Maha Perkasa",
+      "Yang Maha Besar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_275"
+  },
+  {
+    "text": "Rukun Iman yang ke-6 adalah...",
+    "correctAnswer": "Iman kepada Qada dan Qadar (Takdir)",
+    "options": [
+      "Iman kepada para Malaikat Allah",
+      "Iman kepada Allah SWT",
+      "Iman kepada Qada dan Qadar (Takdir)",
+      "Iman kepada Hari Kiamat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_276"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah As-Sami' yang memiliki arti...",
+    "correctAnswer": "Yang Maha Mendengar",
+    "options": [
+      "Yang Maha Lembut",
+      "Yang Maha Pengampun",
+      "Yang Maha Mendengar",
+      "Yang Maha Membuat Perhitungan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_277"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Ghafur yang memiliki arti...",
+    "correctAnswer": "Yang Maha Pengampun",
+    "options": [
+      "Yang Maha Mengetahui",
+      "Yang Maha Pengampun",
+      "Yang Maha Pemberi Rezeki",
+      "Yang Maha Mulia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_278"
+  },
+  {
+    "text": "Makna 'Yang Maha Penyayang' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Ar-Rahim",
+    "options": [
+      "Al-Karim",
+      "Al-Aliy",
+      "Al-Khafidz",
+      "Ar-Rahim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_279"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah bersedia disembelih oleh ayahnya sebagai wujud ketaatan adalah Nabi...",
+    "correctAnswer": "Ismail",
+    "options": [
+      "Harun",
+      "Zulkifli",
+      "Zakariya",
+      "Ismail"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_280"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Ar-Rafi' yang memiliki arti...",
+    "correctAnswer": "Yang Maha Meninggikan",
+    "options": [
+      "Yang Maha Memelihara/Mewakili",
+      "Yang Maha Meninggikan",
+      "Yang Memiliki Kegagahan",
+      "Yang Maha Pengampun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_281"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Melapangkan adalah...",
+    "correctAnswer": "Al-Basit",
+    "options": [
+      "Al-Basit",
+      "Al-Muqit",
+      "Al-Wakil",
+      "Al-Haqq"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_282"
+  },
+  {
+    "text": "Makna 'Yang Maha Memberi Keamanan' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Mu'min",
+    "options": [
+      "Al-Mu'min",
+      "Ar-Rafi'",
+      "Al-Karim",
+      "Ar-Raqib"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_283"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Qahhar, maknanya adalah...",
+    "correctAnswer": "Yang Maha Memaksa",
+    "options": [
+      "Yang Maha Membuat Perhitungan",
+      "Yang Maha Memaksa",
+      "Yang Maha Menerima Syukur",
+      "Yang Maha Perkasa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_284"
+  },
+  {
+    "text": "Siapakah malaikat yang diutus Allah SWT untuk menyampaikan wahyu kepada nabi dan rasul?",
+    "correctAnswer": "Jibril",
+    "options": [
+      "Raqib",
+      "Atid",
+      "Jibril",
+      "Ridwan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_285"
+  },
+  {
+    "text": "Malaikat Israfil diberikan tugas oleh Allah SWT untuk...",
+    "correctAnswer": "meniup sangkakala pada hari kiamat",
+    "options": [
+      "mencatat segala amal keburukan manusia",
+      "menanyai amal perbuatan manusia di alam kubur",
+      "meniup sangkakala pada hari kiamat",
+      "mencabut nyawa makhluk hidup"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_286"
+  },
+  {
+    "text": "Nabi Ismail sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Anak yang taat",
+    "options": [
+      "Nabi kaum 'Ad",
+      "Anak yang taat",
+      "Ayah Nabi Yusuf",
+      "Bapak dari Ya'qub"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_287"
+  },
+  {
+    "text": "Surah Al-'Ankabut dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Laba-laba",
+    "options": [
+      "Laba-laba",
+      "Keluarga Luqman",
+      "Jamuan Hidangan",
+      "Waktu Subuh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_288"
+  },
+  {
+    "text": "Surah yang memiliki arti Sapi Betina adalah surah...",
+    "correctAnswer": "Al-Baqarah",
+    "options": [
+      "Al-Baqarah",
+      "Ta-Ha",
+      "Ibrahim",
+      "Al-Kausar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_289"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Hakam yang memiliki arti...",
+    "correctAnswer": "Yang Maha Menetapkan Hukum",
+    "options": [
+      "Yang Maha Pengampun",
+      "Yang Maha Memelihara/Mewakili",
+      "Yang Maha Menetapkan Hukum",
+      "Yang Maha Merajai"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_290"
+  },
+  {
+    "text": "Iman kepada para Malaikat Allah adalah bagian dari Rukun Iman yang ke-...",
+    "correctAnswer": "2",
+    "options": [
+      "2",
+      "6",
+      "1",
+      "4"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_291"
+  },
+  {
+    "text": "Siapakah malaikat yang diutus Allah SWT untuk mencabut nyawa makhluk hidup?",
+    "correctAnswer": "Izrail",
+    "options": [
+      "Izrail",
+      "Israfil",
+      "Mikail",
+      "Malik"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_292"
+  },
+  {
+    "text": "Nabi Zulkifli sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Pemimpin yang sabar",
+    "options": [
+      "Bapak Umat Manusia",
+      "Keponakan Nabi Ibrahim",
+      "Simbol kesabaran",
+      "Pemimpin yang sabar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_293"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Adl, maknanya adalah...",
+    "correctAnswer": "Yang Maha Adil",
+    "options": [
+      "Yang Maha Mulia",
+      "Yang Maha Luas",
+      "Yang Memiliki Kegagahan",
+      "Yang Maha Adil"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_294"
+  },
+  {
+    "text": "Surah yang memiliki arti Pengampunan adalah surah...",
+    "correctAnswer": "At-Taubah",
+    "options": [
+      "Maryam",
+      "At-Taubah",
+      "Al-Baqarah",
+      "An-Nur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_295"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Memberi Keamanan adalah...",
+    "correctAnswer": "Al-Mu'min",
+    "options": [
+      "Al-Mu'min",
+      "Al-Qawiy",
+      "Al-Hakim",
+      "Al-Karim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_296"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Daud antara lain adalah...",
+    "correctAnswer": "mampu melunakkan besi dan memiliki suara merdu",
+    "options": [
+      "bertahan hidup di dalam perut ikan paus",
+      "mampu berbicara dengan binatang dan memerintah jin",
+      "sangat fasih berbicara dan menemani Nabi Musa",
+      "mampu melunakkan besi dan memiliki suara merdu"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_297"
+  },
+  {
+    "text": "Surah yang memiliki arti Binatang Ternak adalah surah...",
+    "correctAnswer": "Al-An'am",
+    "options": [
+      "Ar-Rum",
+      "Ya-Sin",
+      "Luqman",
+      "Al-An'am"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_298"
+  },
+  {
+    "text": "Keyakinan akan 'Iman kepada Hari Kiamat' menempati urutan ke-... dalam Rukun Iman.",
+    "correctAnswer": "5",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_299"
+  },
+  {
+    "text": "Surah yang memiliki arti Kisah-kisah adalah surah...",
+    "correctAnswer": "Al-Qasas",
+    "options": [
+      "Al-Hijr",
+      "Al-Anbiya'",
+      "Al-Qasas",
+      "Yusuf"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_300"
+  },
+  {
+    "text": "Berdasarkan aqidah, rukun Iman ke-3 adalah...",
+    "correctAnswer": "Iman kepada Kitab-kitab Allah",
+    "options": [
+      "Iman kepada para Rasul Allah",
+      "Iman kepada para Malaikat Allah",
+      "Iman kepada Kitab-kitab Allah",
+      "Iman kepada Hari Kiamat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_301"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Majid yang memiliki arti...",
+    "correctAnswer": "Yang Maha Mulia",
+    "options": [
+      "Yang Maha Mulia",
+      "Yang Maha Memberi Kesejahteraan",
+      "Yang Maha Mengawasi",
+      "Yang Maha Tinggi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_302"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu As-Sami', maknanya adalah...",
+    "correctAnswer": "Yang Maha Mendengar",
+    "options": [
+      "Yang Maha Membentuk Rupa",
+      "Yang Maha Suci",
+      "Yang Maha Mendengar",
+      "Yang Maha Pecinta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_303"
+  },
+  {
+    "text": "Siapakah malaikat yang diutus Allah SWT untuk mencatat segala amal kebaikan manusia?",
+    "correctAnswer": "Raqib",
+    "options": [
+      "Mikail",
+      "Atid",
+      "Raqib",
+      "Izrail"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_304"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Jalil yang memiliki arti...",
+    "correctAnswer": "Yang Maha Luhur",
+    "options": [
+      "Yang Maha Pemberi Rezeki",
+      "Yang Maha Luhur",
+      "Yang Maha Melihat",
+      "Yang Maha Menyaksikan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_305"
+  },
+  {
+    "text": "Siapakah malaikat yang diutus Allah SWT untuk membagi rezeki dan menurunkan hujan?",
+    "correctAnswer": "Mikail",
+    "options": [
+      "Izrail",
+      "Nakir",
+      "Mikail",
+      "Malik"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_306"
+  },
+  {
+    "text": "Gelar atau sebutan Ayah Nabi Yusuf diberikan kepada Nabi...",
+    "correctAnswer": "Ya'qub",
+    "options": [
+      "Ya'qub",
+      "Yunus",
+      "Sulaiman",
+      "Ibrahim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_307"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Ar-Raqib, maknanya adalah...",
+    "correctAnswer": "Yang Maha Mengawasi",
+    "options": [
+      "Yang Maha Kokoh",
+      "Yang Maha Mengawasi",
+      "Yang Maha Penyantun",
+      "Yang Maha Pembuka Rahmat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_308"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Ilyas antara lain adalah...",
+    "correctAnswer": "diutus ke Bani Israil penyembah berhala Ba'al",
+    "options": [
+      "diutus ke Bani Israil penyembah berhala Ba'al",
+      "bertahan hidup di dalam perut ikan paus",
+      "memiliki kesabaran luar biasa saat diuji penyakit menahun",
+      "diberi hikmah kecerdasan sejak masih anak-anak"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_309"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Memelihara/Mewakili adalah...",
+    "correctAnswer": "Al-Wakil",
+    "options": [
+      "Al-Matin",
+      "Al-Hakam",
+      "Al-Wakil",
+      "Ar-Rahim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_310"
+  },
+  {
+    "text": "Makna 'Yang Maha Memuliakan' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Mu'izz",
+    "options": [
+      "Al-Mu'izz",
+      "Al-Wakil",
+      "Ar-Rahim",
+      "Al-Muqit"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_311"
+  },
+  {
+    "text": "Surah Al-Anbiya' dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Para Nabi",
+    "options": [
+      "Nabi Ibrahim",
+      "Para Nabi",
+      "Lebah",
+      "Yang Maha Pemurah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_312"
+  },
+  {
+    "text": "Makna 'Yang Maha Menerima Syukur' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Asy-Syakur",
+    "options": [
+      "Al-Fattah",
+      "Al-Qahhar",
+      "Al-Jabbar",
+      "Asy-Syakur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_313"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Ayyub antara lain adalah...",
+    "correctAnswer": "memiliki kesabaran luar biasa saat diuji penyakit menahun",
+    "options": [
+      "mampu melunakkan besi dan memiliki suara merdu",
+      "tidak hangus saat dibakar oleh Raja Namrud",
+      "memiliki kesabaran luar biasa saat diuji penyakit menahun",
+      "pengasuh Siti Maryam dan baru punya anak di usia tua"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_314"
+  },
+  {
+    "text": "Surah Al-Mulk dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Kerajaan",
+    "options": [
+      "Pertolongan",
+      "Orang yang Berkemul",
+      "Kerajaan",
+      "Nabi Hud"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_315"
+  },
+  {
+    "text": "Gelar atau sebutan Ruhullah diberikan kepada Nabi...",
+    "correctAnswer": "Isa",
+    "options": [
+      "Hud",
+      "Ayyub",
+      "Isa",
+      "Shalih"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_316"
+  },
+  {
+    "text": "Makna 'Yang Maha Adil' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Adl",
+    "options": [
+      "Al-Ghaffar",
+      "Al-Wakil",
+      "Al-Matin",
+      "Al-Adl"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_317"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Aziz, maknanya adalah...",
+    "correctAnswer": "Yang Maha Perkasa",
+    "options": [
+      "Yang Maha Memelihara",
+      "Yang Maha Perkasa",
+      "Yang Maha Merajai",
+      "Yang Maha Pemberi Rezeki"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_318"
+  },
+  {
+    "text": "Surah Hud dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Nabi Hud",
+    "options": [
+      "Kemuliaan",
+      "Ya-Sin",
+      "Sapi Betina",
+      "Nabi Hud"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_319"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Mengawasi adalah...",
+    "correctAnswer": "Ar-Raqib",
+    "options": [
+      "Al-Wahhab",
+      "Ar-Razzaq",
+      "Al-Ba'its",
+      "Ar-Raqib"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_320"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Musa antara lain adalah...",
+    "correctAnswer": "membelah lautan dengan tongkatnya",
+    "options": [
+      "membuat bahtera (kapal) besar untuk menyelamatkan umatnya",
+      "membelah lautan dengan tongkatnya",
+      "manusia pertama yang diciptakan",
+      "mampu melunakkan besi dan memiliki suara merdu"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_321"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Wahhab yang memiliki arti...",
+    "correctAnswer": "Yang Maha Pemberi Karunia",
+    "options": [
+      "Yang Maha Meninggikan",
+      "Yang Maha Membentuk Rupa",
+      "Yang Maha Pemberi Karunia",
+      "Yang Maha Mengetahui"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_322"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Muqit, maknanya adalah...",
+    "correctAnswer": "Yang Maha Pemberi Kecukupan",
+    "options": [
+      "Yang Maha Memelihara/Mewakili",
+      "Yang Maha Pemberi Kecukupan",
+      "Yang Maha Mengabulkan",
+      "Yang Maha Pembuka Rahmat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_323"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Kabir yang memiliki arti...",
+    "correctAnswer": "Yang Maha Besar",
+    "options": [
+      "Yang Maha Besar",
+      "Yang Maha Membentuk Rupa",
+      "Yang Maha Memberi Keamanan",
+      "Yang Maha Mendengar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_324"
+  },
+  {
+    "text": "Surah Ar-Rum dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Bangsa Romawi",
+    "options": [
+      "Ikhlas",
+      "Kerajaan",
+      "Jamuan Hidangan",
+      "Bangsa Romawi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_325"
+  },
+  {
+    "text": "Surah Ta-Ha dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Ta-Ha",
+    "options": [
+      "Semut",
+      "Binatang Ternak",
+      "Kemuliaan",
+      "Ta-Ha"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_326"
+  },
+  {
+    "text": "Surah-surah yang diturunkan setelah Nabi Muhammad SAW hijrah ke Madinah digolongkan sebagai surah...",
+    "correctAnswer": "Madaniyah",
+    "options": [
+      "Yatsrib",
+      "Makkiyah",
+      "Hijaz",
+      "Madaniyah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_327"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Ar-Razzaq yang memiliki arti...",
+    "correctAnswer": "Yang Maha Pemberi Rezeki",
+    "options": [
+      "Yang Maha Waspada/Mengetahui",
+      "Yang Maha Mengadakan",
+      "Yang Maha Memelihara",
+      "Yang Maha Pemberi Rezeki"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_328"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Zakariya antara lain adalah...",
+    "correctAnswer": "pengasuh Siti Maryam dan baru punya anak di usia tua",
+    "options": [
+      "mampu melunakkan besi dan memiliki suara merdu",
+      "diutus ke kaum Madyan yang suka mencurangi timbangan",
+      "pengasuh Siti Maryam dan baru punya anak di usia tua",
+      "orang pertama yang pandai menulis dan membaca"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_329"
+  },
+  {
+    "text": "Gelar atau sebutan Kalimullah diberikan kepada Nabi...",
+    "correctAnswer": "Musa",
+    "options": [
+      "Luth",
+      "Idris",
+      "Nuh",
+      "Musa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_330"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Basit yang memiliki arti...",
+    "correctAnswer": "Yang Maha Melapangkan",
+    "options": [
+      "Yang Maha Melapangkan",
+      "Yang Maha Mengawasi",
+      "Yang Maha Merajai",
+      "Yang Maha Menetapkan Hukum"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_331"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Nuh antara lain adalah...",
+    "correctAnswer": "membuat bahtera (kapal) besar untuk menyelamatkan umatnya",
+    "options": [
+      "mampu berbicara dengan binatang dan memerintah jin",
+      "mengeluarkan unta betina dari batu karang",
+      "membuat bahtera (kapal) besar untuk menyelamatkan umatnya",
+      "menerima wahyu Al-Qur'an sebagai mukjizat terbesar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_332"
+  },
+  {
+    "text": "Makna 'Yang Maha Suci' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Quddus",
+    "options": [
+      "Al-Mu'min",
+      "Al-Qahhar",
+      "Al-Quddus",
+      "Al-Basit"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_333"
+  },
+  {
+    "text": "Surah Al-Falaq dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Waktu Subuh",
+    "options": [
+      "Para Penyair",
+      "Orang yang Berkemul",
+      "Waktu Subuh",
+      "Haji"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_334"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Mutakabbir, maknanya adalah...",
+    "correctAnswer": "Yang Maha Megah",
+    "options": [
+      "Yang Memiliki Kegagahan",
+      "Yang Maha Pemberi Kecukupan",
+      "Yang Maha Mulia",
+      "Yang Maha Megah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_335"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Mengabulkan adalah...",
+    "correctAnswer": "Al-Mujib",
+    "options": [
+      "Al-Khabir",
+      "Al-Mujib",
+      "Al-Wadud",
+      "As-Sami'"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_336"
+  },
+  {
+    "text": "Malaikat Ridwan diberikan tugas oleh Allah SWT untuk...",
+    "correctAnswer": "menjaga pintu surga",
+    "options": [
+      "menjaga pintu neraka",
+      "mencabut nyawa makhluk hidup",
+      "menanyai manusia di alam kubur bersama Munkar",
+      "menjaga pintu surga"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_337"
+  },
+  {
+    "text": "Surah Al-Ma'idah dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Jamuan Hidangan",
+    "options": [
+      "Nabi Ibrahim",
+      "Jamuan Hidangan",
+      "Waktu Subuh",
+      "Nabi Yusuf"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_338"
+  },
+  {
+    "text": "Surah pertama yang terdapat di dalam mushaf Al-Qur'an adalah...",
+    "correctAnswer": "Al-Fatihah",
+    "options": [
+      "Al-Fatihah",
+      "An-Nas",
+      "Al-Baqarah",
+      "Al-Ikhlas"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_339"
+  },
+  {
+    "text": "Surah yang memiliki arti Orang-orang Mukmin adalah surah...",
+    "correctAnswer": "Al-Mu'minun",
+    "options": [
+      "Al-Mu'minun",
+      "Maryam",
+      "Asy-Syu'ara'",
+      "Al-Mulk"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_340"
+  },
+  {
+    "text": "Nabi Nuh sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Ulul Azmi",
+    "options": [
+      "Nabi kaum Tsamud",
+      "Kalimullah",
+      "Ulul Azmi",
+      "Raja yang bijaksana"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_341"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Ar-Rahim, maknanya adalah...",
+    "correctAnswer": "Yang Maha Penyayang",
+    "options": [
+      "Yang Maha Melapangkan",
+      "Yang Maha Menyempitkan",
+      "Yang Maha Memelihara",
+      "Yang Maha Penyayang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_342"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Azhim, maknanya adalah...",
+    "correctAnswer": "Yang Maha Agung",
+    "options": [
+      "Yang Maha Pengampun",
+      "Yang Maha Pembuka Rahmat",
+      "Yang Maha Kuat",
+      "Yang Maha Agung"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_343"
+  },
+  {
+    "text": "Gelar atau sebutan Pemimpin yang sabar diberikan kepada Nabi...",
+    "correctAnswer": "Zulkifli",
+    "options": [
+      "Sulaiman",
+      "Yunus",
+      "Ilyas",
+      "Zulkifli"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_344"
+  },
+  {
+    "text": "Surah Al-Lahab dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Gejolak Api",
+    "options": [
+      "Cahaya",
+      "Hari Kiamat",
+      "Gejolak Api",
+      "Tempat Tertinggi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_345"
+  },
+  {
+    "text": "Surah yang memiliki arti Bangsa Romawi adalah surah...",
+    "correctAnswer": "Ar-Rum",
+    "options": [
+      "An-Naml",
+      "At-Taubah",
+      "Al-Lahab",
+      "Ar-Rum"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_346"
+  },
+  {
+    "text": "Makna 'Yang Maha Mengetahui' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Alim",
+    "options": [
+      "Al-Ghafur",
+      "Al-Khafidz",
+      "Al-Mujib",
+      "Al-Alim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_347"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Mu'izz, maknanya adalah...",
+    "correctAnswer": "Yang Maha Memuliakan",
+    "options": [
+      "Yang Maha Mendengar",
+      "Yang Maha Mengetahui",
+      "Yang Maha Suci",
+      "Yang Maha Memuliakan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_348"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Ar-Rahim yang memiliki arti...",
+    "correctAnswer": "Yang Maha Penyayang",
+    "options": [
+      "Yang Maha Menyaksikan",
+      "Yang Maha Penyantun",
+      "Yang Maha Penyayang",
+      "Yang Maha Adil"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_349"
+  },
+  {
+    "text": "Surah yang memiliki arti Nabi Ibrahim adalah surah...",
+    "correctAnswer": "Ibrahim",
+    "options": [
+      "Ibrahim",
+      "Al-Kahf",
+      "Maryam",
+      "Al-Furqan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_350"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Asy-Syahid yang memiliki arti...",
+    "correctAnswer": "Yang Maha Menyaksikan",
+    "options": [
+      "Yang Maha Menyaksikan",
+      "Yang Maha Agung",
+      "Yang Maha Penyayang",
+      "Yang Maha Penyantun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_351"
+  },
+  {
+    "text": "Gelar atau sebutan Bapak Umat Manusia diberikan kepada Nabi...",
+    "correctAnswer": "Adam",
+    "options": [
+      "Yahya",
+      "Ya'qub",
+      "Yunus",
+      "Adam"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_352"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Wasi', maknanya adalah...",
+    "correctAnswer": "Yang Maha Luas",
+    "options": [
+      "Yang Maha Memberi Keamanan",
+      "Yang Maha Mendengar",
+      "Yang Maha Luas",
+      "Yang Maha Kokoh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_353"
+  },
+  {
+    "text": "Gelar atau sebutan Khatamun Nabiyyin diberikan kepada Nabi...",
+    "correctAnswer": "Muhammad",
+    "options": [
+      "Ayyub",
+      "Idris",
+      "Muhammad",
+      "Ismail"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_354"
+  },
+  {
+    "text": "Surah Al-An'am dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Binatang Ternak",
+    "options": [
+      "Al-Hijr",
+      "Binatang Ternak",
+      "Orang-orang Kafir",
+      "Nikmat yang Berlimpah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_355"
+  },
+  {
+    "text": "Rukun Iman yang ke-2 adalah...",
+    "correctAnswer": "Iman kepada para Malaikat Allah",
+    "options": [
+      "Iman kepada para Malaikat Allah",
+      "Iman kepada Qada dan Qadar (Takdir)",
+      "Iman kepada para Rasul Allah",
+      "Iman kepada Hari Kiamat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_356"
+  },
+  {
+    "text": "Surah yang memiliki arti Kaum Saba' adalah surah...",
+    "correctAnswer": "Saba'",
+    "options": [
+      "Yusuf",
+      "An-Naml",
+      "At-Taubah",
+      "Saba'"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_357"
+  },
+  {
+    "text": "Rukun Iman yang ke-3 adalah...",
+    "correctAnswer": "Iman kepada Kitab-kitab Allah",
+    "options": [
+      "Iman kepada Hari Kiamat",
+      "Iman kepada Qada dan Qadar (Takdir)",
+      "Iman kepada para Rasul Allah",
+      "Iman kepada Kitab-kitab Allah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_358"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Qabidh yang memiliki arti...",
+    "correctAnswer": "Yang Maha Menyempitkan",
+    "options": [
+      "Yang Maha Menyempitkan",
+      "Yang Maha Melihat",
+      "Yang Maha Pengasih",
+      "Yang Maha Memaksa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_359"
+  },
+  {
+    "text": "Makna 'Yang Maha Pembuka Rahmat' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Fattah",
+    "options": [
+      "Al-Aliy",
+      "Al-Qawiy",
+      "Al-Fattah",
+      "Al-Hafizh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_360"
+  },
+  {
+    "text": "Surah yang memiliki arti Lebah adalah surah...",
+    "correctAnswer": "An-Nahl",
+    "options": [
+      "Al-Ma'idah",
+      "An-Nahl",
+      "Al-Muzzammil",
+      "Al-Hijr"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_361"
+  },
+  {
+    "text": "Surah Ibrahim dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Nabi Ibrahim",
+    "options": [
+      "Nabi Ibrahim",
+      "Para Nabi",
+      "Ya-Sin",
+      "Para Penyair"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_362"
+  },
+  {
+    "text": "Malaikat Atid diberikan tugas oleh Allah SWT untuk...",
+    "correctAnswer": "mencatat segala amal keburukan manusia",
+    "options": [
+      "menanyai amal perbuatan manusia di alam kubur",
+      "mencatat segala amal keburukan manusia",
+      "mencatat segala amal kebaikan manusia",
+      "menjaga pintu neraka"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_363"
+  },
+  {
+    "text": "Surah yang memiliki arti Umat Manusia adalah surah...",
+    "correctAnswer": "An-Nas",
+    "options": [
+      "Asy-Syu'ara'",
+      "Al-Isra'",
+      "An-Nas",
+      "Al-An'am"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_364"
+  },
+  {
+    "text": "Gelar atau sebutan Ulul Azmi diberikan kepada Nabi...",
+    "correctAnswer": "Nuh",
+    "options": [
+      "Ibrahim",
+      "Yunus",
+      "Ayyub",
+      "Nuh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_365"
+  },
+  {
+    "text": "Malaikat Jibril diberikan tugas oleh Allah SWT untuk...",
+    "correctAnswer": "menyampaikan wahyu kepada nabi dan rasul",
+    "options": [
+      "menyampaikan wahyu kepada nabi dan rasul",
+      "membagi rezeki dan menurunkan hujan",
+      "menanyai manusia di alam kubur bersama Munkar",
+      "mencabut nyawa makhluk hidup"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_366"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Adam antara lain adalah...",
+    "correctAnswer": "manusia pertama yang diciptakan",
+    "options": [
+      "manusia pertama yang diciptakan",
+      "diberi hikmah kecerdasan sejak masih anak-anak",
+      "sangat fasih berbicara dan menemani Nabi Musa",
+      "memiliki 12 putra yang kelak menjadi Bani Israil"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_367"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Mengadakan adalah...",
+    "correctAnswer": "Al-Bari",
+    "options": [
+      "Al-Mu'min",
+      "Al-Khabir",
+      "As-Sami'",
+      "Al-Bari"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_368"
+  },
+  {
+    "text": "Surah yang memiliki arti Nabi Hud adalah surah...",
+    "correctAnswer": "Hud",
+    "options": [
+      "Al-Ikhlas",
+      "Hud",
+      "Al-Lahab",
+      "Al-Kafirun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_369"
+  },
+  {
+    "text": "Makna 'Yang Maha Meninggikan' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Ar-Rafi'",
+    "options": [
+      "Ar-Rafi'",
+      "Al-Jalil",
+      "Al-Mu'min",
+      "Al-Ghafur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_370"
+  },
+  {
+    "text": "Surah Al-Waqi'ah dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Hari Kiamat",
+    "options": [
+      "Hari Kiamat",
+      "Pencipta",
+      "Wanita",
+      "Al-Hijr"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_371"
+  },
+  {
+    "text": "Makna 'Yang Maha Benar' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Haqq",
+    "options": [
+      "As-Sami'",
+      "Al-Karim",
+      "Al-Haqq",
+      "Al-Mujib"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_372"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Jalil, maknanya adalah...",
+    "correctAnswer": "Yang Maha Luhur",
+    "options": [
+      "Yang Maha Memelihara",
+      "Yang Maha Luhur",
+      "Yang Maha Melihat",
+      "Yang Maha Memuliakan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_373"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah manusia pertama yang diciptakan adalah Nabi...",
+    "correctAnswer": "Adam",
+    "options": [
+      "Adam",
+      "Zakariya",
+      "Daud",
+      "Ilyas"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_374"
+  },
+  {
+    "text": "Surah yang memiliki arti Pertolongan adalah surah...",
+    "correctAnswer": "An-Nasr",
+    "options": [
+      "Maryam",
+      "Ar-Rahman",
+      "An-Nasr",
+      "Al-Kahf"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_375"
+  },
+  {
+    "text": "Surah yang memiliki arti Orang yang Berkemul adalah surah...",
+    "correctAnswer": "Al-Muddassir",
+    "options": [
+      "Al-Ma'idah",
+      "Al-Hijr",
+      "Al-Muddassir",
+      "An-Nur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_376"
+  },
+  {
+    "text": "Menunaikan zakat merupakan rukun Islam yang ke-...",
+    "correctAnswer": "3",
+    "options": [
+      "1",
+      "5",
+      "4",
+      "3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_377"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Harun antara lain adalah...",
+    "correctAnswer": "sangat fasih berbicara dan menemani Nabi Musa",
+    "options": [
+      "sangat fasih berbicara dan menemani Nabi Musa",
+      "memiliki 12 putra yang kelak menjadi Bani Israil",
+      "bersedia disembelih oleh ayahnya sebagai wujud ketaatan",
+      "orang pertama yang pandai menulis dan membaca"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_378"
+  },
+  {
+    "text": "Surah yang memiliki arti Keluarga Imran adalah surah...",
+    "correctAnswer": "Ali 'Imran",
+    "options": [
+      "Fatir",
+      "Ali 'Imran",
+      "Al-Mu'minun",
+      "Al-Ma'idah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_379"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Bari yang memiliki arti...",
+    "correctAnswer": "Yang Maha Mengadakan",
+    "options": [
+      "Yang Maha Mengadakan",
+      "Yang Maha Memberi Keamanan",
+      "Yang Memiliki Kegagahan",
+      "Yang Maha Pengampun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_380"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah membelah lautan dengan tongkatnya adalah Nabi...",
+    "correctAnswer": "Musa",
+    "options": [
+      "Musa",
+      "Ilyas",
+      "Ismail",
+      "Zakariya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_381"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Hasib yang memiliki arti...",
+    "correctAnswer": "Yang Maha Membuat Perhitungan",
+    "options": [
+      "Yang Maha Memuliakan",
+      "Yang Maha Membangkitkan",
+      "Yang Maha Membuat Perhitungan",
+      "Yang Maha Pencipta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_382"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Jabbar, maknanya adalah...",
+    "correctAnswer": "Yang Memiliki Kegagahan",
+    "options": [
+      "Yang Maha Membentuk Rupa",
+      "Yang Maha Memberi Kesejahteraan",
+      "Yang Memiliki Kegagahan",
+      "Yang Maha Memelihara"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_383"
+  },
+  {
+    "text": "Surah Al-Isra' dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Perjalanan Malam",
+    "options": [
+      "Ya-Sin",
+      "Keluarga Luqman",
+      "Umat Manusia",
+      "Perjalanan Malam"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_384"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Alim, maknanya adalah...",
+    "correctAnswer": "Yang Maha Mengetahui",
+    "options": [
+      "Yang Maha Mengetahui",
+      "Yang Maha Melapangkan",
+      "Yang Memiliki Kegagahan",
+      "Yang Maha Penyantun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_385"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Memiliki Kegagahan adalah...",
+    "correctAnswer": "Al-Jabbar",
+    "options": [
+      "Al-Jabbar",
+      "Al-Muhaimin",
+      "Asy-Syakur",
+      "Ar-Razzaq"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_386"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Bari, maknanya adalah...",
+    "correctAnswer": "Yang Maha Mengadakan",
+    "options": [
+      "Yang Maha Lembut",
+      "Yang Maha Mengadakan",
+      "Yang Maha Menetapkan Hukum",
+      "Yang Maha Waspada/Mengetahui"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_387"
+  },
+  {
+    "text": "Surah yang memiliki arti Perjalanan Malam adalah surah...",
+    "correctAnswer": "Al-Isra'",
+    "options": [
+      "Al-Hajj",
+      "Al-Isra'",
+      "An-Nahl",
+      "Ar-Ra'd"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_388"
+  },
+  {
+    "text": "Surah yang memiliki arti Ikhlas adalah surah...",
+    "correctAnswer": "Al-Ikhlas",
+    "options": [
+      "Ar-Rum",
+      "Al-A'raf",
+      "Al-Baqarah",
+      "Al-Ikhlas"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_389"
+  },
+  {
+    "text": "Surah Yusuf dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Nabi Yusuf",
+    "options": [
+      "Jamuan Hidangan",
+      "Orang-orang Mukmin",
+      "Bangsa Romawi",
+      "Nabi Yusuf"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_390"
+  },
+  {
+    "text": "Nabi Musa sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Kalimullah",
+    "options": [
+      "Raja yang bijaksana",
+      "Kalimullah",
+      "Nabi yang cerdas",
+      "Nabi dari Bani Israil"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_391"
+  },
+  {
+    "text": "Malaikat yang memiliki tugas meniup sangkakala pada hari kiamat adalah malaikat...",
+    "correctAnswer": "Israfil",
+    "options": [
+      "Israfil",
+      "Raqib",
+      "Atid",
+      "Ridwan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_392"
+  },
+  {
+    "text": "Surah yang memiliki arti Siti Maryam adalah surah...",
+    "correctAnswer": "Maryam",
+    "options": [
+      "At-Taubah",
+      "Al-Qadr",
+      "Maryam",
+      "Al-Furqan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_393"
+  },
+  {
+    "text": "Surah Al-Kahf dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Gua",
+    "options": [
+      "Orang-orang Kafir",
+      "Sapi Betina",
+      "Gua",
+      "Cahaya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_394"
+  },
+  {
+    "text": "Surah Al-Hijr dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Al-Hijr",
+    "options": [
+      "Pengampunan",
+      "Al-Hijr",
+      "Para Penyair",
+      "Nabi Yunus"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_395"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Menyaksikan adalah...",
+    "correctAnswer": "Asy-Syahid",
+    "options": [
+      "Asy-Syahid",
+      "Al-Wakil",
+      "Al-Jabbar",
+      "Al-Mu'izz"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_396"
+  },
+  {
+    "text": "Surah Ya-Sin dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Ya-Sin",
+    "options": [
+      "Ya-Sin",
+      "Pertolongan",
+      "Tempat Tertinggi",
+      "Kisah-kisah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_397"
+  },
+  {
+    "text": "Surah An-Nasr dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Pertolongan",
+    "options": [
+      "Haji",
+      "Pertolongan",
+      "Nabi Ibrahim",
+      "Nabi Yusuf"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_398"
+  },
+  {
+    "text": "Surah yang memiliki arti Harta Rampasan Perang adalah surah...",
+    "correctAnswer": "Al-Anfal",
+    "options": [
+      "Al-Ma'idah",
+      "Al-Lahab",
+      "Hud",
+      "Al-Anfal"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_399"
+  },
+  {
+    "text": "Surah Al-Mu'minun dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Orang-orang Mukmin",
+    "options": [
+      "Sujud",
+      "Gua",
+      "Semut",
+      "Orang-orang Mukmin"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_400"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah orang pertama yang pandai menulis dan membaca adalah Nabi...",
+    "correctAnswer": "Idris",
+    "options": [
+      "Yunus",
+      "Idris",
+      "Musa",
+      "Nuh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_401"
+  },
+  {
+    "text": "Makna 'Yang Maha Pemberi Rezeki' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Ar-Razzaq",
+    "options": [
+      "Ar-Rahman",
+      "Ar-Razzaq",
+      "Al-Ba'its",
+      "Al-Aliy"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_402"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Kokoh adalah...",
+    "correctAnswer": "Al-Matin",
+    "options": [
+      "Al-Matin",
+      "Al-Qabidh",
+      "Al-Qahhar",
+      "Al-Ghaffar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_403"
+  },
+  {
+    "text": "Malaikat yang memiliki tugas membagi rezeki dan menurunkan hujan adalah malaikat...",
+    "correctAnswer": "Mikail",
+    "options": [
+      "Izrail",
+      "Atid",
+      "Ridwan",
+      "Mikail"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_404"
+  },
+  {
+    "text": "Surah yang memiliki arti Pencipta adalah surah...",
+    "correctAnswer": "Fatir",
+    "options": [
+      "Al-Kahf",
+      "Al-Muddassir",
+      "Al-Isra'",
+      "Fatir"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_405"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Lembut adalah...",
+    "correctAnswer": "Al-Latif",
+    "options": [
+      "Al-Muqit",
+      "Al-Bashir",
+      "Al-Muhaimin",
+      "Al-Latif"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_406"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Ar-Rafi', maknanya adalah...",
+    "correctAnswer": "Yang Maha Meninggikan",
+    "options": [
+      "Yang Maha Menyempitkan",
+      "Yang Maha Meninggikan",
+      "Yang Maha Penyantun",
+      "Yang Maha Menetapkan Hukum"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_407"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Zulkifli antara lain adalah...",
+    "correctAnswer": "memiliki sifat sabar dan dermawan yang tinggi",
+    "options": [
+      "sangat fasih berbicara dan menemani Nabi Musa",
+      "memiliki sifat sabar dan dermawan yang tinggi",
+      "diutus ke kaum 'Ad",
+      "diutus untuk memperbaiki moral kota Sodom"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_408"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Wasi' yang memiliki arti...",
+    "correctAnswer": "Yang Maha Luas",
+    "options": [
+      "Yang Maha Mulia",
+      "Yang Maha Memelihara/Mewakili",
+      "Yang Maha Agung",
+      "Yang Maha Luas"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_409"
+  },
+  {
+    "text": "Nabi Isa sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Ruhullah",
+    "options": [
+      "Ruhullah",
+      "Keponakan Nabi Ibrahim",
+      "Penerima Kitab Zabur",
+      "Nabi yang sangat tampan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_410"
+  },
+  {
+    "text": "Makna 'Yang Maha Membuat Perhitungan' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Hasib",
+    "options": [
+      "Al-Hasib",
+      "Al-Azhim",
+      "Al-Mujib",
+      "Ar-Rafi'"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_411"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Azhim yang memiliki arti...",
+    "correctAnswer": "Yang Maha Agung",
+    "options": [
+      "Yang Maha Mengetahui",
+      "Yang Maha Membentuk Rupa",
+      "Yang Maha Menyempitkan",
+      "Yang Maha Agung"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_412"
+  },
+  {
+    "text": "Gelar atau sebutan Bapak dari Ya'qub diberikan kepada Nabi...",
+    "correctAnswer": "Ishaq",
+    "options": [
+      "Syu'aib",
+      "Adam",
+      "Harun",
+      "Ishaq"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_413"
+  },
+  {
+    "text": "Gelar atau sebutan Nabi kaum Tsamud diberikan kepada Nabi...",
+    "correctAnswer": "Shalih",
+    "options": [
+      "Harun",
+      "Idris",
+      "Shalih",
+      "Ibrahim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_414"
+  },
+  {
+    "text": "Rukun Islam yang ke-1 adalah...",
+    "correctAnswer": "Mengucapkan dua kalimat syahadat",
+    "options": [
+      "Mengucapkan dua kalimat syahadat",
+      "Mendirikan shalat",
+      "Menunaikan zakat",
+      "Menunaikan ibadah haji bagi yang mampu"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_415"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Mu'izz yang memiliki arti...",
+    "correctAnswer": "Yang Maha Memuliakan",
+    "options": [
+      "Yang Maha Penyantun",
+      "Yang Maha Memuliakan",
+      "Yang Maha Pengampun",
+      "Yang Maha Lembut"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_416"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Qahhar yang memiliki arti...",
+    "correctAnswer": "Yang Maha Memaksa",
+    "options": [
+      "Yang Maha Pencipta",
+      "Yang Maha Memaksa",
+      "Yang Maha Mengawasi",
+      "Yang Maha Mulia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_417"
+  },
+  {
+    "text": "Surah Ar-Rahman dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Yang Maha Pemurah",
+    "options": [
+      "Nabi Ibrahim",
+      "Nabi Yunus",
+      "Yang Maha Pemurah",
+      "Hari Kiamat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_418"
+  },
+  {
+    "text": "Makna 'Yang Maha Membangkitkan' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Ba'its",
+    "options": [
+      "Al-Mujib",
+      "Al-Ba'its",
+      "Al-Bari",
+      "Al-Qabidh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_419"
+  },
+  {
+    "text": "Kewajiban 'Mendirikan shalat' tergolong dalam rukun Islam yang ke-...",
+    "correctAnswer": "2",
+    "options": [
+      "1",
+      "4",
+      "2",
+      "3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_420"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Agung adalah...",
+    "correctAnswer": "Al-Azhim",
+    "options": [
+      "Al-Jalil",
+      "As-Salam",
+      "Al-Azhim",
+      "Ar-Rahim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_421"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Hasib, maknanya adalah...",
+    "correctAnswer": "Yang Maha Membuat Perhitungan",
+    "options": [
+      "Yang Maha Penyantun",
+      "Yang Maha Memaksa",
+      "Yang Maha Adil",
+      "Yang Maha Membuat Perhitungan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_422"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Pencipta adalah...",
+    "correctAnswer": "Al-Khaliq",
+    "options": [
+      "Al-Halim",
+      "Al-Ghaffar",
+      "Al-Khaliq",
+      "Al-Hafizh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_423"
+  },
+  {
+    "text": "Iman kepada Kitab-kitab Allah adalah bagian dari Rukun Iman yang ke-...",
+    "correctAnswer": "3",
+    "options": [
+      "6",
+      "1",
+      "5",
+      "3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_424"
+  },
+  {
+    "text": "Makna 'Yang Maha Mendengar' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "As-Sami'",
+    "options": [
+      "As-Sami'",
+      "Al-Malik",
+      "Al-Azhim",
+      "Asy-Syahid"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_425"
+  },
+  {
+    "text": "Rukun Iman yang ke-5 adalah...",
+    "correctAnswer": "Iman kepada Hari Kiamat",
+    "options": [
+      "Iman kepada para Rasul Allah",
+      "Iman kepada Hari Kiamat",
+      "Iman kepada Kitab-kitab Allah",
+      "Iman kepada Allah SWT"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_426"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Syu'aib antara lain adalah...",
+    "correctAnswer": "diutus ke kaum Madyan yang suka mencurangi timbangan",
+    "options": [
+      "diutus ke kaum Madyan yang suka mencurangi timbangan",
+      "membuat bahtera (kapal) besar untuk menyelamatkan umatnya",
+      "bertahan hidup di dalam perut ikan paus",
+      "mengeluarkan unta betina dari batu karang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_427"
+  },
+  {
+    "text": "Malaikat Nakir diberikan tugas oleh Allah SWT untuk...",
+    "correctAnswer": "menanyai manusia di alam kubur bersama Munkar",
+    "options": [
+      "mencatat segala amal kebaikan manusia",
+      "mencatat segala amal keburukan manusia",
+      "menanyai manusia di alam kubur bersama Munkar",
+      "menanyai amal perbuatan manusia di alam kubur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_428"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah bertahan hidup di dalam perut ikan paus adalah Nabi...",
+    "correctAnswer": "Yunus",
+    "options": [
+      "Muhammad",
+      "Musa",
+      "Yunus",
+      "Shalih"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_429"
+  },
+  {
+    "text": "Makna 'Yang Maha Kokoh' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Matin",
+    "options": [
+      "Al-Matin",
+      "Ar-Rahman",
+      "Ar-Razzaq",
+      "Al-Qabidh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_430"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Latif, maknanya adalah...",
+    "correctAnswer": "Yang Maha Lembut",
+    "options": [
+      "Yang Maha Lembut",
+      "Yang Maha Membuat Perhitungan",
+      "Yang Maha Memberi Kesejahteraan",
+      "Yang Maha Merajai"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_431"
+  },
+  {
+    "text": "Surah Al-Ahzab dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Golongan-golongan",
+    "options": [
+      "Ta-Ha",
+      "Golongan-golongan",
+      "Orang yang Berselimut",
+      "Nabi Ibrahim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_432"
+  },
+  {
+    "text": "Surah Al-A'raf dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Tempat Tertinggi",
+    "options": [
+      "Orang-orang Kafir",
+      "Haji",
+      "Para Penyair",
+      "Tempat Tertinggi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_433"
+  },
+  {
+    "text": "Surah yang memiliki arti Para Nabi adalah surah...",
+    "correctAnswer": "Al-Anbiya'",
+    "options": [
+      "Al-Qadr",
+      "An-Nisa'",
+      "As-Sajdah",
+      "Al-Anbiya'"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_434"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Khabir yang memiliki arti...",
+    "correctAnswer": "Yang Maha Waspada/Mengetahui",
+    "options": [
+      "Yang Maha Benar",
+      "Yang Maha Waspada/Mengetahui",
+      "Yang Maha Mulia",
+      "Yang Maha Penyayang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_435"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Asy-Syakur, maknanya adalah...",
+    "correctAnswer": "Yang Maha Menerima Syukur",
+    "options": [
+      "Yang Maha Menerima Syukur",
+      "Yang Maha Memelihara/Mewakili",
+      "Yang Maha Lembut",
+      "Yang Maha Memberi Keamanan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_436"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Idris antara lain adalah...",
+    "correctAnswer": "orang pertama yang pandai menulis dan membaca",
+    "options": [
+      "bersedia disembelih oleh ayahnya sebagai wujud ketaatan",
+      "mengeluarkan unta betina dari batu karang",
+      "orang pertama yang pandai menulis dan membaca",
+      "putra Nabi Ibrahim yang saleh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_437"
+  },
+  {
+    "text": "Nabi Ishaq sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Bapak dari Ya'qub",
+    "options": [
+      "Pemimpin yang sabar",
+      "Bapak dari Ya'qub",
+      "Penyelamat Bani Israil",
+      "Keponakan Nabi Ibrahim"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_438"
+  },
+  {
+    "text": "Surah An-Nahl dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Lebah",
+    "options": [
+      "Gejolak Api",
+      "Jamuan Hidangan",
+      "Umat Manusia",
+      "Lebah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_439"
+  },
+  {
+    "text": "Makna 'Yang Maha Membentuk Rupa' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Mushawwir",
+    "options": [
+      "Al-Aliy",
+      "Al-Mushawwir",
+      "Al-Mujib",
+      "Al-Hafizh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_440"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Hakim, maknanya adalah...",
+    "correctAnswer": "Yang Maha Bijaksana",
+    "options": [
+      "Yang Maha Bijaksana",
+      "Yang Maha Mulia",
+      "Yang Maha Agung",
+      "Yang Maha Menyempitkan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_441"
+  },
+  {
+    "text": "Makna 'Yang Maha Penyantun' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Halim",
+    "options": [
+      "Al-Halim",
+      "Al-Basit",
+      "As-Sami'",
+      "Al-Wadud"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_442"
+  },
+  {
+    "text": "Makna 'Yang Maha Luas' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Wasi'",
+    "options": [
+      "Al-Karim",
+      "Al-Qawiy",
+      "Al-Jalil",
+      "Al-Wasi'"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_443"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Ar-Rahman yang memiliki arti...",
+    "correctAnswer": "Yang Maha Pengasih",
+    "options": [
+      "Yang Maha Pengasih",
+      "Yang Maha Membentuk Rupa",
+      "Yang Maha Mengabulkan",
+      "Yang Maha Memelihara/Mewakili"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_444"
+  },
+  {
+    "text": "Gelar atau sebutan Nabi dari Bani Israil diberikan kepada Nabi...",
+    "correctAnswer": "Ilyasa",
+    "options": [
+      "Ilyas",
+      "Ibrahim",
+      "Idris",
+      "Ilyasa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_445"
+  },
+  {
+    "text": "Makna 'Yang Maha Menyaksikan' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Asy-Syahid",
+    "options": [
+      "Al-Karim",
+      "Al-Bashir",
+      "Al-Mu'min",
+      "Asy-Syahid"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_446"
+  },
+  {
+    "text": "Surah Ar-Ra'd dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Guruh",
+    "options": [
+      "Guruh",
+      "Nabi Ibrahim",
+      "Pembeda",
+      "Waktu Subuh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_447"
+  },
+  {
+    "text": "Makna 'Yang Maha Merendahkan' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Khafidz",
+    "options": [
+      "Al-Wahhab",
+      "Al-Khafidz",
+      "Al-Majid",
+      "Al-Wasi'"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_448"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah tidak hangus saat dibakar oleh Raja Namrud adalah Nabi...",
+    "correctAnswer": "Ibrahim",
+    "options": [
+      "Ishaq",
+      "Hud",
+      "Ibrahim",
+      "Harun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_449"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Ba'its, maknanya adalah...",
+    "correctAnswer": "Yang Maha Membangkitkan",
+    "options": [
+      "Yang Maha Waspada/Mengetahui",
+      "Yang Maha Menerima Syukur",
+      "Yang Maha Membangkitkan",
+      "Yang Maha Penyayang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_450"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Pemberi Kecukupan adalah...",
+    "correctAnswer": "Al-Muqit",
+    "options": [
+      "Al-Bashir",
+      "Al-Hakim",
+      "Al-Muqit",
+      "Al-Jabbar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_451"
+  },
+  {
+    "text": "Malaikat yang memiliki tugas mencatat segala amal keburukan manusia adalah malaikat...",
+    "correctAnswer": "Atid",
+    "options": [
+      "Raqib",
+      "Atid",
+      "Jibril",
+      "Nakir"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_452"
+  },
+  {
+    "text": "Surah yang memiliki arti Orang yang Berselimut adalah surah...",
+    "correctAnswer": "Al-Muzzammil",
+    "options": [
+      "Al-Muddassir",
+      "Ta-Ha",
+      "Al-Muzzammil",
+      "Al-A'raf"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_453"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Muhammad antara lain adalah...",
+    "correctAnswer": "menerima wahyu Al-Qur'an sebagai mukjizat terbesar",
+    "options": [
+      "menerima wahyu Al-Qur'an sebagai mukjizat terbesar",
+      "orang pertama yang pandai menulis dan membaca",
+      "memiliki kesabaran luar biasa saat diuji penyakit menahun",
+      "tidak hangus saat dibakar oleh Raja Namrud"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_454"
+  },
+  {
+    "text": "Makna 'Yang Maha Lembut' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Latif",
+    "options": [
+      "Al-Wasi'",
+      "Asy-Syahid",
+      "Al-Qahhar",
+      "Al-Latif"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_455"
+  },
+  {
+    "text": "Tugas utama dari malaikat Munkar adalah...",
+    "correctAnswer": "menanyai amal perbuatan manusia di alam kubur",
+    "options": [
+      "menanyai amal perbuatan manusia di alam kubur",
+      "menanyai manusia di alam kubur bersama Munkar",
+      "mencatat segala amal keburukan manusia",
+      "mencabut nyawa makhluk hidup"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_456"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Hakim yang memiliki arti...",
+    "correctAnswer": "Yang Maha Bijaksana",
+    "options": [
+      "Yang Maha Mengadakan",
+      "Yang Maha Mengawasi",
+      "Yang Maha Pemberi Karunia",
+      "Yang Maha Bijaksana"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_457"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Ar-Rahman, maknanya adalah...",
+    "correctAnswer": "Yang Maha Pengasih",
+    "options": [
+      "Yang Maha Pengasih",
+      "Yang Maha Memaksa",
+      "Yang Maha Pecinta",
+      "Yang Maha Penyayang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_458"
+  },
+  {
+    "text": "Menurut syariat, rukun Islam yang berada pada urutan ke-2 adalah...",
+    "correctAnswer": "Mendirikan shalat",
+    "options": [
+      "Menunaikan ibadah haji bagi yang mampu",
+      "Mendirikan shalat",
+      "Menunaikan zakat",
+      "Mengucapkan dua kalimat syahadat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_459"
+  },
+  {
+    "text": "Rukun Iman yang ke-1 adalah...",
+    "correctAnswer": "Iman kepada Allah SWT",
+    "options": [
+      "Iman kepada Allah SWT",
+      "Iman kepada Kitab-kitab Allah",
+      "Iman kepada para Rasul Allah",
+      "Iman kepada para Malaikat Allah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_460"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Adil adalah...",
+    "correctAnswer": "Al-Adl",
+    "options": [
+      "Al-Mu'izz",
+      "Al-Adl",
+      "Al-Wahhab",
+      "Ar-Rahman"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_461"
+  },
+  {
+    "text": "Malaikat yang memiliki tugas menyampaikan wahyu kepada nabi dan rasul adalah malaikat...",
+    "correctAnswer": "Jibril",
+    "options": [
+      "Nakir",
+      "Atid",
+      "Jibril",
+      "Raqib"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_462"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Bashir yang memiliki arti...",
+    "correctAnswer": "Yang Maha Melihat",
+    "options": [
+      "Yang Maha Luhur",
+      "Yang Maha Melihat",
+      "Yang Maha Pengampun",
+      "Yang Maha Pemberi Rezeki"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_463"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Fattah, maknanya adalah...",
+    "correctAnswer": "Yang Maha Pembuka Rahmat",
+    "options": [
+      "Yang Maha Pembuka Rahmat",
+      "Yang Maha Adil",
+      "Yang Maha Besar",
+      "Yang Maha Bijaksana"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_464"
+  },
+  {
+    "text": "Makna 'Yang Maha Memaksa' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Qahhar",
+    "options": [
+      "Al-Qahhar",
+      "Al-Matin",
+      "Al-Bashir",
+      "Al-Wadud"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_465"
+  },
+  {
+    "text": "Gelar atau sebutan Penyelamat Bani Israil diberikan kepada Nabi...",
+    "correctAnswer": "Ilyas",
+    "options": [
+      "Ilyasa",
+      "Nuh",
+      "Ilyas",
+      "Ishaq"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_466"
+  },
+  {
+    "text": "Makna 'Yang Maha Memberi Kesejahteraan' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "As-Salam",
+    "options": [
+      "Al-Hakam",
+      "Ar-Rafi'",
+      "Al-Aziz",
+      "As-Salam"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_467"
+  },
+  {
+    "text": "Rukun Iman yang ke-4 adalah...",
+    "correctAnswer": "Iman kepada para Rasul Allah",
+    "options": [
+      "Iman kepada para Malaikat Allah",
+      "Iman kepada para Rasul Allah",
+      "Iman kepada Hari Kiamat",
+      "Iman kepada Kitab-kitab Allah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_468"
+  },
+  {
+    "text": "Menurut syariat, rukun Islam yang berada pada urutan ke-1 adalah...",
+    "correctAnswer": "Mengucapkan dua kalimat syahadat",
+    "options": [
+      "Menunaikan ibadah haji bagi yang mampu",
+      "Mengucapkan dua kalimat syahadat",
+      "Berpuasa di bulan Ramadhan",
+      "Menunaikan zakat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_469"
+  },
+  {
+    "text": "Surah yang memiliki arti Kerajaan adalah surah...",
+    "correctAnswer": "Al-Mulk",
+    "options": [
+      "Al-Mu'minun",
+      "Al-Furqan",
+      "Al-Mulk",
+      "Al-Anfal"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_470"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Waspada/Mengetahui adalah...",
+    "correctAnswer": "Al-Khabir",
+    "options": [
+      "Al-Haqq",
+      "Al-Fattah",
+      "Al-Khabir",
+      "Al-Muhaimin"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_471"
+  },
+  {
+    "text": "Surah yang memiliki arti Ya-Sin adalah surah...",
+    "correctAnswer": "Ya-Sin",
+    "options": [
+      "Hud",
+      "Ya-Sin",
+      "Yunus",
+      "Ar-Rum"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_472"
+  },
+  {
+    "text": "Makna 'Yang Maha Melihat' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Bashir",
+    "options": [
+      "Asy-Syahid",
+      "Al-Mu'izz",
+      "Al-Bashir",
+      "Al-Ghafur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_473"
+  },
+  {
+    "text": "Surah An-Nur dalam Al-Qur'an memiliki arti...",
+    "correctAnswer": "Cahaya",
+    "options": [
+      "Perjalanan Malam",
+      "Al-Hijr",
+      "Cahaya",
+      "Waktu Subuh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_474"
+  },
+  {
+    "text": "Surah yang memiliki arti Laba-laba adalah surah...",
+    "correctAnswer": "Al-'Ankabut",
+    "options": [
+      "Al-'Ankabut",
+      "Al-Baqarah",
+      "Al-Ikhlas",
+      "An-Nasr"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_475"
+  },
+  {
+    "text": "Surah yang memiliki arti Semut adalah surah...",
+    "correctAnswer": "An-Naml",
+    "options": [
+      "Al-Isra'",
+      "Ar-Rum",
+      "An-Naml",
+      "Al-Ikhlas"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_476"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Ar-Razzaq, maknanya adalah...",
+    "correctAnswer": "Yang Maha Pemberi Rezeki",
+    "options": [
+      "Yang Maha Mengawasi",
+      "Yang Maha Membangkitkan",
+      "Yang Maha Suci",
+      "Yang Maha Pemberi Rezeki"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_477"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Meninggikan adalah...",
+    "correctAnswer": "Ar-Rafi'",
+    "options": [
+      "Al-Hafizh",
+      "Al-Mushawwir",
+      "As-Salam",
+      "Ar-Rafi'"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_478"
+  },
+  {
+    "text": "Makna 'Yang Maha Menetapkan Hukum' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Hakam",
+    "options": [
+      "Al-Bashir",
+      "Al-Hakam",
+      "Al-Aziz",
+      "Al-Qahhar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_479"
+  },
+  {
+    "text": "Gelar atau sebutan Penerima Kitab Zabur diberikan kepada Nabi...",
+    "correctAnswer": "Daud",
+    "options": [
+      "Hud",
+      "Daud",
+      "Shalih",
+      "Musa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_480"
+  },
+  {
+    "text": "Mukjizat atau kisah penting dari Nabi Hud antara lain adalah...",
+    "correctAnswer": "diutus ke kaum 'Ad",
+    "options": [
+      "diutus ke kaum 'Ad",
+      "mampu melunakkan besi dan memiliki suara merdu",
+      "bersedia disembelih oleh ayahnya sebagai wujud ketaatan",
+      "sangat fasih berbicara dan menemani Nabi Musa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_481"
+  },
+  {
+    "text": "Malaikat yang memiliki tugas menjaga pintu surga adalah malaikat...",
+    "correctAnswer": "Ridwan",
+    "options": [
+      "Izrail",
+      "Ridwan",
+      "Atid",
+      "Israfil"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_482"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Merendahkan adalah...",
+    "correctAnswer": "Al-Khafidz",
+    "options": [
+      "Al-Khafidz",
+      "Al-Mu'min",
+      "Al-Quddus",
+      "Ar-Rahman"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_483"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Matin, maknanya adalah...",
+    "correctAnswer": "Yang Maha Kokoh",
+    "options": [
+      "Yang Maha Kokoh",
+      "Yang Maha Melapangkan",
+      "Yang Maha Melihat",
+      "Yang Maha Merendahkan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_484"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Ghaffar yang memiliki arti...",
+    "correctAnswer": "Yang Maha Pengampun",
+    "options": [
+      "Yang Maha Pengampun",
+      "Yang Maha Menyempitkan",
+      "Yang Maha Pecinta",
+      "Yang Maha Pemberi Karunia"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_485"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah mampu melunakkan besi dan memiliki suara merdu adalah Nabi...",
+    "correctAnswer": "Daud",
+    "options": [
+      "Muhammad",
+      "Daud",
+      "Adam",
+      "Syu'aib"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_486"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Ar-Raqib yang memiliki arti...",
+    "correctAnswer": "Yang Maha Mengawasi",
+    "options": [
+      "Yang Maha Merendahkan",
+      "Yang Maha Melihat",
+      "Yang Maha Mengawasi",
+      "Yang Maha Adil"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_487"
+  },
+  {
+    "text": "Salah satu Asmaul Husna adalah Al-Mutakabbir yang memiliki arti...",
+    "correctAnswer": "Yang Maha Megah",
+    "options": [
+      "Yang Maha Mulia",
+      "Yang Maha Megah",
+      "Yang Maha Membentuk Rupa",
+      "Yang Maha Agung"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_488"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Khafidz, maknanya adalah...",
+    "correctAnswer": "Yang Maha Merendahkan",
+    "options": [
+      "Yang Maha Mulia",
+      "Yang Maha Pencipta",
+      "Yang Maha Pengasih",
+      "Yang Maha Merendahkan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_489"
+  },
+  {
+    "text": "Malaikat Munkar diberikan tugas oleh Allah SWT untuk...",
+    "correctAnswer": "menanyai amal perbuatan manusia di alam kubur",
+    "options": [
+      "mencatat segala amal kebaikan manusia",
+      "mencatat segala amal keburukan manusia",
+      "menyampaikan wahyu kepada nabi dan rasul",
+      "menanyai amal perbuatan manusia di alam kubur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_490"
+  },
+  {
+    "text": "Kewajiban 'Menunaikan zakat' tergolong dalam rukun Islam yang ke-...",
+    "correctAnswer": "3",
+    "options": [
+      "5",
+      "4",
+      "2",
+      "3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_491"
+  },
+  {
+    "text": "Surah yang memiliki arti Orang-orang Kafir adalah surah...",
+    "correctAnswer": "Al-Kafirun",
+    "options": [
+      "Al-Anfal",
+      "Al-Kafirun",
+      "Asy-Syu'ara'",
+      "Al-Lahab"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_492"
+  },
+  {
+    "text": "Siapakah malaikat yang diutus Allah SWT untuk mencatat segala amal keburukan manusia?",
+    "correctAnswer": "Atid",
+    "options": [
+      "Atid",
+      "Izrail",
+      "Nakir",
+      "Malik"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_493"
+  },
+  {
+    "text": "Nabi Ibrahim sering dikenal dengan sebutan/gelar...",
+    "correctAnswer": "Khalilullah (Kekasih Allah)",
+    "options": [
+      "Ulul Azmi",
+      "Khalilullah (Kekasih Allah)",
+      "Nabi yang cerdas",
+      "Saudara Nabi Musa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_494"
+  },
+  {
+    "text": "Asmaul Husna yang berarti Yang Maha Memberi Kesejahteraan adalah...",
+    "correctAnswer": "As-Salam",
+    "options": [
+      "Al-Mutakabbir",
+      "Al-Hakim",
+      "Ar-Rahman",
+      "As-Salam"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "agamaislam_495"
+  },
+  {
+    "text": "Nabi yang dikenal dengan mukjizat/kisah memiliki 12 putra yang kelak menjadi Bani Israil adalah Nabi...",
+    "correctAnswer": "Ya'qub",
+    "options": [
+      "Isa",
+      "Ya'qub",
+      "Ilyasa",
+      "Luth"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_496"
+  },
+  {
+    "text": "Rukun Islam yang ke-4 adalah...",
+    "correctAnswer": "Berpuasa di bulan Ramadhan",
+    "options": [
+      "Mengucapkan dua kalimat syahadat",
+      "Mendirikan shalat",
+      "Berpuasa di bulan Ramadhan",
+      "Menunaikan zakat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_497"
+  },
+  {
+    "text": "Makna 'Yang Maha Tinggi' terkandung dalam Asmaul Husna...",
+    "correctAnswer": "Al-Aliy",
+    "options": [
+      "Al-Fattah",
+      "Al-Aliy",
+      "Al-Jabbar",
+      "Al-Haqq"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "agamaislam_498"
+  },
+  {
+    "text": "Surah yang memiliki arti Nikmat yang Berlimpah adalah surah...",
+    "correctAnswer": "Al-Kausar",
+    "options": [
+      "Al-Kausar",
+      "An-Nas",
+      "Ar-Rahman",
+      "Al-Muzzammil"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "agamaislam_499"
+  },
+  {
+    "text": "Allah SWT memiliki nama yang agung yaitu Al-Muhaimin, maknanya adalah...",
+    "correctAnswer": "Yang Maha Memelihara",
+    "options": [
+      "Yang Maha Mengadakan",
+      "Yang Maha Suci",
+      "Yang Maha Memelihara",
+      "Yang Maha Melihat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "agamaislam_500"
+  }
+]

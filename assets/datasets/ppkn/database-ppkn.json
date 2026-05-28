@@ -1,0 +1,6502 @@
+[
+  {
+    "text": "Tokoh nasional Soekarno dikenal dalam sejarah ketatanegaraan Indonesia sebagai...",
+    "correctAnswer": "Presiden Pertama RI",
+    "options": [
+      "Presiden Kelima RI",
+      "Presiden Kedua RI",
+      "Presiden Pertama RI",
+      "Presiden Keenam RI"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_1"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1949 merupakan peringatan yang ke...",
+    "correctAnswer": "22",
+    "options": [
+      "23",
+      "22",
+      "21",
+      "24"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_2"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1973 merupakan peringatan yang ke...",
+    "correctAnswer": "46",
+    "options": [
+      "48",
+      "45",
+      "47",
+      "46"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_3"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2061, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "116 tahun",
+    "options": [
+      "115 tahun",
+      "116 tahun",
+      "117 tahun",
+      "118 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_4"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1970 merupakan peringatan yang ke...",
+    "correctAnswer": "43",
+    "options": [
+      "45",
+      "43",
+      "42",
+      "44"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_5"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2000, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "55 tahun",
+    "options": [
+      "56 tahun",
+      "54 tahun",
+      "57 tahun",
+      "55 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_6"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Cirebon merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Jawa Barat",
+    "options": [
+      "Jawa Timur",
+      "Jawa Tengah",
+      "Jawa Barat",
+      "Banten"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_7"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1988, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "43 tahun",
+    "options": [
+      "43 tahun",
+      "45 tahun",
+      "42 tahun",
+      "44 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_8"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2071, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "126 tahun",
+    "options": [
+      "128 tahun",
+      "125 tahun",
+      "126 tahun",
+      "127 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_9"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2105, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "160 tahun",
+    "options": [
+      "162 tahun",
+      "159 tahun",
+      "160 tahun",
+      "161 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_10"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2034, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "89 tahun",
+    "options": [
+      "89 tahun",
+      "91 tahun",
+      "88 tahun",
+      "90 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_11"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1933 merupakan peringatan yang ke...",
+    "correctAnswer": "6",
+    "options": [
+      "7",
+      "6",
+      "5",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_12"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2062, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "117 tahun",
+    "options": [
+      "117 tahun",
+      "118 tahun",
+      "116 tahun",
+      "119 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_13"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2095 merupakan peringatan yang ke...",
+    "correctAnswer": "168",
+    "options": [
+      "167",
+      "170",
+      "168",
+      "169"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_14"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Papua Tengah berada di kota...",
+    "correctAnswer": "Nabire",
+    "options": [
+      "Nabire",
+      "Samarinda",
+      "Bengkulu",
+      "Kupang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_15"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2056, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "111 tahun",
+    "options": [
+      "110 tahun",
+      "112 tahun",
+      "113 tahun",
+      "111 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_16"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1954, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "9 tahun",
+    "options": [
+      "11 tahun",
+      "9 tahun",
+      "8 tahun",
+      "10 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_17"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2121 merupakan peringatan yang ke...",
+    "correctAnswer": "194",
+    "options": [
+      "196",
+      "193",
+      "194",
+      "195"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_18"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2039, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "94 tahun",
+    "options": [
+      "94 tahun",
+      "95 tahun",
+      "93 tahun",
+      "96 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_19"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2127, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "182 tahun",
+    "options": [
+      "184 tahun",
+      "181 tahun",
+      "182 tahun",
+      "183 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_20"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2070 merupakan peringatan yang ke...",
+    "correctAnswer": "143",
+    "options": [
+      "143",
+      "142",
+      "144",
+      "145"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_21"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1989 merupakan peringatan yang ke...",
+    "correctAnswer": "62",
+    "options": [
+      "62",
+      "63",
+      "64",
+      "61"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_22"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2077 merupakan peringatan yang ke...",
+    "correctAnswer": "150",
+    "options": [
+      "149",
+      "150",
+      "151",
+      "152"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_23"
+  },
+  {
+    "text": "Salah satu sikap nyata yang mencerminkan pengamalan Sila Pertama Pancasila adalah...",
+    "correctAnswer": "Rajin beribadah",
+    "options": [
+      "Membangun fasilitas umum",
+      "Rajin beribadah",
+      "Menjenguk teman sakit",
+      "Keseimbangan hak dan kewajiban"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_24"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2035, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "90 tahun",
+    "options": [
+      "90 tahun",
+      "92 tahun",
+      "89 tahun",
+      "91 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_25"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1989, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "44 tahun",
+    "options": [
+      "44 tahun",
+      "43 tahun",
+      "46 tahun",
+      "45 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_26"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2084 merupakan peringatan yang ke...",
+    "correctAnswer": "157",
+    "options": [
+      "159",
+      "157",
+      "158",
+      "156"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_27"
+  },
+  {
+    "text": "'Proses penyatuan berbagai kelompok budaya ke dalam kesatuan bangsa' merupakan definisi yang paling tepat untuk istilah...",
+    "correctAnswer": "Integrasi Nasional",
+    "options": [
+      "Integrasi Nasional",
+      "Nasionalisme",
+      "Otonomi Daerah",
+      "Toleransi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_28"
+  },
+  {
+    "text": "Ketentuan dasar negara tentang 'Kebebasan Beragama' dapat ditemukan di dalam UUD 1945 pada...",
+    "correctAnswer": "Pasal 29 ayat 2",
+    "options": [
+      "Pasal 29 ayat 2",
+      "Pasal 27 ayat 1",
+      "Pasal 34",
+      "Pasal 31 ayat 1"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_29"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Surakarta merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Jawa Tengah",
+    "options": [
+      "DI Yogyakarta",
+      "Jawa Tengah",
+      "Bali",
+      "NTB"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_30"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2074 merupakan peringatan yang ke...",
+    "correctAnswer": "147",
+    "options": [
+      "148",
+      "149",
+      "147",
+      "146"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_31"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2116, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "171 tahun",
+    "options": [
+      "173 tahun",
+      "171 tahun",
+      "172 tahun",
+      "170 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_32"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2081 merupakan peringatan yang ke...",
+    "correctAnswer": "154",
+    "options": [
+      "154",
+      "155",
+      "156",
+      "153"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_33"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2052, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "107 tahun",
+    "options": [
+      "108 tahun",
+      "106 tahun",
+      "109 tahun",
+      "107 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_34"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2018 merupakan peringatan yang ke...",
+    "correctAnswer": "91",
+    "options": [
+      "90",
+      "92",
+      "93",
+      "91"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_35"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2013 merupakan peringatan yang ke...",
+    "correctAnswer": "86",
+    "options": [
+      "86",
+      "88",
+      "85",
+      "87"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_36"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1964 merupakan peringatan yang ke...",
+    "correctAnswer": "37",
+    "options": [
+      "37",
+      "39",
+      "38",
+      "36"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_37"
+  },
+  {
+    "text": "Apakah yang dimaksud dengan istilah Gotong Royong dalam sistem ketatanegaraan/sosial?",
+    "correctAnswer": "Bekerja bersama-sama untuk mencapai suatu hasil yang didambakan",
+    "options": [
+      "Semboyan persatuan bangsa meskipun berbeda-beda",
+      "Bekerja bersama-sama untuk mencapai suatu hasil yang didambakan",
+      "Sikap rela berkorban demi kejayaan dan kemakmuran bangsa",
+      "Hukum dasar tertulis yang menjadi pedoman penyelenggaraan negara"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_38"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2128, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "183 tahun",
+    "options": [
+      "184 tahun",
+      "182 tahun",
+      "185 tahun",
+      "183 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_39"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2113, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "168 tahun",
+    "options": [
+      "169 tahun",
+      "168 tahun",
+      "167 tahun",
+      "170 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_40"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2125, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "180 tahun",
+    "options": [
+      "182 tahun",
+      "181 tahun",
+      "179 tahun",
+      "180 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_41"
+  },
+  {
+    "text": "Dalam konteks kehidupan bernegara, 'Membayar pajak' dikategorikan murni sebagai...",
+    "correctAnswer": "Kewajiban",
+    "options": [
+      "Kewajiban",
+      "Larangan",
+      "Pidana",
+      "Ancaman"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_42"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2097, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "152 tahun",
+    "options": [
+      "153 tahun",
+      "152 tahun",
+      "151 tahun",
+      "154 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_43"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2124 merupakan peringatan yang ke...",
+    "correctAnswer": "197",
+    "options": [
+      "198",
+      "199",
+      "197",
+      "196"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_44"
+  },
+  {
+    "text": "Ketentuan dasar negara tentang 'Pertahanan Keamanan' dapat ditemukan di dalam UUD 1945 pada...",
+    "correctAnswer": "Pasal 30 ayat 1",
+    "options": [
+      "Pasal 27 ayat 2",
+      "Pasal 29 ayat 2",
+      "Pasal 30 ayat 1",
+      "Pasal 34"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_45"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1955 merupakan peringatan yang ke...",
+    "correctAnswer": "28",
+    "options": [
+      "28",
+      "29",
+      "30",
+      "27"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_46"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2049 merupakan peringatan yang ke...",
+    "correctAnswer": "122",
+    "options": [
+      "121",
+      "122",
+      "124",
+      "123"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_47"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2123 merupakan peringatan yang ke...",
+    "correctAnswer": "196",
+    "options": [
+      "198",
+      "195",
+      "197",
+      "196"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_48"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Bantul merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "DI Yogyakarta",
+    "options": [
+      "DI Yogyakarta",
+      "Jawa Barat",
+      "Jawa Tengah",
+      "Bali"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_49"
+  },
+  {
+    "text": "Ketentuan dasar negara tentang 'Ketuhanan YME' dapat ditemukan di dalam UUD 1945 pada...",
+    "correctAnswer": "Pasal 29 ayat 1",
+    "options": [
+      "Pasal 33 ayat 1",
+      "Pasal 29 ayat 1",
+      "Pasal 33 ayat 3",
+      "Pasal 31 ayat 2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_50"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2002, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "57 tahun",
+    "options": [
+      "59 tahun",
+      "56 tahun",
+      "57 tahun",
+      "58 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_51"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2031, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "86 tahun",
+    "options": [
+      "87 tahun",
+      "88 tahun",
+      "85 tahun",
+      "86 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_52"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2023 merupakan peringatan yang ke...",
+    "correctAnswer": "96",
+    "options": [
+      "97",
+      "96",
+      "95",
+      "98"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_53"
+  },
+  {
+    "text": "Apakah yang dimaksud dengan istilah Desentralisasi dalam sistem ketatanegaraan/sosial?",
+    "correctAnswer": "Penyerahan wewenang dari pemerintah pusat kepada daerah otonom",
+    "options": [
+      "Hukum dasar tertulis yang menjadi pedoman penyelenggaraan negara",
+      "Sikap rela berkorban demi kejayaan dan kemakmuran bangsa",
+      "Sikap saling menghargai perbedaan antar sesama manusia",
+      "Penyerahan wewenang dari pemerintah pusat kepada daerah otonom"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_54"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2043, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "98 tahun",
+    "options": [
+      "98 tahun",
+      "97 tahun",
+      "99 tahun",
+      "100 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_55"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2107, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "162 tahun",
+    "options": [
+      "164 tahun",
+      "163 tahun",
+      "161 tahun",
+      "162 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_56"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1959 merupakan peringatan yang ke...",
+    "correctAnswer": "32",
+    "options": [
+      "33",
+      "34",
+      "31",
+      "32"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_57"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2017 merupakan peringatan yang ke...",
+    "correctAnswer": "90",
+    "options": [
+      "90",
+      "89",
+      "91",
+      "92"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_58"
+  },
+  {
+    "text": "Apakah yang dimaksud dengan istilah Bhinneka Tunggal Ika dalam sistem ketatanegaraan/sosial?",
+    "correctAnswer": "Semboyan persatuan bangsa meskipun berbeda-beda",
+    "options": [
+      "Penyerahan wewenang dari pemerintah pusat kepada daerah otonom",
+      "Pemerintahan dari rakyat, oleh rakyat, dan untuk rakyat",
+      "Semboyan persatuan bangsa meskipun berbeda-beda",
+      "Sikap rela berkorban demi kejayaan dan kemakmuran bangsa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_59"
+  },
+  {
+    "text": "Ketentuan dasar negara tentang 'Ekonomi Kekeluargaan' dapat ditemukan di dalam UUD 1945 pada...",
+    "correctAnswer": "Pasal 33 ayat 1",
+    "options": [
+      "Pasal 27 ayat 3",
+      "Pasal 30 ayat 1",
+      "Pasal 1 ayat 3",
+      "Pasal 33 ayat 1"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_60"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2136, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "191 tahun",
+    "options": [
+      "193 tahun",
+      "191 tahun",
+      "190 tahun",
+      "192 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_61"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2113 merupakan peringatan yang ke...",
+    "correctAnswer": "186",
+    "options": [
+      "188",
+      "187",
+      "186",
+      "185"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_62"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2048, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "103 tahun",
+    "options": [
+      "105 tahun",
+      "103 tahun",
+      "104 tahun",
+      "102 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_63"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2100, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "155 tahun",
+    "options": [
+      "156 tahun",
+      "155 tahun",
+      "154 tahun",
+      "157 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_64"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Bali berada di kota...",
+    "correctAnswer": "Denpasar",
+    "options": [
+      "Denpasar",
+      "Samarinda",
+      "Kupang",
+      "Tanjung Selor"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_65"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Mojokerto merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Jawa Timur",
+    "options": [
+      "Jawa Timur",
+      "Jawa Barat",
+      "Jawa Tengah",
+      "DI Yogyakarta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_66"
+  },
+  {
+    "text": "Ketentuan dasar negara tentang 'Kekayaan Alam' dapat ditemukan di dalam UUD 1945 pada...",
+    "correctAnswer": "Pasal 33 ayat 3",
+    "options": [
+      "Pasal 33 ayat 3",
+      "Pasal 1 ayat 1",
+      "Pasal 27 ayat 3",
+      "Pasal 30 ayat 1"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_67"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2016 merupakan peringatan yang ke...",
+    "correctAnswer": "89",
+    "options": [
+      "90",
+      "89",
+      "91",
+      "88"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_68"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2035 merupakan peringatan yang ke...",
+    "correctAnswer": "108",
+    "options": [
+      "107",
+      "108",
+      "109",
+      "110"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_69"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1970, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "25 tahun",
+    "options": [
+      "25 tahun",
+      "24 tahun",
+      "26 tahun",
+      "27 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_70"
+  },
+  {
+    "text": "Contoh perilaku yang sejalan dengan nilai Kemanusiaan yang Adil dan Beradab (Sila ke-2) adalah...",
+    "correctAnswer": "Menolong teman kesusahan",
+    "options": [
+      "Tidak memaksakan agama",
+      "Menjaga ketenangan di tempat ibadah",
+      "Menolong teman kesusahan",
+      "Menghargai pendapat orang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_71"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Kalimantan Utara berada di kota...",
+    "correctAnswer": "Tanjung Selor",
+    "options": [
+      "Tanjung Selor",
+      "Mamuju",
+      "Pekanbaru",
+      "Banjarmasin"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_72"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2044, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "99 tahun",
+    "options": [
+      "101 tahun",
+      "100 tahun",
+      "98 tahun",
+      "99 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_73"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2029 merupakan peringatan yang ke...",
+    "correctAnswer": "102",
+    "options": [
+      "102",
+      "104",
+      "103",
+      "101"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_74"
+  },
+  {
+    "text": "Tokoh nasional Soeharto dikenal dalam sejarah ketatanegaraan Indonesia sebagai...",
+    "correctAnswer": "Presiden Kedua RI",
+    "options": [
+      "Presiden Ketujuh RI",
+      "Presiden Ketiga RI",
+      "Presiden Kelima RI",
+      "Presiden Kedua RI"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_75"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Cilegon merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Banten",
+    "options": [
+      "DKI Jakarta",
+      "Jawa Tengah",
+      "Banten",
+      "Jawa Barat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_76"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2072, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "127 tahun",
+    "options": [
+      "129 tahun",
+      "128 tahun",
+      "127 tahun",
+      "126 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_77"
+  },
+  {
+    "text": "Berdasarkan UUD 1945, Pasal 27 ayat 2 mengatur secara khusus mengenai masalah...",
+    "correctAnswer": "Hak Pekerjaan",
+    "options": [
+      "Kewajiban Pendidikan Dasar",
+      "Hak Pekerjaan",
+      "Kesamaan Hukum",
+      "Pembelaan Negara"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_78"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2023, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "78 tahun",
+    "options": [
+      "78 tahun",
+      "80 tahun",
+      "79 tahun",
+      "77 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_79"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2123, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "178 tahun",
+    "options": [
+      "177 tahun",
+      "179 tahun",
+      "180 tahun",
+      "178 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_80"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2103, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "158 tahun",
+    "options": [
+      "157 tahun",
+      "160 tahun",
+      "158 tahun",
+      "159 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_81"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Kalimantan Selatan berada di kota...",
+    "correctAnswer": "Banjarmasin",
+    "options": [
+      "Kendari",
+      "Banjarmasin",
+      "Serang",
+      "Manado"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_82"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2041 merupakan peringatan yang ke...",
+    "correctAnswer": "114",
+    "options": [
+      "116",
+      "113",
+      "115",
+      "114"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_83"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2026 merupakan peringatan yang ke...",
+    "correctAnswer": "99",
+    "options": [
+      "100",
+      "99",
+      "98",
+      "101"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_84"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2048 merupakan peringatan yang ke...",
+    "correctAnswer": "121",
+    "options": [
+      "123",
+      "121",
+      "120",
+      "122"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_85"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2042 merupakan peringatan yang ke...",
+    "correctAnswer": "115",
+    "options": [
+      "117",
+      "116",
+      "114",
+      "115"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_86"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Tasikmalaya merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Jawa Barat",
+    "options": [
+      "NTB",
+      "Lampung",
+      "Jawa Barat",
+      "Banten"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_87"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1951, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "6 tahun",
+    "options": [
+      "8 tahun",
+      "5 tahun",
+      "7 tahun",
+      "6 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_88"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2140, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "195 tahun",
+    "options": [
+      "196 tahun",
+      "197 tahun",
+      "194 tahun",
+      "195 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_89"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2076 merupakan peringatan yang ke...",
+    "correctAnswer": "149",
+    "options": [
+      "150",
+      "149",
+      "148",
+      "151"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_90"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2062 merupakan peringatan yang ke...",
+    "correctAnswer": "135",
+    "options": [
+      "135",
+      "134",
+      "136",
+      "137"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_91"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1976, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "31 tahun",
+    "options": [
+      "30 tahun",
+      "32 tahun",
+      "33 tahun",
+      "31 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_92"
+  },
+  {
+    "text": "Dalam konteks kehidupan bernegara, 'Mendapat fasilitas kesehatan' dikategorikan murni sebagai...",
+    "correctAnswer": "Hak",
+    "options": [
+      "Sanksi",
+      "Pelanggaran",
+      "Ancaman",
+      "Hak"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_93"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Depok merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Jawa Barat",
+    "options": [
+      "Lampung",
+      "DI Yogyakarta",
+      "Jawa Barat",
+      "Banten"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_94"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1963, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "18 tahun",
+    "options": [
+      "18 tahun",
+      "20 tahun",
+      "19 tahun",
+      "17 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_95"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1982 merupakan peringatan yang ke...",
+    "correctAnswer": "55",
+    "options": [
+      "57",
+      "54",
+      "56",
+      "55"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_96"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2011 merupakan peringatan yang ke...",
+    "correctAnswer": "84",
+    "options": [
+      "85",
+      "83",
+      "86",
+      "84"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_97"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1953, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "8 tahun",
+    "options": [
+      "8 tahun",
+      "9 tahun",
+      "7 tahun",
+      "10 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_98"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Tegal merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Jawa Tengah",
+    "options": [
+      "Bali",
+      "DI Yogyakarta",
+      "Lampung",
+      "Jawa Tengah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_99"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Kalimantan Barat berada di kota...",
+    "correctAnswer": "Pontianak",
+    "options": [
+      "Pontianak",
+      "Padang",
+      "Sofifi",
+      "Manado"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_100"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2085 merupakan peringatan yang ke...",
+    "correctAnswer": "158",
+    "options": [
+      "158",
+      "160",
+      "159",
+      "157"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_101"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2037 merupakan peringatan yang ke...",
+    "correctAnswer": "110",
+    "options": [
+      "109",
+      "110",
+      "112",
+      "111"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_102"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1981, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "36 tahun",
+    "options": [
+      "38 tahun",
+      "35 tahun",
+      "36 tahun",
+      "37 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_103"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2103 merupakan peringatan yang ke...",
+    "correctAnswer": "176",
+    "options": [
+      "176",
+      "175",
+      "178",
+      "177"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_104"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1978 merupakan peringatan yang ke...",
+    "correctAnswer": "51",
+    "options": [
+      "50",
+      "53",
+      "51",
+      "52"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_105"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2099 merupakan peringatan yang ke...",
+    "correctAnswer": "172",
+    "options": [
+      "172",
+      "171",
+      "174",
+      "173"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_106"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Gorontalo berada di kota...",
+    "correctAnswer": "Gorontalo",
+    "options": [
+      "Gorontalo",
+      "Mamuju",
+      "Palangka Raya",
+      "Tanjung Selor"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_107"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1990, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "45 tahun",
+    "options": [
+      "45 tahun",
+      "46 tahun",
+      "44 tahun",
+      "47 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_108"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2111, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "166 tahun",
+    "options": [
+      "165 tahun",
+      "167 tahun",
+      "166 tahun",
+      "168 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_109"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2019, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "74 tahun",
+    "options": [
+      "76 tahun",
+      "74 tahun",
+      "73 tahun",
+      "75 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_110"
+  },
+  {
+    "text": "Ketentuan dasar negara tentang 'Pembelaan Negara' dapat ditemukan di dalam UUD 1945 pada...",
+    "correctAnswer": "Pasal 27 ayat 3",
+    "options": [
+      "Pasal 1 ayat 1",
+      "Pasal 27 ayat 3",
+      "Pasal 1 ayat 2",
+      "Pasal 29 ayat 2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_111"
+  },
+  {
+    "text": "Berdasarkan UUD 1945, Pasal 33 ayat 1 mengatur secara khusus mengenai masalah...",
+    "correctAnswer": "Ekonomi Kekeluargaan",
+    "options": [
+      "Kewajiban Pendidikan Dasar",
+      "Ekonomi Kekeluargaan",
+      "Kebebasan Beragama",
+      "Pemeliharaan Fakir Miskin"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_112"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2006, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "61 tahun",
+    "options": [
+      "60 tahun",
+      "63 tahun",
+      "62 tahun",
+      "61 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_113"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2075 merupakan peringatan yang ke...",
+    "correctAnswer": "148",
+    "options": [
+      "148",
+      "147",
+      "150",
+      "149"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_114"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2021 merupakan peringatan yang ke...",
+    "correctAnswer": "94",
+    "options": [
+      "94",
+      "95",
+      "93",
+      "96"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_115"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2073, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "128 tahun",
+    "options": [
+      "129 tahun",
+      "130 tahun",
+      "128 tahun",
+      "127 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_116"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2063 merupakan peringatan yang ke...",
+    "correctAnswer": "136",
+    "options": [
+      "135",
+      "136",
+      "138",
+      "137"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_117"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1954 merupakan peringatan yang ke...",
+    "correctAnswer": "27",
+    "options": [
+      "26",
+      "28",
+      "29",
+      "27"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_118"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2120 merupakan peringatan yang ke...",
+    "correctAnswer": "193",
+    "options": [
+      "192",
+      "195",
+      "194",
+      "193"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_119"
+  },
+  {
+    "text": "'Semboyan persatuan bangsa meskipun berbeda-beda' merupakan definisi yang paling tepat untuk istilah...",
+    "correctAnswer": "Bhinneka Tunggal Ika",
+    "options": [
+      "Patriotisme",
+      "Bhinneka Tunggal Ika",
+      "Konstitusi",
+      "Nasionalisme"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_120"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Pasuruan merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Jawa Timur",
+    "options": [
+      "Banten",
+      "Jawa Timur",
+      "Bali",
+      "DI Yogyakarta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_121"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2130, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "185 tahun",
+    "options": [
+      "187 tahun",
+      "184 tahun",
+      "186 tahun",
+      "185 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_122"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2007, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "62 tahun",
+    "options": [
+      "62 tahun",
+      "63 tahun",
+      "64 tahun",
+      "61 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_123"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1961, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "16 tahun",
+    "options": [
+      "15 tahun",
+      "17 tahun",
+      "18 tahun",
+      "16 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_124"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1938 merupakan peringatan yang ke...",
+    "correctAnswer": "11",
+    "options": [
+      "13",
+      "10",
+      "12",
+      "11"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_125"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1969 merupakan peringatan yang ke...",
+    "correctAnswer": "42",
+    "options": [
+      "42",
+      "44",
+      "43",
+      "41"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_126"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2133, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "188 tahun",
+    "options": [
+      "188 tahun",
+      "189 tahun",
+      "190 tahun",
+      "187 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_127"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2145, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "200 tahun",
+    "options": [
+      "202 tahun",
+      "199 tahun",
+      "200 tahun",
+      "201 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_128"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2012, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "67 tahun",
+    "options": [
+      "68 tahun",
+      "66 tahun",
+      "67 tahun",
+      "69 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_129"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1987, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "42 tahun",
+    "options": [
+      "43 tahun",
+      "42 tahun",
+      "44 tahun",
+      "41 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_130"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2132, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "187 tahun",
+    "options": [
+      "188 tahun",
+      "186 tahun",
+      "187 tahun",
+      "189 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_131"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2088, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "143 tahun",
+    "options": [
+      "144 tahun",
+      "143 tahun",
+      "142 tahun",
+      "145 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_132"
+  },
+  {
+    "text": "Berdasarkan UUD 1945, Pasal 27 ayat 3 mengatur secara khusus mengenai masalah...",
+    "correctAnswer": "Pembelaan Negara",
+    "options": [
+      "Kekayaan Alam",
+      "Pembelaan Negara",
+      "Pertahanan Keamanan",
+      "Pemeliharaan Fakir Miskin"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_133"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2033 merupakan peringatan yang ke...",
+    "correctAnswer": "106",
+    "options": [
+      "105",
+      "108",
+      "107",
+      "106"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_134"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2014, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "69 tahun",
+    "options": [
+      "69 tahun",
+      "70 tahun",
+      "68 tahun",
+      "71 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_135"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2075, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "130 tahun",
+    "options": [
+      "132 tahun",
+      "131 tahun",
+      "129 tahun",
+      "130 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_136"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2091 merupakan peringatan yang ke...",
+    "correctAnswer": "164",
+    "options": [
+      "166",
+      "164",
+      "163",
+      "165"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_137"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1997, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "52 tahun",
+    "options": [
+      "51 tahun",
+      "53 tahun",
+      "52 tahun",
+      "54 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_138"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2001, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "56 tahun",
+    "options": [
+      "58 tahun",
+      "55 tahun",
+      "57 tahun",
+      "56 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_139"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1974 merupakan peringatan yang ke...",
+    "correctAnswer": "47",
+    "options": [
+      "46",
+      "49",
+      "48",
+      "47"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_140"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2069 merupakan peringatan yang ke...",
+    "correctAnswer": "142",
+    "options": [
+      "143",
+      "144",
+      "142",
+      "141"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_141"
+  },
+  {
+    "text": "Dalam konteks kehidupan bernegara, 'Mengemukakan pendapat' dikategorikan murni sebagai...",
+    "correctAnswer": "Hak",
+    "options": [
+      "Ancaman",
+      "Pidana",
+      "Hak",
+      "Larangan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_142"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1947 merupakan peringatan yang ke...",
+    "correctAnswer": "20",
+    "options": [
+      "22",
+      "21",
+      "20",
+      "19"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_143"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1991, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "46 tahun",
+    "options": [
+      "48 tahun",
+      "46 tahun",
+      "45 tahun",
+      "47 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_144"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2102 merupakan peringatan yang ke...",
+    "correctAnswer": "175",
+    "options": [
+      "176",
+      "174",
+      "177",
+      "175"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_145"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2088 merupakan peringatan yang ke...",
+    "correctAnswer": "161",
+    "options": [
+      "161",
+      "162",
+      "163",
+      "160"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_146"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Kalimantan Timur berada di kota...",
+    "correctAnswer": "Samarinda",
+    "options": [
+      "Samarinda",
+      "Medan",
+      "Banda Aceh",
+      "Tanjungpinang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_147"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Banjar merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Jawa Barat",
+    "options": [
+      "Lampung",
+      "Jawa Barat",
+      "Bali",
+      "Jawa Timur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_148"
+  },
+  {
+    "text": "'Sikap rela berkorban demi kejayaan dan kemakmuran bangsa' merupakan definisi yang paling tepat untuk istilah...",
+    "correctAnswer": "Patriotisme",
+    "options": [
+      "Otonomi Daerah",
+      "Gotong Royong",
+      "Patriotisme",
+      "Demokrasi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_149"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1946, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "1 tahun",
+    "options": [
+      "0 tahun",
+      "1 tahun",
+      "2 tahun",
+      "3 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_150"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2044 merupakan peringatan yang ke...",
+    "correctAnswer": "117",
+    "options": [
+      "119",
+      "117",
+      "118",
+      "116"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_151"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1932 merupakan peringatan yang ke...",
+    "correctAnswer": "5",
+    "options": [
+      "6",
+      "7",
+      "5",
+      "4"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_152"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Lampung berada di kota...",
+    "correctAnswer": "Bandar Lampung",
+    "options": [
+      "Semarang",
+      "Bandar Lampung",
+      "Sorong",
+      "Sofifi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_153"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2054, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "109 tahun",
+    "options": [
+      "108 tahun",
+      "109 tahun",
+      "111 tahun",
+      "110 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_154"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2052 merupakan peringatan yang ke...",
+    "correctAnswer": "125",
+    "options": [
+      "124",
+      "127",
+      "126",
+      "125"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_155"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2069, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "124 tahun",
+    "options": [
+      "126 tahun",
+      "124 tahun",
+      "125 tahun",
+      "123 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_156"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2028 merupakan peringatan yang ke...",
+    "correctAnswer": "101",
+    "options": [
+      "101",
+      "103",
+      "102",
+      "100"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_157"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1930 merupakan peringatan yang ke...",
+    "correctAnswer": "3",
+    "options": [
+      "2",
+      "4",
+      "5",
+      "3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_158"
+  },
+  {
+    "text": "Dalam konteks kehidupan bernegara, 'Memeluk agama' dikategorikan murni sebagai...",
+    "correctAnswer": "Hak Asasi",
+    "options": [
+      "Larangan",
+      "Hak Asasi",
+      "Ancaman",
+      "Pidana"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_159"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1961 merupakan peringatan yang ke...",
+    "correctAnswer": "34",
+    "options": [
+      "35",
+      "33",
+      "36",
+      "34"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_160"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Banten berada di kota...",
+    "correctAnswer": "Serang",
+    "options": [
+      "Manado",
+      "Serang",
+      "Sofifi",
+      "Ambon"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_161"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Sulawesi Utara berada di kota...",
+    "correctAnswer": "Manado",
+    "options": [
+      "Jayapura",
+      "Manado",
+      "Pangkalpinang",
+      "Palangka Raya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_162"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2031 merupakan peringatan yang ke...",
+    "correctAnswer": "104",
+    "options": [
+      "105",
+      "104",
+      "106",
+      "103"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_163"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Sulawesi Tengah berada di kota...",
+    "correctAnswer": "Palu",
+    "options": [
+      "Semarang",
+      "Pangkalpinang",
+      "Palembang",
+      "Palu"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_164"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2019 merupakan peringatan yang ke...",
+    "correctAnswer": "92",
+    "options": [
+      "93",
+      "92",
+      "94",
+      "91"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_165"
+  },
+  {
+    "text": "Berdasarkan UUD 1945, Pasal 1 ayat 1 mengatur secara khusus mengenai masalah...",
+    "correctAnswer": "Bentuk Negara Kesatuan",
+    "options": [
+      "Hak Pendidikan",
+      "Pemeliharaan Fakir Miskin",
+      "Bentuk Negara Kesatuan",
+      "Hak Pekerjaan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_166"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2120, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "175 tahun",
+    "options": [
+      "177 tahun",
+      "174 tahun",
+      "175 tahun",
+      "176 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_167"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2082 merupakan peringatan yang ke...",
+    "correctAnswer": "155",
+    "options": [
+      "156",
+      "155",
+      "157",
+      "154"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_168"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2118 merupakan peringatan yang ke...",
+    "correctAnswer": "191",
+    "options": [
+      "191",
+      "192",
+      "193",
+      "190"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_169"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2065, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "120 tahun",
+    "options": [
+      "122 tahun",
+      "119 tahun",
+      "120 tahun",
+      "121 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_170"
+  },
+  {
+    "text": "Ketentuan dasar negara tentang 'Hak Pekerjaan' dapat ditemukan di dalam UUD 1945 pada...",
+    "correctAnswer": "Pasal 27 ayat 2",
+    "options": [
+      "Pasal 1 ayat 2",
+      "Pasal 27 ayat 2",
+      "Pasal 27 ayat 1",
+      "Pasal 33 ayat 3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_171"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2041, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "96 tahun",
+    "options": [
+      "96 tahun",
+      "98 tahun",
+      "95 tahun",
+      "97 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_172"
+  },
+  {
+    "text": "Dalam konteks kehidupan bernegara, 'Menghormati HAM orang lain' dikategorikan murni sebagai...",
+    "correctAnswer": "Kewajiban",
+    "options": [
+      "Kewajiban",
+      "Pelanggaran",
+      "Sanksi",
+      "Larangan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_173"
+  },
+  {
+    "text": "Ketentuan dasar negara tentang 'Hak Pendidikan' dapat ditemukan di dalam UUD 1945 pada...",
+    "correctAnswer": "Pasal 31 ayat 1",
+    "options": [
+      "Pasal 27 ayat 2",
+      "Pasal 31 ayat 1",
+      "Pasal 30 ayat 1",
+      "Pasal 1 ayat 3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_174"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2094, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "149 tahun",
+    "options": [
+      "150 tahun",
+      "151 tahun",
+      "149 tahun",
+      "148 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_175"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2054 merupakan peringatan yang ke...",
+    "correctAnswer": "127",
+    "options": [
+      "127",
+      "128",
+      "129",
+      "126"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_176"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2059 merupakan peringatan yang ke...",
+    "correctAnswer": "132",
+    "options": [
+      "132",
+      "131",
+      "133",
+      "134"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_177"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2017, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "72 tahun",
+    "options": [
+      "74 tahun",
+      "72 tahun",
+      "73 tahun",
+      "71 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_178"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Maluku berada di kota...",
+    "correctAnswer": "Ambon",
+    "options": [
+      "Ambon",
+      "Jambi",
+      "Jayapura",
+      "Merauke"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_179"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1991 merupakan peringatan yang ke...",
+    "correctAnswer": "64",
+    "options": [
+      "66",
+      "64",
+      "63",
+      "65"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_180"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Sulawesi Selatan berada di kota...",
+    "correctAnswer": "Makassar",
+    "options": [
+      "Palangka Raya",
+      "Jambi",
+      "Makassar",
+      "Manokwari"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_181"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2108 merupakan peringatan yang ke...",
+    "correctAnswer": "181",
+    "options": [
+      "181",
+      "180",
+      "182",
+      "183"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_182"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Tangerang merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Banten",
+    "options": [
+      "DI Yogyakarta",
+      "Bali",
+      "NTB",
+      "Banten"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_183"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2013, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "68 tahun",
+    "options": [
+      "67 tahun",
+      "70 tahun",
+      "68 tahun",
+      "69 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_184"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1999, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "54 tahun",
+    "options": [
+      "55 tahun",
+      "56 tahun",
+      "54 tahun",
+      "53 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_185"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1993, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "48 tahun",
+    "options": [
+      "49 tahun",
+      "50 tahun",
+      "47 tahun",
+      "48 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_186"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2122 merupakan peringatan yang ke...",
+    "correctAnswer": "195",
+    "options": [
+      "194",
+      "196",
+      "195",
+      "197"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_187"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2032, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "87 tahun",
+    "options": [
+      "88 tahun",
+      "87 tahun",
+      "89 tahun",
+      "86 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_188"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1959, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "14 tahun",
+    "options": [
+      "15 tahun",
+      "16 tahun",
+      "13 tahun",
+      "14 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_189"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2061 merupakan peringatan yang ke...",
+    "correctAnswer": "134",
+    "options": [
+      "133",
+      "136",
+      "135",
+      "134"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_190"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2008, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "63 tahun",
+    "options": [
+      "62 tahun",
+      "65 tahun",
+      "64 tahun",
+      "63 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_191"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1944 merupakan peringatan yang ke...",
+    "correctAnswer": "17",
+    "options": [
+      "18",
+      "19",
+      "16",
+      "17"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_192"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Bogor merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Jawa Barat",
+    "options": [
+      "Jawa Tengah",
+      "Bali",
+      "DI Yogyakarta",
+      "Jawa Barat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_193"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1950 merupakan peringatan yang ke...",
+    "correctAnswer": "23",
+    "options": [
+      "23",
+      "22",
+      "24",
+      "25"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_194"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1992, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "47 tahun",
+    "options": [
+      "46 tahun",
+      "49 tahun",
+      "47 tahun",
+      "48 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_195"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1952, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "7 tahun",
+    "options": [
+      "8 tahun",
+      "7 tahun",
+      "6 tahun",
+      "9 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_196"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2129, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "184 tahun",
+    "options": [
+      "184 tahun",
+      "186 tahun",
+      "185 tahun",
+      "183 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_197"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2092, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "147 tahun",
+    "options": [
+      "149 tahun",
+      "147 tahun",
+      "146 tahun",
+      "148 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_198"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2051, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "106 tahun",
+    "options": [
+      "105 tahun",
+      "106 tahun",
+      "108 tahun",
+      "107 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_199"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1997 merupakan peringatan yang ke...",
+    "correctAnswer": "70",
+    "options": [
+      "70",
+      "71",
+      "72",
+      "69"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_200"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Madiun merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Jawa Timur",
+    "options": [
+      "Banten",
+      "Lampung",
+      "DI Yogyakarta",
+      "Jawa Timur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_201"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2008 merupakan peringatan yang ke...",
+    "correctAnswer": "81",
+    "options": [
+      "80",
+      "83",
+      "82",
+      "81"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_202"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1998, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "53 tahun",
+    "options": [
+      "55 tahun",
+      "54 tahun",
+      "52 tahun",
+      "53 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_203"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Papua Barat berada di kota...",
+    "correctAnswer": "Manokwari",
+    "options": [
+      "Banda Aceh",
+      "Manokwari",
+      "Pontianak",
+      "Tanjungpinang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_204"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2045 merupakan peringatan yang ke...",
+    "correctAnswer": "118",
+    "options": [
+      "119",
+      "117",
+      "120",
+      "118"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_205"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2055, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "110 tahun",
+    "options": [
+      "110 tahun",
+      "109 tahun",
+      "111 tahun",
+      "112 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_206"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1956, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "11 tahun",
+    "options": [
+      "12 tahun",
+      "13 tahun",
+      "10 tahun",
+      "11 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_207"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2126 merupakan peringatan yang ke...",
+    "correctAnswer": "199",
+    "options": [
+      "198",
+      "201",
+      "200",
+      "199"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_208"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2079 merupakan peringatan yang ke...",
+    "correctAnswer": "152",
+    "options": [
+      "154",
+      "151",
+      "152",
+      "153"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_209"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2117 merupakan peringatan yang ke...",
+    "correctAnswer": "190",
+    "options": [
+      "190",
+      "189",
+      "191",
+      "192"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_210"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1988 merupakan peringatan yang ke...",
+    "correctAnswer": "61",
+    "options": [
+      "61",
+      "60",
+      "62",
+      "63"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_211"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1947, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "2 tahun",
+    "options": [
+      "4 tahun",
+      "2 tahun",
+      "1 tahun",
+      "3 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_212"
+  },
+  {
+    "text": "Berdasarkan UUD 1945, Pasal 30 ayat 1 mengatur secara khusus mengenai masalah...",
+    "correctAnswer": "Pertahanan Keamanan",
+    "options": [
+      "Pertahanan Keamanan",
+      "Kewajiban Pendidikan Dasar",
+      "Hak Pendidikan",
+      "Kebebasan Beragama"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_213"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1948, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "3 tahun",
+    "options": [
+      "2 tahun",
+      "4 tahun",
+      "5 tahun",
+      "3 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_214"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1940 merupakan peringatan yang ke...",
+    "correctAnswer": "13",
+    "options": [
+      "14",
+      "13",
+      "15",
+      "12"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_215"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2034 merupakan peringatan yang ke...",
+    "correctAnswer": "107",
+    "options": [
+      "108",
+      "107",
+      "106",
+      "109"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_216"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Kediri merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Jawa Timur",
+    "options": [
+      "Banten",
+      "NTB",
+      "Jawa Timur",
+      "Lampung"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_217"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2114 merupakan peringatan yang ke...",
+    "correctAnswer": "187",
+    "options": [
+      "189",
+      "188",
+      "186",
+      "187"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_218"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1943 merupakan peringatan yang ke...",
+    "correctAnswer": "16",
+    "options": [
+      "17",
+      "15",
+      "16",
+      "18"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_219"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2127 merupakan peringatan yang ke...",
+    "correctAnswer": "200",
+    "options": [
+      "202",
+      "201",
+      "200",
+      "199"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_220"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2005 merupakan peringatan yang ke...",
+    "correctAnswer": "78",
+    "options": [
+      "77",
+      "78",
+      "80",
+      "79"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_221"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2009, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "64 tahun",
+    "options": [
+      "64 tahun",
+      "66 tahun",
+      "65 tahun",
+      "63 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_222"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2096 merupakan peringatan yang ke...",
+    "correctAnswer": "169",
+    "options": [
+      "169",
+      "170",
+      "168",
+      "171"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_223"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Kulon Progo merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "DI Yogyakarta",
+    "options": [
+      "NTB",
+      "DI Yogyakarta",
+      "Bali",
+      "Jawa Timur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_224"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2050, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "105 tahun",
+    "options": [
+      "104 tahun",
+      "105 tahun",
+      "107 tahun",
+      "106 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_225"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2058 merupakan peringatan yang ke...",
+    "correctAnswer": "131",
+    "options": [
+      "131",
+      "133",
+      "132",
+      "130"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_226"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2080, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "135 tahun",
+    "options": [
+      "137 tahun",
+      "136 tahun",
+      "135 tahun",
+      "134 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_227"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2104 merupakan peringatan yang ke...",
+    "correctAnswer": "177",
+    "options": [
+      "179",
+      "176",
+      "177",
+      "178"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_228"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2042, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "97 tahun",
+    "options": [
+      "96 tahun",
+      "98 tahun",
+      "99 tahun",
+      "97 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_229"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1973, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "28 tahun",
+    "options": [
+      "28 tahun",
+      "30 tahun",
+      "27 tahun",
+      "29 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_230"
+  },
+  {
+    "text": "Berdasarkan UUD 1945, Pasal 29 ayat 1 mengatur secara khusus mengenai masalah...",
+    "correctAnswer": "Ketuhanan YME",
+    "options": [
+      "Ketuhanan YME",
+      "Kesamaan Hukum",
+      "Hak Pendidikan",
+      "Negara Hukum"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_231"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Papua Selatan berada di kota...",
+    "correctAnswer": "Merauke",
+    "options": [
+      "Medan",
+      "Pontianak",
+      "Merauke",
+      "Jakarta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_232"
+  },
+  {
+    "text": "Dalam konteks kehidupan bernegara, 'Menjaga kelestarian lingkungan' dikategorikan murni sebagai...",
+    "correctAnswer": "Kewajiban",
+    "options": [
+      "Kewajiban",
+      "Pidana",
+      "Pelanggaran",
+      "Sanksi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_233"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2011, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "66 tahun",
+    "options": [
+      "68 tahun",
+      "65 tahun",
+      "66 tahun",
+      "67 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_234"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2143, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "198 tahun",
+    "options": [
+      "199 tahun",
+      "200 tahun",
+      "198 tahun",
+      "197 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_235"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2027 merupakan peringatan yang ke...",
+    "correctAnswer": "100",
+    "options": [
+      "99",
+      "101",
+      "102",
+      "100"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_236"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2050 merupakan peringatan yang ke...",
+    "correctAnswer": "123",
+    "options": [
+      "125",
+      "124",
+      "123",
+      "122"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_237"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2082, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "137 tahun",
+    "options": [
+      "136 tahun",
+      "139 tahun",
+      "137 tahun",
+      "138 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_238"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2124, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "179 tahun",
+    "options": [
+      "179 tahun",
+      "180 tahun",
+      "181 tahun",
+      "178 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_239"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1960, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "15 tahun",
+    "options": [
+      "15 tahun",
+      "17 tahun",
+      "16 tahun",
+      "14 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_240"
+  },
+  {
+    "text": "Penerapan Sila Keempat yang berkaitan dengan Kerakyatan dan musyawarah ditunjukkan oleh sikap...",
+    "correctAnswer": "Mengutamakan musyawarah",
+    "options": [
+      "Menjaga kerukunan antar umat",
+      "Menjenguk teman sakit",
+      "Mengutamakan musyawarah",
+      "Tidak mengganggu ibadah umat lain"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_241"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2020, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "75 tahun",
+    "options": [
+      "77 tahun",
+      "76 tahun",
+      "75 tahun",
+      "74 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_242"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2059, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "114 tahun",
+    "options": [
+      "116 tahun",
+      "115 tahun",
+      "114 tahun",
+      "113 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_243"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1935 merupakan peringatan yang ke...",
+    "correctAnswer": "8",
+    "options": [
+      "8",
+      "7",
+      "10",
+      "9"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_244"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2119 merupakan peringatan yang ke...",
+    "correctAnswer": "192",
+    "options": [
+      "194",
+      "193",
+      "191",
+      "192"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_245"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Papua berada di kota...",
+    "correctAnswer": "Jayapura",
+    "options": [
+      "Sofifi",
+      "Merauke",
+      "Jayapura",
+      "Kendari"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_246"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2106 merupakan peringatan yang ke...",
+    "correctAnswer": "179",
+    "options": [
+      "178",
+      "180",
+      "181",
+      "179"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_247"
+  },
+  {
+    "text": "Berdasarkan UUD 1945, Pasal 31 ayat 1 mengatur secara khusus mengenai masalah...",
+    "correctAnswer": "Hak Pendidikan",
+    "options": [
+      "Kesamaan Hukum",
+      "Hak Pendidikan",
+      "Kekayaan Alam",
+      "Kewajiban Pendidikan Dasar"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_248"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2070, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "125 tahun",
+    "options": [
+      "126 tahun",
+      "124 tahun",
+      "127 tahun",
+      "125 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_249"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Magelang merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Jawa Tengah",
+    "options": [
+      "Jawa Tengah",
+      "DI Yogyakarta",
+      "Lampung",
+      "Jawa Barat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_250"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2036, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "91 tahun",
+    "options": [
+      "93 tahun",
+      "92 tahun",
+      "90 tahun",
+      "91 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_251"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Sumatera Barat berada di kota...",
+    "correctAnswer": "Padang",
+    "options": [
+      "Padang",
+      "Yogyakarta",
+      "Serang",
+      "Banda Aceh"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_252"
+  },
+  {
+    "text": "'Pemerintahan dari rakyat, oleh rakyat, dan untuk rakyat' merupakan definisi yang paling tepat untuk istilah...",
+    "correctAnswer": "Demokrasi",
+    "options": [
+      "Konstitusi",
+      "Desentralisasi",
+      "Integrasi Nasional",
+      "Demokrasi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_253"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Sumatera Selatan berada di kota...",
+    "correctAnswer": "Palembang",
+    "options": [
+      "Palembang",
+      "Medan",
+      "Serang",
+      "Pontianak"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_254"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2006 merupakan peringatan yang ke...",
+    "correctAnswer": "79",
+    "options": [
+      "81",
+      "79",
+      "78",
+      "80"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_255"
+  },
+  {
+    "text": "Dalam konteks kehidupan bernegara, 'Membela negara' dikategorikan murni sebagai...",
+    "correctAnswer": "Hak dan Kewajiban",
+    "options": [
+      "Pelanggaran",
+      "Sanksi",
+      "Ancaman",
+      "Hak dan Kewajiban"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_256"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1965, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "20 tahun",
+    "options": [
+      "19 tahun",
+      "20 tahun",
+      "22 tahun",
+      "21 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_257"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2014 merupakan peringatan yang ke...",
+    "correctAnswer": "87",
+    "options": [
+      "86",
+      "89",
+      "88",
+      "87"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_258"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Bangka Belitung berada di kota...",
+    "correctAnswer": "Pangkalpinang",
+    "options": [
+      "Manokwari",
+      "Pontianak",
+      "Mataram",
+      "Pangkalpinang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_259"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1994, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "49 tahun",
+    "options": [
+      "50 tahun",
+      "51 tahun",
+      "49 tahun",
+      "48 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_260"
+  },
+  {
+    "text": "Apakah yang dimaksud dengan istilah Toleransi dalam sistem ketatanegaraan/sosial?",
+    "correctAnswer": "Sikap saling menghargai perbedaan antar sesama manusia",
+    "options": [
+      "Paham kebangsaan yang mengandung makna kesadaran cinta tanah air",
+      "Sikap saling menghargai perbedaan antar sesama manusia",
+      "Penyerahan wewenang dari pemerintah pusat kepada daerah otonom",
+      "Bekerja bersama-sama untuk mencapai suatu hasil yang didambakan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_261"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1968 merupakan peringatan yang ke...",
+    "correctAnswer": "41",
+    "options": [
+      "40",
+      "41",
+      "43",
+      "42"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_262"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Blitar merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Jawa Timur",
+    "options": [
+      "Bali",
+      "Jawa Timur",
+      "Jawa Barat",
+      "Banten"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_263"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2033, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "88 tahun",
+    "options": [
+      "88 tahun",
+      "90 tahun",
+      "89 tahun",
+      "87 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_264"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2021, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "76 tahun",
+    "options": [
+      "77 tahun",
+      "76 tahun",
+      "78 tahun",
+      "75 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_265"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1955, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "10 tahun",
+    "options": [
+      "11 tahun",
+      "12 tahun",
+      "10 tahun",
+      "9 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_266"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1966, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "21 tahun",
+    "options": [
+      "20 tahun",
+      "23 tahun",
+      "21 tahun",
+      "22 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_267"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2040, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "95 tahun",
+    "options": [
+      "97 tahun",
+      "95 tahun",
+      "94 tahun",
+      "96 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_268"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1996, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "51 tahun",
+    "options": [
+      "51 tahun",
+      "52 tahun",
+      "53 tahun",
+      "50 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_269"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2040 merupakan peringatan yang ke...",
+    "correctAnswer": "113",
+    "options": [
+      "113",
+      "114",
+      "112",
+      "115"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_270"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1979 merupakan peringatan yang ke...",
+    "correctAnswer": "52",
+    "options": [
+      "52",
+      "54",
+      "53",
+      "51"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_271"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Cimahi merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Jawa Barat",
+    "options": [
+      "Jawa Barat",
+      "NTB",
+      "Lampung",
+      "Bali"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_272"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2080 merupakan peringatan yang ke...",
+    "correctAnswer": "153",
+    "options": [
+      "152",
+      "153",
+      "155",
+      "154"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_273"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2045, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "100 tahun",
+    "options": [
+      "100 tahun",
+      "102 tahun",
+      "101 tahun",
+      "99 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_274"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2125 merupakan peringatan yang ke...",
+    "correctAnswer": "198",
+    "options": [
+      "197",
+      "198",
+      "199",
+      "200"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_275"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1934 merupakan peringatan yang ke...",
+    "correctAnswer": "7",
+    "options": [
+      "9",
+      "6",
+      "8",
+      "7"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_276"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Sulawesi Tenggara berada di kota...",
+    "correctAnswer": "Kendari",
+    "options": [
+      "Yogyakarta",
+      "Samarinda",
+      "Kendari",
+      "Manokwari"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_277"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2012 merupakan peringatan yang ke...",
+    "correctAnswer": "85",
+    "options": [
+      "85",
+      "87",
+      "84",
+      "86"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_278"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1964, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "19 tahun",
+    "options": [
+      "20 tahun",
+      "21 tahun",
+      "19 tahun",
+      "18 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_279"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1939 merupakan peringatan yang ke...",
+    "correctAnswer": "12",
+    "options": [
+      "12",
+      "11",
+      "14",
+      "13"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_280"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2025, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "80 tahun",
+    "options": [
+      "79 tahun",
+      "80 tahun",
+      "81 tahun",
+      "82 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_281"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1995, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "50 tahun",
+    "options": [
+      "50 tahun",
+      "52 tahun",
+      "49 tahun",
+      "51 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_282"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2144, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "199 tahun",
+    "options": [
+      "200 tahun",
+      "199 tahun",
+      "198 tahun",
+      "201 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_283"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Sleman merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "DI Yogyakarta",
+    "options": [
+      "Banten",
+      "Lampung",
+      "DI Yogyakarta",
+      "Bali"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_284"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2010 merupakan peringatan yang ke...",
+    "correctAnswer": "83",
+    "options": [
+      "85",
+      "84",
+      "82",
+      "83"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_285"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2096, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "151 tahun",
+    "options": [
+      "152 tahun",
+      "151 tahun",
+      "153 tahun",
+      "150 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_286"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1957 merupakan peringatan yang ke...",
+    "correctAnswer": "30",
+    "options": [
+      "31",
+      "30",
+      "32",
+      "29"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_287"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1966 merupakan peringatan yang ke...",
+    "correctAnswer": "39",
+    "options": [
+      "40",
+      "39",
+      "38",
+      "41"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_288"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Sulawesi Barat berada di kota...",
+    "correctAnswer": "Mamuju",
+    "options": [
+      "Mamuju",
+      "Banjarmasin",
+      "Jayapura",
+      "Medan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_289"
+  },
+  {
+    "text": "Apakah yang dimaksud dengan istilah Nasionalisme dalam sistem ketatanegaraan/sosial?",
+    "correctAnswer": "Paham kebangsaan yang mengandung makna kesadaran cinta tanah air",
+    "options": [
+      "Hak dan kewajiban daerah untuk mengatur urusannya sendiri",
+      "Paham kebangsaan yang mengandung makna kesadaran cinta tanah air",
+      "Sikap saling menghargai perbedaan antar sesama manusia",
+      "Sikap rela berkorban demi kejayaan dan kemakmuran bangsa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_290"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Salatiga merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Jawa Tengah",
+    "options": [
+      "Jawa Timur",
+      "Lampung",
+      "Jawa Tengah",
+      "Bali"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_291"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1962, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "17 tahun",
+    "options": [
+      "18 tahun",
+      "17 tahun",
+      "19 tahun",
+      "16 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_292"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1948 merupakan peringatan yang ke...",
+    "correctAnswer": "21",
+    "options": [
+      "20",
+      "22",
+      "21",
+      "23"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_293"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2037, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "92 tahun",
+    "options": [
+      "93 tahun",
+      "94 tahun",
+      "92 tahun",
+      "91 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_294"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2025 merupakan peringatan yang ke...",
+    "correctAnswer": "98",
+    "options": [
+      "99",
+      "100",
+      "97",
+      "98"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_295"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2089, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "144 tahun",
+    "options": [
+      "146 tahun",
+      "145 tahun",
+      "143 tahun",
+      "144 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_296"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1963 merupakan peringatan yang ke...",
+    "correctAnswer": "36",
+    "options": [
+      "38",
+      "35",
+      "37",
+      "36"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_297"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2090 merupakan peringatan yang ke...",
+    "correctAnswer": "163",
+    "options": [
+      "162",
+      "165",
+      "163",
+      "164"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_298"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2086 merupakan peringatan yang ke...",
+    "correctAnswer": "159",
+    "options": [
+      "160",
+      "161",
+      "159",
+      "158"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_299"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2094 merupakan peringatan yang ke...",
+    "correctAnswer": "167",
+    "options": [
+      "167",
+      "169",
+      "168",
+      "166"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_300"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2047, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "102 tahun",
+    "options": [
+      "101 tahun",
+      "103 tahun",
+      "102 tahun",
+      "104 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_301"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2135, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "190 tahun",
+    "options": [
+      "190 tahun",
+      "189 tahun",
+      "191 tahun",
+      "192 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_302"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2102, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "157 tahun",
+    "options": [
+      "159 tahun",
+      "158 tahun",
+      "157 tahun",
+      "156 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_303"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1974, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "29 tahun",
+    "options": [
+      "28 tahun",
+      "29 tahun",
+      "31 tahun",
+      "30 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_304"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2002 merupakan peringatan yang ke...",
+    "correctAnswer": "75",
+    "options": [
+      "75",
+      "74",
+      "77",
+      "76"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_305"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1958 merupakan peringatan yang ke...",
+    "correctAnswer": "31",
+    "options": [
+      "32",
+      "31",
+      "30",
+      "33"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_306"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Jawa Tengah berada di kota...",
+    "correctAnswer": "Semarang",
+    "options": [
+      "Palembang",
+      "Palangka Raya",
+      "Samarinda",
+      "Semarang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_307"
+  },
+  {
+    "text": "Dalam konteks kehidupan bernegara, 'Mendapat perlindungan hukum' dikategorikan murni sebagai...",
+    "correctAnswer": "Hak",
+    "options": [
+      "Hak",
+      "Larangan",
+      "Ancaman",
+      "Pidana"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_308"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2030 merupakan peringatan yang ke...",
+    "correctAnswer": "103",
+    "options": [
+      "105",
+      "104",
+      "102",
+      "103"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_309"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1937 merupakan peringatan yang ke...",
+    "correctAnswer": "10",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_310"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2074, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "129 tahun",
+    "options": [
+      "129 tahun",
+      "130 tahun",
+      "131 tahun",
+      "128 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_311"
+  },
+  {
+    "text": "'Sikap saling menghargai perbedaan antar sesama manusia' merupakan definisi yang paling tepat untuk istilah...",
+    "correctAnswer": "Toleransi",
+    "options": [
+      "Nasionalisme",
+      "Toleransi",
+      "Konstitusi",
+      "Otonomi Daerah"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_312"
+  },
+  {
+    "text": "Ketentuan dasar negara tentang 'Kedaulatan Rakyat' dapat ditemukan di dalam UUD 1945 pada...",
+    "correctAnswer": "Pasal 1 ayat 2",
+    "options": [
+      "Pasal 1 ayat 2",
+      "Pasal 27 ayat 2",
+      "Pasal 29 ayat 1",
+      "Pasal 27 ayat 3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_313"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2030, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "85 tahun",
+    "options": [
+      "87 tahun",
+      "85 tahun",
+      "84 tahun",
+      "86 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_314"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2022 merupakan peringatan yang ke...",
+    "correctAnswer": "95",
+    "options": [
+      "95",
+      "94",
+      "97",
+      "96"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_315"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Batu merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Jawa Timur",
+    "options": [
+      "Jawa Timur",
+      "Jawa Tengah",
+      "Banten",
+      "Jawa Barat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_316"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2068 merupakan peringatan yang ke...",
+    "correctAnswer": "141",
+    "options": [
+      "142",
+      "141",
+      "140",
+      "143"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_317"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1950, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "5 tahun",
+    "options": [
+      "7 tahun",
+      "5 tahun",
+      "6 tahun",
+      "4 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_318"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2072 merupakan peringatan yang ke...",
+    "correctAnswer": "145",
+    "options": [
+      "146",
+      "145",
+      "144",
+      "147"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_319"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2117, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "172 tahun",
+    "options": [
+      "171 tahun",
+      "172 tahun",
+      "173 tahun",
+      "174 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_320"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1958, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "13 tahun",
+    "options": [
+      "14 tahun",
+      "15 tahun",
+      "12 tahun",
+      "13 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_321"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1942 merupakan peringatan yang ke...",
+    "correctAnswer": "15",
+    "options": [
+      "15",
+      "14",
+      "16",
+      "17"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_322"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2137, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "192 tahun",
+    "options": [
+      "191 tahun",
+      "194 tahun",
+      "193 tahun",
+      "192 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_323"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2083 merupakan peringatan yang ke...",
+    "correctAnswer": "156",
+    "options": [
+      "155",
+      "158",
+      "157",
+      "156"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_324"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2141, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "196 tahun",
+    "options": [
+      "195 tahun",
+      "196 tahun",
+      "197 tahun",
+      "198 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_325"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2078, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "133 tahun",
+    "options": [
+      "135 tahun",
+      "134 tahun",
+      "132 tahun",
+      "133 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_326"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2053, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "108 tahun",
+    "options": [
+      "110 tahun",
+      "108 tahun",
+      "109 tahun",
+      "107 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_327"
+  },
+  {
+    "text": "Apakah yang dimaksud dengan istilah Konstitusi dalam sistem ketatanegaraan/sosial?",
+    "correctAnswer": "Hukum dasar tertulis yang menjadi pedoman penyelenggaraan negara",
+    "options": [
+      "Sikap rela berkorban demi kejayaan dan kemakmuran bangsa",
+      "Hak dan kewajiban daerah untuk mengatur urusannya sendiri",
+      "Hukum dasar tertulis yang menjadi pedoman penyelenggaraan negara",
+      "Paham kebangsaan yang mengandung makna kesadaran cinta tanah air"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_328"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Jawa Timur berada di kota...",
+    "correctAnswer": "Surabaya",
+    "options": [
+      "Medan",
+      "Nabire",
+      "Bandar Lampung",
+      "Surabaya"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_329"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2064 merupakan peringatan yang ke...",
+    "correctAnswer": "137",
+    "options": [
+      "137",
+      "138",
+      "139",
+      "136"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_330"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1968, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "23 tahun",
+    "options": [
+      "23 tahun",
+      "24 tahun",
+      "22 tahun",
+      "25 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_331"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Jawa Barat berada di kota...",
+    "correctAnswer": "Bandung",
+    "options": [
+      "Gorontalo",
+      "Samarinda",
+      "Yogyakarta",
+      "Bandung"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_332"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2106, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "161 tahun",
+    "options": [
+      "160 tahun",
+      "162 tahun",
+      "161 tahun",
+      "163 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_333"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1969, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "24 tahun",
+    "options": [
+      "25 tahun",
+      "26 tahun",
+      "23 tahun",
+      "24 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_334"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1956 merupakan peringatan yang ke...",
+    "correctAnswer": "29",
+    "options": [
+      "29",
+      "30",
+      "28",
+      "31"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_335"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2016, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "71 tahun",
+    "options": [
+      "70 tahun",
+      "71 tahun",
+      "72 tahun",
+      "73 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_336"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2139, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "194 tahun",
+    "options": [
+      "195 tahun",
+      "194 tahun",
+      "196 tahun",
+      "193 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_337"
+  },
+  {
+    "text": "Ketentuan dasar negara tentang 'Kesamaan Hukum' dapat ditemukan di dalam UUD 1945 pada...",
+    "correctAnswer": "Pasal 27 ayat 1",
+    "options": [
+      "Pasal 27 ayat 1",
+      "Pasal 29 ayat 2",
+      "Pasal 1 ayat 1",
+      "Pasal 1 ayat 2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_338"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2029, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "84 tahun",
+    "options": [
+      "84 tahun",
+      "86 tahun",
+      "83 tahun",
+      "85 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_339"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1977, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "32 tahun",
+    "options": [
+      "34 tahun",
+      "33 tahun",
+      "31 tahun",
+      "32 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_340"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2067, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "122 tahun",
+    "options": [
+      "123 tahun",
+      "122 tahun",
+      "121 tahun",
+      "124 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_341"
+  },
+  {
+    "text": "Perilaku yang sangat mencerminkan Keadilan Sosial bagi Seluruh Rakyat Indonesia (Sila ke-5) adalah...",
+    "correctAnswer": "Bersikap adil",
+    "options": [
+      "Bersikap adil",
+      "Tidak membeda-bedakan orang",
+      "Menjaga lingkungan Indonesia",
+      "Memajukan pergaulan suku"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_342"
+  },
+  {
+    "text": "Berdasarkan UUD 1945, Pasal 31 ayat 2 mengatur secara khusus mengenai masalah...",
+    "correctAnswer": "Kewajiban Pendidikan Dasar",
+    "options": [
+      "Ekonomi Kekeluargaan",
+      "Kewajiban Pendidikan Dasar",
+      "Negara Hukum",
+      "Kebebasan Beragama"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_343"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2066, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "121 tahun",
+    "options": [
+      "122 tahun",
+      "123 tahun",
+      "121 tahun",
+      "120 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_344"
+  },
+  {
+    "text": "'Penyerahan wewenang dari pemerintah pusat kepada daerah otonom' merupakan definisi yang paling tepat untuk istilah...",
+    "correctAnswer": "Desentralisasi",
+    "options": [
+      "Konstitusi",
+      "Nasionalisme",
+      "Gotong Royong",
+      "Desentralisasi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_345"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Aceh berada di kota...",
+    "correctAnswer": "Banda Aceh",
+    "options": [
+      "Pangkalpinang",
+      "Semarang",
+      "Banda Aceh",
+      "Banjarmasin"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_346"
+  },
+  {
+    "text": "'Hukum dasar tertulis yang menjadi pedoman penyelenggaraan negara' merupakan definisi yang paling tepat untuk istilah...",
+    "correctAnswer": "Konstitusi",
+    "options": [
+      "Nasionalisme",
+      "Gotong Royong",
+      "Patriotisme",
+      "Konstitusi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_347"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Riau berada di kota...",
+    "correctAnswer": "Pekanbaru",
+    "options": [
+      "Ambon",
+      "Makassar",
+      "Pekanbaru",
+      "Serang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_348"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2032 merupakan peringatan yang ke...",
+    "correctAnswer": "105",
+    "options": [
+      "107",
+      "105",
+      "106",
+      "104"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_349"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2118, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "173 tahun",
+    "options": [
+      "175 tahun",
+      "172 tahun",
+      "174 tahun",
+      "173 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_350"
+  },
+  {
+    "text": "Ketentuan dasar negara tentang 'Kewajiban Pendidikan Dasar' dapat ditemukan di dalam UUD 1945 pada...",
+    "correctAnswer": "Pasal 31 ayat 2",
+    "options": [
+      "Pasal 31 ayat 2",
+      "Pasal 27 ayat 1",
+      "Pasal 1 ayat 3",
+      "Pasal 27 ayat 3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_351"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Sumatera Utara berada di kota...",
+    "correctAnswer": "Medan",
+    "options": [
+      "Ambon",
+      "Medan",
+      "Manado",
+      "Jambi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_352"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2090, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "145 tahun",
+    "options": [
+      "145 tahun",
+      "144 tahun",
+      "147 tahun",
+      "146 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_353"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2104, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "159 tahun",
+    "options": [
+      "158 tahun",
+      "160 tahun",
+      "161 tahun",
+      "159 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_354"
+  },
+  {
+    "text": "Berdasarkan UUD 1945, Pasal 1 ayat 2 mengatur secara khusus mengenai masalah...",
+    "correctAnswer": "Kedaulatan Rakyat",
+    "options": [
+      "Pemeliharaan Fakir Miskin",
+      "Kebebasan Beragama",
+      "Kedaulatan Rakyat",
+      "Hak Pendidikan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_355"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2067 merupakan peringatan yang ke...",
+    "correctAnswer": "140",
+    "options": [
+      "139",
+      "142",
+      "140",
+      "141"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_356"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1971, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "26 tahun",
+    "options": [
+      "28 tahun",
+      "25 tahun",
+      "27 tahun",
+      "26 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_357"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2093, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "148 tahun",
+    "options": [
+      "147 tahun",
+      "149 tahun",
+      "150 tahun",
+      "148 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_358"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2003 merupakan peringatan yang ke...",
+    "correctAnswer": "76",
+    "options": [
+      "78",
+      "75",
+      "76",
+      "77"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_359"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1980 merupakan peringatan yang ke...",
+    "correctAnswer": "53",
+    "options": [
+      "54",
+      "53",
+      "55",
+      "52"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_360"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2122, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "177 tahun",
+    "options": [
+      "177 tahun",
+      "176 tahun",
+      "179 tahun",
+      "178 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_361"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2098, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "153 tahun",
+    "options": [
+      "155 tahun",
+      "154 tahun",
+      "152 tahun",
+      "153 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_362"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1975, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "30 tahun",
+    "options": [
+      "31 tahun",
+      "30 tahun",
+      "32 tahun",
+      "29 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_363"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Bekasi merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Jawa Barat",
+    "options": [
+      "Jawa Barat",
+      "NTB",
+      "DKI Jakarta",
+      "Jawa Timur"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_364"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2138, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "193 tahun",
+    "options": [
+      "193 tahun",
+      "194 tahun",
+      "192 tahun",
+      "195 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_365"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2022, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "77 tahun",
+    "options": [
+      "77 tahun",
+      "79 tahun",
+      "78 tahun",
+      "76 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_366"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2084, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "139 tahun",
+    "options": [
+      "140 tahun",
+      "138 tahun",
+      "141 tahun",
+      "139 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_367"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1972, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "27 tahun",
+    "options": [
+      "27 tahun",
+      "28 tahun",
+      "29 tahun",
+      "26 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_368"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2115, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "170 tahun",
+    "options": [
+      "172 tahun",
+      "169 tahun",
+      "171 tahun",
+      "170 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_369"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1965 merupakan peringatan yang ke...",
+    "correctAnswer": "38",
+    "options": [
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_370"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1995 merupakan peringatan yang ke...",
+    "correctAnswer": "68",
+    "options": [
+      "70",
+      "69",
+      "67",
+      "68"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_371"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2101, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "156 tahun",
+    "options": [
+      "156 tahun",
+      "157 tahun",
+      "158 tahun",
+      "155 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_372"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2111 merupakan peringatan yang ke...",
+    "correctAnswer": "184",
+    "options": [
+      "183",
+      "186",
+      "184",
+      "185"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_373"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2024 merupakan peringatan yang ke...",
+    "correctAnswer": "97",
+    "options": [
+      "99",
+      "97",
+      "96",
+      "98"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_374"
+  },
+  {
+    "text": "Berdasarkan UUD 1945, Pasal 27 ayat 1 mengatur secara khusus mengenai masalah...",
+    "correctAnswer": "Kesamaan Hukum",
+    "options": [
+      "Kewajiban Pendidikan Dasar",
+      "Pembelaan Negara",
+      "Kekayaan Alam",
+      "Kesamaan Hukum"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_375"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2064, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "119 tahun",
+    "options": [
+      "118 tahun",
+      "120 tahun",
+      "119 tahun",
+      "121 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_376"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2110 merupakan peringatan yang ke...",
+    "correctAnswer": "183",
+    "options": [
+      "185",
+      "184",
+      "182",
+      "183"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_377"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2047 merupakan peringatan yang ke...",
+    "correctAnswer": "120",
+    "options": [
+      "121",
+      "122",
+      "120",
+      "119"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_378"
+  },
+  {
+    "text": "Apakah yang dimaksud dengan istilah Otonomi Daerah dalam sistem ketatanegaraan/sosial?",
+    "correctAnswer": "Hak dan kewajiban daerah untuk mengatur urusannya sendiri",
+    "options": [
+      "Hak dan kewajiban daerah untuk mengatur urusannya sendiri",
+      "Bekerja bersama-sama untuk mencapai suatu hasil yang didambakan",
+      "Paham kebangsaan yang mengandung makna kesadaran cinta tanah air",
+      "Proses penyatuan berbagai kelompok budaya ke dalam kesatuan bangsa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_379"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1996 merupakan peringatan yang ke...",
+    "correctAnswer": "69",
+    "options": [
+      "69",
+      "71",
+      "70",
+      "68"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_380"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2038, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "93 tahun",
+    "options": [
+      "95 tahun",
+      "92 tahun",
+      "93 tahun",
+      "94 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_381"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2092 merupakan peringatan yang ke...",
+    "correctAnswer": "165",
+    "options": [
+      "164",
+      "165",
+      "166",
+      "167"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_382"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2056 merupakan peringatan yang ke...",
+    "correctAnswer": "129",
+    "options": [
+      "129",
+      "130",
+      "128",
+      "131"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_383"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2108, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "163 tahun",
+    "options": [
+      "162 tahun",
+      "164 tahun",
+      "165 tahun",
+      "163 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_384"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2086, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "141 tahun",
+    "options": [
+      "140 tahun",
+      "142 tahun",
+      "143 tahun",
+      "141 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_385"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2115 merupakan peringatan yang ke...",
+    "correctAnswer": "188",
+    "options": [
+      "190",
+      "187",
+      "189",
+      "188"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_386"
+  },
+  {
+    "text": "Berdasarkan UUD 1945, Pasal 33 ayat 3 mengatur secara khusus mengenai masalah...",
+    "correctAnswer": "Kekayaan Alam",
+    "options": [
+      "Bentuk Negara Kesatuan",
+      "Pemeliharaan Fakir Miskin",
+      "Kekayaan Alam",
+      "Kedaulatan Rakyat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_387"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2024, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "79 tahun",
+    "options": [
+      "80 tahun",
+      "78 tahun",
+      "81 tahun",
+      "79 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_388"
+  },
+  {
+    "text": "Berdasarkan UUD 1945, Pasal 1 ayat 3 mengatur secara khusus mengenai masalah...",
+    "correctAnswer": "Negara Hukum",
+    "options": [
+      "Ketuhanan YME",
+      "Negara Hukum",
+      "Hak Pekerjaan",
+      "Kesamaan Hukum"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_389"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2065 merupakan peringatan yang ke...",
+    "correctAnswer": "138",
+    "options": [
+      "139",
+      "138",
+      "140",
+      "137"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_390"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Papua Pegunungan berada di kota...",
+    "correctAnswer": "Wamena",
+    "options": [
+      "Serang",
+      "Mataram",
+      "Wamena",
+      "Manado"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_391"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1976 merupakan peringatan yang ke...",
+    "correctAnswer": "49",
+    "options": [
+      "50",
+      "51",
+      "48",
+      "49"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_392"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1999 merupakan peringatan yang ke...",
+    "correctAnswer": "72",
+    "options": [
+      "71",
+      "74",
+      "73",
+      "72"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_393"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1981 merupakan peringatan yang ke...",
+    "correctAnswer": "54",
+    "options": [
+      "53",
+      "55",
+      "54",
+      "56"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_394"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1962 merupakan peringatan yang ke...",
+    "correctAnswer": "35",
+    "options": [
+      "34",
+      "35",
+      "36",
+      "37"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_395"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Papua Barat Daya berada di kota...",
+    "correctAnswer": "Sorong",
+    "options": [
+      "Tanjung Selor",
+      "Kendari",
+      "Jayapura",
+      "Sorong"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_396"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2099, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "154 tahun",
+    "options": [
+      "156 tahun",
+      "155 tahun",
+      "153 tahun",
+      "154 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_397"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2097 merupakan peringatan yang ke...",
+    "correctAnswer": "170",
+    "options": [
+      "170",
+      "171",
+      "172",
+      "169"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_398"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2051 merupakan peringatan yang ke...",
+    "correctAnswer": "124",
+    "options": [
+      "125",
+      "126",
+      "123",
+      "124"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_399"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1980, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "35 tahun",
+    "options": [
+      "37 tahun",
+      "35 tahun",
+      "34 tahun",
+      "36 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_400"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1946 merupakan peringatan yang ke...",
+    "correctAnswer": "19",
+    "options": [
+      "19",
+      "20",
+      "21",
+      "18"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_401"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1967, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "22 tahun",
+    "options": [
+      "23 tahun",
+      "24 tahun",
+      "22 tahun",
+      "21 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_402"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2079, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "134 tahun",
+    "options": [
+      "135 tahun",
+      "134 tahun",
+      "133 tahun",
+      "136 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_403"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2100 merupakan peringatan yang ke...",
+    "correctAnswer": "173",
+    "options": [
+      "175",
+      "173",
+      "174",
+      "172"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_404"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1985 merupakan peringatan yang ke...",
+    "correctAnswer": "58",
+    "options": [
+      "57",
+      "60",
+      "59",
+      "58"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_405"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Gunungkidul merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "DI Yogyakarta",
+    "options": [
+      "Jawa Barat",
+      "DI Yogyakarta",
+      "Jawa Timur",
+      "Lampung"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_406"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Kepulauan Riau berada di kota...",
+    "correctAnswer": "Tanjungpinang",
+    "options": [
+      "Tanjungpinang",
+      "Denpasar",
+      "Jayapura",
+      "Manokwari"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_407"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2009 merupakan peringatan yang ke...",
+    "correctAnswer": "82",
+    "options": [
+      "84",
+      "83",
+      "81",
+      "82"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_408"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1975 merupakan peringatan yang ke...",
+    "correctAnswer": "48",
+    "options": [
+      "50",
+      "48",
+      "49",
+      "47"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_409"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Probolinggo merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Jawa Timur",
+    "options": [
+      "Jawa Barat",
+      "Jawa Timur",
+      "DI Yogyakarta",
+      "DKI Jakarta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_410"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2071 merupakan peringatan yang ke...",
+    "correctAnswer": "144",
+    "options": [
+      "145",
+      "143",
+      "146",
+      "144"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_411"
+  },
+  {
+    "text": "Tindakan yang menunjukkan wujud nyata dari Sila Ketiga (Persatuan Indonesia) adalah...",
+    "correctAnswer": "Rela berkorban untuk negara",
+    "options": [
+      "Melaksanakan keputusan bersama",
+      "Ikut serta Pemilu",
+      "Menjenguk teman sakit",
+      "Rela berkorban untuk negara"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_412"
+  },
+  {
+    "text": "Apakah yang dimaksud dengan istilah Demokrasi dalam sistem ketatanegaraan/sosial?",
+    "correctAnswer": "Pemerintahan dari rakyat, oleh rakyat, dan untuk rakyat",
+    "options": [
+      "Proses penyatuan berbagai kelompok budaya ke dalam kesatuan bangsa",
+      "Pemerintahan dari rakyat, oleh rakyat, dan untuk rakyat",
+      "Bekerja bersama-sama untuk mencapai suatu hasil yang didambakan",
+      "Sikap rela berkorban demi kejayaan dan kemakmuran bangsa"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_413"
+  },
+  {
+    "text": "'Bekerja bersama-sama untuk mencapai suatu hasil yang didambakan' merupakan definisi yang paling tepat untuk istilah...",
+    "correctAnswer": "Gotong Royong",
+    "options": [
+      "Gotong Royong",
+      "Toleransi",
+      "Integrasi Nasional",
+      "Bhinneka Tunggal Ika"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_414"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2076, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "131 tahun",
+    "options": [
+      "131 tahun",
+      "130 tahun",
+      "132 tahun",
+      "133 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_415"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1983 merupakan peringatan yang ke...",
+    "correctAnswer": "56",
+    "options": [
+      "56",
+      "55",
+      "57",
+      "58"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_416"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2107 merupakan peringatan yang ke...",
+    "correctAnswer": "180",
+    "options": [
+      "182",
+      "179",
+      "180",
+      "181"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_417"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2049, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "104 tahun",
+    "options": [
+      "106 tahun",
+      "104 tahun",
+      "105 tahun",
+      "103 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_418"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Bengkulu berada di kota...",
+    "correctAnswer": "Bengkulu",
+    "options": [
+      "Surabaya",
+      "Banda Aceh",
+      "Bengkulu",
+      "Medan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_419"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2142, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "197 tahun",
+    "options": [
+      "196 tahun",
+      "199 tahun",
+      "198 tahun",
+      "197 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_420"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2066 merupakan peringatan yang ke...",
+    "correctAnswer": "139",
+    "options": [
+      "140",
+      "139",
+      "141",
+      "138"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_421"
+  },
+  {
+    "text": "Dalam konteks kehidupan bernegara, 'Mendapat pendidikan' dikategorikan murni sebagai...",
+    "correctAnswer": "Hak",
+    "options": [
+      "Pelanggaran",
+      "Sanksi",
+      "Hak",
+      "Larangan"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_422"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2043 merupakan peringatan yang ke...",
+    "correctAnswer": "116",
+    "options": [
+      "116",
+      "115",
+      "117",
+      "118"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_423"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1984, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "39 tahun",
+    "options": [
+      "39 tahun",
+      "40 tahun",
+      "38 tahun",
+      "41 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_424"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1952 merupakan peringatan yang ke...",
+    "correctAnswer": "25",
+    "options": [
+      "24",
+      "25",
+      "26",
+      "27"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_425"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2057, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "112 tahun",
+    "options": [
+      "114 tahun",
+      "112 tahun",
+      "111 tahun",
+      "113 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_426"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2121, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "176 tahun",
+    "options": [
+      "176 tahun",
+      "178 tahun",
+      "177 tahun",
+      "175 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_427"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi NTB berada di kota...",
+    "correctAnswer": "Mataram",
+    "options": [
+      "Pekanbaru",
+      "Surabaya",
+      "Mataram",
+      "Manokwari"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_428"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1990 merupakan peringatan yang ke...",
+    "correctAnswer": "63",
+    "options": [
+      "64",
+      "65",
+      "63",
+      "62"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_429"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1931 merupakan peringatan yang ke...",
+    "correctAnswer": "4",
+    "options": [
+      "4",
+      "6",
+      "3",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_430"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2081, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "136 tahun",
+    "options": [
+      "135 tahun",
+      "138 tahun",
+      "137 tahun",
+      "136 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_431"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2134, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "189 tahun",
+    "options": [
+      "189 tahun",
+      "188 tahun",
+      "191 tahun",
+      "190 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_432"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2036 merupakan peringatan yang ke...",
+    "correctAnswer": "109",
+    "options": [
+      "110",
+      "109",
+      "108",
+      "111"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_433"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2087, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "142 tahun",
+    "options": [
+      "143 tahun",
+      "141 tahun",
+      "142 tahun",
+      "144 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_434"
+  },
+  {
+    "text": "Tokoh nasional B.J. Habibie dikenal dalam sejarah ketatanegaraan Indonesia sebagai...",
+    "correctAnswer": "Presiden Ketiga RI",
+    "options": [
+      "Presiden Kelima RI",
+      "Presiden Keenam RI",
+      "Presiden Kedua RI",
+      "Presiden Ketiga RI"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_435"
+  },
+  {
+    "text": "'Paham kebangsaan yang mengandung makna kesadaran cinta tanah air' merupakan definisi yang paling tepat untuk istilah...",
+    "correctAnswer": "Nasionalisme",
+    "options": [
+      "Konstitusi",
+      "Nasionalisme",
+      "Otonomi Daerah",
+      "Demokrasi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_436"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2095, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "150 tahun",
+    "options": [
+      "149 tahun",
+      "152 tahun",
+      "151 tahun",
+      "150 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_437"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2078 merupakan peringatan yang ke...",
+    "correctAnswer": "151",
+    "options": [
+      "150",
+      "153",
+      "152",
+      "151"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_438"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2060, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "115 tahun",
+    "options": [
+      "115 tahun",
+      "117 tahun",
+      "114 tahun",
+      "116 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_439"
+  },
+  {
+    "text": "Tokoh nasional Abdurrahman Wahid dikenal dalam sejarah ketatanegaraan Indonesia sebagai...",
+    "correctAnswer": "Presiden Keempat RI",
+    "options": [
+      "Presiden Kedua RI",
+      "Presiden Ketujuh RI",
+      "Presiden Ketiga RI",
+      "Presiden Keempat RI"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_440"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Sukabumi merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Jawa Barat",
+    "options": [
+      "Banten",
+      "Jawa Timur",
+      "Jawa Barat",
+      "DI Yogyakarta"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_441"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2109 merupakan peringatan yang ke...",
+    "correctAnswer": "182",
+    "options": [
+      "183",
+      "184",
+      "181",
+      "182"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_442"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2131, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "186 tahun",
+    "options": [
+      "187 tahun",
+      "188 tahun",
+      "185 tahun",
+      "186 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_443"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi NTT berada di kota...",
+    "correctAnswer": "Kupang",
+    "options": [
+      "Pontianak",
+      "Palembang",
+      "Banjarmasin",
+      "Kupang"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_444"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2109, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "164 tahun",
+    "options": [
+      "164 tahun",
+      "163 tahun",
+      "165 tahun",
+      "166 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_445"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1951 merupakan peringatan yang ke...",
+    "correctAnswer": "24",
+    "options": [
+      "24",
+      "26",
+      "25",
+      "23"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_446"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2058, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "113 tahun",
+    "options": [
+      "113 tahun",
+      "115 tahun",
+      "112 tahun",
+      "114 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_447"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1972 merupakan peringatan yang ke...",
+    "correctAnswer": "45",
+    "options": [
+      "44",
+      "46",
+      "45",
+      "47"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_448"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2083, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "138 tahun",
+    "options": [
+      "139 tahun",
+      "140 tahun",
+      "137 tahun",
+      "138 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_449"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2085, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "140 tahun",
+    "options": [
+      "142 tahun",
+      "139 tahun",
+      "140 tahun",
+      "141 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_450"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1971 merupakan peringatan yang ke...",
+    "correctAnswer": "44",
+    "options": [
+      "44",
+      "46",
+      "45",
+      "43"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_451"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2046, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "101 tahun",
+    "options": [
+      "100 tahun",
+      "101 tahun",
+      "103 tahun",
+      "102 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_452"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2038 merupakan peringatan yang ke...",
+    "correctAnswer": "111",
+    "options": [
+      "111",
+      "110",
+      "113",
+      "112"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_453"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1957, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "12 tahun",
+    "options": [
+      "11 tahun",
+      "12 tahun",
+      "13 tahun",
+      "14 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_454"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2005, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "60 tahun",
+    "options": [
+      "59 tahun",
+      "60 tahun",
+      "61 tahun",
+      "62 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_455"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2101 merupakan peringatan yang ke...",
+    "correctAnswer": "174",
+    "options": [
+      "176",
+      "175",
+      "173",
+      "174"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_456"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2057 merupakan peringatan yang ke...",
+    "correctAnswer": "130",
+    "options": [
+      "131",
+      "130",
+      "129",
+      "132"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_457"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2068, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "123 tahun",
+    "options": [
+      "125 tahun",
+      "122 tahun",
+      "123 tahun",
+      "124 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_458"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2039 merupakan peringatan yang ke...",
+    "correctAnswer": "112",
+    "options": [
+      "113",
+      "111",
+      "114",
+      "112"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_459"
+  },
+  {
+    "text": "Ketentuan dasar negara tentang 'Pemeliharaan Fakir Miskin' dapat ditemukan di dalam UUD 1945 pada...",
+    "correctAnswer": "Pasal 34",
+    "options": [
+      "Pasal 31 ayat 2",
+      "Pasal 34",
+      "Pasal 31 ayat 1",
+      "Pasal 27 ayat 2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_460"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1986 merupakan peringatan yang ke...",
+    "correctAnswer": "59",
+    "options": [
+      "58",
+      "60",
+      "59",
+      "61"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_461"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1967 merupakan peringatan yang ke...",
+    "correctAnswer": "40",
+    "options": [
+      "42",
+      "39",
+      "41",
+      "40"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_462"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2053 merupakan peringatan yang ke...",
+    "correctAnswer": "126",
+    "options": [
+      "128",
+      "125",
+      "127",
+      "126"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_463"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Malang merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Jawa Timur",
+    "options": [
+      "Jawa Tengah",
+      "Jawa Barat",
+      "Jawa Timur",
+      "NTB"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_464"
+  },
+  {
+    "text": "Dalam struktur administratif NKRI, ibu kota pemerintahan provinsi Kalimantan Tengah berada di kota...",
+    "correctAnswer": "Palangka Raya",
+    "options": [
+      "Surabaya",
+      "Manokwari",
+      "Palangka Raya",
+      "Samarinda"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_465"
+  },
+  {
+    "text": "'Hak dan kewajiban daerah untuk mengatur urusannya sendiri' merupakan definisi yang paling tepat untuk istilah...",
+    "correctAnswer": "Otonomi Daerah",
+    "options": [
+      "Otonomi Daerah",
+      "Demokrasi",
+      "Patriotisme",
+      "Konstitusi"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_466"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2091, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "146 tahun",
+    "options": [
+      "145 tahun",
+      "146 tahun",
+      "147 tahun",
+      "148 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_467"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1986, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "41 tahun",
+    "options": [
+      "42 tahun",
+      "41 tahun",
+      "40 tahun",
+      "43 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_468"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1941 merupakan peringatan yang ke...",
+    "correctAnswer": "14",
+    "options": [
+      "16",
+      "13",
+      "15",
+      "14"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_469"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1979, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "34 tahun",
+    "options": [
+      "34 tahun",
+      "35 tahun",
+      "36 tahun",
+      "33 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_470"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1977 merupakan peringatan yang ke...",
+    "correctAnswer": "50",
+    "options": [
+      "52",
+      "51",
+      "50",
+      "49"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_471"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2060 merupakan peringatan yang ke...",
+    "correctAnswer": "133",
+    "options": [
+      "133",
+      "134",
+      "135",
+      "132"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_472"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1982, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "37 tahun",
+    "options": [
+      "36 tahun",
+      "39 tahun",
+      "37 tahun",
+      "38 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_473"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1987 merupakan peringatan yang ke...",
+    "correctAnswer": "60",
+    "options": [
+      "60",
+      "61",
+      "62",
+      "59"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_474"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1949, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "4 tahun",
+    "options": [
+      "6 tahun",
+      "4 tahun",
+      "3 tahun",
+      "5 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_475"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1936 merupakan peringatan yang ke...",
+    "correctAnswer": "9",
+    "options": [
+      "10",
+      "9",
+      "11",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_476"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2020 merupakan peringatan yang ke...",
+    "correctAnswer": "93",
+    "options": [
+      "92",
+      "94",
+      "93",
+      "95"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_477"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2007 merupakan peringatan yang ke...",
+    "correctAnswer": "80",
+    "options": [
+      "80",
+      "81",
+      "82",
+      "79"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_478"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1993 merupakan peringatan yang ke...",
+    "correctAnswer": "66",
+    "options": [
+      "65",
+      "66",
+      "68",
+      "67"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_479"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2028, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "83 tahun",
+    "options": [
+      "83 tahun",
+      "85 tahun",
+      "82 tahun",
+      "84 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_480"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1953 merupakan peringatan yang ke...",
+    "correctAnswer": "26",
+    "options": [
+      "28",
+      "25",
+      "26",
+      "27"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_481"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2001 merupakan peringatan yang ke...",
+    "correctAnswer": "74",
+    "options": [
+      "75",
+      "73",
+      "74",
+      "76"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_482"
+  },
+  {
+    "text": "Apakah yang dimaksud dengan istilah Integrasi Nasional dalam sistem ketatanegaraan/sosial?",
+    "correctAnswer": "Proses penyatuan berbagai kelompok budaya ke dalam kesatuan bangsa",
+    "options": [
+      "Sikap saling menghargai perbedaan antar sesama manusia",
+      "Penyerahan wewenang dari pemerintah pusat kepada daerah otonom",
+      "Proses penyatuan berbagai kelompok budaya ke dalam kesatuan bangsa",
+      "Hukum dasar tertulis yang menjadi pedoman penyelenggaraan negara"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_483"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2098 merupakan peringatan yang ke...",
+    "correctAnswer": "171",
+    "options": [
+      "171",
+      "173",
+      "170",
+      "172"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_484"
+  },
+  {
+    "text": "Tokoh nasional Joko Widodo dikenal dalam sejarah ketatanegaraan Indonesia sebagai...",
+    "correctAnswer": "Presiden Ketujuh RI",
+    "options": [
+      "Presiden Kedua RI",
+      "Presiden Pertama RI",
+      "Presiden Keempat RI",
+      "Presiden Ketujuh RI"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_485"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1998 merupakan peringatan yang ke...",
+    "correctAnswer": "71",
+    "options": [
+      "73",
+      "70",
+      "72",
+      "71"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_486"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2119, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "174 tahun",
+    "options": [
+      "175 tahun",
+      "173 tahun",
+      "176 tahun",
+      "174 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_487"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 1928 merupakan peringatan yang ke...",
+    "correctAnswer": "1",
+    "options": [
+      "0",
+      "2",
+      "1",
+      "3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_488"
+  },
+  {
+    "text": "Apakah yang dimaksud dengan istilah Patriotisme dalam sistem ketatanegaraan/sosial?",
+    "correctAnswer": "Sikap rela berkorban demi kejayaan dan kemakmuran bangsa",
+    "options": [
+      "Semboyan persatuan bangsa meskipun berbeda-beda",
+      "Hukum dasar tertulis yang menjadi pedoman penyelenggaraan negara",
+      "Sikap rela berkorban demi kejayaan dan kemakmuran bangsa",
+      "Hak dan kewajiban daerah untuk mengatur urusannya sendiri"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_489"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2010, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "65 tahun",
+    "options": [
+      "64 tahun",
+      "65 tahun",
+      "66 tahun",
+      "67 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_490"
+  },
+  {
+    "text": "Ketentuan dasar negara tentang 'Bentuk Negara Kesatuan' dapat ditemukan di dalam UUD 1945 pada...",
+    "correctAnswer": "Pasal 1 ayat 1",
+    "options": [
+      "Pasal 30 ayat 1",
+      "Pasal 29 ayat 1",
+      "Pasal 1 ayat 1",
+      "Pasal 33 ayat 3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "ppkn_491"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 1978, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "33 tahun",
+    "options": [
+      "32 tahun",
+      "33 tahun",
+      "34 tahun",
+      "35 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_492"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2105 merupakan peringatan yang ke...",
+    "correctAnswer": "178",
+    "options": [
+      "178",
+      "180",
+      "177",
+      "179"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_493"
+  },
+  {
+    "text": "Tokoh nasional Megawati Soekarnoputri dikenal dalam sejarah ketatanegaraan Indonesia sebagai...",
+    "correctAnswer": "Presiden Kelima RI",
+    "options": [
+      "Presiden Kedua RI",
+      "Presiden Kelima RI",
+      "Presiden Ketujuh RI",
+      "Presiden Ketiga RI"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_494"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2015 merupakan peringatan yang ke...",
+    "correctAnswer": "88",
+    "options": [
+      "88",
+      "90",
+      "89",
+      "87"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_495"
+  },
+  {
+    "text": "Peringatan Hari Sumpah Pemuda pada 28 Oktober tahun 2055 merupakan peringatan yang ke...",
+    "correctAnswer": "128",
+    "options": [
+      "127",
+      "128",
+      "130",
+      "129"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_496"
+  },
+  {
+    "text": "Ketentuan dasar negara tentang 'Negara Hukum' dapat ditemukan di dalam UUD 1945 pada...",
+    "correctAnswer": "Pasal 1 ayat 3",
+    "options": [
+      "Pasal 34",
+      "Pasal 1 ayat 3",
+      "Pasal 27 ayat 1",
+      "Pasal 31 ayat 1"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "ppkn_497"
+  },
+  {
+    "text": "Pada perayaan tanggal 17 Agustus tahun 2110, Negara Kesatuan Republik Indonesia genap berusia...",
+    "correctAnswer": "165 tahun",
+    "options": [
+      "164 tahun",
+      "166 tahun",
+      "167 tahun",
+      "165 tahun"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_498"
+  },
+  {
+    "text": "Daerah administratif kota/kabupaten Tangerang Selatan merupakan bagian dari wilayah NKRI di provinsi...",
+    "correctAnswer": "Banten",
+    "options": [
+      "Banten",
+      "Bali",
+      "Jawa Timur",
+      "Jawa Barat"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "ppkn_499"
+  },
+  {
+    "text": "Dalam konteks kehidupan bernegara, 'Menaati peraturan lalu lintas' dikategorikan murni sebagai...",
+    "correctAnswer": "Kewajiban",
+    "options": [
+      "Sanksi",
+      "Ancaman",
+      "Pidana",
+      "Kewajiban"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "ppkn_500"
+  }
+]

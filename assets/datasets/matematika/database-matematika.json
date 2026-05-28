@@ -1,0 +1,6502 @@
+[
+  {
+    "text": "Berapakah nilai x jika 2x + 4 = 16?",
+    "correctAnswer": "6",
+    "options": [
+      "5",
+      "6",
+      "9",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_1"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 7 = 11?",
+    "correctAnswer": "2",
+    "options": [
+      "4",
+      "5",
+      "1",
+      "2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_2"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 70° dan 60°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "50°",
+    "options": [
+      "60°",
+      "50°",
+      "55°",
+      "40°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_3"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 40° dan 40°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "100°",
+    "options": [
+      "105°",
+      "100°",
+      "110°",
+      "90°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_4"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 25 = 35 adalah...",
+    "correctAnswer": "10",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_5"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 12 cm dan tinggi 13 cm adalah...",
+    "correctAnswer": "78 cm²",
+    "options": [
+      "78 cm²",
+      "83 cm²",
+      "88 cm²",
+      "73 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_6"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 10 cm dan tinggi 23 cm adalah...",
+    "correctAnswer": "115 cm²",
+    "options": [
+      "115 cm²",
+      "110 cm²",
+      "125 cm²",
+      "120 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_7"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 21 = 27!",
+    "correctAnswer": "48",
+    "options": [
+      "58",
+      "48",
+      "53",
+      "43"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_8"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 55° dan 45°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "80°",
+    "options": [
+      "70°",
+      "90°",
+      "85°",
+      "80°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_9"
+  },
+  {
+    "text": "Jika 18z = 36, maka nilai z adalah...",
+    "correctAnswer": "2",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "1"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_10"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 45° dan 80°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "55°",
+    "options": [
+      "60°",
+      "65°",
+      "55°",
+      "45°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_11"
+  },
+  {
+    "text": "Jika 12z = 48, maka nilai z adalah...",
+    "correctAnswer": "4",
+    "options": [
+      "5",
+      "3",
+      "6",
+      "4"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_12"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 55° dan 65°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "60°",
+    "options": [
+      "50°",
+      "65°",
+      "60°",
+      "70°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_13"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 18 = 23 adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "7",
+      "6",
+      "4",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_14"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 2 = 17 adalah...",
+    "correctAnswer": "15",
+    "options": [
+      "16",
+      "14",
+      "15",
+      "17"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_15"
+  },
+  {
+    "text": "Jika 12z = 36, maka nilai z adalah...",
+    "correctAnswer": "3",
+    "options": [
+      "4",
+      "3",
+      "2",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_16"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 10 cm, 19 cm, dan 18 cm adalah...",
+    "correctAnswer": "47 cm",
+    "options": [
+      "49 cm",
+      "45 cm",
+      "47 cm",
+      "51 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_17"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 12 = 15!",
+    "correctAnswer": "27",
+    "options": [
+      "22",
+      "27",
+      "37",
+      "32"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_18"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 14 cm dan tinggi 15 cm adalah...",
+    "correctAnswer": "105 cm²",
+    "options": [
+      "105 cm²",
+      "100 cm²",
+      "115 cm²",
+      "110 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_19"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 12 cm dan tinggi 21 cm adalah...",
+    "correctAnswer": "126 cm²",
+    "options": [
+      "126 cm²",
+      "136 cm²",
+      "131 cm²",
+      "121 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_20"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 12 cm, 13 cm, dan 21 cm adalah...",
+    "correctAnswer": "46 cm",
+    "options": [
+      "46 cm",
+      "44 cm",
+      "48 cm",
+      "50 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_21"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 55° dan 60°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "65°",
+    "options": [
+      "70°",
+      "55°",
+      "65°",
+      "75°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_22"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 16 cm, 15 cm, dan 21 cm adalah...",
+    "correctAnswer": "52 cm",
+    "options": [
+      "52 cm",
+      "56 cm",
+      "50 cm",
+      "54 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_23"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 4 cm dan tinggi 21 cm adalah...",
+    "correctAnswer": "42 cm²",
+    "options": [
+      "47 cm²",
+      "37 cm²",
+      "42 cm²",
+      "52 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_24"
+  },
+  {
+    "text": "Jika 13z = 52, maka nilai z adalah...",
+    "correctAnswer": "4",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_25"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 2 = 22 adalah...",
+    "correctAnswer": "20",
+    "options": [
+      "19",
+      "20",
+      "21",
+      "22"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_26"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 12 cm dan tinggi 17 cm adalah...",
+    "correctAnswer": "102 cm²",
+    "options": [
+      "112 cm²",
+      "107 cm²",
+      "102 cm²",
+      "97 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_27"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 1 = 15?",
+    "correctAnswer": "7",
+    "options": [
+      "9",
+      "6",
+      "7",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_28"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 16 cm dan tinggi 17 cm adalah...",
+    "correctAnswer": "136 cm²",
+    "options": [
+      "146 cm²",
+      "136 cm²",
+      "131 cm²",
+      "141 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_29"
+  },
+  {
+    "text": "Jika 9z = 63, maka nilai z adalah...",
+    "correctAnswer": "7",
+    "options": [
+      "9",
+      "7",
+      "6",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_30"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 35° dan 55°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "90°",
+    "options": [
+      "80°",
+      "95°",
+      "90°",
+      "100°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_31"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 14 cm, 15 cm, dan 21 cm adalah...",
+    "correctAnswer": "50 cm",
+    "options": [
+      "54 cm",
+      "48 cm",
+      "52 cm",
+      "50 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_32"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 6 = 34?",
+    "correctAnswer": "14",
+    "options": [
+      "17",
+      "14",
+      "13",
+      "16"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_33"
+  },
+  {
+    "text": "Jika 5z = 45, maka nilai z adalah...",
+    "correctAnswer": "9",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_34"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 18 cm, 19 cm, dan 21 cm adalah...",
+    "correctAnswer": "58 cm",
+    "options": [
+      "56 cm",
+      "58 cm",
+      "60 cm",
+      "62 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_35"
+  },
+  {
+    "text": "Jika 5z = 35, maka nilai z adalah...",
+    "correctAnswer": "7",
+    "options": [
+      "6",
+      "9",
+      "7",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_36"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 16 cm, 17 cm, dan 21 cm adalah...",
+    "correctAnswer": "54 cm",
+    "options": [
+      "54 cm",
+      "52 cm",
+      "58 cm",
+      "56 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_37"
+  },
+  {
+    "text": "Jika 5z = 15, maka nilai z adalah...",
+    "correctAnswer": "3",
+    "options": [
+      "4",
+      "2",
+      "5",
+      "3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_38"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 18 cm dan tinggi 23 cm adalah...",
+    "correctAnswer": "207 cm²",
+    "options": [
+      "217 cm²",
+      "207 cm²",
+      "212 cm²",
+      "202 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_39"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 75° dan 50°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "55°",
+    "options": [
+      "65°",
+      "45°",
+      "60°",
+      "55°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_40"
+  },
+  {
+    "text": "Jika 3z = 6, maka nilai z adalah...",
+    "correctAnswer": "2",
+    "options": [
+      "2",
+      "1",
+      "4",
+      "3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_41"
+  },
+  {
+    "text": "Jika 19z = 152, maka nilai z adalah...",
+    "correctAnswer": "8",
+    "options": [
+      "7",
+      "10",
+      "9",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_42"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 3 = 19?",
+    "correctAnswer": "8",
+    "options": [
+      "7",
+      "8",
+      "10",
+      "11"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_43"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 24 = 34 adalah...",
+    "correctAnswer": "10",
+    "options": [
+      "11",
+      "10",
+      "9",
+      "12"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_44"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 10 cm dan tinggi 7 cm adalah...",
+    "correctAnswer": "35 cm²",
+    "options": [
+      "30 cm²",
+      "35 cm²",
+      "40 cm²",
+      "45 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_45"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 16 cm, 15 cm, dan 12 cm adalah...",
+    "correctAnswer": "43 cm",
+    "options": [
+      "41 cm",
+      "45 cm",
+      "47 cm",
+      "43 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_46"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 38 = 44!",
+    "correctAnswer": "82",
+    "options": [
+      "82",
+      "87",
+      "77",
+      "92"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_47"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 14 cm, 15 cm, dan 12 cm adalah...",
+    "correctAnswer": "41 cm",
+    "options": [
+      "43 cm",
+      "45 cm",
+      "39 cm",
+      "41 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_48"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 9 = 25?",
+    "correctAnswer": "8",
+    "options": [
+      "7",
+      "8",
+      "11",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_49"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 13 = 19!",
+    "correctAnswer": "32",
+    "options": [
+      "27",
+      "37",
+      "42",
+      "32"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_50"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 8 = 23 adalah...",
+    "correctAnswer": "15",
+    "options": [
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_51"
+  },
+  {
+    "text": "Jika 5z = 30, maka nilai z adalah...",
+    "correctAnswer": "6",
+    "options": [
+      "7",
+      "8",
+      "5",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_52"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 5 = 25?",
+    "correctAnswer": "10",
+    "options": [
+      "12",
+      "13",
+      "9",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_53"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 60° dan 50°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "70°",
+    "options": [
+      "70°",
+      "80°",
+      "60°",
+      "75°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_54"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 20 = 23!",
+    "correctAnswer": "43",
+    "options": [
+      "43",
+      "38",
+      "53",
+      "48"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_55"
+  },
+  {
+    "text": "Jika 12z = 96, maka nilai z adalah...",
+    "correctAnswer": "8",
+    "options": [
+      "7",
+      "9",
+      "10",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_56"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 50° dan 55°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "75°",
+    "options": [
+      "80°",
+      "65°",
+      "75°",
+      "85°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_57"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 45° dan 45°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "90°",
+    "options": [
+      "95°",
+      "80°",
+      "90°",
+      "100°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_58"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 3 = 15?",
+    "correctAnswer": "6",
+    "options": [
+      "5",
+      "8",
+      "6",
+      "9"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_59"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 23 = 29!",
+    "correctAnswer": "52",
+    "options": [
+      "62",
+      "52",
+      "57",
+      "47"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_60"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 8 = 30?",
+    "correctAnswer": "11",
+    "options": [
+      "11",
+      "10",
+      "13",
+      "14"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_61"
+  },
+  {
+    "text": "Jika 17z = 153, maka nilai z adalah...",
+    "correctAnswer": "9",
+    "options": [
+      "10",
+      "11",
+      "9",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_62"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 25 = 28!",
+    "correctAnswer": "53",
+    "options": [
+      "58",
+      "48",
+      "63",
+      "53"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_63"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 14 = 17!",
+    "correctAnswer": "31",
+    "options": [
+      "41",
+      "36",
+      "31",
+      "26"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_64"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 14 cm dan tinggi 17 cm adalah...",
+    "correctAnswer": "119 cm²",
+    "options": [
+      "119 cm²",
+      "114 cm²",
+      "124 cm²",
+      "129 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_65"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 55° dan 75°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "50°",
+    "options": [
+      "40°",
+      "55°",
+      "60°",
+      "50°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_66"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 34 = 43!",
+    "correctAnswer": "77",
+    "options": [
+      "87",
+      "77",
+      "72",
+      "82"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_67"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 16 cm, 11 cm, dan 15 cm adalah...",
+    "correctAnswer": "42 cm",
+    "options": [
+      "42 cm",
+      "40 cm",
+      "46 cm",
+      "44 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_68"
+  },
+  {
+    "text": "Sisi miring segitiga siku-siku adalah 20 cm dan salah satu sisi tegaknya 12 cm. Berapa panjang sisi tegak lainnya?",
+    "correctAnswer": "16 cm",
+    "options": [
+      "16 cm",
+      "18 cm",
+      "14 cm",
+      "19 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_69"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 2 = 6?",
+    "correctAnswer": "2",
+    "options": [
+      "2",
+      "4",
+      "1",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_70"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 29 = 34 adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "7",
+      "4",
+      "5",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_71"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 18 cm, 17 cm, dan 15 cm adalah...",
+    "correctAnswer": "50 cm",
+    "options": [
+      "54 cm",
+      "50 cm",
+      "52 cm",
+      "48 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_72"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 50° dan 70°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "60°",
+    "options": [
+      "70°",
+      "50°",
+      "60°",
+      "65°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_73"
+  },
+  {
+    "text": "Segitiga siku-siku memiliki alas 21 cm dan tinggi 28 cm. Panjang sisi miringnya adalah...",
+    "correctAnswer": "35 cm",
+    "options": [
+      "34 cm",
+      "35 cm",
+      "36 cm",
+      "37 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_74"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 20 = 30 adalah...",
+    "correctAnswer": "10",
+    "options": [
+      "10",
+      "9",
+      "11",
+      "12"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_75"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 22 = 37 adalah...",
+    "correctAnswer": "15",
+    "options": [
+      "17",
+      "16",
+      "15",
+      "14"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_76"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 40° dan 85°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "55°",
+    "options": [
+      "65°",
+      "60°",
+      "55°",
+      "45°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_77"
+  },
+  {
+    "text": "Jika 15z = 90, maka nilai z adalah...",
+    "correctAnswer": "6",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_78"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 16 cm, 19 cm, dan 18 cm adalah...",
+    "correctAnswer": "53 cm",
+    "options": [
+      "55 cm",
+      "53 cm",
+      "57 cm",
+      "51 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_79"
+  },
+  {
+    "text": "Jika 8z = 16, maka nilai z adalah...",
+    "correctAnswer": "2",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "1"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_80"
+  },
+  {
+    "text": "Segitiga siku-siku memiliki alas 20 cm dan tinggi 21 cm. Panjang sisi miringnya adalah...",
+    "correctAnswer": "29 cm",
+    "options": [
+      "28 cm",
+      "29 cm",
+      "30 cm",
+      "31 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_81"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 10 cm, 13 cm, dan 21 cm adalah...",
+    "correctAnswer": "44 cm",
+    "options": [
+      "48 cm",
+      "44 cm",
+      "42 cm",
+      "46 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_82"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 17 = 22 adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "4",
+      "6",
+      "5",
+      "7"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_83"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 11 = 31 adalah...",
+    "correctAnswer": "20",
+    "options": [
+      "20",
+      "22",
+      "21",
+      "19"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_84"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 35 = 44!",
+    "correctAnswer": "79",
+    "options": [
+      "74",
+      "84",
+      "89",
+      "79"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_85"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 9 = 21?",
+    "correctAnswer": "6",
+    "options": [
+      "6",
+      "5",
+      "9",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_86"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 10 cm dan tinggi 11 cm adalah...",
+    "correctAnswer": "55 cm²",
+    "options": [
+      "60 cm²",
+      "50 cm²",
+      "55 cm²",
+      "65 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_87"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 14 cm dan tinggi 19 cm adalah...",
+    "correctAnswer": "133 cm²",
+    "options": [
+      "128 cm²",
+      "143 cm²",
+      "138 cm²",
+      "133 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_88"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 5 = 27?",
+    "correctAnswer": "11",
+    "options": [
+      "10",
+      "14",
+      "13",
+      "11"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_89"
+  },
+  {
+    "text": "Jika 12z = 84, maka nilai z adalah...",
+    "correctAnswer": "7",
+    "options": [
+      "7",
+      "9",
+      "6",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_90"
+  },
+  {
+    "text": "Jika 14z = 126, maka nilai z adalah...",
+    "correctAnswer": "9",
+    "options": [
+      "11",
+      "9",
+      "8",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_91"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 50° dan 45°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "85°",
+    "options": [
+      "95°",
+      "75°",
+      "90°",
+      "85°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_92"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 65° dan 75°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "40°",
+    "options": [
+      "50°",
+      "30°",
+      "40°",
+      "45°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_93"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 3 = 27?",
+    "correctAnswer": "12",
+    "options": [
+      "14",
+      "11",
+      "15",
+      "12"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_94"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 18 cm, 11 cm, dan 12 cm adalah...",
+    "correctAnswer": "41 cm",
+    "options": [
+      "39 cm",
+      "45 cm",
+      "43 cm",
+      "41 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_95"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 30 = 33!",
+    "correctAnswer": "63",
+    "options": [
+      "68",
+      "58",
+      "63",
+      "73"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_96"
+  },
+  {
+    "text": "Jika 10z = 70, maka nilai z adalah...",
+    "correctAnswer": "7",
+    "options": [
+      "7",
+      "9",
+      "8",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_97"
+  },
+  {
+    "text": "Jika 11z = 77, maka nilai z adalah...",
+    "correctAnswer": "7",
+    "options": [
+      "6",
+      "9",
+      "8",
+      "7"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_98"
+  },
+  {
+    "text": "Jika 10z = 30, maka nilai z adalah...",
+    "correctAnswer": "3",
+    "options": [
+      "5",
+      "4",
+      "2",
+      "3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_99"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 24 = 33!",
+    "correctAnswer": "57",
+    "options": [
+      "52",
+      "62",
+      "57",
+      "67"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_100"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 38 = 47!",
+    "correctAnswer": "85",
+    "options": [
+      "95",
+      "85",
+      "80",
+      "90"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_101"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 55° dan 70°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "55°",
+    "options": [
+      "60°",
+      "55°",
+      "65°",
+      "45°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_102"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 12 cm dan tinggi 7 cm adalah...",
+    "correctAnswer": "42 cm²",
+    "options": [
+      "52 cm²",
+      "42 cm²",
+      "37 cm²",
+      "47 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_103"
+  },
+  {
+    "text": "Jika 9z = 27, maka nilai z adalah...",
+    "correctAnswer": "3",
+    "options": [
+      "5",
+      "2",
+      "3",
+      "4"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_104"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 1 = 19?",
+    "correctAnswer": "9",
+    "options": [
+      "12",
+      "9",
+      "11",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_105"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 60° dan 85°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "35°",
+    "options": [
+      "40°",
+      "25°",
+      "35°",
+      "45°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_106"
+  },
+  {
+    "text": "Jika 11z = 22, maka nilai z adalah...",
+    "correctAnswer": "2",
+    "options": [
+      "3",
+      "4",
+      "1",
+      "2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_107"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 65° dan 50°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "65°",
+    "options": [
+      "65°",
+      "75°",
+      "55°",
+      "70°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_108"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 10 cm, 13 cm, dan 18 cm adalah...",
+    "correctAnswer": "41 cm",
+    "options": [
+      "43 cm",
+      "39 cm",
+      "45 cm",
+      "41 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_109"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 1 = 6 adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "7",
+      "6",
+      "4",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_110"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 16 cm, 11 cm, dan 21 cm adalah...",
+    "correctAnswer": "48 cm",
+    "options": [
+      "50 cm",
+      "46 cm",
+      "52 cm",
+      "48 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_111"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 9 = 23?",
+    "correctAnswer": "7",
+    "options": [
+      "7",
+      "6",
+      "10",
+      "9"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_112"
+  },
+  {
+    "text": "Jika 8z = 40, maka nilai z adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "7"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_113"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 4 = 19 adalah...",
+    "correctAnswer": "15",
+    "options": [
+      "17",
+      "15",
+      "16",
+      "14"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_114"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 1 = 29?",
+    "correctAnswer": "14",
+    "options": [
+      "16",
+      "13",
+      "14",
+      "17"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_115"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 18 cm dan tinggi 15 cm adalah...",
+    "correctAnswer": "135 cm²",
+    "options": [
+      "130 cm²",
+      "135 cm²",
+      "145 cm²",
+      "140 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_116"
+  },
+  {
+    "text": "Jika 10z = 60, maka nilai z adalah...",
+    "correctAnswer": "6",
+    "options": [
+      "8",
+      "7",
+      "5",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_117"
+  },
+  {
+    "text": "Jika 17z = 102, maka nilai z adalah...",
+    "correctAnswer": "6",
+    "options": [
+      "6",
+      "5",
+      "7",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_118"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 2 = 24?",
+    "correctAnswer": "11",
+    "options": [
+      "13",
+      "11",
+      "14",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_119"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 4 = 28?",
+    "correctAnswer": "12",
+    "options": [
+      "11",
+      "15",
+      "12",
+      "14"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_120"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 18 cm dan tinggi 5 cm adalah...",
+    "correctAnswer": "45 cm²",
+    "options": [
+      "55 cm²",
+      "40 cm²",
+      "50 cm²",
+      "45 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_121"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 37 = 46!",
+    "correctAnswer": "83",
+    "options": [
+      "78",
+      "83",
+      "93",
+      "88"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_122"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 5 = 15 adalah...",
+    "correctAnswer": "10",
+    "options": [
+      "11",
+      "12",
+      "9",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_123"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 12 = 18!",
+    "correctAnswer": "30",
+    "options": [
+      "35",
+      "40",
+      "30",
+      "25"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_124"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 18 = 38 adalah...",
+    "correctAnswer": "20",
+    "options": [
+      "21",
+      "19",
+      "20",
+      "22"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_125"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 21 = 24!",
+    "correctAnswer": "45",
+    "options": [
+      "40",
+      "50",
+      "55",
+      "45"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_126"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 9 = 31?",
+    "correctAnswer": "11",
+    "options": [
+      "13",
+      "11",
+      "14",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_127"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 35° dan 50°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "95°",
+    "options": [
+      "95°",
+      "85°",
+      "100°",
+      "105°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_128"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 14 cm, 11 cm, dan 18 cm adalah...",
+    "correctAnswer": "43 cm",
+    "options": [
+      "47 cm",
+      "43 cm",
+      "41 cm",
+      "45 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_129"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 1 = 16 adalah...",
+    "correctAnswer": "15",
+    "options": [
+      "15",
+      "14",
+      "16",
+      "17"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_130"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 14 cm, 17 cm, dan 18 cm adalah...",
+    "correctAnswer": "49 cm",
+    "options": [
+      "53 cm",
+      "49 cm",
+      "47 cm",
+      "51 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_131"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 31 = 37!",
+    "correctAnswer": "68",
+    "options": [
+      "68",
+      "78",
+      "63",
+      "73"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_132"
+  },
+  {
+    "text": "Segitiga siku-siku memiliki alas 12 cm dan tinggi 16 cm. Panjang sisi miringnya adalah...",
+    "correctAnswer": "20 cm",
+    "options": [
+      "22 cm",
+      "20 cm",
+      "21 cm",
+      "19 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_133"
+  },
+  {
+    "text": "Jika 11z = 55, maka nilai z adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "4",
+      "7",
+      "6",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_134"
+  },
+  {
+    "text": "Jika 4z = 20, maka nilai z adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "4"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_135"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 25 = 34!",
+    "correctAnswer": "59",
+    "options": [
+      "64",
+      "59",
+      "69",
+      "54"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_136"
+  },
+  {
+    "text": "Jika 2z = 12, maka nilai z adalah...",
+    "correctAnswer": "6",
+    "options": [
+      "5",
+      "7",
+      "6",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_137"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 39 = 45!",
+    "correctAnswer": "84",
+    "options": [
+      "84",
+      "89",
+      "94",
+      "79"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_138"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 3 = 23?",
+    "correctAnswer": "10",
+    "options": [
+      "9",
+      "13",
+      "10",
+      "12"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_139"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 55° dan 40°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "85°",
+    "options": [
+      "75°",
+      "85°",
+      "95°",
+      "90°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_140"
+  },
+  {
+    "text": "Jika 16z = 128, maka nilai z adalah...",
+    "correctAnswer": "8",
+    "options": [
+      "10",
+      "8",
+      "7",
+      "9"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_141"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 70° dan 70°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "40°",
+    "options": [
+      "45°",
+      "40°",
+      "50°",
+      "30°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_142"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 50° dan 40°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "90°",
+    "options": [
+      "90°",
+      "95°",
+      "80°",
+      "100°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_143"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 14 cm, 11 cm, dan 21 cm adalah...",
+    "correctAnswer": "46 cm",
+    "options": [
+      "44 cm",
+      "46 cm",
+      "50 cm",
+      "48 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_144"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 4 = 24?",
+    "correctAnswer": "10",
+    "options": [
+      "10",
+      "12",
+      "9",
+      "13"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_145"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 14 cm dan tinggi 13 cm adalah...",
+    "correctAnswer": "91 cm²",
+    "options": [
+      "101 cm²",
+      "96 cm²",
+      "86 cm²",
+      "91 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_146"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 16 cm dan tinggi 9 cm adalah...",
+    "correctAnswer": "72 cm²",
+    "options": [
+      "72 cm²",
+      "82 cm²",
+      "77 cm²",
+      "67 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_147"
+  },
+  {
+    "text": "Jika 12z = 24, maka nilai z adalah...",
+    "correctAnswer": "2",
+    "options": [
+      "3",
+      "1",
+      "4",
+      "2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_148"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 4 cm dan tinggi 9 cm adalah...",
+    "correctAnswer": "18 cm²",
+    "options": [
+      "18 cm²",
+      "23 cm²",
+      "28 cm²",
+      "13 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_149"
+  },
+  {
+    "text": "Sisi miring segitiga siku-siku adalah 17 cm dan salah satu sisi tegaknya 8 cm. Berapa panjang sisi tegak lainnya?",
+    "correctAnswer": "15 cm",
+    "options": [
+      "13 cm",
+      "15 cm",
+      "18 cm",
+      "17 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_150"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 7 = 22 adalah...",
+    "correctAnswer": "15",
+    "options": [
+      "14",
+      "15",
+      "17",
+      "16"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_151"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 7 = 13?",
+    "correctAnswer": "3",
+    "options": [
+      "6",
+      "5",
+      "3",
+      "2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_152"
+  },
+  {
+    "text": "Jika 14z = 42, maka nilai z adalah...",
+    "correctAnswer": "3",
+    "options": [
+      "2",
+      "4",
+      "3",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_153"
+  },
+  {
+    "text": "Jika 12z = 60, maka nilai z adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "4",
+      "6",
+      "5",
+      "7"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_154"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 10 cm, 13 cm, dan 15 cm adalah...",
+    "correctAnswer": "38 cm",
+    "options": [
+      "42 cm",
+      "40 cm",
+      "38 cm",
+      "36 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_155"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 5 = 29?",
+    "correctAnswer": "12",
+    "options": [
+      "12",
+      "15",
+      "14",
+      "11"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_156"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 16 cm, 17 cm, dan 15 cm adalah...",
+    "correctAnswer": "48 cm",
+    "options": [
+      "48 cm",
+      "52 cm",
+      "46 cm",
+      "50 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_157"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 65° dan 70°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "45°",
+    "options": [
+      "35°",
+      "50°",
+      "55°",
+      "45°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_158"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 7 = 27?",
+    "correctAnswer": "10",
+    "options": [
+      "12",
+      "9",
+      "10",
+      "13"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_159"
+  },
+  {
+    "text": "Jika 14z = 28, maka nilai z adalah...",
+    "correctAnswer": "2",
+    "options": [
+      "3",
+      "4",
+      "2",
+      "1"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_160"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 1 = 21 adalah...",
+    "correctAnswer": "20",
+    "options": [
+      "22",
+      "19",
+      "21",
+      "20"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_161"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 5 = 11?",
+    "correctAnswer": "3",
+    "options": [
+      "6",
+      "2",
+      "3",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_162"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 8 = 34?",
+    "correctAnswer": "13",
+    "options": [
+      "15",
+      "13",
+      "12",
+      "16"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_163"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 9 = 37?",
+    "correctAnswer": "14",
+    "options": [
+      "14",
+      "13",
+      "16",
+      "17"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_164"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 28 = 33 adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "5",
+      "4",
+      "7",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_165"
+  },
+  {
+    "text": "Jika 5z = 20, maka nilai z adalah...",
+    "correctAnswer": "4",
+    "options": [
+      "3",
+      "4",
+      "6",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_166"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 28 = 38 adalah...",
+    "correctAnswer": "10",
+    "options": [
+      "12",
+      "11",
+      "10",
+      "9"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_167"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 60° dan 75°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "45°",
+    "options": [
+      "50°",
+      "45°",
+      "55°",
+      "35°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_168"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 16 = 31 adalah...",
+    "correctAnswer": "15",
+    "options": [
+      "17",
+      "15",
+      "14",
+      "16"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_169"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 60° dan 55°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "65°",
+    "options": [
+      "55°",
+      "75°",
+      "65°",
+      "70°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_170"
+  },
+  {
+    "text": "Jika 11z = 88, maka nilai z adalah...",
+    "correctAnswer": "8",
+    "options": [
+      "8",
+      "10",
+      "7",
+      "9"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_171"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 1 = 25?",
+    "correctAnswer": "12",
+    "options": [
+      "11",
+      "12",
+      "14",
+      "15"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_172"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 30° dan 45°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "105°",
+    "options": [
+      "95°",
+      "110°",
+      "115°",
+      "105°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_173"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 45° dan 40°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "95°",
+    "options": [
+      "85°",
+      "100°",
+      "105°",
+      "95°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_174"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 7 = 29?",
+    "correctAnswer": "11",
+    "options": [
+      "11",
+      "14",
+      "13",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_175"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 1 = 17?",
+    "correctAnswer": "8",
+    "options": [
+      "8",
+      "7",
+      "11",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_176"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 13 = 33 adalah...",
+    "correctAnswer": "20",
+    "options": [
+      "21",
+      "19",
+      "22",
+      "20"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_177"
+  },
+  {
+    "text": "Jika 15z = 30, maka nilai z adalah...",
+    "correctAnswer": "2",
+    "options": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_178"
+  },
+  {
+    "text": "Jika 17z = 136, maka nilai z adalah...",
+    "correctAnswer": "8",
+    "options": [
+      "10",
+      "7",
+      "9",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_179"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 16 = 36 adalah...",
+    "correctAnswer": "20",
+    "options": [
+      "22",
+      "20",
+      "21",
+      "19"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_180"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 14 cm, 13 cm, dan 15 cm adalah...",
+    "correctAnswer": "42 cm",
+    "options": [
+      "46 cm",
+      "42 cm",
+      "40 cm",
+      "44 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_181"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 4 cm dan tinggi 23 cm adalah...",
+    "correctAnswer": "46 cm²",
+    "options": [
+      "46 cm²",
+      "41 cm²",
+      "51 cm²",
+      "56 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_182"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 9 = 29 adalah...",
+    "correctAnswer": "20",
+    "options": [
+      "22",
+      "21",
+      "20",
+      "19"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_183"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 22 = 31!",
+    "correctAnswer": "53",
+    "options": [
+      "63",
+      "58",
+      "53",
+      "48"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_184"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 1 = 7?",
+    "correctAnswer": "3",
+    "options": [
+      "5",
+      "2",
+      "3",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_185"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 14 cm, 19 cm, dan 12 cm adalah...",
+    "correctAnswer": "45 cm",
+    "options": [
+      "43 cm",
+      "49 cm",
+      "45 cm",
+      "47 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_186"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 13 = 22!",
+    "correctAnswer": "35",
+    "options": [
+      "30",
+      "40",
+      "35",
+      "45"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_187"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 1 = 11?",
+    "correctAnswer": "5",
+    "options": [
+      "8",
+      "7",
+      "4",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_188"
+  },
+  {
+    "text": "Jika 7z = 42, maka nilai z adalah...",
+    "correctAnswer": "6",
+    "options": [
+      "5",
+      "8",
+      "7",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_189"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 65° dan 55°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "60°",
+    "options": [
+      "50°",
+      "65°",
+      "70°",
+      "60°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_190"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 12 cm, 11 cm, dan 18 cm adalah...",
+    "correctAnswer": "41 cm",
+    "options": [
+      "39 cm",
+      "41 cm",
+      "45 cm",
+      "43 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_191"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 15 = 21!",
+    "correctAnswer": "36",
+    "options": [
+      "31",
+      "41",
+      "46",
+      "36"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_192"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 33 = 42!",
+    "correctAnswer": "75",
+    "options": [
+      "75",
+      "85",
+      "80",
+      "70"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_193"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 45° dan 60°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "75°",
+    "options": [
+      "80°",
+      "85°",
+      "65°",
+      "75°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_194"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 14 cm, 15 cm, dan 18 cm adalah...",
+    "correctAnswer": "47 cm",
+    "options": [
+      "51 cm",
+      "47 cm",
+      "49 cm",
+      "45 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_195"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 14 cm, 15 cm, dan 15 cm adalah...",
+    "correctAnswer": "44 cm",
+    "options": [
+      "44 cm",
+      "48 cm",
+      "46 cm",
+      "42 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_196"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 16 cm, 17 cm, dan 12 cm adalah...",
+    "correctAnswer": "45 cm",
+    "options": [
+      "43 cm",
+      "45 cm",
+      "49 cm",
+      "47 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_197"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 16 cm dan tinggi 5 cm adalah...",
+    "correctAnswer": "40 cm²",
+    "options": [
+      "45 cm²",
+      "40 cm²",
+      "35 cm²",
+      "50 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_198"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 65° dan 65°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "50°",
+    "options": [
+      "60°",
+      "55°",
+      "50°",
+      "40°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_199"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 12 cm, 19 cm, dan 12 cm adalah...",
+    "correctAnswer": "43 cm",
+    "options": [
+      "47 cm",
+      "45 cm",
+      "41 cm",
+      "43 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_200"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 4 cm dan tinggi 19 cm adalah...",
+    "correctAnswer": "38 cm²",
+    "options": [
+      "48 cm²",
+      "33 cm²",
+      "43 cm²",
+      "38 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_201"
+  },
+  {
+    "text": "Jika 3z = 15, maka nilai z adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "7",
+      "4",
+      "6",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_202"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 31 = 40!",
+    "correctAnswer": "71",
+    "options": [
+      "66",
+      "76",
+      "71",
+      "81"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_203"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 10 cm, 13 cm, dan 12 cm adalah...",
+    "correctAnswer": "35 cm",
+    "options": [
+      "37 cm",
+      "33 cm",
+      "39 cm",
+      "35 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_204"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 16 cm, 19 cm, dan 15 cm adalah...",
+    "correctAnswer": "50 cm",
+    "options": [
+      "54 cm",
+      "52 cm",
+      "50 cm",
+      "48 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_205"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 12 cm dan tinggi 11 cm adalah...",
+    "correctAnswer": "66 cm²",
+    "options": [
+      "66 cm²",
+      "61 cm²",
+      "76 cm²",
+      "71 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_206"
+  },
+  {
+    "text": "Jika 3z = 12, maka nilai z adalah...",
+    "correctAnswer": "4",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_207"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 16 cm dan tinggi 13 cm adalah...",
+    "correctAnswer": "104 cm²",
+    "options": [
+      "99 cm²",
+      "114 cm²",
+      "104 cm²",
+      "109 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_208"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 12 cm, 19 cm, dan 15 cm adalah...",
+    "correctAnswer": "46 cm",
+    "options": [
+      "44 cm",
+      "46 cm",
+      "48 cm",
+      "50 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_209"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 35 = 41!",
+    "correctAnswer": "76",
+    "options": [
+      "71",
+      "81",
+      "76",
+      "86"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_210"
+  },
+  {
+    "text": "Jika 19z = 76, maka nilai z adalah...",
+    "correctAnswer": "4",
+    "options": [
+      "5",
+      "4",
+      "3",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_211"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 2 = 12 adalah...",
+    "correctAnswer": "10",
+    "options": [
+      "9",
+      "11",
+      "12",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_212"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 19 = 29 adalah...",
+    "correctAnswer": "10",
+    "options": [
+      "10",
+      "9",
+      "12",
+      "11"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_213"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 18 = 24!",
+    "correctAnswer": "42",
+    "options": [
+      "37",
+      "47",
+      "52",
+      "42"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_214"
+  },
+  {
+    "text": "Jika 15z = 45, maka nilai z adalah...",
+    "correctAnswer": "3",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_215"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 10 cm dan tinggi 21 cm adalah...",
+    "correctAnswer": "105 cm²",
+    "options": [
+      "110 cm²",
+      "115 cm²",
+      "105 cm²",
+      "100 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_216"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 5 = 15?",
+    "correctAnswer": "5",
+    "options": [
+      "4",
+      "8",
+      "7",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_217"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 29 = 35!",
+    "correctAnswer": "64",
+    "options": [
+      "59",
+      "64",
+      "69",
+      "74"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_218"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 18 cm, 17 cm, dan 12 cm adalah...",
+    "correctAnswer": "47 cm",
+    "options": [
+      "51 cm",
+      "45 cm",
+      "49 cm",
+      "47 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_219"
+  },
+  {
+    "text": "Jika 15z = 105, maka nilai z adalah...",
+    "correctAnswer": "7",
+    "options": [
+      "6",
+      "9",
+      "7",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_220"
+  },
+  {
+    "text": "Jika 16z = 96, maka nilai z adalah...",
+    "correctAnswer": "6",
+    "options": [
+      "8",
+      "5",
+      "7",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_221"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 6 cm dan tinggi 7 cm adalah...",
+    "correctAnswer": "21 cm²",
+    "options": [
+      "26 cm²",
+      "21 cm²",
+      "16 cm²",
+      "31 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_222"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 1 = 5?",
+    "correctAnswer": "2",
+    "options": [
+      "5",
+      "4",
+      "1",
+      "2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_223"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 65° dan 45°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "70°",
+    "options": [
+      "75°",
+      "80°",
+      "70°",
+      "60°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_224"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 10 = 25 adalah...",
+    "correctAnswer": "15",
+    "options": [
+      "14",
+      "17",
+      "16",
+      "15"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_225"
+  },
+  {
+    "text": "Jika 10z = 20, maka nilai z adalah...",
+    "correctAnswer": "2",
+    "options": [
+      "4",
+      "3",
+      "1",
+      "2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_226"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 55° dan 50°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "75°",
+    "options": [
+      "85°",
+      "65°",
+      "75°",
+      "80°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_227"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 4 = 24 adalah...",
+    "correctAnswer": "20",
+    "options": [
+      "19",
+      "21",
+      "22",
+      "20"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_228"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 18 cm dan tinggi 9 cm adalah...",
+    "correctAnswer": "81 cm²",
+    "options": [
+      "91 cm²",
+      "86 cm²",
+      "76 cm²",
+      "81 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_229"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 10 cm dan tinggi 15 cm adalah...",
+    "correctAnswer": "75 cm²",
+    "options": [
+      "80 cm²",
+      "85 cm²",
+      "70 cm²",
+      "75 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_230"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 16 cm, 19 cm, dan 21 cm adalah...",
+    "correctAnswer": "56 cm",
+    "options": [
+      "56 cm",
+      "60 cm",
+      "54 cm",
+      "58 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_231"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 9 = 24 adalah...",
+    "correctAnswer": "15",
+    "options": [
+      "17",
+      "15",
+      "16",
+      "14"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_232"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 50° dan 80°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "50°",
+    "options": [
+      "55°",
+      "50°",
+      "40°",
+      "60°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_233"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 20 = 29!",
+    "correctAnswer": "49",
+    "options": [
+      "59",
+      "49",
+      "54",
+      "44"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_234"
+  },
+  {
+    "text": "Jika 2z = 8, maka nilai z adalah...",
+    "correctAnswer": "4",
+    "options": [
+      "3",
+      "6",
+      "5",
+      "4"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_235"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 5 = 13?",
+    "correctAnswer": "4",
+    "options": [
+      "4",
+      "6",
+      "7",
+      "3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_236"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 70° dan 55°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "55°",
+    "options": [
+      "65°",
+      "60°",
+      "55°",
+      "45°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_237"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 7 = 25?",
+    "correctAnswer": "9",
+    "options": [
+      "9",
+      "8",
+      "12",
+      "11"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_238"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 50° dan 65°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "65°",
+    "options": [
+      "70°",
+      "75°",
+      "55°",
+      "65°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_239"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 18 cm, 11 cm, dan 18 cm adalah...",
+    "correctAnswer": "47 cm",
+    "options": [
+      "45 cm",
+      "47 cm",
+      "51 cm",
+      "49 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_240"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 3 = 29?",
+    "correctAnswer": "13",
+    "options": [
+      "13",
+      "16",
+      "15",
+      "12"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_241"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 10 cm, 17 cm, dan 12 cm adalah...",
+    "correctAnswer": "39 cm",
+    "options": [
+      "41 cm",
+      "37 cm",
+      "43 cm",
+      "39 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_242"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 17 = 20!",
+    "correctAnswer": "37",
+    "options": [
+      "42",
+      "32",
+      "37",
+      "47"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_243"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 21 = 30!",
+    "correctAnswer": "51",
+    "options": [
+      "51",
+      "56",
+      "46",
+      "61"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_244"
+  },
+  {
+    "text": "Jika 13z = 91, maka nilai z adalah...",
+    "correctAnswer": "7",
+    "options": [
+      "7",
+      "6",
+      "9",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_245"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 26 = 35!",
+    "correctAnswer": "61",
+    "options": [
+      "66",
+      "61",
+      "71",
+      "56"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_246"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 14 = 24 adalah...",
+    "correctAnswer": "10",
+    "options": [
+      "11",
+      "9",
+      "10",
+      "12"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_247"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 18 cm, 19 cm, dan 12 cm adalah...",
+    "correctAnswer": "49 cm",
+    "options": [
+      "47 cm",
+      "49 cm",
+      "51 cm",
+      "53 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_248"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 22 = 28!",
+    "correctAnswer": "50",
+    "options": [
+      "45",
+      "60",
+      "50",
+      "55"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_249"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 1 = 13?",
+    "correctAnswer": "6",
+    "options": [
+      "6",
+      "8",
+      "9",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_250"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 29 = 49 adalah...",
+    "correctAnswer": "20",
+    "options": [
+      "21",
+      "20",
+      "19",
+      "22"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_251"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 12 = 32 adalah...",
+    "correctAnswer": "20",
+    "options": [
+      "19",
+      "22",
+      "21",
+      "20"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_252"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 30° dan 85°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "65°",
+    "options": [
+      "65°",
+      "75°",
+      "70°",
+      "55°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_253"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 37 = 40!",
+    "correctAnswer": "77",
+    "options": [
+      "87",
+      "82",
+      "72",
+      "77"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_254"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 12 cm, 19 cm, dan 18 cm adalah...",
+    "correctAnswer": "49 cm",
+    "options": [
+      "51 cm",
+      "53 cm",
+      "49 cm",
+      "47 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_255"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 8 = 28?",
+    "correctAnswer": "10",
+    "options": [
+      "10",
+      "12",
+      "13",
+      "9"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_256"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 13 = 28 adalah...",
+    "correctAnswer": "15",
+    "options": [
+      "17",
+      "16",
+      "15",
+      "14"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_257"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 8 cm dan tinggi 7 cm adalah...",
+    "correctAnswer": "28 cm²",
+    "options": [
+      "38 cm²",
+      "23 cm²",
+      "33 cm²",
+      "28 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_258"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 16 cm, 11 cm, dan 12 cm adalah...",
+    "correctAnswer": "39 cm",
+    "options": [
+      "43 cm",
+      "37 cm",
+      "41 cm",
+      "39 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_259"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 4 cm dan tinggi 17 cm adalah...",
+    "correctAnswer": "34 cm²",
+    "options": [
+      "44 cm²",
+      "39 cm²",
+      "29 cm²",
+      "34 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_260"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 16 cm, 13 cm, dan 15 cm adalah...",
+    "correctAnswer": "44 cm",
+    "options": [
+      "44 cm",
+      "42 cm",
+      "46 cm",
+      "48 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_261"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 15 = 35 adalah...",
+    "correctAnswer": "20",
+    "options": [
+      "19",
+      "21",
+      "20",
+      "22"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_262"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 50° dan 50°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "80°",
+    "options": [
+      "80°",
+      "90°",
+      "70°",
+      "85°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_263"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 36 = 45!",
+    "correctAnswer": "81",
+    "options": [
+      "86",
+      "76",
+      "81",
+      "91"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_264"
+  },
+  {
+    "text": "Jika 10z = 40, maka nilai z adalah...",
+    "correctAnswer": "4",
+    "options": [
+      "3",
+      "5",
+      "4",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_265"
+  },
+  {
+    "text": "Jika 4z = 8, maka nilai z adalah...",
+    "correctAnswer": "2",
+    "options": [
+      "4",
+      "1",
+      "3",
+      "2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_266"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 14 cm, 13 cm, dan 21 cm adalah...",
+    "correctAnswer": "48 cm",
+    "options": [
+      "46 cm",
+      "48 cm",
+      "50 cm",
+      "52 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_267"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 3 = 9?",
+    "correctAnswer": "3",
+    "options": [
+      "2",
+      "3",
+      "5",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_268"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 8 = 26?",
+    "correctAnswer": "9",
+    "options": [
+      "12",
+      "8",
+      "11",
+      "9"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_269"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 8 = 12?",
+    "correctAnswer": "2",
+    "options": [
+      "2",
+      "5",
+      "1",
+      "4"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_270"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 35° dan 75°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "70°",
+    "options": [
+      "70°",
+      "60°",
+      "80°",
+      "75°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_271"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 7 = 31?",
+    "correctAnswer": "12",
+    "options": [
+      "15",
+      "11",
+      "12",
+      "14"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_272"
+  },
+  {
+    "text": "Sisi miring segitiga siku-siku adalah 41 cm dan salah satu sisi tegaknya 9 cm. Berapa panjang sisi tegak lainnya?",
+    "correctAnswer": "40 cm",
+    "options": [
+      "40 cm",
+      "42 cm",
+      "38 cm",
+      "43 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_273"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 6 = 28?",
+    "correctAnswer": "11",
+    "options": [
+      "14",
+      "10",
+      "11",
+      "13"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_274"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 65° dan 80°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "35°",
+    "options": [
+      "40°",
+      "35°",
+      "25°",
+      "45°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_275"
+  },
+  {
+    "text": "Jika 19z = 38, maka nilai z adalah...",
+    "correctAnswer": "2",
+    "options": [
+      "2",
+      "1",
+      "4",
+      "3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_276"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 5 = 9?",
+    "correctAnswer": "2",
+    "options": [
+      "1",
+      "4",
+      "2",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_277"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 12 cm, 17 cm, dan 18 cm adalah...",
+    "correctAnswer": "47 cm",
+    "options": [
+      "45 cm",
+      "47 cm",
+      "51 cm",
+      "49 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_278"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 14 cm, 11 cm, dan 15 cm adalah...",
+    "correctAnswer": "40 cm",
+    "options": [
+      "42 cm",
+      "40 cm",
+      "44 cm",
+      "38 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_279"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 18 cm dan tinggi 11 cm adalah...",
+    "correctAnswer": "99 cm²",
+    "options": [
+      "104 cm²",
+      "99 cm²",
+      "94 cm²",
+      "109 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_280"
+  },
+  {
+    "text": "Segitiga siku-siku memiliki alas 15 cm dan tinggi 20 cm. Panjang sisi miringnya adalah...",
+    "correctAnswer": "25 cm",
+    "options": [
+      "26 cm",
+      "24 cm",
+      "25 cm",
+      "27 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_281"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 75° dan 55°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "50°",
+    "options": [
+      "40°",
+      "50°",
+      "55°",
+      "60°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_282"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 14 = 20!",
+    "correctAnswer": "34",
+    "options": [
+      "44",
+      "34",
+      "29",
+      "39"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_283"
+  },
+  {
+    "text": "Jika 9z = 18, maka nilai z adalah...",
+    "correctAnswer": "2",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_284"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 6 cm dan tinggi 5 cm adalah...",
+    "correctAnswer": "15 cm²",
+    "options": [
+      "20 cm²",
+      "10 cm²",
+      "15 cm²",
+      "25 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_285"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 50° dan 75°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "55°",
+    "options": [
+      "45°",
+      "55°",
+      "65°",
+      "60°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_286"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 1 = 23?",
+    "correctAnswer": "11",
+    "options": [
+      "13",
+      "10",
+      "14",
+      "11"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_287"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 6 cm dan tinggi 13 cm adalah...",
+    "correctAnswer": "39 cm²",
+    "options": [
+      "44 cm²",
+      "49 cm²",
+      "34 cm²",
+      "39 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_288"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 14 cm, 11 cm, dan 12 cm adalah...",
+    "correctAnswer": "37 cm",
+    "options": [
+      "37 cm",
+      "41 cm",
+      "39 cm",
+      "35 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_289"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 18 cm, 19 cm, dan 18 cm adalah...",
+    "correctAnswer": "55 cm",
+    "options": [
+      "59 cm",
+      "53 cm",
+      "57 cm",
+      "55 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_290"
+  },
+  {
+    "text": "Jika 19z = 57, maka nilai z adalah...",
+    "correctAnswer": "3",
+    "options": [
+      "5",
+      "4",
+      "2",
+      "3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_291"
+  },
+  {
+    "text": "Jika 11z = 33, maka nilai z adalah...",
+    "correctAnswer": "3",
+    "options": [
+      "3",
+      "2",
+      "5",
+      "4"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_292"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 60° dan 65°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "55°",
+    "options": [
+      "55°",
+      "45°",
+      "65°",
+      "60°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_293"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 10 cm, 11 cm, dan 12 cm adalah...",
+    "correctAnswer": "33 cm",
+    "options": [
+      "33 cm",
+      "37 cm",
+      "31 cm",
+      "35 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_294"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 6 = 12?",
+    "correctAnswer": "3",
+    "options": [
+      "3",
+      "6",
+      "5",
+      "2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_295"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 4 = 26?",
+    "correctAnswer": "11",
+    "options": [
+      "11",
+      "14",
+      "13",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_296"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 35° dan 70°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "75°",
+    "options": [
+      "80°",
+      "65°",
+      "85°",
+      "75°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_297"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 15 = 20 adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_298"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 6 = 22?",
+    "correctAnswer": "8",
+    "options": [
+      "10",
+      "11",
+      "7",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_299"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 26 = 31 adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "7"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_300"
+  },
+  {
+    "text": "Jika 14z = 98, maka nilai z adalah...",
+    "correctAnswer": "7",
+    "options": [
+      "9",
+      "7",
+      "8",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_301"
+  },
+  {
+    "text": "Jika 10z = 90, maka nilai z adalah...",
+    "correctAnswer": "9",
+    "options": [
+      "9",
+      "11",
+      "10",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_302"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 13 = 16!",
+    "correctAnswer": "29",
+    "options": [
+      "39",
+      "34",
+      "24",
+      "29"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_303"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 6 = 16 adalah...",
+    "correctAnswer": "10",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "9"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_304"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 14 cm, 19 cm, dan 21 cm adalah...",
+    "correctAnswer": "54 cm",
+    "options": [
+      "56 cm",
+      "58 cm",
+      "52 cm",
+      "54 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_305"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 3 = 13?",
+    "correctAnswer": "5",
+    "options": [
+      "8",
+      "4",
+      "7",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_306"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 12 cm dan tinggi 15 cm adalah...",
+    "correctAnswer": "90 cm²",
+    "options": [
+      "90 cm²",
+      "95 cm²",
+      "100 cm²",
+      "85 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_307"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 4 = 30?",
+    "correctAnswer": "13",
+    "options": [
+      "16",
+      "15",
+      "12",
+      "13"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_308"
+  },
+  {
+    "text": "Jika 2z = 10, maka nilai z adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "5",
+      "4",
+      "7",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_309"
+  },
+  {
+    "text": "Segitiga siku-siku memiliki alas 14 cm dan tinggi 48 cm. Panjang sisi miringnya adalah...",
+    "correctAnswer": "50 cm",
+    "options": [
+      "52 cm",
+      "51 cm",
+      "50 cm",
+      "49 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_310"
+  },
+  {
+    "text": "Jika 2z = 18, maka nilai z adalah...",
+    "correctAnswer": "9",
+    "options": [
+      "10",
+      "8",
+      "11",
+      "9"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_311"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 28 = 34!",
+    "correctAnswer": "62",
+    "options": [
+      "67",
+      "57",
+      "72",
+      "62"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_312"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 8 cm dan tinggi 21 cm adalah...",
+    "correctAnswer": "84 cm²",
+    "options": [
+      "94 cm²",
+      "79 cm²",
+      "89 cm²",
+      "84 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_313"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 14 = 19 adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "4",
+      "5",
+      "7",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_314"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 14 cm dan tinggi 7 cm adalah...",
+    "correctAnswer": "49 cm²",
+    "options": [
+      "49 cm²",
+      "59 cm²",
+      "54 cm²",
+      "44 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_315"
+  },
+  {
+    "text": "Jika 2z = 14, maka nilai z adalah...",
+    "correctAnswer": "7",
+    "options": [
+      "8",
+      "7",
+      "6",
+      "9"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_316"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 22 = 32 adalah...",
+    "correctAnswer": "10",
+    "options": [
+      "10",
+      "11",
+      "9",
+      "12"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_317"
+  },
+  {
+    "text": "Jika 16z = 48, maka nilai z adalah...",
+    "correctAnswer": "3",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_318"
+  },
+  {
+    "text": "Jika 18z = 54, maka nilai z adalah...",
+    "correctAnswer": "3",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_319"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 12 cm, 17 cm, dan 15 cm adalah...",
+    "correctAnswer": "44 cm",
+    "options": [
+      "46 cm",
+      "44 cm",
+      "48 cm",
+      "42 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_320"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 39 = 42!",
+    "correctAnswer": "81",
+    "options": [
+      "91",
+      "76",
+      "86",
+      "81"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_321"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 18 cm, 17 cm, dan 18 cm adalah...",
+    "correctAnswer": "53 cm",
+    "options": [
+      "53 cm",
+      "51 cm",
+      "55 cm",
+      "57 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_322"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 14 cm, 17 cm, dan 15 cm adalah...",
+    "correctAnswer": "46 cm",
+    "options": [
+      "50 cm",
+      "48 cm",
+      "44 cm",
+      "46 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_323"
+  },
+  {
+    "text": "Jika 17z = 34, maka nilai z adalah...",
+    "correctAnswer": "2",
+    "options": [
+      "4",
+      "1",
+      "3",
+      "2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_324"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 23 = 43 adalah...",
+    "correctAnswer": "20",
+    "options": [
+      "21",
+      "20",
+      "19",
+      "22"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_325"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 12 = 17 adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "4",
+      "6",
+      "7",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_326"
+  },
+  {
+    "text": "Jika 11z = 99, maka nilai z adalah...",
+    "correctAnswer": "9",
+    "options": [
+      "8",
+      "10",
+      "9",
+      "11"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_327"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 19 = 25!",
+    "correctAnswer": "44",
+    "options": [
+      "49",
+      "39",
+      "44",
+      "54"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_328"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 31 = 34!",
+    "correctAnswer": "65",
+    "options": [
+      "70",
+      "75",
+      "60",
+      "65"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_329"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 8 = 18 adalah...",
+    "correctAnswer": "10",
+    "options": [
+      "11",
+      "9",
+      "12",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_330"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 33 = 39!",
+    "correctAnswer": "72",
+    "options": [
+      "67",
+      "77",
+      "72",
+      "82"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_331"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 24 = 39 adalah...",
+    "correctAnswer": "15",
+    "options": [
+      "16",
+      "15",
+      "14",
+      "17"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_332"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 18 = 33 adalah...",
+    "correctAnswer": "15",
+    "options": [
+      "17",
+      "14",
+      "15",
+      "16"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_333"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 30° dan 60°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "90°",
+    "options": [
+      "90°",
+      "80°",
+      "100°",
+      "95°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_334"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 45° dan 75°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "60°",
+    "options": [
+      "60°",
+      "50°",
+      "65°",
+      "70°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_335"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 26 = 36 adalah...",
+    "correctAnswer": "10",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_336"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 10 = 13!",
+    "correctAnswer": "23",
+    "options": [
+      "33",
+      "28",
+      "18",
+      "23"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_337"
+  },
+  {
+    "text": "Jika 7z = 28, maka nilai z adalah...",
+    "correctAnswer": "4",
+    "options": [
+      "4",
+      "3",
+      "6",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_338"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 32 = 41!",
+    "correctAnswer": "73",
+    "options": [
+      "68",
+      "83",
+      "73",
+      "78"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_339"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 12 cm, 11 cm, dan 21 cm adalah...",
+    "correctAnswer": "44 cm",
+    "options": [
+      "42 cm",
+      "44 cm",
+      "48 cm",
+      "46 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_340"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 45° dan 50°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "85°",
+    "options": [
+      "90°",
+      "85°",
+      "75°",
+      "95°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_341"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 19 = 28!",
+    "correctAnswer": "47",
+    "options": [
+      "47",
+      "57",
+      "52",
+      "42"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_342"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 22 = 27 adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "6",
+      "4",
+      "7",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_343"
+  },
+  {
+    "text": "Sisi miring segitiga siku-siku adalah 34 cm dan salah satu sisi tegaknya 16 cm. Berapa panjang sisi tegak lainnya?",
+    "correctAnswer": "30 cm",
+    "options": [
+      "32 cm",
+      "33 cm",
+      "30 cm",
+      "28 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_344"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 21 = 36 adalah...",
+    "correctAnswer": "15",
+    "options": [
+      "15",
+      "16",
+      "14",
+      "17"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_345"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 4 = 9 adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "5",
+      "7",
+      "4",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_346"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 29 = 39 adalah...",
+    "correctAnswer": "10",
+    "options": [
+      "10",
+      "12",
+      "11",
+      "9"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_347"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 9 = 33?",
+    "correctAnswer": "12",
+    "options": [
+      "12",
+      "14",
+      "15",
+      "11"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_348"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 65° dan 40°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "75°",
+    "options": [
+      "65°",
+      "80°",
+      "75°",
+      "85°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_349"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 75° dan 45°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "60°",
+    "options": [
+      "50°",
+      "65°",
+      "70°",
+      "60°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_350"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 65° dan 60°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "55°",
+    "options": [
+      "65°",
+      "55°",
+      "60°",
+      "45°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_351"
+  },
+  {
+    "text": "Sisi miring segitiga siku-siku adalah 26 cm dan salah satu sisi tegaknya 10 cm. Berapa panjang sisi tegak lainnya?",
+    "correctAnswer": "24 cm",
+    "options": [
+      "26 cm",
+      "27 cm",
+      "24 cm",
+      "22 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_352"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 15 = 25 adalah...",
+    "correctAnswer": "10",
+    "options": [
+      "10",
+      "9",
+      "12",
+      "11"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_353"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 18 = 21!",
+    "correctAnswer": "39",
+    "options": [
+      "34",
+      "49",
+      "39",
+      "44"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_354"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 16 = 21 adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_355"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 2 = 30?",
+    "correctAnswer": "14",
+    "options": [
+      "13",
+      "14",
+      "16",
+      "17"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_356"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 4 cm dan tinggi 7 cm adalah...",
+    "correctAnswer": "14 cm²",
+    "options": [
+      "19 cm²",
+      "9 cm²",
+      "24 cm²",
+      "14 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_357"
+  },
+  {
+    "text": "Jika 13z = 78, maka nilai z adalah...",
+    "correctAnswer": "6",
+    "options": [
+      "5",
+      "8",
+      "6",
+      "7"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_358"
+  },
+  {
+    "text": "Jika 7z = 56, maka nilai z adalah...",
+    "correctAnswer": "8",
+    "options": [
+      "9",
+      "8",
+      "7",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_359"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 32 = 38!",
+    "correctAnswer": "70",
+    "options": [
+      "75",
+      "70",
+      "80",
+      "65"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_360"
+  },
+  {
+    "text": "Sisi miring segitiga siku-siku adalah 35 cm dan salah satu sisi tegaknya 21 cm. Berapa panjang sisi tegak lainnya?",
+    "correctAnswer": "28 cm",
+    "options": [
+      "26 cm",
+      "31 cm",
+      "28 cm",
+      "30 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_361"
+  },
+  {
+    "text": "Jika 7z = 49, maka nilai z adalah...",
+    "correctAnswer": "7",
+    "options": [
+      "8",
+      "7",
+      "6",
+      "9"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_362"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 35° dan 45°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "100°",
+    "options": [
+      "105°",
+      "90°",
+      "100°",
+      "110°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_363"
+  },
+  {
+    "text": "Segitiga siku-siku memiliki alas 8 cm dan tinggi 15 cm. Panjang sisi miringnya adalah...",
+    "correctAnswer": "17 cm",
+    "options": [
+      "17 cm",
+      "19 cm",
+      "18 cm",
+      "16 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_364"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 11 = 14!",
+    "correctAnswer": "25",
+    "options": [
+      "25",
+      "35",
+      "20",
+      "30"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_365"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 40° dan 70°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "70°",
+    "options": [
+      "70°",
+      "80°",
+      "75°",
+      "60°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_366"
+  },
+  {
+    "text": "Segitiga siku-siku memiliki alas 7 cm dan tinggi 24 cm. Panjang sisi miringnya adalah...",
+    "correctAnswer": "25 cm",
+    "options": [
+      "24 cm",
+      "26 cm",
+      "27 cm",
+      "25 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_367"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 16 cm dan tinggi 15 cm adalah...",
+    "correctAnswer": "120 cm²",
+    "options": [
+      "125 cm²",
+      "120 cm²",
+      "130 cm²",
+      "115 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_368"
+  },
+  {
+    "text": "Jika 4z = 24, maka nilai z adalah...",
+    "correctAnswer": "6",
+    "options": [
+      "7",
+      "5",
+      "6",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_369"
+  },
+  {
+    "text": "Jika 7z = 63, maka nilai z adalah...",
+    "correctAnswer": "9",
+    "options": [
+      "11",
+      "9",
+      "8",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_370"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 3 = 18 adalah...",
+    "correctAnswer": "15",
+    "options": [
+      "14",
+      "16",
+      "17",
+      "15"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_371"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 26 = 32!",
+    "correctAnswer": "58",
+    "options": [
+      "68",
+      "63",
+      "58",
+      "53"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_372"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 3 = 21?",
+    "correctAnswer": "9",
+    "options": [
+      "12",
+      "8",
+      "9",
+      "11"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_373"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 12 cm dan tinggi 19 cm adalah...",
+    "correctAnswer": "114 cm²",
+    "options": [
+      "124 cm²",
+      "119 cm²",
+      "109 cm²",
+      "114 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_374"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 8 cm dan tinggi 5 cm adalah...",
+    "correctAnswer": "20 cm²",
+    "options": [
+      "15 cm²",
+      "30 cm²",
+      "25 cm²",
+      "20 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_375"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 16 cm, 13 cm, dan 18 cm adalah...",
+    "correctAnswer": "47 cm",
+    "options": [
+      "45 cm",
+      "51 cm",
+      "49 cm",
+      "47 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_376"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 10 cm, 17 cm, dan 21 cm adalah...",
+    "correctAnswer": "48 cm",
+    "options": [
+      "46 cm",
+      "50 cm",
+      "52 cm",
+      "48 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_377"
+  },
+  {
+    "text": "Jika 18z = 126, maka nilai z adalah...",
+    "correctAnswer": "7",
+    "options": [
+      "9",
+      "7",
+      "6",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_378"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 16 cm, 15 cm, dan 15 cm adalah...",
+    "correctAnswer": "46 cm",
+    "options": [
+      "50 cm",
+      "44 cm",
+      "46 cm",
+      "48 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_379"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 18 cm, 11 cm, dan 21 cm adalah...",
+    "correctAnswer": "50 cm",
+    "options": [
+      "48 cm",
+      "50 cm",
+      "52 cm",
+      "54 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_380"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 20 = 40 adalah...",
+    "correctAnswer": "20",
+    "options": [
+      "19",
+      "22",
+      "20",
+      "21"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_381"
+  },
+  {
+    "text": "Jika 13z = 117, maka nilai z adalah...",
+    "correctAnswer": "9",
+    "options": [
+      "11",
+      "10",
+      "9",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_382"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 17 = 26!",
+    "correctAnswer": "43",
+    "options": [
+      "43",
+      "48",
+      "53",
+      "38"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_383"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 2 = 28?",
+    "correctAnswer": "13",
+    "options": [
+      "13",
+      "12",
+      "15",
+      "16"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_384"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 25 = 40 adalah...",
+    "correctAnswer": "15",
+    "options": [
+      "17",
+      "15",
+      "14",
+      "16"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_385"
+  },
+  {
+    "text": "Jika 13z = 39, maka nilai z adalah...",
+    "correctAnswer": "3",
+    "options": [
+      "5",
+      "3",
+      "2",
+      "4"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_386"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 10 = 30 adalah...",
+    "correctAnswer": "20",
+    "options": [
+      "22",
+      "19",
+      "21",
+      "20"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_387"
+  },
+  {
+    "text": "Jika 8z = 56, maka nilai z adalah...",
+    "correctAnswer": "7",
+    "options": [
+      "8",
+      "7",
+      "6",
+      "9"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_388"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 12 cm, 17 cm, dan 21 cm adalah...",
+    "correctAnswer": "50 cm",
+    "options": [
+      "54 cm",
+      "48 cm",
+      "50 cm",
+      "52 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_389"
+  },
+  {
+    "text": "Jika 9z = 72, maka nilai z adalah...",
+    "correctAnswer": "8",
+    "options": [
+      "7",
+      "10",
+      "8",
+      "9"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_390"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 30 = 36!",
+    "correctAnswer": "66",
+    "options": [
+      "71",
+      "66",
+      "76",
+      "61"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_391"
+  },
+  {
+    "text": "Jika 9z = 36, maka nilai z adalah...",
+    "correctAnswer": "4",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "3"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_392"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 9 = 19 adalah...",
+    "correctAnswer": "10",
+    "options": [
+      "11",
+      "10",
+      "9",
+      "12"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_393"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 17 = 23!",
+    "correctAnswer": "40",
+    "options": [
+      "40",
+      "50",
+      "35",
+      "45"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_394"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 7 = 19?",
+    "correctAnswer": "6",
+    "options": [
+      "9",
+      "5",
+      "8",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_395"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 18 cm dan tinggi 21 cm adalah...",
+    "correctAnswer": "189 cm²",
+    "options": [
+      "199 cm²",
+      "189 cm²",
+      "194 cm²",
+      "184 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_396"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 4 cm dan tinggi 5 cm adalah...",
+    "correctAnswer": "10 cm²",
+    "options": [
+      "10 cm²",
+      "15 cm²",
+      "20 cm²",
+      "5 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_397"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 28 = 31!",
+    "correctAnswer": "59",
+    "options": [
+      "54",
+      "69",
+      "59",
+      "64"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_398"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 16 cm dan tinggi 19 cm adalah...",
+    "correctAnswer": "152 cm²",
+    "options": [
+      "147 cm²",
+      "157 cm²",
+      "162 cm²",
+      "152 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_399"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 6 = 11 adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_400"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 4 = 22?",
+    "correctAnswer": "9",
+    "options": [
+      "9",
+      "11",
+      "8",
+      "12"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_401"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 14 cm, 19 cm, dan 18 cm adalah...",
+    "correctAnswer": "51 cm",
+    "options": [
+      "51 cm",
+      "49 cm",
+      "55 cm",
+      "53 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_402"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 14 cm, 13 cm, dan 18 cm adalah...",
+    "correctAnswer": "45 cm",
+    "options": [
+      "43 cm",
+      "47 cm",
+      "45 cm",
+      "49 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_403"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 10 cm dan tinggi 9 cm adalah...",
+    "correctAnswer": "45 cm²",
+    "options": [
+      "45 cm²",
+      "50 cm²",
+      "55 cm²",
+      "40 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_404"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 18 = 27!",
+    "correctAnswer": "45",
+    "options": [
+      "40",
+      "55",
+      "45",
+      "50"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_405"
+  },
+  {
+    "text": "Jika 11z = 66, maka nilai z adalah...",
+    "correctAnswer": "6",
+    "options": [
+      "6",
+      "8",
+      "5",
+      "7"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_406"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 12 = 21!",
+    "correctAnswer": "33",
+    "options": [
+      "43",
+      "38",
+      "28",
+      "33"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_407"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 70° dan 40°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "70°",
+    "options": [
+      "75°",
+      "80°",
+      "60°",
+      "70°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_408"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 75° dan 80°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "25°",
+    "options": [
+      "25°",
+      "35°",
+      "30°",
+      "15°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_409"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 8 = 36?",
+    "correctAnswer": "14",
+    "options": [
+      "17",
+      "16",
+      "13",
+      "14"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_410"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 30° dan 55°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "95°",
+    "options": [
+      "100°",
+      "85°",
+      "95°",
+      "105°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_411"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 10 cm, 11 cm, dan 18 cm adalah...",
+    "correctAnswer": "39 cm",
+    "options": [
+      "41 cm",
+      "37 cm",
+      "43 cm",
+      "39 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_412"
+  },
+  {
+    "text": "Jika 2z = 16, maka nilai z adalah...",
+    "correctAnswer": "8",
+    "options": [
+      "10",
+      "9",
+      "8",
+      "7"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_413"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 8 = 32?",
+    "correctAnswer": "12",
+    "options": [
+      "12",
+      "15",
+      "11",
+      "14"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_414"
+  },
+  {
+    "text": "Jika 14z = 112, maka nilai z adalah...",
+    "correctAnswer": "8",
+    "options": [
+      "9",
+      "8",
+      "7",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_415"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 14 = 34 adalah...",
+    "correctAnswer": "20",
+    "options": [
+      "19",
+      "22",
+      "20",
+      "21"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_416"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 10 cm, 15 cm, dan 21 cm adalah...",
+    "correctAnswer": "46 cm",
+    "options": [
+      "48 cm",
+      "50 cm",
+      "46 cm",
+      "44 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_417"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 4 = 14?",
+    "correctAnswer": "5",
+    "options": [
+      "4",
+      "5",
+      "7",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_418"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 22 = 25!",
+    "correctAnswer": "47",
+    "options": [
+      "42",
+      "52",
+      "57",
+      "47"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_419"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 6 cm dan tinggi 19 cm adalah...",
+    "correctAnswer": "57 cm²",
+    "options": [
+      "57 cm²",
+      "52 cm²",
+      "67 cm²",
+      "62 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_420"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 20 = 26!",
+    "correctAnswer": "46",
+    "options": [
+      "41",
+      "51",
+      "46",
+      "56"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_421"
+  },
+  {
+    "text": "Jika 2z = 4, maka nilai z adalah...",
+    "correctAnswer": "2",
+    "options": [
+      "1",
+      "3",
+      "2",
+      "4"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_422"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 6 = 24?",
+    "correctAnswer": "9",
+    "options": [
+      "11",
+      "8",
+      "12",
+      "9"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_423"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 22 = 42 adalah...",
+    "correctAnswer": "20",
+    "options": [
+      "19",
+      "21",
+      "22",
+      "20"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_424"
+  },
+  {
+    "text": "Jika 15z = 75, maka nilai z adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "7",
+      "4",
+      "5",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_425"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 16 = 19!",
+    "correctAnswer": "35",
+    "options": [
+      "35",
+      "30",
+      "45",
+      "40"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_426"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 2 = 8?",
+    "correctAnswer": "3",
+    "options": [
+      "2",
+      "3",
+      "6",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_427"
+  },
+  {
+    "text": "Jika 11z = 44, maka nilai z adalah...",
+    "correctAnswer": "4",
+    "options": [
+      "5",
+      "4",
+      "3",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_428"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 70° dan 75°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "35°",
+    "options": [
+      "35°",
+      "40°",
+      "45°",
+      "25°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_429"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 29 = 44 adalah...",
+    "correctAnswer": "15",
+    "options": [
+      "17",
+      "16",
+      "14",
+      "15"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_430"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 20 = 25 adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "6",
+      "7",
+      "4",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_431"
+  },
+  {
+    "text": "Jika 7z = 35, maka nilai z adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "7",
+      "6",
+      "5",
+      "4"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_432"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 18 = 28 adalah...",
+    "correctAnswer": "10",
+    "options": [
+      "11",
+      "9",
+      "12",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_433"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 75° dan 75°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "30°",
+    "options": [
+      "40°",
+      "35°",
+      "20°",
+      "30°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_434"
+  },
+  {
+    "text": "Jika 8z = 72, maka nilai z adalah...",
+    "correctAnswer": "9",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_435"
+  },
+  {
+    "text": "Segitiga siku-siku memiliki alas 6 cm dan tinggi 8 cm. Panjang sisi miringnya adalah...",
+    "correctAnswer": "10 cm",
+    "options": [
+      "11 cm",
+      "12 cm",
+      "9 cm",
+      "10 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_436"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 10 cm dan tinggi 17 cm adalah...",
+    "correctAnswer": "85 cm²",
+    "options": [
+      "95 cm²",
+      "85 cm²",
+      "90 cm²",
+      "80 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_437"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 45° dan 55°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "80°",
+    "options": [
+      "70°",
+      "85°",
+      "80°",
+      "90°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_438"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 8 = 28 adalah...",
+    "correctAnswer": "20",
+    "options": [
+      "21",
+      "22",
+      "20",
+      "19"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_439"
+  },
+  {
+    "text": "Jika 8z = 24, maka nilai z adalah...",
+    "correctAnswer": "3",
+    "options": [
+      "3",
+      "5",
+      "4",
+      "2"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_440"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 38 = 41!",
+    "correctAnswer": "79",
+    "options": [
+      "74",
+      "89",
+      "79",
+      "84"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_441"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 75° dan 40°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "65°",
+    "options": [
+      "75°",
+      "70°",
+      "55°",
+      "65°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_442"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 8 cm dan tinggi 9 cm adalah...",
+    "correctAnswer": "36 cm²",
+    "options": [
+      "41 cm²",
+      "36 cm²",
+      "31 cm²",
+      "46 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_443"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 3 = 13 adalah...",
+    "correctAnswer": "10",
+    "options": [
+      "12",
+      "10",
+      "9",
+      "11"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_444"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 16 cm, 11 cm, dan 18 cm adalah...",
+    "correctAnswer": "45 cm",
+    "options": [
+      "43 cm",
+      "45 cm",
+      "47 cm",
+      "49 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_445"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 16 cm dan tinggi 7 cm adalah...",
+    "correctAnswer": "56 cm²",
+    "options": [
+      "56 cm²",
+      "66 cm²",
+      "51 cm²",
+      "61 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_446"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 12 = 27 adalah...",
+    "correctAnswer": "15",
+    "options": [
+      "16",
+      "15",
+      "17",
+      "14"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_447"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 5 = 10 adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "6",
+      "5",
+      "4",
+      "7"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_448"
+  },
+  {
+    "text": "Jika 16z = 144, maka nilai z adalah...",
+    "correctAnswer": "9",
+    "options": [
+      "11",
+      "9",
+      "8",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_449"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 8 cm dan tinggi 13 cm adalah...",
+    "correctAnswer": "52 cm²",
+    "options": [
+      "52 cm²",
+      "62 cm²",
+      "57 cm²",
+      "47 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_450"
+  },
+  {
+    "text": "Jika 19z = 114, maka nilai z adalah...",
+    "correctAnswer": "6",
+    "options": [
+      "5",
+      "8",
+      "7",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_451"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 26 = 41 adalah...",
+    "correctAnswer": "15",
+    "options": [
+      "16",
+      "14",
+      "15",
+      "17"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_452"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 27 = 37 adalah...",
+    "correctAnswer": "10",
+    "options": [
+      "11",
+      "9",
+      "10",
+      "12"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_453"
+  },
+  {
+    "text": "Segitiga siku-siku memiliki alas 9 cm dan tinggi 40 cm. Panjang sisi miringnya adalah...",
+    "correctAnswer": "41 cm",
+    "options": [
+      "43 cm",
+      "40 cm",
+      "41 cm",
+      "42 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_454"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 7 = 23?",
+    "correctAnswer": "8",
+    "options": [
+      "7",
+      "10",
+      "8",
+      "11"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_455"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 12 cm, 19 cm, dan 21 cm adalah...",
+    "correctAnswer": "52 cm",
+    "options": [
+      "50 cm",
+      "52 cm",
+      "56 cm",
+      "54 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_456"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 4 = 20?",
+    "correctAnswer": "8",
+    "options": [
+      "8",
+      "11",
+      "10",
+      "7"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_457"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 6 cm dan tinggi 23 cm adalah...",
+    "correctAnswer": "69 cm²",
+    "options": [
+      "69 cm²",
+      "79 cm²",
+      "74 cm²",
+      "64 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_458"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 3 = 17?",
+    "correctAnswer": "7",
+    "options": [
+      "9",
+      "6",
+      "7",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_459"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 8 = 13 adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "6",
+      "7",
+      "4",
+      "5"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_460"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 10 cm, 17 cm, dan 18 cm adalah...",
+    "correctAnswer": "45 cm",
+    "options": [
+      "43 cm",
+      "49 cm",
+      "45 cm",
+      "47 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_461"
+  },
+  {
+    "text": "Sisi miring segitiga siku-siku adalah 50 cm dan salah satu sisi tegaknya 14 cm. Berapa panjang sisi tegak lainnya?",
+    "correctAnswer": "48 cm",
+    "options": [
+      "46 cm",
+      "48 cm",
+      "50 cm",
+      "51 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_462"
+  },
+  {
+    "text": "Segitiga siku-siku memiliki alas 10 cm dan tinggi 24 cm. Panjang sisi miringnya adalah...",
+    "correctAnswer": "26 cm",
+    "options": [
+      "26 cm",
+      "25 cm",
+      "27 cm",
+      "28 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_463"
+  },
+  {
+    "text": "Jika 9z = 81, maka nilai z adalah...",
+    "correctAnswer": "9",
+    "options": [
+      "10",
+      "9",
+      "8",
+      "11"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_464"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 27 = 32 adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "6",
+      "5",
+      "4",
+      "7"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_465"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 10 = 15 adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "5",
+      "7",
+      "6",
+      "4"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_466"
+  },
+  {
+    "text": "Jika 5z = 40, maka nilai z adalah...",
+    "correctAnswer": "8",
+    "options": [
+      "8",
+      "9",
+      "7",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_467"
+  },
+  {
+    "text": "Jika 3z = 27, maka nilai z adalah...",
+    "correctAnswer": "9",
+    "options": [
+      "8",
+      "10",
+      "9",
+      "11"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_468"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 18 cm, 13 cm, dan 21 cm adalah...",
+    "correctAnswer": "52 cm",
+    "options": [
+      "56 cm",
+      "54 cm",
+      "50 cm",
+      "52 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_469"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 6 = 26 adalah...",
+    "correctAnswer": "20",
+    "options": [
+      "22",
+      "20",
+      "21",
+      "19"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_470"
+  },
+  {
+    "text": "Jika 6z = 54, maka nilai z adalah...",
+    "correctAnswer": "9",
+    "options": [
+      "11",
+      "9",
+      "10",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_471"
+  },
+  {
+    "text": "Jika 5z = 25, maka nilai z adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "6",
+      "5",
+      "4",
+      "7"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_472"
+  },
+  {
+    "text": "Jika 4z = 32, maka nilai z adalah...",
+    "correctAnswer": "8",
+    "options": [
+      "8",
+      "7",
+      "9",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_473"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 23 = 26!",
+    "correctAnswer": "49",
+    "options": [
+      "59",
+      "49",
+      "54",
+      "44"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_474"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 10 cm, 19 cm, dan 21 cm adalah...",
+    "correctAnswer": "50 cm",
+    "options": [
+      "50 cm",
+      "54 cm",
+      "52 cm",
+      "48 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_475"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 12 cm, 13 cm, dan 12 cm adalah...",
+    "correctAnswer": "37 cm",
+    "options": [
+      "35 cm",
+      "41 cm",
+      "37 cm",
+      "39 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_476"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 75° dan 70°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "35°",
+    "options": [
+      "35°",
+      "40°",
+      "25°",
+      "45°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_477"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 4 = 12?",
+    "correctAnswer": "4",
+    "options": [
+      "7",
+      "3",
+      "4",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_478"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 8 cm dan tinggi 17 cm adalah...",
+    "correctAnswer": "68 cm²",
+    "options": [
+      "63 cm²",
+      "68 cm²",
+      "78 cm²",
+      "73 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_479"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 15 = 24!",
+    "correctAnswer": "39",
+    "options": [
+      "34",
+      "49",
+      "44",
+      "39"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_480"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 35° dan 65°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "80°",
+    "options": [
+      "70°",
+      "90°",
+      "85°",
+      "80°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_481"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 12 cm, 17 cm, dan 12 cm adalah...",
+    "correctAnswer": "41 cm",
+    "options": [
+      "43 cm",
+      "39 cm",
+      "41 cm",
+      "45 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_482"
+  },
+  {
+    "text": "Jika 13z = 65, maka nilai z adalah...",
+    "correctAnswer": "5",
+    "options": [
+      "4",
+      "5",
+      "7",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_483"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 12 = 22 adalah...",
+    "correctAnswer": "10",
+    "options": [
+      "12",
+      "10",
+      "11",
+      "9"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_484"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 35° dan 40°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "105°",
+    "options": [
+      "105°",
+      "95°",
+      "110°",
+      "115°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_485"
+  },
+  {
+    "text": "Nilai x yang memenuhi persamaan x + 11 = 21 adalah...",
+    "correctAnswer": "10",
+    "options": [
+      "11",
+      "10",
+      "9",
+      "12"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_486"
+  },
+  {
+    "text": "Keliling segitiga dengan panjang sisi 18 cm, 13 cm, dan 15 cm adalah...",
+    "correctAnswer": "46 cm",
+    "options": [
+      "48 cm",
+      "50 cm",
+      "44 cm",
+      "46 cm"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_487"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 9 = 15?",
+    "correctAnswer": "3",
+    "options": [
+      "2",
+      "5",
+      "3",
+      "6"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_488"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 6 = 10?",
+    "correctAnswer": "2",
+    "options": [
+      "4",
+      "5",
+      "2",
+      "1"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_489"
+  },
+  {
+    "text": "Sebuah segitiga memiliki dua sudut sebesar 70° dan 65°. Berapa besar sudut ketiganya?",
+    "correctAnswer": "45°",
+    "options": [
+      "45°",
+      "35°",
+      "55°",
+      "50°"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_490"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 16 = 25!",
+    "correctAnswer": "41",
+    "options": [
+      "46",
+      "51",
+      "36",
+      "41"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_491"
+  },
+  {
+    "text": "Berapakah nilai x jika 2x + 3 = 11?",
+    "correctAnswer": "4",
+    "options": [
+      "7",
+      "3",
+      "6",
+      "4"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 3,
+    "id": "matematika_492"
+  },
+  {
+    "text": "Jika 12z = 108, maka nilai z adalah...",
+    "correctAnswer": "9",
+    "options": [
+      "9",
+      "11",
+      "8",
+      "10"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_493"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 4 cm dan tinggi 15 cm adalah...",
+    "correctAnswer": "30 cm²",
+    "options": [
+      "35 cm²",
+      "30 cm²",
+      "40 cm²",
+      "25 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_494"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 25 = 31!",
+    "correctAnswer": "56",
+    "options": [
+      "56",
+      "51",
+      "61",
+      "66"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_495"
+  },
+  {
+    "text": "Jika 12z = 72, maka nilai z adalah...",
+    "correctAnswer": "6",
+    "options": [
+      "7",
+      "6",
+      "5",
+      "8"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "matematika_496"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 37 = 43!",
+    "correctAnswer": "80",
+    "options": [
+      "75",
+      "90",
+      "80",
+      "85"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_497"
+  },
+  {
+    "text": "Tentukan nilai y dari persamaan y - 19 = 22!",
+    "correctAnswer": "41",
+    "options": [
+      "41",
+      "46",
+      "51",
+      "36"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_498"
+  },
+  {
+    "text": "Luas segitiga yang memiliki alas 8 cm dan tinggi 19 cm adalah...",
+    "correctAnswer": "76 cm²",
+    "options": [
+      "71 cm²",
+      "86 cm²",
+      "76 cm²",
+      "81 cm²"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "matematika_499"
+  },
+  {
+    "text": "Jika 15z = 135, maka nilai z adalah...",
+    "correctAnswer": "9",
+    "options": [
+      "9",
+      "8",
+      "10",
+      "11"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
+    "id": "matematika_500"
+  }
+]
