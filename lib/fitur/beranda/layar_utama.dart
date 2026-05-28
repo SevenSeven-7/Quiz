@@ -1,3 +1,4 @@
+import 'package:quiz/inti/utils/audio_helper.dart';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -163,6 +164,7 @@ class _MainNavigationScreenState extends ConsumerState<MainNavigationScreen>
 
     return GestureDetector(
       onTap: () {
+AudioHelper.playClick();
         if (_currentIndex != index) {
           setState(() => _currentIndex = index);
         }

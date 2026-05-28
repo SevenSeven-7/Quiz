@@ -1,3 +1,4 @@
+import '../../inti/utils/audio_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -43,46 +44,42 @@ class HomeScreen extends ConsumerWidget {
           children: [
             // Header TETAP DI ATAS - tidak ikut scroll
             _buildHeader(context, playerName, progress, isDark, isComputer),
+            // Score Card TETAP DI ATAS - tidak ikut scroll
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+              child: _buildScoreCard(context, progress, isDark, isComputer),
+            ),
+            // Kategori label TETAP DI ATAS
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
+              child: Row(
+                children: [
+                  Container(
+                    width: 4,
+                    height: 18,
+                    decoration: BoxDecoration(
+                      gradient: isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient,
+                      borderRadius: BorderRadius.circular(isComputer ? 0 : 4),
+                    ),
+                  ),
+                  const SizedBox(width: 10),
+                  Text(
+                    'Kategori Quiz',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: isDark ? Colors.white : (isComputer ? AppColors.textPrimaryComputer : AppColors.textPrimaryLight),
+                      letterSpacing: 0.5,
+                    ),
+                  ),
+                ],
+              ).animate().fadeIn(delay: 400.ms),
+            ),
             // Konten yang bisa di-scroll
             Expanded(
               child: CustomScrollView(
                 physics: const BouncingScrollPhysics(),
                 slivers: [
-                  // Score Card
-                  SliverToBoxAdapter(
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                      child: _buildScoreCard(context, progress, isDark, isComputer),
-                    ),
-                  ),
-                  // Kategori label
-                  SliverToBoxAdapter(
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
-                      child: Row(
-                        children: [
-                          Container(
-                            width: 4,
-                            height: 18,
-                            decoration: BoxDecoration(
-                              gradient: isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient,
-                              borderRadius: BorderRadius.circular(isComputer ? 0 : 4),
-                            ),
-                          ),
-                          const SizedBox(width: 10),
-                          Text(
-                            'Kategori Quiz',
-                            style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              color: isDark ? Colors.white : (isComputer ? AppColors.textPrimaryComputer : AppColors.textPrimaryLight),
-                              letterSpacing: 0.5,
-                            ),
-                          ),
-                        ],
-                      ).animate().fadeIn(delay: 400.ms),
-                    ),
-                  ),
                   // Daftar Kategori
                   SliverPadding(
                     padding: const EdgeInsets.fromLTRB(20, 0, 20, 120),
@@ -332,9 +329,12 @@ class HomeScreen extends ConsumerWidget {
 
     return InkWell(
       onTap: isUnlocked
-          ? () => Navigator.of(context).push(
+          ? () {
+              AudioHelper.playClick();
+              Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => LevelSelectionScreen(part: part)),
-              )
+              );
+            }
           : null,
       borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
       child: AnimatedContainer(
