@@ -100,7 +100,6 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                   animation: _pulseAnimation,
                   builder: (context, child) {
                     final scale = 0.95 + (_pulseAnimation.value * 0.1);
-                    final shadowOpacity = 0.15 + (_pulseAnimation.value * 0.2);
                     return Transform.scale(
                       scale: scale,
                       child: Container(
@@ -111,20 +110,20 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                           boxShadow: isComputer
                               ? [
                                   BoxShadow(
-                                    color: AppColors.primaryComputer.withValues(alpha: shadowOpacity),
-                                    blurRadius: 16 + (_pulseAnimation.value * 8),
+                                    color: AppColors.primaryComputer.withValues(alpha: 0.25),
+                                    blurRadius: 20,
                                     spreadRadius: 2,
                                   ),
                                 ]
                               : [
                                   BoxShadow(
-                                    color: AppColors.primary.withValues(alpha: shadowOpacity),
-                                    blurRadius: 20 + (_pulseAnimation.value * 10),
+                                    color: AppColors.primary.withValues(alpha: 0.25),
+                                    blurRadius: 25,
                                     spreadRadius: 4,
                                   ),
                                   BoxShadow(
-                                    color: AppColors.accent.withValues(alpha: shadowOpacity * 0.6),
-                                    blurRadius: 30 + (_pulseAnimation.value * 15),
+                                    color: AppColors.accent.withValues(alpha: 0.15),
+                                    blurRadius: 35,
                                     spreadRadius: 6,
                                   ),
                                 ],
