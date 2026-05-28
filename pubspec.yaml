@@ -1,5 +1,11 @@
 name: quiz
-description: A new Flutter project.
+description: >
+  Quiz App: Mahakarya aplikasi kuis edukatif interaktif 100% Offline. 
+  Menawarkan pengalaman belajar tingkat tinggi (Premium) dengan koleksi raksasa 3.500 soal unik 
+  dari 7 mata pelajaran dasar (Agama Islam, Bahasa Indonesia, Matematika, IPA, IPS, PPKn, Bahasa Inggris). 
+  Dikemas dengan performa 60 FPS terkunci, mengandalkan animasi Staggered Caching, transisi rute khusus, 
+  sistem suara Audio Pool multi-layer bebas hambatan, serta sistem penghargaan berbasis Gamifikasi 
+  (Akurasi & Kecepatan Waktu) dengan ratusan tingkatan level untuk mencapai gelar tertinggi: Legenda!
 publish_to: 'none'
 version: 1.0.0+1
 
