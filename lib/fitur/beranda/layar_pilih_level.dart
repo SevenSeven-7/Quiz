@@ -1,3 +1,4 @@
+import 'package:quiz/inti/utils/audio_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -34,8 +35,7 @@ class LevelSelectionScreen extends ConsumerWidget {
                 child: Row(
                   children: [
                     IconButton(
-                      onPressed: () => Navigator.of(context).pop(),
-                      icon: Container(
+                      onPressed: () { AudioHelper.playClick(); Navigator.of(context).pop(); }, icon: Container(
                         padding: const EdgeInsets.all(8),
                         decoration: BoxDecoration(
                           color: isComputer ? AppColors.surfaceComputer : AppColors.surfaceLight,
@@ -169,6 +169,7 @@ class LevelSelectionScreen extends ConsumerWidget {
     return InkWell(
       onTap: isUnlocked
           ? () async {
+              AudioHelper.playClick();
               // LANGSUNG fetch dan masuk tanpa loading dialog
               final fetchedQuestions = await ApiService().getQuestionsForLevel(levelData.partId, levelData.order);
               

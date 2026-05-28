@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
 import '../../inti/penyedia/penyedia_tema.dart';
+import '../../inti/utils/audio_helper.dart';
 import '../beranda/layar_utama.dart';
 
 class LayarBuatNama extends ConsumerStatefulWidget {
@@ -395,7 +396,10 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                               ],
                             ),
                             child: ElevatedButton(
-                              onPressed: _isLoading ? null : _savePlayerName,
+                              onPressed: _isLoading ? null : () {
+                                AudioHelper.playClick();
+                                _savePlayerName();
+                              },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.transparent,
                                 shadowColor: Colors.transparent,
