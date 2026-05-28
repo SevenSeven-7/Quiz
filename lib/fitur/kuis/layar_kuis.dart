@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:audioplayers/audioplayers.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
 import '../../model/model.dart';
 import 'pengendali_kuis.dart';
 import '../hasil/layar_hasil.dart';
 import '../../inti/penyedia/penyedia_tema.dart';
+import '../../inti/utils/audio_helper.dart';
 
 class QuizScreen extends ConsumerStatefulWidget {
   final LevelModel level;
@@ -18,18 +21,46 @@ class QuizScreen extends ConsumerStatefulWidget {
 class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProviderStateMixin {
   final TextEditingController _essayController = TextEditingController();
   late AnimationController _timerController;
+  final AudioPlayer _player = AudioPlayer();
+  bool _isSoundEnabled = true;
 
   @override
   void initState() {
     super.initState();
     _timerController = AnimationController(vsync: this, duration: const Duration(seconds: 60))
       ..forward();
+    _initSoundSetting();
+  }
+
+  Future<void> _initSoundSetting() async {
+    final prefs = await SharedPreferences.getInstance();
+    if (mounted) {
+      setState(() {
+        _isSoundEnabled = prefs.getBool('pengaturan_suara') ?? true;
+      });
+    }
+  }
+
+  Future<void> _playSound(bool isCorrect) async {
+    if (!_isSoundEnabled) return;
+    try {
+      if (isCorrect) {
+        await _player.play(AssetSource('sounds/suara-benar.mp3'));
+      } else {
+        await _player.play(AssetSource('sounds/suara-salah.mp3'));
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Audio Play Error: $e')));
+      }
+    }
   }
 
   @override
   void dispose() {
     _essayController.dispose();
     _timerController.dispose();
+    _player.dispose();
     super.dispose();
   }
 
@@ -88,7 +119,10 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
                     Row(
                       children: [
                         GestureDetector(
-                          onTap: () => _showQuitDialog(context, isDark, isComputer),
+                          onTap: () {
+AudioHelper.playClick();
+_showQuitDialog(context, isDark, isComputer);
+                          },
                           child: Container(
                             padding: const EdgeInsets.all(10),
                             decoration: BoxDecoration(
@@ -256,12 +290,16 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
         ),
         actions: [
           TextButton(
-            onPressed: () => Navigator.pop(context),
+            onPressed: () {
+AudioHelper.playClick();
+Navigator.pop(context);
+            },
             child: Text('Lanjutkan', style: TextStyle(color: isComputer ? AppColors.primaryComputer : AppColors.primary)),
           ),
           TextButton(
             onPressed: () {
-              Navigator.pop(context);
+AudioHelper.playClick();
+Navigator.pop(context);
               Navigator.pop(context);
             },
             child: const Text('Keluar', style: TextStyle(color: AppColors.failure)),
@@ -300,7 +338,12 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
         return Padding(
           padding: const EdgeInsets.only(bottom: 12.0),
           child: InkWell(
-            onTap: () => ref.read(quizProvider(widget.level).notifier).answerMCQ(index),
+            onTap: () {
+              if (!state.isAnswered) {
+                _playSound(isCorrect);
+                ref.read(quizProvider(widget.level).notifier).answerMCQ(index);
+              }
+            },
             borderRadius: BorderRadius.circular(16),
             child: AnimatedContainer(
               duration: const Duration(milliseconds: 250),
@@ -400,7 +443,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
             ),
             child: ElevatedButton(
               onPressed: () {
-                if (_essayController.text.isNotEmpty) {
+                if (!state.isAnswered && _essayController.text.isNotEmpty) {
+                  final isCorrect = state.level.questions[state.currentIndex].correctAnswer?.toLowerCase().trim() == _essayController.text.toLowerCase().trim();
+                  _playSound(isCorrect);
                   ref.read(quizProvider(widget.level).notifier).answerEssay(_essayController.text);
                   _essayController.clear();
                 }
