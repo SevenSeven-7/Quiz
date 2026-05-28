@@ -9,6 +9,8 @@ import '../../model/model.dart';
 import '../progres/penyedia_progres.dart';
 import 'layar_pilih_level.dart';
 import 'layar_utama.dart';
+import '../../inti/widget/animasi_pendar.dart';
+import 'widget_ikon_gelar.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -91,6 +93,55 @@ class HomeScreen extends ConsumerWidget {
           ],
         ),
       ),
+      // --- MOD MENU SEMENTARA ---
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {
+          showModalBottomSheet(
+            context: context,
+            backgroundColor: isDark ? AppColors.surfaceLight : Colors.white,
+            shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(20))),
+            builder: (context) => Padding(
+              padding: const EdgeInsets.all(24.0),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text('MOD MENU (SEMENTARA)', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: isDark ? Colors.white : Colors.black)),
+                  const SizedBox(height: 20),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton.icon(
+                      style: ElevatedButton.styleFrom(backgroundColor: AppColors.primary, padding: const EdgeInsets.symmetric(vertical: 12)),
+                      onPressed: () {
+                        ref.read(progressProvider.notifier).addModStars(300);
+                        Navigator.pop(context);
+                      },
+                      icon: const Icon(Icons.star, color: Colors.white),
+                      label: const Text('Tambah 300 Bintang (+1 Gelar)', style: TextStyle(color: Colors.white)),
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  SizedBox(
+                    width: double.infinity,
+                    child: OutlinedButton.icon(
+                      style: OutlinedButton.styleFrom(padding: const EdgeInsets.symmetric(vertical: 12)),
+                      onPressed: () {
+                        // Reset Bintang: kurangi semua mod_stars dan reset aslinya
+                        ref.read(progressProvider.notifier).resetProgress();
+                        Navigator.pop(context);
+                      },
+                      icon: const Icon(Icons.refresh),
+                      label: const Text('Reset Progres Kembali Awal'),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          );
+        },
+        backgroundColor: Colors.redAccent,
+        icon: const Icon(Icons.bug_report_rounded, color: Colors.white),
+        label: const Text('MOD', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+      ),
     );
   }
 
@@ -133,22 +184,28 @@ class HomeScreen extends ConsumerWidget {
             ),
           ),
           // Avatar mini
-          Container(
-            width: 48,
-            height: 48,
-            decoration: BoxDecoration(
-              shape: isComputer ? BoxShape.rectangle : BoxShape.circle,
-              borderRadius: isComputer ? BorderRadius.circular(8) : null,
-              gradient: isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient,
-              boxShadow: isComputer ? AppColors.computerShadow : (isDark ? AppColors.primaryGlow : AppColors.lightShadow),
-            ),
-            child: Center(
-              child: Text(
-                playerName.isNotEmpty ? playerName[0].toUpperCase() : 'P',
-                style: const TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
+          AnimasiPendar(
+            warna: progress.warnaGelar,
+            isCircle: !isComputer,
+            borderRadius: isComputer ? 8 : 0,
+            borderWidth: 2.0,
+            child: Container(
+              width: 48,
+              height: 48,
+              decoration: BoxDecoration(
+                shape: isComputer ? BoxShape.rectangle : BoxShape.circle,
+                borderRadius: isComputer ? BorderRadius.circular(8) : null,
+                gradient: isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient,
+                boxShadow: isComputer ? AppColors.computerShadow : (isDark ? AppColors.primaryGlow : AppColors.lightShadow),
+              ),
+              child: Center(
+                child: Text(
+                  playerName.isNotEmpty ? playerName[0].toUpperCase() : 'P',
+                  style: const TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
                 ),
               ),
             ),
@@ -165,31 +222,34 @@ class HomeScreen extends ConsumerWidget {
     const maxStars = 2100;
     final progressValue = (totalStars / maxStars).clamp(0.0, 1.0);
 
-    return Container(
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        color: isDark ? AppColors.surfaceLight.withValues(alpha: 0.7) : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond.withValues(alpha: 0.8)),
-        borderRadius: BorderRadius.circular(isComputer ? 4 : 24),
-        border: Border.all(color: isComputer ? AppColors.surfaceComputerBorder : warnaGelar.withValues(alpha: 0.25), width: 1.5),
-        boxShadow: isComputer ? AppColors.computerCardShadow : [
-          BoxShadow(
-            color: warnaGelar.withValues(alpha: 0.1),
-            blurRadius: 24,
-            spreadRadius: 1,
-          ),
-        ],
-      ),
-      child: Column(
+    return AnimasiPendar(
+      warna: warnaGelar,
+      borderRadius: isComputer ? 4 : 24,
+      borderWidth: 2.0,
+      child: Container(
+        padding: const EdgeInsets.all(20),
+        decoration: BoxDecoration(
+          color: isDark ? AppColors.surfaceLight.withValues(alpha: 0.7) : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond.withValues(alpha: 0.8)),
+          borderRadius: BorderRadius.circular(isComputer ? 4 : 24),
+          boxShadow: isComputer ? AppColors.computerCardShadow : [
+            BoxShadow(
+              color: warnaGelar.withValues(alpha: 0.1),
+              blurRadius: 24,
+              spreadRadius: 1,
+            ),
+          ],
+        ),
+        child: Column(
         children: [
           Row(
             children: [
               Container(
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(6),
                 decoration: BoxDecoration(
                   color: warnaGelar.withValues(alpha: 0.12),
                   borderRadius: BorderRadius.circular(14),
                 ),
-                child: Icon(Icons.psychology_rounded, color: warnaGelar, size: 26),
+                child: WidgetIkonGelar(gelar: gelar, warnaGelar: warnaGelar),
               ),
               const SizedBox(width: 14),
               Expanded(
@@ -271,6 +331,7 @@ class HomeScreen extends ConsumerWidget {
           ),
         ],
       ),
+      ),
     ).animate().fadeIn(delay: 200.ms, duration: 400.ms).slideY(begin: 0.1, end: 0);
   }
 
@@ -337,21 +398,19 @@ class HomeScreen extends ConsumerWidget {
             }
           : null,
       borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 300),
-        padding: const EdgeInsets.all(20),
-        decoration: BoxDecoration(
-          color: isDark ? AppColors.surfaceLight.withValues(alpha: 0.6) : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond.withValues(alpha: 0.8)),
-          borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
-          border: Border.all(
-            color: isUnlocked
-                ? (isComputer ? AppColors.surfaceComputerBorder : grad[0].withValues(alpha: 0.3))
-                : (isDark ? Colors.white.withValues(alpha: 0.05) : Colors.black.withValues(alpha: 0.05)),
-            width: 1.5,
+      child: AnimasiPendar(
+        warna: isUnlocked ? grad[0] : (isDark ? Colors.white24 : Colors.black26),
+        borderRadius: isComputer ? 4 : 20,
+        borderWidth: 2.0,
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 300),
+          padding: const EdgeInsets.all(20),
+          decoration: BoxDecoration(
+            color: isDark ? AppColors.surfaceLight.withValues(alpha: 0.6) : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond.withValues(alpha: 0.8)),
+            borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
+            boxShadow: isComputer ? AppColors.computerCardShadow : null,
           ),
-          boxShadow: isComputer ? AppColors.computerCardShadow : null,
-        ),
-        child: Row(
+          child: Row(
           children: [
             Container(
               width: 52,
@@ -388,16 +447,17 @@ class HomeScreen extends ConsumerWidget {
                     ),
                   ),
                   const SizedBox(height: 4),
-                  Text(
-                    isUnlocked ? part.description : 'Selesaikan bagian sebelumnya',
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: isDark 
-                          ? AppColors.textSecondary.withValues(alpha: isUnlocked ? 1.0 : 0.5)
-                          : AppColors.textSecondaryLight.withValues(alpha: isUnlocked ? 1.0 : 0.5),
+                  SizedBox(
+                    height: 18,
+                    child: MarqueeText(
+                      text: isUnlocked ? part.description : 'Selesaikan bagian sebelumnya',
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: isDark 
+                            ? AppColors.textSecondary.withValues(alpha: isUnlocked ? 1.0 : 0.5)
+                            : AppColors.textSecondaryLight.withValues(alpha: isUnlocked ? 1.0 : 0.5),
+                      ),
                     ),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
                   ),
                 ],
               ),
@@ -415,6 +475,7 @@ class HomeScreen extends ConsumerWidget {
               Icon(Icons.lock_outline_rounded, color: isDark ? Colors.white24 : Colors.black12, size: 20),
           ],
         ),
+      ),
       ),
     ).animate().fadeIn(delay: (300 + index * 100).ms, duration: 400.ms).slideX(begin: 0.1, end: 0);
   }

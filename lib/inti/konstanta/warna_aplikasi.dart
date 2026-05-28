@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 // Kelas AppColors - Palet warna untuk TIGA tema: Gelap Biru, Terang Biru, Komputer Putih
 class AppColors {
   // ─── TEMA GELAP (Dark Blue Neon) ─────────────────────────────────
-  static const Color background     = Color(0xFF020B1A); // Biru gelap malam
-  static const Color surface        = Color(0xFF071428); // Biru tua layer 1
-  static const Color surfaceLight   = Color(0xFF0D2040); // Biru tua layer 2
+  static const Color background     = Color(0xFF0B132B); // Lebih elegan, navy gelap
+  static const Color surface        = Color(0xFF14213D); // Biru tua layer 1
+  static const Color surfaceLight   = Color(0xFF1C2F59); // Biru tua layer 2
   static const Color primary        = Color(0xFF1E90FF); // Biru neon terang
   static const Color accent         = Color(0xFF00D4FF); // Cyan neon
   static const Color primaryLight   = Color(0xFF60B8FF); // Biru neon muda
@@ -16,11 +16,11 @@ class AppColors {
   static const Color textSecondary  = Color(0xFF7FA8CC);
 
   // ─── TEMA TERANG (Light Blue Neon) ────────────────────────────────
-  static const Color backgroundLightBlue     = Color(0xFFE8F4FF); // Biru muda terang
+  static const Color backgroundLightBlue     = Color(0xFFF1F5F9); // Slate 50 elegan
   static const Color surfaceLightBlue        = Color(0xFFFFFFFF);
-  static const Color surfaceLightBlueSecond  = Color(0xFFD6ECFF);
-  static const Color textPrimaryLightBlue    = Color(0xFF0A2540);
-  static const Color textSecondaryLightBlue  = Color(0xFF3B7BC8);
+  static const Color surfaceLightBlueSecond  = Color(0xFFE2E8F0); // Slate 200
+  static const Color textPrimaryLightBlue    = Color(0xFF0F172A); // Slate 900
+  static const Color textSecondaryLightBlue  = Color(0xFF334155); // Slate 700
 
   // ─── TEMA KOMPUTER (Clean White & Gray - Minimalis Desktop) ─────────────
   static const Color backgroundComputer      = Color(0xFFF0F0F0); // Abu sangat terang
@@ -47,14 +47,14 @@ class AppColors {
   );
 
   static const LinearGradient backgroundGradient = LinearGradient(
-    colors: [Color(0xFF020B1A), Color(0xFF071428), Color(0xFF020B1A)],
+    colors: [Color(0xFF0B132B), Color(0xFF14213D), Color(0xFF0B132B)],
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
   );
 
   // ─── GRADIEN TEMA TERANG BIRU ─────────────────────────────────────
   static const LinearGradient backgroundLightGradient = LinearGradient(
-    colors: [Color(0xFFE8F4FF), Color(0xFFD6ECFF), Color(0xFFE8F4FF)],
+    colors: [Color(0xFFF1F5F9), Color(0xFFE2E8F0), Color(0xFFF1F5F9)],
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
   );

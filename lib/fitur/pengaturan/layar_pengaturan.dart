@@ -8,6 +8,7 @@ import '../../inti/penyedia/penyedia_tema.dart';
 import '../progres/penyedia_progres.dart';
 import '../beranda/layar_utama.dart';
 import '../splash/layar_buat_nama.dart';
+import '../../inti/widget/animasi_pendar.dart';
 
 class LayarPengaturan extends ConsumerStatefulWidget {
   const LayarPengaturan({super.key});
@@ -341,7 +342,7 @@ AudioHelper.playClick();
                     _buildLabel('Profil', Icons.person_outline, labelColor),
                     const SizedBox(height: 10),
                     _buildGlassCard(
-                      color: cardColor, divColor: divColor, isComputer: isComputer,
+                      color: cardColor, divColor: divColor, isComputer: isComputer, glowColor: progress.warnaGelar,
                       child: InkWell(
                         onTap: () { AudioHelper.playClick(); _tampilkanDialogUbahNama(); },
                         borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
@@ -349,18 +350,24 @@ AudioHelper.playClick();
                           padding: const EdgeInsets.all(20),
                           child: Row(
                             children: [
-                              Container(
-                                width: 56, height: 56,
-                                decoration: BoxDecoration(
-                                  shape: isComputer ? BoxShape.rectangle : BoxShape.circle,
-                                  borderRadius: isComputer ? BorderRadius.circular(8) : null,
-                                  gradient: isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient,
-                                  boxShadow: isComputer ? AppColors.computerShadow : AppColors.primaryGlow,
+                              AnimasiPendar(
+                                warna: progress.warnaGelar,
+                                isCircle: !isComputer,
+                                borderRadius: isComputer ? 8 : 0,
+                                borderWidth: 3.0,
+                                child: Container(
+                                  width: 56, height: 56,
+                                  decoration: BoxDecoration(
+                                    shape: isComputer ? BoxShape.rectangle : BoxShape.circle,
+                                    borderRadius: isComputer ? BorderRadius.circular(8) : null,
+                                    gradient: isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient,
+                                    boxShadow: isComputer ? AppColors.computerShadow : AppColors.primaryGlow,
+                                  ),
+                                  child: Center(child: Text(
+                                    playerName.isNotEmpty ? playerName[0].toUpperCase() : 'P',
+                                    style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
+                                  )),
                                 ),
-                                child: Center(child: Text(
-                                  playerName.isNotEmpty ? playerName[0].toUpperCase() : 'P',
-                                  style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
-                                )),
                               ),
                               const SizedBox(width: 16),
                               Expanded(
@@ -370,14 +377,18 @@ AudioHelper.playClick();
                                   Text(progress.gelarKecerdasan, style: TextStyle(fontSize: 13, color: isComputer ? AppColors.accentComputer : progress.warnaGelar, fontWeight: FontWeight.w600)),
                                 ]),
                               ),
-                              Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                                decoration: BoxDecoration(
-                                  color: labelColor.withValues(alpha: 0.12),
-                                  borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
-                                  border: Border.all(color: labelColor.withValues(alpha: 0.3)),
+                              AnimasiPendar(
+                                warna: progress.warnaGelar,
+                                borderRadius: isComputer ? 4 : 20,
+                                borderWidth: 2.0,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                                  decoration: BoxDecoration(
+                                    color: labelColor.withValues(alpha: 0.12),
+                                    borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
+                                  ),
+                                  child: Text('Ubah Nama', style: TextStyle(color: labelColor, fontSize: 12, fontWeight: FontWeight.bold)),
                                 ),
-                                child: Text('Ubah Nama', style: TextStyle(color: labelColor, fontSize: 12, fontWeight: FontWeight.bold)),
                               ),
                             ],
                           ),
@@ -391,7 +402,7 @@ AudioHelper.playClick();
                     _buildLabel('Suara & Tampilan', Icons.tune_outlined, labelColor),
                     const SizedBox(height: 10),
                     _buildGlassCard(
-                      color: cardColor, divColor: divColor, isComputer: isComputer,
+                      color: cardColor, divColor: divColor, isComputer: isComputer, glowColor: progress.warnaGelar,
                       child: Column(children: [
                         _buildToggle(icon: Icons.volume_up_outlined, iconColor: soundIconColor, label: 'Efek Suara', subtitle: 'Aktifkan efek suara saat menekan tombol dan menjawab soal', value: _suaraAktif, onChanged: _simpanSuara, textColor: textColor, subTextColor: subTextColor, isComputer: isComputer),
                         Divider(color: divColor, height: 1),
@@ -449,7 +460,7 @@ AudioHelper.playClick();
                     _buildLabel('Data & Akun', Icons.shield_outlined, labelColor),
                     const SizedBox(height: 10),
                     _buildGlassCard(
-                      color: cardColor, divColor: divColor, isComputer: isComputer,
+                      color: cardColor, divColor: divColor, isComputer: isComputer, glowColor: progress.warnaGelar,
                       child: _buildAction(
                         icon: Icons.delete_forever_rounded,
                         iconColor: AppColors.failure,
@@ -469,7 +480,7 @@ AudioHelper.playClick();
                     _buildLabel('Tentang Aplikasi', Icons.info_outline, labelColor),
                     const SizedBox(height: 10),
                     _buildGlassCard(
-                      color: cardColor, divColor: divColor, isComputer: isComputer,
+                      color: cardColor, divColor: divColor, isComputer: isComputer, glowColor: progress.warnaGelar,
                       child: _buildAction(
                         icon: Icons.quiz_outlined,
                         iconColor: labelColor,
@@ -544,10 +555,15 @@ AudioHelper.playClick();
     ]);
   }
 
-  Widget _buildGlassCard({required Widget child, required Color color, required Color divColor, required bool isComputer}) {
-    return Container(
-      decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(isComputer ? 4 : 20), border: Border.all(color: divColor, width: 1)),
-      child: ClipRRect(borderRadius: BorderRadius.circular(isComputer ? 4 : 20), child: child),
+  Widget _buildGlassCard({required Widget child, required Color color, required Color divColor, required bool isComputer, required Color glowColor}) {
+    return AnimasiPendar(
+      warna: glowColor,
+      borderRadius: isComputer ? 4 : 20,
+      borderWidth: 2.0,
+      child: Container(
+        decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(isComputer ? 4 : 20)),
+        child: ClipRRect(borderRadius: BorderRadius.circular(isComputer ? 4 : 20), child: child),
+      ),
     );
   }
 

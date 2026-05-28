@@ -8,7 +8,9 @@ import '../../inti/konstanta/warna_aplikasi.dart';
 import '../../inti/penyedia/penyedia_tema.dart';
 import '../progres/penyedia_progres.dart';
 import '../pengaturan/layar_pengaturan.dart';
+import '../pengaturan/layar_pengaturan.dart';
 import 'layar_beranda.dart';
+import '../../inti/widget/animasi_pendar.dart';
 
 // Provider reaktif untuk menyimpan dan memperbarui nama pemain secara waktu-nyata
 final playerNameProvider = StateProvider<String>((ref) => 'Pemain');
@@ -57,6 +59,7 @@ class _MainNavigationScreenState extends ConsumerState<MainNavigationScreen>
   @override
   Widget build(BuildContext context) {
     final appTheme = ref.watch(temaProvider);
+    final progress = ref.watch(progressProvider);
     final isDark = appTheme == AppThemeMode.dark;
     final isComputer = appTheme == AppThemeMode.computer;
 
@@ -88,40 +91,36 @@ class _MainNavigationScreenState extends ConsumerState<MainNavigationScreen>
           // Floating Bottom Navigation
           Align(
             alignment: Alignment.bottomCenter,
-            child: _buildFloatingBottomNav(isDark, isComputer),
+            child: _buildFloatingBottomNav(isDark, isComputer, progress.warnaGelar),
           ),
         ],
       ),
     );
   }
 
-  Widget _buildFloatingBottomNav(bool isDark, bool isComputer) {
+  Widget _buildFloatingBottomNav(bool isDark, bool isComputer, Color warnaGelar) {
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.only(bottom: 24, left: 24, right: 24),
         child: ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 450),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(isComputer ? 4 : 32),
-            child: BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-              child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-                decoration: BoxDecoration(
+          child: AnimasiPendar(
+            warna: warnaGelar,
+            borderRadius: isComputer ? 4 : 32,
+            borderWidth: 2.0,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(isComputer ? 4 : 32),
+              child: BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                  decoration: BoxDecoration(
                   color: isComputer
                       ? AppColors.surfaceComputer.withValues(alpha: 0.95)
                       : isDark
                           ? AppColors.surfaceLight.withValues(alpha: 0.8)
                           : AppColors.surfaceLightBlue.withValues(alpha: 0.85),
                   borderRadius: BorderRadius.circular(isComputer ? 4 : 32),
-                  border: Border.all(
-                    color: isComputer
-                        ? AppColors.surfaceComputerBorder
-                        : isDark
-                            ? Colors.white.withValues(alpha: 0.08)
-                            : Colors.black.withValues(alpha: 0.05),
-                    width: 1.5,
-                  ),
                   boxShadow: isComputer
                       ? AppColors.computerCardShadow
                       : [
@@ -142,9 +141,10 @@ class _MainNavigationScreenState extends ConsumerState<MainNavigationScreen>
                     _buildNavItem(2, Icons.settings_rounded, Icons.settings_outlined, 'Pengaturan', isDark, isComputer),
                   ],
                 ),
-              ).animate().slideY(begin: 1, end: 0, duration: 600.ms, curve: Curves.easeOutBack),
+              ),
             ),
-          ),
+          ).animate().slideY(begin: 1, end: 0, duration: 600.ms, curve: Curves.easeOutBack),
+        ),
         ),
       ),
     );
@@ -272,33 +272,39 @@ class ProfileScreen extends ConsumerWidget {
                     ),
                     child: Column(
                       children: [
-                        Container(
-                          padding: const EdgeInsets.all(4),
-                          decoration: BoxDecoration(
-                            shape: isComputer ? BoxShape.rectangle : BoxShape.circle,
-                            borderRadius: isComputer ? BorderRadius.circular(8) : null,
-                            gradient: isComputer ? AppColors.primaryComputerGradient : LinearGradient(
-                              colors: [warnaGelar, AppColors.primary],
-                              begin: Alignment.topLeft,
-                              end: Alignment.bottomRight,
-                            ),
-                            boxShadow: isComputer ? AppColors.computerShadow : [
-                              BoxShadow(
-                                color: warnaGelar.withValues(alpha: 0.4),
-                                blurRadius: 20,
-                                spreadRadius: 2,
+                        AnimasiPendar(
+                          warna: warnaGelar,
+                          isCircle: !isComputer,
+                          borderRadius: isComputer ? 8 : 0,
+                          borderWidth: 3.0,
+                          child: Container(
+                            padding: const EdgeInsets.all(4),
+                            decoration: BoxDecoration(
+                              shape: isComputer ? BoxShape.rectangle : BoxShape.circle,
+                              borderRadius: isComputer ? BorderRadius.circular(8) : null,
+                              gradient: isComputer ? AppColors.primaryComputerGradient : LinearGradient(
+                                colors: [warnaGelar, AppColors.primary],
+                                begin: Alignment.topLeft,
+                                end: Alignment.bottomRight,
                               ),
-                            ],
-                          ),
-                          child: CircleAvatar(
-                            radius: 52,
-                            backgroundColor: isDark ? AppColors.background : (isComputer ? AppColors.backgroundComputer : AppColors.backgroundLight),
-                            child: Text(
-                              playerName.isNotEmpty ? playerName[0].toUpperCase() : 'P',
-                              style: TextStyle(
-                                fontSize: 42,
-                                fontWeight: FontWeight.bold,
-                                color: isComputer ? AppColors.textPrimaryComputer : warnaGelar,
+                              boxShadow: isComputer ? AppColors.computerShadow : [
+                                BoxShadow(
+                                  color: warnaGelar.withValues(alpha: 0.4),
+                                  blurRadius: 20,
+                                  spreadRadius: 2,
+                                ),
+                              ],
+                            ),
+                            child: CircleAvatar(
+                              radius: 52,
+                              backgroundColor: isDark ? AppColors.background : (isComputer ? AppColors.backgroundComputer : AppColors.backgroundLight),
+                              child: Text(
+                                playerName.isNotEmpty ? playerName[0].toUpperCase() : 'P',
+                                style: TextStyle(
+                                  fontSize: 42,
+                                  fontWeight: FontWeight.bold,
+                                  color: isComputer ? AppColors.textPrimaryComputer : warnaGelar,
+                                ),
                               ),
                             ),
                           ),
@@ -313,27 +319,31 @@ class ProfileScreen extends ConsumerWidget {
                           ),
                         ).animate().fadeIn(delay: 200.ms),
                         const SizedBox(height: 8),
-                        Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
-                          decoration: BoxDecoration(
-                            color: isComputer ? AppColors.surfaceComputerSecond : warnaGelar.withValues(alpha: 0.1),
-                            borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
-                            border: Border.all(color: isComputer ? AppColors.surfaceComputerBorder : warnaGelar.withValues(alpha: 0.4)),
-                          ),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Icon(Icons.military_tech_rounded, color: isComputer ? AppColors.textSecondaryComputer : warnaGelar, size: 16),
-                              const SizedBox(width: 6),
-                              Text(
-                                gelar,
-                                style: TextStyle(
-                                  color: isComputer ? AppColors.textSecondaryComputer : warnaGelar,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 13,
+                        AnimasiPendar(
+                          warna: warnaGelar,
+                          borderRadius: isComputer ? 4 : 20,
+                          borderWidth: 2.0,
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                            decoration: BoxDecoration(
+                              color: isComputer ? AppColors.surfaceComputerSecond : warnaGelar.withValues(alpha: 0.1),
+                              borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Icon(Icons.workspace_premium_rounded, color: warnaGelar, size: 20),
+                                const SizedBox(width: 8),
+                                Text(
+                                  gelar,
+                                  style: TextStyle(
+                                    color: isComputer ? AppColors.textSecondaryComputer : warnaGelar,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 13,
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ).animate().fadeIn(delay: 350.ms),
                       ],
@@ -343,14 +353,17 @@ class ProfileScreen extends ConsumerWidget {
                   const SizedBox(height: 24),
 
                   // Statistik Card
-                  Container(
-                    padding: const EdgeInsets.all(24),
-                    decoration: BoxDecoration(
-                      color: isDark ? AppColors.surfaceLight.withValues(alpha: 0.6) : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond.withValues(alpha: 0.8)),
-                      borderRadius: BorderRadius.circular(isComputer ? 4 : 24),
-                      border: Border.all(color: isDark ? Colors.white.withValues(alpha: 0.08) : (isComputer ? AppColors.surfaceComputerBorder : Colors.black.withValues(alpha: 0.05))),
-                    ),
-                    child: Column(
+                  AnimasiPendar(
+                    warna: warnaGelar,
+                    borderRadius: isComputer ? 4 : 24,
+                    borderWidth: 2.0,
+                    child: Container(
+                      padding: const EdgeInsets.all(24),
+                      decoration: BoxDecoration(
+                        color: isDark ? AppColors.surfaceLight.withValues(alpha: 0.6) : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond.withValues(alpha: 0.8)),
+                        borderRadius: BorderRadius.circular(isComputer ? 4 : 24),
+                      ),
+                      child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text(
@@ -443,6 +456,7 @@ class ProfileScreen extends ConsumerWidget {
                           isComputer: isComputer,
                         ),
                       ],
+                    ),
                     ),
                   ).animate().fadeIn(delay: 250.ms).slideY(begin: 0.1, end: 0),
 
