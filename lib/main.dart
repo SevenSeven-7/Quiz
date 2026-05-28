@@ -4,12 +4,18 @@ import 'package:flutter/services.dart';
 import 'inti/tema/tema_aplikasi.dart';
 import 'inti/penyedia/penyedia_tema.dart';
 import 'fitur/splash/layar_splash.dart';
+import 'inti/layanan/layanan_notifikasi.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   
   // Mengaktifkan mode layar penuh (Immersive Mode) agar navigasi HP disembunyikan
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
+
+  // Inisialisasi service notifikasi
+  final notifService = NotificationService();
+  await notifService.init();
+  await notifService.requestPermissions();
 
   // Jalankan aplikasi
   runApp(
@@ -20,11 +26,41 @@ void main() async {
 }
 
 // Widget utama yang merespons perubahan tema secara real-time
-class QuizApp extends ConsumerWidget {
+class QuizApp extends ConsumerStatefulWidget {
   const QuizApp({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<QuizApp> createState() => _QuizAppState();
+}
+
+class _QuizAppState extends ConsumerState<QuizApp> with WidgetsBindingObserver {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+    // Batal notifikasi saat aplikasi baru saja dibuka
+    NotificationService().cancelAllNotifications();
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.paused || state == AppLifecycleState.detached) {
+      // Menjadwalkan pengingat saat aplikasi masuk background atau ditutup
+      NotificationService().scheduleReminderNotification();
+    } else if (state == AppLifecycleState.resumed) {
+      // Membatalkan notifikasi saat aplikasi dibuka kembali
+      NotificationService().cancelAllNotifications();
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
     final appThemeMode = ref.watch(temaProvider);
 
     // Pilih ThemeData berdasarkan mode yang aktif
