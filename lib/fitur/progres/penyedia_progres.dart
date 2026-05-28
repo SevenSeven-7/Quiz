@@ -13,11 +13,15 @@ class ProgressState {
   
   // Kumpulan ID bagian kuis yang sudah berhasil terbuka
   final Set<String> unlockedParts;
+  
+  // Penanda apakah efek getar legenda sudah pernah dilihat
+  final bool hasSeenLegendaShake;
 
   ProgressState({
     required this.levelStars,
     required this.unlockedLevels,
     required this.unlockedParts,
+    required this.hasSeenLegendaShake,
   });
 
   // Total bintang yang berhasil dikumpulkan pemain
@@ -64,11 +68,13 @@ class ProgressState {
     Map<String, int>? levelStars,
     Map<String, bool>? unlockedLevels,
     Set<String>? unlockedParts,
+    bool? hasSeenLegendaShake,
   }) {
     return ProgressState(
       levelStars: levelStars ?? this.levelStars,
       unlockedLevels: unlockedLevels ?? this.unlockedLevels,
       unlockedParts: unlockedParts ?? this.unlockedParts,
+      hasSeenLegendaShake: hasSeenLegendaShake ?? this.hasSeenLegendaShake,
     );
   }
 }
@@ -79,6 +85,7 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
     levelStars: {},
     unlockedLevels: {'p1_l1': true, 'p2_l1': true}, // Level 1 di Bagian 1 dan Bagian 2 selalu terbuka bawaan
     unlockedParts: {'p1', 'p2'}, // Bagian 1 dan Bagian 2 selalu terbuka bawaan
+    hasSeenLegendaShake: false,
   )) {
     _loadProgress();
   }
@@ -112,10 +119,14 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
         loadedParts.addAll(decoded.map((e) => e as String));
       }
 
+      // Memuat hasSeenLegendaShake
+      final bool loadedLegenda = prefs.getBool('has_seen_legenda_shake') ?? false;
+
       state = ProgressState(
         levelStars: loadedStars,
         unlockedLevels: loadedUnlocked,
         unlockedParts: loadedParts,
+        hasSeenLegendaShake: loadedLegenda,
       );
     } catch (e) {
       debugPrint('Gagal memuat progres kuis secara lokal $e');
@@ -164,11 +175,13 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
       await prefs.remove('quiz_level_stars');
       await prefs.remove('quiz_unlocked_levels');
       await prefs.remove('quiz_unlocked_parts');
+      await prefs.remove('has_seen_legenda_shake');
 
       state = ProgressState(
         levelStars: {},
         unlockedLevels: {'p1_l1': true, 'p2_l1': true},
         unlockedParts: {'p1', 'p2'},
+        hasSeenLegendaShake: false,
       );
     } catch (e) {
       debugPrint('Gagal mereset progres kuis $e');
@@ -189,9 +202,22 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
         levelStars: {},
         unlockedLevels: {'p1_l1': true, 'p2_l1': true},
         unlockedParts: {'p1', 'p2'},
+        hasSeenLegendaShake: false,
       );
     } catch (e) {
       debugPrint('Gagal menghapus akun $e');
+    }
+  }
+
+  // --- FITUR ANIMASI SHAKE ---
+  Future<void> markLegendaSeen() async {
+    if (state.hasSeenLegendaShake) return;
+    state = state.copyWith(hasSeenLegendaShake: true);
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setBool('has_seen_legenda_shake', true);
+    } catch (e) {
+      debugPrint('Gagal menyimpan status legenda $e');
     }
   }
 }
