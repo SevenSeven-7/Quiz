@@ -5,6 +5,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
 import '../../inti/penyedia/penyedia_tema.dart';
+import '../../inti/widget/animasi_pendar.dart';
 
 class ResultScreen extends ConsumerStatefulWidget {
   final int score;
@@ -130,11 +131,17 @@ class _ResultScreenState extends ConsumerState<ResultScreen> with TickerProvider
                               color: isEarned ? AppColors.gold : Colors.white12,
                             )
                                 .animate(delay: (600 + index * 250).ms)
+                                .slideY(
+                                  begin: -0.8,
+                                  end: 0,
+                                  curve: Curves.bounceOut,
+                                  duration: 800.ms,
+                                )
                                 .scale(
-                                  begin: const Offset(0.0, 0.0),
+                                  begin: const Offset(0.3, 0.3),
                                   end: const Offset(1.0, 1.0),
-                                  curve: Curves.easeOutBack,
-                                  duration: 500.ms,
+                                  curve: Curves.elasticOut,
+                                  duration: 800.ms,
                                 )
                                 .then()
                                 .custom(
@@ -181,68 +188,95 @@ class _ResultScreenState extends ConsumerState<ResultScreen> with TickerProvider
                       const SizedBox(height: 32),
 
                       // Kartu Skor
-                      Container(
-                        padding: const EdgeInsets.all(28),
-                        decoration: BoxDecoration(
-                          color: surfaceColor.withValues(alpha: 0.7),
-                          borderRadius: BorderRadius.circular(28),
-                          border: Border.all(
-                            color: isComputer ? AppColors.surfaceComputerBorder : messageColor.withValues(alpha: 0.3),
-                            width: 1.5,
-                          ),
-                          boxShadow: isComputer ? AppColors.computerCardShadow : [
-                            BoxShadow(
-                              color: messageColor.withValues(alpha: 0.1),
-                              blurRadius: 30,
-                              spreadRadius: 2,
-                            ),
-                          ],
-                        ),
-                        child: Column(
-                          children: [
-                            ShaderMask(
-                              shaderCallback: (bounds) => isComputer ? AppColors.primaryComputerGradient.createShader(bounds) : LinearGradient(
-                                colors: [messageColor, AppColors.primary],
-                              ).createShader(bounds),
-                              child: Text(
-                                '${widget.score}/${widget.totalQuestions}',
-                                style: TextStyle(
-                                  fontSize: 52,
-                                  fontWeight: FontWeight.w900,
-                                  color: isComputer ? AppColors.textPrimaryComputer : Colors.white,
+                      Builder(
+                        builder: (context) {
+                          final scoreCard = Container(
+                            padding: const EdgeInsets.all(28),
+                            decoration: BoxDecoration(
+                              color: surfaceColor.withValues(alpha: 0.7),
+                              borderRadius: BorderRadius.circular(28),
+                              border: Border.all(
+                                color: isComputer ? AppColors.surfaceComputerBorder : messageColor.withValues(alpha: 0.3),
+                                width: 1.5,
+                              ),
+                              boxShadow: isComputer ? AppColors.computerCardShadow : [
+                                BoxShadow(
+                                  color: messageColor.withValues(alpha: 0.1),
+                                  blurRadius: 30,
+                                  spreadRadius: 2,
                                 ),
-                              ),
+                              ],
                             ),
-                            Text(
-                              'Jawaban Benar',
-                              style: TextStyle(color: isComputer ? AppColors.textSecondaryComputer : (isDark ? AppColors.textSecondary : AppColors.textSecondaryLight), fontSize: 14),
+                            child: Column(
+                              children: [
+                                ShaderMask(
+                                  shaderCallback: (bounds) => isComputer ? AppColors.primaryComputerGradient.createShader(bounds) : LinearGradient(
+                                    colors: [messageColor, AppColors.primary],
+                                  ).createShader(bounds),
+                                  child: TweenAnimationBuilder<int>(
+                                    tween: IntTween(begin: 0, end: widget.score),
+                                    duration: 1500.ms,
+                                    curve: Curves.easeOutExpo,
+                                    builder: (context, value, child) {
+                                      return Text(
+                                        '$value/${widget.totalQuestions}',
+                                        style: TextStyle(
+                                          fontSize: 52,
+                                          fontWeight: FontWeight.w900,
+                                          color: isComputer ? AppColors.textPrimaryComputer : Colors.white,
+                                        ),
+                                      );
+                                    },
+                                  ),
+                                ),
+                                Text(
+                                  'Jawaban Benar',
+                                  style: TextStyle(color: isComputer ? AppColors.textSecondaryComputer : (isDark ? AppColors.textSecondary : AppColors.textSecondaryLight), fontSize: 14),
+                                ),
+                                const SizedBox(height: 20),
+                                ClipRRect(
+                                  borderRadius: BorderRadius.circular(8),
+                                  child: LinearProgressIndicator(
+                                    value: widget.score / widget.totalQuestions,
+                                    backgroundColor: isComputer ? AppColors.surfaceComputerBorder : Colors.white10,
+                                    valueColor: AlwaysStoppedAnimation<Color>(messageColor),
+                                    minHeight: 8,
+                                  ),
+                                ),
+                                const SizedBox(height: 8),
+                                Text(
+                                  '$percentage% Akurasi',
+                                  style: TextStyle(
+                                    color: _messageColor,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 13,
+                                  ),
+                                ),
+                              ],
                             ),
-                            const SizedBox(height: 20),
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(8),
-                              child: LinearProgressIndicator(
-                                value: widget.score / widget.totalQuestions,
-                                backgroundColor: isComputer ? AppColors.surfaceComputerBorder : Colors.white10,
-                                valueColor: AlwaysStoppedAnimation<Color>(messageColor),
-                                minHeight: 8,
-                              ),
-                            ),
-                            const SizedBox(height: 8),
-                            Text(
-                              '$percentage% Akurasi',
-                              style: TextStyle(
-                                color: _messageColor,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 13,
-                              ),
-                            ),
-                          ],
-                        ),
+                          );
+
+                          if (widget.stars == 3) {
+                            return AnimasiPendar(
+                              warna: AppColors.gold,
+                              borderRadius: 28,
+                              borderWidth: 2.5,
+                              forceLegend: true,
+                              child: scoreCard,
+                            );
+                          }
+                          return scoreCard;
+                        },
                       ).animate().fadeIn(delay: 1800.ms).scale(
                             begin: const Offset(0.9, 0.9),
                             end: const Offset(1.0, 1.0),
+                            curve: Curves.elasticOut,
                             delay: 1800.ms,
+                            duration: 1000.ms,
                           ),
+                      if (widget.stars == 3) ...[
+                        const SizedBox(height: 0),
+                      ],
 
                       const SizedBox(height: 32),
 

@@ -9,6 +9,7 @@ class AnimasiPendar extends ConsumerStatefulWidget {
   final double borderRadius;
   final double borderWidth;
   final bool isCircle;
+  final bool forceLegend;
 
   const AnimasiPendar({
     super.key,
@@ -17,6 +18,7 @@ class AnimasiPendar extends ConsumerStatefulWidget {
     this.borderRadius = 0,
     this.borderWidth = 2.0,
     this.isCircle = false,
+    this.forceLegend = false,
   });
 
   @override
@@ -41,7 +43,7 @@ class _AnimasiPendarState extends ConsumerState<AnimasiPendar> with SingleTicker
   @override
   Widget build(BuildContext context) {
     final progress = ref.watch(progressProvider);
-    final isLegend = progress.totalStars >= 2100;
+    final isLegend = progress.totalStars >= 2100 || widget.forceLegend;
 
     return RepaintBoundary(
       child: AnimatedBuilder(

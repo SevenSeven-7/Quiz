@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../../inti/utils/transisi_halaman.dart';
 import 'layar_buat_nama.dart';
 import '../beranda/layar_utama.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
@@ -43,23 +44,9 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
     final playerName = prefs.getString('player_name');
     if (!mounted) return;
     if (playerName != null && playerName.trim().isNotEmpty) {
-      Navigator.of(context).pushReplacement(
-        PageRouteBuilder(
-          pageBuilder: (context, animation, secondaryAnimation) => const MainNavigationScreen(),
-          transitionsBuilder: (context, animation, secondaryAnimation, child) =>
-              FadeTransition(opacity: animation, child: child),
-          transitionDuration: const Duration(milliseconds: 400),
-        ),
-      );
+      Navigator.of(context).pushReplacement(TransisiPremium(child: const MainNavigationScreen()));
     } else {
-      Navigator.of(context).pushReplacement(
-        PageRouteBuilder(
-          pageBuilder: (context, animation, secondaryAnimation) => const LayarBuatNama(),
-          transitionsBuilder: (context, animation, secondaryAnimation, child) =>
-              FadeTransition(opacity: animation, child: child),
-          transitionDuration: const Duration(milliseconds: 400),
-        ),
-      );
+      Navigator.of(context).pushReplacement(TransisiPremium(child: const LayarBuatNama()));
     }
   }
 
@@ -164,7 +151,8 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                 )
                 .animate()
                 .fadeIn(duration: 600.ms)
-                .scale(begin: const Offset(0.7, 0.7), end: const Offset(1.0, 1.0), duration: 600.ms, curve: Curves.easeOutBack),
+                .scale(begin: const Offset(0.0, 0.0), end: const Offset(1.0, 1.0), duration: 1200.ms, curve: Curves.elasticOut)
+                .shimmer(duration: 1500.ms, delay: 800.ms, color: Colors.white, blendMode: BlendMode.overlay),
 
                 const SizedBox(height: 30),
 

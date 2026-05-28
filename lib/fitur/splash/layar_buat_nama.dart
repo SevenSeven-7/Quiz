@@ -6,8 +6,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
 import '../../inti/penyedia/penyedia_tema.dart';
 import '../../inti/utils/audio_helper.dart';
+import '../../inti/utils/audio_helper.dart';
+import '../../inti/utils/transisi_halaman.dart';
 import '../beranda/layar_utama.dart';
-
 class LayarBuatNama extends ConsumerStatefulWidget {
   const LayarBuatNama({super.key});
 
@@ -22,6 +23,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
   late AnimationController _particleController;
   List<_MiniParticle> _particles = [];
   final Random _random = Random();
+  final FocusNode _focusNode = FocusNode();
 
   @override
   void initState() {
@@ -31,7 +33,9 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
       duration: const Duration(seconds: 10),
     )..repeat();
 
-    // Partikel dibuat di didChangeDependencies agar bisa akses tema
+    _focusNode.addListener(() {
+      setState(() {});
+    });
   }
 
   @override
@@ -80,6 +84,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
   void dispose() {
     _nameController.dispose();
     _particleController.dispose();
+    _focusNode.dispose();
     super.dispose();
   }
 
@@ -91,14 +96,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
     await prefs.setString('player_name', playerName);
     // Progress sudah otomatis tersimpan lokal
     if (mounted) {
-      Navigator.of(context).pushReplacement(
-        PageRouteBuilder(
-          transitionDuration: const Duration(milliseconds: 600),
-          pageBuilder: (_, __, ___) => const MainNavigationScreen(),
-          transitionsBuilder: (_, animation, __, child) =>
-              FadeTransition(opacity: animation, child: child),
-        ),
-      );
+      Navigator.of(context).pushReplacement(TransisiPremium(child: const MainNavigationScreen()));
     }
   }
 
@@ -234,8 +232,8 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                               ),
                             )
                             .animate()
-                            .scale(duration: 700.ms, curve: Curves.easeOutBack)
-                            .fadeIn(),
+                            .scale(begin: const Offset(0.0, 0.0), end: const Offset(1.0, 1.0), duration: 800.ms, curve: Curves.elasticOut)
+                            .fadeIn(duration: 600.ms),
                           ),
 
                           const SizedBox(height: 24),
@@ -281,18 +279,18 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                               color: surfaceColor.withValues(alpha: 0.6),
                               borderRadius: BorderRadius.circular(28),
                               border: Border.all(
-                                color: isComputer
-                                    ? AppColors.surfaceComputerBorder
-                                    : AppColors.primary.withValues(alpha: 0.25),
-                                width: 1.5,
+                                color: _focusNode.hasFocus 
+                                    ? (isComputer ? AppColors.primaryComputer : AppColors.primary)
+                                    : (isComputer ? AppColors.surfaceComputerBorder : AppColors.primary.withValues(alpha: 0.25)),
+                                width: _focusNode.hasFocus ? 2.5 : 1.5,
                               ),
                               boxShadow: isComputer
                                   ? AppColors.computerCardShadow
                                   : [
                                       BoxShadow(
-                                        color: AppColors.primary.withValues(alpha: 0.08),
-                                        blurRadius: 24,
-                                        spreadRadius: 1,
+                                        color: _focusNode.hasFocus ? AppColors.primary.withValues(alpha: 0.3) : AppColors.primary.withValues(alpha: 0.08),
+                                        blurRadius: _focusNode.hasFocus ? 35 : 24,
+                                        spreadRadius: _focusNode.hasFocus ? 4 : 1,
                                       ),
                                     ],
                             ),
@@ -327,6 +325,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                                 ),
                                 const SizedBox(height: 20),
                                 TextFormField(
+                                  focusNode: _focusNode,
                                   controller: _nameController,
                                   style: TextStyle(color: textColor, fontSize: 16),
                                   maxLength: 15,
@@ -378,7 +377,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                                 ),
                               ],
                             ),
-                          ).animate().fadeIn(delay: 500.ms).slideY(begin: 0.1, end: 0),
+                          ).animate().fadeIn(delay: 400.ms, duration: 600.ms).slideY(begin: 0.2, end: 0, curve: Curves.easeOutBack).scale(begin: const Offset(0.9, 0.9), end: const Offset(1.0, 1.0)),
 
                           const SizedBox(height: 28),
 
@@ -432,7 +431,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                                       ],
                                     ),
                             ),
-                          ).animate().fadeIn(delay: 700.ms),
+                          ).animate().fadeIn(delay: 600.ms, duration: 600.ms).slideY(begin: 0.3, end: 0, curve: Curves.easeOutBack).scale(begin: const Offset(0.8, 0.8), end: const Offset(1.0, 1.0)),
                         ],
                       ),
                     ),
