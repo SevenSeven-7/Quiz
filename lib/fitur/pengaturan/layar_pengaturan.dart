@@ -228,7 +228,7 @@ AudioHelper.playClick();
                           border: Border.all(color: accentColor.withValues(alpha: 0.15)),
                         ),
                         child: const Text(
-                          'Quiz adalah aplikasi pembelajaran interaktif berbasis Kurikulum Merdeka dan K-13. Pemain dapat memilih berbagai mata pelajaran mulai dari Matematika, IPA, hingga Sejarah.\n\nCara Kerja:\n• Jawab soal dengan benar untuk mengumpulkan Bintang ⭐.\n• Semakin banyak bintang, Anda akan mendapatkan Pangkat Kecerdasan yang lebih tinggi (Pemula → Jenius) dan membuka level baru.\n• Terdapat 3 pilihan tema (Gelap / Terang / Komputer) serta efek suara interaktif untuk pengalaman belajar yang seru!',
+                          'Quiz adalah aplikasi pembelajaran interaktif berbasis Kurikulum Merdeka dan K-13. Pemain dapat memilih berbagai mata pelajaran mulai dari Agama Islam, Bahasa Indonesia, Matematika, IPA, IPS, PPKn, hingga Bahasa Inggris.\n\nCara Kerja:\n• Jawab soal dengan benar untuk mengumpulkan Bintang ⭐.\n• Semakin banyak bintang, Anda akan mendapatkan Gelar Pangkat yang lebih tinggi (Pemula → Legenda) dan membuka level baru.\n• Terdapat 3 pilihan tema (Gelap / Terang / Komputer) serta efek suara interaktif untuk pengalaman belajar yang seru!',
                           textAlign: TextAlign.left,
                           style: TextStyle(fontSize: 13, height: 1.5),
                         ),
@@ -393,7 +393,7 @@ AudioHelper.playClick();
                     _buildGlassCard(
                       color: cardColor, divColor: divColor, isComputer: isComputer,
                       child: Column(children: [
-                        _buildToggle(icon: Icons.volume_up_outlined, iconColor: soundIconColor, label: 'Efek Suara', subtitle: 'Aktifkan suara saat menjawab soal', value: _suaraAktif, onChanged: _simpanSuara, textColor: textColor, subTextColor: subTextColor, isComputer: isComputer),
+                        _buildToggle(icon: Icons.volume_up_outlined, iconColor: soundIconColor, label: 'Efek Suara', subtitle: 'Aktifkan efek suara saat menekan tombol dan menjawab soal', value: _suaraAktif, onChanged: _simpanSuara, textColor: textColor, subTextColor: subTextColor, isComputer: isComputer),
                         Divider(color: divColor, height: 1),
                         _buildToggle(icon: Icons.notifications_outlined, iconColor: notifIconColor, label: 'Notifikasi', subtitle: 'Terima pengingat belajar harian', value: _notifikasiAktif, onChanged: _simpanNotifikasi, textColor: textColor, subTextColor: subTextColor, isComputer: isComputer),
                         Divider(color: divColor, height: 1),
