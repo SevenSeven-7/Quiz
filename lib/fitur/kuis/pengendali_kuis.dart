@@ -176,15 +176,16 @@ class QuizNotifier extends StateNotifier<QuizState> {
     int stars = 1;
 
     // Logika Penghargaan Bintang:
-    // - Bintang 3: Skor >= 90% dan waktu pengerjaan <= 60 detik
-    // - Bintang 2: Skor >= 70% dan waktu pengerjaan <= 90 detik
-    // - Bintang 1: Skor >= 50%
-    // - Bintang 0: Skor di bawah 50% (tidak lulus)
-    if (scorePercentage >= 90 && state.timeSpent <= 60) {
+    // - Bintang 3: Benar 5 soal (100%) dan waktu pengerjaan <= 80 detik
+    // - Bintang 2: Benar 3 - 4 soal dan waktu pengerjaan <= 120 detik
+    // - Bintang 1: Benar 1 - 2 soal dan waktu pengerjaan <= 140 detik
+    // - Bintang 0: Salah semua (skor 0) atau waktu pengerjaan > 140 detik
+    
+    if (state.score == 5 && state.timeSpent <= 80) {
       stars = 3;
-    } else if (scorePercentage >= 70 && state.timeSpent <= 90) {
+    } else if (state.score >= 3 && state.timeSpent <= 120) {
       stars = 2;
-    } else if (scorePercentage >= 50) {
+    } else if (state.score >= 1 && state.timeSpent <= 140) {
       stars = 1;
     } else {
       stars = 0;
