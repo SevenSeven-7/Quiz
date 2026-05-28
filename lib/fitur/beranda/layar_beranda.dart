@@ -93,55 +93,6 @@ class HomeScreen extends ConsumerWidget {
           ],
         ),
       ),
-      // --- MOD MENU SEMENTARA ---
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {
-          showModalBottomSheet(
-            context: context,
-            backgroundColor: isDark ? AppColors.surfaceLight : Colors.white,
-            shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(20))),
-            builder: (context) => Padding(
-              padding: const EdgeInsets.all(24.0),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text('MOD MENU (SEMENTARA)', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: isDark ? Colors.white : Colors.black)),
-                  const SizedBox(height: 20),
-                  SizedBox(
-                    width: double.infinity,
-                    child: ElevatedButton.icon(
-                      style: ElevatedButton.styleFrom(backgroundColor: AppColors.primary, padding: const EdgeInsets.symmetric(vertical: 12)),
-                      onPressed: () {
-                        ref.read(progressProvider.notifier).addModStars(300);
-                        Navigator.pop(context);
-                      },
-                      icon: const Icon(Icons.star, color: Colors.white),
-                      label: const Text('Tambah 300 Bintang (+1 Gelar)', style: TextStyle(color: Colors.white)),
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  SizedBox(
-                    width: double.infinity,
-                    child: OutlinedButton.icon(
-                      style: OutlinedButton.styleFrom(padding: const EdgeInsets.symmetric(vertical: 12)),
-                      onPressed: () {
-                        // Reset Bintang: kurangi semua mod_stars dan reset aslinya
-                        ref.read(progressProvider.notifier).resetProgress();
-                        Navigator.pop(context);
-                      },
-                      icon: const Icon(Icons.refresh),
-                      label: const Text('Reset Progres Kembali Awal'),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        },
-        backgroundColor: Colors.redAccent,
-        icon: const Icon(Icons.bug_report_rounded, color: Colors.white),
-        label: const Text('MOD', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-      ),
     );
   }
 
