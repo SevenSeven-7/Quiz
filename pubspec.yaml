@@ -38,3 +38,10 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/logo.png
+    - assets/datasets/agamaislam/
+    - assets/datasets/bahasaindonesia/
+    - assets/datasets/bahasainggris/
+    - assets/datasets/ilmupengetahuanalam/
+    - assets/datasets/ilmupengetahuansosial/
+    - assets/datasets/matematika/
+    - assets/datasets/ppkn/
