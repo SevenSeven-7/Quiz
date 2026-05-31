@@ -6,18 +6,13 @@ import 'inti/penyedia/penyedia_tema.dart';
 import 'fitur/splash/layar_splash.dart';
 import 'inti/layanan/layanan_notifikasi.dart';
 
-void main() async {
+void main() {
   WidgetsFlutterBinding.ensureInitialized();
   
   // Mengaktifkan mode layar penuh (Immersive Mode) agar navigasi HP disembunyikan
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
 
-  // Inisialisasi service notifikasi
-  final notifService = NotificationService();
-  await notifService.init();
-  await notifService.requestPermissions();
-
-  // Jalankan aplikasi
+  // Jalankan aplikasi secepat mungkin untuk menutup native splash screen
   runApp(
     const ProviderScope(
       child: QuizApp(),
@@ -38,8 +33,15 @@ class _QuizAppState extends ConsumerState<QuizApp> with WidgetsBindingObserver {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
-    // Batal notifikasi saat aplikasi baru saja dibuka
-    NotificationService().cancelAllNotifications();
+    
+    // Inisialisasi notifikasi setelah animasi splash screen selesai (delay 3 detik)
+    // Ini memastikan animasi loading tidak patah-patah!
+    Future.delayed(const Duration(seconds: 3), () async {
+      final notifService = NotificationService();
+      await notifService.init();
+      await notifService.requestPermissions();
+      notifService.cancelAllNotifications();
+    });
   }
 
   @override
