@@ -34,16 +34,16 @@ class _QuizAppState extends ConsumerState<QuizApp> with WidgetsBindingObserver {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
     
-    // Inisialisasi notifikasi langsung secara asinkron (tanpa await di main thread)
-    // Ini menjamin bahwa layanan sudah siap sebelum pengguna menutup aplikasinya
-    _initNotifications();
-  }
-
-  Future<void> _initNotifications() async {
-    final notifService = NotificationService();
-    await notifService.init();
-    await notifService.requestPermissions();
-    notifService.cancelAllNotifications();
+    // KUNCI KESTABILAN: Tunda inisialisasi berat selama 3 detik.
+    // Ini memastikan seluruh resource HP fokus pada kelancaran animasi Splash Screen.
+    // Jika user menutup aplikasi sebelum 3 detik, fungsi scheduleReminderNotification() 
+    // di layanan_notifikasi.dart sudah memiliki 'await init()' cadangan sehingga tidak akan gagal.
+    Future.delayed(const Duration(seconds: 3), () async {
+      final notifService = NotificationService();
+      await notifService.init();
+      await notifService.requestPermissions();
+      notifService.cancelAllNotifications();
+    });
   }
 
   @override
