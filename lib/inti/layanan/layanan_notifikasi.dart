@@ -60,6 +60,12 @@ class NotificationService {
       channelDescription: 'Notifikasi pengingat untuk membuka aplikasi dan belajar',
       importance: Importance.max,
       priority: Priority.high,
+      styleInformation: BigTextStyleInformation(
+        'Sudah 24 jam nih kamu nggak main Quiz. Jangan biarkan otakmu bersantai terlalu lama, ayo pecahkan rekor hari ini! 🏆',
+        htmlFormatBigText: true,
+        contentTitle: 'Halo, Sobat Jenius! 🌟',
+        htmlFormatContentTitle: true,
+      ),
     );
     
     const NotificationDetails platformChannelSpecifics = NotificationDetails(
