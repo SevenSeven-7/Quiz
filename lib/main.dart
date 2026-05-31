@@ -34,14 +34,16 @@ class _QuizAppState extends ConsumerState<QuizApp> with WidgetsBindingObserver {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
     
-    // Inisialisasi notifikasi setelah animasi splash screen selesai (delay 3 detik)
-    // Ini memastikan animasi loading tidak patah-patah!
-    Future.delayed(const Duration(seconds: 3), () async {
-      final notifService = NotificationService();
-      await notifService.init();
-      await notifService.requestPermissions();
-      notifService.cancelAllNotifications();
-    });
+    // Inisialisasi notifikasi langsung secara asinkron (tanpa await di main thread)
+    // Ini menjamin bahwa layanan sudah siap sebelum pengguna menutup aplikasinya
+    _initNotifications();
+  }
+
+  Future<void> _initNotifications() async {
+    final notifService = NotificationService();
+    await notifService.init();
+    await notifService.requestPermissions();
+    notifService.cancelAllNotifications();
   }
 
   @override

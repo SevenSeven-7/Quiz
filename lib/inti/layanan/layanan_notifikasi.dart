@@ -16,9 +16,10 @@ class NotificationService {
     if (_isInitialized) return;
 
     tz.initializeTimeZones();
+    tz.setLocalLocation(tz.getLocation('Asia/Jakarta'));
 
     const AndroidInitializationSettings initializationSettingsAndroid =
-        AndroidInitializationSettings('@mipmap/launcher_icon');
+        AndroidInitializationSettings('@mipmap/ic_launcher');
 
     const InitializationSettings initializationSettings = InitializationSettings(
       android: initializationSettingsAndroid,
@@ -42,6 +43,8 @@ class NotificationService {
   }
 
   Future<void> scheduleReminderNotification() async {
+    await init(); // Pastikan selalu terinisialisasi sebelum menjadwalkan notifikasi
+    
     final prefs = await SharedPreferences.getInstance();
     final bool notifAktif = prefs.getBool('pengaturan_notifikasi') ?? true;
     
@@ -63,11 +66,14 @@ class NotificationService {
       android: androidPlatformChannelSpecifics,
     );
 
+    // Notifikasi dijadwalkan muncul 24 jam setelah aplikasi ditutup
+    final jadwalNotif = tz.TZDateTime.now(tz.local).add(const Duration(hours: 24));
+
     await _flutterLocalNotificationsPlugin.zonedSchedule(
       id: 0, // ID notifikasi
       title: 'Halo, Sobat Jenius! 🌟',
-      body: 'Kamu belum belajar selama 24 jam nih. Yuk kumpulkan bintang lagi!',
-      scheduledDate: tz.TZDateTime.now(tz.local).add(const Duration(hours: 24)),
+      body: 'Sudah 24 jam nih kamu nggak main Quiz. Jangan biarkan otakmu bersantai terlalu lama, ayo pecahkan rekor hari ini! 🏆',
+      scheduledDate: jadwalNotif,
       notificationDetails: platformChannelSpecifics,
       androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
     );
