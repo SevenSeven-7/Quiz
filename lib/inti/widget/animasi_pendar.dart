@@ -134,7 +134,7 @@ class _PendarPainter extends CustomPainter {
           ..style = PaintingStyle.fill;
           // Menghapus maskFilter blur pada percikan untuk mengurangi lag
           
-        final int numSparks = 8; // Mengurangi jumlah percikan agar lebih ringan
+        const int numSparks = 8; // Mengurangi jumlah percikan agar lebih ringan
         for (int i = 0; i < numSparks; i++) {
           double headProgress = (animationValue + 0.15) % 1.0;
           double sparkOffset = (i * 0.02) + (math.sin(i * 123.45) * 0.01);

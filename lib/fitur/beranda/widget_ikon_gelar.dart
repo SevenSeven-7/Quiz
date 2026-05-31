@@ -175,7 +175,7 @@ class _WidgetIkonGelarState extends ConsumerState<WidgetIkonGelar> {
                 .animate(onPlay: (c) => c.repeat(reverse: true))
                 .scale(begin: const Offset(1, 1), end: const Offset(1.4, 1.4), duration: 400.ms),
             // Elemen dasar (Lidah api)
-            Icon(Icons.workspace_premium_rounded, color: Colors.orangeAccent, size: 38)
+            const Icon(Icons.workspace_premium_rounded, color: Colors.orangeAccent, size: 38)
                 .animate(onPlay: (c) => c.repeat(reverse: true))
                 .scale(begin: const Offset(1, 1), end: const Offset(1.1, 1.1), duration: 300.ms),
             // Elemen utama (Piala / Mahkota Emas)

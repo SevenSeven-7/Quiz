@@ -171,8 +171,7 @@ class QuizNotifier extends StateNotifier<QuizState> {
   void _finishQuiz() {
     _timer?.cancel();
     
-    // Perhitungan persentase skor kuis
-    double scorePercentage = (state.score / state.level.questions.length) * 100;
+    // Perhitungan persentase skor kuis dihapus karena tidak digunakan
     int stars = 1;
 
     // Logika Penghargaan Bintang:

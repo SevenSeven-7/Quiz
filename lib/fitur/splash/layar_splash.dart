@@ -5,7 +5,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../../inti/utils/transisi_halaman.dart';
 import 'layar_buat_nama.dart';
 import '../beranda/layar_utama.dart';
-import '../../inti/layanan/layanan_notifikasi.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
 import '../../inti/penyedia/penyedia_tema.dart';
 

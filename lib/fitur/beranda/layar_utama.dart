@@ -8,7 +8,6 @@ import '../../inti/konstanta/warna_aplikasi.dart';
 import '../../inti/penyedia/penyedia_tema.dart';
 import '../progres/penyedia_progres.dart';
 import '../pengaturan/layar_pengaturan.dart';
-import '../pengaturan/layar_pengaturan.dart';
 import 'layar_beranda.dart';
 import '../../inti/widget/animasi_pendar.dart';
 
