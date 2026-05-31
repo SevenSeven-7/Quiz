@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../../inti/utils/transisi_halaman.dart';
 import 'layar_buat_nama.dart';
 import '../beranda/layar_utama.dart';
+import '../../inti/layanan/layanan_notifikasi.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
 import '../../inti/penyedia/penyedia_tema.dart';
 
@@ -29,7 +30,11 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
       duration: const Duration(milliseconds: 1500),
     )..repeat(reverse: true);
     _pulseAnimation = CurvedAnimation(parent: _pulseController, curve: Curves.easeInOut);
-    _routing();
+    
+    // Pastikan frame pertama sudah digambar di layar sebelum memulai hitung mundur 1.05s
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _routing();
+    });
   }
 
   @override
@@ -39,7 +44,9 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
   }
 
   Future<void> _routing() async {
-    await Future.delayed(const Duration(milliseconds: 2800));
+    // Mulai hitung mundur 2.5 detik agar animasinya terasa pas dan tidak buru-buru
+    await Future.delayed(const Duration(milliseconds: 2500));
+    
     final prefs = await SharedPreferences.getInstance();
     final playerName = prefs.getString('player_name');
     if (!mounted) return;
@@ -220,7 +227,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                     ),
                   )
                   .animate()
-                  .fadeIn(duration: 600.ms, delay: 1000.ms),
+                  .fadeIn(duration: 400.ms, delay: 1000.ms),
                 ],
               ],
             ),
