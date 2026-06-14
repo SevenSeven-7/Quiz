@@ -4,7 +4,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
-import '../../inti/penyedia/penyedia_tema.dart';
 import '../progres/penyedia_progres.dart';
 import '../beranda/layar_utama.dart';
 import '../splash/layar_buat_nama.dart';
@@ -54,35 +53,31 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
     final playerName = ref.read(playerNameProvider);
     final controller = TextEditingController(text: playerName);
     final formKey = GlobalKey<FormState>();
-    final currentMode = ref.read(temaProvider);
-    final isDark = currentMode == AppThemeMode.dark;
-    final isComputer = currentMode == AppThemeMode.computer;
-    final accentColor = isComputer ? AppColors.primaryComputer : AppColors.primary;
-    final borderRadius = isComputer ? 4.0 : 24.0;
 
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: isDark ? AppColors.surface : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightBlue),
+        backgroundColor: AppColors.surface,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(borderRadius),
-          side: BorderSide(color: accentColor.withValues(alpha: 0.4)),
+          borderRadius: BorderRadius.circular(24.0),
+          side: BorderSide(color: AppColors.primary.withValues(alpha: 0.4)),
         ),
-        title: Text('Ubah Nama Pemain',
-            style: TextStyle(fontWeight: FontWeight.bold, color: isDark ? Colors.white : (isComputer ? AppColors.textPrimaryComputer : AppColors.textPrimaryLightBlue))),
+        title: const Text('Ubah Nama Pemain',
+            style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.textPrimary)),
         content: Form(
           key: formKey,
           child: TextFormField(
             controller: controller,
             maxLength: 15,
             textCapitalization: TextCapitalization.words,
+            style: const TextStyle(color: AppColors.textPrimary),
             decoration: InputDecoration(
-              prefixIcon: Icon(Icons.person_outline, color: accentColor),
+              prefixIcon: const Icon(Icons.person_outline, color: AppColors.primary),
               hintText: 'Nama baru...',
               filled: true,
-              fillColor: isDark ? AppColors.background : (isComputer ? AppColors.backgroundComputer : AppColors.backgroundLightBlue),
-              border: OutlineInputBorder(borderRadius: BorderRadius.circular(isComputer ? 4.0 : 12.0), borderSide: BorderSide.none),
-              focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(isComputer ? 4.0 : 12.0), borderSide: BorderSide(color: accentColor, width: 1.5)),
+              fillColor: AppColors.background,
+              border: OutlineInputBorder(borderRadius: BorderRadius.circular(12.0), borderSide: BorderSide.none),
+              focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(12.0), borderSide: const BorderSide(color: AppColors.primary, width: 1.5)),
             ),
             validator: (v) {
               if (v == null || v.trim().isEmpty) return 'Nama tidak boleh kosong!';
@@ -95,21 +90,20 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
           TextButton(onPressed: () { AudioHelper.playClick(); Navigator.of(context).pop(); }, child: const Text('Batal', style: TextStyle(color: Colors.grey))),
           ElevatedButton(
             onPressed: () async {
-AudioHelper.playClick();
+              AudioHelper.playClick();
               if (!formKey.currentState!.validate()) return;
               final newName = controller.text.trim();
               final prefs = await SharedPreferences.getInstance();
               await prefs.setString('player_name', newName);
               ref.read(playerNameProvider.notifier).state = newName;
-              // Progress sudah otomatis tersimpan lokal
               if (context.mounted) {
                 Navigator.of(context).pop();
                 setState(() {});
               }
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: accentColor,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(isComputer ? 4.0 : 12.0)),
+              backgroundColor: AppColors.primary,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
             ),
             child: const Text('Simpan', style: TextStyle(color: Colors.white)),
           ),
@@ -120,27 +114,21 @@ AudioHelper.playClick();
 
   // ─── Dialog Hapus Akun ────────────────────────────────────────────
   void _tampilkanDialogHapusAkun() {
-    final currentMode = ref.read(temaProvider);
-    final isDark = currentMode == AppThemeMode.dark;
-    final isComputer = currentMode == AppThemeMode.computer;
-    final borderRadius = isComputer ? 4.0 : 24.0;
-    final btnRadius = isComputer ? 4.0 : 12.0;
-
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: isDark ? AppColors.surface : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightBlue),
+        backgroundColor: AppColors.surface,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(borderRadius),
+          borderRadius: BorderRadius.circular(24.0),
           side: BorderSide(color: AppColors.failure.withValues(alpha: 0.4)),
         ),
         title: const Text('Hapus Akun', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.failure)),
-        content: const Text('Semua data progres, bintang, dan pencapaian kamu akan terhapus permanen.\n\nApakah kamu yakin?'),
+        content: const Text('Semua data progres, bintang, dan pencapaian kamu akan terhapus permanen.\n\nApakah kamu yakin?', style: TextStyle(color: AppColors.textPrimary)),
         actions: [
           TextButton(onPressed: () { AudioHelper.playClick(); Navigator.of(context).pop(); }, child: const Text('Batal', style: TextStyle(color: Colors.grey))),
           ElevatedButton(
             onPressed: () async {
-AudioHelper.playClick();
+              AudioHelper.playClick();
               final prefs = await SharedPreferences.getInstance();
               await prefs.clear();
               ref.read(playerNameProvider.notifier).state = '';
@@ -154,7 +142,7 @@ AudioHelper.playClick();
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.failure,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(btnRadius)),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
             ),
             child: const Text('Hapus', style: TextStyle(color: Colors.white)),
           ),
@@ -170,13 +158,6 @@ AudioHelper.playClick();
       'Ilmu Pengetahuan Sosial (IPS)', 'PPKn', 'Bahasa Inggris',
       'Sejarah', 'Teknologi & Informatika (TIK)', 'Agama Islam'
     ];
-    final currentMode = ref.read(temaProvider);
-    final isDark = currentMode == AppThemeMode.dark;
-    final isComputer = currentMode == AppThemeMode.computer;
-    final bgColor = isDark ? AppColors.surface : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightBlue);
-    final accentColor = isComputer ? AppColors.primaryComputer : AppColors.primary;
-    final accentGradient = isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient;
-    final borderRadius = isComputer ? 4.0 : 32.0;
 
     showModalBottomSheet(
       context: context,
@@ -188,15 +169,15 @@ AudioHelper.playClick();
           constraints: BoxConstraints(maxHeight: maxH),
           padding: const EdgeInsets.fromLTRB(28, 16, 28, 0),
           decoration: BoxDecoration(
-            color: bgColor,
-            borderRadius: BorderRadius.vertical(top: Radius.circular(borderRadius)),
-            border: Border(top: BorderSide(color: accentColor.withValues(alpha: 0.3), width: 1.5)),
+            color: AppColors.surface,
+            borderRadius: const BorderRadius.vertical(top: Radius.circular(32.0)),
+            border: Border(top: BorderSide(color: AppColors.primary.withValues(alpha: 0.3), width: 1.5)),
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               // Handle bar
-              Container(width: 40, height: 4, decoration: BoxDecoration(color: Colors.grey.withValues(alpha: 0.3), borderRadius: BorderRadius.circular(isComputer ? 0 : 2))),
+              Container(width: 40, height: 4, decoration: BoxDecoration(color: Colors.grey.withValues(alpha: 0.3), borderRadius: BorderRadius.circular(2))),
               const SizedBox(height: 20),
 
               // Scrollable content
@@ -208,38 +189,38 @@ AudioHelper.playClick();
                     children: [
                       Container(
                         padding: const EdgeInsets.all(16),
-                        decoration: BoxDecoration(gradient: accentGradient, shape: isComputer ? BoxShape.rectangle : BoxShape.circle, borderRadius: isComputer ? BorderRadius.circular(8) : null,
-                          boxShadow: isComputer ? AppColors.computerShadow : AppColors.primaryGlow),
+                        decoration: BoxDecoration(gradient: AppColors.primaryGradient, shape: BoxShape.circle,
+                          boxShadow: AppColors.primaryGlow),
                         child: const Icon(Icons.psychology_rounded, color: Colors.white, size: 40),
                       ),
                       const SizedBox(height: 16),
                       ShaderMask(
-                        shaderCallback: (b) => accentGradient.createShader(b),
+                        shaderCallback: (b) => AppColors.primaryGradient.createShader(b),
                         child: const Text('Quiz', style: TextStyle(fontSize: 32, fontWeight: FontWeight.w900, color: Colors.white, letterSpacing: 4)),
                       ),
                       const SizedBox(height: 8),
-                      Text('Versi $_versiAplikasi', style: TextStyle(color: accentColor.withValues(alpha: 0.7), fontSize: 13)),
+                      Text('Versi $_versiAplikasi', style: TextStyle(color: AppColors.primary.withValues(alpha: 0.7), fontSize: 13)),
                       const SizedBox(height: 20),
 
                       Container(
                         padding: const EdgeInsets.all(16),
                         decoration: BoxDecoration(
-                          color: accentColor.withValues(alpha: 0.06),
-                          borderRadius: BorderRadius.circular(isComputer ? 4 : 16),
-                          border: Border.all(color: accentColor.withValues(alpha: 0.15)),
+                          color: AppColors.primary.withValues(alpha: 0.06),
+                          borderRadius: BorderRadius.circular(16),
+                          border: Border.all(color: AppColors.primary.withValues(alpha: 0.15)),
                         ),
                         child: const Text(
-                          'Quiz adalah aplikasi pembelajaran interaktif berbasis Kurikulum Merdeka dan K-13. Pemain dapat memilih berbagai mata pelajaran mulai dari Agama Islam, Bahasa Indonesia, Matematika, IPA, IPS, PPKn, hingga Bahasa Inggris.\n\nCara Kerja:\n• Jawab soal dengan benar untuk mengumpulkan Bintang ⭐.\n• Semakin banyak bintang, Anda akan mendapatkan Gelar Pangkat yang lebih tinggi (Pemula → Legenda) dan membuka level baru.\n• Terdapat 3 pilihan tema (Gelap / Terang / Komputer) serta efek suara interaktif untuk pengalaman belajar yang seru!',
+                          'Quiz adalah aplikasi pembelajaran interaktif berbasis Kurikulum Merdeka dan K-13. Pemain dapat memilih berbagai mata pelajaran mulai dari Agama Islam, Bahasa Indonesia, Matematika, IPA, IPS, PPKn, hingga Bahasa Inggris.\n\nCara Kerja:\n• Jawab soal dengan benar untuk mengumpulkan Bintang ⭐.\n• Semakin banyak bintang, Anda akan mendapatkan Gelar Pangkat yang lebih tinggi (Pemula → Legenda) dan membuka level baru.\n• Desain elegan dengan efek suara interaktif untuk pengalaman belajar yang seru!',
                           textAlign: TextAlign.left,
-                          style: TextStyle(fontSize: 13, height: 1.5),
+                          style: TextStyle(fontSize: 13, height: 1.5, color: AppColors.textPrimary),
                         ),
                       ),
                       const SizedBox(height: 20),
 
-                      Align(
+                      const Align(
                         alignment: Alignment.centerLeft,
                         child: Text('MATA PELAJARAN TERSEDIA',
-                            style: TextStyle(fontSize: 11, fontWeight: FontWeight.w700, color: accentColor, letterSpacing: 1.5)),
+                            style: TextStyle(fontSize: 11, fontWeight: FontWeight.w700, color: AppColors.primary, letterSpacing: 1.5)),
                       ),
                       const SizedBox(height: 12),
 
@@ -248,7 +229,7 @@ AudioHelper.playClick();
                         runSpacing: 8,
                         children: mataPelajaran.map((mp) => Container(
                           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                          decoration: BoxDecoration(gradient: accentGradient, borderRadius: BorderRadius.circular(isComputer ? 4 : 20)),
+                          decoration: BoxDecoration(gradient: AppColors.primaryGradient, borderRadius: BorderRadius.circular(20)),
                           child: Text(mp, style: const TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.w600)),
                         )).toList(),
                       ),
@@ -265,9 +246,9 @@ AudioHelper.playClick();
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () { AudioHelper.playClick(); Navigator.pop(context); }, style: ElevatedButton.styleFrom(
-                      backgroundColor: accentColor,
+                      backgroundColor: AppColors.primary,
                       padding: const EdgeInsets.symmetric(vertical: 14),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(isComputer ? 4 : 14)),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
                     ),
                     child: const Text('Tutup', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                   ),
@@ -285,32 +266,10 @@ AudioHelper.playClick();
   Widget build(BuildContext context) {
     final playerName = ref.watch(playerNameProvider);
     final progress = ref.watch(progressProvider);
-    final currentThemeMode = ref.watch(temaProvider);
-    final isDark = currentThemeMode == AppThemeMode.dark;
-    final isComputer = currentThemeMode == AppThemeMode.computer;
-
-    final bgGradient = isDark
-        ? AppColors.backgroundGradient
-        : isComputer
-            ? AppColors.backgroundComputerGradient
-            : AppColors.backgroundLightGradient;
-    final cardColor = isDark
-        ? AppColors.surfaceLight.withValues(alpha: 0.6)
-        : isComputer
-            ? AppColors.surfaceComputer
-            : AppColors.surfaceLightBlueSecond.withValues(alpha: 0.8);
-    final labelColor = isComputer ? AppColors.primaryComputer : AppColors.primary;
-    final textColor = isDark ? Colors.white : (isComputer ? AppColors.textPrimaryComputer : AppColors.textPrimaryLightBlue);
-    final subTextColor = isDark ? AppColors.textSecondary : (isComputer ? AppColors.textSecondaryComputer : AppColors.textSecondaryLightBlue);
-    final divColor = isDark ? Colors.white.withValues(alpha: 0.06) : (isComputer ? AppColors.surfaceComputerBorder : Colors.black.withValues(alpha: 0.06));
-    final headerGradient = isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient;
-
-    final soundIconColor = isComputer ? AppColors.primaryComputerLight : AppColors.accent;
-    final notifIconColor = isComputer ? AppColors.primaryComputerLight : AppColors.gold;
 
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(gradient: bgGradient),
+        decoration: const BoxDecoration(gradient: AppColors.backgroundGradient),
         child: SafeArea(
           child: Column(
             children: [
@@ -320,11 +279,11 @@ AudioHelper.playClick();
                 child: Row(
                   children: [
                     ShaderMask(
-                      shaderCallback: (b) => headerGradient.createShader(b),
+                      shaderCallback: (b) => AppColors.primaryGradient.createShader(b),
                       child: const Text('Pengaturan', style: TextStyle(fontSize: 28, fontWeight: FontWeight.w900, color: Colors.white)),
                     ),
                     const Spacer(),
-                    Icon(Icons.settings_outlined, color: labelColor, size: 28),
+                    const Icon(Icons.settings_outlined, color: AppColors.primary, size: 28),
                   ],
                 ),
               ).animate().fadeIn(duration: 400.ms).slideY(begin: -0.2, end: 0),
@@ -339,128 +298,136 @@ AudioHelper.playClick();
                   delegate: SliverChildListDelegate([
 
                     // ── PROFIL ─────────────────────────────────────────
-                    _buildLabel('Profil', Icons.person_outline, labelColor),
-                    const SizedBox(height: 10),
-                    _buildGlassCard(
-                      color: cardColor, divColor: divColor, isComputer: isComputer, glowColor: progress.warnaGelar,
-                      child: InkWell(
-                        onTap: () { AudioHelper.playClick(); _tampilkanDialogUbahNama(); },
-                        borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
-                        child: Padding(
-                          padding: const EdgeInsets.all(20),
-                          child: Row(
-                            children: [
-                              AnimasiPendar(
-                                warna: progress.warnaGelar,
-                                isCircle: !isComputer,
-                                borderRadius: isComputer ? 8 : 0,
-                                borderWidth: 3.0,
-                                child: Container(
-                                  width: 56, height: 56,
-                                  decoration: BoxDecoration(
-                                    shape: isComputer ? BoxShape.rectangle : BoxShape.circle,
-                                    borderRadius: isComputer ? BorderRadius.circular(8) : null,
-                                    gradient: isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient,
-                                    boxShadow: isComputer ? AppColors.computerShadow : AppColors.primaryGlow,
-                                  ),
-                                  child: Center(child: Text(
-                                    playerName.isNotEmpty ? playerName[0].toUpperCase() : 'P',
-                                    style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
-                                  )),
-                                ),
-                              ),
-                              const SizedBox(width: 16),
-                              Expanded(
-                                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                                  Text(playerName, style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: textColor)),
-                                  const SizedBox(height: 4),
-                                  Text(progress.gelarKecerdasan, style: TextStyle(fontSize: 13, color: isComputer ? AppColors.accentComputer : progress.warnaGelar, fontWeight: FontWeight.w600)),
-                                ]),
-                              ),
-                              AnimasiPendar(
-                                warna: progress.warnaGelar,
-                                borderRadius: isComputer ? 4 : 20,
-                                borderWidth: 2.0,
-                                child: Container(
-                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                                  decoration: BoxDecoration(
-                                    color: labelColor.withValues(alpha: 0.12),
-                                    borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
-                                  ),
-                                  child: Text('Ubah Nama', style: TextStyle(color: labelColor, fontSize: 12, fontWeight: FontWeight.bold)),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ).animate().fadeIn(delay: 100.ms, duration: 400.ms).slideY(begin: 0.1, end: 0),
-
-                    const SizedBox(height: 28),
-
-                    // ── SUARA & TAMPILAN ──────────────────────────────
-                    _buildLabel('Suara & Tampilan', Icons.tune_outlined, labelColor),
-                    const SizedBox(height: 10),
-                    _buildGlassCard(
-                      color: cardColor, divColor: divColor, isComputer: isComputer, glowColor: progress.warnaGelar,
-                      child: Column(children: [
-                        _buildToggle(icon: Icons.volume_up_outlined, iconColor: soundIconColor, label: 'Efek Suara', subtitle: 'Aktifkan efek suara saat menekan tombol dan menjawab soal', value: _suaraAktif, onChanged: _simpanSuara, textColor: textColor, subTextColor: subTextColor, isComputer: isComputer),
-                        Divider(color: divColor, height: 1),
-                        _buildToggle(icon: Icons.notifications_outlined, iconColor: notifIconColor, label: 'Notifikasi', subtitle: 'Terima pengingat belajar harian', value: _notifikasiAktif, onChanged: _simpanNotifikasi, textColor: textColor, subTextColor: subTextColor, isComputer: isComputer),
-                        Divider(color: divColor, height: 1),
-
-                        // Tema Selector (3 Modes)
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
+                    _buildLabel('Profil', Icons.person_outline, AppColors.primary),
+                    const SizedBox(height: 30), // Ruang ekstra untuk avatar melayang
+                    Stack(
+                      clipBehavior: Clip.none,
+                      alignment: Alignment.topCenter,
+                      children: [
+                        // Lapis Bawah: Card
+                        Container(
+                          margin: const EdgeInsets.only(top: 36),
+                          child: _buildGlassCard(
+                            color: AppColors.surface, divColor: Colors.black12, glowColor: progress.warnaGelar,
+                            child: Padding(
+                              padding: const EdgeInsets.fromLTRB(20, 48, 20, 20), // Padding atas besar untuk avatar
+                              child: Column(
                                 children: [
-                                  Container(
-                                    padding: const EdgeInsets.all(10),
-                                    decoration: BoxDecoration(color: labelColor.withValues(alpha: 0.12), borderRadius: BorderRadius.circular(isComputer ? 4 : 12)),
-                                    child: Icon(Icons.palette_outlined, color: labelColor, size: 22),
+                                  Text(
+                                    playerName,
+                                    style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w900, color: AppColors.textPrimary),
                                   ),
-                                  const SizedBox(width: 16),
-                                  Expanded(
-                                    child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                                      Text('Tema Aplikasi', style: TextStyle(color: textColor, fontWeight: FontWeight.w600, fontSize: 15)),
-                                      const SizedBox(height: 2),
-                                      Text('Pilih mode tampilan', style: TextStyle(color: subTextColor, fontSize: 12)),
-                                    ]),
+                                  const SizedBox(height: 4),
+                                  Text(
+                                    progress.gelarKecerdasan,
+                                    style: TextStyle(fontSize: 14, color: progress.warnaGelar, fontWeight: FontWeight.bold, letterSpacing: 1),
+                                  ),
+                                  const SizedBox(height: 20),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Column(
+                                        children: [
+                                          const Text('Bintang', style: TextStyle(fontSize: 12, color: AppColors.textSecondary)),
+                                          const SizedBox(height: 4),
+                                          Row(
+                                            children: [
+                                              const Icon(Icons.star_rounded, color: AppColors.gold, size: 18),
+                                              const SizedBox(width: 4),
+                                              Text('${progress.totalStars}', style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: AppColors.textPrimary)),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                      const SizedBox(width: 32),
+                                      Container(width: 1, height: 30, color: Colors.black12),
+                                      const SizedBox(width: 32),
+                                      Column(
+                                        children: [
+                                          const Text('Level Max', style: TextStyle(fontSize: 12, color: AppColors.textSecondary)),
+                                          const SizedBox(height: 4),
+                                          Row(
+                                            children: [
+                                              const Icon(Icons.workspace_premium_rounded, color: AppColors.accent, size: 18),
+                                              const SizedBox(width: 4),
+                                              Text('${progress.totalStars > 0 ? (progress.totalStars / 3).floor() : 0}', style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: AppColors.textPrimary)),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 20),
+                                  SizedBox(
+                                    width: double.infinity,
+                                    child: ElevatedButton.icon(
+                                      onPressed: () { AudioHelper.playClick(); _tampilkanDialogUbahNama(); },
+                                      icon: const Icon(Icons.edit_rounded, size: 18, color: Colors.white),
+                                      label: const Text('Ubah Nama', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                                      style: ElevatedButton.styleFrom(
+                                        backgroundColor: progress.warnaGelar,
+                                        foregroundColor: Colors.white,
+                                        elevation: 0,
+                                        padding: const EdgeInsets.symmetric(vertical: 12),
+                                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                                      ),
+                                    ),
                                   ),
                                 ],
                               ),
-                              const SizedBox(height: 16),
-                              Container(
-                                padding: const EdgeInsets.all(4),
-                                decoration: BoxDecoration(
-                                  color: isDark ? AppColors.surface : (isComputer ? AppColors.surfaceComputerSecond : AppColors.backgroundLightBlue),
-                                  borderRadius: BorderRadius.circular(isComputer ? 4 : 16),
-                                  border: Border.all(color: divColor),
-                                ),
-                                child: Row(
-                                  children: [
-                                    _buildThemeOption('Komputer', Icons.computer_rounded, AppThemeMode.computer, currentThemeMode, textColor, isDark, isComputer),
-                                    _buildThemeOption('Terang', Icons.light_mode_rounded, AppThemeMode.light, currentThemeMode, textColor, isDark, isComputer),
-                                    _buildThemeOption('Gelap', Icons.dark_mode_rounded, AppThemeMode.dark, currentThemeMode, textColor, isDark, isComputer),
-                                  ],
-                                ),
-                              ),
-                            ],
+                            ),
                           ),
                         ),
+
+                        // Lapis Atas: Avatar Melayang (Menonjol keluar dari card)
+                        Positioned(
+                          top: 0,
+                          child: AnimasiPendar(
+                            warna: progress.warnaGelar,
+                            isCircle: true,
+                            borderWidth: 4.0,
+                            child: Container(
+                              width: 72,
+                              height: 72,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                gradient: AppColors.primaryGradient,
+                                boxShadow: AppColors.primaryGlow,
+                                border: Border.all(color: AppColors.surface, width: 4),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  playerName.isNotEmpty ? playerName[0].toUpperCase() : 'P',
+                                  style: const TextStyle(fontSize: 32, fontWeight: FontWeight.w900, color: Colors.white),
+                                ),
+                              ),
+                            ),
+                          ).animate().scale(delay: 200.ms, curve: Curves.elasticOut, duration: 800.ms),
+                        ),
+                      ],
+                    ).animate().fadeIn(delay: 100.ms, duration: 400.ms).slideY(begin: 0.1, end: 0),
+
+                    const SizedBox(height: 36),
+
+                    // ── SUARA & TAMPILAN ──────────────────────────────
+                    _buildLabel('Suara & Tampilan', Icons.tune_outlined, AppColors.primary),
+                    const SizedBox(height: 10),
+                    _buildGlassCard(
+                      color: AppColors.surface, divColor: Colors.black12, glowColor: progress.warnaGelar,
+                      child: Column(children: [
+                        _buildToggle(icon: Icons.volume_up_outlined, iconColor: AppColors.accent, label: 'Efek Suara', subtitle: 'Aktifkan efek suara saat menjawab soal', value: _suaraAktif, onChanged: _simpanSuara),
+                        const Divider(color: Colors.black12, height: 1),
+                        _buildToggle(icon: Icons.notifications_outlined, iconColor: AppColors.gold, label: 'Notifikasi', subtitle: 'Terima pengingat belajar harian', value: _notifikasiAktif, onChanged: _simpanNotifikasi),
                       ]),
                     ).animate().fadeIn(delay: 200.ms, duration: 400.ms).slideY(begin: 0.1, end: 0),
 
                     const SizedBox(height: 28),
 
                     // ── DATA & AKUN ───────────────────────────────────
-                    _buildLabel('Data & Akun', Icons.shield_outlined, labelColor),
+                    _buildLabel('Data & Akun', Icons.shield_outlined, AppColors.primary),
                     const SizedBox(height: 10),
                     _buildGlassCard(
-                      color: cardColor, divColor: divColor, isComputer: isComputer, glowColor: progress.warnaGelar,
+                      color: AppColors.surface, divColor: Colors.black12, glowColor: progress.warnaGelar,
                       child: _buildAction(
                         icon: Icons.delete_forever_rounded,
                         iconColor: AppColors.failure,
@@ -468,85 +435,45 @@ AudioHelper.playClick();
                         subtitle: 'Hapus semua data akun secara permanen',
                         onTap: () { AudioHelper.playClick(); _tampilkanDialogHapusAkun(); },
                         isDestructive: true,
-                        textColor: textColor,
-                        subTextColor: subTextColor,
-                        isComputer: isComputer,
                       ),
                     ).animate().fadeIn(delay: 300.ms, duration: 400.ms).slideY(begin: 0.1, end: 0),
 
                     const SizedBox(height: 28),
 
                     // ── TENTANG APLIKASI ──────────────────────────────
-                    _buildLabel('Tentang Aplikasi', Icons.info_outline, labelColor),
+                    _buildLabel('Tentang Aplikasi', Icons.info_outline, AppColors.primary),
                     const SizedBox(height: 10),
                     _buildGlassCard(
-                      color: cardColor, divColor: divColor, isComputer: isComputer, glowColor: progress.warnaGelar,
+                      color: AppColors.surface, divColor: Colors.black12, glowColor: progress.warnaGelar,
                       child: _buildAction(
                         icon: Icons.quiz_outlined,
-                        iconColor: labelColor,
+                        iconColor: AppColors.primary,
                         label: 'Deskripsi Aplikasi',
                         subtitle: 'Pelajari tentang Quiz App lebih lanjut',
                         onTap: () { AudioHelper.playClick(); _tampilkanDeskripsiAplikasi(); },
-                        textColor: textColor,
-                        subTextColor: subTextColor,
-                        isComputer: isComputer,
                       ),
                     ).animate().fadeIn(delay: 400.ms, duration: 400.ms).slideY(begin: 0.1, end: 0),
 
                     const SizedBox(height: 32),
-                    Center(
-                      child: Text('Quiz App · v$_versiAplikasi',
-                          style: TextStyle(color: subTextColor.withValues(alpha: 0.4), fontSize: 12, letterSpacing: 1)),
+                    const Center(
+                      child: Text('Quiz App · v1.1.0',
+                          style: TextStyle(color: AppColors.textSecondary, fontSize: 12, letterSpacing: 1)),
                     ).animate().fadeIn(delay: 500.ms),
                     const SizedBox(height: 120),
-                  ]),
-                ),
+                    ]),
+                    ),
+                  ),
+                ],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
-      ],
+      ),
     ),
-  ),
-),
-);
+  );
 }
 
   // ─── Widget Helpers ───────────────────────────────────────────────
-
-  Widget _buildThemeOption(String label, IconData icon, AppThemeMode mode, AppThemeMode currentMode, Color textColor, bool isDark, bool isComputer) {
-    final isSelected = currentMode == mode;
-    final activeColor = isComputer ? AppColors.primaryComputer : AppColors.primary;
-    final inactiveTextColor = isDark ? Colors.white54 : (isComputer ? AppColors.textSecondaryComputer : Colors.black54);
-    return Expanded(
-      child: GestureDetector(
-        onTap: () { AudioHelper.playClick(); ref.read(temaProvider.notifier).ubahTema(mode); }, child: AnimatedContainer(
-          duration: const Duration(milliseconds: 250),
-          curve: Curves.easeOutCubic,
-          padding: const EdgeInsets.symmetric(vertical: 10),
-          decoration: BoxDecoration(
-            color: isSelected ? activeColor : Colors.transparent,
-            borderRadius: BorderRadius.circular(isComputer ? 4 : 12),
-            boxShadow: isSelected
-                ? (isDark ? AppColors.primaryGlow : (isComputer ? AppColors.computerShadow : AppColors.lightBlueGlow))
-                : [],
-          ),
-          child: Column(
-            children: [
-              Icon(icon, size: 20, color: isSelected ? Colors.white : inactiveTextColor),
-              const SizedBox(height: 4),
-              Text(label, style: TextStyle(
-                fontSize: 11,
-                fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
-                color: isSelected ? Colors.white : inactiveTextColor,
-              )),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
   Widget _buildLabel(String label, IconData icon, Color color) {
     return Row(children: [
       Icon(icon, size: 16, color: color),
@@ -555,55 +482,55 @@ AudioHelper.playClick();
     ]);
   }
 
-  Widget _buildGlassCard({required Widget child, required Color color, required Color divColor, required bool isComputer, required Color glowColor}) {
+  Widget _buildGlassCard({required Widget child, required Color color, required Color divColor, required Color glowColor}) {
     return AnimasiPendar(
       warna: glowColor,
-      borderRadius: isComputer ? 4 : 20,
+      borderRadius: 20,
       borderWidth: 2.0,
       child: Container(
-        decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(isComputer ? 4 : 20)),
-        child: ClipRRect(borderRadius: BorderRadius.circular(isComputer ? 4 : 20), child: child),
+        decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(20), boxShadow: AppColors.cardShadow),
+        child: ClipRRect(borderRadius: BorderRadius.circular(20), child: child),
       ),
     );
   }
 
   Widget _buildToggle({
     required IconData icon, required Color iconColor, required String label, required String subtitle,
-    required bool value, required ValueChanged<bool> onChanged, required Color textColor, required Color subTextColor, required bool isComputer,
+    required bool value, required ValueChanged<bool> onChanged,
   }) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       child: Row(children: [
-        Container(padding: const EdgeInsets.all(10), decoration: BoxDecoration(color: iconColor.withValues(alpha: 0.12), borderRadius: BorderRadius.circular(isComputer ? 4 : 12)), child: Icon(icon, color: iconColor, size: 22)),
+        Container(padding: const EdgeInsets.all(10), decoration: BoxDecoration(color: iconColor.withValues(alpha: 0.12), borderRadius: BorderRadius.circular(12)), child: Icon(icon, color: iconColor, size: 22)),
         const SizedBox(width: 16),
         Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          Text(label, style: TextStyle(color: textColor, fontWeight: FontWeight.w600, fontSize: 15)),
+          Text(label, style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w600, fontSize: 15)),
           const SizedBox(height: 2),
-          Text(subtitle, style: TextStyle(color: subTextColor, fontSize: 12)),
+          Text(subtitle, style: const TextStyle(color: AppColors.textSecondary, fontSize: 12)),
         ])),
-        Switch(value: value, onChanged: onChanged),
+        Switch(value: value, onChanged: onChanged, activeColor: AppColors.primary),
       ]),
     );
   }
 
   Widget _buildAction({
     required IconData icon, required Color iconColor, required String label, required String subtitle,
-    required VoidCallback onTap, bool isDestructive = false, required Color textColor, required Color subTextColor, required bool isComputer,
+    required VoidCallback onTap, bool isDestructive = false,
   }) {
     return InkWell(
       onTap: onTap,
-      borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
+      borderRadius: BorderRadius.circular(20),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
         child: Row(children: [
-          Container(padding: const EdgeInsets.all(10), decoration: BoxDecoration(color: iconColor.withValues(alpha: 0.12), borderRadius: BorderRadius.circular(isComputer ? 4 : 12)), child: Icon(icon, color: iconColor, size: 22)),
+          Container(padding: const EdgeInsets.all(10), decoration: BoxDecoration(color: iconColor.withValues(alpha: 0.12), borderRadius: BorderRadius.circular(12)), child: Icon(icon, color: iconColor, size: 22)),
           const SizedBox(width: 16),
           Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Text(label, style: TextStyle(color: isDestructive ? AppColors.failure : textColor, fontWeight: FontWeight.w600, fontSize: 15)),
+            Text(label, style: TextStyle(color: isDestructive ? AppColors.failure : AppColors.textPrimary, fontWeight: FontWeight.w600, fontSize: 15)),
             const SizedBox(height: 2),
-            Text(subtitle, style: TextStyle(color: subTextColor, fontSize: 12)),
+            Text(subtitle, style: const TextStyle(color: AppColors.textSecondary, fontSize: 12)),
           ])),
-          Icon(Icons.chevron_right, color: subTextColor.withValues(alpha: 0.4), size: 20),
+          const Icon(Icons.chevron_right, color: Colors.black26, size: 20),
         ]),
       ),
     );

@@ -7,6 +7,7 @@ class AnimasiPendar extends ConsumerStatefulWidget {
   final Widget child;
   final Color warna;
   final double borderRadius;
+  final BorderRadiusGeometry? customBorder;
   final double borderWidth;
   final bool isCircle;
   final bool forceLegend;
@@ -16,6 +17,7 @@ class AnimasiPendar extends ConsumerStatefulWidget {
     required this.child,
     required this.warna,
     this.borderRadius = 0,
+    this.customBorder,
     this.borderWidth = 2.0,
     this.isCircle = false,
     this.forceLegend = false,
@@ -43,7 +45,7 @@ class _AnimasiPendarState extends ConsumerState<AnimasiPendar> with SingleTicker
   @override
   Widget build(BuildContext context) {
     final progress = ref.watch(progressProvider);
-    final isLegend = progress.totalStars >= 2100 || widget.forceLegend;
+    final isLegend = progress.totalStars >= 1800 || widget.forceLegend;
 
     return RepaintBoundary(
       child: AnimatedBuilder(
@@ -54,6 +56,7 @@ class _AnimasiPendarState extends ConsumerState<AnimasiPendar> with SingleTicker
               rotation: _controller.value * 2 * math.pi,
               warna: widget.warna,
               borderRadius: widget.borderRadius,
+              customBorder: widget.customBorder,
               borderWidth: isLegend ? widget.borderWidth * 1.5 : widget.borderWidth,
               isCircle: widget.isCircle,
               isLegend: isLegend,
@@ -75,6 +78,7 @@ class _PendarPainter extends CustomPainter {
   final double rotation;
   final Color warna;
   final double borderRadius;
+  final BorderRadiusGeometry? customBorder;
   final double borderWidth;
   final bool isCircle;
   final bool isLegend;
@@ -84,6 +88,7 @@ class _PendarPainter extends CustomPainter {
     required this.rotation,
     required this.warna,
     required this.borderRadius,
+    this.customBorder,
     required this.borderWidth,
     required this.isCircle,
     this.isLegend = false,
@@ -107,6 +112,8 @@ class _PendarPainter extends CustomPainter {
     Path path = Path();
     if (isCircle) {
       path.addOval(rect);
+    } else if (customBorder != null) {
+      path.addRRect(customBorder!.resolve(TextDirection.ltr).toRRect(rect));
     } else {
       path.addRRect(RRect.fromRectAndRadius(rect, Radius.circular(borderRadius)));
     }

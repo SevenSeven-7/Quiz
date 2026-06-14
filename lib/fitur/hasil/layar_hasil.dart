@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
-import '../../inti/penyedia/penyedia_tema.dart';
 import '../../inti/widget/animasi_pendar.dart';
 
 class ResultScreen extends ConsumerStatefulWidget {
@@ -81,19 +80,16 @@ class _ResultScreenState extends ConsumerState<ResultScreen> with TickerProvider
   @override
   Widget build(BuildContext context) {
     final percentage = (widget.score / widget.totalQuestions * 100).round();
-    final appTheme = ref.watch(temaProvider);
-    final isDark = appTheme == AppThemeMode.dark;
-    final isComputer = appTheme == AppThemeMode.computer;
 
-    final bgGradient = isComputer ? AppColors.backgroundComputerGradient : (isDark ? AppColors.backgroundGradient : AppColors.backgroundLightGradient);
-    final surfaceColor = isDark ? AppColors.surfaceLight : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond);
-    final messageColor = isComputer ? AppColors.primaryComputer : _messageColor;
-    final primaryGrad = isComputer ? AppColors.primaryComputerGradient : AppColors.buttonGradient;
-    final glow = isComputer ? AppColors.computerShadow : AppColors.primaryGlow;
+    const bgGradient = AppColors.backgroundGradient;
+    final surfaceColor = AppColors.surface;
+    final messageColor = _messageColor;
+    const primaryGrad = AppColors.buttonGradient;
+    final glow = AppColors.primaryGlow;
 
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(gradient: bgGradient),
+        decoration: const BoxDecoration(gradient: bgGradient),
         child: Stack(
           children: [
             // Partikel confetti (hanya saat 3 bintang)
@@ -180,37 +176,58 @@ class _ResultScreenState extends ConsumerState<ResultScreen> with TickerProvider
 
                       const SizedBox(height: 8),
 
-                      Text(
+                      const Text(
                         'Level telah selesai',
-                        style: TextStyle(color: isComputer ? AppColors.textSecondaryComputer : (isDark ? AppColors.textSecondary : AppColors.textSecondaryLight), fontSize: 14),
+                        style: TextStyle(color: AppColors.textSecondary, fontSize: 14),
                       ).animate().fadeIn(delay: 1600.ms),
 
                       const SizedBox(height: 32),
 
-                      // Kartu Skor
+                      // Kartu Skor (Glassmorphism / Holografik)
                       Builder(
                         builder: (context) {
+                          final isHolo = widget.stars == 3;
                           final scoreCard = Container(
                             padding: const EdgeInsets.all(28),
                             decoration: BoxDecoration(
-                              color: surfaceColor.withValues(alpha: 0.7),
+                              // Jika 3 bintang, beri efek holografik halus
+                              gradient: isHolo
+                                  ? LinearGradient(
+                                      colors: [
+                                        Colors.white.withValues(alpha: 0.8),
+                                        const Color(0xFFE0F7FA).withValues(alpha: 0.9), // Cyan tint
+                                        const Color(0xFFF3E5F5).withValues(alpha: 0.9), // Magenta tint
+                                        Colors.white.withValues(alpha: 0.8),
+                                      ],
+                                      begin: Alignment.topLeft,
+                                      end: Alignment.bottomRight,
+                                    )
+                                  : null,
+                              color: isHolo ? null : surfaceColor.withValues(alpha: 0.7),
                               borderRadius: BorderRadius.circular(28),
                               border: Border.all(
-                                color: isComputer ? AppColors.surfaceComputerBorder : messageColor.withValues(alpha: 0.3),
-                                width: 1.5,
+                                color: isHolo ? AppColors.gold.withValues(alpha: 0.8) : messageColor.withValues(alpha: 0.3),
+                                width: isHolo ? 2.5 : 1.5,
                               ),
-                              boxShadow: isComputer ? AppColors.computerCardShadow : [
+                              boxShadow: [
                                 BoxShadow(
-                                  color: messageColor.withValues(alpha: 0.1),
+                                  color: messageColor.withValues(alpha: 0.15),
                                   blurRadius: 30,
-                                  spreadRadius: 2,
+                                  spreadRadius: 5,
+                                  offset: const Offset(0, 10),
                                 ),
+                                if (isHolo)
+                                  BoxShadow(
+                                    color: AppColors.gold.withValues(alpha: 0.2),
+                                    blurRadius: 20,
+                                    spreadRadius: -5,
+                                  ),
                               ],
                             ),
                             child: Column(
                               children: [
                                 ShaderMask(
-                                  shaderCallback: (bounds) => isComputer ? AppColors.primaryComputerGradient.createShader(bounds) : LinearGradient(
+                                  shaderCallback: (bounds) => LinearGradient(
                                     colors: [messageColor, AppColors.primary],
                                   ).createShader(bounds),
                                   child: TweenAnimationBuilder<int>(
@@ -220,25 +237,25 @@ class _ResultScreenState extends ConsumerState<ResultScreen> with TickerProvider
                                     builder: (context, value, child) {
                                       return Text(
                                         '$value/${widget.totalQuestions}',
-                                        style: TextStyle(
+                                        style: const TextStyle(
                                           fontSize: 52,
                                           fontWeight: FontWeight.w900,
-                                          color: isComputer ? AppColors.textPrimaryComputer : Colors.white,
+                                          color: Colors.white,
                                         ),
                                       );
                                     },
                                   ),
                                 ),
-                                Text(
+                                const Text(
                                   'Jawaban Benar',
-                                  style: TextStyle(color: isComputer ? AppColors.textSecondaryComputer : (isDark ? AppColors.textSecondary : AppColors.textSecondaryLight), fontSize: 14),
+                                  style: TextStyle(color: AppColors.textSecondary, fontSize: 14),
                                 ),
                                 const SizedBox(height: 20),
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(8),
                                   child: LinearProgressIndicator(
                                     value: widget.score / widget.totalQuestions,
-                                    backgroundColor: isComputer ? AppColors.surfaceComputerBorder : Colors.white10,
+                                    backgroundColor: messageColor.withValues(alpha: 0.15),
                                     valueColor: AlwaysStoppedAnimation<Color>(messageColor),
                                     minHeight: 8,
                                   ),
@@ -256,11 +273,11 @@ class _ResultScreenState extends ConsumerState<ResultScreen> with TickerProvider
                             ),
                           );
 
-                          if (widget.stars == 3) {
+                          if (isHolo) {
                             return AnimasiPendar(
                               warna: AppColors.gold,
                               borderRadius: 28,
-                              borderWidth: 2.5,
+                              borderWidth: 3.0,
                               forceLegend: true,
                               child: scoreCard,
                             );
@@ -268,11 +285,15 @@ class _ResultScreenState extends ConsumerState<ResultScreen> with TickerProvider
                           return scoreCard;
                         },
                       ).animate().fadeIn(delay: 1800.ms).scale(
-                            begin: const Offset(0.9, 0.9),
+                            begin: const Offset(0.8, 0.8),
                             end: const Offset(1.0, 1.0),
                             curve: Curves.elasticOut,
                             delay: 1800.ms,
-                            duration: 1000.ms,
+                            duration: 1200.ms,
+                          ).shimmer(
+                            delay: 2600.ms,
+                            duration: 1500.ms,
+                            color: Colors.white54,
                           ),
                       if (widget.stars == 3) ...[
                         const SizedBox(height: 0),
@@ -309,12 +330,12 @@ class _ResultScreenState extends ConsumerState<ResultScreen> with TickerProvider
                         child: OutlinedButton(
                           onPressed: () { AudioHelper.playClick(); Navigator.of(context).popUntil((route) => route.isFirst); }, style: OutlinedButton.styleFrom(
                             padding: const EdgeInsets.symmetric(vertical: 16),
-                            side: BorderSide(color: (isComputer ? AppColors.primaryComputer : AppColors.primary).withValues(alpha: 0.5)),
+                            side: BorderSide(color: AppColors.primary.withValues(alpha: 0.5)),
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                           ),
-                          child: Text(
+                          child: const Text(
                             'Kembali ke Beranda',
-                            style: TextStyle(color: isComputer ? AppColors.primaryComputer : AppColors.primary, fontWeight: FontWeight.bold),
+                            style: TextStyle(color: AppColors.primary, fontWeight: FontWeight.bold),
                           ),
                         ),
                       ).animate().fadeIn(delay: 2400.ms).slideY(begin: 0.2, end: 0),

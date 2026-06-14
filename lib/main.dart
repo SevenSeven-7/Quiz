@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter/services.dart';
 import 'inti/tema/tema_aplikasi.dart';
-import 'inti/penyedia/penyedia_tema.dart';
 import 'fitur/splash/layar_splash.dart';
 import 'inti/layanan/layanan_notifikasi.dart';
 
@@ -65,26 +64,10 @@ class _QuizAppState extends ConsumerState<QuizApp> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
-    final appThemeMode = ref.watch(temaProvider);
-
-    // Pilih ThemeData berdasarkan mode yang aktif
-    ThemeData selectedTheme;
-    switch (appThemeMode) {
-      case AppThemeMode.dark:
-        selectedTheme = AppTheme.darkTheme;
-        break;
-      case AppThemeMode.light:
-        selectedTheme = AppTheme.lightTheme;
-        break;
-      case AppThemeMode.computer:
-        selectedTheme = AppTheme.computerTheme;
-        break;
-    }
-
     return MaterialApp(
       title: 'Quiz',
       debugShowCheckedModeBanner: false,
-      theme: selectedTheme,
+      theme: AppTheme.lightTheme,
       themeMode: ThemeMode.light, // Selalu light mode, tema dikelola manual
       home: const SplashScreen(), // Menampilkan splash screen custom terlebih dahulu
     );

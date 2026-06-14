@@ -4,7 +4,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
 import '../../inti/layanan/layanan_data.dart';
-import '../../inti/penyedia/penyedia_tema.dart';
 import '../../model/model.dart';
 import '../progres/penyedia_progres.dart';
 import 'layar_pilih_level.dart';
@@ -35,68 +34,88 @@ class HomeScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final playerName = ref.watch(playerNameProvider);
     final progress = ref.watch(progressProvider);
-    final appTheme = ref.watch(temaProvider);
-    final isDark = appTheme == AppThemeMode.dark;
-    final isComputer = appTheme == AppThemeMode.computer;
 
     return Scaffold(
       backgroundColor: Colors.transparent,
-      body: SafeArea(
-        child: Column(
-          children: [
-            // Header TETAP DI ATAS - tidak ikut scroll
-            _buildHeader(context, playerName, progress, isDark, isComputer),
-            // Score Card TETAP DI ATAS - tidak ikut scroll
-            Padding(
-              padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-              child: _buildScoreCard(context, progress, isDark, isComputer),
+      body: Column(
+        children: [
+          // Bagian Atas: Latar Belakang Organik
+          Container(
+            padding: EdgeInsets.only(
+              top: MediaQuery.of(context).padding.top + 10,
+              bottom: 32,
             ),
-            // Kategori label TETAP DI ATAS
-            Padding(
-              padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
-              child: Row(
-                children: [
-                  Container(
-                    width: 4,
-                    height: 18,
-                    decoration: BoxDecoration(
-                      gradient: isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient,
-                      borderRadius: BorderRadius.circular(isComputer ? 0 : 4),
-                    ),
-                  ),
-                  const SizedBox(width: 10),
-                  Text(
-                    'Kategori Quiz',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      color: isDark ? Colors.white : (isComputer ? AppColors.textPrimaryComputer : AppColors.textPrimaryLight),
-                      letterSpacing: 0.5,
-                    ),
-                  ),
-                ],
-              ).animate().fadeIn(delay: 400.ms),
-            ),
-            // Konten yang bisa di-scroll
-            Expanded(
-              child: CustomScrollView(
-                physics: const BouncingScrollPhysics(),
-                slivers: [
-                  // Daftar Kategori
-                  SliverPadding(
-                    padding: const EdgeInsets.fromLTRB(20, 0, 20, 120),
-                    sliver: _buildPartList(context, ref, progress, isDark, isComputer),
-                  ),
-                ],
+            decoration: BoxDecoration(
+              color: AppColors.surface.withValues(alpha: 0.5),
+              borderRadius: const BorderRadius.only(
+                bottomLeft: Radius.circular(40),
+                bottomRight: Radius.circular(60),
               ),
+              boxShadow: [
+                BoxShadow(
+                  color: AppColors.primary.withValues(alpha: 0.05),
+                  blurRadius: 20,
+                  offset: const Offset(0, 10),
+                ),
+              ],
             ),
-          ],
-        ),
+            child: Column(
+              children: [
+                _buildHeader(context, playerName, progress),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  child: _buildScoreCard(context, progress),
+                ),
+              ],
+            ),
+          ),
+          
+          // Kategori label TETAP DI ATAS
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 24, 20, 12),
+            child: Row(
+              children: [
+                Container(
+                  width: 4,
+                  height: 18,
+                  decoration: BoxDecoration(
+                    gradient: AppColors.primaryGradient,
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                ),
+                const SizedBox(width: 10),
+                const Text(
+                  'Kategori Quiz',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.textPrimary,
+                    letterSpacing: 0.5,
+                  ),
+                ),
+              ],
+            ).animate().fadeIn(delay: 400.ms),
+          ),
+          
+          // Konten yang bisa di-scroll
+          Expanded(
+            child: CustomScrollView(
+              physics: const BouncingScrollPhysics(),
+              slivers: [
+                // Daftar Kategori
+                SliverPadding(
+                  padding: const EdgeInsets.fromLTRB(20, 0, 20, 120),
+                  sliver: _buildPartList(context, ref, progress),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
 
-  Widget _buildHeader(BuildContext context, String playerName, ProgressState progress, bool isDark, bool isComputer) {
+  Widget _buildHeader(BuildContext context, String playerName, ProgressState progress) {
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 24, 20, 20),
       child: Row(
@@ -111,8 +130,8 @@ class HomeScreen extends ConsumerWidget {
                     const SizedBox(width: 6),
                     Text(
                       _getGreeting(),
-                      style: TextStyle(
-                        color: isDark ? AppColors.textSecondary : AppColors.textSecondaryLight,
+                      style: const TextStyle(
+                        color: AppColors.textSecondary,
                         fontSize: 13,
                         fontWeight: FontWeight.w500,
                       ),
@@ -137,17 +156,15 @@ class HomeScreen extends ConsumerWidget {
           // Avatar mini
           AnimasiPendar(
             warna: progress.warnaGelar,
-            isCircle: !isComputer,
-            borderRadius: isComputer ? 8 : 0,
+            isCircle: true,
             borderWidth: 2.0,
             child: Container(
               width: 48,
               height: 48,
               decoration: BoxDecoration(
-                shape: isComputer ? BoxShape.rectangle : BoxShape.circle,
-                borderRadius: isComputer ? BorderRadius.circular(8) : null,
-                gradient: isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient,
-                boxShadow: isComputer ? AppColors.computerShadow : (isDark ? AppColors.primaryGlow : AppColors.lightShadow),
+                shape: BoxShape.circle,
+                gradient: AppColors.primaryGradient,
+                boxShadow: AppColors.primaryGlow,
               ),
               child: Center(
                 child: Text(
@@ -166,27 +183,46 @@ class HomeScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildScoreCard(BuildContext context, ProgressState progress, bool isDark, bool isComputer) {
+  LinearGradient _getRankGradient(String gelar) {
+    if (gelar.contains('Pemula')) return AppColors.bronzeGradient;
+    if (gelar.contains('Menengah')) return AppColors.silverGradient;
+    if (gelar.contains('Ahli') || gelar.contains('Veteran')) return AppColors.goldGradient;
+    if (gelar.contains('Master') || gelar.contains('Legenda')) return AppColors.legendGradient;
+    return AppColors.buttonGradient;
+  }
+
+  Widget _buildScoreCard(BuildContext context, ProgressState progress) {
     final totalStars = progress.totalStars;
     final gelar = progress.gelarKecerdasan;
     final warnaGelar = progress.warnaGelar;
     const maxStars = 2100;
     final progressValue = (totalStars / maxStars).clamp(0.0, 1.0);
+    final rankGradient = _getRankGradient(gelar);
 
     return AnimasiPendar(
       warna: warnaGelar,
-      borderRadius: isComputer ? 4 : 24,
+      borderRadius: 24,
       borderWidth: 2.0,
       child: Container(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(24),
         decoration: BoxDecoration(
-          color: isDark ? AppColors.surfaceLight.withValues(alpha: 0.7) : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond.withValues(alpha: 0.8)),
-          borderRadius: BorderRadius.circular(isComputer ? 4 : 24),
-          boxShadow: isComputer ? AppColors.computerCardShadow : [
+          color: AppColors.surface.withValues(alpha: 0.9),
+          borderRadius: BorderRadius.circular(24),
+          border: Border.all(color: Colors.white.withValues(alpha: 0.5), width: 1.5),
+          gradient: LinearGradient(
+            colors: [
+              Colors.white.withValues(alpha: 0.95),
+              warnaGelar.withValues(alpha: 0.08),
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+          boxShadow: [
             BoxShadow(
-              color: warnaGelar.withValues(alpha: 0.1),
-              blurRadius: 24,
-              spreadRadius: 1,
+              color: warnaGelar.withValues(alpha: 0.15),
+              blurRadius: 20,
+              spreadRadius: 2,
+              offset: const Offset(0, 8),
             ),
           ],
         ),
@@ -207,10 +243,10 @@ class HomeScreen extends ConsumerWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       'Tingkat Kecerdasan',
                       style: TextStyle(
-                        color: isDark ? AppColors.textSecondary : AppColors.textSecondaryLight,
+                        color: AppColors.textSecondary,
                         fontSize: 12,
                         letterSpacing: 0.5,
                       ),
@@ -229,9 +265,9 @@ class HomeScreen extends ConsumerWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Text(
+                  const Text(
                     'Bintang',
-                    style: TextStyle(color: isDark ? AppColors.textSecondary : AppColors.textSecondaryLight, fontSize: 11),
+                    style: TextStyle(color: AppColors.textSecondary, fontSize: 11),
                   ),
                   Row(
                     children: [
@@ -239,8 +275,8 @@ class HomeScreen extends ConsumerWidget {
                       const SizedBox(width: 4),
                       Text(
                         '$totalStars',
-                        style: TextStyle(
-                          color: isDark ? Colors.white : AppColors.textPrimaryLight,
+                        style: const TextStyle(
+                          color: AppColors.textPrimary,
                           fontWeight: FontWeight.bold,
                           fontSize: 18,
                         ),
@@ -258,24 +294,40 @@ class HomeScreen extends ConsumerWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     'Menuju level berikutnya',
-                    style: TextStyle(color: isDark ? AppColors.textSecondary : AppColors.textSecondaryLight, fontSize: 11),
+                    style: TextStyle(color: AppColors.textSecondary, fontSize: 11),
                   ),
                   Text(
                     '${(progressValue * 100).toStringAsFixed(0)}%',
-                    style: const TextStyle(color: AppColors.primary, fontSize: 11, fontWeight: FontWeight.bold),
+                    style: TextStyle(color: warnaGelar, fontSize: 12, fontWeight: FontWeight.bold),
                   ),
                 ],
               ),
               const SizedBox(height: 8),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(isComputer ? 0 : 8),
-                child: LinearProgressIndicator(
-                  value: progressValue,
-                  backgroundColor: isDark ? Colors.white10 : Colors.black12,
-                  valueColor: AlwaysStoppedAnimation<Color>(isComputer ? AppColors.accentComputer : warnaGelar),
-                  minHeight: 8,
+              Container(
+                height: 10,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.black.withValues(alpha: 0.05),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: FractionallySizedBox(
+                  alignment: Alignment.centerLeft,
+                  widthFactor: progressValue,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      gradient: rankGradient,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          color: warnaGelar.withValues(alpha: 0.5),
+                          blurRadius: 6,
+                          offset: const Offset(0, 2),
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               ),
             ],
@@ -286,28 +338,30 @@ class HomeScreen extends ConsumerWidget {
     ).animate().fadeIn(delay: 200.ms, duration: 400.ms).slideY(begin: 0.1, end: 0);
   }
 
-  Widget _buildPartList(BuildContext context, WidgetRef ref, ProgressState progress, bool isDark, bool isComputer) {
+  Widget _buildPartList(BuildContext context, WidgetRef ref, ProgressState progress) {
     return FutureBuilder<List<PartModel>>(
       future: DataService().getParts(),
       builder: (context, snapshot) {
         if (!snapshot.hasData) {
           return SliverToBoxAdapter(
-            child: _buildShimmerLoading(isDark),
+            child: _buildShimmerLoading(),
           );
         }
 
         final parts = snapshot.data!;
 
-        return SliverList(
+        return SliverGrid(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            mainAxisSpacing: 16,
+            crossAxisSpacing: 16,
+            childAspectRatio: 0.72, // Kartu vertikal (diperpanjang agar teks tidak terpotong)
+          ),
           delegate: SliverChildBuilderDelegate(
             (context, index) {
               final part = parts[index];
-              // Semua kategori pelajaran selalu terbuka - bebas dipilih pemain
               const isUnlocked = true;
-              return Padding(
-                padding: const EdgeInsets.only(bottom: 14),
-                child: _buildPartCard(context, part, isUnlocked, index, isDark, isComputer),
-              );
+              return _buildPartCard(context, part, isUnlocked, index);
             },
             childCount: parts.length,
           ),
@@ -316,8 +370,20 @@ class HomeScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildPartCard(BuildContext context, PartModel part, bool isUnlocked, int index, bool isDark, bool isComputer) {
-    // Urutan: Agama Islam, B.Indonesia, Matematika, IPA, IPS, PPKn, B.Inggris
+  Widget _buildPartCard(BuildContext context, PartModel part, bool isUnlocked, int index) {
+    // Nama khusus agar tampilannya selalu bersih dan tidak berubah-ubah
+    final customNames = [
+      'Agama Islam',
+      'Bahasa Indonesia',
+      'Matematika',
+      'Ilmu Pengetahuan Alam',
+      'Ilmu Pengetahuan Sosial',
+      'Pendidikan Pancasila',
+      'Bahasa Inggris'
+    ];
+    final String displayTitle = index < customNames.length ? customNames[index] : part.cleanTitle;
+
+    // 7 Ikon spesifik untuk masing-masing mapel (tidak berulang)
     final icons = [
       Icons.mosque_rounded,        // Agama Islam
       Icons.language_rounded,      // Bahasa Indonesia
@@ -327,111 +393,142 @@ class HomeScreen extends ConsumerWidget {
       Icons.balance_rounded,       // PPKn
       Icons.menu_book_rounded,     // Bahasa Inggris
     ];
+
+    // 7 Warna spesifik yang sangat kontras dan tidak ada yang sama/mirip (Material Colors)
     final gradients = [
-      [const Color(0xFF16A34A), const Color(0xFF4ADE80)], // Agama Islam — Hijau
-      [const Color(0xFF7C3AED), const Color(0xFF06B6D4)], // B.Indonesia — Violet-Cyan
-      [const Color(0xFF059669), const Color(0xFF34D399)], // Matematika — Emerald
-      [const Color(0xFFDC2626), const Color(0xFFF97316)], // IPA — Merah-Oranye
-      [const Color(0xFFD97706), const Color(0xFFFBBF24)], // IPS — Amber-Gold
-      [const Color(0xFFE11D48), const Color(0xFFF43F5E)], // PPKn — Rose
-      [const Color(0xFF0284C7), const Color(0xFF38BDF8)], // B.Inggris — Biru
+      [const Color(0xFF4CAF50), const Color(0xFF81C784)], // Hijau (Agama)
+      [const Color(0xFF2196F3), const Color(0xFF64B5F6)], // Biru (B.Indo)
+      [const Color(0xFFF44336), const Color(0xFFE57373)], // Merah (Matematika)
+      [const Color(0xFF00BCD4), const Color(0xFF4DD0E1)], // Cyan (IPA)
+      [const Color(0xFFFF9800), const Color(0xFFFFB74D)], // Oranye (IPS)
+      [const Color(0xFF9C27B0), const Color(0xFFBA68C8)], // Ungu (PPKn)
+      [const Color(0xFFE91E63), const Color(0xFFF06292)], // Pink (B.Inggris)
     ];
+    
     final grad = gradients[index % gradients.length];
     final icon = icons[index % icons.length];
 
-    return InkWell(
-      onTap: isUnlocked
-          ? () {
-              AudioHelper.playClick();
-              Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => LevelSelectionScreen(part: part)),
-              );
-            }
-          : null,
-      borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
-      child: AnimasiPendar(
-        warna: isUnlocked ? grad[0] : (isDark ? Colors.white24 : Colors.black26),
-        borderRadius: isComputer ? 4 : 20,
-        borderWidth: 2.0,
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 300),
-          padding: const EdgeInsets.all(20),
-          decoration: BoxDecoration(
-            color: isDark ? AppColors.surfaceLight.withValues(alpha: 0.6) : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond.withValues(alpha: 0.8)),
-            borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
-            boxShadow: isComputer ? AppColors.computerCardShadow : null,
-          ),
-          child: Row(
-          children: [
-            Container(
-              width: 52,
-              height: 52,
-              decoration: BoxDecoration(
-                gradient: isUnlocked
-                    ? (isComputer ? AppColors.primaryComputerGradient : LinearGradient(colors: grad, begin: Alignment.topLeft, end: Alignment.bottomRight))
-                    : null,
-                color: isUnlocked ? null : (isDark ? Colors.white10 : Colors.black12),
-                borderRadius: BorderRadius.circular(isComputer ? 4 : 16),
-                boxShadow: isUnlocked
-                    ? [BoxShadow(color: isComputer ? Colors.black12 : grad[0].withValues(alpha: 0.3), blurRadius: 12)]
-                    : null,
-              ),
-              child: Icon(
-                isUnlocked ? icon : Icons.lock_rounded,
-                color: isUnlocked ? Colors.white : (isDark ? Colors.white30 : Colors.black26),
-                size: 24,
-              ),
-            ),
-            const SizedBox(width: 16),
-            Expanded(
+    // Bentukan organik asimetris
+    final bool isLeft = index % 2 == 0;
+    final borderRadius = BorderRadius.only(
+      topLeft: Radius.circular(isLeft ? 40 : 16),
+      topRight: Radius.circular(isLeft ? 16 : 40),
+      bottomLeft: const Radius.circular(16),
+      bottomRight: const Radius.circular(16),
+    );
+
+    return AnimasiPendar(
+      warna: isUnlocked ? grad[0] : Colors.black26,
+      customBorder: borderRadius,
+      borderWidth: 2.0,
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 300),
+        decoration: BoxDecoration(
+          color: AppColors.surface.withValues(alpha: 0.95),
+          borderRadius: borderRadius,
+          border: Border.all(color: grad[0].withValues(alpha: 0.1), width: 1.5),
+          gradient: isUnlocked ? LinearGradient(
+            colors: [
+              Colors.white,
+              grad[0].withValues(alpha: 0.05),
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ) : null,
+          boxShadow: AppColors.cardShadow,
+        ),
+        child: Material(
+          color: Colors.transparent,
+          child: InkWell(
+            onTap: isUnlocked
+                ? () {
+                    AudioHelper.playClick();
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => LevelSelectionScreen(part: part, categoryName: displayTitle, gradientColors: grad)),
+                    );
+                  }
+                : null,
+            borderRadius: borderRadius,
+            child: Padding(
+              padding: const EdgeInsets.all(16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    part.cleanTitle,
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: isUnlocked 
-                          ? (isDark ? Colors.white : AppColors.textPrimaryLight) 
-                          : (isDark ? Colors.white38 : Colors.black38),
+                  // Header Kartu: Ikon & Arrow/Gembok
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        width: 48,
+                        height: 48,
+                        decoration: BoxDecoration(
+                          gradient: isUnlocked
+                              ? LinearGradient(colors: grad, begin: Alignment.topLeft, end: Alignment.bottomRight)
+                              : null,
+                          color: isUnlocked ? null : Colors.black12,
+                          shape: BoxShape.circle,
+                          boxShadow: isUnlocked
+                              ? [BoxShadow(color: grad[0].withValues(alpha: 0.3), blurRadius: 12)]
+                              : null,
+                        ),
+                        child: Icon(
+                          isUnlocked ? icon : Icons.lock_rounded,
+                          color: isUnlocked ? Colors.white : Colors.black26,
+                          size: 22,
+                        ),
+                      ),
+                      if (isUnlocked)
+                        Container(
+                          padding: const EdgeInsets.all(6),
+                          decoration: BoxDecoration(
+                            color: grad[0].withValues(alpha: 0.1),
+                            shape: BoxShape.circle,
+                          ),
+                          child: Icon(Icons.arrow_forward_rounded, color: grad[0], size: 16),
+                        )
+                      else
+                        const Icon(Icons.lock_outline_rounded, color: Colors.black12, size: 20),
+                    ],
+                  ),
+                  
+                  const Spacer(),
+                  
+                  // Teks Judul & Deskripsi
+                  FittedBox(
+                    fit: BoxFit.scaleDown,
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      displayTitle,
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w900,
+                        height: 1.2,
+                        color: isUnlocked ? AppColors.textPrimary : Colors.black38,
+                      ),
                     ),
                   ),
-                  const SizedBox(height: 4),
-                  SizedBox(
-                    height: 18,
-                    child: MarqueeText(
-                      text: isUnlocked ? part.description : 'Selesaikan bagian sebelumnya',
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: isDark 
-                            ? AppColors.textSecondary.withValues(alpha: isUnlocked ? 1.0 : 0.5)
-                            : AppColors.textSecondaryLight.withValues(alpha: isUnlocked ? 1.0 : 0.5),
-                      ),
+                  const SizedBox(height: 6),
+                  Text(
+                    isUnlocked ? part.description : 'Selesaikan bagian sebelumnya',
+                    maxLines: 3,
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      fontSize: 11,
+                      height: 1.3,
+                      color: AppColors.textSecondary.withValues(alpha: isUnlocked ? 1.0 : 0.5),
                     ),
                   ),
                 ],
               ),
             ),
-            if (isUnlocked)
-              Container(
-                padding: const EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  gradient: isComputer ? AppColors.primaryComputerGradient : LinearGradient(colors: grad, begin: Alignment.topLeft, end: Alignment.bottomRight),
-                  borderRadius: BorderRadius.circular(isComputer ? 4 : 12),
-                ),
-                child: const Icon(Icons.arrow_forward_rounded, color: Colors.white, size: 18),
-              )
-            else
-              Icon(Icons.lock_outline_rounded, color: isDark ? Colors.white24 : Colors.black12, size: 20),
-          ],
+          ),
         ),
       ),
-      ),
-    ).animate().fadeIn(delay: (300 + index * 100).ms, duration: 400.ms).slideX(begin: 0.1, end: 0);
+    ).animate().fadeIn(delay: (200 + index * 100).ms, duration: 400.ms).slideY(begin: 0.2, end: 0);
   }
 
-  Widget _buildShimmerLoading(bool isDark) {
+  Widget _buildShimmerLoading() {
     return Column(
       children: List.generate(
         3,
@@ -440,15 +537,121 @@ class HomeScreen extends ConsumerWidget {
           child: Container(
             height: 92,
             decoration: BoxDecoration(
-              color: isDark ? AppColors.surfaceLight.withValues(alpha: 0.3) : AppColors.surfaceLightModeSecond.withValues(alpha: 0.3),
+              color: AppColors.surface,
               borderRadius: BorderRadius.circular(8),
             ),
           ).animate(onPlay: (c) => c.repeat()).shimmer(
                 duration: 1200.ms,
-                color: isDark ? Colors.white10 : Colors.black12,
+                color: Colors.black12,
               ),
         ),
       ),
+    );
+  }
+}
+
+class MarqueeText extends StatefulWidget {
+  final String text;
+  final TextStyle style;
+
+  const MarqueeText({super.key, required this.text, required this.style});
+
+  @override
+  State<MarqueeText> createState() => _MarqueeTextState();
+}
+
+class _MarqueeTextState extends State<MarqueeText> with SingleTickerProviderStateMixin {
+  late ScrollController _scrollController;
+  late AnimationController _animationController;
+  double _textWidth = 0.0;
+  bool _needsScroll = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _scrollController = ScrollController();
+    _animationController = AnimationController(vsync: this);
+    
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _checkTextWidth();
+    });
+  }
+
+  void _checkTextWidth() {
+    if (!mounted) return;
+    
+    final RenderBox? renderBox = context.findRenderObject() as RenderBox?;
+    if (renderBox != null) {
+      final textPainter = TextPainter(
+        text: TextSpan(text: widget.text, style: widget.style),
+        maxLines: 1,
+        textDirection: TextDirection.ltr,
+      )..layout();
+
+      setState(() {
+        _textWidth = textPainter.width;
+        _needsScroll = _textWidth > renderBox.size.width;
+      });
+
+      if (_needsScroll) {
+        _startScrolling(renderBox.size.width);
+      }
+    }
+  }
+
+  void _startScrolling(double containerWidth) {
+    final distance = _textWidth - containerWidth + 20; // +20 padding ujung
+    final duration = Duration(milliseconds: (distance * 30).toInt()); // kecepatan konstan
+    
+    _animationController.duration = duration;
+    
+    _animationController.addStatusListener((status) async {
+      if (status == AnimationStatus.completed) {
+        await Future.delayed(const Duration(seconds: 2));
+        if (mounted) {
+          _scrollController.jumpTo(0);
+          await Future.delayed(const Duration(seconds: 1));
+          if (mounted) {
+            _animationController.forward(from: 0.0);
+          }
+        }
+      }
+    });
+
+    Future.delayed(const Duration(seconds: 2), () {
+      if (mounted) {
+        _animationController.forward();
+      }
+    });
+
+    _animationController.addListener(() {
+      if (mounted && _scrollController.hasClients) {
+        _scrollController.jumpTo(_animationController.value * distance);
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    _animationController.dispose();
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        return SingleChildScrollView(
+          controller: _scrollController,
+          scrollDirection: Axis.horizontal,
+          physics: const NeverScrollableScrollPhysics(),
+          child: Text(
+            widget.text,
+            style: widget.style,
+          ),
+        );
+      }
     );
   }
 }

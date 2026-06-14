@@ -1,11 +1,12 @@
 import 'package:quiz/inti/utils/audio_helper.dart';
 import 'dart:ui';
+import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:confetti/confetti.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
-import '../../inti/penyedia/penyedia_tema.dart';
 import '../progres/penyedia_progres.dart';
 import '../pengaturan/layar_pengaturan.dart';
 import 'layar_beranda.dart';
@@ -26,6 +27,7 @@ class _MainNavigationScreenState extends ConsumerState<MainNavigationScreen>
     with TickerProviderStateMixin {
   int _currentIndex = 0;
   late AnimationController _navAnimController;
+  late ConfettiController _confettiController;
 
   final List<Widget> _pages = const [
     HomeScreen(),
@@ -40,12 +42,14 @@ class _MainNavigationScreenState extends ConsumerState<MainNavigationScreen>
       vsync: this,
       duration: const Duration(milliseconds: 300),
     );
+    _confettiController = ConfettiController(duration: const Duration(seconds: 4));
     _loadPlayerName();
   }
 
   @override
   void dispose() {
     _navAnimController.dispose();
+    _confettiController.dispose();
     super.dispose();
   }
 
@@ -57,22 +61,35 @@ class _MainNavigationScreenState extends ConsumerState<MainNavigationScreen>
 
   @override
   Widget build(BuildContext context) {
-    final appTheme = ref.watch(temaProvider);
     final progress = ref.watch(progressProvider);
-    final isDark = appTheme == AppThemeMode.dark;
-    final isComputer = appTheme == AppThemeMode.computer;
 
-    // Pilih warna latar sesuai mode
-    final bgColor = isDark
-        ? AppColors.background
-        : isComputer
-            ? AppColors.backgroundComputer
-            : AppColors.backgroundLightBlue;
-    final bgGradient = isDark
-        ? AppColors.backgroundGradient
-        : isComputer
-            ? AppColors.backgroundComputerGradient
-            : AppColors.backgroundLightGradient;
+    // Pilih warna latar
+    final bgColor = AppColors.background;
+    final bgGradient = AppColors.backgroundGradient;
+
+    ref.listen<ProgressState>(progressProvider, (previous, next) {
+      if (next.newlyAchievedGelar != null) {
+        _confettiController.play();
+        AudioHelper.playClick();
+        
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+              'SELAMAT! Anda Naik Pangkat ke ${next.newlyAchievedGelar}!',
+              style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+            ),
+            backgroundColor: next.warnaGelar,
+            duration: const Duration(seconds: 4),
+            behavior: SnackBarBehavior.floating,
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+          )
+        );
+
+        Future.microtask(() {
+          ref.read(progressProvider.notifier).clearNewlyAchievedGelar();
+        });
+      }
+    });
 
     return Scaffold(
       backgroundColor: bgColor,
@@ -90,117 +107,122 @@ class _MainNavigationScreenState extends ConsumerState<MainNavigationScreen>
           // Floating Bottom Navigation
           Align(
             alignment: Alignment.bottomCenter,
-            child: _buildFloatingBottomNav(isDark, isComputer, progress.warnaGelar),
+            child: _buildFloatingBottomNav(progress.warnaGelar),
+          ),
+          
+          // Confetti Overlay
+          Align(
+            alignment: Alignment.topCenter,
+            child: ConfettiWidget(
+              confettiController: _confettiController,
+              blastDirection: math.pi / 2, // Jatuh ke bawah
+              maxBlastForce: 20,
+              minBlastForce: 5,
+              emissionFrequency: 0.05,
+              numberOfParticles: 50,
+              gravity: 0.2,
+              colors: const [
+                Colors.green,
+                Colors.blue,
+                Colors.pink,
+                Colors.orange,
+                Colors.purple
+              ],
+            ),
           ),
         ],
       ),
     );
   }
 
-  Widget _buildFloatingBottomNav(bool isDark, bool isComputer, Color warnaGelar) {
+  Widget _buildFloatingBottomNav(Color warnaGelar) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.only(bottom: 24, left: 24, right: 24),
+        padding: const EdgeInsets.only(bottom: 24, left: 32, right: 32),
         child: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 450),
-          child: AnimasiPendar(
-            warna: warnaGelar,
-            borderRadius: isComputer ? 4 : 32,
-            borderWidth: 2.0,
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(isComputer ? 4 : 32),
-              child: BackdropFilter(
-                filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-                child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-                  decoration: BoxDecoration(
-                  color: isComputer
-                      ? AppColors.surfaceComputer.withValues(alpha: 0.95)
-                      : isDark
-                          ? AppColors.surfaceLight.withValues(alpha: 0.8)
-                          : AppColors.surfaceLightBlue.withValues(alpha: 0.85),
-                  borderRadius: BorderRadius.circular(isComputer ? 4 : 32),
-                  boxShadow: isComputer
-                      ? AppColors.computerCardShadow
-                      : [
-                          BoxShadow(
-                            color: isDark
-                                ? AppColors.primary.withValues(alpha: 0.2)
-                                : AppColors.primary.withValues(alpha: 0.1),
-                            blurRadius: 24,
-                            offset: const Offset(0, 10),
-                          ),
-                        ],
+          constraints: const BoxConstraints(maxWidth: 400),
+          child: Container(
+            height: 70,
+            decoration: BoxDecoration(
+              color: AppColors.surface,
+              borderRadius: BorderRadius.circular(35),
+              boxShadow: [
+                BoxShadow(
+                  color: AppColors.primary.withValues(alpha: 0.15),
+                  blurRadius: 30,
+                  offset: const Offset(0, 10),
                 ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    _buildNavItem(0, Icons.home_rounded, Icons.home_outlined, 'Beranda', isDark, isComputer),
-                    _buildNavItem(1, Icons.person_rounded, Icons.person_outline_rounded, 'Profil', isDark, isComputer),
-                    _buildNavItem(2, Icons.settings_rounded, Icons.settings_outlined, 'Pengaturan', isDark, isComputer),
-                  ],
-                ),
-              ),
+              ],
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                _buildNavItem(0, Icons.home_rounded, Icons.home_outlined, 'Beranda', warnaGelar),
+                _buildNavItem(1, Icons.person_rounded, Icons.person_outline_rounded, 'Profil', warnaGelar),
+                _buildNavItem(2, Icons.settings_rounded, Icons.settings_outlined, 'Pengaturan', warnaGelar),
+              ],
             ),
           ).animate().slideY(begin: 1, end: 0, duration: 600.ms, curve: Curves.easeOutBack),
-        ),
         ),
       ),
     );
   }
 
-  Widget _buildNavItem(int index, IconData activeIcon, IconData inactiveIcon, String label, bool isDark, bool isComputer) {
+  Widget _buildNavItem(int index, IconData activeIcon, IconData inactiveIcon, String label, Color warnaGelar) {
     final isActive = _currentIndex == index;
-    final inactiveColor = isDark
-        ? AppColors.textSecondary
-        : isComputer
-            ? AppColors.textSecondaryComputer
-            : AppColors.textSecondaryLightBlue;
-    final gradient = isComputer
-        ? AppColors.primaryComputerGradient
-        : AppColors.buttonGradient;
-    final glow = isComputer ? AppColors.computerShadow : (isDark ? AppColors.primaryGlow : AppColors.lightBlueGlow);
+    const inactiveColor = AppColors.textSecondary;
 
     return GestureDetector(
       onTap: () {
-AudioHelper.playClick();
+        AudioHelper.playClick();
         if (_currentIndex != index) {
           setState(() => _currentIndex = index);
         }
       },
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 300),
-        curve: Curves.easeOutCubic,
-        padding: EdgeInsets.symmetric(horizontal: isActive ? 24 : 16, vertical: 12),
-        decoration: BoxDecoration(
-          gradient: isActive ? gradient : null,
-          color: isActive ? null : Colors.transparent,
-          borderRadius: BorderRadius.circular(isComputer ? 4 : 24),
-          boxShadow: isActive ? glow : null,
-        ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
+      behavior: HitTestBehavior.opaque,
+      child: SizedBox(
+        width: 70,
+        child: Stack(
+          alignment: Alignment.center,
+          clipBehavior: Clip.none,
           children: [
-            Icon(
-              isActive ? activeIcon : inactiveIcon,
-              color: isActive ? Colors.white : inactiveColor,
-              size: 24,
-            ).animate(target: isActive ? 1 : 0)
-             .scaleXY(begin: 0.8, end: 1.1, duration: 200.ms)
-             .then().scaleXY(end: 1.0, duration: 200.ms),
-             
-            if (isActive) ...[
-              const SizedBox(width: 8),
-              Text(
-                label,
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 14,
-                  letterSpacing: 0.5,
+            // Teks Label
+            Positioned(
+              bottom: 12,
+              child: AnimatedOpacity(
+                duration: const Duration(milliseconds: 300),
+                opacity: isActive ? 1.0 : 0.7,
+                child: Text(
+                  label,
+                  style: TextStyle(
+                    fontSize: 11,
+                    fontWeight: isActive ? FontWeight.bold : FontWeight.w500,
+                    color: isActive ? AppColors.primary : inactiveColor,
+                  ),
                 ),
-              ).animate().fadeIn(duration: 200.ms).slideX(begin: -0.2, end: 0, duration: 200.ms),
-            ],
+              ),
+            ),
+            
+            // Ikon Pop-up
+            AnimatedPositioned(
+              duration: const Duration(milliseconds: 300),
+              curve: Curves.easeOutBack,
+              top: isActive ? -18 : 8,
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 300),
+                padding: EdgeInsets.all(isActive ? 12 : 0),
+                decoration: BoxDecoration(
+                  color: isActive ? AppColors.primary : Colors.transparent,
+                  shape: BoxShape.circle,
+                  boxShadow: isActive ? AppColors.primaryGlow : null,
+                ),
+                child: Icon(
+                  isActive ? activeIcon : inactiveIcon,
+                  color: isActive ? Colors.white : inactiveColor,
+                  size: isActive ? 24 : 26,
+                ),
+              ),
+            ),
           ],
         ),
       ),
@@ -221,9 +243,6 @@ class ProfileScreen extends ConsumerWidget {
     final warnaGelar = progress.warnaGelar;
     final bindoSolved = progress.indonesianSolved;
     final mathSolved = progress.mathSolved;
-    final appTheme = ref.watch(temaProvider);
-    final isDark = appTheme == AppThemeMode.dark;
-    final isComputer = appTheme == AppThemeMode.computer;
 
     return Scaffold(
       backgroundColor: Colors.transparent, // Background handled by Stack in MainNavigationScreen
@@ -234,17 +253,22 @@ class ProfileScreen extends ConsumerWidget {
             // Header TETAP DI ATAS - tidak ikut scroll
             Padding(
               padding: const EdgeInsets.fromLTRB(24, 24, 24, 0),
-              child: ShaderMask(
-                shaderCallback: (bounds) => (isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient).createShader(bounds),
-                child: const Text(
-                  'Profil',
-                  style: TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.w900,
-                    color: Colors.white,
-                  ),
-                ),
-              ).animate().fadeIn(duration: 400.ms),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  ShaderMask(
+                    shaderCallback: (bounds) => AppColors.primaryGradient.createShader(bounds),
+                    child: const Text(
+                      'Profil',
+                      style: TextStyle(
+                        fontSize: 28,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ).animate().fadeIn(duration: 400.ms),
+                ],
+              ),
             ),
             // Konten yang bisa di-scroll
             Expanded(
@@ -258,10 +282,10 @@ class ProfileScreen extends ConsumerWidget {
                   Container(
                     padding: const EdgeInsets.all(28),
                     decoration: BoxDecoration(
-                      color: isDark ? AppColors.surfaceLight.withValues(alpha: 0.6) : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond.withValues(alpha: 0.8)),
-                      borderRadius: BorderRadius.circular(isComputer ? 4 : 28),
-                      border: Border.all(color: isComputer ? AppColors.surfaceComputerBorder : warnaGelar.withValues(alpha: 0.3), width: 1.5),
-                      boxShadow: isComputer ? AppColors.computerCardShadow : [
+                      color: AppColors.surface,
+                      borderRadius: BorderRadius.circular(28),
+                      border: Border.all(color: warnaGelar.withValues(alpha: 0.3), width: 1.5),
+                      boxShadow: [
                         BoxShadow(
                           color: warnaGelar.withValues(alpha: 0.1),
                           blurRadius: 30,
@@ -273,20 +297,19 @@ class ProfileScreen extends ConsumerWidget {
                       children: [
                         AnimasiPendar(
                           warna: warnaGelar,
-                          isCircle: !isComputer,
-                          borderRadius: isComputer ? 8 : 0,
+                          isCircle: true,
+                          borderRadius: 0,
                           borderWidth: 3.0,
                           child: Container(
                             padding: const EdgeInsets.all(4),
                             decoration: BoxDecoration(
-                              shape: isComputer ? BoxShape.rectangle : BoxShape.circle,
-                              borderRadius: isComputer ? BorderRadius.circular(8) : null,
-                              gradient: isComputer ? AppColors.primaryComputerGradient : LinearGradient(
+                              shape: BoxShape.circle,
+                              gradient: LinearGradient(
                                 colors: [warnaGelar, AppColors.primary],
                                 begin: Alignment.topLeft,
                                 end: Alignment.bottomRight,
                               ),
-                              boxShadow: isComputer ? AppColors.computerShadow : [
+                              boxShadow: [
                                 BoxShadow(
                                   color: warnaGelar.withValues(alpha: 0.4),
                                   blurRadius: 20,
@@ -296,13 +319,13 @@ class ProfileScreen extends ConsumerWidget {
                             ),
                             child: CircleAvatar(
                               radius: 52,
-                              backgroundColor: isDark ? AppColors.background : (isComputer ? AppColors.backgroundComputer : AppColors.backgroundLight),
+                              backgroundColor: AppColors.background,
                               child: Text(
                                 playerName.isNotEmpty ? playerName[0].toUpperCase() : 'P',
                                 style: TextStyle(
                                   fontSize: 42,
                                   fontWeight: FontWeight.bold,
-                                  color: isComputer ? AppColors.textPrimaryComputer : warnaGelar,
+                                  color: warnaGelar,
                                 ),
                               ),
                             ),
@@ -311,22 +334,22 @@ class ProfileScreen extends ConsumerWidget {
                         const SizedBox(height: 16),
                         Text(
                           playerName,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
-                            color: isDark ? Colors.white : (isComputer ? AppColors.textPrimaryComputer : AppColors.textPrimaryLight),
+                            color: AppColors.textPrimary,
                           ),
                         ).animate().fadeIn(delay: 200.ms),
                         const SizedBox(height: 8),
                         AnimasiPendar(
                           warna: warnaGelar,
-                          borderRadius: isComputer ? 4 : 20,
+                          borderRadius: 20,
                           borderWidth: 2.0,
                           child: Container(
                             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
                             decoration: BoxDecoration(
-                              color: isComputer ? AppColors.surfaceComputerSecond : warnaGelar.withValues(alpha: 0.1),
-                              borderRadius: BorderRadius.circular(isComputer ? 4 : 20),
+                              color: warnaGelar.withValues(alpha: 0.1),
+                              borderRadius: BorderRadius.circular(20),
                             ),
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
@@ -336,7 +359,7 @@ class ProfileScreen extends ConsumerWidget {
                                 Text(
                                   gelar,
                                   style: TextStyle(
-                                    color: isComputer ? AppColors.textSecondaryComputer : warnaGelar,
+                                    color: warnaGelar,
                                     fontWeight: FontWeight.bold,
                                     fontSize: 13,
                                   ),
@@ -354,13 +377,13 @@ class ProfileScreen extends ConsumerWidget {
                   // Statistik Card
                   AnimasiPendar(
                     warna: warnaGelar,
-                    borderRadius: isComputer ? 4 : 24,
+                    borderRadius: 24,
                     borderWidth: 2.0,
                     child: Container(
                       padding: const EdgeInsets.all(24),
                       decoration: BoxDecoration(
-                        color: isDark ? AppColors.surfaceLight.withValues(alpha: 0.6) : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond.withValues(alpha: 0.8)),
-                        borderRadius: BorderRadius.circular(isComputer ? 4 : 24),
+                        color: AppColors.surface,
+                        borderRadius: BorderRadius.circular(24),
                       ),
                       child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -378,81 +401,65 @@ class ProfileScreen extends ConsumerWidget {
                         _buildStatRow(
                           context,
                           icon: Icons.stars_rounded,
-                          iconColor: isComputer ? AppColors.primaryComputerLight : AppColors.gold,
+                          iconColor: AppColors.gold,
                           label: 'Total Bintang',
                           value: '$totalStars ⭐',
-                          isDark: isDark,
-                          isComputer: isComputer,
                         ),
-                        Divider(color: isDark ? Colors.white.withValues(alpha: 0.06) : (isComputer ? AppColors.surfaceComputerBorder : Colors.black.withValues(alpha: 0.06)), height: 28),
+                        Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
                         _buildStatRow(
                           context,
                           icon: Icons.mosque_rounded,
-                          iconColor: isComputer ? AppColors.primaryComputerLight : const Color(0xFF16A34A),
+                          iconColor: const Color(0xFF16A34A),
                           label: 'Agama Islam',
                           value: '${progress.islamicSolved} / 100',
-                          isDark: isDark,
-                          isComputer: isComputer,
                         ),
-                        Divider(color: isDark ? Colors.white.withValues(alpha: 0.06) : (isComputer ? AppColors.surfaceComputerBorder : Colors.black.withValues(alpha: 0.06)), height: 28),
+                        Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
                         _buildStatRow(
                           context,
                           icon: Icons.language_rounded,
-                          iconColor: isComputer ? AppColors.primaryComputerLight : AppColors.primary,
+                          iconColor: AppColors.primary,
                           label: 'Bahasa Indonesia',
                           value: '$bindoSolved / 100',
-                          isDark: isDark,
-                          isComputer: isComputer,
                         ),
-                        Divider(color: isDark ? Colors.white.withValues(alpha: 0.06) : (isComputer ? AppColors.surfaceComputerBorder : Colors.black.withValues(alpha: 0.06)), height: 28),
+                        Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
                         _buildStatRow(
                           context,
                           icon: Icons.calculate_rounded,
-                          iconColor: isComputer ? AppColors.primaryComputerLight : AppColors.success,
+                          iconColor: AppColors.success,
                           label: 'Matematika',
                           value: '$mathSolved / 100',
-                          isDark: isDark,
-                          isComputer: isComputer,
                         ),
-                        Divider(color: isDark ? Colors.white.withValues(alpha: 0.06) : (isComputer ? AppColors.surfaceComputerBorder : Colors.black.withValues(alpha: 0.06)), height: 28),
+                        Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
                         _buildStatRow(
                           context,
                           icon: Icons.science_rounded,
-                          iconColor: isComputer ? AppColors.primaryComputerLight : const Color(0xFFDC2626),
+                          iconColor: const Color(0xFFDC2626),
                           label: 'IPA',
                           value: '${progress.ipaSolved} / 100',
-                          isDark: isDark,
-                          isComputer: isComputer,
                         ),
-                        Divider(color: isDark ? Colors.white.withValues(alpha: 0.06) : (isComputer ? AppColors.surfaceComputerBorder : Colors.black.withValues(alpha: 0.06)), height: 28),
+                        Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
                         _buildStatRow(
                           context,
                           icon: Icons.public_rounded,
-                          iconColor: isComputer ? AppColors.primaryComputerLight : const Color(0xFFD97706),
+                          iconColor: const Color(0xFFD97706),
                           label: 'IPS',
                           value: '${progress.ipsSolved} / 100',
-                          isDark: isDark,
-                          isComputer: isComputer,
                         ),
-                        Divider(color: isDark ? Colors.white.withValues(alpha: 0.06) : (isComputer ? AppColors.surfaceComputerBorder : Colors.black.withValues(alpha: 0.06)), height: 28),
+                        Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
                         _buildStatRow(
                           context,
                           icon: Icons.balance_rounded,
-                          iconColor: isComputer ? AppColors.primaryComputerLight : const Color(0xFFE11D48),
+                          iconColor: const Color(0xFFE11D48),
                           label: 'PPKn',
                           value: '${progress.ppknSolved} / 100',
-                          isDark: isDark,
-                          isComputer: isComputer,
                         ),
-                        Divider(color: isDark ? Colors.white.withValues(alpha: 0.06) : (isComputer ? AppColors.surfaceComputerBorder : Colors.black.withValues(alpha: 0.06)), height: 28),
+                        Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
                         _buildStatRow(
                           context,
                           icon: Icons.menu_book_rounded,
-                          iconColor: isComputer ? AppColors.primaryComputerLight : const Color(0xFF0284C7),
+                          iconColor: const Color(0xFF0284C7),
                           label: 'Bahasa Inggris',
                           value: '${progress.englishSolved} / 100',
-                          isDark: isDark,
-                          isComputer: isComputer,
                         ),
                       ],
                     ),
@@ -478,8 +485,6 @@ class ProfileScreen extends ConsumerWidget {
     required Color iconColor,
     required String label,
     required String value,
-    required bool isDark,
-    required bool isComputer,
   }) {
     return Row(
       children: [
@@ -487,17 +492,17 @@ class ProfileScreen extends ConsumerWidget {
           padding: const EdgeInsets.all(9),
           decoration: BoxDecoration(
             color: iconColor.withValues(alpha: 0.12),
-            borderRadius: BorderRadius.circular(isComputer ? 4 : 12),
+            borderRadius: BorderRadius.circular(12),
           ),
           child: Icon(icon, color: iconColor, size: 20),
         ),
         const SizedBox(width: 14),
-        Text(label, style: TextStyle(color: isDark ? AppColors.textSecondary : (isComputer ? AppColors.textSecondaryComputer : AppColors.textSecondaryLight), fontSize: 14, fontWeight: FontWeight.w500)),
+        Text(label, style: const TextStyle(color: AppColors.textSecondary, fontSize: 14, fontWeight: FontWeight.w500)),
         const Spacer(),
         Text(
           value,
-          style: TextStyle(
-            color: isDark ? Colors.white : (isComputer ? AppColors.textPrimaryComputer : AppColors.textPrimaryLight),
+          style: const TextStyle(
+            color: AppColors.textPrimary,
             fontWeight: FontWeight.bold,
             fontSize: 16,
           ),

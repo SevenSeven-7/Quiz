@@ -1,3 +1,4 @@
+import 'dart:math' as math;
 import 'package:quiz/inti/utils/audio_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -7,25 +8,36 @@ import '../../inti/layanan/layanan_api.dart';
 import '../../inti/layanan/layanan_data.dart';
 import '../../model/model.dart';
 import '../progres/penyedia_progres.dart';
-import '../../inti/penyedia/penyedia_tema.dart';
 import '../kuis/layar_kuis.dart';
+import '../../inti/utils/ornament_helper.dart';
 
 class LevelSelectionScreen extends ConsumerWidget {
   final PartModel part;
-  const LevelSelectionScreen({super.key, required this.part});
+  final String? categoryName;
+  final List<Color>? gradientColors;
+  const LevelSelectionScreen({super.key, required this.part, this.categoryName, this.gradientColors});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final progress = ref.watch(progressProvider);
-    final appTheme = ref.watch(temaProvider);
-    final isDark = appTheme == AppThemeMode.dark;
-    final isComputer = appTheme == AppThemeMode.computer;
+    final bgGradient = AppColors.backgroundGradient;
+    final catName = categoryName ?? part.cleanTitle;
+    final ornaments = OrnamentHelper.getOrnamentsForCategory(catName);
+    final mainChar = OrnamentHelper.getMainCharacterForCategory(catName);
 
-    final bgGradient = isComputer ? AppColors.backgroundComputerGradient : (isDark ? AppColors.backgroundGradient : AppColors.backgroundLightGradient);
+    final bgColors = gradientColors != null 
+        ? [gradientColors![0].withValues(alpha: 0.15), gradientColors![1].withValues(alpha: 0.05)]
+        : AppColors.backgroundGradient.colors;
 
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(gradient: bgGradient),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: bgColors,
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          ),
+        ),
         child: SafeArea(
           child: Column(
             children: [
@@ -38,23 +50,24 @@ class LevelSelectionScreen extends ConsumerWidget {
                       onPressed: () { AudioHelper.playClick(); Navigator.of(context).pop(); }, icon: Container(
                         padding: const EdgeInsets.all(8),
                         decoration: BoxDecoration(
-                          color: isComputer ? AppColors.surfaceComputer : AppColors.surfaceLight,
-                          borderRadius: BorderRadius.circular(isComputer ? 4 : 12),
-                          border: Border.all(color: isComputer ? AppColors.surfaceComputerBorder : Colors.white10),
+                          color: AppColors.surface,
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(color: Colors.black12),
+                          boxShadow: AppColors.cardShadow,
                         ),
-                        child: Icon(Icons.arrow_back_rounded, color: isComputer ? AppColors.textPrimaryComputer : Colors.white, size: 20),
+                        child: const Icon(Icons.arrow_back_rounded, color: AppColors.textPrimary, size: 20),
                       ),
                     ),
                     Expanded(
                       child: ShaderMask(
                         shaderCallback: (bounds) => AppColors.primaryGradient.createShader(bounds),
                         child: Text(
-                          part.cleanTitle,
+                          catName,
                           textAlign: TextAlign.center,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: isComputer ? AppColors.textPrimaryComputer : Colors.white,
+                            color: Colors.white,
                           ),
                         ),
                       ),
@@ -96,47 +109,130 @@ class LevelSelectionScreen extends ConsumerWidget {
                     }
 
                     final levels = snapshot.data!;
-                    final width = MediaQuery.of(context).size.width;
-                    int crossAxisCount = 5;
-                    if (width > 1200) {
-                      crossAxisCount = 12;
-                    } else if (width > 900) {
-                      crossAxisCount = 10;
-                    } else if (width > 600) {
-                      crossAxisCount = 8;
-                    }
-
-                    return Padding(
-                      padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
-                      child: GridView.builder(
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: crossAxisCount,
-                          crossAxisSpacing: 10,
-                          mainAxisSpacing: 10,
+                    return Stack(
+                      children: [
+                        // Giant Watermark di tengah
+                        Center(
+                          child: Opacity(
+                            opacity: 0.04,
+                            child: Text(
+                              mainChar,
+                              style: const TextStyle(fontSize: 350),
+                            ),
+                          ),
                         ),
-                        itemCount: levels.length,
-                        itemBuilder: (context, index) {
-                          final levelData = levels[index];
-                          final levelNumber = levelData.order;
-                          final levelId = levelData.id;
-                          final stars = progress.levelStars[levelId] ?? 0;
 
-                          // Level 1 selalu terbuka, level selanjutnya
-                          // terbuka jika level sebelumnya sudah mendapat bintang
-                          bool isUnlocked;
-                          if (index == 0) {
-                            isUnlocked = true;
-                          } else {
-                            final prevLevelId = levels[index - 1].id;
-                            final prevStars = progress.levelStars[prevLevelId] ?? 0;
-                            isUnlocked = prevStars > 0;
-                          }
+                        // Latar Belakang Ornamen Dinamis (Sesuai Jumlah Karakter & Beda Posisi Tiap Kategori)
+                        ...(() {
+                          final rand = math.Random();
+                          // Pola sebaran posisi agar tidak menumpuk
+                          final aligns = [
+                            const Alignment(-0.8, -0.8), const Alignment(0.8, -0.7),
+                            const Alignment(-0.7, -0.4), const Alignment(0.7, -0.2),
+                            const Alignment(-0.8, 0.1),  const Alignment(0.8, 0.4),
+                            const Alignment(-0.6, 0.7),  const Alignment(0.6, 0.8),
+                            const Alignment(0.0, -0.9),  const Alignment(-0.3, 0.9),
+                            const Alignment(0.4, -0.5),  const Alignment(-0.2, 0.5),
+                          ];
+                          aligns.shuffle(rand);
 
-                          return _buildLevelButton(
-                            context, levelNumber, isUnlocked, stars, levelData, index, isComputer,
-                          );
-                        },
-                      ),
+                          return List.generate(ornaments.length, (i) {
+                            final align = aligns[i % aligns.length];
+                            final size = 35.0 + rand.nextInt(20); // Ukuran acak 35-55
+                            final duration = 3 + rand.nextInt(3); // Durasi 3-5 detik
+                            final animType = rand.nextInt(3); // 0, 1, 2
+                            
+                            var anim = Text(ornaments[i], style: TextStyle(fontSize: size))
+                                .animate(onPlay: (c) => c.repeat(reverse: true));
+                            
+                            if (animType == 0) {
+                              anim = anim.slideX(duration: duration.seconds, curve: Curves.easeInOutSine, begin: -0.05, end: 0.05);
+                            } else if (animType == 1) {
+                              anim = anim.slideY(duration: duration.seconds, curve: Curves.easeInOutSine, begin: -0.05, end: 0.05);
+                            } else {
+                              anim = anim.scale(duration: duration.seconds, curve: Curves.easeInOut, begin: const Offset(0.9, 0.9), end: const Offset(1.1, 1.1));
+                            }
+
+                            return Align(
+                              alignment: align,
+                              child: anim,
+                            );
+                          });
+                        })(),
+
+                        // Journey Path List
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: ListView.builder(
+                            physics: const BouncingScrollPhysics(),
+                            padding: const EdgeInsets.only(top: 80, bottom: 80),
+                            itemCount: levels.length,
+                            itemBuilder: (context, index) {
+                              final levelData = levels[index];
+                              final levelNumber = levelData.order;
+                              final levelId = levelData.id;
+                              final stars = progress.levelStars[levelId] ?? 0;
+
+                              // Level 1 selalu terbuka, level selanjutnya
+                              // terbuka jika level sebelumnya sudah mendapat bintang
+                              bool isUnlocked;
+                              if (index == 0) {
+                                isUnlocked = true;
+                              } else {
+                                final prevLevelId = levels[index - 1].id;
+                                final prevStars = progress.levelStars[prevLevelId] ?? 0;
+                                isUnlocked = prevStars > 0;
+                              }
+
+                              // Matematika kurva:
+                              final alignOffsets = [0.0, 0.4, 0.6, 0.4, 0.0, -0.4, -0.6, -0.4];
+                              final align = alignOffsets[index % alignOffsets.length];
+
+                              return Align(
+                                alignment: Alignment(align, 0),
+                                child: Padding(
+                                  padding: const EdgeInsets.only(bottom: 30),
+                                  child: Stack(
+                                    alignment: Alignment.center,
+                                    clipBehavior: Clip.none,
+                                    children: [
+                                      // Node Utama
+                                      _buildLevelButton(
+                                        context, levelNumber, isUnlocked, stars, levelData, index,
+                                      ),
+                                      
+                                      // Bayangan bintang jika terbuka (diletakkan di atas bulatan agar tidak menutup teks Level)
+                                      if (isUnlocked && stars > 0)
+                                        Positioned(
+                                          top: -12,
+                                          child: Container(
+                                            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                                            decoration: BoxDecoration(
+                                              color: AppColors.surface,
+                                              borderRadius: BorderRadius.circular(12),
+                                              boxShadow: AppColors.cardShadow,
+                                              border: Border.all(color: Colors.black12, width: 0.5),
+                                            ),
+                                            child: Row(
+                                              mainAxisSize: MainAxisSize.min,
+                                              children: List.generate(3, (i) {
+                                                return Icon(
+                                                  i < stars ? Icons.star_rounded : Icons.star_outline_rounded,
+                                                  size: 14,
+                                                  color: i < stars ? AppColors.gold : Colors.black12,
+                                                );
+                                              }),
+                                            ),
+                                          ),
+                                        ).animate().fadeIn(delay: (index * 50 + 200).ms).slideY(begin: 0.5, end: 0),
+                                    ],
+                                  ),
+                                ),
+                              );
+                            },
+                          ),
+                        ),
+                      ],
                     );
                   },
                 ),
@@ -149,38 +245,32 @@ class LevelSelectionScreen extends ConsumerWidget {
   }
 
   Widget _buildLevelButton(
-    BuildContext context, int number, bool isUnlocked, int stars, LevelModel levelData, int index, bool isComputer,
+    BuildContext context, int number, bool isUnlocked, int stars, LevelModel levelData, int index,
   ) {
     final isComplete = stars == 3;
     Color? borderColor;
     Gradient? gradient;
 
     if (isComplete) {
-      borderColor = isComputer ? AppColors.primaryComputerLight : AppColors.gold;
-      gradient = isComputer ? AppColors.primaryComputerGradient : const LinearGradient(
-        colors: [Color(0xFF92400E), Color(0xFF1A1A40)],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      );
+      borderColor = AppColors.gold.withValues(alpha: 0.8);
+      gradient = AppColors.goldGradient;
     } else if (isUnlocked) {
-      borderColor = (isComputer ? AppColors.primaryComputer : AppColors.primary).withValues(alpha: 0.5);
+      borderColor = AppColors.primary.withValues(alpha: 0.4);
+      gradient = AppColors.primaryGradient;
+    } else {
+      borderColor = Colors.black12;
     }
 
     return InkWell(
       onTap: isUnlocked
           ? () async {
               AudioHelper.playClick();
-              // LANGSUNG fetch dan masuk tanpa loading dialog
               final fetchedQuestions = await ApiService().getQuestionsForLevel(levelData.partId, levelData.order);
               
               if (fetchedQuestions.isEmpty) {
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('Gagal memuat soal. Terjadi kesalahan saat membaca database lokal kuis.'),
-                      backgroundColor: Colors.red,
-                      duration: Duration(seconds: 3),
-                    ),
+                    const SnackBar(content: Text('Gagal memuat soal.'), backgroundColor: Colors.red),
                   );
                 }
                 return;
@@ -198,69 +288,73 @@ class LevelSelectionScreen extends ConsumerWidget {
               if (context.mounted) {
                 Navigator.of(context).push(
                   PageRouteBuilder(
-                    pageBuilder: (context, animation, secondaryAnimation) => QuizScreen(level: newLevel),
+                    pageBuilder: (context, animation, secondaryAnimation) => QuizScreen(
+                      level: newLevel, 
+                      categoryName: categoryName,
+                      gradientColors: gradientColors,
+                    ),
                     transitionsBuilder: (context, animation, secondaryAnimation, child) =>
                         FadeTransition(opacity: animation, child: child),
-                    transitionDuration: const Duration(milliseconds: 150),
                   ),
                 );
               }
             }
           : null,
-      borderRadius: BorderRadius.circular(isComputer ? 4 : 14),
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 200),
-        decoration: BoxDecoration(
-          gradient: gradient,
-          color: gradient == null
-              ? (isUnlocked ? (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLight) : AppColors.surface.withValues(alpha: 0.3))
-              : null,
-          borderRadius: BorderRadius.circular(isComputer ? 4 : 14),
-          border: Border.all(
-            color: borderColor ?? (isComputer ? AppColors.surfaceComputerBorder : Colors.white.withValues(alpha: 0.05)),
-            width: isComplete ? 1.5 : 1,
+      borderRadius: BorderRadius.circular(40),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          AnimatedContainer(
+            duration: const Duration(milliseconds: 200),
+            width: 65,
+            height: 65,
+            decoration: BoxDecoration(
+              gradient: gradient,
+              color: gradient == null
+                  ? (isUnlocked ? AppColors.surface : AppColors.surfaceLight)
+                  : null,
+              shape: BoxShape.circle,
+              border: Border.all(
+                color: borderColor ?? Colors.transparent,
+                width: isUnlocked ? 3 : 2,
+              ),
+              boxShadow: isComplete
+                  ? [BoxShadow(color: AppColors.gold.withValues(alpha: 0.5), blurRadius: 15, offset: const Offset(0, 6))]
+                  : isUnlocked
+                      ? [BoxShadow(color: gradientColors != null ? gradientColors![0].withValues(alpha: 0.3) : AppColors.primary.withValues(alpha: 0.3), blurRadius: 10, offset: const Offset(0, 4))]
+                      : null,
+            ),
+            child: Center(
+              child: isUnlocked
+                  ? Text(
+                      '$number',
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.w900,
+                        color: gradient != null ? Colors.white : AppColors.textPrimary,
+                      ),
+                    )
+                  : const Icon(Icons.lock_rounded, color: Colors.black26, size: 24),
+            ),
           ),
-          boxShadow: isComputer ? AppColors.computerCardShadow : (isComplete
-              ? [BoxShadow(color: AppColors.gold.withValues(alpha: 0.2), blurRadius: 8)]
-              : isUnlocked
-                  ? [BoxShadow(color: AppColors.primary.withValues(alpha: 0.1), blurRadius: 6)]
-                  : null),
-        ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            if (!isUnlocked)
-              const Icon(Icons.lock_rounded, size: 18, color: Colors.white24)
-            else ...[
-              Text(
-                '$number',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16,
-                  color: isComplete ? (isComputer ? AppColors.textPrimaryComputer : AppColors.gold) : (isComputer ? AppColors.textPrimaryComputer : Colors.white),
-                ),
+          const SizedBox(height: 8),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+            decoration: BoxDecoration(
+              color: isUnlocked ? AppColors.surface.withValues(alpha: 0.8) : Colors.transparent,
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Text(
+              'Level $number',
+              style: TextStyle(
+                fontSize: 13,
+                fontWeight: FontWeight.bold,
+                color: isUnlocked ? AppColors.textPrimary : Colors.black38,
               ),
-              const SizedBox(height: 4),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: List.generate(3, (i) {
-                  return Icon(
-                    i < stars ? Icons.star_rounded : Icons.star_outline_rounded,
-                    size: 9,
-                    color: i < stars ? AppColors.gold : Colors.white12,
-                  );
-                }),
-              ),
-            ],
-          ],
-        ),
+            ),
+          ),
+        ],
       ),
-    ).animate().fadeIn(delay: (index * 15).ms, duration: 250.ms).scale(
-          begin: const Offset(0.8, 0.8),
-          end: const Offset(1.0, 1.0),
-          delay: (index * 15).ms,
-          duration: 250.ms,
-          curve: Curves.easeOutBack,
-        );
+    ).animate().scale(delay: (index * 50).ms, duration: 400.ms, curve: Curves.easeOutBack);
   }
 }

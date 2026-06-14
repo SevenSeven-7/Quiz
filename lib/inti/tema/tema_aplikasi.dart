@@ -1,37 +1,57 @@
 import 'package:flutter/material.dart';
-import 'mode_terang.dart';
-import 'mode_gelap.dart';
-import 'mode_komputer.dart';
+import '../konstanta/warna_aplikasi.dart';
 
-/// 🎨 TEMA APLIKASI (Theme Facade)
-/// 
-/// Class ini berfungsi sebagai facade (pintu gerbang) untuk mengakses
-/// semua tema yang tersedia dalam aplikasi.
-/// 
-/// Setiap mode tema dipisahkan ke file terpisah untuk:
-/// - Maintainability: Mudah di-edit tanpa konflik
-/// - Scalability: Mudah menambah tema baru
-/// - Bug Prevention: Isolasi penuh antar tema
-/// - Code Clarity: Setiap file fokus pada satu tema
 class AppTheme {
-  // Mencegah instansiasi class ini
   AppTheme._();
 
-  /// 🌙 Mendapatkan tema gelap (Dark Blue Neon)
-  /// 
-  /// Tema dengan nuansa gelap dan aksen biru neon.
-  /// Cocok untuk penggunaan di malam hari atau ruangan gelap.
-  static ThemeData get darkTheme => ModeGelap.tema;
-
-  /// ☀️ Mendapatkan tema terang (Light Blue)
-  /// 
-  /// Tema dengan nuansa biru cerah dan latar belakang terang.
-  /// Cocok untuk penggunaan di siang hari atau ruangan terang.
-  static ThemeData get lightTheme => ModeTerang.tema;
-
-  /// 💻 Mendapatkan tema komputer (Clean Minimalist)
-  /// 
-  /// Tema dengan desain minimalis dan profesional.
-  /// Cocok untuk penggunaan desktop atau tampilan formal.
-  static ThemeData get computerTheme => ModeKomputer.tema;
+  static ThemeData get lightTheme {
+    return ThemeData(
+      useMaterial3: true,
+      brightness: Brightness.light,
+      primaryColor: AppColors.primary,
+      scaffoldBackgroundColor: AppColors.background,
+      fontFamily: 'Nunito',
+      colorScheme: const ColorScheme.light(
+        primary: AppColors.primary,
+        secondary: AppColors.accent,
+        surface: AppColors.surface,
+        error: AppColors.failure,
+      ),
+      appBarTheme: const AppBarTheme(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: true,
+        iconTheme: IconThemeData(color: AppColors.textPrimary),
+        titleTextStyle: TextStyle(
+          color: AppColors.textPrimary,
+          fontSize: 22,
+          fontWeight: FontWeight.bold,
+          fontFamily: 'Nunito',
+        ),
+      ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.primary,
+          foregroundColor: Colors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+          textStyle: const TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+            fontFamily: 'Nunito',
+          ),
+        ),
+      ),
+      cardTheme: CardThemeData(
+        color: AppColors.surface,
+        elevation: 4,
+        shadowColor: AppColors.cardShadow[0].color,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(24),
+        ),
+      ),
+    );
+  }
 }

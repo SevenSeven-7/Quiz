@@ -13,15 +13,19 @@ class ProgressState {
   
   // Kumpulan ID bagian kuis yang sudah berhasil terbuka
   final Set<String> unlockedParts;
-  
+
   // Penanda apakah efek getar legenda sudah pernah dilihat
   final bool hasSeenLegendaShake;
+
+  // Penanda gelar baru yang baru saja dicapai (untuk trigger selebrasi)
+  final String? newlyAchievedGelar;
 
   ProgressState({
     required this.levelStars,
     required this.unlockedLevels,
     required this.unlockedParts,
     required this.hasSeenLegendaShake,
+    this.newlyAchievedGelar,
   });
 
   // Total bintang yang berhasil dikumpulkan pemain
@@ -69,12 +73,15 @@ class ProgressState {
     Map<String, bool>? unlockedLevels,
     Set<String>? unlockedParts,
     bool? hasSeenLegendaShake,
+    String? newlyAchievedGelar,
+    bool clearNewlyAchievedGelar = false,
   }) {
     return ProgressState(
       levelStars: levelStars ?? this.levelStars,
       unlockedLevels: unlockedLevels ?? this.unlockedLevels,
       unlockedParts: unlockedParts ?? this.unlockedParts,
       hasSeenLegendaShake: hasSeenLegendaShake ?? this.hasSeenLegendaShake,
+      newlyAchievedGelar: clearNewlyAchievedGelar ? null : (newlyAchievedGelar ?? this.newlyAchievedGelar),
     );
   }
 }
@@ -86,6 +93,7 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
     unlockedLevels: {'p1_l1': true, 'p2_l1': true}, // Level 1 di Bagian 1 dan Bagian 2 selalu terbuka bawaan
     unlockedParts: {'p1', 'p2'}, // Bagian 1 dan Bagian 2 selalu terbuka bawaan
     hasSeenLegendaShake: false,
+    newlyAchievedGelar: null,
   )) {
     _loadProgress();
   }
@@ -127,6 +135,7 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
         unlockedLevels: loadedUnlocked,
         unlockedParts: loadedParts,
         hasSeenLegendaShake: loadedLegenda,
+        newlyAchievedGelar: null,
       );
     } catch (e) {
       debugPrint('Gagal memuat progres kuis secara lokal $e');
@@ -135,6 +144,7 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
 
   // Fungsi untuk memperbarui progres ketika suatu level kuis diselesaikan
   Future<void> updateProgress(String levelId, int stars, String partId) async {
+    final oldGelar = state.gelarKecerdasan;
     final newStars = Map<String, int>.from(state.levelStars);
     
     // Simpan perolehan bintang jika tingkat level ini belum pernah diselesaikan, atau perolehan bintang baru lebih tinggi
@@ -152,9 +162,18 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
       newUnlocked[nextLevelId] = true;
     }
 
+    final tempState = ProgressState(levelStars: newStars, unlockedLevels: newUnlocked, unlockedParts: state.unlockedParts, hasSeenLegendaShake: state.hasSeenLegendaShake);
+    final newGelar = tempState.gelarKecerdasan;
+    String? newlyAchieved;
+    if (oldGelar != newGelar && newGelar != 'Pemula') {
+      newlyAchieved = newGelar;
+    }
+
     state = state.copyWith(
       levelStars: newStars,
       unlockedLevels: newUnlocked,
+      newlyAchievedGelar: newlyAchieved,
+      clearNewlyAchievedGelar: newlyAchieved == null,
     );
 
     // Simpan progres terbaru secara lokal
@@ -182,6 +201,7 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
         unlockedLevels: {'p1_l1': true, 'p2_l1': true},
         unlockedParts: {'p1', 'p2'},
         hasSeenLegendaShake: false,
+        newlyAchievedGelar: null,
       );
     } catch (e) {
       debugPrint('Gagal mereset progres kuis $e');
@@ -203,6 +223,7 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
         unlockedLevels: {'p1_l1': true, 'p2_l1': true},
         unlockedParts: {'p1', 'p2'},
         hasSeenLegendaShake: false,
+        newlyAchievedGelar: null,
       );
     } catch (e) {
       debugPrint('Gagal menghapus akun $e');
@@ -218,6 +239,12 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
       await prefs.setBool('has_seen_legenda_shake', true);
     } catch (e) {
       debugPrint('Gagal menyimpan status legenda $e');
+    }
+  }
+
+  void clearNewlyAchievedGelar() {
+    if (state.newlyAchievedGelar != null) {
+      state = state.copyWith(clearNewlyAchievedGelar: true);
     }
   }
 }

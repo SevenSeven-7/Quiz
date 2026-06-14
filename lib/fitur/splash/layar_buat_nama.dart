@@ -4,7 +4,6 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
-import '../../inti/penyedia/penyedia_tema.dart';
 import '../../inti/utils/audio_helper.dart';
 import '../../inti/utils/transisi_halaman.dart';
 import '../beranda/layar_utama.dart';
@@ -45,29 +44,10 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
     }
   }
 
-  /// Membangun ulang partikel dengan warna yang sesuai tema saat ini
+  /// Membangun ulang partikel dengan warna yang sesuai
   void _rebuildParticles() {
-    final appTheme = ref.read(temaProvider);
-    final isDark = appTheme == AppThemeMode.dark;
-    final isComputer = appTheme == AppThemeMode.computer;
-
-    // Pilih warna partikel berdasarkan tema agar selalu terlihat
-    final Color particleColorA;
-    final Color particleColorB;
-
-    if (isComputer) {
-      // Mode Komputer: partikel abu-abu gelap agar terlihat di background putih
-      particleColorA = AppColors.primaryComputer.withValues(alpha: 0.35);
-      particleColorB = AppColors.accentComputer.withValues(alpha: 0.25);
-    } else if (isDark) {
-      // Mode Gelap: partikel biru neon terang
-      particleColorA = AppColors.primary.withValues(alpha: 0.5);
-      particleColorB = AppColors.accent.withValues(alpha: 0.4);
-    } else {
-      // Mode Terang: partikel biru sedang agar terlihat di background biru muda
-      particleColorA = AppColors.primary.withValues(alpha: 0.4);
-      particleColorB = const Color(0xFF0066CC).withValues(alpha: 0.3);
-    }
+    final Color particleColorA = AppColors.primary.withValues(alpha: 0.4);
+    final Color particleColorB = const Color(0xFF0066CC).withValues(alpha: 0.3);
 
     _particles = List.generate(25, (i) => _MiniParticle(
       x: _random.nextDouble(),
@@ -103,47 +83,22 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
   Widget build(BuildContext context) {
     final bottomPadding = MediaQuery.of(context).viewInsets.bottom;
     final size = MediaQuery.of(context).size;
-    final appTheme = ref.watch(temaProvider);
-    final isDark = appTheme == AppThemeMode.dark;
-    final isComputer = appTheme == AppThemeMode.computer;
 
-    // Rebuild partikel setiap kali tema berubah
-    _rebuildParticles();
+    const bgGradient = AppColors.backgroundGradient;
 
-    final bgGradient = isComputer
-        ? AppColors.backgroundComputerGradient
-        : (isDark
-            ? const LinearGradient(
-                colors: [Color(0xFF050510), Color(0xFF0A0820), Color(0xFF050510)],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-              )
-            : AppColors.backgroundLightGradient);
+    final surfaceColor = AppColors.surface;
+    const textColor = AppColors.textPrimary;
+    const secondaryTextColor = AppColors.textSecondary;
+    const primaryGrad = AppColors.primaryGradient;
+    const buttonGrad = AppColors.buttonGradient;
 
-    final surfaceColor = isDark
-        ? AppColors.surfaceLight
-        : (isComputer ? AppColors.surfaceComputer : AppColors.surfaceLightModeSecond);
-    final textColor = isDark
-        ? Colors.white
-        : (isComputer ? AppColors.textPrimaryComputer : AppColors.textPrimaryLight);
-    final secondaryTextColor = isComputer
-        ? AppColors.textSecondaryComputer
-        : (isDark ? AppColors.textSecondary : AppColors.textSecondaryLight);
-    final primaryGrad = isComputer ? AppColors.primaryComputerGradient : AppColors.primaryGradient;
-    final buttonGrad = isComputer ? AppColors.primaryComputerGradient : AppColors.buttonGradient;
-
-    // Warna glow lingkaran latar adaptif tema
-    final glowCircleColor = isComputer
-        ? AppColors.primaryComputer.withValues(alpha: 0.06)
-        : (isDark
-            ? AppColors.primary.withValues(alpha: 0.12)
-            : AppColors.primary.withValues(alpha: 0.08));
+    final glowCircleColor = AppColors.primary.withValues(alpha: 0.08);
 
     return Scaffold(
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(gradient: bgGradient),
+        decoration: const BoxDecoration(gradient: bgGradient),
         child: Stack(
           children: [
             // ── Partikel latar (warna adaptif tema) ──────────────────
@@ -213,7 +168,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                                 gradient: primaryGrad,
                                 boxShadow: [
                                   BoxShadow(
-                                    color: isComputer ? AppColors.primaryComputer.withValues(alpha: 0.3) : AppColors.primary.withValues(alpha: 0.4),
+                                    color: AppColors.primary.withValues(alpha: 0.4),
                                     blurRadius: 24,
                                     spreadRadius: 2,
                                     offset: const Offset(0, 8),
@@ -240,15 +195,13 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                           // ── Teks Quiz shimmer ─────────────────────────
                           Center(
                             child: ShaderMask(
-                              shaderCallback: (bounds) => isComputer
-                                  ? AppColors.primaryComputerGradient.createShader(bounds)
-                                  : AppColors.primaryGradient.createShader(bounds),
-                              child: Text(
+                              shaderCallback: (bounds) => AppColors.primaryGradient.createShader(bounds),
+                              child: const Text(
                                 'Quiz',
                                 style: TextStyle(
                                   fontSize: 40,
                                   fontWeight: FontWeight.w900,
-                                  color: isComputer ? AppColors.textPrimaryComputer : Colors.white,
+                                  color: Colors.white,
                                   letterSpacing: 6,
                                 ),
                               ),
@@ -258,7 +211,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                           const SizedBox(height: 8),
 
                           Center(
-                            child: Text(
+                            child: const Text(
                               'Asah kecerdasanmu ke level maksimal!',
                               textAlign: TextAlign.center,
                               style: TextStyle(
@@ -279,19 +232,17 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                               borderRadius: BorderRadius.circular(28),
                               border: Border.all(
                                 color: _focusNode.hasFocus 
-                                    ? (isComputer ? AppColors.primaryComputer : AppColors.primary)
-                                    : (isComputer ? AppColors.surfaceComputerBorder : AppColors.primary.withValues(alpha: 0.25)),
+                                    ? AppColors.primary
+                                    : AppColors.primary.withValues(alpha: 0.25),
                                 width: _focusNode.hasFocus ? 2.5 : 1.5,
                               ),
-                              boxShadow: isComputer
-                                  ? AppColors.computerCardShadow
-                                  : [
-                                      BoxShadow(
-                                        color: _focusNode.hasFocus ? AppColors.primary.withValues(alpha: 0.3) : AppColors.primary.withValues(alpha: 0.08),
-                                        blurRadius: _focusNode.hasFocus ? 35 : 24,
-                                        spreadRadius: _focusNode.hasFocus ? 4 : 1,
-                                      ),
-                                    ],
+                              boxShadow: [
+                                BoxShadow(
+                                  color: _focusNode.hasFocus ? AppColors.primary.withValues(alpha: 0.3) : AppColors.primary.withValues(alpha: 0.08),
+                                  blurRadius: _focusNode.hasFocus ? 35 : 24,
+                                  spreadRadius: _focusNode.hasFocus ? 4 : 1,
+                                ),
+                              ],
                             ),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -307,7 +258,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                                       child: const Icon(Icons.person_outline_rounded, color: Colors.white, size: 18),
                                     ),
                                     const SizedBox(width: 12),
-                                    Text(
+                                    const Text(
                                       'Buat Nama Pemain',
                                       style: TextStyle(
                                         fontSize: 18,
@@ -318,7 +269,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                                   ],
                                 ),
                                 const SizedBox(height: 8),
-                                Text(
+                                const Text(
                                   'Nama ini akan digunakan untuk melacak skor dan pencapaianmu.',
                                   style: TextStyle(color: secondaryTextColor, fontSize: 12),
                                 ),
@@ -326,27 +277,21 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                                 TextFormField(
                                   focusNode: _focusNode,
                                   controller: _nameController,
-                                  style: TextStyle(color: textColor, fontSize: 16),
+                                  style: const TextStyle(color: textColor, fontSize: 16),
                                   maxLength: 15,
                                   textCapitalization: TextCapitalization.words,
                                   decoration: InputDecoration(
                                     hintText: 'Masukkan namamu...',
-                                    hintStyle: TextStyle(
-                                      color: isComputer
-                                          ? Colors.black38
-                                          : (isDark ? Colors.white30 : Colors.black38),
+                                    hintStyle: const TextStyle(
+                                      color: Colors.black38,
                                     ),
-                                    counterStyle: TextStyle(color: secondaryTextColor),
-                                    prefixIcon: Icon(
+                                    counterStyle: const TextStyle(color: secondaryTextColor),
+                                    prefixIcon: const Icon(
                                       Icons.person_rounded,
-                                      color: isComputer ? AppColors.primaryComputer : AppColors.primary,
+                                      color: AppColors.primary,
                                     ),
                                     filled: true,
-                                    fillColor: isComputer
-                                        ? AppColors.surfaceComputerSecond
-                                        : (isDark
-                                            ? AppColors.background.withValues(alpha: 0.8)
-                                            : AppColors.surfaceLightBlue),
+                                    fillColor: AppColors.background,
                                     contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 18),
                                     border: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(14),
@@ -354,8 +299,8 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(14),
-                                      borderSide: BorderSide(
-                                        color: isComputer ? AppColors.primaryComputer : AppColors.primary,
+                                      borderSide: const BorderSide(
+                                        color: AppColors.primary,
                                         width: 1.5,
                                       ),
                                     ),
@@ -387,7 +332,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
                               borderRadius: BorderRadius.circular(16),
                               boxShadow: [
                                 BoxShadow(
-                                  color: isComputer ? AppColors.primaryComputer.withValues(alpha: 0.3) : AppColors.primary.withValues(alpha: 0.4),
+                                  color: AppColors.primary.withValues(alpha: 0.4),
                                   blurRadius: 16,
                                   spreadRadius: 1,
                                 ),

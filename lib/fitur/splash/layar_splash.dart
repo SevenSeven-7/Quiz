@@ -6,7 +6,6 @@ import '../../inti/utils/transisi_halaman.dart';
 import 'layar_buat_nama.dart';
 import '../beranda/layar_utama.dart';
 import '../../inti/konstanta/warna_aplikasi.dart';
-import '../../inti/penyedia/penyedia_tema.dart';
 
 // SplashScreen dengan animasi memukau dan logo Quiz
 class SplashScreen extends ConsumerStatefulWidget {
@@ -58,30 +57,15 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
 
   @override
   Widget build(BuildContext context) {
-    final appTheme = ref.watch(temaProvider);
-    final isDark = appTheme == AppThemeMode.dark;
-    final isComputer = appTheme == AppThemeMode.computer;
-
-    // Pilih warna dan gradien berdasarkan tema
-    final bgColor = isDark
-        ? AppColors.background
-        : isComputer
-            ? AppColors.backgroundComputer
-            : AppColors.backgroundLightBlue;
-    final gradient = isDark
-        ? AppColors.backgroundGradient
-        : isComputer
-            ? AppColors.backgroundComputerGradient
-            : AppColors.backgroundLightGradient;
-    final textGradient = isComputer
-        ? AppColors.primaryComputerGradient
-        : AppColors.primaryGradient;
-    final loadingColor = isComputer ? AppColors.accentComputer : AppColors.accent;
+    const bgColor = AppColors.background;
+    const gradient = AppColors.backgroundGradient;
+    const textGradient = AppColors.primaryGradient;
+    const loadingColor = AppColors.accent;
 
     return Scaffold(
       backgroundColor: bgColor,
       body: Container(
-        decoration: BoxDecoration(gradient: gradient),
+        decoration: const BoxDecoration(gradient: gradient),
         child: Center(
           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 500),
@@ -100,15 +84,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
                           borderRadius: BorderRadius.circular(16),
-                          boxShadow: isComputer
-                              ? [
-                                  BoxShadow(
-                                    color: AppColors.primaryComputer.withValues(alpha: 0.25),
-                                    blurRadius: 20,
-                                    spreadRadius: 2,
-                                  ),
-                                ]
-                              : [
+                          boxShadow: [
                                   BoxShadow(
                                     color: AppColors.primary.withValues(alpha: 0.25),
                                     blurRadius: 25,
@@ -121,15 +97,13 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                                   ),
                                 ],
                         ),
-                        // Ring border gradien (untuk tema komputer: abu, untuk neon: biru)
+                        // Ring border gradien (untuk neon: biru)
                         child: Container(
                           padding: const EdgeInsets.all(3),
                           decoration: BoxDecoration(
                             shape: BoxShape.rectangle,
                             borderRadius: BorderRadius.circular(16),
-                            gradient: isComputer
-                                ? AppColors.primaryComputerGradient
-                                : AppColors.primaryGradient,
+                            gradient: AppColors.primaryGradient,
                           ),
                           child: Container(
                             // Background dalam kotak
@@ -165,14 +139,13 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                 // ── Teks "Quiz" ────────────────────────────────────────
                 ShaderMask(
                   shaderCallback: (bounds) => textGradient.createShader(bounds),
-                  child: Text(
+                  child: const Text(
                     'Quiz',
                     style: TextStyle(
                       fontSize: 48,
                       fontWeight: FontWeight.w900,
                       color: Colors.white,
-                      letterSpacing: isComputer ? 4 : 8,
-                      fontFamily: isComputer ? 'Inter' : null,
+                      letterSpacing: 8,
                     ),
                   ),
                 )
@@ -183,13 +156,11 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                 const SizedBox(height: 8),
 
                 // ── Tagline ─────────────────────────────────────────────
-                Text(
-                  isComputer ? 'Platform Quiz Pendidikan Indonesia' : 'Belajar Lebih Seru!',
+                const Text(
+                  'Belajar Lebih Seru!',
                   style: TextStyle(
                     fontSize: 14,
-                    color: isComputer
-                        ? AppColors.textSecondaryComputer
-                        : (isDark ? AppColors.textSecondary : AppColors.textSecondaryLightBlue),
+                    color: AppColors.textSecondary,
                     letterSpacing: 1,
                     fontWeight: FontWeight.w500,
                   ),
@@ -200,34 +171,17 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                 const SizedBox(height: 48),
 
                 // ── Loading indicator ───────────────────────────────────
-                if (isComputer) ...[
-                  // Komputer: progress bar ramping bukan bulat
-                  SizedBox(
-                    width: 100,
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(4),
-                      child: const LinearProgressIndicator(
-                        backgroundColor: AppColors.surfaceComputerBorder,
-                        valueColor: AlwaysStoppedAnimation<Color>(AppColors.primaryComputer),
-                        minHeight: 3,
-                      ),
-                    ),
-                  )
-                  .animate()
-                  .fadeIn(duration: 400.ms, delay: 1000.ms),
-                ] else ...[
-                  // Neon: lingkaran glowing
-                  SizedBox(
-                    width: 32,
-                    height: 32,
-                    child: CircularProgressIndicator(
-                      valueColor: AlwaysStoppedAnimation<Color>(loadingColor),
-                      strokeWidth: 2.5,
-                    ),
-                  )
-                  .animate()
-                  .fadeIn(duration: 400.ms, delay: 1000.ms),
-                ],
+                // Neon: lingkaran glowing
+                const SizedBox(
+                  width: 32,
+                  height: 32,
+                  child: CircularProgressIndicator(
+                    valueColor: AlwaysStoppedAnimation<Color>(loadingColor),
+                    strokeWidth: 2.5,
+                  ),
+                )
+                .animate()
+                .fadeIn(duration: 400.ms, delay: 1000.ms),
               ],
             ),
           ),
