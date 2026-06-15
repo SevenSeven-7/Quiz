@@ -1,1302 +1,1302 @@
 [
   {
-    "text": "Kalimat manakah yang paling tepat diucapkan ketika pertama kali memperkenalkan diri di depan kelas?",
-    "correctAnswer": "Hello everyone, let me introduce myself. My name is Budi.",
+    "text": "Kalimat manakah yang memiliki tata bahasa paling tepat dan sopan untuk memperkenalkan diri di situasi formal?",
+    "correctAnswer": "Good morning. Please allow me to introduce myself.",
     "options": [
-      "Goodbye everyone, see you later.",
-      "Hello everyone, let me introduce myself. My name is Budi.",
-      "Are you Budi? Nice to meet you.",
-      "I want to ask you a question."
+      "Good morning. Let me introducing myself to you.",
+      "Good morning. I want to introduce yourselves.",
+      "Good morning. Please allow me to introduce myself.",
+      "Good morning. I would like to introduce myself to me."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "id": "bahasainggris_1"
   },
   {
-    "text": "Jika seseorang bertanya, 'Where do you come from?' (Dari mana asalmumu?), maka jawaban yang tepat adalah...",
-    "correctAnswer": "I come from Jakarta.",
+    "text": "Jika kamu ingin menanyakan kota asal seseorang yang baru dikenal, pertanyaan yang paling akurat secara gramatikal adalah...",
+    "correctAnswer": "Where do you come from?",
     "options": [
-      "I am 15 years old.",
-      "My hobby is reading books.",
-      "I come from Jakarta.",
-      "I live with my parents."
+      "Where are you come from?",
+      "Where do you come from?",
+      "Where from do you come?",
+      "Where are you coming from?"
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 1,
     "id": "bahasainggris_2"
   },
   {
-    "text": "Untuk menanyakan kabar seseorang dalam percakapan sehari-hari, kita dapat mengatakan...",
-    "correctAnswer": "How are you doing today?",
+    "text": "Saat seseorang berkata 'How do you do?' pada pertemuan pertama, balasan baku yang paling tepat adalah...",
+    "correctAnswer": "How do you do.",
     "options": [
-      "How are you doing today?",
-      "What is your name?",
-      "Where do you live?",
-      "Can I borrow your pen?"
-    ],
-    "type": "multiple_choice",
-    "correctAnswerIndex": 0,
-    "id": "bahasainggris_3"
-  },
-  {
-    "text": "Ketika kamu ingin memperkenalkan temanmu, Andi, kepada teman yang lain, kalimat yang benar adalah...",
-    "correctAnswer": "I would like you to meet my friend, Andi.",
-    "options": [
-      "He is going to school.",
-      "I want to go home.",
-      "I would like you to meet my friend, Andi.",
-      "This is a book."
-    ],
-    "type": "multiple_choice",
-    "correctAnswerIndex": 2,
-    "id": "bahasainggris_4"
-  },
-  {
-    "text": "Respon sopan untuk kalimat 'Nice to meet you' (Senang bertemu denganmu) adalah...",
-    "correctAnswer": "Nice to meet you too.",
-    "options": [
-      "Thank you very much.",
-      "I am fine.",
-      "You are welcome.",
-      "Nice to meet you too."
+      "I am doing very well, thank you.",
+      "How are you doing?",
+      "I do my job well.",
+      "How do you do."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 3,
+    "id": "bahasainggris_3"
+  },
+  {
+    "text": "Bagaimana cara yang tepat untuk menyebutkan usiamu (misal 20 tahun) dalam bahasa Inggris?",
+    "correctAnswer": "I am twenty years old.",
+    "options": [
+      "I have twenty years old.",
+      "I am twenty years old.",
+      "My age is twenty years.",
+      "I am twenty age."
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_4"
+  },
+  {
+    "text": "Untuk menanyakan profesi atau pekerjaan seseorang secara sopan, kamu bisa bertanya...",
+    "correctAnswer": "What do you do for a living?",
+    "options": [
+      "What are you doing for life?",
+      "What do you do for a living?",
+      "What is your work to do?",
+      "What do you working on?"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
     "id": "bahasainggris_5"
   },
   {
-    "text": "Saat memulai sebuah presentasi formal, sapaan pembuka yang paling baik adalah...",
-    "correctAnswer": "Good morning ladies and gentlemen, thank you for coming today.",
+    "text": "Cara natural untuk menyebutkan ketertarikan (hobi) saat perkenalan adalah...",
+    "correctAnswer": "I am really into reading and traveling.",
     "options": [
-      "Good morning ladies and gentlemen, thank you for coming today.",
-      "Hi guys, let's start now.",
-      "What's up? Listen to me.",
-      "I am here, so let's begin."
+      "I am really into reading and traveling.",
+      "I very like to reading and traveling.",
+      "My hobbies is reading and traveling.",
+      "I am interest in read and travel."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 0,
     "id": "bahasainggris_6"
   },
   {
-    "text": "Dalam presentasi, frasa untuk mengalihkan topik ke poin berikutnya (transisi) adalah...",
-    "correctAnswer": "Now, let's move on to the next point.",
+    "text": "Jika kamu ingin memperkenalkan kolegamu, Sarah, kepada klien, frasa yang paling pas adalah...",
+    "correctAnswer": "I would like you to meet my colleague, Sarah.",
     "options": [
-      "I don't know about this.",
-      "Now, let's move on to the next point.",
-      "That is all from me.",
-      "Any questions so far?"
+      "Please you meet my colleague, Sarah.",
+      "I want to introducing my colleague, Sarah.",
+      "I would like you to meet my colleague, Sarah.",
+      "Let me to introduce Sarah for you."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "id": "bahasainggris_7"
   },
   {
-    "text": "Bagaimana caramu menyampaikan tujuan presentasi kepada audiens di awal sesi?",
-    "correctAnswer": "Today, I would like to talk about...",
+    "text": "Respon yang elegan ketika klien berkata 'It's a pleasure to meet you' adalah...",
+    "correctAnswer": "The pleasure is all mine.",
     "options": [
-      "In conclusion, we must...",
-      "I am sorry for the mistake.",
-      "Today, I would like to talk about...",
-      "Please give me a big applause."
+      "Yes, it is a pleasure to me.",
+      "The pleasure is all mine.",
+      "Thank you for your pleasure.",
+      "Me too, please."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 1,
     "id": "bahasainggris_8"
   },
   {
-    "text": "Saat mengakhiri presentasi, kalimat yang tepat untuk diucapkan adalah...",
-    "correctAnswer": "That brings me to the end of my presentation. Thank you for your attention.",
+    "text": "Untuk mengakhiri percakapan perkenalan dengan sopan karena harus pergi, kamu bisa bilang...",
+    "correctAnswer": "It was great talking to you, but I must get going.",
     "options": [
-      "Let's start the first slide.",
-      "That brings me to the end of my presentation. Thank you for your attention.",
-      "I will answer it later.",
-      "My name is Sarah."
-    ],
-    "type": "multiple_choice",
-    "correctAnswerIndex": 1,
-    "id": "bahasainggris_9"
-  },
-  {
-    "text": "Dalam sesi tanya jawab (Q&A), kalimat sopan untuk mengundang pertanyaan dari audiens adalah...",
-    "correctAnswer": "Does anyone have any questions?",
-    "options": [
-      "Why don't you talk?",
-      "Stop asking me.",
-      "I have a question for you.",
-      "Does anyone have any questions?"
-    ],
-    "type": "multiple_choice",
-    "correctAnswerIndex": 3,
-    "id": "bahasainggris_10"
-  },
-  {
-    "text": "Jika kamu kurang jelas mendengar pertanyaan audiens dalam diskusi, kalimat apa yang bisa digunakan?",
-    "correctAnswer": "Could you please repeat your question?",
-    "options": [
-      "Could you please repeat your question?",
-      "That is a bad question.",
-      "I will answer it now.",
-      "Please listen carefully."
+      "It was great talking to you, but I must get going.",
+      "I am great to talk, but I will go now.",
+      "Nice to talk, leave me alone.",
+      "I have to go away from you."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 0,
-    "id": "bahasainggris_11"
+    "id": "bahasainggris_9"
   },
   {
-    "text": "Kalimat yang baik untuk menyela atau memberikan sanggahan secara sopan saat diskusi adalah...",
-    "correctAnswer": "Excuse me, but I have a different perspective on that.",
+    "text": "Saat mengenalkan diri dan menyebutkan tempat tinggalmu saat ini, struktur yang benar adalah...",
+    "correctAnswer": "I am currently living in Bandung.",
     "options": [
-      "You are absolutely wrong.",
-      "Excuse me, but I have a different perspective on that.",
-      "Shut up and listen.",
-      "I agree with everything you said."
-    ],
-    "type": "multiple_choice",
-    "correctAnswerIndex": 1,
-    "id": "bahasainggris_12"
-  },
-  {
-    "text": "Saat kamu sepenuhnya setuju dengan opini rekanmu dalam rapat, kamu bisa mengucapkan...",
-    "correctAnswer": "I completely agree with you on this point.",
-    "options": [
-      "I am afraid I cannot agree.",
-      "I don't think so.",
-      "I completely agree with you on this point.",
-      "Maybe you are wrong."
+      "I am currently live in Bandung.",
+      "I currently living in Bandung.",
+      "I am currently living in Bandung.",
+      "I live currently at Bandung."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 2,
+    "id": "bahasainggris_10"
+  },
+  {
+    "text": "Jika ditanya 'Where did you grow up?', jawaban yang tepat secara grammar adalah...",
+    "correctAnswer": "I grew up in a small town.",
+    "options": [
+      "I grow up in a small town.",
+      "I was grown up in a small town.",
+      "I grew up in a small town.",
+      "I am growing up in a small town."
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_11"
+  },
+  {
+    "text": "Ketika kamu ingin menyebutkan jurusan kuliahmu saat perkenalan, kamu mengatakan...",
+    "correctAnswer": "I majored in Economics.",
+    "options": [
+      "I was major in Economics.",
+      "My major was to Economics.",
+      "I majored in Economics.",
+      "I am majoring of Economics."
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_12"
+  },
+  {
+    "text": "Untuk menyapa audiens secara inklusif sebelum mempresentasikan dirimu, kamu bisa mengatakan...",
+    "correctAnswer": "I am honored to have the opportunity to speak with you today.",
+    "options": [
+      "I am honor to speak with you today.",
+      "I am honored to have the opportunity to speak with you today.",
+      "It is an honoring for me to speak.",
+      "I have the honor to speaking with you."
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
     "id": "bahasainggris_13"
   },
   {
-    "text": "Ketika kamu ingin meminta pendapat seseorang mengenai suatu topik, pertanyaannya adalah...",
-    "correctAnswer": "What do you think about this issue?",
+    "text": "Jika kamu bekerja di sebuah perusahaan selama 3 tahun, cara mengatakannya yang benar adalah...",
+    "correctAnswer": "I have been working here for three years.",
     "options": [
-      "I think it is a great idea.",
-      "Let me tell you my opinion.",
-      "What do you think about this issue?",
-      "I don't care about it."
+      "I am working here since three years.",
+      "I work here for three years ago.",
+      "I have been working here for three years.",
+      "I was worked here for three years."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 2,
     "id": "bahasainggris_14"
   },
   {
-    "text": "Dalam percakapan sehari-hari, cara kasual untuk mengatakan 'Sampai jumpa nanti' adalah...",
-    "correctAnswer": "See you later.",
+    "text": "Cara menyatakan posisi dalam keluarga (misal: anak sulung) adalah...",
+    "correctAnswer": "I am the eldest child in my family.",
     "options": [
-      "Nice to meet you.",
-      "See you later.",
-      "Good morning.",
-      "How do you do."
+      "I am the first childs in my family.",
+      "I am the eldest child in my family.",
+      "I am the older child of my family.",
+      "I am number one child in family."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
     "id": "bahasainggris_15"
   },
   {
-    "text": "Jika temanmu berterima kasih atas bantuanmu, balasan yang paling umum adalah...",
-    "correctAnswer": "You are welcome.",
+    "text": "Pertanyaan untuk meminta lawan bicara menceritakan tentang dirinya adalah...",
+    "correctAnswer": "Could you tell me a little bit about yourself?",
     "options": [
-      "You are welcome.",
-      "I am sorry.",
-      "Please help me.",
-      "Excuse me."
+      "Could you tell me a little bit about yourself?",
+      "Can you tell to me about yourself?",
+      "Could you telling me about you?",
+      "Do you tell me about yourself?"
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 0,
     "id": "bahasainggris_16"
   },
   {
-    "text": "Ketika mulai menceritakan pengalaman liburan masa lalu, bentuk tenses (waktu) apa yang harus dominan digunakan?",
-    "correctAnswer": "Simple Past Tense (e.g., I went, We visited)",
+    "text": "Ketika kamu ingin meralat sedikit informasi tentang asalmu, kalimat yang natural adalah...",
+    "correctAnswer": "Actually, I was born in Jakarta, but raised in Bali.",
     "options": [
-      "Simple Present Tense (e.g., I go, We visit)",
-      "Simple Future Tense (e.g., I will go, We will visit)",
-      "Simple Past Tense (e.g., I went, We visited)",
-      "Present Continuous Tense (e.g., I am going)"
+      "Actually, I born in Jakarta, but raise in Bali.",
+      "Actually, I was born in Jakarta, but raised in Bali.",
+      "Actually, I am born in Jakarta, but raised in Bali.",
+      "Actually, I was bear in Jakarta, but rising in Bali."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 1,
     "id": "bahasainggris_17"
   },
   {
-    "text": "Pilih kalimat pembuka yang tepat saat menceritakan pengalaman liburanmu kepada teman-teman.",
-    "correctAnswer": "Last summer, I had a wonderful trip to Bali.",
+    "text": "Bagaimana cara menutup perkenalan diri yang singkat di depan rekan kerja baru?",
+    "correctAnswer": "I am looking forward to working with all of you.",
     "options": [
-      "I will go to Bali next summer.",
-      "Bali is a beautiful island.",
-      "I am packing my bags for Bali.",
-      "Last summer, I had a wonderful trip to Bali."
+      "I am looking forward to work with all of you.",
+      "I look forward to working with all of you.",
+      "I am looking forward to working with all of you.",
+      "I look forward for working with you."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 3,
+    "correctAnswerIndex": 2,
     "id": "bahasainggris_18"
   },
   {
-    "text": "Kata penghubung (transition word) yang tepat untuk merangkai urutan kejadian saat bercerita (telling experience) adalah...",
-    "correctAnswer": "First, then, after that, and finally.",
+    "text": "Dalam perkenalan, jika kamu ingin menyebutkan nama panggilanmu, kamu berkata...",
+    "correctAnswer": "My name is Amanda, but you can call me Manda.",
     "options": [
-      "However, although, but.",
-      "First, then, after that, and finally.",
-      "Because, so, therefore.",
-      "For example, such as."
+      "My name is Amanda, but please call to me Manda.",
+      "My name is Amanda, but you can call me Manda.",
+      "My name is Amanda, but you call Manda for me.",
+      "My name is Amanda, but you are calling me Manda."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
     "id": "bahasainggris_19"
   },
   {
-    "text": "Untuk menyimpulkan cerita pengalaman pribadimu di akhir percakapan, kamu bisa mengatakan...",
-    "correctAnswer": "It was the best experience I have ever had.",
+    "text": "Jika lawan bicaramu bicara terlalu pelan saat memperkenalkan diri, cara sopan memintanya mengulang adalah...",
+    "correctAnswer": "I'm sorry, I didn't quite catch that.",
     "options": [
-      "Then, we bought some souvenirs.",
-      "Suddenly, it started raining.",
-      "It was the best experience I have ever had.",
-      "First, we booked the hotel."
+      "I'm sorry, you talk too quiet.",
+      "I'm sorry, I wasn't catching that.",
+      "I'm sorry, I didn't quite catch that.",
+      "I'm sorry, can you sound bigger?"
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 2,
     "id": "bahasainggris_20"
   },
   {
-    "text": "Pertanyaan yang tepat untuk menanyakan hobi seseorang saat perkenalan adalah...",
-    "correctAnswer": "What do you like to do in your free time?",
+    "text": "Frasa alternatif yang bermakna 'How are you?' dalam percakapan informal sehari-hari adalah...",
+    "correctAnswer": "How's it going?",
     "options": [
-      "Where are you from?",
-      "What do you like to do in your free time?",
-      "How old are you?",
-      "What is your profession?"
+      "How it goes?",
+      "How's it going?",
+      "How do it go?",
+      "How is going it?"
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
     "id": "bahasainggris_21"
   },
   {
-    "text": "Jika kamu ingin merespon dan menunjukkan antusiasme terhadap cerita temanmu, frasa yang cocok diucapkan adalah...",
-    "correctAnswer": "That sounds amazing!",
+    "text": "Jika temanmu mengucapkan 'Thank you so much', balasan kasual selain 'You're welcome' adalah...",
+    "correctAnswer": "Don't mention it.",
     "options": [
-      "I don't believe you.",
-      "That is so boring.",
-      "That sounds amazing!",
-      "Can you stop talking?"
-    ],
-    "type": "multiple_choice",
-    "correctAnswerIndex": 2,
-    "id": "bahasainggris_22"
-  },
-  {
-    "text": "Dalam diskusi kelas, cara yang tepat untuk memberikan contoh guna mendukung argumenmu adalah...",
-    "correctAnswer": "For instance, look at the data from...",
-    "options": [
-      "For instance, look at the data from...",
-      "I don't know the answer.",
-      "In conclusion, we need to rest.",
-      "That's a stupid idea."
-    ],
-    "type": "multiple_choice",
-    "correctAnswerIndex": 0,
-    "id": "bahasainggris_23"
-  },
-  {
-    "text": "Ketika kamu ingin mengklarifikasi maksud temanmu dalam percakapan, kamu bisa bertanya...",
-    "correctAnswer": "What do you mean by that?",
-    "options": [
-      "Where did you go?",
-      "What do you mean by that?",
-      "Who told you that?",
-      "When will you finish it?"
+      "Never mention.",
+      "Don't mention it.",
+      "Do not mind.",
+      "No problem it."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
+    "id": "bahasainggris_22"
+  },
+  {
+    "text": "Saat menanyakan apakah seseorang membutuhkan bantuan, struktur kalimat yang sopan adalah...",
+    "correctAnswer": "Would you like me to give you a hand?",
+    "options": [
+      "Do you want me to giving you a hand?",
+      "Would you like me give you a hand?",
+      "Would you like me to give you a hand?",
+      "Are you wanting me to help your hand?"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_23"
+  },
+  {
+    "text": "Untuk meminta maaf karena terlambat datang (daily conversation), kamu bisa bilang...",
+    "correctAnswer": "I'm so sorry for keeping you waiting.",
+    "options": [
+      "I'm so sorry for keep you waiting.",
+      "I'm so sorry to keeping you wait.",
+      "I'm so sorry for keeping you waiting.",
+      "I'm so sorry because you wait me."
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
     "id": "bahasainggris_24"
   },
   {
-    "text": "Jika kamu tidak tahu jawaban atas sebuah pertanyaan saat presentasi, cara paling profesional untuk meresponnya adalah...",
-    "correctAnswer": "That is a great question. I will have to look into it and get back to you.",
+    "text": "Ketika menanyakan pendapat teman tentang film yang baru saja ditonton, kamu mengatakan...",
+    "correctAnswer": "What did you think of the movie?",
     "options": [
-      "I don't know, don't ask me.",
-      "That is a great question. I will have to look into it and get back to you.",
-      "Your question is irrelevant.",
-      "Let's just skip that."
+      "How did you think the movie?",
+      "What did you think of the movie?",
+      "What are you thinking the movie?",
+      "How do you feel of the movie?"
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
     "id": "bahasainggris_25"
   },
   {
-    "text": "Kalimat pembuka saat membagikan pengalaman memalukan (embarrassing experience) bisa menggunakan...",
-    "correctAnswer": "You won't believe what happened to me yesterday.",
+    "text": "Jika kamu setuju sepenuhnya dengan pendapat temanmu di tongkrongan, kamu bisa menggunakan frasa idiomatis...",
+    "correctAnswer": "You hit the nail on the head.",
     "options": [
-      "I am planning to buy a car.",
-      "Let me introduce my brother.",
-      "You won't believe what happened to me yesterday.",
-      "The meeting will start soon."
+      "You beat the nail on the head.",
+      "You hit the nail on the head.",
+      "You touch the point exactly.",
+      "You strike the right head."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 1,
     "id": "bahasainggris_26"
   },
   {
-    "text": "Saat berdiskusi, jika kamu ingin merangkum poin dari pembicara sebelumnya, kamu bisa berkata...",
-    "correctAnswer": "So, what you are saying is...",
+    "text": "Cara menawarkan makanan atau minuman (misal teh) kepada tamu di rumahmu adalah...",
+    "correctAnswer": "Would you care for a cup of tea?",
     "options": [
-      "So, what you are saying is...",
-      "I want to ask another question.",
-      "Let's move to the next topic.",
-      "Please speak louder."
+      "Do you care a cup of tea?",
+      "Would you care for a cup of tea?",
+      "Are you caring for some tea?",
+      "Will you taking a tea?"
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 1,
     "id": "bahasainggris_27"
   },
   {
-    "text": "Dalam perkenalan diri, cara menyatakan umur yang benar adalah...",
-    "correctAnswer": "I am twenty years old.",
+    "text": "Untuk mengekspresikan rasa terkejut akan suatu berita harian, kalimat yang natural adalah...",
+    "correctAnswer": "You've got to be kidding me!",
     "options": [
-      "My age has twenty years.",
-      "I have twenty years.",
-      "I am twenty years old.",
-      "Twenty is my old."
+      "You have to be kidding to me!",
+      "You must kidding me!",
+      "You've got to be kidding me!",
+      "You are got to kid me!"
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 2,
     "id": "bahasainggris_28"
   },
   {
-    "text": "Saat menelepon ke kantor orang lain, ucapan perkenalan diri yang baku adalah...",
-    "correctAnswer": "Good morning, this is John speaking.",
+    "text": "Saat pamit pulang karena hari sudah larut, frasa bahasa Inggris yang umum digunakan adalah...",
+    "correctAnswer": "I'd better be hitting the road.",
     "options": [
-      "Hey, I am John.",
-      "Who am I? I am John.",
-      "Good morning, this is John speaking.",
-      "Listen, John is here."
+      "I'd better be hitting the road.",
+      "I better to hitting the road.",
+      "I should hitting the street.",
+      "I would better to hit the way."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 0,
     "id": "bahasainggris_29"
   },
   {
-    "text": "Untuk menyapa seseorang yang sudah lama tidak bertemu, kita biasanya berkata...",
-    "correctAnswer": "Long time no see! How have you been?",
+    "text": "Jika temanmu memberitahu bahwa ia sedang sakit flu, respon empatik yang benar adalah...",
+    "correctAnswer": "I hope you feel better soon.",
     "options": [
-      "Nice to meet you for the first time.",
-      "Long time no see! How have you been?",
-      "Goodbye, have a safe trip.",
-      "What is your name again?"
+      "I wish you feeling better soon.",
+      "I hope you feel better soon.",
+      "I am hoping you to feel well.",
+      "I hope you to get better."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
     "id": "bahasainggris_30"
   },
   {
-    "text": "Saat presentasi dan kamu ingin menunjuk sebuah grafik di layar, frasa yang tepat adalah...",
-    "correctAnswer": "As you can see on the screen...",
+    "text": "Untuk meminta seseorang mengulangi perkataannya karena suara bising, kamu berkata...",
+    "correctAnswer": "Could you say that again, please?",
     "options": [
-      "Look at me carefully.",
-      "I will read my notes now.",
-      "As you can see on the screen...",
-      "Please close your eyes."
+      "Can you saying that again, please?",
+      "Could you to say that again, please?",
+      "Could you say that again, please?",
+      "Would you mind to say that again?"
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 2,
     "id": "bahasainggris_31"
   },
   {
-    "text": "Saat diskusi kelompok dan waktunya hampir habis, moderator bisa mengatakan...",
-    "correctAnswer": "We are running out of time, let's wrap this up.",
+    "text": "Saat tidak bisa memenuhi undangan acara teman (menolak halus), kamu merespons dengan...",
+    "correctAnswer": "I'd love to come, but I've already made plans.",
     "options": [
-      "Let's start from the beginning again.",
-      "We are running out of time, let's wrap this up.",
-      "Please keep talking for another hour.",
-      "I want to change the topic."
+      "I'd love to come, but I've already made plans.",
+      "I want to come, but I'm having plans.",
+      "I'd love to coming, but I have a plan.",
+      "I will come, but my plan is full."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "id": "bahasainggris_32"
   },
   {
-    "text": "Cara sopan untuk menolak pendapat seseorang dalam diskusi tanpa menyinggungnya adalah...",
-    "correctAnswer": "I see your point, but I respectfully disagree because...",
+    "text": "Ketika menanyakan arah menuju stasiun kereta terdekat, kalimat yang paling tepat adalah...",
+    "correctAnswer": "Could you point me in the direction of the train station?",
     "options": [
-      "You don't know anything.",
-      "I see your point, but I respectfully disagree because...",
-      "That is totally wrong.",
-      "I don't want to hear it."
+      "Can you pointing me to the train station?",
+      "Could you point me in the direction of the train station?",
+      "Where direction is the train station?",
+      "Do you point the train station for me?"
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
     "id": "bahasainggris_33"
   },
   {
-    "text": "Ketika berbagi pengalaman tentang suatu masalah yang berhasil kamu lewati, kamu bisa mengakhirinya dengan...",
-    "correctAnswer": "In the end, I learned a valuable lesson.",
+    "text": "Untuk menyatakan ketidaktahuan atas suatu masalah kasual, kamu bisa bilang...",
+    "correctAnswer": "I haven't got a clue.",
     "options": [
-      "First, I panicked a lot.",
-      "And then the problem started.",
-      "In the end, I learned a valuable lesson.",
-      "I didn't know what to do."
-    ],
-    "type": "multiple_choice",
-    "correctAnswerIndex": 2,
-    "id": "bahasainggris_34"
-  },
-  {
-    "text": "Dalam perkenalan, cara untuk menyebutkan pekerjaan/profesi yang tepat adalah...",
-    "correctAnswer": "I work as a software engineer.",
-    "options": [
-      "I am working in software.",
-      "My job is software.",
-      "I work as a software engineer.",
-      "I do software engineer."
-    ],
-    "type": "multiple_choice",
-    "correctAnswerIndex": 2,
-    "id": "bahasainggris_35"
-  },
-  {
-    "text": "Frasa yang sering dipakai dalam percakapan untuk meminta maaf karena membuat kesalahan kecil adalah...",
-    "correctAnswer": "My apologies, I didn't mean to do that.",
-    "options": [
-      "My apologies, I didn't mean to do that.",
-      "It is your fault.",
-      "Congratulations to you.",
-      "Are you okay?"
-    ],
-    "type": "multiple_choice",
-    "correctAnswerIndex": 0,
-    "id": "bahasainggris_36"
-  },
-  {
-    "text": "Untuk memberikan penekanan pada poin utama saat presentasi, kamu bisa menggunakan kalimat...",
-    "correctAnswer": "What I want to emphasize here is...",
-    "options": [
-      "Let's move on quickly.",
-      "What I want to emphasize here is...",
-      "I will skip this part.",
-      "Forget about this detail."
+      "I am not getting a clue.",
+      "I haven't got a clue.",
+      "I don't got a clue.",
+      "I hasn't got any clue."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
+    "id": "bahasainggris_34"
+  },
+  {
+    "text": "Jika kamu ingin meminta saran tempat makan siang, kamu bisa menggunakan frasa...",
+    "correctAnswer": "Do you have any recommendations for lunch?",
+    "options": [
+      "Are you have any recommendations for lunch?",
+      "Do you have any recommendations for lunch?",
+      "Would you recommending a lunch?",
+      "Can you recommendation me for lunch?"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
+    "id": "bahasainggris_35"
+  },
+  {
+    "text": "Menyetujui jadwal pertemuan (misal hari Jumat): 'Jumat cocok untukku.' Terjemahannya adalah...",
+    "correctAnswer": "Friday works for me.",
+    "options": [
+      "Friday is work for me.",
+      "Friday works to me.",
+      "Friday works for me.",
+      "Friday working for me."
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_36"
+  },
+  {
+    "text": "Saat memperingatkan teman agar berhati-hati melangkah, ungkapan singkatnya adalah...",
+    "correctAnswer": "Watch your step!",
+    "options": [
+      "Look your step!",
+      "See your step!",
+      "Watch your step!",
+      "Care your step!"
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
     "id": "bahasainggris_37"
   },
   {
-    "text": "Jika seseorang memperkenalkan dirinya dengan berkata, 'Hi, I'm Sarah, the new manager,' balasanmu sebaiknya...",
-    "correctAnswer": "Nice to meet you, Sarah. Welcome to the team.",
+    "text": "Jika kamu merasa ragu-ragu tentang rencana akhir pekan, kamu bisa menjawab...",
+    "correctAnswer": "I haven't made up my mind yet.",
     "options": [
-      "Where are you from?",
-      "Nice to meet you, Sarah. Welcome to the team.",
-      "I have to go now.",
-      "What is your age?"
+      "I am not making up my mind yet.",
+      "I haven't made up my mind yet.",
+      "I don't make my mind up yet.",
+      "I haven't make up my mind yet."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
     "id": "bahasainggris_38"
   },
   {
-    "text": "Kalimat yang biasa digunakan untuk memastikan audiens mengerti materi presentasimu adalah...",
-    "correctAnswer": "Is everything clear so far?",
+    "text": "Cara memberikan dorongan semangat (cheering up) kepada teman yang sedang kesulitan adalah...",
+    "correctAnswer": "Hang in there, things will get better.",
     "options": [
-      "Do you believe me?",
-      "Are you sleeping?",
-      "Is everything clear so far?",
-      "Why are you looking at me?"
+      "Hang in there, things will get better.",
+      "Hang on there, things will better.",
+      "Keep hanging, things are better.",
+      "Hold on there, things got better."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 0,
     "id": "bahasainggris_39"
   },
   {
-    "text": "Saat diminta bercerita tentang pengalaman masa kecil, frasa pembuka yang pas adalah...",
-    "correctAnswer": "When I was a kid, I used to...",
+    "text": "Menutup telepon dengan rekan kerja secara kasual tapi sopan...",
+    "correctAnswer": "I'll talk to you later. Have a good one.",
     "options": [
-      "Next year, I will...",
-      "When I was a kid, I used to...",
-      "Right now, I am...",
-      "I am going to tell you about my future."
+      "I speak to you later. Have a good one.",
+      "I'll talk to you later. Have a good one.",
+      "I talking to you later. Have good day.",
+      "I will call you later. Make a good one."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
     "id": "bahasainggris_40"
   },
   {
-    "text": "Untuk menanyakan opini peserta lain dalam *Focus Group Discussion*, kamu mengatakan...",
-    "correctAnswer": "Does anyone have any input on this matter?",
+    "text": "Sapaan pembuka presentasi yang paling efektif untuk mendapatkan atensi audiens formal adalah...",
+    "correctAnswer": "Good morning. Thank you all for coming here today.",
     "options": [
-      "Does anyone have any input on this matter?",
-      "I don't need your advice.",
-      "This is my final decision.",
-      "Stop giving me ideas."
-    ],
-    "type": "multiple_choice",
-    "correctAnswerIndex": 0,
-    "id": "bahasainggris_41"
-  },
-  {
-    "text": "Cara casual untuk menawarkan bantuan kepada teman yang tampak kesulitan adalah...",
-    "correctAnswer": "Do you need a hand with that?",
-    "options": [
-      "What is your problem?",
-      "Do you need a hand with that?",
-      "Leave me alone.",
-      "Why are you crying?"
+      "Good morning. Thanks all to come here today.",
+      "Good morning. Thank you all for coming here today.",
+      "Good morning. I thank you for come today.",
+      "Good morning. Thanking you all to arrive today."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
+    "id": "bahasainggris_41"
+  },
+  {
+    "text": "Menyatakan struktur garis besar presentasimu (agenda) di awal sesi...",
+    "correctAnswer": "I've divided my presentation into three main parts.",
+    "options": [
+      "I divided my presentation to three main parts.",
+      "I've dividing my presentation into three main parts.",
+      "I've divided my presentation into three main parts.",
+      "I am divide my presentation into three main parts."
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
     "id": "bahasainggris_42"
   },
   {
-    "text": "Saat pembicara terlalu cepat dalam berpresentasi, pendengar yang sopan akan menyela dengan cara...",
-    "correctAnswer": "Excuse me, could you please speak a little slower?",
+    "text": "Ketika ingin mengalihkan fokus audiens ke slide pertama, frasa yang digunakan adalah...",
+    "correctAnswer": "Let's kick off by looking at the first slide.",
     "options": [
-      "Talk faster, please.",
-      "You are too fast, stop it.",
-      "Excuse me, could you please speak a little slower?",
-      "I cannot hear anything."
+      "Let's kick off by looking at the first slide.",
+      "Let's start off to look the first slide.",
+      "Let we kick off by looking at the first slide.",
+      "Let us starting by looking at the first slide."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 0,
     "id": "bahasainggris_43"
   },
   {
-    "text": "Dalam cerita (telling experience), kalimat 'Suddenly, the lights went out' bertujuan untuk...",
-    "correctAnswer": "Membangun ketegangan atau kejutan dalam cerita.",
+    "text": "Kalimat transisi untuk berpindah dari satu poin ke poin berikutnya dalam presentasi adalah...",
+    "correctAnswer": "That brings us to the next topic.",
     "options": [
-      "Mengakhiri cerita dengan damai.",
-      "Memperkenalkan tokoh baru.",
-      "Membangun ketegangan atau kejutan dalam cerita.",
-      "Mendeskripsikan keindahan alam."
+      "That bringing us to the next topic.",
+      "That brings us to the next topic.",
+      "That is bringing us to the next topic.",
+      "That brings we to the next topic."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 1,
     "id": "bahasainggris_44"
   },
   {
-    "text": "Jika kamu memimpin sebuah rapat dan ingin memulainya, kamu akan berkata...",
-    "correctAnswer": "Alright everyone, let's get started.",
+    "text": "Cara profesional untuk merujuk pada grafik batang yang ditampilkan di layar...",
+    "correctAnswer": "As you can clearly see from this bar chart...",
     "options": [
-      "I think we should cancel this.",
-      "Alright everyone, let's get started.",
-      "Who wants to go home?",
-      "Let's take a break."
+      "As you can clear see from this bar chart...",
+      "As you can clearly see from this bar chart...",
+      "As you can seeing clearly from this bar chart...",
+      "Like you can clearly see from this bar chart..."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
     "id": "bahasainggris_45"
   },
   {
-    "text": "Untuk menyebutkan jumlah anggota keluarga saat perkenalan diri, bentuk kalimat yang benar adalah...",
-    "correctAnswer": "There are four people in my family.",
+    "text": "Jika kamu ingin mengutip pendapat ahli untuk mendukung argumen presentasimu...",
+    "correctAnswer": "According to a recent study conducted by...",
     "options": [
-      "We are four in my family.",
-      "There are four people in my family.",
-      "My family has four peoples.",
-      "I have four family."
-    ],
-    "type": "multiple_choice",
-    "correctAnswerIndex": 1,
-    "id": "bahasainggris_46"
-  },
-  {
-    "text": "Saat menceritakan kejadian yang berurutan di masa lalu, tata bahasa yang sering berpasangan dengan Simple Past adalah...",
-    "correctAnswer": "Past Continuous Tense (e.g., I was walking when...)",
-    "options": [
-      "Future Perfect Tense",
-      "Present Simple Tense",
-      "Past Continuous Tense (e.g., I was walking when...)",
-      "Future Continuous Tense"
+      "Accordingly to a recent study conducted by...",
+      "Accord to a recent study conducted by...",
+      "According to a recent study conducted by...",
+      "As according a recent study conducted by..."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 2,
+    "id": "bahasainggris_46"
+  },
+  {
+    "text": "Frasa untuk menyatakan penyebab suatu masalah (kausalitas) dalam slide presentasi...",
+    "correctAnswer": "This decline is largely due to the change in...",
+    "options": [
+      "This decline is largely due for the change in...",
+      "This decline is largely due to the change in...",
+      "This decline is large due to the change in...",
+      "This decline is largely because to the change in..."
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
     "id": "bahasainggris_47"
   },
   {
-    "text": "Frasa 'To sum up...' (Untuk menyimpulkan...) biasanya diletakkan pada bagian...",
-    "correctAnswer": "Akhir dari sebuah presentasi atau argumen.",
+    "text": "Jika kamu melewatkan sebuah slide karena waktu terbatas, kamu bisa berkata...",
+    "correctAnswer": "In the interest of time, I'll skip this slide.",
     "options": [
-      "Awal perkenalan diri.",
-      "Tengah-tengah menceritakan pengalaman liburan.",
-      "Akhir dari sebuah presentasi atau argumen.",
-      "Saat baru berkenalan dengan orang asing."
+      "In the interesting of time, I'll skip this slide.",
+      "For the interest of time, I'll skipping this slide.",
+      "In the interest of time, I'll skip this slide.",
+      "On the interest of time, I'll skip this slide."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 2,
     "id": "bahasainggris_48"
   },
   {
-    "text": "Ketika kamu ingin menambahkan poin tambahan dalam diskusimu, kamu bisa memakai frasa...",
-    "correctAnswer": "In addition to that, I also believe...",
+    "text": "Cara memberikan contoh spesifik untuk memperjelas pernyataan (elaborasi)...",
+    "correctAnswer": "To give you an illustration of what I mean...",
     "options": [
-      "That is why I disagree.",
-      "In addition to that, I also believe...",
-      "On the other hand...",
-      "Let me summarize..."
+      "To giving you an illustration of what I mean...",
+      "To give you an illustration of what I mean...",
+      "For give you an illustration of what I mean...",
+      "To give you a illustrate of what I mean..."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
     "id": "bahasainggris_49"
   },
   {
-    "text": "Bentuk pertanyaan konfirmasi yang halus saat berdiskusi adalah...",
-    "correctAnswer": "Correct me if I'm wrong, but didn't we agree on this?",
+    "text": "Menyimpulkan isi presentasi sebelum masuk ke sesi Q&A...",
+    "correctAnswer": "Before we move to the Q&A, let me briefly summarize...",
     "options": [
-      "You are wrong, right?",
-      "Correct me if I'm wrong, but didn't we agree on this?",
-      "Why did you say that?",
-      "I don't believe your statement."
+      "Before we moving to the Q&A, let me briefly summarize...",
+      "Before we move to the Q&A, let me brief summarize...",
+      "Before we move to the Q&A, let me briefly summarize...",
+      "Before we move to the Q&A, let me briefly summarizing..."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "id": "bahasainggris_50"
   },
   {
-    "text": "Saat perkenalan, bagaimana cara yang tepat untuk menyebutkan hal yang kamu sukai (minat)?",
-    "correctAnswer": "I am really into photography and music.",
+    "text": "Membuka sesi tanya jawab (Q&A) dengan mengundang partisipasi audiens...",
+    "correctAnswer": "I'd now be glad to answer any questions you might have.",
     "options": [
-      "I am really into photography and music.",
-      "My hate is photography.",
-      "I am not doing music.",
-      "Photography is my job."
+      "I'd now be glad to answer any questions you might have.",
+      "I'll now be gladly to answer any questions you might have.",
+      "I'd now be glad to answering any questions you might have.",
+      "I'm now glad to answer any questions you might having."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 0,
     "id": "bahasainggris_51"
   },
   {
-    "text": "Kalimat mana yang digunakan untuk meminta saran dari teman dalam percakapan kasual?",
-    "correctAnswer": "What do you think I should do?",
+    "text": "Jika pertanyaan audiens sedikit menyimpang dari topik, cara meresponnya adalah...",
+    "correctAnswer": "That's an interesting point, though it's slightly off-topic.",
     "options": [
-      "I will tell you what to do.",
-      "Why are you asking me?",
-      "What do you think I should do?",
-      "I don't need your opinion."
+      "That's an interesting point, thought it's slightly off-topic.",
+      "That's an interesting point, through it's slightly off-topic.",
+      "That's an interesting point, though it's slightly off-topic.",
+      "That's an interesting point, although it slightly off-topic."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 2,
     "id": "bahasainggris_52"
   },
   {
-    "text": "Untuk menyatakan bahwa kamu memahami penjelasan dosen di sesi Q&A, kamu menjawab...",
-    "correctAnswer": "Ah, I see. That makes sense. Thank you.",
+    "text": "Jika kamu butuh waktu berpikir sebelum menjawab pertanyaan sulit saat presentasi...",
+    "correctAnswer": "That's a very insightful question, let me think for a second.",
     "options": [
-      "I still don't get it.",
-      "Ah, I see. That makes sense. Thank you.",
-      "You are confusing me.",
-      "What are you talking about?"
+      "That's a very insightful question, let me thinking for a second.",
+      "That's a very insightful question, let me think for a second.",
+      "That's a very insight question, let me think for a second.",
+      "That's a very insightful question, allow me think for a second."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
     "id": "bahasainggris_53"
   },
   {
-    "text": "Dalam sesi menceritakan pengalaman, ungkapan 'To my surprise...' digunakan untuk...",
-    "correctAnswer": "Menunjukkan sesuatu yang tidak terduga terjadi.",
+    "text": "Cara meyakinkan kembali kepada audiens bahwa poin utamamu sudah terjawab...",
+    "correctAnswer": "Does that adequately answer your question?",
     "options": [
-      "Menutup cerita dengan kebosanan.",
-      "Menyapa pendengar di awal cerita.",
-      "Menunjukkan sesuatu yang tidak terduga terjadi.",
-      "Meminta maaf atas kesalahan teknis."
+      "Do that adequately answer your question?",
+      "Does that adequate answer your question?",
+      "Does that adequately answer your question?",
+      "Is that adequately answering your question?"
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 2,
     "id": "bahasainggris_54"
   },
   {
-    "text": "Cara sopan memotong pembicaraan untuk mengajukan pertanyaan saat presentasi berlangsung adalah...",
-    "correctAnswer": "I'm sorry to interrupt, but may I ask a quick question?",
+    "text": "Saat menghadapi kendala teknis (mic mati/slide error) di tengah presentasi...",
+    "correctAnswer": "Please bear with me for a moment while I sort this out.",
     "options": [
-      "Hey, stop talking, I want to ask.",
-      "I'm sorry to interrupt, but may I ask a quick question?",
-      "Let me talk now.",
-      "Wait, you are wrong."
+      "Please bear to me for a moment while I sort this out.",
+      "Please bare with me for a moment while I sort this out.",
+      "Please bear with me for a moment while I sort this out.",
+      "Please bear with me for a moment while I sorting this out."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "id": "bahasainggris_55"
   },
   {
-    "text": "Dalam diskusi, frasa 'On the other hand...' (Di sisi lain...) digunakan untuk...",
-    "correctAnswer": "Menyajikan argumen atau sudut pandang yang berlawanan.",
+    "text": "Untuk mengembalikan fokus audiens yang mulai kehilangan atensi...",
+    "correctAnswer": "Let me draw your attention back to the main issue.",
     "options": [
-      "Menyajikan argumen atau sudut pandang yang berlawanan.",
-      "Menyetujui pendapat secara penuh.",
-      "Meringkas semua poin.",
-      "Menghentikan jalannya rapat."
+      "Let me draw your attention back to the main issue.",
+      "Let me drawing your attention back to the main issue.",
+      "Let me draw your attention backwards to the main issue.",
+      "Let me to draw your attention back to the main issue."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 0,
     "id": "bahasainggris_56"
   },
   {
-    "text": "Saat presentasi kelompok, bagaimana cara menyerahkan giliran bicara kepada rekan setimmu (misal: Rini)?",
-    "correctAnswer": "I will now pass the floor to Rini.",
+    "text": "Menutup presentasi setelah semua pertanyaan audiens terjawab...",
+    "correctAnswer": "If there are no further questions, I'll wrap things up here.",
     "options": [
-      "Rini, it is your problem now.",
-      "I am done. Rini, wake up.",
-      "I will now pass the floor to Rini.",
-      "That's all. Rini will speak."
+      "If there are no further questions, I'll wrap things up here.",
+      "If there is no further questions, I'll wrap things up here.",
+      "If there are not further questions, I'll wrap things up here.",
+      "If there are no further question, I'll wrap things up here."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 0,
     "id": "bahasainggris_57"
   },
   {
-    "text": "Kalimat yang biasa diucapkan kasir/pelayan toko kepada pelanggan dalam percakapan sehari-hari adalah...",
-    "correctAnswer": "How can I help you today?",
+    "text": "Berterima kasih kepada audiens atas partisipasi aktif mereka di akhir acara...",
+    "correctAnswer": "Thank you for being such an attentive audience.",
     "options": [
-      "What do you want from me?",
-      "How can I help you today?",
-      "Are you buying or not?",
-      "Please leave the store."
+      "Thank you for be such an attentive audience.",
+      "Thank you for being so an attentive audience.",
+      "Thank you for being such an attentive audience.",
+      "Thanks you for being such an attentive audience."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "id": "bahasainggris_58"
   },
   {
-    "text": "Jika kamu menceritakan bahwa kamu kehilangan dompet saat liburan, reaksi simpati pendengar sebaiknya...",
-    "correctAnswer": "Oh no, I'm so sorry to hear that! What did you do?",
+    "text": "Memberikan informasi kontak jika audiens memiliki pertanyaan lanjutan nanti...",
+    "correctAnswer": "Feel free to reach out to me via email if you have more questions.",
     "options": [
-      "That is very funny.",
-      "Oh no, I'm so sorry to hear that! What did you do?",
-      "I don't care about your wallet.",
-      "You are very lucky."
+      "Feel freely to reach out to me via email if you have more questions.",
+      "Feel free to reach out to me via email if you have more questions.",
+      "Feel free to reaching out to me via email if you have more questions.",
+      "Feel free to reach out me via email if you have more questions."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
     "id": "bahasainggris_59"
   },
   {
-    "text": "Kata perpisahan formal yang paling aman digunakan untuk klien bisnis setelah rapat adalah...",
-    "correctAnswer": "It was a pleasure meeting with you. Have a great day.",
+    "text": "Kalimat penutup bernada optimis dan persuasif di akhir presentasi bisnis...",
+    "correctAnswer": "I am confident that this strategy will yield positive results.",
     "options": [
-      "Catch you later, bro.",
-      "Bye, don't call me.",
-      "It was a pleasure meeting with you. Have a great day.",
-      "See ya!"
+      "I am confident that this strategy will yield positive results.",
+      "I am confident that this strategy will yielding positive results.",
+      "I confident that this strategy will yield positive results.",
+      "I am confident that this strategy will yields positive results."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 0,
     "id": "bahasainggris_60"
   },
   {
-    "text": "Dalam perkenalan diri, cara mengatakan cita-citamu di masa depan adalah...",
-    "correctAnswer": "In the future, I hope to become a successful entrepreneur.",
+    "text": "Menyampaikan opini pribadi secara kuat dan formal dalam forum diskusi...",
+    "correctAnswer": "I am of the opinion that this policy should be revised.",
     "options": [
-      "I was a doctor last year.",
-      "In the future, I hope to become a successful entrepreneur.",
-      "I don't want to work.",
-      "My hobby is sleeping."
+      "I am on the opinion that this policy should be revised.",
+      "I have of the opinion that this policy should be revised.",
+      "I am of the opinion that this policy should be revised.",
+      "I am of the opinion that this policy should revised."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "id": "bahasainggris_61"
   },
   {
-    "text": "Saat pembicara presentasi memperlihatkan fakta yang mengejutkan, ia mungkin akan berkata...",
-    "correctAnswer": "Surprisingly, the data shows that...",
+    "text": "Cara sopan menyela seseorang yang sedang berbicara dalam rapat kelompok...",
+    "correctAnswer": "Sorry to interrupt, but could I just add something here?",
     "options": [
-      "As expected, nothing changed...",
-      "I am not sure about this data...",
-      "Surprisingly, the data shows that...",
-      "Ignore this chart please..."
+      "Sorry to interrupt, but could I just adding something here?",
+      "Sorry for interrupt, but could I just add something here?",
+      "Sorry to interrupt, but could I just add something here?",
+      "Sorry to interrupting, but could I just add something here?"
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 2,
     "id": "bahasainggris_62"
   },
   {
-    "text": "Kalimat yang digunakan untuk menyambut anggota baru dalam kelompok adalah...",
-    "correctAnswer": "We are thrilled to have you on board.",
+    "text": "Menunjukkan persetujuan sebagian (partial agreement) terhadap argumen rekan kerja...",
+    "correctAnswer": "I see your point, but we also need to consider the risks.",
     "options": [
-      "Why are you here?",
-      "We are thrilled to have you on board.",
-      "You should leave now.",
-      "Please introduce me."
+      "I see your point, but we also need to considering the risks.",
+      "I see your point, but we also need to consider the risks.",
+      "I am seeing your point, but we also need to consider the risks.",
+      "I see your points, but we also need to consider the risks."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
     "id": "bahasainggris_63"
   },
   {
-    "text": "Jika temanmu bercerita dan kamu ingin mendorongnya melanjutkan ceritanya, kamu berkata...",
-    "correctAnswer": "Really? And then what happened?",
+    "text": "Meminta klarifikasi lebih dalam tentang ide yang dirasa kurang jelas...",
+    "correctAnswer": "Could you elaborate a little more on that specific issue?",
     "options": [
-      "Please stop talking.",
-      "Really? And then what happened?",
-      "I am bored.",
-      "Let's talk about me."
+      "Can you elaborate a little more on that specific issue?",
+      "Could you elaborate a little more on that specific issue?",
+      "Could you elaborating a little more on that specific issue?",
+      "Could you elaborate a little much on that specific issue?"
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
     "id": "bahasainggris_64"
   },
   {
-    "text": "Bagaimana caramu mengusulkan sebuah ide baru saat sesi *brainstorming* (diskusi)?",
-    "correctAnswer": "I have an idea. How about we try...",
+    "text": "Menolak pendapat seseorang secara elegan dan beralasan (polite disagreement)...",
+    "correctAnswer": "I'm afraid I have to disagree with you on that matter.",
     "options": [
-      "I have an idea. How about we try...",
-      "Your ideas are all bad.",
-      "Don't listen to me.",
-      "Let's just give up."
+      "I'm afraid I have to disagree with you on that matter.",
+      "I'm afraid I having to disagree with you on that matter.",
+      "I'm afraid I have to disagreeing with you on that matter.",
+      "I'm afraid I have to disagree to you on that matter."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 0,
     "id": "bahasainggris_65"
   },
   {
-    "text": "Frasa yang cocok untuk menutup perkenalan diri informal di depan teman sekelas adalah...",
-    "correctAnswer": "That's a little bit about me. I look forward to getting to know you all.",
+    "text": "Jika ingin memastikan bahwa kita memahami perkataan lawan bicara dengan benar...",
+    "correctAnswer": "So, if I understand you correctly, you are suggesting that...",
     "options": [
-      "That's a little bit about me. I look forward to getting to know you all.",
-      "Please leave me alone.",
-      "I have nothing else to say.",
-      "Goodbye forever."
-    ],
-    "type": "multiple_choice",
-    "correctAnswerIndex": 0,
-    "id": "bahasainggris_66"
-  },
-  {
-    "text": "Ketika kamu ingin merujuk pada materi yang telah kamu bahas sebelumnya di presentasi, kamu berkata...",
-    "correctAnswer": "As I mentioned earlier...",
-    "options": [
-      "As I will tell you later...",
-      "As I mentioned earlier...",
-      "Forget what I said...",
-      "I don't remember..."
-    ],
-    "type": "multiple_choice",
-    "correctAnswerIndex": 1,
-    "id": "bahasainggris_67"
-  },
-  {
-    "text": "Dalam percakapan di telepon, cara menanyakan siapa yang sedang berbicara (penelpon) adalah...",
-    "correctAnswer": "May I ask who is calling, please?",
-    "options": [
-      "Who are you?",
-      "What is your name?",
-      "May I ask who is calling, please?",
-      "Tell me your identity."
+      "So, if I understanding you correctly, you are suggesting that...",
+      "So, if I understand you correct, you are suggesting that...",
+      "So, if I understand you correctly, you are suggesting that...",
+      "So, if I understand you correctly, you suggest that..."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 2,
+    "id": "bahasainggris_66"
+  },
+  {
+    "text": "Membawa kembali fokus diskusi yang mulai melebar ke mana-mana...",
+    "correctAnswer": "Let's bring the discussion back to our main agenda.",
+    "options": [
+      "Let's bring the discussion backwards to our main agenda.",
+      "Let's bringing the discussion back to our main agenda.",
+      "Let's bring the discussion back to our main agenda.",
+      "Let us bring the discussion back into our main agenda."
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
+    "id": "bahasainggris_67"
+  },
+  {
+    "text": "Cara memberikan opsi kompromi untuk menyelesaikan perdebatan (middle ground)...",
+    "correctAnswer": "Perhaps we could find a middle ground by doing both.",
+    "options": [
+      "Perhaps we could find a middle ground by doing both.",
+      "Perhaps we could finding a middle ground by doing both.",
+      "Perhaps we can find a middle ground to doing both.",
+      "Perhaps we could find a middle grounds by doing both."
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 0,
     "id": "bahasainggris_68"
   },
   {
-    "text": "Saat menceritakan liburan yang penuh kendala, frasa yang merepresentasikan 'Namun akhirnya...' adalah...",
-    "correctAnswer": "Despite all the troubles, we eventually...",
+    "text": "Jika suara lawan bicara di rapat online (Zoom) putus-putus...",
+    "correctAnswer": "I'm sorry, you're breaking up a bit. Could you repeat that?",
     "options": [
-      "First of all, we...",
-      "Despite all the troubles, we eventually...",
-      "For instance, we...",
-      "At the beginning, we..."
+      "I'm sorry, you're breaking down a bit. Could you repeat that?",
+      "I'm sorry, you're breaking up a bit. Could you repeat that?",
+      "I'm sorry, you break up a bit. Could you repeat that?",
+      "I'm sorry, you're breaking up a little. Could you repeating that?"
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
     "id": "bahasainggris_69"
   },
   {
-    "text": "Untuk menjawab sapaan 'How do you do?' dari orang yang baru pertama kali kamu temui secara formal, balasannya adalah...",
-    "correctAnswer": "How do you do.",
+    "text": "Untuk menyudahi pembahasan satu poin dan pindah ke isu berikutnya...",
+    "correctAnswer": "I think we've covered this sufficiently. Shall we move on?",
     "options": [
-      "I am doing my homework.",
-      "I am fine, thank you.",
-      "How do you do.",
-      "Nice to meet you."
+      "I think we've covered this sufficiently. Shall we move on?",
+      "I think we covered this sufficiently. Shall we moving on?",
+      "I think we've covering this sufficiently. Shall we move on?",
+      "I think we've covered this sufficient. Shall we move on?"
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 0,
     "id": "bahasainggris_70"
   },
   {
-    "text": "Jika di tengah presentasi layar proyektor tiba-tiba mati, ucapan yang profesional adalah...",
-    "correctAnswer": "Please bear with me for a moment while I fix this technical issue.",
+    "text": "Memberikan argumen penutup yang merangkum keseluruhan kesepakatan diskusi...",
+    "correctAnswer": "It seems we have reached a consensus on this issue.",
     "options": [
-      "Oh no, this is a disaster!",
-      "I quit, I cannot do this.",
-      "Please bear with me for a moment while I fix this technical issue.",
-      "Who broke the projector?"
-    ],
-    "type": "multiple_choice",
-    "correctAnswerIndex": 2,
-    "id": "bahasainggris_71"
-  },
-  {
-    "text": "Ketika setuju sebagian (tapi tidak sepenuhnya) dengan argumen di diskusi, kamu bisa memulai dengan...",
-    "correctAnswer": "I agree with you up to a point, however...",
-    "options": [
-      "You are completely right.",
-      "I agree with you up to a point, however...",
-      "I totally disagree.",
-      "That is a perfect idea."
+      "It seems we have reaching a consensus on this issue.",
+      "It seems we have reached a consensus on this issue.",
+      "It seem we have reached a consensus on this issue.",
+      "It seems we reach a consensus on this issue."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
+    "id": "bahasainggris_71"
+  },
+  {
+    "text": "Cara sopan mempersilakan peserta lain untuk membagikan pendapatnya...",
+    "correctAnswer": "I'd like to hear what Sarah has to say about this.",
+    "options": [
+      "I'd like to hear what Sarah have to say about this.",
+      "I'd like to hearing what Sarah has to say about this.",
+      "I'd like to hear what Sarah has to say about this.",
+      "I'd like to hear what Sarah has to saying about this."
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 2,
     "id": "bahasainggris_72"
   },
   {
-    "text": "Dalam perkenalan diri, jika kamu ingin menyebutkan jurusan kuliahmu, kalimatnya adalah...",
-    "correctAnswer": "I am currently majoring in Business Administration.",
+    "text": "Menunjukkan keraguan yang valid atas data yang baru saja dibagikan rekan...",
+    "correctAnswer": "I have some reservations about the accuracy of those figures.",
     "options": [
-      "My school is Business.",
-      "I am currently majoring in Business Administration.",
-      "I work in Business.",
-      "Business is my favorite."
+      "I have some reservation about the accuracy of those figures.",
+      "I have some reservations about the accuracy of those figures.",
+      "I am having some reservations about the accuracy of those figures.",
+      "I have some reservations regarding to the accuracy of those figures."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
     "id": "bahasainggris_73"
   },
   {
-    "text": "Cara basa-basi (small talk) untuk membuka obrolan dengan teman tentang cuaca hari ini adalah...",
-    "correctAnswer": "Lovely weather we are having today, isn't it?",
+    "text": "Cara tegas menolak ide karena tidak sesuai dengan anggaran yang ada...",
+    "correctAnswer": "While it's a good idea, it's simply not feasible given our current budget.",
     "options": [
-      "Are you sick?",
-      "Lovely weather we are having today, isn't it?",
-      "What time is it?",
-      "Where did you buy that shirt?"
-    ],
-    "type": "multiple_choice",
-    "correctAnswerIndex": 1,
-    "id": "bahasainggris_74"
-  },
-  {
-    "text": "Untuk meminta contoh spesifik dari pembicara dalam sesi tanya jawab, kamu bisa berkata...",
-    "correctAnswer": "Could you provide a specific example to illustrate that point?",
-    "options": [
-      "I don't understand your point.",
-      "Are you sure about that?",
-      "Could you provide a specific example to illustrate that point?",
-      "Please explain everything again."
+      "While it's a good idea, it's simply not feasible giving our current budget.",
+      "While it's a good idea, it's simple not feasible given our current budget.",
+      "While it's a good idea, it's simply not feasible given our current budget.",
+      "While it's a good idea, it's simply not feasible given our currently budget."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 2,
+    "id": "bahasainggris_74"
+  },
+  {
+    "text": "Meminta forum diskusi untuk melihat masalah dari perspektif yang lebih luas (big picture)...",
+    "correctAnswer": "Let's take a step back and look at the broader perspective.",
+    "options": [
+      "Let's taking a step back and look at the broader perspective.",
+      "Let's take a step back and look at the broader perspective.",
+      "Let's take a step backward and look at the broader perspective.",
+      "Let's take a step back and looking at the broader perspective."
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
     "id": "bahasainggris_75"
   },
   {
-    "text": "Saat bercerita pengalaman yang lucu dan tak terduga, penulis sering kali memulainya dengan frasa...",
-    "correctAnswer": "Funny enough, ...",
+    "text": "Jika kamu di tengah kalimat lalu kehilangan fokus/ide, cara transisinya...",
+    "correctAnswer": "I've lost my train of thought, but the main point is...",
     "options": [
-      "Unfortunately, ...",
-      "Funny enough, ...",
-      "In conclusion, ...",
-      "Consequently, ..."
+      "I lost my train of thought, but the main point is...",
+      "I've lost my train of thought, but the main point is...",
+      "I've losing my train of thought, but the main point is...",
+      "I've lost my train of thoughts, but the main point is..."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
     "id": "bahasainggris_76"
   },
   {
-    "text": "Kalimat yang digunakan untuk menyimpulkan sebuah diskusi meja bundar adalah...",
-    "correctAnswer": "To wrap up our discussion, we have agreed that...",
+    "text": "Meminta izin untuk menambahkan satu poin singkat sebelum diskusi ditutup...",
+    "correctAnswer": "Could I just make one final point before we conclude?",
     "options": [
-      "To begin with, we must...",
-      "I disagree with all of you.",
-      "To wrap up our discussion, we have agreed that...",
-      "Let's start the meeting now."
+      "Could I just make one final point before we conclude?",
+      "Could I just making one final point before we conclude?",
+      "Could I just make one final points before we conclude?",
+      "Can I just make one final point before we concluding?"
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 0,
     "id": "bahasainggris_77"
   },
   {
-    "text": "Jika kamu lupa nama orang yang baru saja dikenalkan kepadamu, cara sopan untuk menanyakannya lagi adalah...",
-    "correctAnswer": "I'm sorry, I didn't quite catch your name.",
+    "text": "Cara sopan mengalihkan pertanyaan sulit kepada anggota tim yang lebih ahli...",
+    "correctAnswer": "I believe John is better equipped to answer that question.",
     "options": [
-      "What is your name again?",
-      "I forgot who you are.",
-      "I'm sorry, I didn't quite catch your name.",
-      "Tell me your name."
+      "I believe John is better equip to answer that question.",
+      "I believe John is best equipped to answer that question.",
+      "I believe John is better equipped to answer that question.",
+      "I believe John is better equipped to answering that question."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 2,
     "id": "bahasainggris_78"
   },
   {
-    "text": "Dalam memaparkan latar belakang pengalamanmu, kamu dapat menggunakan frasa...",
-    "correctAnswer": "It all started when I was...",
+    "text": "Mengingatkan peserta rapat tentang tenggat waktu proyek yang disepakati...",
+    "correctAnswer": "Keep in mind that the absolute deadline for this project is Friday.",
     "options": [
-      "It ended when I...",
-      "I will do it tomorrow...",
-      "It all started when I was...",
-      "In summary, I was..."
+      "Keep in minds that the absolute deadline for this project is Friday.",
+      "Keep in mind that the absolute deadline for this project is Friday.",
+      "Keep on mind that the absolute deadline for this project is Friday.",
+      "Keeping in mind that the absolute deadline for this project is Friday."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 1,
     "id": "bahasainggris_79"
   },
   {
-    "text": "Kalimat transisi saat kamu memberikan argumen alternatif atau pilihan lain di rapat adalah...",
-    "correctAnswer": "Alternatively, we could consider...",
+    "text": "Memastikan kepada peserta diskusi bahwa ide mereka telah dicatat dengan baik...",
+    "correctAnswer": "I have taken note of your concerns and we will address them.",
     "options": [
-      "Because of that, we must...",
-      "As I said before...",
-      "Alternatively, we could consider...",
-      "In conclusion, we have..."
+      "I have taken note of your concerns and we will address them.",
+      "I have took note of your concerns and we will address them.",
+      "I have taken notes of your concerns and we will addressing them.",
+      "I have taken note for your concerns and we will address them."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 0,
     "id": "bahasainggris_80"
   },
   {
-    "text": "Untuk merespon ucapan 'Thank you for your presentation' dari audiens, kamu membalas dengan...",
-    "correctAnswer": "The pleasure is mine.",
+    "text": "Saat mulai bercerita kejadian tak terduga di masa lalu (Past Continuous + Simple Past)...",
+    "correctAnswer": "I was walking down the street when suddenly it started pouring rain.",
     "options": [
-      "I know it was good.",
-      "The pleasure is mine.",
-      "Don't mention it again.",
-      "Why are you thanking me?"
+      "I walked down the street when suddenly it started pouring rain.",
+      "I was walking down the street when suddenly it starts pouring rain.",
+      "I was walking down the street when suddenly it started pouring rain.",
+      "I was walked down the street when suddenly it started pouring rain."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "id": "bahasainggris_81"
   },
   {
-    "text": "Bagaimana menolak undangan makan siang secara sopan dalam bahasa Inggris kasual?",
-    "correctAnswer": "I'd love to, but I'm swamped with work today.",
+    "text": "Cara dramatis menceritakan bahwa kamu kehabisan kata-kata karena terkejut...",
+    "correctAnswer": "I was completely speechless when I saw the final result.",
     "options": [
-      "No, I hate your food.",
-      "I'd love to, but I'm swamped with work today.",
-      "Don't ask me again.",
-      "I will go tomorrow."
+      "I was completely speechless when I saw the final result.",
+      "I am completely speechless when I saw the final result.",
+      "I was complete speechless when I saw the final result.",
+      "I was completely speeching less when I saw the final result."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 0,
     "id": "bahasainggris_82"
   },
   {
-    "text": "Jika di dalam cerita kamu merasa ketakutan, kalimat yang tepat untuk menggambarkannya adalah...",
-    "correctAnswer": "I was shaking like a leaf.",
+    "text": "Menghubungkan dua kejadian berurutan menggunakan frasa keterangan waktu...",
+    "correctAnswer": "Shortly after we arrived, the power went out across the neighborhood.",
     "options": [
-      "I was over the moon.",
-      "I was crying tears of joy.",
-      "I was shaking like a leaf.",
-      "I felt very bored."
+      "Short after we arrived, the power went out across the neighborhood.",
+      "Shortly after we arriving, the power went out across the neighborhood.",
+      "Shortly after we arrived, the power went out across the neighborhood.",
+      "Shortly after we arrived, the power goes out across the neighborhood."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 2,
     "id": "bahasainggris_83"
   },
   {
-    "text": "Dalam sesi perkenalan, jika kamu ingin menyebutkan keahlian khususmu, kamu berkata...",
-    "correctAnswer": "I specialize in graphic design.",
+    "text": "Menceritakan sebuah pengalaman kegagalan namun mengambil hikmah positif darinya...",
+    "correctAnswer": "Looking back, it was a tough situation, but it made me stronger.",
     "options": [
-      "I am bad at graphic design.",
-      "I specialize in graphic design.",
-      "I don't like graphic design.",
-      "Graphic design is my hobby."
-    ],
-    "type": "multiple_choice",
-    "correctAnswerIndex": 1,
-    "id": "bahasainggris_84"
-  },
-  {
-    "text": "Saat memberikan struktur presentasi di awal, pembicara sering berkata...",
-    "correctAnswer": "My talk will be divided into three main parts.",
-    "options": [
-      "I will talk randomly today.",
-      "There is no structure in my talk.",
-      "My talk will be divided into three main parts.",
-      "I will finish in one minute."
+      "Looking back, it was a tough situation, but it makes me stronger.",
+      "Look back, it was a tough situation, but it made me stronger.",
+      "Looking back, it was a tough situation, but it made me stronger.",
+      "Looking backwards, it was a tough situation, but it made me stronger."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 2,
+    "id": "bahasainggris_84"
+  },
+  {
+    "text": "Mengekspresikan perasaan lega luar biasa setelah melewati ujian yang menegangkan...",
+    "correctAnswer": "A huge wave of relief washed over me when it was finally over.",
+    "options": [
+      "A huge wave of relief washing over me when it was finally over.",
+      "A huge wave of relief washed over me when it was finally over.",
+      "A huge wave of relief washed over me when it is finally over.",
+      "A huge waves of relief washed over me when it was finally over."
+    ],
+    "type": "multiple_choice",
+    "correctAnswerIndex": 1,
     "id": "bahasainggris_85"
   },
   {
-    "text": "Dalam diskusi, jika rekanmu terlalu mendominasi pembicaraan dan kamu ingin bicara, katakan...",
-    "correctAnswer": "If I may jump in for a second...",
+    "text": "Cara membangun ekspektasi pendengar sebelum mengungkapkan *plot twist* cerita...",
+    "correctAnswer": "I thought everything was going according to plan, until...",
     "options": [
-      "Stop talking right now.",
-      "If I may jump in for a second...",
-      "You are talking too much.",
-      "I hate your voice."
+      "I think everything was going according to plan, until...",
+      "I thought everything was going according to plan, until...",
+      "I thought everything is going according to plan, until...",
+      "I thought everything was go according to plan, until..."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
     "id": "bahasainggris_86"
   },
   {
-    "text": "Frasa yang dipakai saat menceritakan penyelesaian masalah (resolusi) dalam sebuah cerita pengalaman adalah...",
-    "correctAnswer": "Fortunately, we managed to...",
+    "text": "Mendeskripsikan kepanikan yang terjadi dengan frasa idiomatis (Telling experience)...",
+    "correctAnswer": "We were running around like headless chickens trying to fix the leak.",
     "options": [
-      "Unfortunately, we failed to...",
-      "Suddenly, the problem got worse...",
-      "Fortunately, we managed to...",
-      "At first, we didn't know..."
+      "We were running around like headless chickens trying to fix the leak.",
+      "We was running around like headless chickens trying to fix the leak.",
+      "We were running around like headless chicken trying to fix the leak.",
+      "We were run around like headless chickens trying to fix the leak."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 0,
     "id": "bahasainggris_87"
   },
   {
-    "text": "Untuk meminta audiens menyimak slide tertentu secara detail, pembicara mengatakan...",
-    "correctAnswer": "I would like to draw your attention to this chart.",
+    "text": "Menyampaikan kejadian yang sudah lama berlalu namun masih melekat di ingatan...",
+    "correctAnswer": "I still remember it vividly, as if it happened yesterday.",
     "options": [
-      "Don't look at this chart.",
-      "I would like to draw your attention to this chart.",
-      "This chart is not important.",
-      "Let's ignore the screen."
+      "I still remember it vivid, as if it happened yesterday.",
+      "I still remembering it vividly, as if it happened yesterday.",
+      "I still remember it vividly, as if it happened yesterday.",
+      "I still remember it vividly, as if it happen yesterday."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "id": "bahasainggris_88"
   },
   {
-    "text": "Jika di akhir diskusi masih belum ada kesepakatan, moderator bisa menyatakan...",
-    "correctAnswer": "Let's agree to disagree for now.",
+    "text": "Frasa naratif untuk menunjukkan solusi yang muncul di menit-menit terakhir...",
+    "correctAnswer": "Just when we were about to give up, a brilliant idea struck me.",
     "options": [
-      "We must fight until we agree.",
-      "Let's agree to disagree for now.",
-      "I will force you to agree.",
-      "This meeting is useless."
+      "Just when we are about to give up, a brilliant idea struck me.",
+      "Just when we were about to give up, a brilliant idea striking me.",
+      "Just when we were about to give up, a brilliant idea struck me.",
+      "Just when we were about to giving up, a brilliant idea struck me."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "id": "bahasainggris_89"
   },
   {
-    "text": "Ketika perkenalan diri di acara pertukaran pelajar, cara menyebutkan bangga pada budaya asal adalah...",
-    "correctAnswer": "I am proud to represent the rich culture of Indonesia.",
+    "text": "Menceritakan pertemuan kebetulan yang berkesan (coincidence)...",
+    "correctAnswer": "By a stroke of luck, I bumped into my old friend at the airport.",
     "options": [
-      "I am proud to represent the rich culture of Indonesia.",
-      "I don't know much about Indonesia.",
-      "Indonesia is just a country.",
-      "I wish I wasn't from Indonesia."
+      "By a stroke of luck, I bumped into my old friend at the airport.",
+      "By a strike of luck, I bumped into my old friend at the airport.",
+      "By a stroke of lucky, I bumped into my old friend at the airport.",
+      "By a stroke of luck, I bumping into my old friend at the airport."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 0,
     "id": "bahasainggris_90"
   },
   {
-    "text": "Saat menceritakan pengalaman emosional yang menyentuh hati, pembicara sering menggunakan gaya bahasa...",
-    "correctAnswer": "It was a truly heartwarming moment.",
+    "text": "Cara mendeskripsikan pemandangan luar biasa saat menceritakan pengalaman liburan...",
+    "correctAnswer": "The scenery from the top of the mountain was absolutely breathtaking.",
     "options": [
-      "It was extremely boring.",
-      "It was a truly heartwarming moment.",
-      "I didn't feel anything.",
-      "It was a disaster."
+      "The scenery from the top of the mountain was absolute breathtaking.",
+      "The sceneries from the top of the mountain was absolutely breathtaking.",
+      "The scenery from the top of the mountain was absolutely breathtaking.",
+      "The scenery from the top of the mountain is absolutely breathtaking."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "id": "bahasainggris_91"
   },
   {
-    "text": "Cara elegan untuk mengonfirmasi bahwa waktumu untuk presentasi sudah habis adalah...",
-    "correctAnswer": "I see that my time is up, so I will conclude here.",
+    "text": "Mengakui kesalahan konyol di masa lalu dengan nada humor...",
+    "correctAnswer": "Looking back, I can't believe how naive I was at that time.",
     "options": [
-      "I want to talk more, give me time.",
-      "I see that my time is up, so I will conclude here.",
-      "Why is the time so short?",
-      "I will stop talking immediately."
+      "Look back, I can't believe how naive I was at that time.",
+      "Looking back, I can't believe how naive I was at that time.",
+      "Looking back, I can't believe how naive I am at that time.",
+      "Looking backwards, I can't believe how naive I was at that time."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 1,
     "id": "bahasainggris_92"
   },
   {
-    "text": "Dalam diskusi, jika kamu ingin memancing opini dari peserta yang pasif (misal: Andi), kamu berkata...",
-    "correctAnswer": "Andi, we haven't heard from you yet. What are your thoughts?",
+    "text": "Menceritakan upaya gigih untuk mencapai suatu target (Past Perfect + Simple Past)...",
+    "correctAnswer": "We had prepared for months before we finally launched the product.",
     "options": [
-      "Andi, why are you so quiet?",
-      "Andi, wake up and talk.",
-      "Andi, we haven't heard from you yet. What are your thoughts?",
-      "Andi, you must agree with me."
+      "We had prepared for months before we finally launched the product.",
+      "We have prepared for months before we finally launched the product.",
+      "We had prepare for months before we finally launched the product.",
+      "We had prepared for months before we finally launch the product."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 2,
+    "correctAnswerIndex": 0,
     "id": "bahasainggris_93"
   },
   {
-    "text": "Saat meminta maaf atas keterlambatan masuk ke ruang meeting (percakapan harian profesional), kamu bilang...",
-    "correctAnswer": "I apologize for being late, the traffic was terrible.",
+    "text": "Mengekspresikan penyesalan atas keputusan yang tidak diambil di masa lalu...",
+    "correctAnswer": "I wish I had taken that opportunity when it was offered to me.",
     "options": [
-      "I am late because I wanted to.",
-      "I apologize for being late, the traffic was terrible.",
-      "Why did you start without me?",
-      "Sorry I'm late, whatever."
+      "I wish I took that opportunity when it was offered to me.",
+      "I wish I had take that opportunity when it was offered to me.",
+      "I wish I had taken that opportunity when it was offered to me.",
+      "I wish I have taken that opportunity when it was offered to me."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "id": "bahasainggris_94"
   },
   {
-    "text": "Untuk memperkenalkan orang lain secara tidak formal di pesta, kamu cukup mengucapkan...",
-    "correctAnswer": "Hey guys, meet my buddy, Alex.",
+    "text": "Menceritakan pengalaman kultural (culture shock) saat pertama kali tinggal di luar negeri...",
+    "correctAnswer": "At first, adapting to the new culture was quite overwhelming for me.",
     "options": [
-      "I hereby introduce Alexander.",
-      "Ladies and gentlemen, this is Alex.",
-      "Hey guys, meet my buddy, Alex.",
-      "Alex is present."
+      "At first, adapt to the new culture was quite overwhelming for me.",
+      "At first, adapting to the new culture is quite overwhelming for me.",
+      "At first, adapting to the new culture was quite overwhelming for me.",
+      "At first, adapting to the new culture was quite overwhelm for me."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 2,
     "id": "bahasainggris_95"
   },
   {
-    "text": "Frasa yang berguna saat kamu kehilangan jalan pikiranmu di tengah-tengah menceritakan pengalaman adalah...",
-    "correctAnswer": "Where was I? Ah yes, ...",
+    "text": "Menunjukkan klimaks emosional yang menyedihkan dalam sebuah cerita...",
+    "correctAnswer": "My heart sank when I realized I had lost my passport.",
     "options": [
-      "Where was I? Ah yes, ...",
-      "I forgot my story.",
-      "Let's talk about something else.",
-      "I don't know what to say."
+      "My heart sink when I realized I had lost my passport.",
+      "My heart sank when I realized I have lost my passport.",
+      "My heart sank when I realized I had lost my passport.",
+      "My heart sinking when I realized I had lost my passport."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 0,
+    "correctAnswerIndex": 2,
     "id": "bahasainggris_96"
   },
   {
-    "text": "Jika di sesi Q&A ada audiens yang bertanya di luar topik bahasan, pembicara sebaiknya menjawab...",
-    "correctAnswer": "That's an interesting point, but it's slightly outside the scope of today's topic.",
+    "text": "Menceritakan bagaimana kekompakan tim membantu melewati masa krisis...",
+    "correctAnswer": "Thanks to our solid teamwork, we managed to overcome the obstacle.",
     "options": [
-      "You are asking the wrong question.",
-      "That's an interesting point, but it's slightly outside the scope of today's topic.",
-      "I will not answer that.",
-      "Are you crazy?"
+      "Thanks to our solid teamwork, we manage to overcome the obstacle.",
+      "Thank to our solid teamwork, we managed to overcome the obstacle.",
+      "Thanks to our solid teamwork, we managed to overcome the obstacle.",
+      "Thanks to our solid teamwork, we managed to overcoming the obstacle."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "id": "bahasainggris_97"
   },
   {
-    "text": "Saat mendeskripsikan tempat dalam cerita pengalamanmu, kamu menggunakan kalimat seperti...",
-    "correctAnswer": "The beach was breathtakingly beautiful with crystal clear water.",
+    "text": "Menutup cerita pengalaman petualangan dengan frasa yang memuaskan...",
+    "correctAnswer": "All in all, it was a journey I will cherish for the rest of my life.",
     "options": [
-      "The beach was breathtakingly beautiful with crystal clear water.",
-      "I went to the beach yesterday.",
-      "The beach is a noun.",
-      "I don't like the beach."
+      "All in all, it was a journey I will cherish for the rest of my life.",
+      "All in all, it is a journey I will cherish for the rest of my life.",
+      "All in all, it was a journey I will cherishing for the rest of my life.",
+      "All on all, it was a journey I will cherish for the rest of my life."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 0,
     "id": "bahasainggris_98"
   },
   {
-    "text": "Dalam diskusi panel, frasa untuk mendukung data pembicara sebelumnya dengan tambahan fakta adalah...",
-    "correctAnswer": "Building on what Sarah just said, recent studies also show...",
+    "text": "Menceritakan proses panjang mencapai suatu keahlian khusus...",
+    "correctAnswer": "It took years of practice, but it was completely worth the effort.",
     "options": [
-      "Sarah is wrong, the studies show...",
-      "I don't care what Sarah said.",
-      "Building on what Sarah just said, recent studies also show...",
-      "Let's ignore Sarah's point."
+      "It takes years of practice, but it was completely worth the effort.",
+      "It took years of practice, but it was complete worth the effort.",
+      "It took years of practice, but it was completely worth the effort.",
+      "It took year of practice, but it was completely worth the effort."
     ],
     "type": "multiple_choice",
     "correctAnswerIndex": 2,
     "id": "bahasainggris_99"
   },
   {
-    "text": "Kalimat penutup yang memberikan semangat atau *call-to-action* di akhir presentasi persuasif adalah...",
-    "correctAnswer": "Therefore, I urge all of us to take action starting today!",
+    "text": "Pesan penutup moral yang dibagikan dari sebuah cerita perjuangan panjang...",
+    "correctAnswer": "That experience taught me never to underestimate my own potential.",
     "options": [
-      "Thank you for doing nothing.",
-      "Therefore, I urge all of us to take action starting today!",
-      "I hope you forget my presentation.",
-      "That's it. Goodbye."
+      "That experience teaches me never to underestimate my own potential.",
+      "That experience taught me never to underestimating my own potential.",
+      "That experience taught me never to underestimate my own potential.",
+      "That experiences taught me never to underestimate my own potential."
     ],
     "type": "multiple_choice",
-    "correctAnswerIndex": 1,
+    "correctAnswerIndex": 2,
     "id": "bahasainggris_100"
   },
   {
