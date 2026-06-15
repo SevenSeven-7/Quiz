@@ -8,6 +8,7 @@ import '../progres/penyedia_progres.dart';
 import '../beranda/layar_utama.dart';
 import '../splash/layar_buat_nama.dart';
 import '../../inti/widget/animasi_pendar.dart';
+import '../../inti/widget/wave_clipper.dart';
 
 class LayarPengaturan extends ConsumerStatefulWidget {
   const LayarPengaturan({super.key});
@@ -270,32 +271,20 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(gradient: AppColors.backgroundGradient),
-        child: SafeArea(
-          child: Column(
-            children: [
-              // Header (Fixed/Sticky)
-              Padding(
-                padding: const EdgeInsets.fromLTRB(24, 24, 24, 8),
-                child: Row(
-                  children: [
-                    ShaderMask(
-                      shaderCallback: (b) => AppColors.primaryGradient.createShader(b),
-                      child: const Text('Pengaturan', style: TextStyle(fontSize: 28, fontWeight: FontWeight.w900, color: Colors.white)),
-                    ),
-                    const Spacer(),
-                    const Icon(Icons.settings_outlined, color: AppColors.primary, size: 28),
-                  ],
+        child: Stack(
+          children: [
+            // 1. Konten yang bisa di-scroll (berada di belakang)
+            CustomScrollView(
+              physics: const BouncingScrollPhysics(),
+              slivers: [
+                // Ruang kosong sebesar tinggi header
+                SliverToBoxAdapter(
+                  child: SizedBox(height: MediaQuery.of(context).padding.top + 98),
                 ),
-              ).animate().fadeIn(duration: 400.ms).slideY(begin: -0.2, end: 0),
-              
-              Expanded(
-                child: CustomScrollView(
-                  physics: const BouncingScrollPhysics(),
-                  slivers: [
-                    SliverPadding(
-                      padding: const EdgeInsets.all(24),
-                      sliver: SliverList(
-                  delegate: SliverChildListDelegate([
+                SliverPadding(
+                  padding: const EdgeInsets.symmetric(horizontal: 24),
+                  sliver: SliverList(
+                    delegate: SliverChildListDelegate([
 
                     // ── PROFIL ─────────────────────────────────────────
                     _buildLabel('Profil', Icons.person_outline, AppColors.primary),
@@ -461,17 +450,52 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
                     ).animate().fadeIn(delay: 500.ms),
                     const SizedBox(height: 120),
                     ]),
-                    ),
                   ),
-                ],
+                ),
+              ],
+            ),
+            
+            // 2. Header Wave (di atas)
+            Positioned(
+              top: 0, left: 0, right: 0,
+              child: ClipPath(
+                clipper: WaveClipper(),
+                child: Container(
+                  width: double.infinity,
+                  padding: EdgeInsets.only(
+                    top: MediaQuery.of(context).padding.top + 8,
+                    bottom: 50,
+                    left: 24,
+                    right: 24,
+                  ),
+                  decoration: BoxDecoration(
+                    gradient: AppColors.primaryGradient,
+                    boxShadow: [
+                      BoxShadow(
+                        color: AppColors.primary.withValues(alpha: 0.2),
+                        blurRadius: 20,
+                        offset: const Offset(0, 10),
+                      ),
+                    ],
+                  ),
+                  child: Row(
+                    children: [
+                      const Text(
+                        'Pengaturan',
+                        style: TextStyle(fontSize: 28, fontWeight: FontWeight.w900, color: Colors.white),
+                      ),
+                      const Spacer(),
+                      const Icon(Icons.settings_outlined, color: Colors.white, size: 28),
+                    ],
+                  ).animate().fadeIn(duration: 400.ms).slideY(begin: -0.2, end: 0),
+                ),
               ),
             ),
           ],
         ),
       ),
-    ),
-  );
-}
+    );
+  }
 
   // ─── Widget Helpers ───────────────────────────────────────────────
   Widget _buildLabel(String label, IconData icon, Color color) {

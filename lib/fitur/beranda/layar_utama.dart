@@ -11,6 +11,7 @@ import '../progres/penyedia_progres.dart';
 import '../pengaturan/layar_pengaturan.dart';
 import 'layar_beranda.dart';
 import '../../inti/widget/animasi_pendar.dart';
+import '../../inti/widget/wave_clipper.dart';
 
 // Provider reaktif untuk menyimpan dan memperbarui nama pemain secara waktu-nyata
 final playerNameProvider = StateProvider<String>((ref) => 'Pemain');
@@ -246,236 +247,253 @@ class ProfileScreen extends ConsumerWidget {
 
     return Scaffold(
       backgroundColor: Colors.transparent, // Background handled by Stack in MainNavigationScreen
-      body: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // Header TETAP DI ATAS - tidak ikut scroll
-            Padding(
-              padding: const EdgeInsets.fromLTRB(24, 24, 24, 0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  ShaderMask(
-                    shaderCallback: (bounds) => AppColors.primaryGradient.createShader(bounds),
-                    child: const Text(
-                      'Profil',
-                      style: TextStyle(
-                        fontSize: 28,
-                        fontWeight: FontWeight.w900,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ).animate().fadeIn(duration: 400.ms),
-                ],
+      body: Stack(
+        children: [
+          // 1. Konten yang bisa di-scroll (berada di belakang header)
+          CustomScrollView(
+            physics: const BouncingScrollPhysics(),
+            slivers: [
+              // Ruang kosong sebesar tinggi header
+              SliverToBoxAdapter(
+                child: SizedBox(height: MediaQuery.of(context).padding.top + 98),
               ),
-            ),
-            // Konten yang bisa di-scroll
-            Expanded(
-              child: CustomScrollView(
-                slivers: [
-                  SliverPadding(
-                    padding: const EdgeInsets.all(24),
-                    sliver: SliverList(
-                      delegate: SliverChildListDelegate([
-                  // Avatar Card
-                  Container(
-                    padding: const EdgeInsets.all(28),
-                    decoration: BoxDecoration(
-                      color: AppColors.surface,
-                      borderRadius: BorderRadius.circular(28),
-                      border: Border.all(color: warnaGelar.withValues(alpha: 0.3), width: 1.5),
-                      boxShadow: [
-                        BoxShadow(
-                          color: warnaGelar.withValues(alpha: 0.1),
-                          blurRadius: 30,
-                          spreadRadius: 2,
-                        ),
-                      ],
-                    ),
-                    child: Column(
-                      children: [
-                        AnimasiPendar(
-                          warna: warnaGelar,
-                          isCircle: true,
-                          borderRadius: 0,
-                          borderWidth: 3.0,
-                          child: Container(
-                            padding: const EdgeInsets.all(4),
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              gradient: LinearGradient(
-                                colors: [warnaGelar, AppColors.primary],
-                                begin: Alignment.topLeft,
-                                end: Alignment.bottomRight,
-                              ),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: warnaGelar.withValues(alpha: 0.4),
-                                  blurRadius: 20,
-                                  spreadRadius: 2,
-                                ),
-                              ],
-                            ),
-                            child: CircleAvatar(
-                              radius: 52,
-                              backgroundColor: AppColors.background,
-                              child: Text(
-                                playerName.isNotEmpty ? playerName[0].toUpperCase() : 'P',
-                                style: TextStyle(
-                                  fontSize: 42,
-                                  fontWeight: FontWeight.bold,
-                                  color: warnaGelar,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ).animate().scale(duration: 500.ms, curve: Curves.easeOutBack),
-                        const SizedBox(height: 16),
-                        Text(
-                          playerName,
-                          style: const TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                            color: AppColors.textPrimary,
-                          ),
-                        ).animate().fadeIn(delay: 200.ms),
-                        const SizedBox(height: 8),
-                        AnimasiPendar(
-                          warna: warnaGelar,
-                          borderRadius: 20,
-                          borderWidth: 2.0,
-                          child: Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
-                            decoration: BoxDecoration(
-                              color: warnaGelar.withValues(alpha: 0.1),
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Icon(Icons.workspace_premium_rounded, color: warnaGelar, size: 20),
-                                const SizedBox(width: 8),
-                                Text(
-                                  gelar,
-                                  style: TextStyle(
-                                    color: warnaGelar,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 13,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ).animate().fadeIn(delay: 350.ms),
-                      ],
-                    ),
-                  ).animate().fadeIn(delay: 100.ms).slideY(begin: 0.1, end: 0),
-
-                  const SizedBox(height: 24),
-
-                  // Statistik Card
-                  AnimasiPendar(
-                    warna: warnaGelar,
-                    borderRadius: 24,
-                    borderWidth: 2.0,
-                    child: Container(
-                      padding: const EdgeInsets.all(24),
+              SliverPadding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                sliver: SliverList(
+                  delegate: SliverChildListDelegate([
+                    // Avatar Card
+                    Container(
+                      padding: const EdgeInsets.all(28),
                       decoration: BoxDecoration(
                         color: AppColors.surface,
-                        borderRadius: BorderRadius.circular(24),
+                        borderRadius: BorderRadius.circular(28),
+                        border: Border.all(color: warnaGelar.withValues(alpha: 0.3), width: 1.5),
+                        boxShadow: [
+                          BoxShadow(
+                            color: warnaGelar.withValues(alpha: 0.1),
+                            blurRadius: 30,
+                            spreadRadius: 2,
+                          ),
+                        ],
                       ),
                       child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text(
-                          'STATISTIK',
-                          style: TextStyle(
-                            fontSize: 11,
-                            fontWeight: FontWeight.w700,
-                            color: AppColors.primary,
-                            letterSpacing: 2,
-                          ),
-                        ),
-                        const SizedBox(height: 20),
-                        _buildStatRow(
-                          context,
-                          icon: Icons.stars_rounded,
-                          iconColor: AppColors.gold,
-                          label: 'Total Bintang',
-                          value: '$totalStars ⭐',
-                        ),
-                        Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
-                        _buildStatRow(
-                          context,
-                          icon: Icons.mosque_rounded,
-                          iconColor: const Color(0xFF16A34A),
-                          label: 'Agama Islam',
-                          value: '${progress.islamicSolved} / 100',
-                        ),
-                        Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
-                        _buildStatRow(
-                          context,
-                          icon: Icons.language_rounded,
-                          iconColor: AppColors.primary,
-                          label: 'Bahasa Indonesia',
-                          value: '$bindoSolved / 100',
-                        ),
-                        Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
-                        _buildStatRow(
-                          context,
-                          icon: Icons.calculate_rounded,
-                          iconColor: AppColors.success,
-                          label: 'Matematika',
-                          value: '$mathSolved / 100',
-                        ),
-                        Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
-                        _buildStatRow(
-                          context,
-                          icon: Icons.science_rounded,
-                          iconColor: const Color(0xFFDC2626),
-                          label: 'IPA',
-                          value: '${progress.ipaSolved} / 100',
-                        ),
-                        Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
-                        _buildStatRow(
-                          context,
-                          icon: Icons.public_rounded,
-                          iconColor: const Color(0xFFD97706),
-                          label: 'IPS',
-                          value: '${progress.ipsSolved} / 100',
-                        ),
-                        Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
-                        _buildStatRow(
-                          context,
-                          icon: Icons.balance_rounded,
-                          iconColor: const Color(0xFFE11D48),
-                          label: 'PPKn',
-                          value: '${progress.ppknSolved} / 100',
-                        ),
-                        Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
-                        _buildStatRow(
-                          context,
-                          icon: Icons.menu_book_rounded,
-                          iconColor: const Color(0xFF0284C7),
-                          label: 'Bahasa Inggris',
-                          value: '${progress.englishSolved} / 100',
-                        ),
-                      ],
-                    ),
-                    ),
-                  ).animate().fadeIn(delay: 250.ms).slideY(begin: 0.1, end: 0),
+                        children: [
+                          AnimasiPendar(
+                            warna: warnaGelar,
+                            isCircle: true,
+                            borderRadius: 0,
+                            borderWidth: 3.0,
+                            child: Container(
+                              padding: const EdgeInsets.all(4),
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                gradient: LinearGradient(
+                                  colors: [warnaGelar, AppColors.primary],
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                ),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: warnaGelar.withValues(alpha: 0.4),
+                                    blurRadius: 20,
+                                    spreadRadius: 2,
+                                  ),
+                                ],
+                              ),
+                              child: CircleAvatar(
+                                radius: 52,
+                                backgroundColor: AppColors.background,
+                                child: Text(
+                                  playerName.isNotEmpty ? playerName[0].toUpperCase() : 'P',
+                                  style: TextStyle(
+                                    fontSize: 42,
+                                    fontWeight: FontWeight.bold,
+                                    color: warnaGelar,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ).animate().scale(duration: 500.ms, curve: Curves.easeOutBack),
+                          const SizedBox(height: 16),
+                          Text(
+                            playerName,
+                            style: const TextStyle(
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                              color: AppColors.textPrimary,
+                            ),
+                          ).animate().fadeIn(delay: 200.ms),
+                          const SizedBox(height: 8),
+                          AnimasiPendar(
+                            warna: warnaGelar,
+                            borderRadius: 20,
+                            borderWidth: 2.0,
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                              decoration: BoxDecoration(
+                                color: warnaGelar.withValues(alpha: 0.1),
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Icon(Icons.workspace_premium_rounded, color: warnaGelar, size: 20),
+                                  const SizedBox(width: 8),
+                                  Text(
+                                    gelar,
+                                    style: TextStyle(
+                                      color: warnaGelar,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ).animate().fadeIn(delay: 350.ms),
+                        ],
+                      ),
+                    ).animate().fadeIn(delay: 100.ms).slideY(begin: 0.1, end: 0),
 
-                  const SizedBox(height: 120), // Ekstra padding untuk navigasi
-                ]),
+                    const SizedBox(height: 24),
+
+                    // Statistik Card
+                    AnimasiPendar(
+                      warna: warnaGelar,
+                      borderRadius: 24,
+                      borderWidth: 2.0,
+                      child: Container(
+                        padding: const EdgeInsets.all(24),
+                        decoration: BoxDecoration(
+                          color: AppColors.surface,
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              'STATISTIK',
+                              style: TextStyle(
+                                fontSize: 11,
+                                fontWeight: FontWeight.w700,
+                                color: AppColors.primary,
+                                letterSpacing: 2,
+                              ),
+                            ),
+                            const SizedBox(height: 20),
+                            _buildStatRow(
+                              context,
+                              icon: Icons.stars_rounded,
+                              iconColor: AppColors.gold,
+                              label: 'Total Bintang',
+                              value: '$totalStars ⭐',
+                            ),
+                            Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
+                            _buildStatRow(
+                              context,
+                              icon: Icons.mosque_rounded,
+                              iconColor: const Color(0xFF16A34A),
+                              label: 'Agama Islam',
+                              value: '${progress.islamicSolved} / 100',
+                            ),
+                            Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
+                            _buildStatRow(
+                              context,
+                              icon: Icons.language_rounded,
+                              iconColor: AppColors.primary,
+                              label: 'Bahasa Indonesia',
+                              value: '$bindoSolved / 100',
+                            ),
+                            Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
+                            _buildStatRow(
+                              context,
+                              icon: Icons.calculate_rounded,
+                              iconColor: AppColors.success,
+                              label: 'Matematika',
+                              value: '$mathSolved / 100',
+                            ),
+                            Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
+                            _buildStatRow(
+                              context,
+                              icon: Icons.science_rounded,
+                              iconColor: const Color(0xFFDC2626),
+                              label: 'IPA',
+                              value: '${progress.ipaSolved} / 100',
+                            ),
+                            Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
+                            _buildStatRow(
+                              context,
+                              icon: Icons.public_rounded,
+                              iconColor: const Color(0xFFD97706),
+                              label: 'IPS',
+                              value: '${progress.ipsSolved} / 100',
+                            ),
+                            Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
+                            _buildStatRow(
+                              context,
+                              icon: Icons.balance_rounded,
+                              iconColor: const Color(0xFFE11D48),
+                              label: 'PPKn',
+                              value: '${progress.ppknSolved} / 100',
+                            ),
+                            Divider(color: Colors.black.withValues(alpha: 0.06), height: 28),
+                            _buildStatRow(
+                              context,
+                              icon: Icons.menu_book_rounded,
+                              iconColor: const Color(0xFF0284C7),
+                              label: 'Bahasa Inggris',
+                              value: '${progress.englishSolved} / 100',
+                            ),
+                          ],
+                        ),
+                      ),
+                    ).animate().fadeIn(delay: 250.ms).slideY(begin: 0.1, end: 0),
+
+                    const SizedBox(height: 120), // Ekstra padding untuk navigasi
+                  ]),
+                ),
+              ),
+            ],
+          ),
+          
+          // 2. Header Wave (berada di atas, menutupi konten saat discroll)
+          Positioned(
+            top: 0,
+            left: 0,
+            right: 0,
+            child: ClipPath(
+              clipper: WaveClipper(),
+              child: Container(
+                width: double.infinity,
+                padding: EdgeInsets.only(
+                  top: MediaQuery.of(context).padding.top + 8,
+                  bottom: 50,
+                  left: 24,
+                  right: 24,
+                ),
+                decoration: BoxDecoration(
+                  gradient: AppColors.primaryGradient,
+                  boxShadow: [
+                    BoxShadow(
+                      color: AppColors.primary.withValues(alpha: 0.2),
+                      blurRadius: 20,
+                      offset: const Offset(0, 10),
+                    ),
+                  ],
+                ),
+                child: const Text(
+                  'Profil',
+                  style: TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.w900,
+                    color: Colors.white,
+                  ),
+                ).animate().fadeIn(duration: 400.ms),
               ),
             ),
-          ],
-        ),
-      ), // Expanded
-          ],
-        ), // Column
-      ), // SafeArea
+          ),
+        ],
+      ), // Stack
     ); // Scaffold
   }
 

@@ -9,6 +9,7 @@ import '../progres/penyedia_progres.dart';
 import 'layar_pilih_level.dart';
 import 'layar_utama.dart';
 import '../../inti/widget/animasi_pendar.dart';
+import '../../inti/widget/wave_clipper.dart';
 import 'widget_ikon_gelar.dart';
 
 class HomeScreen extends ConsumerWidget {
@@ -37,77 +38,85 @@ class HomeScreen extends ConsumerWidget {
 
     return Scaffold(
       backgroundColor: Colors.transparent,
-      body: Column(
+      body: Stack(
         children: [
-          // Bagian Atas: Latar Belakang Organik
-          Container(
-            padding: EdgeInsets.only(
-              top: MediaQuery.of(context).padding.top + 10,
-              bottom: 32,
-            ),
-            decoration: BoxDecoration(
-              color: AppColors.surface.withValues(alpha: 0.5),
-              borderRadius: const BorderRadius.only(
-                bottomLeft: Radius.circular(40),
-                bottomRight: Radius.circular(60),
+          // 1. Konten yang bisa di-scroll (berada di belakang)
+          CustomScrollView(
+            physics: const BouncingScrollPhysics(),
+            slivers: [
+              // Ruang kosong sebesar tinggi header agar konten mulai di bawah wave
+              SliverToBoxAdapter(
+                child: SizedBox(height: MediaQuery.of(context).padding.top + 310),
               ),
-              boxShadow: [
-                BoxShadow(
-                  color: AppColors.primary.withValues(alpha: 0.05),
-                  blurRadius: 20,
-                  offset: const Offset(0, 10),
+              
+              // Kategori label ikut ter-scroll
+              SliverToBoxAdapter(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 0, 20, 12),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 4,
+                        height: 18,
+                        decoration: BoxDecoration(
+                          gradient: AppColors.primaryGradient,
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                      ),
+                      const SizedBox(width: 10),
+                      const Text(
+                        'Kategori Quiz',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.textPrimary,
+                          letterSpacing: 0.5,
+                        ),
+                      ),
+                    ],
+                  ).animate().fadeIn(delay: 400.ms),
                 ),
-              ],
-            ),
-            child: Column(
-              children: [
-                _buildHeader(context, playerName, progress),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  child: _buildScoreCard(context, progress),
-                ),
-              ],
-            ),
+              ),
+              
+              // Daftar Kategori
+              SliverPadding(
+                padding: const EdgeInsets.fromLTRB(20, 0, 20, 120),
+                sliver: _buildPartList(context, ref, progress),
+              ),
+            ],
           ),
-          
-          // Kategori label TETAP DI ATAS
-          Padding(
-            padding: const EdgeInsets.fromLTRB(20, 24, 20, 12),
-            child: Row(
-              children: [
-                Container(
-                  width: 4,
-                  height: 18,
-                  decoration: BoxDecoration(
-                    gradient: AppColors.primaryGradient,
-                    borderRadius: BorderRadius.circular(4),
-                  ),
+
+          // 2. Header Wave (di atas, menutupi konten saat discroll)
+          Positioned(
+            top: 0, left: 0, right: 0,
+            child: ClipPath(
+              clipper: WaveClipper(),
+              child: Container(
+                padding: EdgeInsets.only(
+                  top: MediaQuery.of(context).padding.top,
+                  bottom: 50,
                 ),
-                const SizedBox(width: 10),
-                const Text(
-                  'Kategori Quiz',
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color: AppColors.textPrimary,
-                    letterSpacing: 0.5,
-                  ),
+                decoration: BoxDecoration(
+                  gradient: AppColors.primaryGradient,
+                  boxShadow: [
+                    BoxShadow(
+                      color: AppColors.primary.withValues(alpha: 0.2),
+                      blurRadius: 20,
+                      offset: const Offset(0, 10),
+                    ),
+                  ],
                 ),
-              ],
-            ).animate().fadeIn(delay: 400.ms),
-          ),
-          
-          // Konten yang bisa di-scroll
-          Expanded(
-            child: CustomScrollView(
-              physics: const BouncingScrollPhysics(),
-              slivers: [
-                // Daftar Kategori
-                SliverPadding(
-                  padding: const EdgeInsets.fromLTRB(20, 0, 20, 120),
-                  sliver: _buildPartList(context, ref, progress),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    _buildHeader(context, playerName, progress),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      child: _buildScoreCard(context, progress),
+                    ),
+                  ],
                 ),
-              ],
+              ),
             ),
           ),
         ],
@@ -117,7 +126,7 @@ class HomeScreen extends ConsumerWidget {
 
   Widget _buildHeader(BuildContext context, String playerName, ProgressState progress) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(20, 24, 20, 20),
+      padding: const EdgeInsets.fromLTRB(20, 16, 20, 16),
       child: Row(
         children: [
           Expanded(
@@ -130,24 +139,21 @@ class HomeScreen extends ConsumerWidget {
                     const SizedBox(width: 6),
                     Text(
                       _getGreeting(),
-                      style: const TextStyle(
-                        color: AppColors.textSecondary,
-                        fontSize: 13,
+                      style: TextStyle(
+                        color: Colors.white.withValues(alpha: 0.9),
+                        fontSize: 14,
                         fontWeight: FontWeight.w500,
                       ),
                     ),
                   ],
                 ).animate().fadeIn(duration: 400.ms),
                 const SizedBox(height: 4),
-                ShaderMask(
-                  shaderCallback: (bounds) => AppColors.primaryGradient.createShader(bounds),
-                  child: Text(
-                    playerName,
-                    style: const TextStyle(
-                      fontSize: 26,
-                      fontWeight: FontWeight.w900,
-                      color: Colors.white, // Putih karena kena ShaderMask
-                    ),
+                Text(
+                  playerName,
+                  style: const TextStyle(
+                    fontSize: 26,
+                    fontWeight: FontWeight.w900,
+                    color: Colors.white,
                   ),
                 ).animate().fadeIn(delay: 100.ms, duration: 400.ms),
               ],

@@ -160,12 +160,18 @@ class LevelSelectionScreen extends ConsumerWidget {
                           });
                         })(),
 
-                        // Journey Path List
+                        // Modern Grid View for 100 levels
                         Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16),
-                          child: ListView.builder(
+                          padding: const EdgeInsets.symmetric(horizontal: 20),
+                          child: GridView.builder(
                             physics: const BouncingScrollPhysics(),
                             padding: const EdgeInsets.only(top: 80, bottom: 80),
+                            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 3,
+                              mainAxisSpacing: 24,
+                              crossAxisSpacing: 24,
+                              childAspectRatio: 0.85, // Memberi ruang untuk teks di bawah
+                            ),
                             itemCount: levels.length,
                             itemBuilder: (context, index) {
                               final levelData = levels[index];
@@ -173,8 +179,7 @@ class LevelSelectionScreen extends ConsumerWidget {
                               final levelId = levelData.id;
                               final stars = progress.levelStars[levelId] ?? 0;
 
-                              // Level 1 selalu terbuka, level selanjutnya
-                              // terbuka jika level sebelumnya sudah mendapat bintang
+                              // Level 1 selalu terbuka
                               bool isUnlocked;
                               if (index == 0) {
                                 isUnlocked = true;
@@ -184,50 +189,39 @@ class LevelSelectionScreen extends ConsumerWidget {
                                 isUnlocked = prevStars > 0;
                               }
 
-                              // Matematika kurva:
-                              final alignOffsets = [0.0, 0.4, 0.6, 0.4, 0.0, -0.4, -0.6, -0.4];
-                              final align = alignOffsets[index % alignOffsets.length];
-
-                              return Align(
-                                alignment: Alignment(align, 0),
-                                child: Padding(
-                                  padding: const EdgeInsets.only(bottom: 30),
-                                  child: Stack(
-                                    alignment: Alignment.center,
-                                    clipBehavior: Clip.none,
-                                    children: [
-                                      // Node Utama
-                                      _buildLevelButton(
-                                        context, levelNumber, isUnlocked, stars, levelData, index,
-                                      ),
-                                      
-                                      // Bayangan bintang jika terbuka (diletakkan di atas bulatan agar tidak menutup teks Level)
-                                      if (isUnlocked && stars > 0)
-                                        Positioned(
-                                          top: -12,
-                                          child: Container(
-                                            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                                            decoration: BoxDecoration(
-                                              color: AppColors.surface,
-                                              borderRadius: BorderRadius.circular(12),
-                                              boxShadow: AppColors.cardShadow,
-                                              border: Border.all(color: Colors.black12, width: 0.5),
-                                            ),
-                                            child: Row(
-                                              mainAxisSize: MainAxisSize.min,
-                                              children: List.generate(3, (i) {
-                                                return Icon(
-                                                  i < stars ? Icons.star_rounded : Icons.star_outline_rounded,
-                                                  size: 14,
-                                                  color: i < stars ? AppColors.gold : Colors.black12,
-                                                );
-                                              }),
-                                            ),
-                                          ),
-                                        ).animate().fadeIn(delay: (index * 50 + 200).ms).slideY(begin: 0.5, end: 0),
-                                    ],
+                              return Stack(
+                                alignment: Alignment.center,
+                                clipBehavior: Clip.none,
+                                children: [
+                                  _buildLevelButton(
+                                    context, levelNumber, isUnlocked, stars, levelData, index,
                                   ),
-                                ),
+                                  
+                                  // Bayangan bintang jika terbuka (di atas bulatan)
+                                  if (isUnlocked && stars > 0)
+                                    Positioned(
+                                      top: -10,
+                                      child: Container(
+                                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                        decoration: BoxDecoration(
+                                          color: AppColors.surface,
+                                          borderRadius: BorderRadius.circular(10),
+                                          boxShadow: AppColors.cardShadow,
+                                          border: Border.all(color: Colors.black12, width: 0.5),
+                                        ),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.min,
+                                          children: List.generate(3, (i) {
+                                            return Icon(
+                                              i < stars ? Icons.star_rounded : Icons.star_outline_rounded,
+                                              size: 12,
+                                              color: i < stars ? AppColors.gold : Colors.black12,
+                                            );
+                                          }),
+                                        ),
+                                      ),
+                                    ).animate().fadeIn(delay: (index * 20 + 200).ms).slideY(begin: 0.5, end: 0),
+                                ],
                               );
                             },
                           ),
@@ -306,22 +300,22 @@ class LevelSelectionScreen extends ConsumerWidget {
         children: [
           AnimatedContainer(
             duration: const Duration(milliseconds: 200),
-            width: 65,
+            width: double.infinity, // Ambil lebar grid sepenuhnya
             height: 65,
             decoration: BoxDecoration(
               gradient: gradient,
               color: gradient == null
-                  ? (isUnlocked ? AppColors.surface : AppColors.surfaceLight)
+                  ? (isUnlocked ? AppColors.surface : AppColors.surfaceLight.withValues(alpha: 0.5))
                   : null,
-              shape: BoxShape.circle,
+              borderRadius: BorderRadius.circular(20), // Bentuk melengkung bukan bulat penuh
               border: Border.all(
                 color: borderColor ?? Colors.transparent,
-                width: isUnlocked ? 3 : 2,
+                width: isUnlocked ? 2 : 1,
               ),
               boxShadow: isComplete
-                  ? [BoxShadow(color: AppColors.gold.withValues(alpha: 0.5), blurRadius: 15, offset: const Offset(0, 6))]
+                  ? [BoxShadow(color: AppColors.gold.withValues(alpha: 0.4), blurRadius: 10, offset: const Offset(0, 4))]
                   : isUnlocked
-                      ? [BoxShadow(color: gradientColors != null ? gradientColors![0].withValues(alpha: 0.3) : AppColors.primary.withValues(alpha: 0.3), blurRadius: 10, offset: const Offset(0, 4))]
+                      ? [BoxShadow(color: gradientColors != null ? gradientColors![0].withValues(alpha: 0.2) : AppColors.primary.withValues(alpha: 0.2), blurRadius: 8, offset: const Offset(0, 3))]
                       : null,
             ),
             child: Center(
@@ -329,7 +323,7 @@ class LevelSelectionScreen extends ConsumerWidget {
                   ? Text(
                       '$number',
                       style: TextStyle(
-                        fontSize: 22,
+                        fontSize: 24,
                         fontWeight: FontWeight.w900,
                         color: gradient != null ? Colors.white : AppColors.textPrimary,
                       ),
@@ -337,24 +331,27 @@ class LevelSelectionScreen extends ConsumerWidget {
                   : const Icon(Icons.lock_rounded, color: Colors.black26, size: 24),
             ),
           ),
-          const SizedBox(height: 8),
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-            decoration: BoxDecoration(
-              color: isUnlocked ? AppColors.surface.withValues(alpha: 0.8) : Colors.transparent,
-              borderRadius: BorderRadius.circular(12),
-            ),
-            child: Text(
-              'Level $number',
-              style: TextStyle(
-                fontSize: 13,
-                fontWeight: FontWeight.bold,
-                color: isUnlocked ? AppColors.textPrimary : Colors.black38,
+          const SizedBox(height: 6),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+              decoration: BoxDecoration(
+                color: isUnlocked ? AppColors.surface.withValues(alpha: 0.8) : Colors.transparent,
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Text(
+                'Lvl $number',
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.bold,
+                  color: isUnlocked ? AppColors.textPrimary : Colors.black38,
+                ),
               ),
             ),
           ),
         ],
       ),
-    ).animate().scale(delay: (index * 50).ms, duration: 400.ms, curve: Curves.easeOutBack);
+    ).animate().scale(delay: ((index % 10) * 30).ms, duration: 400.ms, curve: Curves.easeOutBack);
   }
 }
