@@ -110,6 +110,24 @@ class ApiService {
     };
   }
 
+  /// Menghasilkan sidik jari (checksum) yang unik dari seluruh file dataset.
+  /// Ini digunakan untuk mendeteksi apakah pengembang menambahkan/mengubah isi soal.
+  Future<String> getDatasetsChecksum() async {
+    int totalLength = 0;
+    int combinedHash = 0;
+    for (var path in _databaseFiles.values) {
+      try {
+        final jsonString = await rootBundle.loadString(path);
+        totalLength += jsonString.length;
+        // Gabungkan hash code menggunakan operator XOR
+        combinedHash ^= jsonString.hashCode;
+      } catch (e) {
+        debugPrint('Error reading $path for checksum: $e');
+      }
+    }
+    return '${totalLength}_$combinedHash';
+  }
+
   /// Default parts jika API tidak tersedia / berjalan secara lokal
   List<PartModel> _getDefaultParts() {
     return [

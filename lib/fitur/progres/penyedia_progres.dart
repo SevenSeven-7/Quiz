@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../../inti/layanan/layanan_api.dart';
 
 // Kelas ProgressState menampung data status kemajuan bermain kuis (skor bintang dan level yang terbuka).
 class ProgressState {
@@ -103,6 +104,35 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
     try {
       final prefs = await SharedPreferences.getInstance();
       
+      // --- PENGECEKAN DATASET CHECKSUM (AUTO-RESET) ---
+      final apiService = ApiService();
+      final currentChecksum = await apiService.getDatasetsChecksum();
+      final savedChecksum = prefs.getString('dataset_checksum');
+      
+      if (savedChecksum != currentChecksum) {
+        debugPrint('Perubahan dataset terdeteksi (Hash Lama: $savedChecksum, Baru: $currentChecksum). Mereset seluruh progres!');
+        // Wipe out previous progress explicitly to make sure it's fully erased.
+        await prefs.remove('quiz_level_stars');
+        await prefs.remove('quiz_unlocked_levels');
+        await prefs.remove('quiz_unlocked_parts');
+        await prefs.remove('has_seen_legenda_shake');
+        
+        state = ProgressState(
+          levelStars: {},
+          unlockedLevels: {'p1_l1': true, 'p2_l1': true},
+          unlockedParts: {'p1', 'p2'},
+          hasSeenLegendaShake: false,
+          newlyAchievedGelar: null,
+        );
+        
+        // Simpan checksum terbaru yang valid
+        await prefs.setString('dataset_checksum', currentChecksum);
+        
+        // Hentikan load lanjutan karena progres sudah bersih dan siap dimainkan.
+        return;
+      }
+      // ------------------------------------------------
+
       // Memuat levelStars lokal
       final starsJson = prefs.getString('quiz_level_stars');
       Map<String, int> loadedStars = {};
