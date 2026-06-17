@@ -11,22 +11,55 @@ import '../progres/penyedia_progres.dart';
 import '../kuis/layar_kuis.dart';
 import '../../inti/utils/ornament_helper.dart';
 
-class LevelSelectionScreen extends ConsumerWidget {
+class LevelSelectionScreen extends ConsumerStatefulWidget {
   final PartModel part;
   final String? categoryName;
   final List<Color>? gradientColors;
   const LevelSelectionScreen({super.key, required this.part, this.categoryName, this.gradientColors});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<LevelSelectionScreen> createState() => _LevelSelectionScreenState();
+}
+
+class _LevelSelectionScreenState extends ConsumerState<LevelSelectionScreen> {
+  late ScrollController _scrollController;
+  bool _hasScrolled = false;
+  late int _randomSeed;
+  late List<Alignment> _shuffledAligns;
+
+  @override
+  void initState() {
+    super.initState();
+    _scrollController = ScrollController();
+    _randomSeed = math.Random().nextInt(100000);
+    
+    final aligns = [
+      const Alignment(-0.8, -0.8), const Alignment(0.8, -0.7),
+      const Alignment(-0.7, -0.4), const Alignment(0.7, -0.2),
+      const Alignment(-0.8, 0.1),  const Alignment(0.8, 0.4),
+      const Alignment(-0.6, 0.7),  const Alignment(0.6, 0.8),
+      const Alignment(-0.5, -0.8),  const Alignment(-0.3, 0.9),
+      const Alignment(0.4, -0.5),  const Alignment(-0.2, 0.5),
+    ];
+    aligns.shuffle(math.Random(_randomSeed));
+    _shuffledAligns = aligns;
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
     final progress = ref.watch(progressProvider);
-    final bgGradient = AppColors.backgroundGradient;
-    final catName = categoryName ?? part.cleanTitle;
+    final catName = widget.categoryName ?? widget.part.cleanTitle;
     final ornaments = OrnamentHelper.getOrnamentsForCategory(catName);
     final mainChar = OrnamentHelper.getMainCharacterForCategory(catName);
 
-    final bgColors = gradientColors != null 
-        ? [gradientColors![0].withValues(alpha: 0.15), gradientColors![1].withValues(alpha: 0.05)]
+    final bgColors = widget.gradientColors != null 
+        ? [widget.gradientColors![0].withValues(alpha: 0.15), widget.gradientColors![1].withValues(alpha: 0.05)]
         : AppColors.backgroundGradient.colors;
 
     return Scaffold(
@@ -77,10 +110,10 @@ class LevelSelectionScreen extends ConsumerWidget {
                 ),
               ).animate().fadeIn(duration: 300.ms),
 
-              // Grid Level
+              // Level Path (Grid S-Curve)
               Expanded(
                 child: FutureBuilder<List<LevelModel>>(
-                  future: DataService().getLevels(part.id),
+                  future: DataService().getLevels(widget.part.id),
                   builder: (context, snapshot) {
                     if (!snapshot.hasData) {
                       return Center(
@@ -109,38 +142,60 @@ class LevelSelectionScreen extends ConsumerWidget {
                     }
 
                     final levels = snapshot.data!;
+                    int highestUnlockedIndex = 0;
+                    
+                    for (int i = 0; i < levels.length; i++) {
+                      if (i == 0) {
+                        highestUnlockedIndex = 0;
+                      } else {
+                        final prevStars = progress.levelStars[levels[i - 1].id] ?? 0;
+                        if (prevStars > 0) highestUnlockedIndex = i;
+                        else break;
+                      }
+                    }
+
+                    if (!_hasScrolled && highestUnlockedIndex > 0) {
+                      _hasScrolled = true;
+                      WidgetsBinding.instance.addPostFrameCallback((_) {
+                        if (_scrollController.hasClients) {
+                          // Perkiraan posisi grid: 3 kolom. Baris = index / 3. Tinggi baris ~120
+                          final row = highestUnlockedIndex ~/ 3;
+                          final offset = (row * 120.0) - (MediaQuery.of(context).size.height / 2) + 60;
+                          _scrollController.animateTo(
+                            offset.clamp(0.0, _scrollController.position.maxScrollExtent),
+                            duration: const Duration(milliseconds: 1200),
+                            curve: Curves.easeInOutCubic,
+                          );
+                        }
+                      });
+                    }
+
                     return Stack(
                       children: [
                         // Giant Watermark di tengah
                         Center(
                           child: Opacity(
-                            opacity: 0.04,
-                            child: Text(
-                              mainChar,
-                              style: const TextStyle(fontSize: 350),
+                            opacity: 0.15,
+                            child: FittedBox(
+                              fit: BoxFit.scaleDown,
+                              child: Text(
+                                mainChar,
+                                textAlign: TextAlign.center,
+                                style: const TextStyle(fontSize: 300, height: 1.0),
+                              ),
                             ),
                           ),
                         ),
 
-                        // Latar Belakang Ornamen Dinamis (Sesuai Jumlah Karakter & Beda Posisi Tiap Kategori)
+                        // Ornamen Dinamis
                         ...(() {
-                          final rand = math.Random();
-                          // Pola sebaran posisi agar tidak menumpuk
-                          final aligns = [
-                            const Alignment(-0.8, -0.8), const Alignment(0.8, -0.7),
-                            const Alignment(-0.7, -0.4), const Alignment(0.7, -0.2),
-                            const Alignment(-0.8, 0.1),  const Alignment(0.8, 0.4),
-                            const Alignment(-0.6, 0.7),  const Alignment(0.6, 0.8),
-                            const Alignment(0.0, -0.9),  const Alignment(-0.3, 0.9),
-                            const Alignment(0.4, -0.5),  const Alignment(-0.2, 0.5),
-                          ];
-                          aligns.shuffle(rand);
+                          final rand = math.Random(_randomSeed);
 
                           return List.generate(ornaments.length, (i) {
-                            final align = aligns[i % aligns.length];
-                            final size = 35.0 + rand.nextInt(20); // Ukuran acak 35-55
-                            final duration = 3 + rand.nextInt(3); // Durasi 3-5 detik
-                            final animType = rand.nextInt(3); // 0, 1, 2
+                            final align = _shuffledAligns[i % _shuffledAligns.length];
+                            final size = 35.0 + rand.nextInt(20); 
+                            final duration = 3 + rand.nextInt(3); 
+                            final animType = rand.nextInt(3); 
                             
                             var anim = Text(ornaments[i], style: TextStyle(fontSize: size))
                                 .animate(onPlay: (c) => c.repeat(reverse: true));
@@ -153,75 +208,127 @@ class LevelSelectionScreen extends ConsumerWidget {
                               anim = anim.scale(duration: duration.seconds, curve: Curves.easeInOut, begin: const Offset(0.9, 0.9), end: const Offset(1.1, 1.1));
                             }
 
-                            return Align(
-                              alignment: align,
-                              child: anim,
-                            );
+                            return Align(alignment: align, child: anim);
                           });
                         })(),
 
-                        // Modern Grid View for 100 levels
+                        // Grid Level dengan S-Curve Path
                         Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 20),
+                          padding: const EdgeInsets.symmetric(horizontal: 24),
                           child: GridView.builder(
+                            controller: _scrollController,
                             physics: const BouncingScrollPhysics(),
-                            padding: const EdgeInsets.only(top: 80, bottom: 80),
+                            padding: const EdgeInsets.only(top: 60, bottom: 120),
                             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                               crossAxisCount: 3,
-                              mainAxisSpacing: 24,
+                              mainAxisSpacing: 32,
                               crossAxisSpacing: 24,
-                              childAspectRatio: 0.85, // Memberi ruang untuk teks di bawah
+                              childAspectRatio: 0.8, // Ruang untuk tombol dan teks
                             ),
-                            itemCount: levels.length,
-                            itemBuilder: (context, index) {
-                              final levelData = levels[index];
+                            itemCount: (levels.length / 3).ceil() * 3, // Genapkan ke kelipatan 3
+                            itemBuilder: (context, gridIndex) {
+                              // Konversi gridIndex menjadi levelIndex zigzag (S-Curve)
+                              // Baris genap: kiri ke kanan. Baris ganjil: kanan ke kiri.
+                              final r = gridIndex ~/ 3;
+                              final c = gridIndex % 3;
+                              final levelIndex = (r % 2 == 0) ? gridIndex : (r * 3 + (2 - c));
+
+                              // Jika levelIndex melewati jumlah level yang ada, kosongkan
+                              if (levelIndex >= levels.length) return const SizedBox();
+
+                              final levelData = levels[levelIndex];
                               final levelNumber = levelData.order;
                               final levelId = levelData.id;
                               final stars = progress.levelStars[levelId] ?? 0;
 
-                              // Level 1 selalu terbuka
-                              bool isUnlocked;
-                              if (index == 0) {
-                                isUnlocked = true;
-                              } else {
-                                final prevLevelId = levels[index - 1].id;
-                                final prevStars = progress.levelStars[prevLevelId] ?? 0;
-                                isUnlocked = prevStars > 0;
-                              }
+                              bool isUnlocked = levelIndex == 0 || (progress.levelStars[levels[levelIndex - 1].id] ?? 0) > 0;
+                              bool isNextUnlocked = levelIndex < levels.length - 1 && (progress.levelStars[levelId] ?? 0) > 0;
 
-                              return Stack(
-                                alignment: Alignment.center,
-                                clipBehavior: Clip.none,
-                                children: [
-                                  _buildLevelButton(
-                                    context, levelNumber, isUnlocked, stars, levelData, index,
-                                  ),
-                                  
-                                  // Bayangan bintang jika terbuka (di atas bulatan)
-                                  if (isUnlocked && stars > 0)
-                                    Positioned(
-                                      top: -10,
-                                      child: Container(
-                                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                                        decoration: BoxDecoration(
-                                          color: AppColors.surface,
-                                          borderRadius: BorderRadius.circular(10),
-                                          boxShadow: AppColors.cardShadow,
-                                          border: Border.all(color: Colors.black12, width: 0.5),
-                                        ),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: List.generate(3, (i) {
-                                            return Icon(
-                                              i < stars ? Icons.star_rounded : Icons.star_outline_rounded,
-                                              size: 12,
-                                              color: i < stars ? AppColors.gold : Colors.black12,
-                                            );
-                                          }),
-                                        ),
+                              return LayoutBuilder(
+                                builder: (context, constraints) {
+                                  final w = constraints.maxWidth;
+                                  final h = constraints.maxHeight;
+                                  const spacingX = 24.0;
+                                  const spacingY = 32.0;
+                                  const stroke = 8.0;
+
+                                  Widget? line;
+                                  // Gambar garis jika bukan level terakhir
+                                  if (levelIndex < levels.length - 1) {
+                                    final color = isNextUnlocked 
+                                        ? (widget.gradientColors?[0] ?? AppColors.primary).withValues(alpha: 0.5) 
+                                        : Colors.black12;
+
+                                    if (r % 2 == 0) {
+                                      if (c < 2) {
+                                        // Garis ke Kanan
+                                        line = Positioned(
+                                          left: w / 2, top: h / 2 - stroke / 2 - 12, // -12 untuk pas tengah tombol bulat
+                                          child: Container(width: w + spacingX, height: stroke, color: color),
+                                        );
+                                      } else {
+                                        // Garis ke Bawah
+                                        line = Positioned(
+                                          left: w / 2 - stroke / 2, top: h / 2 - 12,
+                                          child: Container(width: stroke, height: h + spacingY, color: color),
+                                        );
+                                      }
+                                    } else {
+                                      if (c > 0) {
+                                        // Garis ke Kiri
+                                        line = Positioned(
+                                          right: w / 2, top: h / 2 - stroke / 2 - 12,
+                                          child: Container(width: w + spacingX, height: stroke, color: color),
+                                        );
+                                      } else {
+                                        // Garis ke Bawah
+                                        line = Positioned(
+                                          left: w / 2 - stroke / 2, top: h / 2 - 12,
+                                          child: Container(width: stroke, height: h + spacingY, color: color),
+                                        );
+                                      }
+                                    }
+                                  }
+
+                                  return Stack(
+                                    clipBehavior: Clip.none,
+                                    alignment: Alignment.topCenter,
+                                    children: [
+                                      // Garis Jalur
+                                      if (line != null) line,
+                                      
+                                      // Tombol Level Bulat
+                                      Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        children: [
+                                          _buildLevelButton(
+                                            context, levelNumber, isUnlocked, stars, levelData, levelIndex, w
+                                          ),
+                                          const SizedBox(height: 8),
+                                          // Teks Level di Bawah Bulatan
+                                          FittedBox(
+                                            fit: BoxFit.scaleDown,
+                                            child: Container(
+                                              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                              decoration: BoxDecoration(
+                                                color: isUnlocked ? AppColors.surface.withValues(alpha: 0.8) : Colors.transparent,
+                                                borderRadius: BorderRadius.circular(8),
+                                              ),
+                                              child: Text(
+                                                'Lvl $levelNumber',
+                                                style: TextStyle(
+                                                  fontSize: 12,
+                                                  fontWeight: FontWeight.bold,
+                                                  color: isUnlocked ? AppColors.textPrimary : Colors.black38,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
                                       ),
-                                    ).animate().fadeIn(delay: (index * 20 + 200).ms).slideY(begin: 0.5, end: 0),
-                                ],
+                                    ],
+                                  );
+                                },
                               );
                             },
                           ),
@@ -239,23 +346,30 @@ class LevelSelectionScreen extends ConsumerWidget {
   }
 
   Widget _buildLevelButton(
-    BuildContext context, int number, bool isUnlocked, int stars, LevelModel levelData, int index,
+    BuildContext context, int number, bool isUnlocked, int stars, LevelModel levelData, int index, double maxWidth
   ) {
     final isComplete = stars == 3;
+    final isCurrent = isUnlocked && stars == 0;
+    
     Color? borderColor;
     Gradient? gradient;
+    Color iconColor = Colors.black26;
 
     if (isComplete) {
       borderColor = AppColors.gold.withValues(alpha: 0.8);
       gradient = AppColors.goldGradient;
     } else if (isUnlocked) {
-      borderColor = AppColors.primary.withValues(alpha: 0.4);
-      gradient = AppColors.primaryGradient;
+      borderColor = widget.gradientColors != null ? widget.gradientColors![0].withValues(alpha: 0.5) : AppColors.primary.withValues(alpha: 0.4);
+      gradient = widget.gradientColors != null 
+          ? LinearGradient(colors: widget.gradientColors!, begin: Alignment.topLeft, end: Alignment.bottomRight)
+          : AppColors.primaryGradient;
     } else {
       borderColor = Colors.black12;
     }
 
-    return InkWell(
+    final buttonSize = maxWidth * 0.9; // Buat bulatan responsif tapi maksimal sebesar kolom
+
+    Widget buttonNode = InkWell(
       onTap: isUnlocked
           ? () async {
               AudioHelper.playClick();
@@ -284,8 +398,8 @@ class LevelSelectionScreen extends ConsumerWidget {
                   PageRouteBuilder(
                     pageBuilder: (context, animation, secondaryAnimation) => QuizScreen(
                       level: newLevel, 
-                      categoryName: categoryName,
-                      gradientColors: gradientColors,
+                      categoryName: widget.categoryName,
+                      gradientColors: widget.gradientColors,
                     ),
                     transitionsBuilder: (context, animation, secondaryAnimation, child) =>
                         FadeTransition(opacity: animation, child: child),
@@ -294,29 +408,33 @@ class LevelSelectionScreen extends ConsumerWidget {
               }
             }
           : null,
-      borderRadius: BorderRadius.circular(40),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
+      borderRadius: BorderRadius.circular(100), // Bundar penuh
+      child: Stack(
+        clipBehavior: Clip.none,
+        alignment: Alignment.center,
         children: [
+          // Lingkaran Tombol
           AnimatedContainer(
-            duration: const Duration(milliseconds: 200),
-            width: double.infinity, // Ambil lebar grid sepenuhnya
-            height: 65,
+            duration: const Duration(milliseconds: 300),
+            width: buttonSize,
+            height: buttonSize,
             decoration: BoxDecoration(
               gradient: gradient,
               color: gradient == null
                   ? (isUnlocked ? AppColors.surface : AppColors.surfaceLight.withValues(alpha: 0.5))
                   : null,
-              borderRadius: BorderRadius.circular(20), // Bentuk melengkung bukan bulat penuh
+              shape: BoxShape.circle,
               border: Border.all(
                 color: borderColor ?? Colors.transparent,
-                width: isUnlocked ? 2 : 1,
+                width: isUnlocked ? 3 : 1.5,
               ),
               boxShadow: isComplete
-                  ? [BoxShadow(color: AppColors.gold.withValues(alpha: 0.4), blurRadius: 10, offset: const Offset(0, 4))]
-                  : isUnlocked
-                      ? [BoxShadow(color: gradientColors != null ? gradientColors![0].withValues(alpha: 0.2) : AppColors.primary.withValues(alpha: 0.2), blurRadius: 8, offset: const Offset(0, 3))]
-                      : null,
+                  ? [BoxShadow(color: AppColors.gold.withValues(alpha: 0.4), blurRadius: 10, spreadRadius: 1, offset: const Offset(0, 3))]
+                  : isCurrent
+                      ? [BoxShadow(color: widget.gradientColors != null ? widget.gradientColors![0].withValues(alpha: 0.4) : AppColors.primary.withValues(alpha: 0.4), blurRadius: 12, spreadRadius: 2, offset: const Offset(0, 4))]
+                      : isUnlocked
+                          ? [BoxShadow(color: widget.gradientColors != null ? widget.gradientColors![0].withValues(alpha: 0.2) : AppColors.primary.withValues(alpha: 0.2), blurRadius: 6, offset: const Offset(0, 2))]
+                          : null,
             ),
             child: Center(
               child: isUnlocked
@@ -328,30 +446,41 @@ class LevelSelectionScreen extends ConsumerWidget {
                         color: gradient != null ? Colors.white : AppColors.textPrimary,
                       ),
                     )
-                  : const Icon(Icons.lock_rounded, color: Colors.black26, size: 24),
+                  : Icon(Icons.lock_rounded, color: iconColor, size: 24),
             ),
           ),
-          const SizedBox(height: 6),
-          FittedBox(
-            fit: BoxFit.scaleDown,
-            child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-              decoration: BoxDecoration(
-                color: isUnlocked ? AppColors.surface.withValues(alpha: 0.8) : Colors.transparent,
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Text(
-                'Lvl $number',
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.bold,
-                  color: isUnlocked ? AppColors.textPrimary : Colors.black38,
+          
+          // Bayangan bintang melengkung di bawah tombol
+          if (isUnlocked && stars > 0)
+            Positioned(
+              bottom: -6,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                decoration: BoxDecoration(
+                  color: AppColors.surface,
+                  borderRadius: BorderRadius.circular(12),
+                  boxShadow: AppColors.cardShadow,
+                  border: Border.all(color: Colors.black12, width: 0.5),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: List.generate(3, (i) {
+                    return Icon(
+                      i < stars ? Icons.star_rounded : Icons.star_outline_rounded,
+                      size: 10,
+                      color: i < stars ? AppColors.gold : Colors.black12,
+                    );
+                  }),
                 ),
               ),
-            ),
-          ),
+            ).animate().fadeIn(delay: 200.ms).slideY(begin: 0.5, end: 0),
         ],
       ),
-    ).animate().scale(delay: ((index % 10) * 30).ms, duration: 400.ms, curve: Curves.easeOutBack);
+    );
+
+    return isCurrent
+        ? buttonNode.animate(onPlay: (c) => c.repeat(reverse: true)).scale(begin: const Offset(1, 1), end: const Offset(1.05, 1.05), duration: 1.seconds)
+        : buttonNode.animate().scale(delay: ((index % 10) * 30).ms, duration: 400.ms, curve: Curves.easeOutBack);
   }
 }
+

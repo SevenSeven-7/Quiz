@@ -1,3 +1,4 @@
+import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -32,6 +33,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
   late AnimationController _timerController;
   final AudioPlayer _player = AudioPlayer();
   bool _isSoundEnabled = true;
+  double _ukuranTeks = 22.0;
+  late int _randomSeed;
+  late List<Alignment> _shuffledAligns;
 
   @override
   void initState() {
@@ -39,6 +43,18 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
     _timerController = AnimationController(vsync: this, duration: const Duration(seconds: 60))
       ..forward();
     _initSoundSetting();
+    
+    _randomSeed = math.Random().nextInt(100000);
+    final aligns = [
+      const Alignment(-0.8, -0.8), const Alignment(0.8, -0.7),
+      const Alignment(-0.7, -0.4), const Alignment(0.7, -0.2),
+      const Alignment(-0.8, 0.1),  const Alignment(0.8, 0.4),
+      const Alignment(-0.6, 0.7),  const Alignment(0.6, 0.8),
+      const Alignment(-0.5, -0.8),  const Alignment(-0.3, 0.9),
+      const Alignment(0.4, -0.5),  const Alignment(-0.2, 0.5),
+    ];
+    aligns.shuffle(math.Random(_randomSeed));
+    _shuffledAligns = aligns;
   }
 
   Future<void> _initSoundSetting() async {
@@ -117,6 +133,10 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
         : AppColors.primaryGradient;
     final glow = [BoxShadow(color: mainColor.withValues(alpha: 0.3), blurRadius: 16, spreadRadius: 2, offset: const Offset(0, 8))];
 
+    final catName = widget.categoryName ?? widget.level.partId;
+    final ornaments = OrnamentHelper.getOrnamentsForCategory(catName);
+    final mainChar = OrnamentHelper.getMainCharacterForCategory(catName);
+
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
@@ -126,8 +146,51 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
             end: Alignment.bottomCenter,
           )
         ),
-        child: SafeArea(
-          child: Column(
+        child: Stack(
+          children: [
+            // Giant Watermark di tengah
+            Center(
+              child: Opacity(
+                opacity: 0.15,
+                child: FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text(
+                    mainChar,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(fontSize: 300, height: 1.0),
+                  ),
+                ),
+              ),
+            ),
+
+            // Ornamen Dinamis
+            ...(() {
+              final rand = math.Random(_randomSeed);
+
+              return List.generate(ornaments.length, (i) {
+                final align = _shuffledAligns[i % _shuffledAligns.length];
+                final size = 35.0 + rand.nextInt(20); 
+                final duration = 3 + rand.nextInt(3); 
+                final animType = rand.nextInt(3); 
+                
+                var anim = Text(ornaments[i], style: TextStyle(fontSize: size))
+                    .animate(onPlay: (c) => c.repeat(reverse: true));
+                
+                if (animType == 0) {
+                  anim = anim.slideX(duration: duration.seconds, curve: Curves.easeInOutSine, begin: -0.05, end: 0.05);
+                } else if (animType == 1) {
+                  anim = anim.slideY(duration: duration.seconds, curve: Curves.easeInOutSine, begin: -0.05, end: 0.05);
+                } else {
+                  anim = anim.scale(duration: duration.seconds, curve: Curves.easeInOut, begin: const Offset(0.9, 0.9), end: const Offset(1.1, 1.1));
+                }
+
+                return Align(alignment: align, child: anim);
+              });
+            })(),
+
+            // Area Utama
+            SafeArea(
+              child: Column(
             children: [
               // Top Bar
               Padding(
@@ -181,7 +244,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
                         ),
                       ],
                     ),
-                    const SizedBox(height: 14),
+                    const SizedBox(height: 16),
                     // Progress Bar Gradien (Premium)
                     Container(
                       height: 8,
@@ -215,24 +278,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
                   padding: const EdgeInsets.fromLTRB(20, 24, 20, 20),
                   child: Column(
                     children: [
-                      // Karakter Animasi (Sesuai Mapel)
-                      Container(
-                        padding: const EdgeInsets.all(16),
-                        decoration: BoxDecoration(
-                          color: surfaceColor.withValues(alpha: 0.8),
-                          shape: BoxShape.circle,
-                          boxShadow: [
-                            BoxShadow(color: mainColor.withValues(alpha: 0.15), blurRadius: 20, spreadRadius: 5)
-                          ],
-                          border: Border.all(color: mainColor.withValues(alpha: 0.2), width: 2),
-                        ),
-                        child: Text(OrnamentHelper.getMainCharacterForCategory(widget.categoryName ?? ''), style: const TextStyle(fontSize: 50)),
-                      ).animate(onPlay: (controller) => controller.repeat(reverse: true))
-                       .slideY(begin: -0.05, end: 0.05, duration: 2.seconds, curve: Curves.easeInOut),
-                      
-                      const SizedBox(height: 20),
-
-                      // Timer & Tipe Soal
+                      // Timer
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -254,62 +300,94 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
                               ],
                             ),
                           ),
-                          const SizedBox(width: 12),
-                          Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                            decoration: BoxDecoration(
-                              gradient: primaryGrad,
-                              borderRadius: BorderRadius.circular(20),
-                              boxShadow: glow,
-                            ),
-                            child: Text(
-                              currentQuestion.type == QuestionType.mcq ? 'Pilihan Ganda' : 'Uraian',
-                              style: const TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 12,
-                                letterSpacing: 0.5,
-                              ),
-                            ),
-                          ),
                         ],
                       ).animate().fadeIn(duration: 300.ms),
 
-                      const SizedBox(height: 32),
+                      const SizedBox(height: 24),
+
+                      // Kontrol Ukuran Teks
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          InkWell(
+                            onTap: () {
+                              AudioHelper.playClick();
+                              if (_ukuranTeks > 14) setState(() => _ukuranTeks -= 2);
+                            },
+                            borderRadius: BorderRadius.circular(8),
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                              decoration: BoxDecoration(
+                                color: AppColors.primary.withValues(alpha: 0.1),
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: const Icon(Icons.remove_rounded, size: 20, color: AppColors.primary),
+                            ),
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 16),
+                            child: Icon(Icons.text_format_rounded, size: 22, color: Colors.black26),
+                          ),
+                          InkWell(
+                            onTap: () {
+                              AudioHelper.playClick();
+                              if (_ukuranTeks < 36) setState(() => _ukuranTeks += 2);
+                            },
+                            borderRadius: BorderRadius.circular(8),
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                              decoration: BoxDecoration(
+                                color: AppColors.primary.withValues(alpha: 0.1),
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: const Icon(Icons.add_rounded, size: 20, color: AppColors.primary),
+                            ),
+                          ),
+                        ],
+                      ).animate().fadeIn(duration: 400.ms),
+
+                      const SizedBox(height: 24),
 
                       // Kartu Soal Premium
-                      Container(
-                        width: double.infinity,
-                        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
-                        decoration: BoxDecoration(
-                          color: surfaceColor,
-                          borderRadius: BorderRadius.circular(30),
-                          border: Border.all(
-                            color: mainColor.withValues(alpha: 0.15),
-                            width: 2,
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Flexible(
+                            child: Container(
+                              margin: const EdgeInsets.symmetric(horizontal: 4),
+                              padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 24),
+                              decoration: BoxDecoration(
+                                color: surfaceColor,
+                                borderRadius: BorderRadius.circular(30),
+                                border: Border.all(
+                                  color: mainColor.withValues(alpha: 0.15),
+                                  width: 2,
+                                ),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: mainColor.withValues(alpha: 0.06),
+                                    blurRadius: 30,
+                                    spreadRadius: 5,
+                                    offset: const Offset(0, 10),
+                                  ),
+                                ],
+                              ),
+                              child: Text(
+                                currentQuestion.text,
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: _ukuranTeks,
+                                  height: 1.5,
+                                  fontWeight: FontWeight.w800,
+                                  color: textColor.withValues(alpha: 0.9),
+                                ),
+                              ),
+                            ).animate(key: ValueKey(state.currentIndex))
+                                .fadeIn(duration: 400.ms)
+                                .scale(begin: const Offset(0.95, 0.95), end: const Offset(1, 1), curve: Curves.easeOutCubic),
                           ),
-                          boxShadow: [
-                            BoxShadow(
-                              color: mainColor.withValues(alpha: 0.06),
-                              blurRadius: 30,
-                              spreadRadius: 5,
-                              offset: const Offset(0, 10),
-                            ),
-                          ],
-                        ),
-                        child: Text(
-                          currentQuestion.text,
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 22,
-                            height: 1.5,
-                            fontWeight: FontWeight.w800,
-                            color: textColor.withValues(alpha: 0.9),
-                          ),
-                        ),
-                      ).animate(key: ValueKey(state.currentIndex))
-                          .fadeIn(duration: 400.ms)
-                          .scale(begin: const Offset(0.95, 0.95), end: const Offset(1, 1), curve: Curves.easeOutCubic),
+                        ],
+                      ),
 
                       const SizedBox(height: 32),
 
@@ -325,8 +403,10 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
             ],
           ),
         ),
-      ),
-    );
+      ],
+    ),
+  ),
+);
   }
 
   void _showQuitDialog(BuildContext context) {
@@ -427,7 +507,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
                     child: Text(
                       option,
                       style: TextStyle(
-                        fontSize: 17,
+                        fontSize: (_ukuranTeks - 5).clamp(12.0, 30.0), // Scale relative to question size
                         fontWeight: isSelected || (state.isAnswered && isCorrect) ? FontWeight.bold : FontWeight.w600,
                         color: textColor,
                       ),
