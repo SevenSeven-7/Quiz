@@ -92,7 +92,7 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
     final mataPelajaran = [
       'Bahasa Indonesia', 'Matematika', 'Ilmu Pengetahuan Alam (IPA)',
       'Ilmu Pengetahuan Sosial (IPS)', 'PPKn', 'Bahasa Inggris',
-      'Sejarah', 'Teknologi & Informatika (TIK)', 'Agama Islam'
+      'Agama Islam'
     ];
 
     showModalBottomSheet(
@@ -146,7 +146,7 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
                           border: Border.all(color: AppColors.primary.withValues(alpha: 0.15)),
                         ),
                         child: const Text(
-                          'Quiz adalah aplikasi pembelajaran interaktif berbasis Kurikulum Merdeka dan K-13. Pemain dapat memilih berbagai mata pelajaran mulai dari Agama Islam, Bahasa Indonesia, Matematika, IPA, IPS, PPKn, hingga Bahasa Inggris.\n\nCara Kerja:\n• Jawab soal dengan benar untuk mengumpulkan Bintang ⭐.\n• Semakin banyak bintang, Anda akan mendapatkan Gelar Pangkat yang lebih tinggi (Pemula → Legenda) dan membuka level baru.\n• Desain elegan dengan efek suara interaktif untuk pengalaman belajar yang seru!',
+                          'Quiz adalah aplikasi pembelajaran interaktif 100% offline dengan total 3.500 soal. Pemain dapat memilih 7 mata pelajaran: Agama Islam, Bahasa Indonesia, Matematika, IPA, IPS, PPKn, dan Bahasa Inggris.\n\nCara Kerja:\n• Jawab soal dengan benar untuk mengumpulkan Bintang ⭐.\n• Kumpulkan bintang untuk meraih Gelar Pangkat tertinggi (Pemula → Legenda) dan membuka level baru.\n• Urutan soal akan selalu diacak (Random Seed) setiap aplikasi dipasang ulang.\n• Dilengkapi sistem Anti-Cheat tingkat lanjut untuk menjaga permainan tetap adil.',
                           textAlign: TextAlign.left,
                           style: TextStyle(fontSize: 13, height: 1.5, color: AppColors.textPrimary),
                         ),
