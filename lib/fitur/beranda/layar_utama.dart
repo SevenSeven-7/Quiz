@@ -65,8 +65,8 @@ class _MainNavigationScreenState extends ConsumerState<MainNavigationScreen>
     final progress = ref.watch(progressProvider);
 
     // Pilih warna latar
-    final bgColor = AppColors.background;
-    final bgGradient = AppColors.backgroundGradient;
+    const bgColor = AppColors.background;
+    const bgGradient = AppColors.backgroundGradient;
 
     ref.listen<ProgressState>(progressProvider, (previous, next) {
       if (next.newlyAchievedGelar != null) {

@@ -149,8 +149,11 @@ class _LevelSelectionScreenState extends ConsumerState<LevelSelectionScreen> {
                         highestUnlockedIndex = 0;
                       } else {
                         final prevStars = progress.levelStars[levels[i - 1].id] ?? 0;
-                        if (prevStars > 0) highestUnlockedIndex = i;
-                        else break;
+                        if (prevStars > 0) {
+                          highestUnlockedIndex = i;
+                        } else {
+                          break;
+                        }
                       }
                     }
 
@@ -250,7 +253,6 @@ class _LevelSelectionScreenState extends ConsumerState<LevelSelectionScreen> {
                               final stars = progress.levelStars[levelId] ?? 0;
 
                               bool isUnlocked = levelIndex == 0 || (progress.levelStars[levels[levelIndex - 1].id] ?? 0) > 0;
-                              bool isNextUnlocked = levelIndex < levels.length - 1 && (progress.levelStars[levelId] ?? 0) > 0;
 
                               return LayoutBuilder(
                                 builder: (context, constraints) {
@@ -367,7 +369,7 @@ class _LevelSelectionScreenState extends ConsumerState<LevelSelectionScreen> {
     final isComplete = stars == 3;
     final isCurrent = isUnlocked && stars == 0;
     
-    Color? borderColor;
+    Color borderColor;
     Gradient? gradient;
     Color iconColor = Colors.black26;
 
@@ -447,7 +449,7 @@ class _LevelSelectionScreenState extends ConsumerState<LevelSelectionScreen> {
                   : null,
               shape: BoxShape.circle,
               border: Border.all(
-                color: borderColor ?? Colors.transparent,
+                color: borderColor,
                 width: isUnlocked ? 3 : 1.5,
               ),
               boxShadow: isComplete

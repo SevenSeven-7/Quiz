@@ -7,7 +7,6 @@ import '../../inti/konstanta/warna_aplikasi.dart';
 import '../progres/penyedia_progres.dart';
 import '../beranda/layar_utama.dart';
 import '../splash/layar_buat_nama.dart';
-import '../../inti/widget/animasi_pendar.dart';
 import '../../inti/widget/wave_clipper.dart';
 
 class LayarPengaturan extends ConsumerStatefulWidget {
@@ -201,7 +200,6 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
   // ─── Build ────────────────────────────────────────────────────────
   @override
   Widget build(BuildContext context) {
-    final playerName = ref.watch(playerNameProvider);
     final progress = ref.watch(progressProvider);
 
     return Scaffold(
@@ -302,14 +300,14 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
                       ),
                     ],
                   ),
-                  child: Row(
+                  child: const Row(
                     children: [
-                      const Text(
+                      Text(
                         'Pengaturan',
                         style: TextStyle(fontSize: 28, fontWeight: FontWeight.w900, color: Colors.white),
                       ),
-                      const Spacer(),
-                      const Icon(Icons.settings_outlined, color: Colors.white, size: 28),
+                      Spacer(),
+                      Icon(Icons.settings_outlined, color: Colors.white, size: 28),
                     ],
                   ).animate().fadeIn(duration: 400.ms).slideY(begin: -0.2, end: 0),
                 ),
@@ -351,7 +349,7 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
           const SizedBox(height: 2),
           Text(subtitle, style: const TextStyle(color: AppColors.textSecondary, fontSize: 12)),
         ])),
-        Switch(value: value, onChanged: onChanged, activeColor: AppColors.primary),
+        Switch(value: value, onChanged: onChanged, activeThumbColor: AppColors.primary),
       ]),
     );
   }

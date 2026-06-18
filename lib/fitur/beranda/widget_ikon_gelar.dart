@@ -35,7 +35,7 @@ class WidgetIkonGelar extends ConsumerWidget {
         child = Icon(Icons.diamond, color: warnaGelar, size: 34);
         break;
       case 'Legenda':
-        child = Icon(Icons.local_fire_department, color: Colors.orangeAccent, size: 38);
+        child = const Icon(Icons.local_fire_department, color: Colors.orangeAccent, size: 38);
         break;
       default:
         child = Icon(Icons.psychology, color: warnaGelar, size: 26);

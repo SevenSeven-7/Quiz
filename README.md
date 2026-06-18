@@ -1,6 +1,6 @@
 # 🎓 Aplikasi Quiz Edukasi Interaktif Premium
 
-Aplikasi kuis edukatif mutakhir yang dibangun dengan **Flutter**. Dirancang khusus untuk memberikan pengalaman belajar yang mulus, stabil, dan premium. Aplikasi ini berjalan **100% offline** (tanpa koneksi internet atau server pihak ketiga) dengan menggunakan sistem basis data tersemat (*embedded JSON*). Dapat dijalankan secara responsif di Android, iOS, Windows, Mac, Linux, maupun Web.
+Aplikasi kuis edukatif mutakhir yang dibangun dengan **Flutter**. Dirancang khusus untuk memberikan pengalaman belajar yang mulus, responsif, dan premium. Aplikasi ini berjalan **100% offline** (tanpa koneksi internet atau server pihak ketiga) dengan menggunakan sistem basis data tersemat (*embedded JSON*). Dapat dijalankan secara responsif di Android, iOS, Windows, Mac, Linux, maupun Web.
 
 ## ✨ Fitur Utama (Core Features)
 
@@ -8,17 +8,22 @@ Aplikasi kuis edukatif mutakhir yang dibangun dengan **Flutter**. Dirancang khus
    - Memuat total **3.500 pertanyaan unik** yang diproses secara lokal tanpa hambatan (*zero latency*) menggunakan `rootBundle.loadString()`.
    - Terbagi ke dalam **7 mata pelajaran utama** (Masing-masing berisi persis **500 soal**): *Agama Islam, Bahasa Indonesia, Matematika, IPA, IPS, PPKn, Bahasa Inggris*.
 
-2. **✨ Animasi & Transisi Premium (60 FPS Locked)**
+2. **🎲 Sistem Acak Dinamis (Random Seed)**
+   - Urutan kemunculan soal diacak menggunakan algoritma *Random Seed* yang terikat pada memori lokal pengguna.
+   - Hal ini memastikan **setiap kali pemain baru meng-install atau menghapus data**, urutan soal akan terasa sepenuhnya baru dan berbeda untuk setiap perangkat!
+
+3. **🛡️ Sistem Keamanan Anti-Cheat**
+   - Data progres (Level yang terbuka dan jumlah bintang) disimpan secara aman melalui modifikasi *Base64* (Obfuscation) pada `SharedPreferences`.
+   - Mencegah pengguna memodifikasi file XML secara ilegal. Jika data terdeteksi dimanipulasi, sistem otomatis akan menghapus seluruh data yang dimanipulasi agar pemain bermain dengan jujur.
+
+4. **✨ Animasi & Transisi Premium (60 FPS Locked)**
    - **Custom Page Route Transitions:** Setiap perpindahan layar menggunakan efek kombinasi transisi pudar (*Fade*), skala (*Scale*), dan geser (*Slide*).
-   - **ValueKey Caching:** Transisi soal dioptimalkan dengan efek masuk berurutan (*Staggered Entrance*) yang mulus tanpa menguras memori CPU.
+   - **Responsivitas Tingkat Tinggi:** Permukaan tombol menggunakan `InkWell` interaktif, dilengkapi efek *ripple* yang memanjakan jari.
    - **Hardware Acceleration:** Animasi bercahaya tingkat lanjut (*Glowing/Sparks*) pada profil dan gelar dibungkus menggunakan *RepaintBoundary* untuk mencegah kebocoran memori.
 
-3. **🎵 Sistem Audio Kolam (Audio Pool)**
+5. **🎵 Sistem Audio Kolam (Audio Pool)**
    - Desain arsitektur suara layaknya *engine game*. Menggunakan multi-lapis (*3 layers*) `AudioPlayer` yang bekerja secara *Round-Robin*.
    - Mencegah suara patah-patah (*stuttering*) ketika mengetuk pilihan dengan kecepatan tinggi.
-
-4. **🌙 Tema Responsif Adaptif**
-   - Mendukung **Mode Terang** dan **Mode Gelap**. Beradaptasi otomatis mengenali orientasi dan jenis perangkat (HP vs Komputer).
 
 ---
 
@@ -52,21 +57,7 @@ Total seluruh bintang yang dikumpulkan dari 700 level (Batas Maksimal = **2.100 
 
 ---
 
-## 📋 Struktur Project
-
-```text
-Quiz/
-└── Quiz_App/          # Aplikasi Utama Flutter
-    ├── lib/           # Source code (arsitektur berbasis fitur)
-    │   ├── fitur/     # Modul layar (beranda, splash, kuis, hasil, dll)
-    │   ├── inti/      # Utilitas inti (konstanta warna, layanan, helper)
-    │   └── model/     # Struktur data model
-    ├── assets/        # Media (Gambar, Suara, Font, Lottie)
-    │   └── datasets/  # Database JSON lokal
-    └── pubspec.yaml   # Konfigurasi dependensi dan deklarasi asset
-```
-
-## 🚀 Cara Menjalankan
+## 🚀 Cara Menjalankan & Rilis
 
 Karena murni offline, Anda tidak membutuhkan API atau backend tambahan:
 
@@ -75,10 +66,16 @@ Karena murni offline, Anda tidak membutuhkan API atau backend tambahan:
 ```bash
 flutter clean
 flutter pub get
-flutter run
 ```
 
-3. **Build Rilis ke APK (Android Production):**
+3. **Uji Coba Langsung (Mode Rilis Performa Maksimal)**
+Gunakan perintah ini untuk menjalankan aplikasi pada HP fisik Anda dengan performa puncak (60 FPS tanpa beban debugger):
+```bash
+flutter run --release
+```
+
+4. **Build APK Rilis (Upload Play Store)**
+Gunakan perintah ini untuk membuat file APK akhir yang terenkripsi dan dioptimasi:
 ```bash
 flutter build apk --release
 ```

@@ -86,7 +86,7 @@ class _LayarBuatNamaState extends ConsumerState<LayarBuatNama> with TickerProvid
 
     const bgGradient = AppColors.backgroundGradient;
 
-    final surfaceColor = AppColors.surface;
+    const surfaceColor = AppColors.surface;
     const textColor = AppColors.textPrimary;
     const secondaryTextColor = AppColors.textSecondary;
     const primaryGrad = AppColors.primaryGradient;

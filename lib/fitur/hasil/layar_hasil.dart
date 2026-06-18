@@ -82,7 +82,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen> with TickerProvider
     final percentage = (widget.score / widget.totalQuestions * 100).round();
 
     const bgGradient = AppColors.backgroundGradient;
-    final surfaceColor = AppColors.surface;
+    const surfaceColor = AppColors.surface;
     final messageColor = _messageColor;
     const primaryGrad = AppColors.buttonGradient;
     final glow = AppColors.primaryGlow;

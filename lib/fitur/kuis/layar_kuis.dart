@@ -124,7 +124,6 @@ class _QuizScreenState extends ConsumerState<QuizScreen> with SingleTickerProvid
         : AppColors.backgroundGradient.colors;
         
     final mainColor = hasGradient ? widget.gradientColors![0] : AppColors.primary;
-    final accentColor = hasGradient ? widget.gradientColors![1] : AppColors.accent;
         
     const textColor = AppColors.textPrimary;
     final surfaceColor = AppColors.surface;

@@ -8,7 +8,6 @@ import '../../model/model.dart';
 import '../progres/penyedia_progres.dart';
 import 'layar_pilih_level.dart';
 import 'layar_utama.dart';
-import '../../inti/widget/animasi_pendar.dart';
 import '../../inti/widget/wave_clipper.dart';
 import 'widget_ikon_gelar.dart';
 

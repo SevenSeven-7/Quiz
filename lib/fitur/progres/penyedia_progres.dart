@@ -99,6 +99,30 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
     _loadProgress();
   }
 
+  // --- ANTI-CHEAT STORAGE (Obfuscation) ---
+  String _encrypt(String data) {
+    final bytes = utf8.encode(data);
+    final b64 = base64Encode(bytes);
+    return "M4H4K4RY4_$b64";
+  }
+
+  String? _decrypt(String stored) {
+    if (stored.startsWith("M4H4K4RY4_")) {
+      final b64 = stored.substring(10);
+      try {
+        return utf8.decode(base64Decode(b64));
+      } catch (e) {
+        debugPrint('ANTI-CHEAT: Data tampering terdeteksi atau format salah.');
+        return null;
+      }
+    }
+    // Fallback untuk versi lama (plaintext)
+    if (stored.startsWith("{") || stored.startsWith("[")) {
+      return stored;
+    }
+    return null;
+  }
+
   // Fungsi internal untuk memuat data progres yang disimpan secara lokal
   Future<void> _loadProgress() async {
     try {
@@ -111,7 +135,9 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
       
       if (savedChecksum != currentChecksum) {
         debugPrint('Perubahan dataset terdeteksi (Hash Lama: $savedChecksum, Baru: $currentChecksum). Mereset seluruh progres!');
-        // Wipe out previous progress explicitly to make sure it's fully erased.
+        await prefs.remove('quiz_level_stars_secured');
+        await prefs.remove('quiz_unlocked_levels_secured');
+        await prefs.remove('quiz_unlocked_parts_secured');
         await prefs.remove('quiz_level_stars');
         await prefs.remove('quiz_unlocked_levels');
         await prefs.remove('quiz_unlocked_parts');
@@ -125,36 +151,42 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
           newlyAchievedGelar: null,
         );
         
-        // Simpan checksum terbaru yang valid
         await prefs.setString('dataset_checksum', currentChecksum);
-        
-        // Hentikan load lanjutan karena progres sudah bersih dan siap dimainkan.
         return;
       }
       // ------------------------------------------------
 
       // Memuat levelStars lokal
-      final starsJson = prefs.getString('quiz_level_stars');
+      final starsStored = prefs.getString('quiz_level_stars_secured') ?? prefs.getString('quiz_level_stars');
       Map<String, int> loadedStars = {};
-      if (starsJson != null) {
-        final Map<String, dynamic> decoded = jsonDecode(starsJson);
-        loadedStars = decoded.map((key, value) => MapEntry(key, value as int));
+      if (starsStored != null) {
+        final decrypted = _decrypt(starsStored);
+        if (decrypted != null) {
+          final Map<String, dynamic> decoded = jsonDecode(decrypted);
+          loadedStars = decoded.map((key, value) => MapEntry(key, value as int));
+        }
       }
 
       // Memuat unlockedLevels lokal
-      final unlockedJson = prefs.getString('quiz_unlocked_levels');
+      final unlockedStored = prefs.getString('quiz_unlocked_levels_secured') ?? prefs.getString('quiz_unlocked_levels');
       Map<String, bool> loadedUnlocked = {'p1_l1': true, 'p2_l1': true};
-      if (unlockedJson != null) {
-        final Map<String, dynamic> decoded = jsonDecode(unlockedJson);
-        loadedUnlocked.addAll(decoded.map((key, value) => MapEntry(key, value as bool)));
+      if (unlockedStored != null) {
+        final decrypted = _decrypt(unlockedStored);
+        if (decrypted != null) {
+          final Map<String, dynamic> decoded = jsonDecode(decrypted);
+          loadedUnlocked.addAll(decoded.map((key, value) => MapEntry(key, value as bool)));
+        }
       }
 
       // Memuat unlockedParts lokal
-      final partsJson = prefs.getString('quiz_unlocked_parts');
+      final partsStored = prefs.getString('quiz_unlocked_parts_secured') ?? prefs.getString('quiz_unlocked_parts');
       Set<String> loadedParts = {'p1', 'p2'};
-      if (partsJson != null) {
-        final List<dynamic> decoded = jsonDecode(partsJson);
-        loadedParts.addAll(decoded.map((e) => e as String));
+      if (partsStored != null) {
+        final decrypted = _decrypt(partsStored);
+        if (decrypted != null) {
+          final List<dynamic> decoded = jsonDecode(decrypted);
+          loadedParts.addAll(decoded.map((e) => e as String));
+        }
       }
 
       // Memuat hasSeenLegendaShake
@@ -206,12 +238,17 @@ class ProgressNotifier extends StateNotifier<ProgressState> {
       clearNewlyAchievedGelar: newlyAchieved == null,
     );
 
-    // Simpan progres terbaru secara lokal
+    // Simpan progres terbaru secara lokal dengan enkripsi sederhana (Anti-Cheat)
     try {
       final prefs = await SharedPreferences.getInstance();
-      await prefs.setString('quiz_level_stars', jsonEncode(state.levelStars));
-      await prefs.setString('quiz_unlocked_levels', jsonEncode(state.unlockedLevels));
-      await prefs.setString('quiz_unlocked_parts', jsonEncode(state.unlockedParts.toList()));
+      await prefs.setString('quiz_level_stars_secured', _encrypt(jsonEncode(state.levelStars)));
+      await prefs.setString('quiz_unlocked_levels_secured', _encrypt(jsonEncode(state.unlockedLevels)));
+      await prefs.setString('quiz_unlocked_parts_secured', _encrypt(jsonEncode(state.unlockedParts.toList())));
+      
+      // Hapus data plaintext yang mungkin tersisa dari versi lama
+      await prefs.remove('quiz_level_stars');
+      await prefs.remove('quiz_unlocked_levels');
+      await prefs.remove('quiz_unlocked_parts');
     } catch (e) {
       debugPrint('Gagal menyimpan progres kuis baru $e');
     }

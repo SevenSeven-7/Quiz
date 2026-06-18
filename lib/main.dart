@@ -10,6 +10,12 @@ void main() {
   
   // Mengaktifkan mode layar penuh (Immersive Mode) agar navigasi HP disembunyikan
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
+  
+  // Mengunci orientasi layar ke Portrait untuk menjaga kestabilan tata letak UI (mencegah overflow)
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
 
   // Jalankan aplikasi secepat mungkin untuk menutup native splash screen
   runApp(
