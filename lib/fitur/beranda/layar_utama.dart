@@ -99,9 +99,12 @@ class _MainNavigationScreenState extends ConsumerState<MainNavigationScreen>
           // Background Gradient (Dynamic)
           Container(
             decoration: BoxDecoration(gradient: bgGradient),
-            child: IndexedStack(
-              index: _currentIndex,
-              children: _pages,
+            child: AnimatedSwitcher(
+              duration: const Duration(milliseconds: 300),
+              child: Container(
+                key: ValueKey<int>(_currentIndex),
+                child: _pages[_currentIndex],
+              ),
             ),
           ),
           
@@ -424,7 +427,7 @@ class ProfileScreen extends ConsumerWidget {
                               ),
                             ),
                           ),
-                        ).animate().fadeIn(delay: 100.ms).slideY(begin: 0.1, end: 0),
+                        ).animate().fadeIn(delay: 100.ms, duration: 500.ms, curve: Curves.easeOut).slideY(begin: 0.2, end: 0, duration: 500.ms, curve: Curves.easeOutBack).scale(begin: const Offset(0.9, 0.9), end: const Offset(1, 1), duration: 500.ms, curve: Curves.easeOutBack),
 
                         // Lapis Atas: Avatar Melayang (Lebih Besar & Mewah)
                         Positioned(
@@ -468,17 +471,13 @@ class ProfileScreen extends ConsumerWidget {
                     const SizedBox(height: 24),
 
                     // Statistik Lengkap
-                    AnimasiPendar(
-                      warna: warnaGelar,
-                      borderRadius: 24,
-                      borderWidth: 2.0,
-                      child: Container(
-                        padding: const EdgeInsets.all(24),
-                        decoration: BoxDecoration(
-                          color: AppColors.surface,
-                          borderRadius: BorderRadius.circular(24),
-                        ),
-                        child: Column(
+                    Container(
+                      padding: const EdgeInsets.all(24),
+                      decoration: BoxDecoration(
+                        color: AppColors.surface,
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
@@ -548,8 +547,7 @@ class ProfileScreen extends ConsumerWidget {
                             ),
                           ],
                         ),
-                      ),
-                    ).animate().fadeIn(delay: 250.ms).slideY(begin: 0.1, end: 0),
+                      ).animate().fadeIn(delay: 250.ms, duration: 500.ms, curve: Curves.easeOut).slideY(begin: 0.2, end: 0, duration: 500.ms, curve: Curves.easeOutBack).scale(begin: const Offset(0.9, 0.9), end: const Offset(1, 1), duration: 500.ms, curve: Curves.easeOutBack),
 
                     const SizedBox(height: 120), // Ekstra padding untuk navigasi
                   ]),

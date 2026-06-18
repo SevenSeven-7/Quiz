@@ -74,7 +74,7 @@ class HomeScreen extends ConsumerWidget {
                         ),
                       ),
                     ],
-                  ).animate().fadeIn(delay: 400.ms),
+                  ),
                 ),
               ),
               
@@ -112,7 +112,11 @@ class HomeScreen extends ConsumerWidget {
                     _buildHeader(context, playerName, progress),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20),
-                      child: _buildScoreCard(context, progress),
+                      child: _buildScoreCard(context, progress)
+                          .animate()
+                          .fadeIn(duration: 500.ms, curve: Curves.easeOut)
+                          .slideY(begin: 0.2, end: 0, duration: 500.ms, curve: Curves.easeOutBack)
+                          .scale(begin: const Offset(0.9, 0.9), end: const Offset(1, 1), duration: 500.ms, curve: Curves.easeOutBack),
                     ),
                   ],
                 ),
@@ -146,7 +150,7 @@ class HomeScreen extends ConsumerWidget {
                       ),
                     ),
                   ],
-                ).animate().fadeIn(duration: 400.ms),
+                ),
                 const SizedBox(height: 4),
                 Text(
                   playerName,
@@ -155,35 +159,30 @@ class HomeScreen extends ConsumerWidget {
                     fontWeight: FontWeight.w900,
                     color: Colors.white,
                   ),
-                ).animate().fadeIn(delay: 100.ms, duration: 400.ms),
+                ),
               ],
             ),
           ),
           // Avatar mini
-          AnimasiPendar(
-            warna: progress.warnaGelar,
-            isCircle: true,
-            borderWidth: 2.0,
-            child: Container(
-              width: 48,
-              height: 48,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                gradient: AppColors.primaryGradient,
-                boxShadow: AppColors.primaryGlow,
-              ),
-              child: Center(
-                child: Text(
-                  playerName.isNotEmpty ? playerName[0].toUpperCase() : 'P',
-                  style: const TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
+          Container(
+            width: 48,
+            height: 48,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              gradient: AppColors.primaryGradient,
+              boxShadow: AppColors.primaryGlow,
+            ),
+            child: Center(
+              child: Text(
+                playerName.isNotEmpty ? playerName[0].toUpperCase() : 'P',
+                style: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
                 ),
               ),
             ),
-          ).animate().scale(delay: 200.ms, duration: 400.ms, curve: Curves.easeOutBack),
+          ),
         ],
       ),
     );
@@ -205,11 +204,7 @@ class HomeScreen extends ConsumerWidget {
     final progressValue = (totalStars / maxStars).clamp(0.0, 1.0);
     final rankGradient = _getRankGradient(gelar);
 
-    return AnimasiPendar(
-      warna: warnaGelar,
-      borderRadius: 24,
-      borderWidth: 2.0,
-      child: Container(
+    return Container(
         padding: const EdgeInsets.all(24),
         decoration: BoxDecoration(
           color: AppColors.surface.withValues(alpha: 0.9),
@@ -223,14 +218,6 @@ class HomeScreen extends ConsumerWidget {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
-          boxShadow: [
-            BoxShadow(
-              color: warnaGelar.withValues(alpha: 0.15),
-              blurRadius: 20,
-              spreadRadius: 2,
-              offset: const Offset(0, 8),
-            ),
-          ],
         ),
         child: Column(
         children: [
@@ -340,8 +327,7 @@ class HomeScreen extends ConsumerWidget {
           ),
         ],
       ),
-      ),
-    ).animate().fadeIn(delay: 200.ms, duration: 400.ms).slideY(begin: 0.1, end: 0);
+    );
   }
 
   Widget _buildPartList(BuildContext context, WidgetRef ref, ProgressState progress) {
@@ -423,11 +409,7 @@ class HomeScreen extends ConsumerWidget {
       bottomRight: const Radius.circular(16),
     );
 
-    return AnimasiPendar(
-      warna: isUnlocked ? grad[0] : Colors.black26,
-      customBorder: borderRadius,
-      borderWidth: 2.0,
-      child: AnimatedContainer(
+    return AnimatedContainer(
         duration: const Duration(milliseconds: 300),
         decoration: BoxDecoration(
           color: AppColors.surface.withValues(alpha: 0.95),
@@ -530,8 +512,7 @@ class HomeScreen extends ConsumerWidget {
             ),
           ),
         ),
-      ),
-    ).animate().fadeIn(delay: (200 + index * 100).ms, duration: 400.ms).slideY(begin: 0.2, end: 0);
+    );
   }
 
   Widget _buildShimmerLoading() {
@@ -546,10 +527,7 @@ class HomeScreen extends ConsumerWidget {
               color: AppColors.surface,
               borderRadius: BorderRadius.circular(8),
             ),
-          ).animate(onPlay: (c) => c.repeat()).shimmer(
-                duration: 1200.ms,
-                color: Colors.black12,
-              ),
+          ),
         ),
       ),
     );

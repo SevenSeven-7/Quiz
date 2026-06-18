@@ -232,7 +232,7 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
                         const Divider(color: Colors.black12, height: 1),
                         _buildToggle(icon: Icons.notifications_outlined, iconColor: AppColors.gold, label: 'Notifikasi', subtitle: 'Terima pengingat belajar harian', value: _notifikasiAktif, onChanged: _simpanNotifikasi),
                       ]),
-                    ).animate().fadeIn(delay: 200.ms, duration: 400.ms).slideY(begin: 0.1, end: 0),
+                    ).animate().fadeIn(delay: 200.ms, duration: 500.ms, curve: Curves.easeOut).slideY(begin: 0.2, end: 0, duration: 500.ms, curve: Curves.easeOutBack).scale(begin: const Offset(0.9, 0.9), end: const Offset(1, 1), duration: 500.ms, curve: Curves.easeOutBack),
 
                     const SizedBox(height: 28),
 
@@ -249,7 +249,7 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
                         onTap: () { AudioHelper.playClick(); _tampilkanDialogHapusAkun(); },
                         isDestructive: true,
                       ),
-                    ).animate().fadeIn(delay: 300.ms, duration: 400.ms).slideY(begin: 0.1, end: 0),
+                    ).animate().fadeIn(delay: 300.ms, duration: 500.ms, curve: Curves.easeOut).slideY(begin: 0.2, end: 0, duration: 500.ms, curve: Curves.easeOutBack).scale(begin: const Offset(0.9, 0.9), end: const Offset(1, 1), duration: 500.ms, curve: Curves.easeOutBack),
 
                     const SizedBox(height: 28),
 
@@ -265,7 +265,7 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
                         subtitle: 'Pelajari tentang Quiz App lebih lanjut',
                         onTap: () { AudioHelper.playClick(); _tampilkanDeskripsiAplikasi(); },
                       ),
-                    ).animate().fadeIn(delay: 400.ms, duration: 400.ms).slideY(begin: 0.1, end: 0),
+                    ).animate().fadeIn(delay: 400.ms, duration: 500.ms, curve: Curves.easeOut).slideY(begin: 0.2, end: 0, duration: 500.ms, curve: Curves.easeOutBack).scale(begin: const Offset(0.9, 0.9), end: const Offset(1, 1), duration: 500.ms, curve: Curves.easeOutBack),
 
                     const SizedBox(height: 32),
                     const Center(
@@ -331,14 +331,9 @@ class _LayarPengaturanState extends ConsumerState<LayarPengaturan> {
   }
 
   Widget _buildGlassCard({required Widget child, required Color color, required Color divColor, required Color glowColor}) {
-    return AnimasiPendar(
-      warna: glowColor,
-      borderRadius: 20,
-      borderWidth: 2.0,
-      child: Container(
-        decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(20), boxShadow: AppColors.cardShadow),
-        child: ClipRRect(borderRadius: BorderRadius.circular(20), child: child),
-      ),
+    return Container(
+      decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(20)),
+      child: ClipRRect(borderRadius: BorderRadius.circular(20), child: child),
     );
   }
 
