@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter/foundation.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../../model/model.dart';
 
 /// ApiService - Service untuk mengakses data dari lokal assets
@@ -21,6 +22,17 @@ class ApiService {
     'p7': 'assets/datasets/bahasainggris/database-bahasainggris.json',
   };
 
+  /// Mendapatkan seed unik per pengguna dari SharedPreferences
+  Future<int> _getUserSeed() async {
+    final prefs = await SharedPreferences.getInstance();
+    int? seed = prefs.getInt('user_random_seed');
+    if (seed == null) {
+      seed = Random().nextInt(1000000);
+      await prefs.setInt('user_random_seed', seed);
+    }
+    return seed;
+  }
+
   /// Get 5 questions untuk level tertentu secara terstruktur (offline)
   Future<List<QuestionModel>> getQuestionsForLevel(String partId, int levelNumber) async {
     try {
@@ -31,13 +43,23 @@ class ApiService {
       
       if (questionsJson.isEmpty) return [];
 
-      // Mengambil 5 soal secara deterministik berdasarkan levelNumber.
-      // Menggunakan modulo (%) agar tetap aman (wrap-around) jika nomor level melebihi jumlah soal.
+      // Dapatkan seed khusus pengguna ini
+      final userSeed = await _getUserSeed();
+      
+      // Gabungkan dengan partId agar setiap mata pelajaran teracak berbeda
+      final partSeed = userSeed ^ partId.hashCode;
+      
+      // Acak seluruh soal dengan seed yang stabil (konsisten untuk user ini)
+      questionsJson.shuffle(Random(partSeed));
+
+      // Mengambil 5 soal dari list yang sudah teracak secara khusus untuk user ini
+      // Menggunakan modulo (%) agar tetap aman jika nomor level melebihi jumlah soal.
       final int startIndex = ((levelNumber - 1) * 5) % questionsJson.length;
       final List<dynamic> selectedJson = [];
       for (int i = 0; i < 5; i++) {
         selectedJson.add(questionsJson[(startIndex + i) % questionsJson.length]);
       }
+      
       
       return selectedJson.map((json) {
         // Shuffle options for MCQ
@@ -131,13 +153,13 @@ class ApiService {
   /// Default parts jika API tidak tersedia / berjalan secara lokal
   List<PartModel> _getDefaultParts() {
     return [
-      PartModel(id: 'p1', title: 'Bagian 1: Agama Islam', description: 'Pelajari rukun iman, shalat, dan nabi.'),
-      PartModel(id: 'p2', title: 'Bagian 2: Bahasa Indonesia', description: 'Tata bahasa, EYD, dan kosa kata.'),
-      PartModel(id: 'p3', title: 'Bagian 3: Matematika', description: 'Logika berhitung, aljabar, dan angka.'),
-      PartModel(id: 'p4', title: 'Bagian 4: Ilmu Pengetahuan Alam', description: 'Fisika, biologi, dan alam semesta.'),
-      PartModel(id: 'p5', title: 'Bagian 5: Ilmu Pengetahuan Sosial', description: 'Sejarah pahlawan, dan geografi.'),
-      PartModel(id: 'p6', title: 'Bagian 6: PPKn', description: 'Pancasila, UUD 1945, dan negara.'),
-      PartModel(id: 'p7', title: 'Bagian 7: Bahasa Inggris', description: 'Vocabulary, grammar, dan dasar.'),
+      PartModel(id: 'p1', title: 'Bagian 1: Agama Islam', description: 'Pelajari sejarah nabi, rukun iman, dan dasar Islam.'),
+      PartModel(id: 'p2', title: 'Bagian 2: Bahasa Indonesia', description: 'Keterampilan berbahasa, tata bahasa, dan komunikasi.'),
+      PartModel(id: 'p3', title: 'Bagian 3: Matematika', description: 'Operasi hitung dasar, logika berhitung, dan angka.'),
+      PartModel(id: 'p4', title: 'Bagian 4: Ilmu Pengetahuan Alam', description: 'Biologi, fisika, kimia, dan alam semesta.'),
+      PartModel(id: 'p5', title: 'Bagian 5: Ilmu Pengetahuan Sosial', description: 'Sejarah bangsa, geografi, sosiologi, dan ekonomi.'),
+      PartModel(id: 'p6', title: 'Bagian 6: PPKn', description: 'Pancasila, UUD 1945, HAM, dan ketatanegaraan.'),
+      PartModel(id: 'p7', title: 'Bagian 7: Bahasa Inggris', description: 'Vocabulary, grammar, dan percakapan dasar.'),
     ];
   }
 }

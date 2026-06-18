@@ -23,7 +23,7 @@ class LevelSelectionScreen extends ConsumerStatefulWidget {
 
 class _LevelSelectionScreenState extends ConsumerState<LevelSelectionScreen> {
   late ScrollController _scrollController;
-  bool _hasScrolled = false;
+  int? _lastScrolledIndex;
   late int _randomSeed;
   late List<Alignment> _shuffledAligns;
 
@@ -154,18 +154,26 @@ class _LevelSelectionScreenState extends ConsumerState<LevelSelectionScreen> {
                       }
                     }
 
-                    if (!_hasScrolled && highestUnlockedIndex > 0) {
-                      _hasScrolled = true;
+                    if (_lastScrolledIndex != highestUnlockedIndex && highestUnlockedIndex > 0) {
+                      _lastScrolledIndex = highestUnlockedIndex;
                       WidgetsBinding.instance.addPostFrameCallback((_) {
                         if (_scrollController.hasClients) {
-                          // Perkiraan posisi grid: 3 kolom. Baris = index / 3. Tinggi baris ~120
-                          final row = highestUnlockedIndex ~/ 3;
-                          final offset = (row * 120.0) - (MediaQuery.of(context).size.height / 2) + 60;
-                          _scrollController.animateTo(
-                            offset.clamp(0.0, _scrollController.position.maxScrollExtent),
-                            duration: const Duration(milliseconds: 1200),
-                            curve: Curves.easeInOutCubic,
-                          );
+                          Future.delayed(const Duration(milliseconds: 300), () {
+                            if (_scrollController.hasClients && context.mounted) {
+                              final screenWidth = MediaQuery.of(context).size.width;
+                              final itemWidth = (screenWidth - 96) / 3;
+                              final itemHeight = itemWidth / 0.8;
+                              final rowHeight = itemHeight + 32;
+                              final row = highestUnlockedIndex ~/ 3;
+                              final offset = 60.0 + (row * rowHeight) - (MediaQuery.of(context).size.height / 2) + (itemHeight / 2);
+                              
+                              _scrollController.animateTo(
+                                offset.clamp(0.0, _scrollController.position.maxScrollExtent),
+                                duration: const Duration(milliseconds: 800),
+                                curve: Curves.easeInOutCubic,
+                              );
+                            }
+                          });
                         }
                       });
                     }
@@ -252,41 +260,48 @@ class _LevelSelectionScreenState extends ConsumerState<LevelSelectionScreen> {
                                   const spacingY = 32.0;
                                   const stroke = 8.0;
 
-                                  Widget? line;
-                                  // Gambar garis jika bukan level terakhir
-                                  if (levelIndex < levels.length - 1) {
-                                    final color = isNextUnlocked 
-                                        ? (widget.gradientColors?[0] ?? AppColors.primary).withValues(alpha: 0.5) 
-                                        : Colors.black12;
+                                  Widget? lineRight;
+                                  Widget? lineDown;
+                                  
+                                  final buttonSize = w * 0.9;
+                                  final lineCenterY = buttonSize / 2;
+                                  final currentLevelIdx = levelIndex;
 
-                                    if (r % 2 == 0) {
-                                      if (c < 2) {
-                                        // Garis ke Kanan
-                                        line = Positioned(
-                                          left: w / 2, top: h / 2 - stroke / 2 - 12, // -12 untuk pas tengah tombol bulat
+                                  // Gambar garis ke KANAN
+                                  if (c < 2) {
+                                    final int rightGridIndex = gridIndex + 1;
+                                    final int rightLevelIdx = (r % 2 == 0) ? rightGridIndex : (r * 3 + (2 - (c + 1)));
+                                    if (rightLevelIdx < levels.length) {
+                                       final maxLevelIdx = math.max(currentLevelIdx, rightLevelIdx);
+                                       bool isMaxUnlocked = maxLevelIdx == 0 || (progress.levelStars[levels[maxLevelIdx - 1].id] ?? 0) > 0;
+                                       
+                                       final color = isMaxUnlocked 
+                                          ? (widget.gradientColors?[0] ?? AppColors.primary).withValues(alpha: 0.5) 
+                                          : Colors.black12;
+
+                                       lineRight = Positioned(
+                                          left: w / 2, top: lineCenterY - stroke / 2,
                                           child: Container(width: w + spacingX, height: stroke, color: color),
-                                        );
-                                      } else {
-                                        // Garis ke Bawah
-                                        line = Positioned(
-                                          left: w / 2 - stroke / 2, top: h / 2 - 12,
+                                       );
+                                    }
+                                  }
+                                  
+                                  // Gambar garis ke BAWAH
+                                  if ((r % 2 == 0 && c == 2) || (r % 2 == 1 && c == 0)) {
+                                    final int downGridIndex = gridIndex + 3;
+                                    final int downLevelIdx = ((r+1) % 2 == 0) ? downGridIndex : ((r+1) * 3 + (2 - c));
+                                    if (downLevelIdx < levels.length) {
+                                       final maxLevelIdx = math.max(currentLevelIdx, downLevelIdx);
+                                       bool isMaxUnlocked = maxLevelIdx == 0 || (progress.levelStars[levels[maxLevelIdx - 1].id] ?? 0) > 0;
+                                       
+                                       final color = isMaxUnlocked 
+                                          ? (widget.gradientColors?[0] ?? AppColors.primary).withValues(alpha: 0.5) 
+                                          : Colors.black12;
+
+                                       lineDown = Positioned(
+                                          left: w / 2 - stroke / 2, top: lineCenterY,
                                           child: Container(width: stroke, height: h + spacingY, color: color),
-                                        );
-                                      }
-                                    } else {
-                                      if (c > 0) {
-                                        // Garis ke Kiri
-                                        line = Positioned(
-                                          right: w / 2, top: h / 2 - stroke / 2 - 12,
-                                          child: Container(width: w + spacingX, height: stroke, color: color),
-                                        );
-                                      } else {
-                                        // Garis ke Bawah
-                                        line = Positioned(
-                                          left: w / 2 - stroke / 2, top: h / 2 - 12,
-                                          child: Container(width: stroke, height: h + spacingY, color: color),
-                                        );
-                                      }
+                                       );
                                     }
                                   }
 
@@ -294,8 +309,9 @@ class _LevelSelectionScreenState extends ConsumerState<LevelSelectionScreen> {
                                     clipBehavior: Clip.none,
                                     alignment: Alignment.topCenter,
                                     children: [
-                                      // Garis Jalur
-                                      if (line != null) line,
+                                      // Garis Jalur (dirender duluan agar berada di bawah tombol bulat)
+                                      if (lineRight != null) lineRight,
+                                      if (lineDown != null) lineDown,
                                       
                                       // Tombol Level Bulat
                                       Column(
@@ -394,7 +410,7 @@ class _LevelSelectionScreenState extends ConsumerState<LevelSelectionScreen> {
               );
 
               if (context.mounted) {
-                Navigator.of(context).push(
+                await Navigator.of(context).push(
                   PageRouteBuilder(
                     pageBuilder: (context, animation, secondaryAnimation) => QuizScreen(
                       level: newLevel, 
@@ -405,6 +421,12 @@ class _LevelSelectionScreenState extends ConsumerState<LevelSelectionScreen> {
                         FadeTransition(opacity: animation, child: child),
                   ),
                 );
+                
+                if (context.mounted) {
+                  setState(() {
+                    _lastScrolledIndex = null;
+                  });
+                }
               }
             }
           : null,
